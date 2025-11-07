@@ -45,6 +45,8 @@ Thumbs.db
 *.db
 *.sqlite3
 local.db
+# Исключение: cars.db нужен для миграции в PostgreSQL
+!sqlite/cars.db
 
 # ChromaDB
 chroma/
