@@ -1,0 +1,1830 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="JAECOO_RST">
+
+	<CarOrder Title="Заказ на автомобиль" value="7379" DocNum="007378">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="652-662496949">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302119</CodeCompl>
+		<VIN Title="VIN">EDXDD21B7SC054039</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver (KU)</Color>
+		<Price Title="Цена">3309900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">190</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7423" DocNum="007422">
+		<StockQty Title="Количество в стоке">5</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="652-662496949">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302123</CodeCompl>
+		<VIN Title="VIN">EDXDD21B0SC055047</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3509900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7380" DocNum="007379">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141521" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007379/99_1_141521.png</pic>
+				<pic ID="141522" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007379/99_2_141522.png</pic>
+				<pic ID="141523" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007379/99_3_141523.png</pic>
+				<pic ID="141524" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007379/99_4_141524.png</pic>
+				<pic ID="141525" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007379/99_5_141525.png</pic>
+				<pic ID="141526" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007379/99_6_141526.png</pic>
+				<pic ID="141527" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007379/99_7_141527.png</pic>
+				<pic ID="141528" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007379/99_8_141528.png</pic>
+				<pic ID="141529" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007379/99_9_141529.png</pic>
+				<pic ID="141530" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007379/99_10_141530.png</pic>
+				<pic ID="141531" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007379/99_11_141531.png</pic>
+				<pic ID="141532" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007379/99_12_141532.png</pic>
+				<pic ID="141533" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007379/99_13_141533.png</pic>
+				<pic ID="141534" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007379/99_14_141534.png</pic>
+				<pic ID="141535" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/007379/99_15_141535.png</pic>
+				<pic ID="141536" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/007379/99_16_141536.png</pic>
+				<pic ID="141537" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/007379/99_17_141537.png</pic>
+				<pic ID="141538" type="99" seqno="18">http://aaa-motors.ru/IMG/MBS_RST/007379/99_18_141538.png</pic>
+				<pic ID="141539" type="99" seqno="19">http://aaa-motors.ru/IMG/MBS_RST/007379/99_19_141539.png</pic>
+				<pic ID="141540" type="99" seqno="20">http://aaa-motors.ru/IMG/MBS_RST/007379/99_20_141540.png</pic>
+				<pic ID="141541" type="99" seqno="21">http://aaa-motors.ru/IMG/MBS_RST/007379/99_21_141541.png</pic>
+				<pic ID="141542" type="99" seqno="22">http://aaa-motors.ru/IMG/MBS_RST/007379/99_22_141542.png</pic>
+				<pic ID="141543" type="99" seqno="23">http://aaa-motors.ru/IMG/MBS_RST/007379/99_23_141543.png</pic>
+				<pic ID="141544" type="99" seqno="24">http://aaa-motors.ru/IMG/MBS_RST/007379/99_24_141544.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="652-662496949">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302119</CodeCompl>
+		<VIN Title="VIN">EDXDD21B3SC028375</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3309900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7115" DocNum="007114">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="134866" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007114/99_1_134866.png</pic>
+				<pic ID="134867" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007114/99_2_134867.png</pic>
+				<pic ID="134868" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007114/99_3_134868.png</pic>
+				<pic ID="134869" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007114/99_4_134869.png</pic>
+				<pic ID="134870" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007114/99_5_134870.png</pic>
+				<pic ID="134871" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007114/99_6_134871.png</pic>
+				<pic ID="134872" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007114/99_7_134872.png</pic>
+				<pic ID="134873" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007114/99_8_134873.png</pic>
+				<pic ID="134874" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007114/99_9_134874.png</pic>
+				<pic ID="134875" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007114/99_10_134875.png</pic>
+				<pic ID="134876" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007114/99_11_134876.png</pic>
+				<pic ID="134877" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007114/99_12_134877.png</pic>
+				<pic ID="134878" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007114/99_13_134878.png</pic>
+				<pic ID="134879" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007114/99_14_134879.png</pic>
+				<pic ID="134880" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/007114/99_15_134880.png</pic>
+				<pic ID="134881" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/007114/99_16_134881.png</pic>
+				<pic ID="134882" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/007114/99_17_134882.png</pic>
+				<pic ID="134883" type="99" seqno="18">http://aaa-motors.ru/IMG/MBS_RST/007114/99_18_134883.png</pic>
+				<pic ID="134884" type="99" seqno="19">http://aaa-motors.ru/IMG/MBS_RST/007114/99_19_134884.png</pic>
+				<pic ID="134885" type="99" seqno="20">http://aaa-motors.ru/IMG/MBS_RST/007114/99_20_134885.png</pic>
+				<pic ID="134886" type="99" seqno="21">http://aaa-motors.ru/IMG/MBS_RST/007114/99_21_134886.png</pic>
+				<pic ID="134887" type="99" seqno="22">http://aaa-motors.ru/IMG/MBS_RST/007114/99_22_134887.png</pic>
+				<pic ID="134888" type="99" seqno="23">http://aaa-motors.ru/IMG/MBS_RST/007114/99_23_134888.png</pic>
+				<pic ID="134889" type="99" seqno="24">http://aaa-motors.ru/IMG/MBS_RST/007114/99_24_134889.png</pic>
+				<pic ID="134890" type="99" seqno="25">http://aaa-motors.ru/IMG/MBS_RST/007114/99_25_134890.png</pic>
+				<pic ID="134891" type="99" seqno="26">http://aaa-motors.ru/IMG/MBS_RST/007114/99_26_134891.png</pic>
+				<pic ID="134892" type="99" seqno="27">http://aaa-motors.ru/IMG/MBS_RST/007114/99_27_134892.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="652-662496949">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302123</CodeCompl>
+		<VIN Title="VIN">EDXDD21B9SC058920</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver (KU)</Color>
+		<Price Title="Цена">3509900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">190</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7378" DocNum="007377">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="652-662496949">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302123</CodeCompl>
+		<VIN Title="VIN">EDXDD21B4SC057934</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">3509900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="6944" DocNum="006943">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="127095" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/006943/99_8_127095.png</pic>
+				<pic ID="127096" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/006943/99_9_127096.png</pic>
+				<pic ID="127097" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/006943/99_10_127097.png</pic>
+				<pic ID="127098" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/006943/99_11_127098.png</pic>
+				<pic ID="127099" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/006943/99_12_127099.png</pic>
+				<pic ID="127100" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/006943/99_13_127100.png</pic>
+				<pic ID="127101" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/006943/99_14_127101.png</pic>
+				<pic ID="127102" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/006943/99_15_127102.png</pic>
+				<pic ID="127103" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/006943/99_16_127103.png</pic>
+				<pic ID="127088" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/006943/99_1_127088.png</pic>
+				<pic ID="127089" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/006943/99_2_127089.png</pic>
+				<pic ID="127090" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/006943/99_3_127090.png</pic>
+				<pic ID="127091" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/006943/99_4_127091.png</pic>
+				<pic ID="127092" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/006943/99_5_127092.png</pic>
+				<pic ID="127093" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/006943/99_6_127093.png</pic>
+				<pic ID="127094" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/006943/99_7_127094.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="564-662496921">J7</Model>
+		<CodeCompl Title="Код комплектации">302117</CodeCompl>
+		<VIN Title="VIN">EDXDB21BXSC048371</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3532202.98</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7376" DocNum="007375">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="652-662496949">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302123</CodeCompl>
+		<VIN Title="VIN">EDXDD21B3SC056337</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3569900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="6950" DocNum="006949">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="127145" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/006949/99_1_127145.png</pic>
+				<pic ID="127146" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/006949/99_2_127146.png</pic>
+				<pic ID="127147" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/006949/99_3_127147.png</pic>
+				<pic ID="127148" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/006949/99_4_127148.png</pic>
+				<pic ID="127149" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/006949/99_5_127149.png</pic>
+				<pic ID="127150" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/006949/99_6_127150.png</pic>
+				<pic ID="127151" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/006949/99_7_127151.png</pic>
+				<pic ID="127152" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/006949/99_8_127152.png</pic>
+				<pic ID="127153" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/006949/99_9_127153.png</pic>
+				<pic ID="127154" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/006949/99_10_127154.png</pic>
+				<pic ID="127155" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/006949/99_11_127155.png</pic>
+				<pic ID="127156" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/006949/99_12_127156.png</pic>
+				<pic ID="127157" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/006949/99_13_127157.png</pic>
+				<pic ID="127158" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/006949/99_14_127158.png</pic>
+				<pic ID="127159" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/006949/99_15_127159.png</pic>
+				<pic ID="127160" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/006949/99_16_127160.png</pic>
+				<pic ID="127161" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/006949/99_17_127161.png</pic>
+				<pic ID="127162" type="99" seqno="18">http://aaa-motors.ru/IMG/MBS_RST/006949/99_18_127162.png</pic>
+				<pic ID="127163" type="99" seqno="19">http://aaa-motors.ru/IMG/MBS_RST/006949/99_19_127163.png</pic>
+				<pic ID="127164" type="99" seqno="20">http://aaa-motors.ru/IMG/MBS_RST/006949/99_20_127164.png</pic>
+				<pic ID="127165" type="99" seqno="21">http://aaa-motors.ru/IMG/MBS_RST/006949/99_21_127165.png</pic>
+				<pic ID="127166" type="99" seqno="22">http://aaa-motors.ru/IMG/MBS_RST/006949/99_22_127166.png</pic>
+				<pic ID="127167" type="99" seqno="23">http://aaa-motors.ru/IMG/MBS_RST/006949/99_23_127167.png</pic>
+				<pic ID="127168" type="99" seqno="24">http://aaa-motors.ru/IMG/MBS_RST/006949/99_24_127168.png</pic>
+				<pic ID="127169" type="99" seqno="25">http://aaa-motors.ru/IMG/MBS_RST/006949/99_25_127169.png</pic>
+				<pic ID="127170" type="99" seqno="26">http://aaa-motors.ru/IMG/MBS_RST/006949/99_26_127170.png</pic>
+				<pic ID="127171" type="99" seqno="27">http://aaa-motors.ru/IMG/MBS_RST/006949/99_27_127171.png</pic>
+				<pic ID="127172" type="99" seqno="28">http://aaa-motors.ru/IMG/MBS_RST/006949/99_28_127172.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="564-662496921">J7</Model>
+		<CodeCompl Title="Код комплектации">302126</CodeCompl>
+		<VIN Title="VIN">EDXDB21B1SC050137</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3713400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="6926" DocNum="006925">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="127400" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/006925/99_1_127400.png</pic>
+				<pic ID="127401" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/006925/99_2_127401.png</pic>
+				<pic ID="127402" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/006925/99_3_127402.png</pic>
+				<pic ID="127403" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/006925/99_4_127403.png</pic>
+				<pic ID="127404" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/006925/99_5_127404.png</pic>
+				<pic ID="127405" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/006925/99_6_127405.png</pic>
+				<pic ID="127406" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/006925/99_7_127406.png</pic>
+				<pic ID="127407" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/006925/99_8_127407.png</pic>
+				<pic ID="127408" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/006925/99_9_127408.png</pic>
+				<pic ID="127409" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/006925/99_10_127409.png</pic>
+				<pic ID="127410" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/006925/99_11_127410.png</pic>
+				<pic ID="127411" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/006925/99_12_127411.png</pic>
+				<pic ID="127412" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/006925/99_13_127412.png</pic>
+				<pic ID="127413" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/006925/99_14_127413.png</pic>
+				<pic ID="127414" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/006925/99_15_127414.png</pic>
+				<pic ID="127415" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/006925/99_16_127415.png</pic>
+				<pic ID="127416" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/006925/99_17_127416.png</pic>
+				<pic ID="127417" type="99" seqno="18">http://aaa-motors.ru/IMG/MBS_RST/006925/99_18_127417.png</pic>
+				<pic ID="127418" type="99" seqno="19">http://aaa-motors.ru/IMG/MBS_RST/006925/99_19_127418.png</pic>
+				<pic ID="127419" type="99" seqno="20">http://aaa-motors.ru/IMG/MBS_RST/006925/99_20_127419.png</pic>
+				<pic ID="127420" type="99" seqno="21">http://aaa-motors.ru/IMG/MBS_RST/006925/99_21_127420.png</pic>
+				<pic ID="127421" type="99" seqno="22">http://aaa-motors.ru/IMG/MBS_RST/006925/99_22_127421.png</pic>
+				<pic ID="127422" type="99" seqno="23">http://aaa-motors.ru/IMG/MBS_RST/006925/99_23_127422.png</pic>
+				<pic ID="127423" type="99" seqno="24">http://aaa-motors.ru/IMG/MBS_RST/006925/99_24_127423.png</pic>
+				<pic ID="127424" type="99" seqno="25">http://aaa-motors.ru/IMG/MBS_RST/006925/99_25_127424.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="564-662496921">J7</Model>
+		<CodeCompl Title="Код комплектации">302126</CodeCompl>
+		<VIN Title="VIN">EDXDB21B1SC050123</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3713702.98</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="6948" DocNum="006947">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="127060" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/006947/99_1_127060.png</pic>
+				<pic ID="127061" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/006947/99_2_127061.png</pic>
+				<pic ID="127062" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/006947/99_3_127062.png</pic>
+				<pic ID="127063" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/006947/99_4_127063.png</pic>
+				<pic ID="127064" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/006947/99_5_127064.png</pic>
+				<pic ID="127065" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/006947/99_6_127065.png</pic>
+				<pic ID="127066" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/006947/99_7_127066.png</pic>
+				<pic ID="127067" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/006947/99_8_127067.png</pic>
+				<pic ID="127068" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/006947/99_9_127068.png</pic>
+				<pic ID="127069" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/006947/99_10_127069.png</pic>
+				<pic ID="127070" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/006947/99_11_127070.png</pic>
+				<pic ID="127071" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/006947/99_12_127071.png</pic>
+				<pic ID="127072" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/006947/99_13_127072.png</pic>
+				<pic ID="127073" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/006947/99_14_127073.png</pic>
+				<pic ID="127074" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/006947/99_15_127074.png</pic>
+				<pic ID="127075" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/006947/99_16_127075.png</pic>
+				<pic ID="127076" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/006947/99_17_127076.png</pic>
+				<pic ID="127077" type="99" seqno="18">http://aaa-motors.ru/IMG/MBS_RST/006947/99_18_127077.png</pic>
+				<pic ID="127078" type="99" seqno="19">http://aaa-motors.ru/IMG/MBS_RST/006947/99_19_127078.png</pic>
+				<pic ID="127079" type="99" seqno="20">http://aaa-motors.ru/IMG/MBS_RST/006947/99_20_127079.png</pic>
+				<pic ID="127080" type="99" seqno="21">http://aaa-motors.ru/IMG/MBS_RST/006947/99_21_127080.png</pic>
+				<pic ID="127081" type="99" seqno="22">http://aaa-motors.ru/IMG/MBS_RST/006947/99_22_127081.png</pic>
+				<pic ID="127082" type="99" seqno="23">http://aaa-motors.ru/IMG/MBS_RST/006947/99_23_127082.png</pic>
+				<pic ID="127083" type="99" seqno="24">http://aaa-motors.ru/IMG/MBS_RST/006947/99_24_127083.png</pic>
+				<pic ID="127084" type="99" seqno="25">http://aaa-motors.ru/IMG/MBS_RST/006947/99_25_127084.png</pic>
+				<pic ID="127085" type="99" seqno="26">http://aaa-motors.ru/IMG/MBS_RST/006947/99_26_127085.png</pic>
+				<pic ID="127086" type="99" seqno="27">http://aaa-motors.ru/IMG/MBS_RST/006947/99_27_127086.png</pic>
+				<pic ID="127087" type="99" seqno="28">http://aaa-motors.ru/IMG/MBS_RST/006947/99_28_127087.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="564-662496921">J7</Model>
+		<CodeCompl Title="Код комплектации">302126</CodeCompl>
+		<VIN Title="VIN">EDXDB21B0SC050792</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3734143.55</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7114" DocNum="007113">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="134838" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007113/99_1_134838.png</pic>
+				<pic ID="134839" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007113/99_2_134839.png</pic>
+				<pic ID="134840" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007113/99_3_134840.png</pic>
+				<pic ID="134841" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007113/99_4_134841.png</pic>
+				<pic ID="134842" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007113/99_5_134842.png</pic>
+				<pic ID="134843" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007113/99_6_134843.png</pic>
+				<pic ID="134844" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007113/99_7_134844.png</pic>
+				<pic ID="134845" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007113/99_8_134845.png</pic>
+				<pic ID="134846" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007113/99_9_134846.png</pic>
+				<pic ID="134847" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007113/99_10_134847.png</pic>
+				<pic ID="134848" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007113/99_11_134848.png</pic>
+				<pic ID="134849" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007113/99_12_134849.png</pic>
+				<pic ID="134850" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007113/99_13_134850.png</pic>
+				<pic ID="134851" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007113/99_14_134851.png</pic>
+				<pic ID="134852" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/007113/99_15_134852.png</pic>
+				<pic ID="134853" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/007113/99_16_134853.png</pic>
+				<pic ID="134854" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/007113/99_17_134854.png</pic>
+				<pic ID="134855" type="99" seqno="18">http://aaa-motors.ru/IMG/MBS_RST/007113/99_18_134855.png</pic>
+				<pic ID="134856" type="99" seqno="19">http://aaa-motors.ru/IMG/MBS_RST/007113/99_19_134856.png</pic>
+				<pic ID="134857" type="99" seqno="20">http://aaa-motors.ru/IMG/MBS_RST/007113/99_20_134857.png</pic>
+				<pic ID="134858" type="99" seqno="21">http://aaa-motors.ru/IMG/MBS_RST/007113/99_21_134858.png</pic>
+				<pic ID="134859" type="99" seqno="22">http://aaa-motors.ru/IMG/MBS_RST/007113/99_22_134859.png</pic>
+				<pic ID="134860" type="99" seqno="23">http://aaa-motors.ru/IMG/MBS_RST/007113/99_23_134860.png</pic>
+				<pic ID="134861" type="99" seqno="24">http://aaa-motors.ru/IMG/MBS_RST/007113/99_24_134861.png</pic>
+				<pic ID="134862" type="99" seqno="25">http://aaa-motors.ru/IMG/MBS_RST/007113/99_25_134862.png</pic>
+				<pic ID="134863" type="99" seqno="26">http://aaa-motors.ru/IMG/MBS_RST/007113/99_26_134863.png</pic>
+				<pic ID="134864" type="99" seqno="27">http://aaa-motors.ru/IMG/MBS_RST/007113/99_27_134864.png</pic>
+				<pic ID="134865" type="99" seqno="28">http://aaa-motors.ru/IMG/MBS_RST/007113/99_28_134865.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="652-662496949">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302123</CodeCompl>
+		<VIN Title="VIN">EDXDD21B9SC056309</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3734702.98</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7249" DocNum="007248">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141060" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007248/99_1_141060.png</pic>
+				<pic ID="141061" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007248/99_2_141061.png</pic>
+				<pic ID="141062" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007248/99_3_141062.png</pic>
+				<pic ID="141063" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007248/99_4_141063.png</pic>
+				<pic ID="141064" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007248/99_5_141064.png</pic>
+				<pic ID="141065" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007248/99_6_141065.png</pic>
+				<pic ID="141066" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007248/99_7_141066.png</pic>
+				<pic ID="141067" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007248/99_8_141067.png</pic>
+				<pic ID="141068" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007248/99_9_141068.png</pic>
+				<pic ID="141069" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007248/99_10_141069.png</pic>
+				<pic ID="141070" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007248/99_11_141070.png</pic>
+				<pic ID="141071" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007248/99_12_141071.png</pic>
+				<pic ID="141072" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007248/99_13_141072.png</pic>
+				<pic ID="141073" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007248/99_14_141073.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30233</CodeCompl>
+		<VIN Title="VIN">LVTDD24B0RDF18615</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">4999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7239" DocNum="007238">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141078" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007238/99_5_141078.png</pic>
+				<pic ID="141079" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007238/99_6_141079.png</pic>
+				<pic ID="141080" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007238/99_7_141080.png</pic>
+				<pic ID="141081" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007238/99_8_141081.png</pic>
+				<pic ID="141074" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007238/99_1_141074.png</pic>
+				<pic ID="141075" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007238/99_2_141075.png</pic>
+				<pic ID="141076" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007238/99_3_141076.png</pic>
+				<pic ID="141077" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007238/99_4_141077.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30233</CodeCompl>
+		<VIN Title="VIN">LVTDD24B1RDF11222</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Bluish Gray (UD)</Color>
+		<Price Title="Цена">4999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">192</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7247" DocNum="007246">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141163" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007246/99_1_141163.png</pic>
+				<pic ID="141164" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007246/99_2_141164.png</pic>
+				<pic ID="141165" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007246/99_3_141165.png</pic>
+				<pic ID="141166" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007246/99_4_141166.png</pic>
+				<pic ID="141167" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007246/99_5_141167.png</pic>
+				<pic ID="141168" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007246/99_6_141168.png</pic>
+				<pic ID="141169" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007246/99_7_141169.png</pic>
+				<pic ID="141170" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007246/99_8_141170.png</pic>
+				<pic ID="141171" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007246/99_9_141171.png</pic>
+				<pic ID="141172" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007246/99_10_141172.png</pic>
+				<pic ID="141173" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007246/99_11_141173.png</pic>
+				<pic ID="141174" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007246/99_12_141174.png</pic>
+				<pic ID="141175" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007246/99_13_141175.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30232</CodeCompl>
+		<VIN Title="VIN">LVTDD24B4RDF23350</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">4999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7241" DocNum="007240">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141048" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007240/99_1_141048.png</pic>
+				<pic ID="141049" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007240/99_2_141049.png</pic>
+				<pic ID="141050" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007240/99_3_141050.png</pic>
+				<pic ID="141051" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007240/99_4_141051.png</pic>
+				<pic ID="141052" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007240/99_5_141052.png</pic>
+				<pic ID="141053" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007240/99_6_141053.png</pic>
+				<pic ID="141054" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007240/99_7_141054.png</pic>
+				<pic ID="141055" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007240/99_8_141055.png</pic>
+				<pic ID="141056" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007240/99_9_141056.png</pic>
+				<pic ID="141057" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007240/99_10_141057.png</pic>
+				<pic ID="141058" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007240/99_11_141058.png</pic>
+				<pic ID="141059" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007240/99_12_141059.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30232</CodeCompl>
+		<VIN Title="VIN">LVTDD24B0RD688650</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">4999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7250" DocNum="007249">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141082" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007249/99_1_141082.png</pic>
+				<pic ID="141083" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007249/99_2_141083.png</pic>
+				<pic ID="141084" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007249/99_3_141084.png</pic>
+				<pic ID="141085" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007249/99_4_141085.png</pic>
+				<pic ID="141086" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007249/99_5_141086.png</pic>
+				<pic ID="141087" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007249/99_6_141087.png</pic>
+				<pic ID="141088" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007249/99_7_141088.png</pic>
+				<pic ID="141089" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007249/99_8_141089.png</pic>
+				<pic ID="141090" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007249/99_9_141090.png</pic>
+				<pic ID="141091" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007249/99_10_141091.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30232</CodeCompl>
+		<VIN Title="VIN">LVTDD24B1RDF20535</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Dark Gray (UF)</Color>
+		<Price Title="Цена">4999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">200</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7257" DocNum="007256">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="140870" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/007256/99_15_140870.png</pic>
+				<pic ID="140871" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/007256/99_16_140871.png</pic>
+				<pic ID="140872" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/007256/99_17_140872.png</pic>
+				<pic ID="140856" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007256/99_1_140856.png</pic>
+				<pic ID="140857" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007256/99_2_140857.png</pic>
+				<pic ID="140858" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007256/99_3_140858.png</pic>
+				<pic ID="140859" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007256/99_4_140859.png</pic>
+				<pic ID="140860" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007256/99_5_140860.png</pic>
+				<pic ID="140861" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007256/99_6_140861.png</pic>
+				<pic ID="140862" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007256/99_7_140862.png</pic>
+				<pic ID="140863" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007256/99_8_140863.png</pic>
+				<pic ID="140864" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007256/99_9_140864.png</pic>
+				<pic ID="140865" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007256/99_10_140865.png</pic>
+				<pic ID="140866" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007256/99_11_140866.png</pic>
+				<pic ID="140867" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007256/99_12_140867.png</pic>
+				<pic ID="140868" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007256/99_13_140868.png</pic>
+				<pic ID="140869" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007256/99_14_140869.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30236</CodeCompl>
+		<VIN Title="VIN">LVTDD24B9RDF38717</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White/Black (ZE)</Color>
+		<Price Title="Цена">5059000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">180</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7253" DocNum="007252">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141121" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007252/99_1_141121.png</pic>
+				<pic ID="141122" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007252/99_2_141122.png</pic>
+				<pic ID="141123" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007252/99_3_141123.png</pic>
+				<pic ID="141124" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007252/99_4_141124.png</pic>
+				<pic ID="141125" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007252/99_5_141125.png</pic>
+				<pic ID="141126" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007252/99_6_141126.png</pic>
+				<pic ID="141127" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007252/99_7_141127.png</pic>
+				<pic ID="141128" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007252/99_8_141128.png</pic>
+				<pic ID="141129" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007252/99_9_141129.png</pic>
+				<pic ID="141130" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007252/99_10_141130.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30236</CodeCompl>
+		<VIN Title="VIN">LVTDD24B2RDF49753</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Bluish Gray/Black (ZK)</Color>
+		<Price Title="Цена">5059000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">193</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7258" DocNum="007257">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="140873" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007257/99_1_140873.png</pic>
+				<pic ID="140874" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007257/99_2_140874.png</pic>
+				<pic ID="140875" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007257/99_3_140875.png</pic>
+				<pic ID="140876" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007257/99_4_140876.png</pic>
+				<pic ID="140877" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007257/99_5_140877.png</pic>
+				<pic ID="140878" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007257/99_6_140878.png</pic>
+				<pic ID="140879" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007257/99_7_140879.png</pic>
+				<pic ID="140880" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007257/99_8_140880.png</pic>
+				<pic ID="140881" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007257/99_9_140881.png</pic>
+				<pic ID="140882" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007257/99_10_140882.png</pic>
+				<pic ID="140883" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007257/99_11_140883.png</pic>
+				<pic ID="140884" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007257/99_12_140884.png</pic>
+				<pic ID="140885" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007257/99_13_140885.png</pic>
+				<pic ID="140886" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007257/99_14_140886.png</pic>
+				<pic ID="140887" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/007257/99_15_140887.png</pic>
+				<pic ID="140888" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/007257/99_16_140888.png</pic>
+				<pic ID="140889" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/007257/99_17_140889.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30236</CodeCompl>
+		<VIN Title="VIN">LVTDD24BXRDF45370</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (ZL)</Color>
+		<Price Title="Цена">5059000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">201</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7238" DocNum="007237">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="140843" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007237/99_1_140843.png</pic>
+				<pic ID="140844" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007237/99_2_140844.png</pic>
+				<pic ID="140845" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007237/99_3_140845.png</pic>
+				<pic ID="140846" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007237/99_4_140846.png</pic>
+				<pic ID="140847" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007237/99_5_140847.png</pic>
+				<pic ID="140848" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007237/99_6_140848.png</pic>
+				<pic ID="140849" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007237/99_7_140849.png</pic>
+				<pic ID="140850" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007237/99_8_140850.png</pic>
+				<pic ID="140851" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007237/99_9_140851.png</pic>
+				<pic ID="140852" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007237/99_10_140852.png</pic>
+				<pic ID="140853" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007237/99_11_140853.png</pic>
+				<pic ID="140854" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007237/99_12_140854.png</pic>
+				<pic ID="140855" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007237/99_13_140855.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30236</CodeCompl>
+		<VIN Title="VIN">LVTDD24B9RD688789</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Dark Gray/Black (ZT)</Color>
+		<Price Title="Цена">5059000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">204</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7240" DocNum="007239">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141113" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007239/99_1_141113.png</pic>
+				<pic ID="141114" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007239/99_2_141114.png</pic>
+				<pic ID="141115" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007239/99_3_141115.png</pic>
+				<pic ID="141116" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007239/99_4_141116.png</pic>
+				<pic ID="141117" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007239/99_5_141117.png</pic>
+				<pic ID="141118" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007239/99_6_141118.png</pic>
+				<pic ID="141119" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007239/99_7_141119.png</pic>
+				<pic ID="141120" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007239/99_8_141120.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30235</CodeCompl>
+		<VIN Title="VIN">LVTDD24B2RDF48764</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Dark Gray/Black (ZT)</Color>
+		<Price Title="Цена">5059000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">204</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7233" DocNum="007232">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141105" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007232/99_1_141105.png</pic>
+				<pic ID="141106" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007232/99_2_141106.png</pic>
+				<pic ID="141107" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007232/99_3_141107.png</pic>
+				<pic ID="141108" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007232/99_4_141108.png</pic>
+				<pic ID="141109" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007232/99_5_141109.png</pic>
+				<pic ID="141110" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007232/99_6_141110.png</pic>
+				<pic ID="141111" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007232/99_7_141111.png</pic>
+				<pic ID="141112" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007232/99_8_141112.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30236</CodeCompl>
+		<VIN Title="VIN">LVTDD24B2RD603548</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (ZL)</Color>
+		<Price Title="Цена">5239000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">201</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="6797" DocNum="006796">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="132097" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/006796/99_11_132097.png</pic>
+				<pic ID="132098" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/006796/99_12_132098.png</pic>
+				<pic ID="132087" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/006796/99_1_132087.png</pic>
+				<pic ID="132088" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/006796/99_2_132088.png</pic>
+				<pic ID="132089" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/006796/99_3_132089.png</pic>
+				<pic ID="132090" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/006796/99_4_132090.png</pic>
+				<pic ID="132091" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/006796/99_5_132091.png</pic>
+				<pic ID="132092" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/006796/99_6_132092.png</pic>
+				<pic ID="132093" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/006796/99_7_132093.png</pic>
+				<pic ID="132094" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/006796/99_8_132094.png</pic>
+				<pic ID="132095" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/006796/99_9_132095.png</pic>
+				<pic ID="132096" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/006796/99_10_132096.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30232</CodeCompl>
+		<VIN Title="VIN">LVTDD24BXRD588863</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">5260000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7246" DocNum="007245">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141103" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007245/99_12_141103.png</pic>
+				<pic ID="141104" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007245/99_13_141104.png</pic>
+				<pic ID="141092" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007245/99_1_141092.png</pic>
+				<pic ID="141093" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007245/99_2_141093.png</pic>
+				<pic ID="141094" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007245/99_3_141094.png</pic>
+				<pic ID="141095" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007245/99_4_141095.png</pic>
+				<pic ID="141096" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007245/99_5_141096.png</pic>
+				<pic ID="141097" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007245/99_6_141097.png</pic>
+				<pic ID="141098" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007245/99_7_141098.png</pic>
+				<pic ID="141099" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007245/99_8_141099.png</pic>
+				<pic ID="141100" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007245/99_9_141100.png</pic>
+				<pic ID="141101" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007245/99_10_141101.png</pic>
+				<pic ID="141102" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007245/99_11_141102.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30238</CodeCompl>
+		<VIN Title="VIN">LVTDD24B2RD534506</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver (KV)</Color>
+		<Price Title="Цена">5299000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">199</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7248" DocNum="007247">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141176" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007247/99_1_141176.png</pic>
+				<pic ID="141177" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007247/99_2_141177.png</pic>
+				<pic ID="141178" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007247/99_3_141178.png</pic>
+				<pic ID="141179" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007247/99_4_141179.png</pic>
+				<pic ID="141180" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007247/99_5_141180.png</pic>
+				<pic ID="141181" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007247/99_6_141181.png</pic>
+				<pic ID="141182" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007247/99_7_141182.png</pic>
+				<pic ID="141183" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007247/99_8_141183.png</pic>
+				<pic ID="141184" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007247/99_9_141184.png</pic>
+				<pic ID="141185" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007247/99_10_141185.png</pic>
+				<pic ID="141186" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007247/99_11_141186.png</pic>
+				<pic ID="141187" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007247/99_12_141187.png</pic>
+				<pic ID="141188" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007247/99_13_141188.png</pic>
+				<pic ID="141189" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007247/99_14_141189.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30238</CodeCompl>
+		<VIN Title="VIN">LVTDD24B6RDF18599</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">5299000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7244" DocNum="007243">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141202" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007243/99_1_141202.png</pic>
+				<pic ID="141203" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007243/99_2_141203.png</pic>
+				<pic ID="141204" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007243/99_3_141204.png</pic>
+				<pic ID="141205" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007243/99_4_141205.png</pic>
+				<pic ID="141206" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007243/99_5_141206.png</pic>
+				<pic ID="141207" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007243/99_6_141207.png</pic>
+				<pic ID="141208" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007243/99_7_141208.png</pic>
+				<pic ID="141209" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007243/99_8_141209.png</pic>
+				<pic ID="141210" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007243/99_9_141210.png</pic>
+				<pic ID="141211" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007243/99_10_141211.png</pic>
+				<pic ID="141212" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007243/99_11_141212.png</pic>
+				<pic ID="141213" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007243/99_12_141213.png</pic>
+				<pic ID="141214" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007243/99_13_141214.png</pic>
+				<pic ID="141215" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007243/99_14_141215.png</pic>
+				<pic ID="141216" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/007243/99_15_141216.png</pic>
+				<pic ID="141217" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/007243/99_16_141217.png</pic>
+				<pic ID="141218" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/007243/99_17_141218.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">302310</CodeCompl>
+		<VIN Title="VIN">LVTDD24B8RDF10004</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Bluish Gray (UD)</Color>
+		<Price Title="Цена">5299000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">192</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7374" DocNum="007373">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141604" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007373/99_1_141604.png</pic>
+				<pic ID="141605" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007373/99_2_141605.png</pic>
+				<pic ID="141606" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007373/99_3_141606.png</pic>
+				<pic ID="141607" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007373/99_4_141607.png</pic>
+				<pic ID="141608" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007373/99_5_141608.png</pic>
+				<pic ID="141609" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007373/99_6_141609.png</pic>
+				<pic ID="141610" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007373/99_7_141610.png</pic>
+				<pic ID="141611" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007373/99_8_141611.png</pic>
+				<pic ID="141612" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007373/99_9_141612.png</pic>
+				<pic ID="141613" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007373/99_10_141613.png</pic>
+				<pic ID="141614" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007373/99_11_141614.png</pic>
+				<pic ID="141615" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007373/99_12_141615.png</pic>
+				<pic ID="141616" type="99" seqno="13">http://aaa-motors.ru/IMG/MBS_RST/007373/99_13_141616.png</pic>
+				<pic ID="141617" type="99" seqno="14">http://aaa-motors.ru/IMG/MBS_RST/007373/99_14_141617.png</pic>
+				<pic ID="141618" type="99" seqno="15">http://aaa-motors.ru/IMG/MBS_RST/007373/99_15_141618.png</pic>
+				<pic ID="141619" type="99" seqno="16">http://aaa-motors.ru/IMG/MBS_RST/007373/99_16_141619.png</pic>
+				<pic ID="141620" type="99" seqno="17">http://aaa-motors.ru/IMG/MBS_RST/007373/99_17_141620.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">302310</CodeCompl>
+		<VIN Title="VIN">LVTDD24B6RD534525</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver (KV)</Color>
+		<Price Title="Цена">5299000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">199</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7242" DocNum="007241">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141131" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007241/99_1_141131.png</pic>
+				<pic ID="141132" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007241/99_2_141132.png</pic>
+				<pic ID="141133" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007241/99_3_141133.png</pic>
+				<pic ID="141134" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007241/99_4_141134.png</pic>
+				<pic ID="141135" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007241/99_5_141135.png</pic>
+				<pic ID="141136" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007241/99_6_141136.png</pic>
+				<pic ID="141137" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007241/99_7_141137.png</pic>
+				<pic ID="141138" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007241/99_8_141138.png</pic>
+				<pic ID="141139" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007241/99_9_141139.png</pic>
+				<pic ID="141140" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007241/99_10_141140.png</pic>
+				<pic ID="141141" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007241/99_11_141141.png</pic>
+				<pic ID="141142" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007241/99_12_141142.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30233</CodeCompl>
+		<VIN Title="VIN">LVTDD24B3RD688755</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Dark Gray (UF)</Color>
+		<Price Title="Цена">4999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">200</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7245" DocNum="007244">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141190" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007244/99_1_141190.png</pic>
+				<pic ID="141191" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007244/99_2_141191.png</pic>
+				<pic ID="141192" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007244/99_3_141192.png</pic>
+				<pic ID="141193" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007244/99_4_141193.png</pic>
+				<pic ID="141194" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007244/99_5_141194.png</pic>
+				<pic ID="141195" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007244/99_6_141195.png</pic>
+				<pic ID="141196" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007244/99_7_141196.png</pic>
+				<pic ID="141197" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007244/99_8_141197.png</pic>
+				<pic ID="141198" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007244/99_9_141198.png</pic>
+				<pic ID="141199" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007244/99_10_141199.png</pic>
+				<pic ID="141200" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007244/99_11_141200.png</pic>
+				<pic ID="141201" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007244/99_12_141201.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30233</CodeCompl>
+		<VIN Title="VIN">LVTDD24B6RDF20613</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver (KV)</Color>
+		<Price Title="Цена">4999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">199</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7243" DocNum="007242">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="141151" type="99" seqno="1">http://aaa-motors.ru/IMG/MBS_RST/007242/99_1_141151.png</pic>
+				<pic ID="141152" type="99" seqno="2">http://aaa-motors.ru/IMG/MBS_RST/007242/99_2_141152.png</pic>
+				<pic ID="141153" type="99" seqno="3">http://aaa-motors.ru/IMG/MBS_RST/007242/99_3_141153.png</pic>
+				<pic ID="141154" type="99" seqno="4">http://aaa-motors.ru/IMG/MBS_RST/007242/99_4_141154.png</pic>
+				<pic ID="141155" type="99" seqno="5">http://aaa-motors.ru/IMG/MBS_RST/007242/99_5_141155.png</pic>
+				<pic ID="141156" type="99" seqno="6">http://aaa-motors.ru/IMG/MBS_RST/007242/99_6_141156.png</pic>
+				<pic ID="141157" type="99" seqno="7">http://aaa-motors.ru/IMG/MBS_RST/007242/99_7_141157.png</pic>
+				<pic ID="141158" type="99" seqno="8">http://aaa-motors.ru/IMG/MBS_RST/007242/99_8_141158.png</pic>
+				<pic ID="141159" type="99" seqno="9">http://aaa-motors.ru/IMG/MBS_RST/007242/99_9_141159.png</pic>
+				<pic ID="141160" type="99" seqno="10">http://aaa-motors.ru/IMG/MBS_RST/007242/99_10_141160.png</pic>
+				<pic ID="141161" type="99" seqno="11">http://aaa-motors.ru/IMG/MBS_RST/007242/99_11_141161.png</pic>
+				<pic ID="141162" type="99" seqno="12">http://aaa-motors.ru/IMG/MBS_RST/007242/99_12_141162.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="14222-512441092">JAECOO</Mark>
+		<Model Title="Модель" Code="597-662496941">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30233</CodeCompl>
+		<VIN Title="VIN">LVTDD24B4RDB05337</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">4999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">175000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

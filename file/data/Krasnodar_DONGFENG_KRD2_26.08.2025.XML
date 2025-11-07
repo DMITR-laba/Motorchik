@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="DONGFENG_KRD2">
+
+	<CarOrder Title="Заказ на автомобиль" value="7016" DocNum="006934">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="60378" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_1_60378.png</pic>
+				<pic ID="60379" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_2_60379.png</pic>
+				<pic ID="60380" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_3_60380.png</pic>
+				<pic ID="60381" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_4_60381.png</pic>
+				<pic ID="60382" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_5_60382.png</pic>
+				<pic ID="60383" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_6_60383.png</pic>
+				<pic ID="60384" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_7_60384.png</pic>
+				<pic ID="60385" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_8_60385.png</pic>
+				<pic ID="60386" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_9_60386.png</pic>
+				<pic ID="60387" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_10_60387.png</pic>
+				<pic ID="60388" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_11_60388.png</pic>
+				<pic ID="60389" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_12_60389.png</pic>
+				<pic ID="60390" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_13_60390.png</pic>
+				<pic ID="60391" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_14_60391.png</pic>
+				<pic ID="60392" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_15_60392.png</pic>
+				<pic ID="60393" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_16_60393.png</pic>
+				<pic ID="60394" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_17_60394.png</pic>
+				<pic ID="60395" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_18_60395.png</pic>
+				<pic ID="60396" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_19_60396.png</pic>
+				<pic ID="60397" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_20_60397.png</pic>
+				<pic ID="60398" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_21_60398.png</pic>
+				<pic ID="60399" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_22_60399.png</pic>
+				<pic ID="60400" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_23_60400.png</pic>
+				<pic ID="60401" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_24_60401.png</pic>
+				<pic ID="60402" type="99" seqno="25">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_25_60402.png</pic>
+				<pic ID="60403" type="99" seqno="26">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_26_60403.png</pic>
+				<pic ID="60404" type="99" seqno="27">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_27_60404.png</pic>
+				<pic ID="60405" type="99" seqno="28">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_28_60405.png</pic>
+				<pic ID="60406" type="99" seqno="29">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_29_60406.png</pic>
+				<pic ID="60407" type="99" seqno="30">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_30_60407.png</pic>
+				<pic ID="60408" type="99" seqno="31">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_31_60408.png</pic>
+				<pic ID="60409" type="99" seqno="32">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_32_60409.png</pic>
+				<pic ID="60410" type="99" seqno="33">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_33_60410.png</pic>
+				<pic ID="60412" type="99" seqno="35">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_35_60412.png</pic>
+				<pic ID="60413" type="99" seqno="36">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_36_60413.png</pic>
+				<pic ID="60414" type="99" seqno="37">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_37_60414.png</pic>
+				<pic ID="60415" type="99" seqno="38">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_38_60415.png</pic>
+				<pic ID="60411" type="99" seqno="34">http://aaa-motors.ru/IMG/AUDI_KRD2/006934/99_34_60411.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="129-884533996">DONGFENG</Mark>
+		<Model Title="Модель" Code="686-1124655901">580</Model>
+		<CodeCompl Title="Код комплектации">391114124663317019</CodeCompl>
+		<VIN Title="VIN">LVZA53P93RCB09843</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый</Color>
+		<Price Title="Цена">2499000.00</Price>
+		<City Title="Город назначения">Краснодар</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">145.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">220</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">EURO-5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2085</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Серый</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7015" DocNum="006933">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="60424" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_9_60424.png</pic>
+				<pic ID="60425" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_10_60425.png</pic>
+				<pic ID="60426" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_11_60426.png</pic>
+				<pic ID="60427" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_12_60427.png</pic>
+				<pic ID="60428" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_13_60428.png</pic>
+				<pic ID="60429" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_14_60429.png</pic>
+				<pic ID="60430" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_15_60430.png</pic>
+				<pic ID="60431" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_16_60431.png</pic>
+				<pic ID="60432" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_17_60432.png</pic>
+				<pic ID="60433" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_18_60433.png</pic>
+				<pic ID="60434" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_19_60434.png</pic>
+				<pic ID="60435" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_20_60435.png</pic>
+				<pic ID="60436" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_21_60436.png</pic>
+				<pic ID="60437" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_22_60437.png</pic>
+				<pic ID="60438" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_23_60438.png</pic>
+				<pic ID="60439" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_24_60439.png</pic>
+				<pic ID="60440" type="99" seqno="25">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_25_60440.png</pic>
+				<pic ID="60441" type="99" seqno="26">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_26_60441.png</pic>
+				<pic ID="60442" type="99" seqno="27">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_27_60442.png</pic>
+				<pic ID="60443" type="99" seqno="28">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_28_60443.png</pic>
+				<pic ID="60444" type="99" seqno="29">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_29_60444.png</pic>
+				<pic ID="60445" type="99" seqno="30">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_30_60445.png</pic>
+				<pic ID="60446" type="99" seqno="31">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_31_60446.png</pic>
+				<pic ID="60416" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_1_60416.png</pic>
+				<pic ID="60417" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_2_60417.png</pic>
+				<pic ID="60418" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_3_60418.png</pic>
+				<pic ID="60419" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_4_60419.png</pic>
+				<pic ID="60420" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_5_60420.png</pic>
+				<pic ID="60421" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_6_60421.png</pic>
+				<pic ID="60422" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_7_60422.png</pic>
+				<pic ID="60423" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_KRD2/006933/99_8_60423.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="129-884533996">DONGFENG</Mark>
+		<Model Title="Модель" Code="685-1167288346">DF6</Model>
+		<CodeCompl Title="Код комплектации">392156325070920351</CodeCompl>
+		<VIN Title="VIN">LJNTFUC34PN307705</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый</Color>
+		<Price Title="Цена">3299000.00</Price>
+		<City Title="Город назначения">Краснодар</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">дизель</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">136.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">2498</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">305</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">EURO-5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2459</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Серебристы</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="29">Подлокотник с подстаканником</Option>
+				<Option Code="19">Подогрев передни сидений</Option>
+				<Option Code="27">Регулировка руля по высоте</Option>
+				<Option Code="31">Футляр для очков</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="46">Антиблокировочная система (ABS)</Option>
+				<Option Code="48">Антипротивобуксовочная система (TCS)</Option>
+				<Option Code="36">Детский замок</Option>
+				<Option Code="38">Задние датчики парковки</Option>
+				<Option Code="44">Иммобилайзер</Option>
+				<Option Code="43">Кнопка запуска/остановки двигателя</Option>
+				<Option Code="42">Комфортный бесключевой доступ</Option>
+				<Option Code="37">Крепления задни сидений ISOFIX</Option>
+				<Option Code="45">Система контроля давления в шина (TPMS)</Option>
+				<Option Code="47">Система распределения тормозны усилий (EBD)</Option>
+				<Option Code="41">Центральный замок</Option>
+				<Option Code="49">Электронная система стабилизации/устойчивости (ESP/ESC)</Option>
+				<Option Code="50">Электронные помощники (VDC+HBA+HHC+RMI)</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="10">Боковые пороги (подножки)</Option>
+				<Option Code="14">Декоративные дуги грузового отделения</Option>
+				<Option Code="13">Дополнительный стоп-сигнал</Option>
+				<Option Code="1">Заглушки колесны дисков</Option>
+				<Option Code="5">Задние ПТФ</Option>
+				<Option Code="15">Защитная обработка грузового отсека</Option>
+				<Option Code="6">одовые огни (лампы дневного света) LED</Option>
+				<Option Code="4">Передние ПТФ</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="52">Антенна на крыше</Option>
+				<Option Code="51">Розетка 12В</Option>
+				<Option Code="54">Система &quot;ЭРА-ГЛОНАСС&quot;</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="7014" DocNum="006932">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="60349" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_1_60349.png</pic>
+				<pic ID="60350" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_2_60350.png</pic>
+				<pic ID="60351" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_3_60351.png</pic>
+				<pic ID="60352" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_4_60352.png</pic>
+				<pic ID="60353" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_5_60353.png</pic>
+				<pic ID="60354" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_6_60354.png</pic>
+				<pic ID="60355" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_7_60355.png</pic>
+				<pic ID="60356" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_8_60356.png</pic>
+				<pic ID="60357" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_9_60357.png</pic>
+				<pic ID="60358" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_10_60358.png</pic>
+				<pic ID="60359" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_11_60359.png</pic>
+				<pic ID="60360" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_12_60360.png</pic>
+				<pic ID="60361" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_13_60361.png</pic>
+				<pic ID="60362" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_14_60362.png</pic>
+				<pic ID="60363" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_15_60363.png</pic>
+				<pic ID="60364" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_16_60364.png</pic>
+				<pic ID="60365" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_17_60365.png</pic>
+				<pic ID="60366" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_18_60366.png</pic>
+				<pic ID="60367" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_19_60367.png</pic>
+				<pic ID="60368" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_20_60368.png</pic>
+				<pic ID="60369" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_21_60369.png</pic>
+				<pic ID="60370" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_22_60370.png</pic>
+				<pic ID="60371" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_23_60371.png</pic>
+				<pic ID="60372" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_24_60372.png</pic>
+				<pic ID="60373" type="99" seqno="25">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_25_60373.png</pic>
+				<pic ID="60374" type="99" seqno="26">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_26_60374.png</pic>
+				<pic ID="60375" type="99" seqno="27">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_27_60375.png</pic>
+				<pic ID="60376" type="99" seqno="28">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_28_60376.png</pic>
+				<pic ID="60377" type="99" seqno="29">http://aaa-motors.ru/IMG/AUDI_KRD2/006932/99_29_60377.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="129-884533996">DONGFENG</Mark>
+		<Model Title="Модель" Code="685-1167288346">DF6</Model>
+		<CodeCompl Title="Код комплектации">392156325217723475</CodeCompl>
+		<VIN Title="VIN">LJNTFUC53PN304943</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый</Color>
+		<Price Title="Цена">3449000.00</Price>
+		<City Title="Город назначения">Краснодар</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">дизель</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">163.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">2299</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">EURO-5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2484</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Серебристы</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="29">Подлокотник с подстаканником</Option>
+				<Option Code="19">Подогрев передни сидений</Option>
+				<Option Code="27">Регулировка руля по высоте</Option>
+				<Option Code="31">Футляр для очков</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="46">Антиблокировочная система (ABS)</Option>
+				<Option Code="48">Антипротивобуксовочная система (TCS)</Option>
+				<Option Code="36">Детский замок</Option>
+				<Option Code="38">Задние датчики парковки</Option>
+				<Option Code="44">Иммобилайзер</Option>
+				<Option Code="37">Крепления задни сидений ISOFIX</Option>
+				<Option Code="45">Система контроля давления в шина (TPMS)</Option>
+				<Option Code="47">Система распределения тормозны усилий (EBD)</Option>
+				<Option Code="41">Центральный замок</Option>
+				<Option Code="49">Электронная система стабилизации/устойчивости (ESP/ESC)</Option>
+				<Option Code="50">Электронные помощники (VDC+HBA+HHC+RMI)</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="10">Боковые пороги (подножки)</Option>
+				<Option Code="14">Декоративные дуги грузового отделения</Option>
+				<Option Code="1">Заглушки колесны дисков</Option>
+				<Option Code="5">Задние ПТФ</Option>
+				<Option Code="4">Передние ПТФ</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="52">Антенна на крыше</Option>
+				<Option Code="51">Розетка 12В</Option>
+				<Option Code="54">Система &quot;ЭРА-ГЛОНАСС&quot;</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+</DealerCenter>
+

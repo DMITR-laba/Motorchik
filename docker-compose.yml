@@ -1,0 +1,93 @@
+name: motorchik
+
+services:
+  motorchik-postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: vectordb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - motorchik_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - default
+
+  motorchik-elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - motorchik_elasticsearch_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - default
+
+  motorchik-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@motorchik-postgres:5432/vectordb
+      - POSTGRES_HOST=motorchik-postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=vectordb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - ELASTICSEARCH_HOST=motorchik-elasticsearch
+      - ELASTICSEARCH_PORT=9200
+      - OLLAMA_HOST=http://host.docker.internal
+      - OLLAMA_PORT=11434
+      - OLLAMA_MODEL=llama3:8b
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./sqlite:/app/sqlite:ro
+    depends_on:
+      motorchik-postgres:
+        condition: service_healthy
+      motorchik-elasticsearch:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - default
+    entrypoint: ["/app/docker-entrypoint.sh"]
+
+  motorchik-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - motorchik-backend
+    restart: unless-stopped
+    networks:
+      - default
+
+volumes:
+  motorchik_postgres_data:
+  motorchik_elasticsearch_data:
+
+networks:
+  default:
+    name: motorchik-net

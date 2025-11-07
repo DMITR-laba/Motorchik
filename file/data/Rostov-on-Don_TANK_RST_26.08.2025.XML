@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="TANK_RST">
+
+	<CarOrder Title="Заказ на автомобиль" value="20761" DocNum="020643">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="79215" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_1_79215.png</pic>
+				<pic ID="79216" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_2_79216.png</pic>
+				<pic ID="79217" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_3_79217.png</pic>
+				<pic ID="79218" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_4_79218.png</pic>
+				<pic ID="79219" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_5_79219.png</pic>
+				<pic ID="79220" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_6_79220.png</pic>
+				<pic ID="79221" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_7_79221.png</pic>
+				<pic ID="79222" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_8_79222.png</pic>
+				<pic ID="79223" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_9_79223.png</pic>
+				<pic ID="79224" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_10_79224.png</pic>
+				<pic ID="79225" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_11_79225.png</pic>
+				<pic ID="79226" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_12_79226.png</pic>
+				<pic ID="79227" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_13_79227.png</pic>
+				<pic ID="79228" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_14_79228.png</pic>
+				<pic ID="79229" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_15_79229.png</pic>
+				<pic ID="79230" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_16_79230.png</pic>
+				<pic ID="79231" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_17_79231.png</pic>
+				<pic ID="79232" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_18_79232.png</pic>
+				<pic ID="79233" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_19_79233.png</pic>
+				<pic ID="79234" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_20_79234.png</pic>
+				<pic ID="79235" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_21_79235.png</pic>
+				<pic ID="79236" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_22_79236.png</pic>
+				<pic ID="79237" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_23_79237.png</pic>
+				<pic ID="79238" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_24_79238.png</pic>
+				<pic ID="79239" type="99" seqno="25">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_25_79239.png</pic>
+				<pic ID="79240" type="99" seqno="26">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_26_79240.png</pic>
+				<pic ID="79241" type="99" seqno="27">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_27_79241.png</pic>
+				<pic ID="79242" type="99" seqno="28">http://aaa-motors.ru/IMG/AUDI_RST/020643/99_28_79242.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="824-55190509">300</Model>
+		<CodeCompl Title="Код комплектации">26282165125336426408</CodeCompl>
+		<VIN Title="VIN">LGWFF7A5XRJ663070</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Черный Богдо металлик</Color>
+		<Price Title="Цена">4649000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">220.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1967</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,7</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380/1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4760*1930*1930</Dimensions>
+		<Weight Title="Масса">2552</Weight>
+		<CargoVolume Title="Объем багажника">400</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9641</interior-code>
+		<color-code Title="Код цвета кузова">Черный Бог</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20652" DocNum="020534">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="76312" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_1_76312.png</pic>
+				<pic ID="76313" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_2_76313.png</pic>
+				<pic ID="76314" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_3_76314.png</pic>
+				<pic ID="76315" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_4_76315.png</pic>
+				<pic ID="76316" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_5_76316.png</pic>
+				<pic ID="76317" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_6_76317.png</pic>
+				<pic ID="76318" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_7_76318.png</pic>
+				<pic ID="76319" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_8_76319.png</pic>
+				<pic ID="76320" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_9_76320.png</pic>
+				<pic ID="76321" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_10_76321.png</pic>
+				<pic ID="76322" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_11_76322.png</pic>
+				<pic ID="76323" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_12_76323.png</pic>
+				<pic ID="76324" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_13_76324.png</pic>
+				<pic ID="76325" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_14_76325.png</pic>
+				<pic ID="76326" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_15_76326.png</pic>
+				<pic ID="76327" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_16_76327.png</pic>
+				<pic ID="76328" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_17_76328.png</pic>
+				<pic ID="76329" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_18_76329.png</pic>
+				<pic ID="76330" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_19_76330.png</pic>
+				<pic ID="76331" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_20_76331.png</pic>
+				<pic ID="76332" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_21_76332.png</pic>
+				<pic ID="76333" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_22_76333.png</pic>
+				<pic ID="76334" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_23_76334.png</pic>
+				<pic ID="76335" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_RST/020534/99_24_76335.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="824-55190509">300</Model>
+		<CodeCompl Title="Код комплектации">26282165125336424941</CodeCompl>
+		<VIN Title="VIN">LGWFF7A51RJ658730</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Черный Богдо металлик</Color>
+		<Price Title="Цена">4899000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">220.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1967</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,7</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380/1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4760*1930*1930</Dimensions>
+		<Weight Title="Масса">2552</Weight>
+		<CargoVolume Title="Объем багажника">400</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9641</interior-code>
+		<color-code Title="Код цвета кузова">Черный Бог</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20649" DocNum="020531">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="75992" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_1_75992.png</pic>
+				<pic ID="75993" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_2_75993.png</pic>
+				<pic ID="75994" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_3_75994.png</pic>
+				<pic ID="75995" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_4_75995.png</pic>
+				<pic ID="75996" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_5_75996.png</pic>
+				<pic ID="75997" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_6_75997.png</pic>
+				<pic ID="75998" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_7_75998.png</pic>
+				<pic ID="75999" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_8_75999.png</pic>
+				<pic ID="76000" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_9_76000.png</pic>
+				<pic ID="76001" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_10_76001.png</pic>
+				<pic ID="76002" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_11_76002.png</pic>
+				<pic ID="76003" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_12_76003.png</pic>
+				<pic ID="76004" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_13_76004.png</pic>
+				<pic ID="76005" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_14_76005.png</pic>
+				<pic ID="76006" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_15_76006.png</pic>
+				<pic ID="76007" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020531/99_16_76007.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="824-55190509">300</Model>
+		<CodeCompl Title="Код комплектации">26282165125336426409</CodeCompl>
+		<VIN Title="VIN">LGWFF7A5XRJ656412</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Серый Шантар неметаллик</Color>
+		<Price Title="Цена">5099000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">220.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1967</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,7</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380/1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4760*1930*1930</Dimensions>
+		<Weight Title="Масса">2552</Weight>
+		<CargoVolume Title="Объем багажника">400</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9641</interior-code>
+		<color-code Title="Код цвета кузова">Серый Шант</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20808" DocNum="020690">
+		<StockQty Title="Количество в стоке">5</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="80569" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_1_80569.png</pic>
+				<pic ID="80570" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_2_80570.png</pic>
+				<pic ID="80571" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_3_80571.png</pic>
+				<pic ID="80572" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_4_80572.png</pic>
+				<pic ID="80573" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_5_80573.png</pic>
+				<pic ID="80574" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_6_80574.png</pic>
+				<pic ID="80575" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_7_80575.png</pic>
+				<pic ID="80576" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_8_80576.png</pic>
+				<pic ID="80577" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_9_80577.png</pic>
+				<pic ID="80578" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_10_80578.png</pic>
+				<pic ID="80579" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_11_80579.png</pic>
+				<pic ID="80580" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_12_80580.png</pic>
+				<pic ID="80581" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_13_80581.png</pic>
+				<pic ID="80582" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_14_80582.png</pic>
+				<pic ID="80583" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_15_80583.png</pic>
+				<pic ID="80584" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_16_80584.png</pic>
+				<pic ID="80585" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_17_80585.png</pic>
+				<pic ID="80586" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_18_80586.png</pic>
+				<pic ID="80587" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_19_80587.png</pic>
+				<pic ID="80588" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_20_80588.png</pic>
+				<pic ID="80589" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_21_80589.png</pic>
+				<pic ID="80590" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_22_80590.png</pic>
+				<pic ID="80591" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_23_80591.png</pic>
+				<pic ID="80592" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_24_80592.png</pic>
+				<pic ID="80593" type="99" seqno="25">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_25_80593.png</pic>
+				<pic ID="80594" type="99" seqno="26">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_26_80594.png</pic>
+				<pic ID="80595" type="99" seqno="27">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_27_80595.png</pic>
+				<pic ID="80596" type="99" seqno="28">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_28_80596.png</pic>
+				<pic ID="80597" type="99" seqno="29">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_29_80597.png</pic>
+				<pic ID="80598" type="99" seqno="30">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_30_80598.png</pic>
+				<pic ID="80599" type="99" seqno="31">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_31_80599.png</pic>
+				<pic ID="80600" type="99" seqno="32">http://aaa-motors.ru/IMG/AUDI_RST/020690/99_32_80600.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="824-55190509">300</Model>
+		<CodeCompl Title="Код комплектации">26282165125336426409</CodeCompl>
+		<VIN Title="VIN">LGWFF7A52RJ661703</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Черный Богдо металлик</Color>
+		<Price Title="Цена">5099000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">220.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1967</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,7</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380/1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4760*1930*1930</Dimensions>
+		<Weight Title="Масса">2552</Weight>
+		<CargoVolume Title="Объем багажника">400</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9641</interior-code>
+		<color-code Title="Код цвета кузова">Черный Бог</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20851" DocNum="020733">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="824-55190509">300</Model>
+		<CodeCompl Title="Код комплектации">26282165125336426409</CodeCompl>
+		<VIN Title="VIN">LGWFF7A52SJ622857</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Красный Эльтон металлик</Color>
+		<Price Title="Цена">5099000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">220.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1967</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,7</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380/1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4760*1930*1930</Dimensions>
+		<Weight Title="Масса">2552</Weight>
+		<CargoVolume Title="Объем багажника">400</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9641</interior-code>
+		<color-code Title="Код цвета кузова">Красный Эл</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20856" DocNum="020738">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="68730-55190505">400</Model>
+		<CodeCompl Title="Код комплектации">26282332326112028918</CodeCompl>
+		<VIN Title="VIN">LGWFF8A60SM607576</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Зелёный Ольхон</Color>
+		<Price Title="Цена">5899000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">245.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зеленый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380 / 1700–4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4985*1960*1905</Dimensions>
+		<Weight Title="Масса">2910</Weight>
+		<CargoVolume Title="Объем багажника">566</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10741</interior-code>
+		<color-code Title="Код цвета кузова">Зеленый Ол</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="40">Автоматическая система торможения (AEB) с функцией предупреждения о возможном столкновении при движе</Option>
+				<Option Code="41">Адаптивный круиз-контроль (ACC) с функцией движения на малых скоростях</Option>
+				<Option Code="47">Задние и передние датчики парковки</Option>
+				<Option Code="43">Интеллектуальный круиз-ассистент (ICA)</Option>
+				<Option Code="46">Камера кругового обзора с функцией «прозрачного» капота</Option>
+				<Option Code="50">Преднатяжители ремней безопасности переднего и заднего ряда сидений</Option>
+				<Option Code="52">Предупреждение для безопасного открытия двери (DOW)</Option>
+				<Option Code="56">Предупреждение о наезде сзади (RCW)</Option>
+				<Option Code="48">Система контроля усталости водителя</Option>
+				<Option Code="51">Система крепления детских кресел ISOFIX</Option>
+				<Option Code="53">Система помощи при выезде с парковки задним ходом (RCTA) с функцией торможения (RCTB)</Option>
+				<Option Code="38">Система помощи при экстренном торможении автомобиля (BAS)</Option>
+				<Option Code="44">Система предупреждения о выходе из полосы движения с функциями возврата в полосу и удержания в центр</Option>
+				<Option Code="42">Система распознавания дорожных знаков (TSR)</Option>
+				<Option Code="54">Система экстренного удержания в полосе (ELK)</Option>
+				<Option Code="49">Фронтальные, передние боковые подушки безопасности, шторки безопасности</Option>
+				<Option Code="55">Функция «умного уклонения» (Smart dodge)</Option>
+				<Option Code="39">Функция автоматического торможения на малой скорости</Option>
+				<Option Code="45">Функция предотвращения столкновений при проезде перекрестков (AEB Crossroad)</Option>
+				<Option Code="37">Электронная система стабилизации с расширенными возможностями (ESP+TCS+RMI)</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="64">Автоматическое управление дальним светом</Option>
+				<Option Code="67">Датчик света и дождя</Option>
+				<Option Code="62">Зеркала заднего вида с электроуправлением, функцией автоматического наклона при включении задней пер</Option>
+				<Option Code="58">Климат-контроль, трехзонный</Option>
+				<Option Code="61">Омыватель камеры заднего вида</Option>
+				<Option Code="81">Панорамная крышка с люком</Option>
+				<Option Code="65">Передние противотуманные фары и задние противотуманные фонари</Option>
+				<Option Code="63">Светодиодные фары ближнего и дальнего света</Option>
+				<Option Code="83">Система активного шумоподавления</Option>
+				<Option Code="57">Система бесключевого доступа и запуск автомобиля кнопкой</Option>
+				<Option Code="69">Система контроля качества воздуха в салоне с фильтром твердых частиц по классу N95</Option>
+				<Option Code="68">Тонировка стекол</Option>
+				<Option Code="82">Фары с функцией приветствия</Option>
+				<Option Code="66">Функция подсветки поворота</Option>
+				<Option Code="60">Шумоизоляционное остекление спереди и сзади</Option>
+				<Option Code="59">Электрообогрев лобового стекла и форсунок омывателя</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="4" value="Салон">
+				<Option Code="73">Выдвижные шторки на стеклах дверей для пассажиров заднего ряда</Option>
+				<Option Code="20">Доводчик двери багажника</Option>
+				<Option Code="18">Контурная подсветка интерьера</Option>
+				<Option Code="27">Механическая регулировка угла наклона спинки сидений второго ряда</Option>
+				<Option Code="15">Мультифункциональное рулевое колесо с функцией подогрева</Option>
+				<Option Code="79">Отделка сидений кожей NAPPA</Option>
+				<Option Code="23">Передние сиденья с регулировкой подголовника в 4 направлениях</Option>
+				<Option Code="16">Подрулевые лепестки переключения передач</Option>
+				<Option Code="19">Розетка 220 В</Option>
+				<Option Code="76">Сиденье водителя с памятью положений и функцией помощи при посадке Welcome</Option>
+				<Option Code="75">Сиденье водителя с электрорегулировкой в 8 направлениях</Option>
+				<Option Code="21">Сиденье водителя с электрорегулировкой поясничной поддержки</Option>
+				<Option Code="28">Сиденье переднего пассажира с электрорегулировкой в 4 направлениях</Option>
+				<Option Code="26">Складываемый второй ряд сидений в соотношении 60:40</Option>
+				<Option Code="22">Функция вентиляции сидений переднего ряда</Option>
+				<Option Code="77">Функция массажа сиденья водителя</Option>
+				<Option Code="24">Функция подогрева сидений переднего и заднего ряда</Option>
+				<Option Code="72">Функция проекции данных на лобовое стекло</Option>
+				<Option Code="25">Центральный подлокотник сидений второго ряда с подстаканниками</Option>
+				<Option Code="17">Цифровая приборная панель 12,3”</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="34">2 беспроводных зарядных устройства для пассажиров переднего ряда</Option>
+				<Option Code="33">Акустическая система (9 динамиков и 1 сабвуфер)</Option>
+				<Option Code="84">Акустическая система премиумкласса (9 динамиков и 1 сабвуфер)</Option>
+				<Option Code="30">Аудиосистема с радио AM/FM и Bluetooth</Option>
+				<Option Code="31">Беспроводные протоколы подключения Apple Carplay и Android Auto</Option>
+				<Option Code="29">Мультимедийная система с 16,2” цветным сенсорным дисплеем</Option>
+				<Option Code="36">Разъем для подключения видеорегистратора</Option>
+				<Option Code="35">Разъемы USB спереди и сзади</Option>
+				<Option Code="32">Телематический сервис TANK Connection</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="13">Защита двигателя и коробки передач снизу</Option>
+				<Option Code="9">Легкосплавные колесные диски 18”</Option>
+				<Option Code="12">Подготовка под установку ТСУ</Option>
+				<Option Code="10">Распашная дверь багажника</Option>
+				<Option Code="11">Рейлинги на крыше</Option>
+				<Option Code="14">Фиксированные боковые подножки</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="3">Блокировка заднего межколесного дифференциала</Option>
+				<Option Code="71">Блокировка переднего межколесного дифференциала</Option>
+				<Option Code="4">Интеллектуальная система «Старт/Стоп»</Option>
+				<Option Code="1">Рулевая колонка, регулируемая по высоте и вылету</Option>
+				<Option Code="70">Система автоматической парковки</Option>
+				<Option Code="6">Система выбора режимов движения с режимом «Эксперт»</Option>
+				<Option Code="8">Система помощи при повороте на бездорожье (Tank turn)</Option>
+				<Option Code="5">Система помощи при спуске и трогании на подъеме</Option>
+				<Option Code="7">Функция поддержания малой скорости на бездорожье (Creep mode)</Option>
+				<Option Code="2">Электроусилитель рулевого управления с переменным усилием и возможностью выбора режима</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20807" DocNum="020689">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="68730-55190505">400</Model>
+		<CodeCompl Title="Код комплектации">26282332326112028918</CodeCompl>
+		<VIN Title="VIN">LGWFF8A60RM623478</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Черный Богдо металлик</Color>
+		<Price Title="Цена">5944000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">245.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380 / 1700–4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4985*1960*1905</Dimensions>
+		<Weight Title="Масса">2910</Weight>
+		<CargoVolume Title="Объем багажника">566</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10741</interior-code>
+		<color-code Title="Код цвета кузова">Черный Бог</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="40">Автоматическая система торможения (AEB) с функцией предупреждения о возможном столкновении при движе</Option>
+				<Option Code="41">Адаптивный круиз-контроль (ACC) с функцией движения на малых скоростях</Option>
+				<Option Code="47">Задние и передние датчики парковки</Option>
+				<Option Code="43">Интеллектуальный круиз-ассистент (ICA)</Option>
+				<Option Code="46">Камера кругового обзора с функцией «прозрачного» капота</Option>
+				<Option Code="50">Преднатяжители ремней безопасности переднего и заднего ряда сидений</Option>
+				<Option Code="52">Предупреждение для безопасного открытия двери (DOW)</Option>
+				<Option Code="56">Предупреждение о наезде сзади (RCW)</Option>
+				<Option Code="48">Система контроля усталости водителя</Option>
+				<Option Code="51">Система крепления детских кресел ISOFIX</Option>
+				<Option Code="53">Система помощи при выезде с парковки задним ходом (RCTA) с функцией торможения (RCTB)</Option>
+				<Option Code="38">Система помощи при экстренном торможении автомобиля (BAS)</Option>
+				<Option Code="44">Система предупреждения о выходе из полосы движения с функциями возврата в полосу и удержания в центр</Option>
+				<Option Code="42">Система распознавания дорожных знаков (TSR)</Option>
+				<Option Code="54">Система экстренного удержания в полосе (ELK)</Option>
+				<Option Code="49">Фронтальные, передние боковые подушки безопасности, шторки безопасности</Option>
+				<Option Code="55">Функция «умного уклонения» (Smart dodge)</Option>
+				<Option Code="39">Функция автоматического торможения на малой скорости</Option>
+				<Option Code="45">Функция предотвращения столкновений при проезде перекрестков (AEB Crossroad)</Option>
+				<Option Code="37">Электронная система стабилизации с расширенными возможностями (ESP+TCS+RMI)</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="64">Автоматическое управление дальним светом</Option>
+				<Option Code="67">Датчик света и дождя</Option>
+				<Option Code="62">Зеркала заднего вида с электроуправлением, функцией автоматического наклона при включении задней пер</Option>
+				<Option Code="58">Климат-контроль, трехзонный</Option>
+				<Option Code="61">Омыватель камеры заднего вида</Option>
+				<Option Code="81">Панорамная крышка с люком</Option>
+				<Option Code="65">Передние противотуманные фары и задние противотуманные фонари</Option>
+				<Option Code="63">Светодиодные фары ближнего и дальнего света</Option>
+				<Option Code="83">Система активного шумоподавления</Option>
+				<Option Code="57">Система бесключевого доступа и запуск автомобиля кнопкой</Option>
+				<Option Code="69">Система контроля качества воздуха в салоне с фильтром твердых частиц по классу N95</Option>
+				<Option Code="68">Тонировка стекол</Option>
+				<Option Code="82">Фары с функцией приветствия</Option>
+				<Option Code="66">Функция подсветки поворота</Option>
+				<Option Code="60">Шумоизоляционное остекление спереди и сзади</Option>
+				<Option Code="59">Электрообогрев лобового стекла и форсунок омывателя</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="4" value="Салон">
+				<Option Code="73">Выдвижные шторки на стеклах дверей для пассажиров заднего ряда</Option>
+				<Option Code="20">Доводчик двери багажника</Option>
+				<Option Code="18">Контурная подсветка интерьера</Option>
+				<Option Code="27">Механическая регулировка угла наклона спинки сидений второго ряда</Option>
+				<Option Code="15">Мультифункциональное рулевое колесо с функцией подогрева</Option>
+				<Option Code="79">Отделка сидений кожей NAPPA</Option>
+				<Option Code="23">Передние сиденья с регулировкой подголовника в 4 направлениях</Option>
+				<Option Code="16">Подрулевые лепестки переключения передач</Option>
+				<Option Code="19">Розетка 220 В</Option>
+				<Option Code="76">Сиденье водителя с памятью положений и функцией помощи при посадке Welcome</Option>
+				<Option Code="75">Сиденье водителя с электрорегулировкой в 8 направлениях</Option>
+				<Option Code="21">Сиденье водителя с электрорегулировкой поясничной поддержки</Option>
+				<Option Code="28">Сиденье переднего пассажира с электрорегулировкой в 4 направлениях</Option>
+				<Option Code="26">Складываемый второй ряд сидений в соотношении 60:40</Option>
+				<Option Code="22">Функция вентиляции сидений переднего ряда</Option>
+				<Option Code="77">Функция массажа сиденья водителя</Option>
+				<Option Code="24">Функция подогрева сидений переднего и заднего ряда</Option>
+				<Option Code="72">Функция проекции данных на лобовое стекло</Option>
+				<Option Code="25">Центральный подлокотник сидений второго ряда с подстаканниками</Option>
+				<Option Code="17">Цифровая приборная панель 12,3”</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="34">2 беспроводных зарядных устройства для пассажиров переднего ряда</Option>
+				<Option Code="33">Акустическая система (9 динамиков и 1 сабвуфер)</Option>
+				<Option Code="84">Акустическая система премиумкласса (9 динамиков и 1 сабвуфер)</Option>
+				<Option Code="30">Аудиосистема с радио AM/FM и Bluetooth</Option>
+				<Option Code="31">Беспроводные протоколы подключения Apple Carplay и Android Auto</Option>
+				<Option Code="29">Мультимедийная система с 16,2” цветным сенсорным дисплеем</Option>
+				<Option Code="36">Разъем для подключения видеорегистратора</Option>
+				<Option Code="35">Разъемы USB спереди и сзади</Option>
+				<Option Code="32">Телематический сервис TANK Connection</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="13">Защита двигателя и коробки передач снизу</Option>
+				<Option Code="9">Легкосплавные колесные диски 18”</Option>
+				<Option Code="12">Подготовка под установку ТСУ</Option>
+				<Option Code="10">Распашная дверь багажника</Option>
+				<Option Code="11">Рейлинги на крыше</Option>
+				<Option Code="14">Фиксированные боковые подножки</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="3">Блокировка заднего межколесного дифференциала</Option>
+				<Option Code="71">Блокировка переднего межколесного дифференциала</Option>
+				<Option Code="4">Интеллектуальная система «Старт/Стоп»</Option>
+				<Option Code="1">Рулевая колонка, регулируемая по высоте и вылету</Option>
+				<Option Code="70">Система автоматической парковки</Option>
+				<Option Code="6">Система выбора режимов движения с режимом «Эксперт»</Option>
+				<Option Code="8">Система помощи при повороте на бездорожье (Tank turn)</Option>
+				<Option Code="5">Система помощи при спуске и трогании на подъеме</Option>
+				<Option Code="7">Функция поддержания малой скорости на бездорожье (Creep mode)</Option>
+				<Option Code="2">Электроусилитель рулевого управления с переменным усилием и возможностью выбора режима</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20288" DocNum="020170">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="104--446618206">WEY</Mark>
+		<Model Title="Модель" Code="915-55190501">05</Model>
+		<CodeCompl Title="Код комплектации">27072295325567327014</CodeCompl>
+		<VIN Title="VIN">LGWFFVA71RH940217</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Океанический синий</Color>
+		<Price Title="Цена">6124000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">гибрид</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">421.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">320 (1500–3200)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">5.2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">220</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4870*1960*1690</Dimensions>
+		<Weight Title="Масса">2675–2795</Weight>
+		<CargoVolume Title="Объем багажника">371</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Океаническ</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">300000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20773" DocNum="020655">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="104--446618206">WEY</Mark>
+		<Model Title="Модель" Code="958-55190495">07</Model>
+		<CodeCompl Title="Код комплектации">27072331325739728826</CodeCompl>
+		<VIN Title="VIN">LGWFGVA79RH967968</VIN>
+		<InteriorColor Title="Цвет салона">Коричнево-чёрный</InteriorColor>
+		<Color Title="Цвет">Динамичный черный</Color>
+		<Price Title="Цена">7003971.60</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">гибрид</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">517.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">6.3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">930</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">4.9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5156*1980*1805</Dimensions>
+		<Weight Title="Масса">3137</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10556</interior-code>
+		<color-code Title="Код цвета кузова">Динамичный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">300000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20855" DocNum="020737">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="825-55190483">500</Model>
+		<CodeCompl Title="Код комплектации">26282165425578935275</CodeCompl>
+		<VIN Title="VIN">LGWFGUA60SM610936</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Черный Богдо металлик</Color>
+		<Price Title="Цена">7299000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива"></FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">0.00</Power>
+		<BodyType Title="Тип кузова"></BodyType>
+		<GearBoxType Title="Тип коробки"></GearBoxType>
+		<DrivingGearType Title="Привод"></DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">0</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9760</interior-code>
+		<color-code Title="Код цвета кузова">Черный Бог</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">300000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20819" DocNum="020701">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="825-55190483">500</Model>
+		<CodeCompl Title="Код комплектации">26282165425386025426</CodeCompl>
+		<VIN Title="VIN">LGWFF9A63RM621410</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Снежная Иремель</Color>
+		<Price Title="Цена">7649000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">299.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">2993</EngineVol>
+		<FuelConsumption Title="Расход топлива">11,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">500/1500-4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4886*1934*1905</Dimensions>
+		<Weight Title="Масса">3025</Weight>
+		<CargoVolume Title="Объем багажника">795</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9760</interior-code>
+		<color-code Title="Код цвета кузова">Снежная Ир</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">300000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20858" DocNum="020740">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="825-55190483">500</Model>
+		<CodeCompl Title="Код комплектации">26282165425386025426</CodeCompl>
+		<VIN Title="VIN">LGWFF9A61SM607849</VIN>
+		<InteriorColor Title="Цвет салона">Коричневый</InteriorColor>
+		<Color Title="Цвет">Черный Богдо металлик</Color>
+		<Price Title="Цена">7849000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">299.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">2993</EngineVol>
+		<FuelConsumption Title="Расход топлива">11,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">500/1500-4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4886*1934*1905</Dimensions>
+		<Weight Title="Масса">3025</Weight>
+		<CargoVolume Title="Объем багажника">795</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9762</interior-code>
+		<color-code Title="Код цвета кузова">Черный Бог</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">300000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20772" DocNum="020654">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="825-55190483">500</Model>
+		<CodeCompl Title="Код комплектации">26282165425386025426</CodeCompl>
+		<VIN Title="VIN">LGWFF9A62RM621401</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Снежная Иремель</Color>
+		<Price Title="Цена">7892346.72</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">299.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">2993</EngineVol>
+		<FuelConsumption Title="Расход топлива">11,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">500/1500-4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4886*1934*1905</Dimensions>
+		<Weight Title="Масса">3025</Weight>
+		<CargoVolume Title="Объем багажника">795</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9760</interior-code>
+		<color-code Title="Код цвета кузова">Снежная Ир</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">300000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20847" DocNum="020729">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="104--446618206">WEY</Mark>
+		<Model Title="Модель" Code="976-55190511">80</Model>
+		<CodeCompl Title="Код комплектации">27072337425884531362</CodeCompl>
+		<VIN Title="VIN">LGWFGVA92SN600354</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Динамичный черный</Color>
+		<Price Title="Цена">8299000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">487.00</Power>
+		<BodyType Title="Тип кузова">Минивэн</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">6.7</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">232 / 1500—4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">5.9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">170</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5405*1960*1890</Dimensions>
+		<Weight Title="Масса">2850</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10646</interior-code>
+		<color-code Title="Код цвета кузова">Динамичный</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="52">(ESP + TCS + RMI)</Option>
+				<Option Code="62">Автоматическое экстренное торможение (AEB)</Option>
+				<Option Code="57">Адаптивный круиз-контроль (ACC)</Option>
+				<Option Code="60">Ассистент движения в пробках (TJA)</Option>
+				<Option Code="43">Боковые подушки безопасности</Option>
+				<Option Code="44">Боковые шторки безопасности</Option>
+				<Option Code="53">Вторичное смягчение последствий столкновения (SCM)</Option>
+				<Option Code="58">Интеллектуальный круиз-ассистент (ICA)</Option>
+				<Option Code="72">Камера кругового обзора 360° с функцией прозрачного капота</Option>
+				<Option Code="56">Ограничитель скорости</Option>
+				<Option Code="47">Предупреждение о непристегнутом ремне безопасности 1-го и 2-го ряда сидений</Option>
+				<Option Code="71">Предупреждение об опасности при открытии дверей (DOW)</Option>
+				<Option Code="45">Ремни безопасности передних сидений: преднатяжитель + ограничитель</Option>
+				<Option Code="63">Система автоматического торможения при обнаружении препятствий на парковке (MEB)</Option>
+				<Option Code="73">Система выбора режима движения: Normal, Eco, Sport, Snow</Option>
+				<Option Code="50">Система контроля давления в шинах (TPMS)</Option>
+				<Option Code="55">Система контроля движения под уклон (HDC)</Option>
+				<Option Code="74">Система контроля усталости водителя</Option>
+				<Option Code="48">Система крепления детских кресел ISOFIX 2-го ряда сидений</Option>
+				<Option Code="66">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="69">Система помощи при выезде с парковки задним ходом (RCTA) с функцией торможения (RCTB)</Option>
+				<Option Code="65">Система помощи при смене полосы движения (LCA) включая систему экстренного удержания в полосе (ELK)</Option>
+				<Option Code="54">Система помощи при трогании на подъеме (HHC)</Option>
+				<Option Code="67">Система предупреждения о возможном столкновении при движении вперед (FCW)</Option>
+				<Option Code="64">Система предупреждения о выходе из полосы движения с функциями возврата в полосу и удержания в центр</Option>
+				<Option Code="68">Система предупреждения о наезде сзади (RCW)</Option>
+				<Option Code="70">Система предупреждения о приближении объекта спереди в поперечном направлении (FCTA) и помощи при вы</Option>
+				<Option Code="61">Система распознавания дорожных знаков (TSR)</Option>
+				<Option Code="49">Система экстренного реагирования при авариях «ЭРА-ГЛОНАСС»</Option>
+				<Option Code="46">усилия натяжения</Option>
+				<Option Code="42">Фронтальные подушки безопасности</Option>
+				<Option Code="59">Функция «умного уклонения» (Smart dodge)</Option>
+				<Option Code="51">Электронная система стабилизации с расширенными возможностями</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="11">Датчики дождя и света</Option>
+				<Option Code="15">Индикация уровня омывающей жидкости</Option>
+				<Option Code="13">Мультифункциональное рулевое колесо с функцией подогрева и регулировкой в 4 направлениях</Option>
+				<Option Code="20">Система UV-очистки салона</Option>
+				<Option Code="21">Система бесключевого доступа</Option>
+				<Option Code="19">Система фильтрации воздуха</Option>
+				<Option Code="16">Солнцезащитные козырьки с зеркалами и подсветкой</Option>
+				<Option Code="18">Трехзонный климат-контроль</Option>
+				<Option Code="17">Шумоизоляционное остекление (лобовое стекло, 1-й и 2-й ряд)</Option>
+				<Option Code="12">Электронный стояночный тормоз (EPB) с функцией удержания автомобиля на месте AutoHold</Option>
+				<Option Code="14">Электрообогрев лобового стекла и форсунок омывателя</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="4" value="Салон">
+				<Option Code="28">Подстаканники 2-го ряда сидений</Option>
+				<Option Code="27">Регулировка подголовников сиденья 2-го ряда в 4 положениях</Option>
+				<Option Code="26">Функция вентиляции и подогрева 2-го ряда сидений</Option>
+				<Option Code="24">Функция вентиляции и подогрева передних сидений</Option>
+				<Option Code="25">Электрорегулировка переднего пассажирского сиденья со 2-го ряда</Option>
+				<Option Code="22">Электрорегулировка сиденья водителя в 8 направлениях с функцией памяти и режимом комфортной посадки</Option>
+				<Option Code="23">Электрорегулировка сиденья пассажира в 4 направлениях</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="41">Apple CarPlay© и Android Auto©</Option>
+				<Option Code="31">Аудиосистема с радио AM/FM и Bluetooth©</Option>
+				<Option Code="32">Беспроводная зарядка на центральной консоли (50 Вт)</Option>
+				<Option Code="30">Мультимедийная система с цветным сенсорным дисплеем 14,6&apos;&apos;</Option>
+				<Option Code="35">Разъем USB для видеорегистратора</Option>
+				<Option Code="33">Разъемы USB типа A (2 шт.) и типа C (1 шт.) на 1-м ряду</Option>
+				<Option Code="34">Разъемы USB типа A (2 шт.) и типа C (2 шт.) на 2-м ряду и 3-м рядах</Option>
+				<Option Code="36">Розетка 12B переднего ряда сидений и багажного отделения</Option>
+				<Option Code="37">Телематические сервисы GWM Connection7</Option>
+				<Option Code="38">Функция внешней зарядки с максимальной мощностью 3,3 кВт</Option>
+				<Option Code="39">Функция заряда аккумуляторной батареи по расписанию</Option>
+				<Option Code="40">Функция поддержания температуры аккумуляторной батареи</Option>
+				<Option Code="29">Цифровая приборная панель 12,3&apos;&apos;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="4">Зеркала заднего вида с памятью положения, автоматическим складыванием, электрорегулировкой, автомати</Option>
+				<Option Code="6">Люк с электроприводом и солнцезащитной шторкой в передней части салона</Option>
+				<Option Code="9">Омыватель камеры заднего вида</Option>
+				<Option Code="1">Светодиодная оптика</Option>
+				<Option Code="10">Светодиодная подсветка порогов</Option>
+				<Option Code="8">Скрытый задний стеклоочиститель</Option>
+				<Option Code="7">Тонировка стекол (2-й, 3-й ряд сидений, заднее стекло)</Option>
+				<Option Code="2">Фары с функцией автоматического переключения дальнего и ближнего света</Option>
+				<Option Code="3">Функция Follow Me Home</Option>
+				<Option Code="5">Электрические сдвижные двери (с защитой от защемления)</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="75">Авиационные сиденья 2-го ряда (электрорегулировка положения сиденья в 4 направлениях, положения подн</Option>
+				<Option Code="81">Беспроводная зарядка в подлокотниках 2-го ряда сидений</Option>
+				<Option Code="82">Бокс с функцией охлаждения/подогрева (объемом 12,5 л)</Option>
+				<Option Code="76">Откидные столики для сидений 2-го ряда</Option>
+				<Option Code="80">Премиальная акустическая система (20 динамиков)</Option>
+				<Option Code="79">Сиденья 3-го ряда с функциями подогрева и вентиляции</Option>
+				<Option Code="77">Третий ряд сидений двухместный с индивидуальными креслами</Option>
+				<Option Code="78">Электрорегулировка сидений 3-го ряда в 6 направлениях</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20770" DocNum="020652">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="824-55190509">300</Model>
+		<CodeCompl Title="Код комплектации">26282165125336426409</CodeCompl>
+		<VIN Title="VIN">LGWFF7A53RJ662360</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Белый Ольхон металлик</Color>
+		<Price Title="Цена">5099000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">220.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1967</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,7</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380/1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4760*1930*1930</Dimensions>
+		<Weight Title="Масса">2552</Weight>
+		<CargoVolume Title="Объем багажника">400</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9641</interior-code>
+		<color-code Title="Код цвета кузова">Белый Ольх</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20833" DocNum="020715">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="91--446618169">Tank</Mark>
+		<Model Title="Модель" Code="824-55190509">300</Model>
+		<CodeCompl Title="Код комплектации">26282165125336426409</CodeCompl>
+		<VIN Title="VIN">LGWFF7A5XSJ622878</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Чарский оранжевый металлик</Color>
+		<Price Title="Цена">5099000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">220.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Оранжевый</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1967</EngineVol>
+		<FuelConsumption Title="Расход топлива">10,7</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380/1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4760*1930*1930</Dimensions>
+		<Weight Title="Масса">2552</Weight>
+		<CargoVolume Title="Объем багажника">400</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9641</interior-code>
+		<color-code Title="Код цвета кузова">Чарский Ор</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="BELGEE_RST">
+
+	<CarOrder Title="Заказ на автомобиль" value="26066" DocNum="025735">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="148603" type="1" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/025735/1_1_148603.png</pic>
+				<pic ID="148604" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/025735/99_6_148604.png</pic>
+				<pic ID="148605" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/025735/99_7_148605.png</pic>
+				<pic ID="148599" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/025735/99_2_148599.png</pic>
+				<pic ID="148600" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/025735/99_3_148600.png</pic>
+				<pic ID="148601" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/025735/99_4_148601.png</pic>
+				<pic ID="148602" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/025735/99_5_148602.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228230</CodeCompl>
+		<VIN Title="VIN">Y4K8622ZXRB937600</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Bright Vermilion Ярко-красный</Color>
+		<Price Title="Цена">2454690.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">719</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26677" DocNum="026343">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154764" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_1_154764.png</pic>
+				<pic ID="154765" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_2_154765.png</pic>
+				<pic ID="154766" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_3_154766.png</pic>
+				<pic ID="154767" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_4_154767.png</pic>
+				<pic ID="154768" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_5_154768.png</pic>
+				<pic ID="154769" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_6_154769.png</pic>
+				<pic ID="154770" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_7_154770.png</pic>
+				<pic ID="154771" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_8_154771.png</pic>
+				<pic ID="154772" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_9_154772.png</pic>
+				<pic ID="154773" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_10_154773.png</pic>
+				<pic ID="154774" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_11_154774.png</pic>
+				<pic ID="154775" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026343/99_12_154775.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228231</CodeCompl>
+		<VIN Title="VIN">Y4K8622ZXSB931446</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый</Color>
+		<Price Title="Цена">2544990.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255/1500-4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00078</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26706" DocNum="026372">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228230</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z0SB908757</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый металлик (Satin Silver)</Color>
+		<Price Title="Цена">2590190.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00057</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26681" DocNum="026347">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154717" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_1_154717.png</pic>
+				<pic ID="154718" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_2_154718.png</pic>
+				<pic ID="154719" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_3_154719.png</pic>
+				<pic ID="154720" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_4_154720.png</pic>
+				<pic ID="154721" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_5_154721.png</pic>
+				<pic ID="154722" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_6_154722.png</pic>
+				<pic ID="154723" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_7_154723.png</pic>
+				<pic ID="154724" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_8_154724.png</pic>
+				<pic ID="154725" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_9_154725.png</pic>
+				<pic ID="154726" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_10_154726.png</pic>
+				<pic ID="154727" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_11_154727.png</pic>
+				<pic ID="154728" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_12_154728.png</pic>
+				<pic ID="154729" type="99" seqno="13">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_13_154729.png</pic>
+				<pic ID="154730" type="99" seqno="14">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_14_154730.png</pic>
+				<pic ID="154731" type="99" seqno="15">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_15_154731.png</pic>
+				<pic ID="154732" type="99" seqno="16">http://aaa-motors.ru/IMG/RENAULT_RST/026347/99_16_154732.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228230</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z8SB906075</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Чёрный металлик (Ink Black)</Color>
+		<Price Title="Цена">2655190.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">00000002</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26696" DocNum="026362">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228229</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z7SB903104</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Ink Black Черный</Color>
+		<Price Title="Цена">2690190.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26705" DocNum="026371">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228229</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z3SB903004</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (Crystal White)</Color>
+		<Price Title="Цена">2690190.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">00000005</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26699" DocNum="026365">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228229</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z9SB925783</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Ярко-алый</Color>
+		<Price Title="Цена">2690190.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">VS</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26686" DocNum="026352">
+		<StockQty Title="Количество в стоке">4</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154153" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_1_154153.png</pic>
+				<pic ID="154154" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_2_154154.png</pic>
+				<pic ID="154155" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_3_154155.png</pic>
+				<pic ID="154156" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_4_154156.png</pic>
+				<pic ID="154157" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_5_154157.png</pic>
+				<pic ID="154158" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_6_154158.png</pic>
+				<pic ID="154159" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_7_154159.png</pic>
+				<pic ID="154160" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_8_154160.png</pic>
+				<pic ID="154161" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_9_154161.png</pic>
+				<pic ID="154162" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_10_154162.png</pic>
+				<pic ID="154163" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026352/99_11_154163.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228230</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z5SB902095</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (Crystal White)</Color>
+		<Price Title="Цена">2783390.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">00000005</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26574" DocNum="026240">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="153955" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_3_153955.png</pic>
+				<pic ID="153957" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_5_153957.png</pic>
+				<pic ID="153959" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_6_153959.png</pic>
+				<pic ID="153960" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_7_153960.png</pic>
+				<pic ID="153961" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_9_153961.png</pic>
+				<pic ID="153963" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_10_153963.png</pic>
+				<pic ID="153965" type="99" seqno="13">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_13_153965.png</pic>
+				<pic ID="153967" type="99" seqno="14">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_14_153967.png</pic>
+				<pic ID="153968" type="99" seqno="15">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_15_153968.png</pic>
+				<pic ID="153970" type="99" seqno="17">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_17_153970.png</pic>
+				<pic ID="153971" type="99" seqno="19">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_19_153971.png</pic>
+				<pic ID="153973" type="99" seqno="21">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_21_153973.png</pic>
+				<pic ID="153975" type="99" seqno="22">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_22_153975.png</pic>
+				<pic ID="153976" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026240/99_1_153976.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228230</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z5SB906048</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Чёрный металлик (Ink Black)</Color>
+		<Price Title="Цена">2827690.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">00000002</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26701" DocNum="026367">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="714-954159053">X70</Model>
+		<CodeCompl Title="Код комплектации">27102325125668528320</CodeCompl>
+		<VIN Title="VIN">Y4K8722Z2SB316290</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый металлик (Pearl Silver)</Color>
+		<Price Title="Цена">2862990.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">1685</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4544*1831*1713</Dimensions>
+		<Weight Title="Масса">378</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00022</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26641" DocNum="026307">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154291" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_1_154291.png</pic>
+				<pic ID="154292" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_2_154292.png</pic>
+				<pic ID="154293" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_3_154293.png</pic>
+				<pic ID="154294" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_4_154294.png</pic>
+				<pic ID="154295" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_5_154295.png</pic>
+				<pic ID="154296" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_6_154296.png</pic>
+				<pic ID="154297" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_7_154297.png</pic>
+				<pic ID="154298" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_8_154298.png</pic>
+				<pic ID="154299" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026307/99_9_154299.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228229</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z0SB902537</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (Crystal White)</Color>
+		<Price Title="Цена">2912690.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">00000005</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26643" DocNum="026309">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154339" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_2_154339.png</pic>
+				<pic ID="154340" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_1_154340.png</pic>
+				<pic ID="154341" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_3_154341.png</pic>
+				<pic ID="154342" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_4_154342.png</pic>
+				<pic ID="154343" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_5_154343.png</pic>
+				<pic ID="154344" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_6_154344.png</pic>
+				<pic ID="154345" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_7_154345.png</pic>
+				<pic ID="154346" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_8_154346.png</pic>
+				<pic ID="154347" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_9_154347.png</pic>
+				<pic ID="154348" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_10_154348.png</pic>
+				<pic ID="154349" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_11_154349.png</pic>
+				<pic ID="154350" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026309/99_12_154350.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228229</CodeCompl>
+		<VIN Title="VIN">Y4K8622ZXSB919488</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый металлик (Satin Silver)</Color>
+		<Price Title="Цена">2912690.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00057</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26637" DocNum="026303">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154252" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_10_154252.png</pic>
+				<pic ID="154253" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_11_154253.png</pic>
+				<pic ID="154254" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_9_154254.png</pic>
+				<pic ID="154255" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_8_154255.png</pic>
+				<pic ID="154257" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_7_154257.png</pic>
+				<pic ID="154258" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_12_154258.png</pic>
+				<pic ID="154259" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_4_154259.png</pic>
+				<pic ID="154260" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_5_154260.png</pic>
+				<pic ID="154261" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_1_154261.png</pic>
+				<pic ID="154262" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_2_154262.png</pic>
+				<pic ID="154263" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026303/99_3_154263.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228229</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z1SB925759</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Красный металлик</Color>
+		<Price Title="Цена">2912690.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00031</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26704" DocNum="026370">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228229</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z1SB903003</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (Crystal White)</Color>
+		<Price Title="Цена">2946190.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">00000005</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26638" DocNum="026304">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154264" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_1_154264.png</pic>
+				<pic ID="154265" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_2_154265.png</pic>
+				<pic ID="154266" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_3_154266.png</pic>
+				<pic ID="154267" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_4_154267.png</pic>
+				<pic ID="154268" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_5_154268.png</pic>
+				<pic ID="154269" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_6_154269.png</pic>
+				<pic ID="154270" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_7_154270.png</pic>
+				<pic ID="154271" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_8_154271.png</pic>
+				<pic ID="154272" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026304/99_9_154272.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228229</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z5SB902534</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (Crystal White)</Color>
+		<Price Title="Цена">2977090.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">00000005</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26684" DocNum="026350">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154133" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_1_154133.png</pic>
+				<pic ID="154134" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_2_154134.png</pic>
+				<pic ID="154135" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_3_154135.png</pic>
+				<pic ID="154136" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_4_154136.png</pic>
+				<pic ID="154137" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_5_154137.png</pic>
+				<pic ID="154138" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_6_154138.png</pic>
+				<pic ID="154139" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_7_154139.png</pic>
+				<pic ID="154140" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_8_154140.png</pic>
+				<pic ID="154141" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_9_154141.png</pic>
+				<pic ID="154142" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026350/99_10_154142.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="707-954159051">X50</Model>
+		<CodeCompl Title="Код комплектации">27102323725655228230</CodeCompl>
+		<VIN Title="VIN">Y4K8622Z8SB917738</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый металлик (Satin Silver)</Color>
+		<Price Title="Цена">2783390.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4330*1800*1609</Dimensions>
+		<Weight Title="Масса">1415</Weight>
+		<CargoVolume Title="Объем багажника">330</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00057</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">250000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26660" DocNum="026326">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154452" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_1_154452.png</pic>
+				<pic ID="154453" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_2_154453.png</pic>
+				<pic ID="154454" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_3_154454.png</pic>
+				<pic ID="154455" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_4_154455.png</pic>
+				<pic ID="154456" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_5_154456.png</pic>
+				<pic ID="154457" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_6_154457.png</pic>
+				<pic ID="154458" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_7_154458.png</pic>
+				<pic ID="154459" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_8_154459.png</pic>
+				<pic ID="154460" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_9_154460.png</pic>
+				<pic ID="154461" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_10_154461.png</pic>
+				<pic ID="154462" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_11_154462.png</pic>
+				<pic ID="154463" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026326/99_12_154463.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="714-954159053">X70</Model>
+		<CodeCompl Title="Код комплектации">27102325125668528319</CodeCompl>
+		<VIN Title="VIN">Y4K8722Z2SB314832</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый металлик</Color>
+		<Price Title="Цена">3033590.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4544*1831*1713</Dimensions>
+		<Weight Title="Масса">1685</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00022</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26682" DocNum="026348">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154832" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_5_154832.png</pic>
+				<pic ID="154833" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_6_154833.png</pic>
+				<pic ID="154834" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_7_154834.png</pic>
+				<pic ID="154835" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_8_154835.png</pic>
+				<pic ID="154836" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_9_154836.png</pic>
+				<pic ID="154837" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_10_154837.png</pic>
+				<pic ID="154838" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_11_154838.png</pic>
+				<pic ID="154839" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_12_154839.png</pic>
+				<pic ID="154828" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_1_154828.png</pic>
+				<pic ID="154829" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_2_154829.png</pic>
+				<pic ID="154830" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_3_154830.png</pic>
+				<pic ID="154831" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026348/99_4_154831.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="714-954159053">X70</Model>
+		<CodeCompl Title="Код комплектации">27102325125668628320</CodeCompl>
+		<VIN Title="VIN">Y4K8722D7SB315575</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый металлик (Pearl Silver)</Color>
+		<Price Title="Цена">3186190.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">177.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4544*1831*1713</Dimensions>
+		<Weight Title="Масса">1780</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00022</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26695" DocNum="026361">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="714-954159053">X70</Model>
+		<CodeCompl Title="Код комплектации">27102325125668628321</CodeCompl>
+		<VIN Title="VIN">Y4K8722D2SB315936</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый</Color>
+		<Price Title="Цена">3237990.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">177.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4544*1831*1713</Dimensions>
+		<Weight Title="Масса">1780</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00043</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26679" DocNum="026345">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="116-925732986">Belgee</Mark>
+		<Model Title="Модель" Code="714-954159053">X70</Model>
+		<CodeCompl Title="Код комплектации">27102325125668628322</CodeCompl>
+		<VIN Title="VIN">Y4K8722D7SB310585</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый металлик (Pearl Silver)</Color>
+		<Price Title="Цена">3506690.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">0</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">177.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1477</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">255 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4544*1831*1713</Dimensions>
+		<Weight Title="Масса">1780</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">vms00022</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">200000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

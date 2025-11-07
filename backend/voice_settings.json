@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "model": "small",
+  "autoDetectLanguage": true,
+  "language": "ru",
+  "silenceThreshold": 500,
+  "minSpeechDuration": 1.0
+}

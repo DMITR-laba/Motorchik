@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="OMODA_VRN">
+
+	<CarOrder Title="Заказ на автомобиль" value="30559" DocNum="030188">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119175" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030188/99_1_119175.png</pic>
+				<pic ID="119176" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030188/99_2_119176.png</pic>
+				<pic ID="119177" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030188/99_3_119177.png</pic>
+				<pic ID="119178" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030188/99_4_119178.png</pic>
+				<pic ID="119179" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030188/99_5_119179.png</pic>
+				<pic ID="119180" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030188/99_6_119180.png</pic>
+				<pic ID="119181" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030188/99_7_119181.png</pic>
+				<pic ID="119182" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030188/99_8_119182.png</pic>
+				<pic ID="119183" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030188/99_9_119183.png</pic>
+				<pic ID="119184" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030188/99_10_119184.png</pic>
+				<pic ID="119185" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030188/99_11_119185.png</pic>
+				<pic ID="119186" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030188/99_12_119186.png</pic>
+				<pic ID="119187" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030188/99_13_119187.png</pic>
+				<pic ID="119188" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030188/99_14_119188.png</pic>
+				<pic ID="119189" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030188/99_15_119189.png</pic>
+				<pic ID="119190" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030188/99_16_119190.png</pic>
+				<pic ID="119191" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030188/99_17_119191.png</pic>
+				<pic ID="119192" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030188/99_18_119192.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="683-1292295973">S5</Model>
+		<CodeCompl Title="Код комплектации">30137</CodeCompl>
+		<VIN Title="VIN">LVVDC21B4RD695535</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">2154400.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">113.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">13,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4644*1814*1493</Dimensions>
+		<Weight Title="Масса">1745</Weight>
+		<CargoVolume Title="Объем багажника">482</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">120000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30575" DocNum="030204">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="641-1292295984">C5</Model>
+		<CodeCompl Title="Код комплектации">301171</CodeCompl>
+		<VIN Title="VIN">LVVDB21B3RDE24780</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">2629900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30576" DocNum="030205">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119987" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030205/99_1_119987.png</pic>
+				<pic ID="119988" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030205/99_2_119988.png</pic>
+				<pic ID="119989" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030205/99_3_119989.png</pic>
+				<pic ID="119990" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030205/99_4_119990.png</pic>
+				<pic ID="119991" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030205/99_5_119991.png</pic>
+				<pic ID="119992" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030205/99_6_119992.png</pic>
+				<pic ID="119993" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030205/99_7_119993.png</pic>
+				<pic ID="119994" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030205/99_8_119994.png</pic>
+				<pic ID="119995" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030205/99_9_119995.png</pic>
+				<pic ID="119996" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030205/99_10_119996.png</pic>
+				<pic ID="119997" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030205/99_11_119997.png</pic>
+				<pic ID="119998" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030205/99_12_119998.png</pic>
+				<pic ID="119999" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030205/99_13_119999.png</pic>
+				<pic ID="120000" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030205/99_14_120000.png</pic>
+				<pic ID="120001" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030205/99_15_120001.png</pic>
+				<pic ID="120002" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030205/99_16_120002.png</pic>
+				<pic ID="120003" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030205/99_17_120003.png</pic>
+				<pic ID="120004" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030205/99_18_120004.png</pic>
+				<pic ID="120005" type="99" seqno="19">http://aaa-motors.ru/IMG/RVR/030205/99_19_120005.png</pic>
+				<pic ID="120006" type="99" seqno="20">http://aaa-motors.ru/IMG/RVR/030205/99_20_120006.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="641-1292295984">C5</Model>
+		<CodeCompl Title="Код комплектации">301171</CodeCompl>
+		<VIN Title="VIN">LVVDB21B3RDE73610</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">2629900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30579" DocNum="030208">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119946" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030208/99_1_119946.png</pic>
+				<pic ID="119947" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030208/99_2_119947.png</pic>
+				<pic ID="119948" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030208/99_3_119948.png</pic>
+				<pic ID="119949" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030208/99_4_119949.png</pic>
+				<pic ID="119950" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030208/99_5_119950.png</pic>
+				<pic ID="119951" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030208/99_6_119951.png</pic>
+				<pic ID="119952" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030208/99_7_119952.png</pic>
+				<pic ID="119953" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030208/99_8_119953.png</pic>
+				<pic ID="119954" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030208/99_9_119954.png</pic>
+				<pic ID="119955" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030208/99_10_119955.png</pic>
+				<pic ID="119956" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030208/99_11_119956.png</pic>
+				<pic ID="119957" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030208/99_12_119957.png</pic>
+				<pic ID="119958" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030208/99_13_119958.png</pic>
+				<pic ID="119959" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030208/99_14_119959.png</pic>
+				<pic ID="119960" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030208/99_15_119960.png</pic>
+				<pic ID="119961" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030208/99_16_119961.png</pic>
+				<pic ID="119962" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030208/99_17_119962.png</pic>
+				<pic ID="119963" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030208/99_18_119963.png</pic>
+				<pic ID="119964" type="99" seqno="19">http://aaa-motors.ru/IMG/RVR/030208/99_19_119964.png</pic>
+				<pic ID="119965" type="99" seqno="20">http://aaa-motors.ru/IMG/RVR/030208/99_20_119965.png</pic>
+				<pic ID="119966" type="99" seqno="21">http://aaa-motors.ru/IMG/RVR/030208/99_21_119966.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="641-1292295984">C5</Model>
+		<CodeCompl Title="Код комплектации">301171</CodeCompl>
+		<VIN Title="VIN">LVVDB21B1RDE74741</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Gray (GV)</Color>
+		<Price Title="Цена">2629900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">169</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30587" DocNum="030216">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119542" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030216/99_1_119542.png</pic>
+				<pic ID="119543" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030216/99_2_119543.png</pic>
+				<pic ID="119544" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030216/99_3_119544.png</pic>
+				<pic ID="119545" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030216/99_4_119545.png</pic>
+				<pic ID="119546" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030216/99_5_119546.png</pic>
+				<pic ID="119547" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030216/99_6_119547.png</pic>
+				<pic ID="119548" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030216/99_7_119548.png</pic>
+				<pic ID="119549" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030216/99_8_119549.png</pic>
+				<pic ID="119550" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030216/99_9_119550.png</pic>
+				<pic ID="119551" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030216/99_10_119551.png</pic>
+				<pic ID="119552" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030216/99_11_119552.png</pic>
+				<pic ID="119553" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030216/99_12_119553.png</pic>
+				<pic ID="119554" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030216/99_13_119554.png</pic>
+				<pic ID="119555" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030216/99_14_119555.png</pic>
+				<pic ID="119556" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030216/99_15_119556.png</pic>
+				<pic ID="119557" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030216/99_16_119557.png</pic>
+				<pic ID="119558" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030216/99_17_119558.png</pic>
+				<pic ID="119559" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030216/99_18_119559.png</pic>
+				<pic ID="119560" type="99" seqno="19">http://aaa-motors.ru/IMG/RVR/030216/99_19_119560.png</pic>
+				<pic ID="119561" type="99" seqno="20">http://aaa-motors.ru/IMG/RVR/030216/99_20_119561.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="641-1292295984">C5</Model>
+		<CodeCompl Title="Код комплектации">301171</CodeCompl>
+		<VIN Title="VIN">LVVDB21BXRDE10875</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver (KX)</Color>
+		<Price Title="Цена">2649900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">179</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30590" DocNum="030219">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119441" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030219/99_1_119441.png</pic>
+				<pic ID="119442" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030219/99_2_119442.png</pic>
+				<pic ID="119443" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030219/99_3_119443.png</pic>
+				<pic ID="119444" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030219/99_4_119444.png</pic>
+				<pic ID="119445" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030219/99_5_119445.png</pic>
+				<pic ID="119446" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030219/99_6_119446.png</pic>
+				<pic ID="119447" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030219/99_7_119447.png</pic>
+				<pic ID="119448" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030219/99_8_119448.png</pic>
+				<pic ID="119449" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030219/99_9_119449.png</pic>
+				<pic ID="119450" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030219/99_10_119450.png</pic>
+				<pic ID="119451" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030219/99_11_119451.png</pic>
+				<pic ID="119452" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030219/99_12_119452.png</pic>
+				<pic ID="119453" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030219/99_13_119453.png</pic>
+				<pic ID="119454" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030219/99_14_119454.png</pic>
+				<pic ID="119455" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030219/99_15_119455.png</pic>
+				<pic ID="119456" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030219/99_16_119456.png</pic>
+				<pic ID="119457" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030219/99_17_119457.png</pic>
+				<pic ID="119458" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030219/99_18_119458.png</pic>
+				<pic ID="119459" type="99" seqno="19">http://aaa-motors.ru/IMG/RVR/030219/99_19_119459.png</pic>
+				<pic ID="119460" type="99" seqno="20">http://aaa-motors.ru/IMG/RVR/030219/99_20_119460.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="641-1292295984">C5</Model>
+		<CodeCompl Title="Код комплектации">301170</CodeCompl>
+		<VIN Title="VIN">LVVDB21B1RDF57263</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (X4)</Color>
+		<Price Title="Цена">2659900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">176</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30588" DocNum="030217">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119562" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030217/99_1_119562.png</pic>
+				<pic ID="119563" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030217/99_2_119563.png</pic>
+				<pic ID="119564" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030217/99_3_119564.png</pic>
+				<pic ID="119565" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030217/99_4_119565.png</pic>
+				<pic ID="119566" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030217/99_5_119566.png</pic>
+				<pic ID="119567" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030217/99_6_119567.png</pic>
+				<pic ID="119568" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030217/99_7_119568.png</pic>
+				<pic ID="119569" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030217/99_8_119569.png</pic>
+				<pic ID="119570" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030217/99_9_119570.png</pic>
+				<pic ID="119571" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030217/99_10_119571.png</pic>
+				<pic ID="119572" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030217/99_11_119572.png</pic>
+				<pic ID="119573" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030217/99_12_119573.png</pic>
+				<pic ID="119574" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030217/99_13_119574.png</pic>
+				<pic ID="119575" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030217/99_14_119575.png</pic>
+				<pic ID="119576" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030217/99_15_119576.png</pic>
+				<pic ID="119577" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030217/99_16_119577.png</pic>
+				<pic ID="119578" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030217/99_17_119578.png</pic>
+				<pic ID="119579" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030217/99_18_119579.png</pic>
+				<pic ID="119580" type="99" seqno="19">http://aaa-motors.ru/IMG/RVR/030217/99_19_119580.png</pic>
+				<pic ID="119581" type="99" seqno="20">http://aaa-motors.ru/IMG/RVR/030217/99_20_119581.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="641-1292295984">C5</Model>
+		<CodeCompl Title="Код комплектации">301172</CodeCompl>
+		<VIN Title="VIN">LVVDB21B5RDE13022</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White/Black (ZE)</Color>
+		<Price Title="Цена">2659900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">180</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30558" DocNum="030187">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119157" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030187/99_1_119157.png</pic>
+				<pic ID="119158" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030187/99_2_119158.png</pic>
+				<pic ID="119159" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030187/99_3_119159.png</pic>
+				<pic ID="119160" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030187/99_4_119160.png</pic>
+				<pic ID="119161" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030187/99_5_119161.png</pic>
+				<pic ID="119162" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030187/99_6_119162.png</pic>
+				<pic ID="119163" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030187/99_7_119163.png</pic>
+				<pic ID="119164" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030187/99_8_119164.png</pic>
+				<pic ID="119165" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030187/99_9_119165.png</pic>
+				<pic ID="119166" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030187/99_10_119166.png</pic>
+				<pic ID="119167" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030187/99_11_119167.png</pic>
+				<pic ID="119168" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030187/99_12_119168.png</pic>
+				<pic ID="119169" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030187/99_13_119169.png</pic>
+				<pic ID="119170" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030187/99_14_119170.png</pic>
+				<pic ID="119171" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030187/99_15_119171.png</pic>
+				<pic ID="119172" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030187/99_16_119172.png</pic>
+				<pic ID="119173" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030187/99_17_119173.png</pic>
+				<pic ID="119174" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030187/99_18_119174.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="683-1292295973">S5</Model>
+		<CodeCompl Title="Код комплектации">30137</CodeCompl>
+		<VIN Title="VIN">LVVDC21B6RD695519</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">2129900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">113.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">13,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4644*1814*1493</Dimensions>
+		<Weight Title="Масса">1745</Weight>
+		<CargoVolume Title="Объем багажника">482</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">120000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30561" DocNum="030190">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119211" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030190/99_1_119211.png</pic>
+				<pic ID="119212" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030190/99_2_119212.png</pic>
+				<pic ID="119213" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030190/99_3_119213.png</pic>
+				<pic ID="119214" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030190/99_4_119214.png</pic>
+				<pic ID="119215" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030190/99_5_119215.png</pic>
+				<pic ID="119216" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030190/99_6_119216.png</pic>
+				<pic ID="119217" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030190/99_7_119217.png</pic>
+				<pic ID="119218" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030190/99_8_119218.png</pic>
+				<pic ID="119219" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030190/99_9_119219.png</pic>
+				<pic ID="119220" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030190/99_10_119220.png</pic>
+				<pic ID="119221" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030190/99_11_119221.png</pic>
+				<pic ID="119222" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030190/99_12_119222.png</pic>
+				<pic ID="119223" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030190/99_13_119223.png</pic>
+				<pic ID="119224" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030190/99_14_119224.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="683-1292295973">S5</Model>
+		<CodeCompl Title="Код комплектации">30137</CodeCompl>
+		<VIN Title="VIN">LVVDC21B6RD657238</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">2129900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">113.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">13,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4644*1814*1493</Dimensions>
+		<Weight Title="Масса">1745</Weight>
+		<CargoVolume Title="Объем багажника">482</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">120000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30594" DocNum="030223">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="119481" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030223/99_1_119481.png</pic>
+				<pic ID="119482" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030223/99_2_119482.png</pic>
+				<pic ID="119483" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030223/99_3_119483.png</pic>
+				<pic ID="119484" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030223/99_4_119484.png</pic>
+				<pic ID="119485" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030223/99_5_119485.png</pic>
+				<pic ID="119486" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030223/99_6_119486.png</pic>
+				<pic ID="119487" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030223/99_7_119487.png</pic>
+				<pic ID="119488" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030223/99_8_119488.png</pic>
+				<pic ID="119489" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030223/99_9_119489.png</pic>
+				<pic ID="119490" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030223/99_10_119490.png</pic>
+				<pic ID="119491" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030223/99_11_119491.png</pic>
+				<pic ID="119492" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030223/99_12_119492.png</pic>
+				<pic ID="119493" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030223/99_13_119493.png</pic>
+				<pic ID="119494" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030223/99_14_119494.png</pic>
+				<pic ID="119495" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030223/99_15_119495.png</pic>
+				<pic ID="119496" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030223/99_16_119496.png</pic>
+				<pic ID="119497" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030223/99_17_119497.png</pic>
+				<pic ID="119498" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030223/99_18_119498.png</pic>
+				<pic ID="119499" type="99" seqno="19">http://aaa-motors.ru/IMG/RVR/030223/99_19_119499.png</pic>
+				<pic ID="119500" type="99" seqno="20">http://aaa-motors.ru/IMG/RVR/030223/99_20_119500.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="641-1292295984">C5</Model>
+		<CodeCompl Title="Код комплектации">301170</CodeCompl>
+		<VIN Title="VIN">LVVDB21B8RDF62119</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White/Black (ZE)</Color>
+		<Price Title="Цена">2679900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">180</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="30642" DocNum="030271">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="120410" type="99" seqno="4">http://aaa-motors.ru/IMG/RVR/030271/99_4_120410.png</pic>
+				<pic ID="120411" type="99" seqno="5">http://aaa-motors.ru/IMG/RVR/030271/99_5_120411.png</pic>
+				<pic ID="120412" type="99" seqno="6">http://aaa-motors.ru/IMG/RVR/030271/99_6_120412.png</pic>
+				<pic ID="120413" type="99" seqno="7">http://aaa-motors.ru/IMG/RVR/030271/99_7_120413.png</pic>
+				<pic ID="120414" type="99" seqno="8">http://aaa-motors.ru/IMG/RVR/030271/99_8_120414.png</pic>
+				<pic ID="120415" type="99" seqno="9">http://aaa-motors.ru/IMG/RVR/030271/99_9_120415.png</pic>
+				<pic ID="120416" type="99" seqno="10">http://aaa-motors.ru/IMG/RVR/030271/99_10_120416.png</pic>
+				<pic ID="120417" type="99" seqno="11">http://aaa-motors.ru/IMG/RVR/030271/99_11_120417.png</pic>
+				<pic ID="120418" type="99" seqno="12">http://aaa-motors.ru/IMG/RVR/030271/99_12_120418.png</pic>
+				<pic ID="120419" type="99" seqno="13">http://aaa-motors.ru/IMG/RVR/030271/99_13_120419.png</pic>
+				<pic ID="120420" type="99" seqno="14">http://aaa-motors.ru/IMG/RVR/030271/99_14_120420.png</pic>
+				<pic ID="120421" type="99" seqno="15">http://aaa-motors.ru/IMG/RVR/030271/99_15_120421.png</pic>
+				<pic ID="120422" type="99" seqno="16">http://aaa-motors.ru/IMG/RVR/030271/99_16_120422.png</pic>
+				<pic ID="120423" type="99" seqno="17">http://aaa-motors.ru/IMG/RVR/030271/99_17_120423.png</pic>
+				<pic ID="120424" type="99" seqno="18">http://aaa-motors.ru/IMG/RVR/030271/99_18_120424.png</pic>
+				<pic ID="120425" type="99" seqno="19">http://aaa-motors.ru/IMG/RVR/030271/99_19_120425.png</pic>
+				<pic ID="120407" type="99" seqno="1">http://aaa-motors.ru/IMG/RVR/030271/99_1_120407.png</pic>
+				<pic ID="120408" type="99" seqno="2">http://aaa-motors.ru/IMG/RVR/030271/99_2_120408.png</pic>
+				<pic ID="120409" type="99" seqno="3">http://aaa-motors.ru/IMG/RVR/030271/99_3_120409.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="105-1236488384">OMODA</Mark>
+		<Model Title="Модель" Code="688-1292295954">C5AWD</Model>
+		<CodeCompl Title="Код комплектации">301177</CodeCompl>
+		<VIN Title="VIN">LVVDD21B0RDE41093</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (X4)</Color>
+		<Price Title="Цена">2909900.00</Price>
+		<City Title="Город назначения">Воронеж</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">198</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1960</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">176</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">100000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

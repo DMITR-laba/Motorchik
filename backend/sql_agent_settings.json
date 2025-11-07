@@ -1,0 +1,5 @@
+{
+  "enabled": true,
+  "es_fallback_enabled": true,
+  "es_model": "bert_spacy"
+}

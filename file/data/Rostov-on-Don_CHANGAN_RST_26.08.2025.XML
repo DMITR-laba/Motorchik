@@ -1,0 +1,2254 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="CHANGAN_RST">
+
+	<CarOrder Title="Заказ на автомобиль" value="24545" DocNum="022981">
+		<StockQty Title="Количество в стоке">21</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325633</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR5SA977448</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">2629900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24544" DocNum="022980">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325632</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR3SA977335</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">2569900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="23909" DocNum="022345">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="45526" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022345/99_1_45526.png</pic>
+				<pic ID="45527" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022345/99_2_45527.png</pic>
+				<pic ID="45528" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022345/99_3_45528.png</pic>
+				<pic ID="45529" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022345/99_4_45529.png</pic>
+				<pic ID="45530" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022345/99_5_45530.png</pic>
+				<pic ID="45531" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022345/99_6_45531.png</pic>
+				<pic ID="45532" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022345/99_7_45532.png</pic>
+				<pic ID="45533" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022345/99_8_45533.png</pic>
+				<pic ID="45534" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022345/99_9_45534.png</pic>
+				<pic ID="45535" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022345/99_10_45535.png</pic>
+				<pic ID="45536" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022345/99_11_45536.png</pic>
+				<pic ID="45537" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022345/99_12_45537.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="549-1681658981">EADO PLUS</Model>
+		<CodeCompl Title="Код комплектации">1402227325417425797</CodeCompl>
+		<VIN Title="VIN">LS5A2DKR5RA961358</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">2590900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">155.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300</Weight>
+		<CargoVolume Title="Объем багажника">500</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24549" DocNum="022985">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325633</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR7SA977743</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Искрящийся красный</Color>
+		<Price Title="Цена">2629900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">красный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">красный</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24542" DocNum="022978">
+		<StockQty Title="Количество в стоке">5</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325633</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR3SA976962</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">2629900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="23915" DocNum="022351">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="45478" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022351/99_1_45478.png</pic>
+				<pic ID="45479" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022351/99_2_45479.png</pic>
+				<pic ID="45480" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022351/99_3_45480.png</pic>
+				<pic ID="45481" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022351/99_4_45481.png</pic>
+				<pic ID="45482" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022351/99_5_45482.png</pic>
+				<pic ID="45483" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022351/99_6_45483.png</pic>
+				<pic ID="45484" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022351/99_7_45484.png</pic>
+				<pic ID="45485" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022351/99_8_45485.png</pic>
+				<pic ID="45486" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022351/99_9_45486.png</pic>
+				<pic ID="45487" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022351/99_10_45487.png</pic>
+				<pic ID="45488" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022351/99_11_45488.png</pic>
+				<pic ID="45489" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022351/99_12_45489.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="549-1681658981">EADO PLUS</Model>
+		<CodeCompl Title="Код комплектации">1402227325417425797</CodeCompl>
+		<VIN Title="VIN">LS5A2DKR4RA960492</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">2643400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">155.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300</Weight>
+		<CargoVolume Title="Объем багажника">500</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24430" DocNum="022866">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="48922" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022866/1_1_48922.png</pic>
+				<pic ID="48923" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022866/99_2_48923.png</pic>
+				<pic ID="48924" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022866/99_3_48924.png</pic>
+				<pic ID="48925" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022866/99_4_48925.png</pic>
+				<pic ID="48926" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022866/99_5_48926.png</pic>
+				<pic ID="48927" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022866/99_6_48927.png</pic>
+				<pic ID="48928" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022866/99_7_48928.png</pic>
+				<pic ID="48929" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022866/99_8_48929.png</pic>
+				<pic ID="48930" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022866/99_9_48930.png</pic>
+				<pic ID="48931" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022866/99_10_48931.png</pic>
+				<pic ID="48932" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022866/99_11_48932.png</pic>
+				<pic ID="48933" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022866/99_12_48933.png</pic>
+				<pic ID="48934" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022866/99_13_48934.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325633</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR3SA974631</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Искрящийся красный</Color>
+		<Price Title="Цена">2714900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">красный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">красный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24402" DocNum="022838">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49013" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022838/1_1_49013.png</pic>
+				<pic ID="49014" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022838/99_2_49014.png</pic>
+				<pic ID="49015" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022838/99_3_49015.png</pic>
+				<pic ID="49016" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022838/99_4_49016.png</pic>
+				<pic ID="49017" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022838/99_5_49017.png</pic>
+				<pic ID="49018" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022838/99_6_49018.png</pic>
+				<pic ID="49019" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022838/99_7_49019.png</pic>
+				<pic ID="49020" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022838/99_8_49020.png</pic>
+				<pic ID="49021" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022838/99_9_49021.png</pic>
+				<pic ID="49022" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022838/99_10_49022.png</pic>
+				<pic ID="49023" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022838/99_11_49023.png</pic>
+				<pic ID="49024" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022838/99_12_49024.png</pic>
+				<pic ID="49025" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022838/99_13_49025.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325633</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR0SA973694</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Искрящийся красный</Color>
+		<Price Title="Цена">2720450.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">красный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">красный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24403" DocNum="022839">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="48909" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022839/1_1_48909.png</pic>
+				<pic ID="48910" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022839/99_2_48910.png</pic>
+				<pic ID="48911" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022839/99_3_48911.png</pic>
+				<pic ID="48912" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022839/99_4_48912.png</pic>
+				<pic ID="48913" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022839/99_5_48913.png</pic>
+				<pic ID="48914" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022839/99_6_48914.png</pic>
+				<pic ID="48915" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022839/99_7_48915.png</pic>
+				<pic ID="48916" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022839/99_8_48916.png</pic>
+				<pic ID="48917" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022839/99_9_48917.png</pic>
+				<pic ID="48918" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022839/99_10_48918.png</pic>
+				<pic ID="48919" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022839/99_11_48919.png</pic>
+				<pic ID="48920" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022839/99_12_48920.png</pic>
+				<pic ID="48921" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022839/99_13_48921.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325633</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR0SA973680</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Искрящийся красный</Color>
+		<Price Title="Цена">2764450.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">красный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">красный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24413" DocNum="022849">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="48961" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022849/1_1_48961.png</pic>
+				<pic ID="48962" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022849/99_2_48962.png</pic>
+				<pic ID="48963" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022849/99_3_48963.png</pic>
+				<pic ID="48964" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022849/99_4_48964.png</pic>
+				<pic ID="48965" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022849/99_5_48965.png</pic>
+				<pic ID="48966" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022849/99_6_48966.png</pic>
+				<pic ID="48967" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022849/99_7_48967.png</pic>
+				<pic ID="48968" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022849/99_8_48968.png</pic>
+				<pic ID="48969" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022849/99_9_48969.png</pic>
+				<pic ID="48970" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022849/99_10_48970.png</pic>
+				<pic ID="48971" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022849/99_11_48971.png</pic>
+				<pic ID="48972" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022849/99_12_48972.png</pic>
+				<pic ID="48973" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022849/99_13_48973.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325633</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR5SA974050</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Искрящийся красный</Color>
+		<Price Title="Цена">2808400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">красный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">красный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24429" DocNum="022865">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E9SA950960</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый/черный</Color>
+		<Price Title="Цена">3044900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="23914" DocNum="022350">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="45466" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022350/99_1_45466.png</pic>
+				<pic ID="45467" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022350/99_2_45467.png</pic>
+				<pic ID="45468" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022350/99_3_45468.png</pic>
+				<pic ID="45469" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022350/99_4_45469.png</pic>
+				<pic ID="45470" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022350/99_5_45470.png</pic>
+				<pic ID="45471" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022350/99_6_45471.png</pic>
+				<pic ID="45472" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022350/99_7_45472.png</pic>
+				<pic ID="45473" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022350/99_8_45473.png</pic>
+				<pic ID="45474" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022350/99_9_45474.png</pic>
+				<pic ID="45475" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022350/99_10_45475.png</pic>
+				<pic ID="45476" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022350/99_11_45476.png</pic>
+				<pic ID="45477" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022350/99_12_45477.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="549-1681658981">EADO PLUS</Model>
+		<CodeCompl Title="Код комплектации">1402227325417425797</CodeCompl>
+		<VIN Title="VIN">LS5A2DKR3RA961455</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">2484900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">155.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300</Weight>
+		<CargoVolume Title="Объем багажника">500</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24539" DocNum="022975">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="616-1681658953">CS35PLUS MCA</Model>
+		<CodeCompl Title="Код комплектации">1402227225407325632</CodeCompl>
+		<VIN Title="VIN">LS5A3DKR2SA975091</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">2569900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24380" DocNum="022816">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49108" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022816/1_1_49108.png</pic>
+				<pic ID="49109" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022816/99_2_49109.png</pic>
+				<pic ID="49110" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022816/99_3_49110.png</pic>
+				<pic ID="49111" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022816/99_4_49111.png</pic>
+				<pic ID="49112" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022816/99_5_49112.png</pic>
+				<pic ID="49113" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022816/99_6_49113.png</pic>
+				<pic ID="49114" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022816/99_7_49114.png</pic>
+				<pic ID="49115" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022816/99_8_49115.png</pic>
+				<pic ID="49116" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022816/99_9_49116.png</pic>
+				<pic ID="49117" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022816/99_10_49117.png</pic>
+				<pic ID="49118" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022816/99_11_49118.png</pic>
+				<pic ID="49119" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022816/99_12_49119.png</pic>
+				<pic ID="49120" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022816/99_13_49120.png</pic>
+				<pic ID="49121" type="99" seqno="14">http://aaa-motors.ru/IMG/HND_RST/022816/99_14_49121.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E8SA921532</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Искрящийся красный</Color>
+		<Price Title="Цена">3044900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">красный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">красный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24461" DocNum="022897">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2EXSA951311</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">3044900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24462" DocNum="022898">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E5RA280303</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">3044900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24468" DocNum="022904">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E3SA954955</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный серый</Color>
+		<Price Title="Цена">3044900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(темн</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24488" DocNum="022924">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E4SA924234</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">3058400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24278" DocNum="022714">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E0RA268091</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">3071900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="23573" DocNum="022009">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="494-1681658977">CS35PLUS</Model>
+		<CodeCompl Title="Код комплектации">1401807525352325094</CodeCompl>
+		<VIN Title="VIN">LS5A3DKRXRA032716</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Красный</Color>
+		<Price Title="Цена">3074700.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1392</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">PR2</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24480" DocNum="022916">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E3SA959038</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый/черный</Color>
+		<Price Title="Цена">3098400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24493" DocNum="022929">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2EXSA924125</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">3098400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24427" DocNum="022863">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E9SA923371</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">3101900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24476" DocNum="022912">
+		<StockQty Title="Количество в стоке">5</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E4RA278817</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый/черный</Color>
+		<Price Title="Цена">3118400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24459" DocNum="022895">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E3SA949030</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый/черный</Color>
+		<Price Title="Цена">3144900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24491" DocNum="022927">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E2SA953425</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый/черный</Color>
+		<Price Title="Цена">3168400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24370" DocNum="022806">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="501-1681658951">UNI-V</Model>
+		<CodeCompl Title="Код комплектации">1402191225354426280</CodeCompl>
+		<VIN Title="VIN">LS5A2DKE7RA209335</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный серый</Color>
+		<Price Title="Цена">3224900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Лифтбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">205</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1400</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(темн</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24421" DocNum="022857">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49142" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022857/1_1_49142.png</pic>
+				<pic ID="49143" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022857/99_2_49143.png</pic>
+				<pic ID="49144" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022857/99_3_49144.png</pic>
+				<pic ID="49145" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022857/99_4_49145.png</pic>
+				<pic ID="49146" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022857/99_5_49146.png</pic>
+				<pic ID="49147" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022857/99_6_49147.png</pic>
+				<pic ID="49148" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022857/99_7_49148.png</pic>
+				<pic ID="49149" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022857/99_8_49149.png</pic>
+				<pic ID="49150" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022857/99_9_49150.png</pic>
+				<pic ID="49151" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022857/99_10_49151.png</pic>
+				<pic ID="49152" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022857/99_11_49152.png</pic>
+				<pic ID="49153" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022857/99_12_49153.png</pic>
+				<pic ID="49154" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022857/99_13_49154.png</pic>
+				<pic ID="49155" type="99" seqno="14">http://aaa-motors.ru/IMG/HND_RST/022857/99_14_49155.png</pic>
+				<pic ID="49156" type="99" seqno="15">http://aaa-motors.ru/IMG/HND_RST/022857/99_15_49156.png</pic>
+				<pic ID="49157" type="99" seqno="16">http://aaa-motors.ru/IMG/HND_RST/022857/99_16_49157.png</pic>
+				<pic ID="49158" type="99" seqno="17">http://aaa-motors.ru/IMG/HND_RST/022857/99_17_49158.png</pic>
+				<pic ID="49159" type="99" seqno="18">http://aaa-motors.ru/IMG/HND_RST/022857/99_18_49159.png</pic>
+				<pic ID="49160" type="99" seqno="19">http://aaa-motors.ru/IMG/HND_RST/022857/99_19_49160.png</pic>
+				<pic ID="49161" type="99" seqno="20">http://aaa-motors.ru/IMG/HND_RST/022857/99_20_49161.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="501-1681658951">UNI-V</Model>
+		<CodeCompl Title="Код комплектации">1402191225354432599</CodeCompl>
+		<VIN Title="VIN">LS5A2DKE7SA942670</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">3294900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Лифтбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24487" DocNum="022923">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="501-1681658951">UNI-V</Model>
+		<CodeCompl Title="Код комплектации">1402191225354426280</CodeCompl>
+		<VIN Title="VIN">LS5A2DKE8RA255398</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">3295900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Лифтбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">205</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1400</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24475" DocNum="022911">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="501-1681658951">UNI-V</Model>
+		<CodeCompl Title="Код комплектации">1402191225354426280</CodeCompl>
+		<VIN Title="VIN">LS5A2DKE5RA220396</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный серый</Color>
+		<Price Title="Цена">3295900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Лифтбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">205</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1400</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(темн</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24386" DocNum="022822">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="548-1681658963">UNI-T</Model>
+		<CodeCompl Title="Код комплектации">1402228025417325794</CodeCompl>
+		<VIN Title="VIN">LS5A3DKE5RA708521</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый/черный</Color>
+		<Price Title="Цена">3324900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">167.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1465</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24397" DocNum="022833">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49166" type="1" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022833/1_5_49166.png</pic>
+				<pic ID="49162" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022833/99_1_49162.png</pic>
+				<pic ID="49163" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022833/99_2_49163.png</pic>
+				<pic ID="49164" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022833/99_3_49164.png</pic>
+				<pic ID="49165" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022833/99_4_49165.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="501-1681658951">UNI-V</Model>
+		<CodeCompl Title="Код комплектации">1402191225354432599</CodeCompl>
+		<VIN Title="VIN">LS5A2DKE8SA941785</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный серый</Color>
+		<Price Title="Цена">3344900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Лифтбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(темн</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24391" DocNum="022827">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49122" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022827/1_1_49122.png</pic>
+				<pic ID="49123" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022827/99_2_49123.png</pic>
+				<pic ID="49124" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022827/99_3_49124.png</pic>
+				<pic ID="49125" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022827/99_4_49125.png</pic>
+				<pic ID="49126" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022827/99_5_49126.png</pic>
+				<pic ID="49127" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022827/99_6_49127.png</pic>
+				<pic ID="49128" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022827/99_7_49128.png</pic>
+				<pic ID="49129" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022827/99_8_49129.png</pic>
+				<pic ID="49130" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022827/99_9_49130.png</pic>
+				<pic ID="49131" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022827/99_10_49131.png</pic>
+				<pic ID="49132" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022827/99_11_49132.png</pic>
+				<pic ID="49133" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022827/99_12_49133.png</pic>
+				<pic ID="49134" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022827/99_13_49134.png</pic>
+				<pic ID="49135" type="99" seqno="14">http://aaa-motors.ru/IMG/HND_RST/022827/99_14_49135.png</pic>
+				<pic ID="49136" type="99" seqno="15">http://aaa-motors.ru/IMG/HND_RST/022827/99_15_49136.png</pic>
+				<pic ID="49137" type="99" seqno="16">http://aaa-motors.ru/IMG/HND_RST/022827/99_16_49137.png</pic>
+				<pic ID="49138" type="99" seqno="17">http://aaa-motors.ru/IMG/HND_RST/022827/99_17_49138.png</pic>
+				<pic ID="49139" type="99" seqno="18">http://aaa-motors.ru/IMG/HND_RST/022827/99_18_49139.png</pic>
+				<pic ID="49140" type="99" seqno="19">http://aaa-motors.ru/IMG/HND_RST/022827/99_19_49140.png</pic>
+				<pic ID="49141" type="99" seqno="20">http://aaa-motors.ru/IMG/HND_RST/022827/99_20_49141.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="501-1681658951">UNI-V</Model>
+		<CodeCompl Title="Код комплектации">1402191225354432599</CodeCompl>
+		<VIN Title="VIN">LS5A2DKE4SA941802</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">3353900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Лифтбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="23754" DocNum="022190">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="557-1681658975">CS75PLUS</Model>
+		<CodeCompl Title="Код комплектации">1401875925780930239</CodeCompl>
+		<VIN Title="VIN">LS4ASE2A7RD006449</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">3949900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">233.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24466" DocNum="022902">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49101" type="1" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022902/1_4_49101.png</pic>
+				<pic ID="49102" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022902/99_5_49102.png</pic>
+				<pic ID="49103" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022902/99_6_49103.png</pic>
+				<pic ID="49104" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022902/99_7_49104.png</pic>
+				<pic ID="49105" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022902/99_8_49105.png</pic>
+				<pic ID="49106" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022902/99_9_49106.png</pic>
+				<pic ID="49107" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022902/99_10_49107.png</pic>
+				<pic ID="49098" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022902/99_1_49098.png</pic>
+				<pic ID="49099" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022902/99_2_49099.png</pic>
+				<pic ID="49100" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022902/99_3_49100.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="556-1681658955">HUNTER PLUS</Model>
+		<CodeCompl Title="Код комплектации">1402228225461626169</CodeCompl>
+		<VIN Title="VIN">LSCBBZ2A8SG804222</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">3950400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">226.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1988</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2060</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24374" DocNum="022810">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="557-1681658975">CS75PLUS</Model>
+		<CodeCompl Title="Код комплектации">1401875925780930239</CodeCompl>
+		<VIN Title="VIN">LS4ASE2A9RD005514</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый/черный</Color>
+		<Price Title="Цена">4034900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">233.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24381" DocNum="022817">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="557-1681658975">CS75PLUS</Model>
+		<CodeCompl Title="Код комплектации">1401875925780930239</CodeCompl>
+		<VIN Title="VIN">LS4ASE2A8SD912048</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">4074900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">233.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24296" DocNum="022732">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49037" type="1" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022732/1_12_49037.png</pic>
+				<pic ID="49026" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022732/99_1_49026.png</pic>
+				<pic ID="49027" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022732/99_2_49027.png</pic>
+				<pic ID="49028" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022732/99_3_49028.png</pic>
+				<pic ID="49029" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022732/99_4_49029.png</pic>
+				<pic ID="49030" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022732/99_5_49030.png</pic>
+				<pic ID="49031" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022732/99_6_49031.png</pic>
+				<pic ID="49032" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022732/99_7_49032.png</pic>
+				<pic ID="49033" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022732/99_8_49033.png</pic>
+				<pic ID="49034" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022732/99_9_49034.png</pic>
+				<pic ID="49035" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022732/99_10_49035.png</pic>
+				<pic ID="49036" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022732/99_11_49036.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="557-1681658975">CS75PLUS</Model>
+		<CodeCompl Title="Код комплектации">1401875925780930239</CodeCompl>
+		<VIN Title="VIN">LS4ASE2A7RD006354</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный серый</Color>
+		<Price Title="Цена">4078400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">233.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(темн</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24420" DocNum="022856">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="557-1681658975">CS75PLUS</Model>
+		<CodeCompl Title="Код комплектации">1401875925780930239</CodeCompl>
+		<VIN Title="VIN">LS4ASE2A9SD911992</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">4095900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">233.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24538" DocNum="022974">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="519-1681658965">CS95NEW</Model>
+		<CodeCompl Title="Код комплектации">1402279925538428912</CodeCompl>
+		<VIN Title="VIN">LS4ASE2A2RJ105178</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный серый</Color>
+		<Price Title="Цена">4609900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">226.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2117</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(темн</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24426" DocNum="022862">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49178" type="1" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022862/1_12_49178.png</pic>
+				<pic ID="49167" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022862/99_1_49167.png</pic>
+				<pic ID="49168" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022862/99_2_49168.png</pic>
+				<pic ID="49169" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022862/99_3_49169.png</pic>
+				<pic ID="49170" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022862/99_4_49170.png</pic>
+				<pic ID="49171" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022862/99_5_49171.png</pic>
+				<pic ID="49172" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022862/99_6_49172.png</pic>
+				<pic ID="49173" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022862/99_7_49173.png</pic>
+				<pic ID="49174" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022862/99_8_49174.png</pic>
+				<pic ID="49175" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022862/99_9_49175.png</pic>
+				<pic ID="49176" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022862/99_10_49176.png</pic>
+				<pic ID="49177" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022862/99_11_49177.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="511-1681658971">UNI-K</Model>
+		<CodeCompl Title="Код комплектации">1402129025071520360</CodeCompl>
+		<VIN Title="VIN">LS4ASE2A9RA719984</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">4648900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">226.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2005</Weight>
+		<CargoVolume Title="Объем багажника">351</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">100000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24224" DocNum="022660">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="511-1681658971">UNI-K</Model>
+		<CodeCompl Title="Код комплектации">1402129025071520360</CodeCompl>
+		<VIN Title="VIN">LS4ASE2A9RA714817</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">4738400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">226.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2005</Weight>
+		<CargoVolume Title="Объем багажника">351</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">100000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24494" DocNum="022930">
+		<StockQty Title="Количество в стоке">6</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2EXSA924674</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Звёздный белый</Color>
+		<Price Title="Цена">3118400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24486" DocNum="022922">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="55-1097784624">CHANGAN</Mark>
+		<Model Title="Модель" Code="660-1681658969">UNI-S</Model>
+		<CodeCompl Title="Код комплектации">1402335825810630700</CodeCompl>
+		<VIN Title="VIN">LS4ASE2E4SA920989</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Атомный Серый</Color>
+		<Price Title="Цена">3118400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">181.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1494</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">280 (1500-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4515*1865*1680</Dimensions>
+		<Weight Title="Масса">1535</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">серый(свет</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

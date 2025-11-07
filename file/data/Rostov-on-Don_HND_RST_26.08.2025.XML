@@ -1,0 +1,2038 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="HND_RST">
+
+	<CarOrder Title="Заказ на автомобиль" value="24169" DocNum="022605">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316026280933990</CodeCompl>
+		<VIN Title="VIN">Z94C241BASR269716</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2160000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24048" DocNum="022484">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316126304227748</CodeCompl>
+		<VIN Title="VIN">Z94C251BASR190658</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2181000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="23942" DocNum="022378">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316025619833990</CodeCompl>
+		<VIN Title="VIN">Z94C241BBSR268886</VIN>
+		<InteriorColor Title="Цвет салона">Черный (black)</InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2260000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10294</interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24168" DocNum="022604">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316126304227749</CodeCompl>
+		<VIN Title="VIN">Z94C251BASR189744</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">2261000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24030" DocNum="022466">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316126304227749</CodeCompl>
+		<VIN Title="VIN">Z94C251BASR189575</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Синий (Blue)</Color>
+		<Price Title="Цена">2261000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BE70</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24171" DocNum="022607">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027748</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR190489</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Синий (Blue)</Color>
+		<Price Title="Цена">2281000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BE70</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24362" DocNum="022798">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="47728" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022798/99_1_47728.png</pic>
+				<pic ID="47729" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022798/99_2_47729.png</pic>
+				<pic ID="47730" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022798/99_3_47730.png</pic>
+				<pic ID="47731" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022798/99_4_47731.png</pic>
+				<pic ID="47732" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022798/99_5_47732.png</pic>
+				<pic ID="47733" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022798/99_6_47733.png</pic>
+				<pic ID="47734" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022798/99_7_47734.png</pic>
+				<pic ID="47735" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022798/99_8_47735.png</pic>
+				<pic ID="47736" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022798/99_9_47736.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316025619833991</CodeCompl>
+		<VIN Title="VIN">Z94C241BBSR269825</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Синий (Blue)</Color>
+		<Price Title="Цена">2300000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BE70</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24029" DocNum="022465">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR189307</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">серый (grey)</Color>
+		<Price Title="Цена">2361000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">V3G0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24422" DocNum="022858">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316025619833990</CodeCompl>
+		<VIN Title="VIN">Z94C241BBSR272915</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебро (Silver)</Color>
+		<Price Title="Цена">2376500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">RHM0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">2260000.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24418" DocNum="022854">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027748</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR187666</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2404500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24443" DocNum="022879">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316025619833990</CodeCompl>
+		<VIN Title="VIN">Z94C241BBSR273772</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">2439500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24109" DocNum="022545">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR189994</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2446500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24358" DocNum="022794">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316025619827747</CodeCompl>
+		<VIN Title="VIN">Z94C341BBSR273125</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2461000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24167" DocNum="022603">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027751</CodeCompl>
+		<VIN Title="VIN">Z94C351BBSR189466</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2466000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24166" DocNum="022602">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027751</CodeCompl>
+		<VIN Title="VIN">Z94C351BBSR188918</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">2466000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24440" DocNum="022876">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316025619833991</CodeCompl>
+		<VIN Title="VIN">Z94C241BBSR271690</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2472500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24140" DocNum="022576">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027748</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR189105</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Оранжевый (orange)</Color>
+		<Price Title="Цена">2479500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Оранжевый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">R7R0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24165" DocNum="022601">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316025619833992</CodeCompl>
+		<VIN Title="VIN">Z94C341BBSR268733</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">красный (red)</Color>
+		<Price Title="Цена">2485000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">WR70</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24444" DocNum="022880">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027750</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR195347</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2495500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24141" DocNum="022577">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR189388</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2516500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24346" DocNum="022782">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR190776</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2533500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24351" DocNum="022787">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR192252</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">2533500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24354" DocNum="022790">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR194772</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебро (Silver)</Color>
+		<Price Title="Цена">2533500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">RHM0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24342" DocNum="022778">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR193732</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Оранжевый (orange)</Color>
+		<Price Title="Цена">2533500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Оранжевый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">R7R0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24437" DocNum="022873">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR194804</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">серый (grey)</Color>
+		<Price Title="Цена">2540500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">V3G0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24439" DocNum="022875">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027749</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR194660</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">2540500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24435" DocNum="022871">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027750</CodeCompl>
+		<VIN Title="VIN">Z94C251BBSR193668</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">2580500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24164" DocNum="022600">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027752</CodeCompl>
+		<VIN Title="VIN">Z94C351BBSR188403</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">серый (grey)</Color>
+		<Price Title="Цена">2586000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">V3G0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24172" DocNum="022608">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316125620027752</CodeCompl>
+		<VIN Title="VIN">Z94C351BBSR189674</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">2586000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24505" DocNum="022941">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327730</CodeCompl>
+		<VIN Title="VIN">Z94PB814BSR060638</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">белый (white)</Color>
+		<Price Title="Цена">2778000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SAW0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24504" DocNum="022940">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327730</CodeCompl>
+		<VIN Title="VIN">Z94PB814BSR054345</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебро (Silver)</Color>
+		<Price Title="Цена">2934500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">RHM0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24118" DocNum="022554">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327987</CodeCompl>
+		<VIN Title="VIN">Z94PB814BSR048475</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">серый (grey)</Color>
+		<Price Title="Цена">2943500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">V3G0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24119" DocNum="022555">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="46577" type="99" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022555/99_1_46577.png</pic>
+				<pic ID="46578" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022555/99_2_46578.png</pic>
+				<pic ID="46579" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022555/99_3_46579.png</pic>
+				<pic ID="46580" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022555/99_4_46580.png</pic>
+				<pic ID="46581" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022555/99_5_46581.png</pic>
+				<pic ID="46582" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022555/99_6_46582.png</pic>
+				<pic ID="46583" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022555/99_7_46583.png</pic>
+				<pic ID="46584" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022555/99_8_46584.png</pic>
+				<pic ID="46585" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022555/99_9_46585.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327987</CodeCompl>
+		<VIN Title="VIN">Z94PB814BSR048693</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">2963500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24333" DocNum="022769">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49073" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022769/1_1_49073.png</pic>
+				<pic ID="49074" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022769/99_2_49074.png</pic>
+				<pic ID="49075" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022769/99_3_49075.png</pic>
+				<pic ID="49076" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022769/99_4_49076.png</pic>
+				<pic ID="49077" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022769/99_5_49077.png</pic>
+				<pic ID="49078" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022769/99_6_49078.png</pic>
+				<pic ID="49079" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022769/99_7_49079.png</pic>
+				<pic ID="49080" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022769/99_8_49080.png</pic>
+				<pic ID="49081" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022769/99_9_49081.png</pic>
+				<pic ID="49082" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022769/99_10_49082.png</pic>
+				<pic ID="49083" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022769/99_11_49083.png</pic>
+				<pic ID="49084" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022769/99_12_49084.png</pic>
+				<pic ID="49085" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022769/99_13_49085.png</pic>
+				<pic ID="49086" type="99" seqno="14">http://aaa-motors.ru/IMG/HND_RST/022769/99_14_49086.png</pic>
+				<pic ID="49087" type="99" seqno="15">http://aaa-motors.ru/IMG/HND_RST/022769/99_15_49087.png</pic>
+				<pic ID="49088" type="99" seqno="16">http://aaa-motors.ru/IMG/HND_RST/022769/99_16_49088.png</pic>
+				<pic ID="49089" type="99" seqno="17">http://aaa-motors.ru/IMG/HND_RST/022769/99_17_49089.png</pic>
+				<pic ID="49090" type="99" seqno="18">http://aaa-motors.ru/IMG/HND_RST/022769/99_18_49090.png</pic>
+				<pic ID="49091" type="99" seqno="19">http://aaa-motors.ru/IMG/HND_RST/022769/99_19_49091.png</pic>
+				<pic ID="49092" type="99" seqno="20">http://aaa-motors.ru/IMG/HND_RST/022769/99_20_49092.png</pic>
+				<pic ID="49093" type="99" seqno="21">http://aaa-motors.ru/IMG/HND_RST/022769/99_21_49093.png</pic>
+				<pic ID="49094" type="99" seqno="22">http://aaa-motors.ru/IMG/HND_RST/022769/99_22_49094.png</pic>
+				<pic ID="49095" type="99" seqno="23">http://aaa-motors.ru/IMG/HND_RST/022769/99_23_49095.png</pic>
+				<pic ID="49096" type="99" seqno="24">http://aaa-motors.ru/IMG/HND_RST/022769/99_24_49096.png</pic>
+				<pic ID="49097" type="99" seqno="25">http://aaa-motors.ru/IMG/HND_RST/022769/99_25_49097.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327987</CodeCompl>
+		<VIN Title="VIN">Z94PB814BSR050516</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">красный (red)</Color>
+		<Price Title="Цена">3002500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">WR70</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="23949" DocNum="022385">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327730</CodeCompl>
+		<VIN Title="VIN">Z94PB814BSR050726</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебро (Silver)</Color>
+		<Price Title="Цена">3031500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">RHM0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24508" DocNum="022944">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327734</CodeCompl>
+		<VIN Title="VIN">Z94PF814BSR057459</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">3069500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24334" DocNum="022770">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="49057" type="1" seqno="1">http://aaa-motors.ru/IMG/HND_RST/022770/1_1_49057.png</pic>
+				<pic ID="49058" type="99" seqno="2">http://aaa-motors.ru/IMG/HND_RST/022770/99_2_49058.png</pic>
+				<pic ID="49059" type="99" seqno="3">http://aaa-motors.ru/IMG/HND_RST/022770/99_3_49059.png</pic>
+				<pic ID="49060" type="99" seqno="4">http://aaa-motors.ru/IMG/HND_RST/022770/99_4_49060.png</pic>
+				<pic ID="49061" type="99" seqno="5">http://aaa-motors.ru/IMG/HND_RST/022770/99_5_49061.png</pic>
+				<pic ID="49062" type="99" seqno="6">http://aaa-motors.ru/IMG/HND_RST/022770/99_6_49062.png</pic>
+				<pic ID="49063" type="99" seqno="7">http://aaa-motors.ru/IMG/HND_RST/022770/99_7_49063.png</pic>
+				<pic ID="49064" type="99" seqno="8">http://aaa-motors.ru/IMG/HND_RST/022770/99_8_49064.png</pic>
+				<pic ID="49065" type="99" seqno="9">http://aaa-motors.ru/IMG/HND_RST/022770/99_9_49065.png</pic>
+				<pic ID="49066" type="99" seqno="10">http://aaa-motors.ru/IMG/HND_RST/022770/99_10_49066.png</pic>
+				<pic ID="49067" type="99" seqno="11">http://aaa-motors.ru/IMG/HND_RST/022770/99_11_49067.png</pic>
+				<pic ID="49068" type="99" seqno="12">http://aaa-motors.ru/IMG/HND_RST/022770/99_12_49068.png</pic>
+				<pic ID="49069" type="99" seqno="13">http://aaa-motors.ru/IMG/HND_RST/022770/99_13_49069.png</pic>
+				<pic ID="49070" type="99" seqno="14">http://aaa-motors.ru/IMG/HND_RST/022770/99_14_49070.png</pic>
+				<pic ID="49071" type="99" seqno="15">http://aaa-motors.ru/IMG/HND_RST/022770/99_15_49071.png</pic>
+				<pic ID="49072" type="99" seqno="16">http://aaa-motors.ru/IMG/HND_RST/022770/99_16_49072.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327734</CodeCompl>
+		<VIN Title="VIN">Z94PF814BSR051278</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">черный (black)</Color>
+		<Price Title="Цена">3101500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">MZH0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24502" DocNum="022938">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618527988</CodeCompl>
+		<VIN Title="VIN">Z94PF815BSR060111</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Синий (Blue)</Color>
+		<Price Title="Цена">3139500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">149.60</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1999</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">183</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1335-1420</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BE70</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24503" DocNum="022939">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618527991</CodeCompl>
+		<VIN Title="VIN">Z94PF815BSR059657</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">серый (grey)</Color>
+		<Price Title="Цена">3179500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1999</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">V3G0</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24501" DocNum="022937">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="663-1681658973">HC</Model>
+		<CodeCompl Title="Код комплектации">16982315925618327733</CodeCompl>
+		<VIN Title="VIN">Z94PC814BSR056477</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Синий (Blue)</Color>
+		<Price Title="Цена">3210500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">7.0</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12,3</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">169</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1300-1385</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BE70</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24355" DocNum="022791">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="618-1681658979">KRX</Model>
+		<CodeCompl Title="Код комплектации">16982316126304227748</CodeCompl>
+		<VIN Title="VIN">Z94C251BASR192125</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">красный (red)</Color>
+		<Price Title="Цена">2076500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">182</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4275*1750*1535</Dimensions>
+		<Weight Title="Масса">1203-1269</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">WR70</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="24031" DocNum="022467">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="73-1350264261">SOLARIS</Mark>
+		<Model Title="Модель" Code="622-1681658959">KRS</Model>
+		<CodeCompl Title="Код комплектации">16982316026280933990</CodeCompl>
+		<VIN Title="VIN">Z94C241BASR270199</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебро (Silver)</Color>
+		<Price Title="Цена">2160000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">123.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1591</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">11,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">192</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4420*1740*1470</Dimensions>
+		<Weight Title="Масса">1198-1259</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">RHM0</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

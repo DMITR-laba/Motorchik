@@ -1,0 +1,1904 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="JAC_RST">
+
+	<CarOrder Title="Заказ на автомобиль" value="26593" DocNum="026259">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="666-954159047">JS3</Model>
+		<CodeCompl Title="Код комплектации">201133</CodeCompl>
+		<VIN Title="VIN">LJ12EKR21R4715011</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Черный (CL)</Color>
+		<Price Title="Цена">1889000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">109.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1590</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1275-1650</Weight>
+		<CargoVolume Title="Объем багажника">600</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">22</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26627" DocNum="026293">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154575" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_1_154575.png</pic>
+				<pic ID="154576" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_2_154576.png</pic>
+				<pic ID="154577" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_3_154577.png</pic>
+				<pic ID="154578" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_4_154578.png</pic>
+				<pic ID="154579" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_5_154579.png</pic>
+				<pic ID="154580" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_6_154580.png</pic>
+				<pic ID="154581" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_7_154581.png</pic>
+				<pic ID="154582" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_8_154582.png</pic>
+				<pic ID="154583" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_9_154583.png</pic>
+				<pic ID="154584" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026293/99_10_154584.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="666-954159047">JS3</Model>
+		<CodeCompl Title="Код комплектации">201133</CodeCompl>
+		<VIN Title="VIN">LJ12EKR22R4714885</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">1954000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">109.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1590</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1275-1650</Weight>
+		<CargoVolume Title="Объем багажника">600</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26358" DocNum="026024">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154995" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_1_154995.png</pic>
+				<pic ID="154996" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_2_154996.png</pic>
+				<pic ID="154997" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_3_154997.png</pic>
+				<pic ID="154998" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_4_154998.png</pic>
+				<pic ID="154999" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_5_154999.png</pic>
+				<pic ID="155000" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_6_155000.png</pic>
+				<pic ID="155001" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_7_155001.png</pic>
+				<pic ID="155002" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_8_155002.png</pic>
+				<pic ID="155003" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_9_155003.png</pic>
+				<pic ID="155004" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026024/99_10_155004.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="666-954159047">JS3</Model>
+		<CodeCompl Title="Код комплектации">201132</CodeCompl>
+		<VIN Title="VIN">LJ12EKR27R4718737</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">1989000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">109.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1590</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1275-1650</Weight>
+		<CargoVolume Title="Объем багажника">600</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26629" DocNum="026295">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154585" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_1_154585.png</pic>
+				<pic ID="154586" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_2_154586.png</pic>
+				<pic ID="154587" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_3_154587.png</pic>
+				<pic ID="154588" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_4_154588.png</pic>
+				<pic ID="154589" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_5_154589.png</pic>
+				<pic ID="154590" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_6_154590.png</pic>
+				<pic ID="154591" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_7_154591.png</pic>
+				<pic ID="154592" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_8_154592.png</pic>
+				<pic ID="154593" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026295/99_9_154593.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="666-954159047">JS3</Model>
+		<CodeCompl Title="Код комплектации">201132</CodeCompl>
+		<VIN Title="VIN">LJ12EKR28R4719816</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый (KH)</Color>
+		<Price Title="Цена">2018500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">109.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1590</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1275-1650</Weight>
+		<CargoVolume Title="Объем багажника">600</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">21</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26510" DocNum="026176">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="152516" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_1_152516.png</pic>
+				<pic ID="152517" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_2_152517.png</pic>
+				<pic ID="152518" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_3_152518.png</pic>
+				<pic ID="152519" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_4_152519.png</pic>
+				<pic ID="152520" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_5_152520.png</pic>
+				<pic ID="152521" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_6_152521.png</pic>
+				<pic ID="152522" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_7_152522.png</pic>
+				<pic ID="152523" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_8_152523.png</pic>
+				<pic ID="152524" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_9_152524.png</pic>
+				<pic ID="152525" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026176/99_10_152525.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="666-954159047">JS3</Model>
+		<CodeCompl Title="Код комплектации">201133</CodeCompl>
+		<VIN Title="VIN">LJ12EKR26R4719085</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">2054000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">109.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1590</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1275-1650</Weight>
+		<CargoVolume Title="Объем багажника">600</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26555" DocNum="026221">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154878" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_1_154878.png</pic>
+				<pic ID="154879" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_2_154879.png</pic>
+				<pic ID="154880" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_3_154880.png</pic>
+				<pic ID="154881" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_4_154881.png</pic>
+				<pic ID="154882" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_5_154882.png</pic>
+				<pic ID="154883" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_6_154883.png</pic>
+				<pic ID="154884" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_7_154884.png</pic>
+				<pic ID="154885" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_8_154885.png</pic>
+				<pic ID="154886" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_9_154886.png</pic>
+				<pic ID="154887" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_10_154887.png</pic>
+				<pic ID="154888" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_11_154888.png</pic>
+				<pic ID="154889" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_12_154889.png</pic>
+				<pic ID="154890" type="99" seqno="13">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_13_154890.png</pic>
+				<pic ID="154891" type="99" seqno="14">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_14_154891.png</pic>
+				<pic ID="154892" type="99" seqno="15">http://aaa-motors.ru/IMG/RENAULT_RST/026221/99_15_154892.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="534-954159034">J7</Model>
+		<CodeCompl Title="Код комплектации">20142</CodeCompl>
+		<VIN Title="VIN">MX1J7AGGXPK059336</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Черный (CL)</Color>
+		<Price Title="Цена">2149000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">136.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">22</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26508" DocNum="026174">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="152541" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026174/99_1_152541.png</pic>
+				<pic ID="152542" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026174/99_2_152542.png</pic>
+				<pic ID="152543" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026174/99_3_152543.png</pic>
+				<pic ID="152544" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026174/99_4_152544.png</pic>
+				<pic ID="152545" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026174/99_5_152545.png</pic>
+				<pic ID="152546" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026174/99_6_152546.png</pic>
+				<pic ID="152547" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026174/99_7_152547.png</pic>
+				<pic ID="152548" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026174/99_8_152548.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="534-954159034">J7</Model>
+		<CodeCompl Title="Код комплектации">20142</CodeCompl>
+		<VIN Title="VIN">MX1J7AGGXPK056256</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый (GR)</Color>
+		<Price Title="Цена">2149000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">136.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">24</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26567" DocNum="026233">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154860" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_1_154860.png</pic>
+				<pic ID="154861" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_2_154861.png</pic>
+				<pic ID="154862" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_3_154862.png</pic>
+				<pic ID="154863" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_4_154863.png</pic>
+				<pic ID="154864" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_5_154864.png</pic>
+				<pic ID="154865" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_6_154865.png</pic>
+				<pic ID="154866" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_7_154866.png</pic>
+				<pic ID="154867" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_8_154867.png</pic>
+				<pic ID="154868" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026233/99_9_154868.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="534-954159034">J7</Model>
+		<CodeCompl Title="Код комплектации">20142</CodeCompl>
+		<VIN Title="VIN">LJ12FKT30P4031952</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Красный (RD)</Color>
+		<Price Title="Цена">2149000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">136.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">12</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26626" DocNum="026292">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154940" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_1_154940.png</pic>
+				<pic ID="154941" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_2_154941.png</pic>
+				<pic ID="154942" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_3_154942.png</pic>
+				<pic ID="154943" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_4_154943.png</pic>
+				<pic ID="154944" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_5_154944.png</pic>
+				<pic ID="154945" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_6_154945.png</pic>
+				<pic ID="154946" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_7_154946.png</pic>
+				<pic ID="154947" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_8_154947.png</pic>
+				<pic ID="154948" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_9_154948.png</pic>
+				<pic ID="154949" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_10_154949.png</pic>
+				<pic ID="154950" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026292/99_11_154950.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="534-954159034">J7</Model>
+		<CodeCompl Title="Код комплектации">20142</CodeCompl>
+		<VIN Title="VIN">LJ12FKT3XP4045955</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">2149000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">136.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26591" DocNum="026257">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="153869" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_1_153869.png</pic>
+				<pic ID="153870" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_2_153870.png</pic>
+				<pic ID="153871" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_3_153871.png</pic>
+				<pic ID="153872" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_4_153872.png</pic>
+				<pic ID="153873" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_5_153873.png</pic>
+				<pic ID="153874" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_6_153874.png</pic>
+				<pic ID="153875" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_7_153875.png</pic>
+				<pic ID="153876" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_8_153876.png</pic>
+				<pic ID="153877" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_9_153877.png</pic>
+				<pic ID="153878" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_10_153878.png</pic>
+				<pic ID="153879" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026257/99_11_153879.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="534-954159034">J7</Model>
+		<CodeCompl Title="Код комплектации">20142</CodeCompl>
+		<VIN Title="VIN">MX1J7AGGXPK058360</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">2281500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">136.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26556" DocNum="026222">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="155014" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_1_155014.png</pic>
+				<pic ID="155015" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_2_155015.png</pic>
+				<pic ID="155016" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_3_155016.png</pic>
+				<pic ID="155017" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_4_155017.png</pic>
+				<pic ID="155018" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_5_155018.png</pic>
+				<pic ID="155019" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_6_155019.png</pic>
+				<pic ID="155020" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_7_155020.png</pic>
+				<pic ID="155021" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_8_155021.png</pic>
+				<pic ID="155022" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026222/99_9_155022.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="567-954159036">JS6</Model>
+		<CodeCompl Title="Код комплектации">201102</CodeCompl>
+		<VIN Title="VIN">LJ166A258R4717948</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый (GR)</Color>
+		<Price Title="Цена">2809000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">174.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1560-1590</Weight>
+		<CargoVolume Title="Объем багажника">670</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">24</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26558" DocNum="026224">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="567-954159036">JS6</Model>
+		<CodeCompl Title="Код комплектации">201102</CodeCompl>
+		<VIN Title="VIN">LJ166A254R4718899</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Голубой (LB)</Color>
+		<Price Title="Цена">2809000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">174.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий (Синий)</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1560-1590</Weight>
+		<CargoVolume Title="Объем багажника">670</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">76</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26628" DocNum="026294">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154594" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_1_154594.png</pic>
+				<pic ID="154595" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_2_154595.png</pic>
+				<pic ID="154596" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_3_154596.png</pic>
+				<pic ID="154597" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_4_154597.png</pic>
+				<pic ID="154598" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_5_154598.png</pic>
+				<pic ID="154599" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_6_154599.png</pic>
+				<pic ID="154600" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_7_154600.png</pic>
+				<pic ID="154601" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_8_154601.png</pic>
+				<pic ID="154602" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026294/99_9_154602.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="567-954159036">JS6</Model>
+		<CodeCompl Title="Код комплектации">201102</CodeCompl>
+		<VIN Title="VIN">LJ166A250R4717958</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый (GR)</Color>
+		<Price Title="Цена">2874000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">174.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1560-1590</Weight>
+		<CargoVolume Title="Объем багажника">670</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">24</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26496" DocNum="026162">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="152496" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_2_152496.png</pic>
+				<pic ID="152497" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_3_152497.png</pic>
+				<pic ID="152498" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_1_152498.png</pic>
+				<pic ID="152499" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_4_152499.png</pic>
+				<pic ID="152500" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_5_152500.png</pic>
+				<pic ID="152501" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_6_152501.png</pic>
+				<pic ID="152502" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_7_152502.png</pic>
+				<pic ID="152503" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_8_152503.png</pic>
+				<pic ID="152504" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_9_152504.png</pic>
+				<pic ID="152505" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_10_152505.png</pic>
+				<pic ID="152506" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026162/99_11_152506.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="567-954159036">JS6</Model>
+		<CodeCompl Title="Код комплектации">201102</CodeCompl>
+		<VIN Title="VIN">LJ166A258R4717769</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">2958500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">174.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1560-1590</Weight>
+		<CargoVolume Title="Объем багажника">670</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26359" DocNum="026025">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="155023" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_1_155023.png</pic>
+				<pic ID="155024" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_2_155024.png</pic>
+				<pic ID="155025" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_3_155025.png</pic>
+				<pic ID="155026" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_4_155026.png</pic>
+				<pic ID="155027" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_5_155027.png</pic>
+				<pic ID="155028" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_6_155028.png</pic>
+				<pic ID="155029" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_7_155029.png</pic>
+				<pic ID="155030" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_8_155030.png</pic>
+				<pic ID="155031" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_9_155031.png</pic>
+				<pic ID="155032" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026025/99_10_155032.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="625-954159041">T8</Model>
+		<CodeCompl Title="Код комплектации">201141</CodeCompl>
+		<VIN Title="VIN">LJ11PAB59RC036467</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый (GR)</Color>
+		<Price Title="Цена">3059000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">190.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1997</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2720</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">24</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26360" DocNum="026026">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="155033" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_1_155033.png</pic>
+				<pic ID="155034" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_2_155034.png</pic>
+				<pic ID="155035" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_3_155035.png</pic>
+				<pic ID="155036" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_4_155036.png</pic>
+				<pic ID="155037" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_5_155037.png</pic>
+				<pic ID="155038" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_6_155038.png</pic>
+				<pic ID="155039" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_7_155039.png</pic>
+				<pic ID="155040" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_8_155040.png</pic>
+				<pic ID="155041" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_9_155041.png</pic>
+				<pic ID="155042" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026026/99_10_155042.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="638-954159043">T8 PRO</Model>
+		<CodeCompl Title="Код комплектации">201121</CodeCompl>
+		<VIN Title="VIN">LJ11PAB51RC036530</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">3279000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">211.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">2378</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2840</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26635" DocNum="026301">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154552" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_1_154552.png</pic>
+				<pic ID="154553" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_2_154553.png</pic>
+				<pic ID="154554" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_3_154554.png</pic>
+				<pic ID="154555" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_4_154555.png</pic>
+				<pic ID="154556" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_5_154556.png</pic>
+				<pic ID="154557" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_6_154557.png</pic>
+				<pic ID="154558" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_7_154558.png</pic>
+				<pic ID="154559" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_8_154559.png</pic>
+				<pic ID="154560" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_9_154560.png</pic>
+				<pic ID="154561" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026301/99_10_154561.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="625-954159041">T8</Model>
+		<CodeCompl Title="Код комплектации">201142</CodeCompl>
+		<VIN Title="VIN">LJ11PABD0RC037742</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый (KH)</Color>
+		<Price Title="Цена">3324000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">дизель</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">139.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1999</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2830</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">21</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26596" DocNum="026262">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154562" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_1_154562.png</pic>
+				<pic ID="154563" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_2_154563.png</pic>
+				<pic ID="154564" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_3_154564.png</pic>
+				<pic ID="154565" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_4_154565.png</pic>
+				<pic ID="154566" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_5_154566.png</pic>
+				<pic ID="154567" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_6_154567.png</pic>
+				<pic ID="154568" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_7_154568.png</pic>
+				<pic ID="154569" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_8_154569.png</pic>
+				<pic ID="154570" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_9_154570.png</pic>
+				<pic ID="154571" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_10_154571.png</pic>
+				<pic ID="154572" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_11_154572.png</pic>
+				<pic ID="154573" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_12_154573.png</pic>
+				<pic ID="154574" type="99" seqno="13">http://aaa-motors.ru/IMG/RENAULT_RST/026262/99_13_154574.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="625-954159041">T8</Model>
+		<CodeCompl Title="Код комплектации">201142</CodeCompl>
+		<VIN Title="VIN">LJ11PABD5RC029460</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Черный (CL)</Color>
+		<Price Title="Цена">3324000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">дизель</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">139.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1999</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2830</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">22</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26500" DocNum="026166">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="155072" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026166/99_1_155072.png</pic>
+				<pic ID="155073" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026166/99_2_155073.png</pic>
+				<pic ID="155074" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026166/99_3_155074.png</pic>
+				<pic ID="155075" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026166/99_4_155075.png</pic>
+				<pic ID="155076" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026166/99_5_155076.png</pic>
+				<pic ID="155077" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026166/99_6_155077.png</pic>
+				<pic ID="155078" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026166/99_7_155078.png</pic>
+				<pic ID="155079" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026166/99_8_155079.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB56SC036092</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Светло-серый (LG)</Color>
+		<Price Title="Цена">3649000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">72</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26633" DocNum="026299">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="155055" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_1_155055.png</pic>
+				<pic ID="155056" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_2_155056.png</pic>
+				<pic ID="155057" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_3_155057.png</pic>
+				<pic ID="155058" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_4_155058.png</pic>
+				<pic ID="155059" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_5_155059.png</pic>
+				<pic ID="155060" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_6_155060.png</pic>
+				<pic ID="155061" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_7_155061.png</pic>
+				<pic ID="155062" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_8_155062.png</pic>
+				<pic ID="155063" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026299/99_9_155063.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB58SC045473</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">3649000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26561" DocNum="026227">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB54SC036320</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый (KH)</Color>
+		<Price Title="Цена">3649000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">21</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26448" DocNum="026114">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="155043" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_1_155043.png</pic>
+				<pic ID="155044" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_2_155044.png</pic>
+				<pic ID="155045" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_3_155045.png</pic>
+				<pic ID="155046" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_4_155046.png</pic>
+				<pic ID="155047" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_5_155047.png</pic>
+				<pic ID="155048" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_6_155048.png</pic>
+				<pic ID="155049" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_7_155049.png</pic>
+				<pic ID="155050" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_8_155050.png</pic>
+				<pic ID="155051" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_9_155051.png</pic>
+				<pic ID="155052" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_10_155052.png</pic>
+				<pic ID="155053" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_11_155053.png</pic>
+				<pic ID="155054" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026114/99_12_155054.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB51RC049262</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый (GR)</Color>
+		<Price Title="Цена">3699000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">24</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26631" DocNum="026297">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154622" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_2_154622.png</pic>
+				<pic ID="154623" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_1_154623.png</pic>
+				<pic ID="154624" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_3_154624.png</pic>
+				<pic ID="154625" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_4_154625.png</pic>
+				<pic ID="154626" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_5_154626.png</pic>
+				<pic ID="154627" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_6_154627.png</pic>
+				<pic ID="154628" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_7_154628.png</pic>
+				<pic ID="154629" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_8_154629.png</pic>
+				<pic ID="154630" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026297/99_9_154630.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB58SC043867</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый (WH)</Color>
+		<Price Title="Цена">3714000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">11</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26623" DocNum="026289">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154651" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_5_154651.png</pic>
+				<pic ID="154652" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_6_154652.png</pic>
+				<pic ID="154653" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_7_154653.png</pic>
+				<pic ID="154654" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_8_154654.png</pic>
+				<pic ID="154655" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_9_154655.png</pic>
+				<pic ID="154656" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_10_154656.png</pic>
+				<pic ID="154657" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_11_154657.png</pic>
+				<pic ID="154658" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_12_154658.png</pic>
+				<pic ID="154647" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_2_154647.png</pic>
+				<pic ID="154648" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_3_154648.png</pic>
+				<pic ID="154649" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_1_154649.png</pic>
+				<pic ID="154650" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026289/99_4_154650.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB5XSC036466</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Синий (VS)</Color>
+		<Price Title="Цена">3714000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий (Синий)</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">13</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26714" DocNum="026380">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="155080" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026380/99_1_155080.png</pic>
+				<pic ID="155081" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026380/99_2_155081.png</pic>
+				<pic ID="155082" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026380/99_3_155082.png</pic>
+				<pic ID="155083" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026380/99_4_155083.png</pic>
+				<pic ID="155084" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026380/99_5_155084.png</pic>
+				<pic ID="155085" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026380/99_6_155085.png</pic>
+				<pic ID="155086" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026380/99_7_155086.png</pic>
+				<pic ID="155087" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026380/99_8_155087.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201152</CodeCompl>
+		<VIN Title="VIN">LJ11PABEXSC052991</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Светло-серый (LG)</Color>
+		<Price Title="Цена">3749000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">72</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26715" DocNum="026381">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201152</CodeCompl>
+		<VIN Title="VIN">LJ11PABE9SC052836</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый (KH)</Color>
+		<Price Title="Цена">3749000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">21</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26634" DocNum="026300">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154639" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026300/99_8_154639.png</pic>
+				<pic ID="154640" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026300/99_1_154640.png</pic>
+				<pic ID="154641" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026300/99_3_154641.png</pic>
+				<pic ID="154642" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026300/99_4_154642.png</pic>
+				<pic ID="154643" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026300/99_5_154643.png</pic>
+				<pic ID="154644" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026300/99_6_154644.png</pic>
+				<pic ID="154645" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026300/99_7_154645.png</pic>
+				<pic ID="154646" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026300/99_2_154646.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB51SC045539</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Светло-серый (LG)</Color>
+		<Price Title="Цена">3769000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">72</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26622" DocNum="026288">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154659" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_2_154659.png</pic>
+				<pic ID="154660" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_1_154660.png</pic>
+				<pic ID="154661" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_3_154661.png</pic>
+				<pic ID="154662" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_4_154662.png</pic>
+				<pic ID="154663" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_5_154663.png</pic>
+				<pic ID="154664" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_6_154664.png</pic>
+				<pic ID="154665" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_7_154665.png</pic>
+				<pic ID="154666" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_8_154666.png</pic>
+				<pic ID="154667" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_9_154667.png</pic>
+				<pic ID="154668" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026288/99_10_154668.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB53SC036325</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый (KH)</Color>
+		<Price Title="Цена">3776500.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">21</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26568" DocNum="026234">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="153892" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_1_153892.png</pic>
+				<pic ID="153893" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_2_153893.png</pic>
+				<pic ID="153894" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_3_153894.png</pic>
+				<pic ID="153895" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_4_153895.png</pic>
+				<pic ID="153896" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_5_153896.png</pic>
+				<pic ID="153897" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_6_153897.png</pic>
+				<pic ID="153898" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_7_153898.png</pic>
+				<pic ID="153899" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_8_153899.png</pic>
+				<pic ID="153900" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_9_153900.png</pic>
+				<pic ID="153901" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_10_153901.png</pic>
+				<pic ID="153902" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_11_153902.png</pic>
+				<pic ID="153903" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026234/99_12_153903.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB58SC036465</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Синий (VS)</Color>
+		<Price Title="Цена">3777000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий (Синий)</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">13</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26630" DocNum="026296">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="154603" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_1_154603.png</pic>
+				<pic ID="154604" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_2_154604.png</pic>
+				<pic ID="154605" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_3_154605.png</pic>
+				<pic ID="154606" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_4_154606.png</pic>
+				<pic ID="154607" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_5_154607.png</pic>
+				<pic ID="154608" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_6_154608.png</pic>
+				<pic ID="154609" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_7_154609.png</pic>
+				<pic ID="154610" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_8_154610.png</pic>
+				<pic ID="154611" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_9_154611.png</pic>
+				<pic ID="154612" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026296/99_10_154612.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB58SC043920</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый (GR)</Color>
+		<Price Title="Цена">3801000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">24</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26506" DocNum="026172">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="152455" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_1_152455.png</pic>
+				<pic ID="152456" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_2_152456.png</pic>
+				<pic ID="152457" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_3_152457.png</pic>
+				<pic ID="152458" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_4_152458.png</pic>
+				<pic ID="152459" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_5_152459.png</pic>
+				<pic ID="152460" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_6_152460.png</pic>
+				<pic ID="152461" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_7_152461.png</pic>
+				<pic ID="152462" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_8_152462.png</pic>
+				<pic ID="152463" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_9_152463.png</pic>
+				<pic ID="152464" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026172/99_10_152464.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB55SC036150</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый (GR)</Color>
+		<Price Title="Цена">3843400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">24</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26507" DocNum="026173">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="152448" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026173/99_1_152448.png</pic>
+				<pic ID="152449" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026173/99_2_152449.png</pic>
+				<pic ID="152450" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026173/99_3_152450.png</pic>
+				<pic ID="152451" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026173/99_4_152451.png</pic>
+				<pic ID="152452" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026173/99_5_152452.png</pic>
+				<pic ID="152453" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026173/99_6_152453.png</pic>
+				<pic ID="152454" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026173/99_7_152454.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB56SC036495</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Красный (RD)</Color>
+		<Price Title="Цена">3886400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">12</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26502" DocNum="026168">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="153173" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_1_153173.png</pic>
+				<pic ID="153174" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_2_153174.png</pic>
+				<pic ID="153175" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_3_153175.png</pic>
+				<pic ID="153176" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_4_153176.png</pic>
+				<pic ID="153177" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_5_153177.png</pic>
+				<pic ID="153178" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_6_153178.png</pic>
+				<pic ID="153179" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_7_153179.png</pic>
+				<pic ID="153180" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_8_153180.png</pic>
+				<pic ID="153181" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_9_153181.png</pic>
+				<pic ID="153182" type="99" seqno="10">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_10_153182.png</pic>
+				<pic ID="153183" type="99" seqno="11">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_11_153183.png</pic>
+				<pic ID="153184" type="99" seqno="12">http://aaa-motors.ru/IMG/RENAULT_RST/026168/99_12_153184.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="696-954159049">T9</Model>
+		<CodeCompl Title="Код комплектации">201151</CodeCompl>
+		<VIN Title="VIN">LJ11PAB58SC036112</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Светло-серый (LG)</Color>
+		<Price Title="Цена">3947400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">224.00</Power>
+		<BodyType Title="Тип кузова">Пикап</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">3100</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">72</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="26559" DocNum="026225">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="155010" type="99" seqno="6">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_6_155010.png</pic>
+				<pic ID="155011" type="99" seqno="7">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_7_155011.png</pic>
+				<pic ID="155012" type="99" seqno="8">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_8_155012.png</pic>
+				<pic ID="155013" type="99" seqno="9">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_9_155013.png</pic>
+				<pic ID="155005" type="99" seqno="1">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_1_155005.png</pic>
+				<pic ID="155006" type="99" seqno="2">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_2_155006.png</pic>
+				<pic ID="155007" type="99" seqno="3">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_3_155007.png</pic>
+				<pic ID="155008" type="99" seqno="4">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_4_155008.png</pic>
+				<pic ID="155009" type="99" seqno="5">http://aaa-motors.ru/IMG/RENAULT_RST/026225/99_5_155009.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="82-924304081">JAC</Mark>
+		<Model Title="Модель" Code="666-954159047">JS3</Model>
+		<CodeCompl Title="Код комплектации">201132</CodeCompl>
+		<VIN Title="VIN">LJ12EKR22R4718757</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый (KH)</Color>
+		<Price Title="Цена">1989000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">109.00</Power>
+		<BodyType Title="Тип кузова">Хетчбэк</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1590</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1275-1650</Weight>
+		<CargoVolume Title="Объем багажника">600</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">21</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">170000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

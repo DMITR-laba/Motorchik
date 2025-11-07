@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Основы программирования",
+    "content": "Программирование - это процесс создания компьютерных программ. Основные концепции включают переменные, функции, циклы и условия.",
+    "link": "https://example.com/programming-basics",
+    "lang": "ru"
+  },
+  {
+    "title": "Web Development Guide",
+    "description": "Complete guide to modern web development including HTML, CSS, JavaScript, and frameworks.",
+    "url": "https://example.com/web-dev-guide",
+    "language": "en"
+  },
+  {
+    "subject": "Машинное обучение",
+    "body": "Машинное обучение - это подраздел искусственного интеллекта, который фокусируется на создании алгоритмов, способных учиться и принимать решения.",
+    "href": "https://example.com/ml-intro",
+    "locale": "ru"
+  },
+  {
+    "header": "Database Design",
+    "text": "Database design is the process of producing a detailed data model of a database. This data model contains all the needed logical and physical design choices.",
+    "link": "https://example.com/db-design",
+    "lang": "en"
+  }
+]
+
+
+
+
+
+
+

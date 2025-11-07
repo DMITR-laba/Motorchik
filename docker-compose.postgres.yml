@@ -1,0 +1,27 @@
+name: postgres-pgvector-standalone
+
+services:
+  postgres-pgvector:
+    image: ankane/pgvector:latest
+    container_name: postgres-pgvector
+    environment:
+      POSTGRES_DB: vectordb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5433:5432"  # Используем другой порт, чтобы не конфликтовать с существующим postgres
+    volumes:
+      - postgres_pgvector_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # Используем сеть по умолчанию, но она изолирована от других docker-compose проектов
+    # Контейнер доступен через localhost:5433
+
+volumes:
+  postgres_pgvector_data:
+

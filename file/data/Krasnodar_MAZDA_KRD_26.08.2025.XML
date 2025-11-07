@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="MAZDA_KRD">
+
+	<CarOrder Title="Заказ на автомобиль" value="15361" DocNum="015311">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="72959" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_1_72959.png</pic>
+				<pic ID="72961" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_3_72961.png</pic>
+				<pic ID="72960" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_2_72960.png</pic>
+				<pic ID="72962" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_4_72962.png</pic>
+				<pic ID="72963" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_5_72963.png</pic>
+				<pic ID="72964" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_6_72964.png</pic>
+				<pic ID="72965" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_7_72965.png</pic>
+				<pic ID="72966" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_8_72966.png</pic>
+				<pic ID="72967" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_9_72967.png</pic>
+				<pic ID="72968" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_10_72968.png</pic>
+				<pic ID="72969" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_11_72969.png</pic>
+				<pic ID="72970" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_12_72970.png</pic>
+				<pic ID="72971" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_13_72971.png</pic>
+				<pic ID="72972" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_14_72972.png</pic>
+				<pic ID="72973" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_15_72973.png</pic>
+				<pic ID="72974" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_16_72974.png</pic>
+				<pic ID="72975" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_17_72975.png</pic>
+				<pic ID="72976" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_18_72976.png</pic>
+				<pic ID="72977" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_19_72977.png</pic>
+				<pic ID="72978" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_20_72978.png</pic>
+				<pic ID="72979" type="99" seqno="21">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_21_72979.png</pic>
+				<pic ID="72980" type="99" seqno="22">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_22_72980.png</pic>
+				<pic ID="72981" type="99" seqno="23">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_23_72981.png</pic>
+				<pic ID="72982" type="99" seqno="24">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_24_72982.png</pic>
+				<pic ID="72983" type="99" seqno="25">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_25_72983.png</pic>
+				<pic ID="72984" type="99" seqno="26">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_26_72984.png</pic>
+				<pic ID="72985" type="99" seqno="27">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_27_72985.png</pic>
+				<pic ID="72986" type="99" seqno="28">http://aaa-motors.ru/IMG/MAZDA_KRD/015311/99_28_72986.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="22-1255220419">MAZDA</Mark>
+		<Model Title="Модель" Code="105-1628388808">CX-5</Model>
+		<CodeCompl Title="Код комплектации">CX05ZHI</CodeCompl>
+		<VIN Title="VIN">LVRHDCAC3SN572417</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Platinum Steel Gray (Серый)</Color>
+		<Price Title="Цена">4450000.00</Price>
+		<City Title="Город назначения">Краснодар</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">155.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Евро 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1558</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">PSG</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="15363" DocNum="015313">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="73378" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_1_73378.png</pic>
+				<pic ID="73379" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_2_73379.png</pic>
+				<pic ID="73380" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_3_73380.png</pic>
+				<pic ID="73381" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_4_73381.png</pic>
+				<pic ID="73382" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_5_73382.png</pic>
+				<pic ID="73383" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_6_73383.png</pic>
+				<pic ID="73384" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_7_73384.png</pic>
+				<pic ID="73385" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_8_73385.png</pic>
+				<pic ID="73386" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_9_73386.png</pic>
+				<pic ID="73387" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_10_73387.png</pic>
+				<pic ID="73388" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_11_73388.png</pic>
+				<pic ID="73389" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_12_73389.png</pic>
+				<pic ID="73390" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_13_73390.png</pic>
+				<pic ID="73391" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_14_73391.png</pic>
+				<pic ID="73392" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_15_73392.png</pic>
+				<pic ID="73393" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_16_73393.png</pic>
+				<pic ID="73394" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_17_73394.png</pic>
+				<pic ID="73395" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_18_73395.png</pic>
+				<pic ID="73396" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_19_73396.png</pic>
+				<pic ID="73397" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_20_73397.png</pic>
+				<pic ID="73398" type="99" seqno="21">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_21_73398.png</pic>
+				<pic ID="73399" type="99" seqno="22">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_22_73399.png</pic>
+				<pic ID="73400" type="99" seqno="23">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_23_73400.png</pic>
+				<pic ID="73401" type="99" seqno="24">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_24_73401.png</pic>
+				<pic ID="73402" type="99" seqno="25">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_25_73402.png</pic>
+				<pic ID="73403" type="99" seqno="26">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_26_73403.png</pic>
+				<pic ID="73404" type="99" seqno="27">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_27_73404.png</pic>
+				<pic ID="73405" type="99" seqno="28">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_28_73405.png</pic>
+				<pic ID="73406" type="99" seqno="29">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_29_73406.png</pic>
+				<pic ID="73407" type="99" seqno="30">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_30_73407.png</pic>
+				<pic ID="73408" type="99" seqno="31">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_31_73408.png</pic>
+				<pic ID="73409" type="99" seqno="32">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_32_73409.png</pic>
+				<pic ID="73410" type="99" seqno="33">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_33_73410.png</pic>
+				<pic ID="73411" type="99" seqno="34">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_34_73411.png</pic>
+				<pic ID="73412" type="99" seqno="35">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_35_73412.png</pic>
+				<pic ID="73413" type="99" seqno="36">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_36_73413.png</pic>
+				<pic ID="73414" type="99" seqno="37">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_37_73414.png</pic>
+				<pic ID="73415" type="99" seqno="38">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_38_73415.png</pic>
+				<pic ID="73416" type="99" seqno="39">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_39_73416.png</pic>
+				<pic ID="73417" type="99" seqno="40">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_40_73417.png</pic>
+				<pic ID="73418" type="99" seqno="41">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_41_73418.png</pic>
+				<pic ID="73419" type="99" seqno="42">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_42_73419.png</pic>
+				<pic ID="73420" type="99" seqno="43">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_43_73420.png</pic>
+				<pic ID="73421" type="99" seqno="44">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_44_73421.png</pic>
+				<pic ID="73422" type="99" seqno="45">http://aaa-motors.ru/IMG/MAZDA_KRD/015313/99_45_73422.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="22-1255220419">MAZDA</Mark>
+		<Model Title="Модель" Code="105-1628388808">CX-5</Model>
+		<CodeCompl Title="Код комплектации">CX05ZHI</CodeCompl>
+		<VIN Title="VIN">LVRHDCAC2SN571310</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Soul Red Crystal</Color>
+		<Price Title="Цена">4640000.00</Price>
+		<City Title="Город назначения">Краснодар</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">155.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Евро 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1558</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Soul Red C</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

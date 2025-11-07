@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="MAZDA_RST">
+
+	<CarOrder Title="Заказ на автомобиль" value="13201" DocNum="012903">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="95--1457713236">Hongqi</Mark>
+		<Model Title="Модель" Code="103743--1495084058">HS3</Model>
+		<CodeCompl Title="Код комплектации">27082306825655628248</CodeCompl>
+		<VIN Title="VIN">LFPH3APP4R1K17612</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Белый</Color>
+		<Price Title="Цена">4190000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">156.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">252</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4665*1900*1668</Dimensions>
+		<Weight Title="Масса">1785</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10260</interior-code>
+		<color-code Title="Код цвета кузова">White-Whit</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13204" DocNum="012906">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="95--1457713236">Hongqi</Mark>
+		<Model Title="Модель" Code="103743--1495084058">HS3</Model>
+		<CodeCompl Title="Код комплектации">27082306825655728249</CodeCompl>
+		<VIN Title="VIN">LFPH4CPPXR1K13993</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный с синим</InteriorColor>
+		<Color Title="Цвет">Белый с чёрной крышей</Color>
+		<Price Title="Цена">4640000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">245.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый с чёрной крышей</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1989</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">6,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">210</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4665*1900*1668</Dimensions>
+		<Weight Title="Масса">1865</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">11092</interior-code>
+		<color-code Title="Код цвета кузова">White-Blac</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13205" DocNum="012907">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="95--1457713236">Hongqi</Mark>
+		<Model Title="Модель" Code="103743--1495084058">HS3</Model>
+		<CodeCompl Title="Код комплектации">27082306825655728249</CodeCompl>
+		<VIN Title="VIN">LFPH4CPP5R1K14291</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Белый с чёрной крышей</Color>
+		<Price Title="Цена">4640000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">245.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый с чёрной крышей</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1989</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">6,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">210</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4665*1900*1668</Dimensions>
+		<Weight Title="Масса">1865</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10260</interior-code>
+		<color-code Title="Код цвета кузова">White-Blac</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13166" DocNum="012868">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="89236" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_1_89236.png</pic>
+				<pic ID="89237" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_2_89237.png</pic>
+				<pic ID="89238" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_3_89238.png</pic>
+				<pic ID="89239" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_4_89239.png</pic>
+				<pic ID="89240" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_5_89240.png</pic>
+				<pic ID="89241" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_6_89241.png</pic>
+				<pic ID="89242" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_7_89242.png</pic>
+				<pic ID="89243" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_8_89243.png</pic>
+				<pic ID="89244" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_9_89244.png</pic>
+				<pic ID="89245" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_10_89245.png</pic>
+				<pic ID="89246" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_11_89246.png</pic>
+				<pic ID="89247" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_12_89247.png</pic>
+				<pic ID="89248" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_13_89248.png</pic>
+				<pic ID="89249" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_14_89249.png</pic>
+				<pic ID="89250" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_15_89250.png</pic>
+				<pic ID="89251" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_16_89251.png</pic>
+				<pic ID="89252" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_17_89252.png</pic>
+				<pic ID="89253" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_18_89253.png</pic>
+				<pic ID="89254" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_19_89254.png</pic>
+				<pic ID="89255" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_20_89255.png</pic>
+				<pic ID="89256" type="99" seqno="21">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_21_89256.png</pic>
+				<pic ID="89257" type="99" seqno="22">http://aaa-motors.ru/IMG/MAZDA_RST/012868/99_22_89257.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="18--1845759157">MAZDA</Mark>
+		<Model Title="Модель" Code="12--1330184264">CX-5</Model>
+		<CodeCompl Title="Код комплектации">CX05ZHI</CodeCompl>
+		<VIN Title="VIN">LVRHDCAC7SN572243</VIN>
+		<InteriorColor Title="Цвет салона">Black (черный)</InteriorColor>
+		<Color Title="Цвет">Platinum Steel Gray (Платиновый стальной серый)</Color>
+		<Price Title="Цена">4850000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">155.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">200/4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Евро 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4575*1842*1685</Dimensions>
+		<Weight Title="Масса">1558</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">Black</interior-code>
+		<color-code Title="Код цвета кузова">PSG</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13172" DocNum="012874">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="88998" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_1_88998.png</pic>
+				<pic ID="88999" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_2_88999.png</pic>
+				<pic ID="89000" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_3_89000.png</pic>
+				<pic ID="89001" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_4_89001.png</pic>
+				<pic ID="89002" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_5_89002.png</pic>
+				<pic ID="89003" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_6_89003.png</pic>
+				<pic ID="89004" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_7_89004.png</pic>
+				<pic ID="89005" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_8_89005.png</pic>
+				<pic ID="89006" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_9_89006.png</pic>
+				<pic ID="89007" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_10_89007.png</pic>
+				<pic ID="89008" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_11_89008.png</pic>
+				<pic ID="89009" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_12_89009.png</pic>
+				<pic ID="89010" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_13_89010.png</pic>
+				<pic ID="89011" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_14_89011.png</pic>
+				<pic ID="89012" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_15_89012.png</pic>
+				<pic ID="89013" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_16_89013.png</pic>
+				<pic ID="89014" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_17_89014.png</pic>
+				<pic ID="89015" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_18_89015.png</pic>
+				<pic ID="89016" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_19_89016.png</pic>
+				<pic ID="89017" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_20_89017.png</pic>
+				<pic ID="89018" type="99" seqno="21">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_21_89018.png</pic>
+				<pic ID="89019" type="99" seqno="22">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_22_89019.png</pic>
+				<pic ID="89020" type="99" seqno="23">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_23_89020.png</pic>
+				<pic ID="89021" type="99" seqno="24">http://aaa-motors.ru/IMG/MAZDA_RST/012874/99_24_89021.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="95--1457713236">Hongqi</Mark>
+		<Model Title="Модель" Code="103742--1495084670">H5</Model>
+		<CodeCompl Title="Код комплектации">27082280625578826683</CodeCompl>
+		<VIN Title="VIN">LFPH4ACP5R2A64481</VIN>
+		<InteriorColor Title="Цвет салона">Black</InteriorColor>
+		<Color Title="Цвет">Серый</Color>
+		<Price Title="Цена">5050000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">218.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1989</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">340</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">7,8</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">230</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4985*1865*1465</Dimensions>
+		<Weight Title="Масса">1565</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">11222</interior-code>
+		<color-code Title="Код цвета кузова">Grey-Grey</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13174" DocNum="012876">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="89177" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_1_89177.png</pic>
+				<pic ID="89178" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_2_89178.png</pic>
+				<pic ID="89179" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_3_89179.png</pic>
+				<pic ID="89180" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_4_89180.png</pic>
+				<pic ID="89181" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_5_89181.png</pic>
+				<pic ID="89182" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_6_89182.png</pic>
+				<pic ID="89183" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_7_89183.png</pic>
+				<pic ID="89184" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_8_89184.png</pic>
+				<pic ID="89185" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_9_89185.png</pic>
+				<pic ID="89186" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_10_89186.png</pic>
+				<pic ID="89187" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_11_89187.png</pic>
+				<pic ID="89188" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_12_89188.png</pic>
+				<pic ID="89189" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_13_89189.png</pic>
+				<pic ID="89190" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_14_89190.png</pic>
+				<pic ID="89191" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_15_89191.png</pic>
+				<pic ID="89192" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_16_89192.png</pic>
+				<pic ID="89193" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_17_89193.png</pic>
+				<pic ID="89194" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_18_89194.png</pic>
+				<pic ID="89195" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_19_89195.png</pic>
+				<pic ID="89196" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_20_89196.png</pic>
+				<pic ID="89197" type="99" seqno="21">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_21_89197.png</pic>
+				<pic ID="89198" type="99" seqno="22">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_22_89198.png</pic>
+				<pic ID="89199" type="99" seqno="23">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_23_89199.png</pic>
+				<pic ID="89200" type="99" seqno="24">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_24_89200.png</pic>
+				<pic ID="89201" type="99" seqno="25">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_25_89201.png</pic>
+				<pic ID="89202" type="99" seqno="26">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_26_89202.png</pic>
+				<pic ID="89203" type="99" seqno="27">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_27_89203.png</pic>
+				<pic ID="89204" type="99" seqno="28">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_28_89204.png</pic>
+				<pic ID="89205" type="99" seqno="29">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_29_89205.png</pic>
+				<pic ID="89206" type="99" seqno="30">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_30_89206.png</pic>
+				<pic ID="89207" type="99" seqno="31">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_31_89207.png</pic>
+				<pic ID="89208" type="99" seqno="32">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_32_89208.png</pic>
+				<pic ID="89209" type="99" seqno="33">http://aaa-motors.ru/IMG/MAZDA_RST/012876/99_33_89209.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="95--1457713236">Hongqi</Mark>
+		<Model Title="Модель" Code="103744--1368214224">HS5</Model>
+		<CodeCompl Title="Код комплектации">27082280525533726707</CodeCompl>
+		<VIN Title="VIN">LFPH4CPP2R1Y03508</VIN>
+		<InteriorColor Title="Цвет салона">Black</InteriorColor>
+		<Color Title="Цвет">Серый</Color>
+		<Price Title="Цена">5590000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">218.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1989</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">340</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">204</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4759*1907*1700</Dimensions>
+		<Weight Title="Масса">1915</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">11132</interior-code>
+		<color-code Title="Код цвета кузова">Grey-Grey</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13206" DocNum="012908">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="95--1457713236">Hongqi</Mark>
+		<Model Title="Модель" Code="103744--1368214224">HS5</Model>
+		<CodeCompl Title="Код комплектации">27082280525533727215</CodeCompl>
+		<VIN Title="VIN">LFPH4CPPXR1Y05278</VIN>
+		<InteriorColor Title="Цвет салона">Black</InteriorColor>
+		<Color Title="Цвет">Серый</Color>
+		<Price Title="Цена">5990000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">245.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1989</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,9</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">7,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">210</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4785*1905*1700</Dimensions>
+		<Weight Title="Масса">1895</Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">11132</interior-code>
+		<color-code Title="Код цвета кузова">Grey-Grey</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13180" DocNum="012882">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="90121" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_1_90121.png</pic>
+				<pic ID="90122" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_2_90122.png</pic>
+				<pic ID="90123" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_3_90123.png</pic>
+				<pic ID="90124" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_4_90124.png</pic>
+				<pic ID="90125" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_5_90125.png</pic>
+				<pic ID="90126" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_6_90126.png</pic>
+				<pic ID="90127" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_7_90127.png</pic>
+				<pic ID="90128" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_8_90128.png</pic>
+				<pic ID="90129" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_9_90129.png</pic>
+				<pic ID="90130" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_10_90130.png</pic>
+				<pic ID="90131" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_11_90131.png</pic>
+				<pic ID="90132" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_12_90132.png</pic>
+				<pic ID="90133" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_13_90133.png</pic>
+				<pic ID="90134" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_14_90134.png</pic>
+				<pic ID="90135" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_15_90135.png</pic>
+				<pic ID="90136" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_16_90136.png</pic>
+				<pic ID="90137" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_17_90137.png</pic>
+				<pic ID="90138" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_18_90138.png</pic>
+				<pic ID="90139" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_19_90139.png</pic>
+				<pic ID="90140" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_20_90140.png</pic>
+				<pic ID="90141" type="99" seqno="21">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_21_90141.png</pic>
+				<pic ID="90142" type="99" seqno="22">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_22_90142.png</pic>
+				<pic ID="90143" type="99" seqno="23">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_23_90143.png</pic>
+				<pic ID="90144" type="99" seqno="24">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_24_90144.png</pic>
+				<pic ID="90145" type="99" seqno="25">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_25_90145.png</pic>
+				<pic ID="90146" type="99" seqno="26">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_26_90146.png</pic>
+				<pic ID="90147" type="99" seqno="27">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_27_90147.png</pic>
+				<pic ID="90148" type="99" seqno="28">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_28_90148.png</pic>
+				<pic ID="90149" type="99" seqno="29">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_29_90149.png</pic>
+				<pic ID="90150" type="99" seqno="30">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_30_90150.png</pic>
+				<pic ID="90151" type="99" seqno="31">http://aaa-motors.ru/IMG/MAZDA_RST/012882/99_31_90151.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="95--1457713236">Hongqi</Mark>
+		<Model Title="Модель" Code="103771--1360673776">H6</Model>
+		<CodeCompl Title="Код комплектации">27082384726341934952</CodeCompl>
+		<VIN Title="VIN">LFPH4ACL6S2A12912</VIN>
+		<InteriorColor Title="Цвет салона">Black</InteriorColor>
+		<Color Title="Цвет">Чёрный</Color>
+		<Price Title="Цена">6302400.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">245.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Чёрный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1989</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">230</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4990*1876*1450</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">11120</interior-code>
+		<color-code Title="Код цвета кузова">Black-Blac</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13194" DocNum="012896">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="90774" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_1_90774.png</pic>
+				<pic ID="90775" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_2_90775.png</pic>
+				<pic ID="90776" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_3_90776.png</pic>
+				<pic ID="90777" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_4_90777.png</pic>
+				<pic ID="90778" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_5_90778.png</pic>
+				<pic ID="90779" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_6_90779.png</pic>
+				<pic ID="90780" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_7_90780.png</pic>
+				<pic ID="90781" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_8_90781.png</pic>
+				<pic ID="90782" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_9_90782.png</pic>
+				<pic ID="90783" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_10_90783.png</pic>
+				<pic ID="90784" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_11_90784.png</pic>
+				<pic ID="90785" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_12_90785.png</pic>
+				<pic ID="90786" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_13_90786.png</pic>
+				<pic ID="90787" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_14_90787.png</pic>
+				<pic ID="90788" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_15_90788.png</pic>
+				<pic ID="90789" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012896/99_16_90789.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="88--1406264926">SERES</Mark>
+		<Model Title="Модель" Code="947--1330184252">  M5</Model>
+		<CodeCompl Title="Код комплектации">M5Pre</CodeCompl>
+		<VIN Title="VIN">LM8F7E799RAA00683</VIN>
+		<InteriorColor Title="Цвет салона">Черный полярная ночь</InteriorColor>
+		<Color Title="Цвет">Ледяной кристально-серый</Color>
+		<Price Title="Цена">6790000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">487.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1500</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">664</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">4.6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4770*1930*1625</Dimensions>
+		<Weight Title="Масса">2410</Weight>
+		<CargoVolume Title="Объем багажника">369—776</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">201</interior-code>
+		<color-code Title="Код цвета кузова">775</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="58">10,25&quot; экран комбинации приборов</Option>
+				<Option Code="59">15,6 &quot; мультимедийный дисплей</Option>
+				<Option Code="69">s</Option>
+				<Option Code="62">Автоматическое двузонное кондиционирование воздуха с очисткой воздуха PM 2.5</Option>
+				<Option Code="70">Вентиляция и массаж сидений первого ряда</Option>
+				<Option Code="61">Подогрев рулевого колеса</Option>
+				<Option Code="63">Розетка 12 В (подлокотник ? 1, багажник ? 1)</Option>
+				<Option Code="60">Рулевое колесо с регулировкой по вылету и наклону</Option>
+				<Option Code="64">Система ароматизации воздуха</Option>
+				<Option Code="65">Солнцезащитные козырьки с подсветкой</Option>
+				<Option Code="67">Текстурированная кожа Nappa + экокожа с текстурой Nappa</Option>
+				<Option Code="71">Функция памяти сиденья водителя</Option>
+				<Option Code="68">Электрорегулировка передних сидений (12-позиционная)</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="16">AUTO HOLD автоматическая удержание автомобиля</Option>
+				<Option Code="15">HAC Помощь при подъеме в гору</Option>
+				<Option Code="22">Автоматическое экстренное торможение AEB</Option>
+				<Option Code="35">Адаптивная система круиз-контроля ACC</Option>
+				<Option Code="37">Активная система помощи при парковке APA (без дистанционной парковки)</Option>
+				<Option Code="14">Антипробуксовочная система TCS</Option>
+				<Option Code="11">Боковые шторы безопасности ? 2</Option>
+				<Option Code="12">Датчики парковки  ? 12</Option>
+				<Option Code="8">Индикация непристегнутых ремней безопасности</Option>
+				<Option Code="32">Контроль безопасности высоковольтной сети</Option>
+				<Option Code="7">Крепление детского автокресла ISOFIX второго ряда ? 2</Option>
+				<Option Code="23">Мониторинг слепых зон BSD</Option>
+				<Option Code="18">Панорамная камера 360°</Option>
+				<Option Code="10">Передние боковые подушки безопасности x 2</Option>
+				<Option Code="9">Передние подушки безопасности x 2</Option>
+				<Option Code="17">Помощь на крутом спуске HDC</Option>
+				<Option Code="38">Помощь при параллельной парковке LCA</Option>
+				<Option Code="31">Предупреждение о пешеходах</Option>
+				<Option Code="29">Предупреждение о поперечном движении сзади RCTA</Option>
+				<Option Code="21">Предупреждение о снижении дистанции FCW</Option>
+				<Option Code="30">Предупреждение при открытии двери DOW</Option>
+				<Option Code="34">Проекционный дисплей HUD</Option>
+				<Option Code="33">Режимы вождения (эко/ комфортный/ спортивный/ персонализированный)</Option>
+				<Option Code="39">Рекуперация энергии торможения RBS</Option>
+				<Option Code="28">Сигнализация экстренного торможения</Option>
+				<Option Code="25">Система контроля взгляда водителя DMS</Option>
+				<Option Code="26">Система контроля давления в шинах</Option>
+				<Option Code="19">Система контроля полосы движения LDWS</Option>
+				<Option Code="36">Система помощи при движении в пробках (TJA) /  
+Cистема удержания автомобиля в центре полосы (ICA)</Option>
+				<Option Code="20">Система удержания полосы движения LKA</Option>
+				<Option Code="13">Система экстренного торможения EBA</Option>
+				<Option Code="27">Электронная противоугонная система</Option>
+				<Option Code="24">Электронная система стабилизации кузова ESP</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="74">CarPlay/ AndroidAuto</Option>
+				<Option Code="75">Беспроводная зарядка мобильных телефонов мощностью 40 Вт</Option>
+				<Option Code="73">Интерфейс мультимедийного экрана и комбинации приборов на русском языке</Option>
+				<Option Code="76">Набор USB интерфейсов</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="47">Автоматические стеклоочистители с подогревом форсунок стеклоомывателя</Option>
+				<Option Code="44">Бесключевой доступ</Option>
+				<Option Code="41">Звукоизоляционное остекление</Option>
+				<Option Code="46">Зеркало заднего вида с автоматическим затемнением</Option>
+				<Option Code="45">Наружные зеркала заднего вида с электроприводом   / подогревом / функция памяти</Option>
+				<Option Code="48">Обогрев заднего стекла</Option>
+				<Option Code="40">Панорамная крыша</Option>
+				<Option Code="42">Скрытые дверные ручки</Option>
+				<Option Code="43">Электропривод задней двери с функцией &quot;свободные руки&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">128-цветная подсветка салона</Option>
+				<Option Code="55">Адаптивный дальний и ближний свет (HMA)</Option>
+				<Option Code="2">Задняя многорычажная  независимая подвеска</Option>
+				<Option Code="3">Передние и задние вентилируемые тормозные диски</Option>
+				<Option Code="4">Передние и задние красные суппорты</Option>
+				<Option Code="1">Передняя независимая подвеска на двойных поперечных рычагах</Option>
+				<Option Code="57">Приветственное освещение</Option>
+				<Option Code="6">Режим электроусилителя руля (Comfort/Sport)</Option>
+				<Option Code="52">Светодиодная световая лента задней двери</Option>
+				<Option Code="49">Светодиодные передние комбинированные фары</Option>
+				<Option Code="54">Светодиодные задние противотуманные фары</Option>
+				<Option Code="50">Светодиодные указатели поворота</Option>
+				<Option Code="51">Светодиодный задний комбинированный фонарь</Option>
+				<Option Code="53">Светодиодный задний стоп-сигнал</Option>
+				<Option Code="5">Электрический стояночный тормоз</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13169" DocNum="012871">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="90754" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_1_90754.png</pic>
+				<pic ID="90755" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_2_90755.png</pic>
+				<pic ID="90756" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_3_90756.png</pic>
+				<pic ID="90757" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_4_90757.png</pic>
+				<pic ID="90758" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_5_90758.png</pic>
+				<pic ID="90759" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_6_90759.png</pic>
+				<pic ID="90760" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_7_90760.png</pic>
+				<pic ID="90761" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_8_90761.png</pic>
+				<pic ID="90762" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_9_90762.png</pic>
+				<pic ID="90763" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_10_90763.png</pic>
+				<pic ID="90764" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_11_90764.png</pic>
+				<pic ID="90765" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_12_90765.png</pic>
+				<pic ID="90766" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_13_90766.png</pic>
+				<pic ID="90767" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_14_90767.png</pic>
+				<pic ID="90768" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_15_90768.png</pic>
+				<pic ID="90769" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_16_90769.png</pic>
+				<pic ID="90770" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_17_90770.png</pic>
+				<pic ID="90771" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_18_90771.png</pic>
+				<pic ID="90772" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_19_90772.png</pic>
+				<pic ID="90773" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_RST/012871/99_20_90773.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="88--1406264926">SERES</Mark>
+		<Model Title="Модель" Code="947--1330184252">  M5</Model>
+		<CodeCompl Title="Код комплектации">M5Pre</CodeCompl>
+		<VIN Title="VIN">LM8F7E792RAA01934</VIN>
+		<InteriorColor Title="Цвет салона">Слоновая кость</InteriorColor>
+		<Color Title="Цвет">Позолоченный черный</Color>
+		<Price Title="Цена">6790000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">487.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1500</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">664</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">4.6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4770*1930*1625</Dimensions>
+		<Weight Title="Масса">2410</Weight>
+		<CargoVolume Title="Объем багажника">369—776</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">205</interior-code>
+		<color-code Title="Код цвета кузова">197</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="58">10,25&quot; экран комбинации приборов</Option>
+				<Option Code="59">15,6 &quot; мультимедийный дисплей</Option>
+				<Option Code="69">s</Option>
+				<Option Code="62">Автоматическое двузонное кондиционирование воздуха с очисткой воздуха PM 2.5</Option>
+				<Option Code="70">Вентиляция и массаж сидений первого ряда</Option>
+				<Option Code="61">Подогрев рулевого колеса</Option>
+				<Option Code="63">Розетка 12 В (подлокотник ? 1, багажник ? 1)</Option>
+				<Option Code="60">Рулевое колесо с регулировкой по вылету и наклону</Option>
+				<Option Code="64">Система ароматизации воздуха</Option>
+				<Option Code="65">Солнцезащитные козырьки с подсветкой</Option>
+				<Option Code="67">Текстурированная кожа Nappa + экокожа с текстурой Nappa</Option>
+				<Option Code="71">Функция памяти сиденья водителя</Option>
+				<Option Code="68">Электрорегулировка передних сидений (12-позиционная)</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="16">AUTO HOLD автоматическая удержание автомобиля</Option>
+				<Option Code="15">HAC Помощь при подъеме в гору</Option>
+				<Option Code="22">Автоматическое экстренное торможение AEB</Option>
+				<Option Code="35">Адаптивная система круиз-контроля ACC</Option>
+				<Option Code="37">Активная система помощи при парковке APA (без дистанционной парковки)</Option>
+				<Option Code="14">Антипробуксовочная система TCS</Option>
+				<Option Code="11">Боковые шторы безопасности ? 2</Option>
+				<Option Code="12">Датчики парковки  ? 12</Option>
+				<Option Code="8">Индикация непристегнутых ремней безопасности</Option>
+				<Option Code="32">Контроль безопасности высоковольтной сети</Option>
+				<Option Code="7">Крепление детского автокресла ISOFIX второго ряда ? 2</Option>
+				<Option Code="23">Мониторинг слепых зон BSD</Option>
+				<Option Code="18">Панорамная камера 360°</Option>
+				<Option Code="10">Передние боковые подушки безопасности x 2</Option>
+				<Option Code="9">Передние подушки безопасности x 2</Option>
+				<Option Code="17">Помощь на крутом спуске HDC</Option>
+				<Option Code="38">Помощь при параллельной парковке LCA</Option>
+				<Option Code="31">Предупреждение о пешеходах</Option>
+				<Option Code="29">Предупреждение о поперечном движении сзади RCTA</Option>
+				<Option Code="21">Предупреждение о снижении дистанции FCW</Option>
+				<Option Code="30">Предупреждение при открытии двери DOW</Option>
+				<Option Code="34">Проекционный дисплей HUD</Option>
+				<Option Code="33">Режимы вождения (эко/ комфортный/ спортивный/ персонализированный)</Option>
+				<Option Code="39">Рекуперация энергии торможения RBS</Option>
+				<Option Code="28">Сигнализация экстренного торможения</Option>
+				<Option Code="25">Система контроля взгляда водителя DMS</Option>
+				<Option Code="26">Система контроля давления в шинах</Option>
+				<Option Code="19">Система контроля полосы движения LDWS</Option>
+				<Option Code="36">Система помощи при движении в пробках (TJA) /  
+Cистема удержания автомобиля в центре полосы (ICA)</Option>
+				<Option Code="20">Система удержания полосы движения LKA</Option>
+				<Option Code="13">Система экстренного торможения EBA</Option>
+				<Option Code="27">Электронная противоугонная система</Option>
+				<Option Code="24">Электронная система стабилизации кузова ESP</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="74">CarPlay/ AndroidAuto</Option>
+				<Option Code="75">Беспроводная зарядка мобильных телефонов мощностью 40 Вт</Option>
+				<Option Code="73">Интерфейс мультимедийного экрана и комбинации приборов на русском языке</Option>
+				<Option Code="76">Набор USB интерфейсов</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="47">Автоматические стеклоочистители с подогревом форсунок стеклоомывателя</Option>
+				<Option Code="44">Бесключевой доступ</Option>
+				<Option Code="41">Звукоизоляционное остекление</Option>
+				<Option Code="46">Зеркало заднего вида с автоматическим затемнением</Option>
+				<Option Code="45">Наружные зеркала заднего вида с электроприводом   / подогревом / функция памяти</Option>
+				<Option Code="48">Обогрев заднего стекла</Option>
+				<Option Code="40">Панорамная крыша</Option>
+				<Option Code="42">Скрытые дверные ручки</Option>
+				<Option Code="43">Электропривод задней двери с функцией &quot;свободные руки&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">128-цветная подсветка салона</Option>
+				<Option Code="55">Адаптивный дальний и ближний свет (HMA)</Option>
+				<Option Code="2">Задняя многорычажная  независимая подвеска</Option>
+				<Option Code="3">Передние и задние вентилируемые тормозные диски</Option>
+				<Option Code="4">Передние и задние красные суппорты</Option>
+				<Option Code="1">Передняя независимая подвеска на двойных поперечных рычагах</Option>
+				<Option Code="57">Приветственное освещение</Option>
+				<Option Code="6">Режим электроусилителя руля (Comfort/Sport)</Option>
+				<Option Code="52">Светодиодная световая лента задней двери</Option>
+				<Option Code="49">Светодиодные передние комбинированные фары</Option>
+				<Option Code="54">Светодиодные задние противотуманные фары</Option>
+				<Option Code="50">Светодиодные указатели поворота</Option>
+				<Option Code="51">Светодиодный задний комбинированный фонарь</Option>
+				<Option Code="53">Светодиодный задний стоп-сигнал</Option>
+				<Option Code="5">Электрический стояночный тормоз</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13195" DocNum="012897">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="90790" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_1_90790.png</pic>
+				<pic ID="90791" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_2_90791.png</pic>
+				<pic ID="90792" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_3_90792.png</pic>
+				<pic ID="90793" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_4_90793.png</pic>
+				<pic ID="90794" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_5_90794.png</pic>
+				<pic ID="90795" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_6_90795.png</pic>
+				<pic ID="90796" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_7_90796.png</pic>
+				<pic ID="90797" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_8_90797.png</pic>
+				<pic ID="90798" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_9_90798.png</pic>
+				<pic ID="90799" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_10_90799.png</pic>
+				<pic ID="90800" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_11_90800.png</pic>
+				<pic ID="90801" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_12_90801.png</pic>
+				<pic ID="90802" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_13_90802.png</pic>
+				<pic ID="90803" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_14_90803.png</pic>
+				<pic ID="90804" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_15_90804.png</pic>
+				<pic ID="90805" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_16_90805.png</pic>
+				<pic ID="90806" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_17_90806.png</pic>
+				<pic ID="90807" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_18_90807.png</pic>
+				<pic ID="90808" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_19_90808.png</pic>
+				<pic ID="90809" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_20_90809.png</pic>
+				<pic ID="90810" type="99" seqno="21">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_21_90810.png</pic>
+				<pic ID="90811" type="99" seqno="22">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_22_90811.png</pic>
+				<pic ID="90812" type="99" seqno="23">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_23_90812.png</pic>
+				<pic ID="90813" type="99" seqno="24">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_24_90813.png</pic>
+				<pic ID="90814" type="99" seqno="25">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_25_90814.png</pic>
+				<pic ID="90815" type="99" seqno="26">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_26_90815.png</pic>
+				<pic ID="90816" type="99" seqno="27">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_27_90816.png</pic>
+				<pic ID="90817" type="99" seqno="28">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_28_90817.png</pic>
+				<pic ID="90818" type="99" seqno="29">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_29_90818.png</pic>
+				<pic ID="90819" type="99" seqno="30">http://aaa-motors.ru/IMG/MAZDA_RST/012897/99_30_90819.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="88--1406264926">SERES</Mark>
+		<Model Title="Модель" Code="947--1330184252">  M5</Model>
+		<CodeCompl Title="Код комплектации">M5Pre</CodeCompl>
+		<VIN Title="VIN">LM8F7E793RAA01179</VIN>
+		<InteriorColor Title="Цвет салона">Черный полярная ночь</InteriorColor>
+		<Color Title="Цвет">Лазурно-синий</Color>
+		<Price Title="Цена">6790000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">487.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1500</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">664</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">4.6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4770*1930*1625</Dimensions>
+		<Weight Title="Масса">2410</Weight>
+		<CargoVolume Title="Объем багажника">369—776</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">201</interior-code>
+		<color-code Title="Код цвета кузова">896</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="58">10,25&quot; экран комбинации приборов</Option>
+				<Option Code="59">15,6 &quot; мультимедийный дисплей</Option>
+				<Option Code="69">s</Option>
+				<Option Code="62">Автоматическое двузонное кондиционирование воздуха с очисткой воздуха PM 2.5</Option>
+				<Option Code="70">Вентиляция и массаж сидений первого ряда</Option>
+				<Option Code="61">Подогрев рулевого колеса</Option>
+				<Option Code="63">Розетка 12 В (подлокотник ? 1, багажник ? 1)</Option>
+				<Option Code="60">Рулевое колесо с регулировкой по вылету и наклону</Option>
+				<Option Code="64">Система ароматизации воздуха</Option>
+				<Option Code="65">Солнцезащитные козырьки с подсветкой</Option>
+				<Option Code="67">Текстурированная кожа Nappa + экокожа с текстурой Nappa</Option>
+				<Option Code="71">Функция памяти сиденья водителя</Option>
+				<Option Code="68">Электрорегулировка передних сидений (12-позиционная)</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="16">AUTO HOLD автоматическая удержание автомобиля</Option>
+				<Option Code="15">HAC Помощь при подъеме в гору</Option>
+				<Option Code="22">Автоматическое экстренное торможение AEB</Option>
+				<Option Code="35">Адаптивная система круиз-контроля ACC</Option>
+				<Option Code="37">Активная система помощи при парковке APA (без дистанционной парковки)</Option>
+				<Option Code="14">Антипробуксовочная система TCS</Option>
+				<Option Code="11">Боковые шторы безопасности ? 2</Option>
+				<Option Code="12">Датчики парковки  ? 12</Option>
+				<Option Code="8">Индикация непристегнутых ремней безопасности</Option>
+				<Option Code="32">Контроль безопасности высоковольтной сети</Option>
+				<Option Code="7">Крепление детского автокресла ISOFIX второго ряда ? 2</Option>
+				<Option Code="23">Мониторинг слепых зон BSD</Option>
+				<Option Code="18">Панорамная камера 360°</Option>
+				<Option Code="10">Передние боковые подушки безопасности x 2</Option>
+				<Option Code="9">Передние подушки безопасности x 2</Option>
+				<Option Code="17">Помощь на крутом спуске HDC</Option>
+				<Option Code="38">Помощь при параллельной парковке LCA</Option>
+				<Option Code="31">Предупреждение о пешеходах</Option>
+				<Option Code="29">Предупреждение о поперечном движении сзади RCTA</Option>
+				<Option Code="21">Предупреждение о снижении дистанции FCW</Option>
+				<Option Code="30">Предупреждение при открытии двери DOW</Option>
+				<Option Code="34">Проекционный дисплей HUD</Option>
+				<Option Code="33">Режимы вождения (эко/ комфортный/ спортивный/ персонализированный)</Option>
+				<Option Code="39">Рекуперация энергии торможения RBS</Option>
+				<Option Code="28">Сигнализация экстренного торможения</Option>
+				<Option Code="25">Система контроля взгляда водителя DMS</Option>
+				<Option Code="26">Система контроля давления в шинах</Option>
+				<Option Code="19">Система контроля полосы движения LDWS</Option>
+				<Option Code="36">Система помощи при движении в пробках (TJA) /  
+Cистема удержания автомобиля в центре полосы (ICA)</Option>
+				<Option Code="20">Система удержания полосы движения LKA</Option>
+				<Option Code="13">Система экстренного торможения EBA</Option>
+				<Option Code="27">Электронная противоугонная система</Option>
+				<Option Code="24">Электронная система стабилизации кузова ESP</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="74">CarPlay/ AndroidAuto</Option>
+				<Option Code="75">Беспроводная зарядка мобильных телефонов мощностью 40 Вт</Option>
+				<Option Code="73">Интерфейс мультимедийного экрана и комбинации приборов на русском языке</Option>
+				<Option Code="76">Набор USB интерфейсов</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="47">Автоматические стеклоочистители с подогревом форсунок стеклоомывателя</Option>
+				<Option Code="44">Бесключевой доступ</Option>
+				<Option Code="41">Звукоизоляционное остекление</Option>
+				<Option Code="46">Зеркало заднего вида с автоматическим затемнением</Option>
+				<Option Code="45">Наружные зеркала заднего вида с электроприводом   / подогревом / функция памяти</Option>
+				<Option Code="48">Обогрев заднего стекла</Option>
+				<Option Code="40">Панорамная крыша</Option>
+				<Option Code="42">Скрытые дверные ручки</Option>
+				<Option Code="43">Электропривод задней двери с функцией &quot;свободные руки&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">128-цветная подсветка салона</Option>
+				<Option Code="55">Адаптивный дальний и ближний свет (HMA)</Option>
+				<Option Code="2">Задняя многорычажная  независимая подвеска</Option>
+				<Option Code="3">Передние и задние вентилируемые тормозные диски</Option>
+				<Option Code="4">Передние и задние красные суппорты</Option>
+				<Option Code="1">Передняя независимая подвеска на двойных поперечных рычагах</Option>
+				<Option Code="57">Приветственное освещение</Option>
+				<Option Code="6">Режим электроусилителя руля (Comfort/Sport)</Option>
+				<Option Code="52">Светодиодная световая лента задней двери</Option>
+				<Option Code="49">Светодиодные передние комбинированные фары</Option>
+				<Option Code="54">Светодиодные задние противотуманные фары</Option>
+				<Option Code="50">Светодиодные указатели поворота</Option>
+				<Option Code="51">Светодиодный задний комбинированный фонарь</Option>
+				<Option Code="53">Светодиодный задний стоп-сигнал</Option>
+				<Option Code="5">Электрический стояночный тормоз</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13125" DocNum="012828">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="84561" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_1_84561.png</pic>
+				<pic ID="84562" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_2_84562.png</pic>
+				<pic ID="84563" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_3_84563.png</pic>
+				<pic ID="84564" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_4_84564.png</pic>
+				<pic ID="84565" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_5_84565.png</pic>
+				<pic ID="84566" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_6_84566.png</pic>
+				<pic ID="84567" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_7_84567.png</pic>
+				<pic ID="84568" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_8_84568.png</pic>
+				<pic ID="84569" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_9_84569.png</pic>
+				<pic ID="84570" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_10_84570.png</pic>
+				<pic ID="84571" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_11_84571.png</pic>
+				<pic ID="84572" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_12_84572.png</pic>
+				<pic ID="84573" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_13_84573.png</pic>
+				<pic ID="84574" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_14_84574.png</pic>
+				<pic ID="84575" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_15_84575.png</pic>
+				<pic ID="84576" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_16_84576.png</pic>
+				<pic ID="84577" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_17_84577.png</pic>
+				<pic ID="84578" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_RST/012828/99_18_84578.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="83--1406264931">AITO</Mark>
+		<Model Title="Модель" Code="932--1330184254"> M5</Model>
+		<CodeCompl Title="Код комплектации">ULTRM5ULHYULT</CodeCompl>
+		<VIN Title="VIN">LM8F7D995PA021466</VIN>
+		<InteriorColor Title="Цвет салона">Черный полярная ночь</InteriorColor>
+		<Color Title="Цвет">Позолоченный черный</Color>
+		<Price Title="Цена">7030000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">496.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">201</interior-code>
+		<color-code Title="Код цвета кузова">197</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13137" DocNum="012840">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="86162" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_1_86162.png</pic>
+				<pic ID="86163" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_2_86163.png</pic>
+				<pic ID="86164" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_3_86164.png</pic>
+				<pic ID="86165" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_4_86165.png</pic>
+				<pic ID="86166" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_5_86166.png</pic>
+				<pic ID="86167" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_6_86167.png</pic>
+				<pic ID="86168" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_7_86168.png</pic>
+				<pic ID="86169" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_8_86169.png</pic>
+				<pic ID="86170" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_9_86170.png</pic>
+				<pic ID="86171" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_10_86171.png</pic>
+				<pic ID="86172" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_11_86172.png</pic>
+				<pic ID="86173" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_12_86173.png</pic>
+				<pic ID="86174" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_13_86174.png</pic>
+				<pic ID="86175" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_14_86175.png</pic>
+				<pic ID="86176" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_15_86176.png</pic>
+				<pic ID="86177" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_16_86177.png</pic>
+				<pic ID="86178" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_17_86178.png</pic>
+				<pic ID="86179" type="99" seqno="18">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_18_86179.png</pic>
+				<pic ID="86180" type="99" seqno="19">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_19_86180.png</pic>
+				<pic ID="86181" type="99" seqno="20">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_20_86181.png</pic>
+				<pic ID="86182" type="99" seqno="21">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_21_86182.png</pic>
+				<pic ID="86183" type="99" seqno="22">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_22_86183.png</pic>
+				<pic ID="86184" type="99" seqno="23">http://aaa-motors.ru/IMG/MAZDA_RST/012840/99_23_86184.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="88--1406264926">SERES</Mark>
+		<Model Title="Модель" Code="935--1330184253">  M7</Model>
+		<CodeCompl Title="Код комплектации">M7PRE5M</CodeCompl>
+		<VIN Title="VIN">LM8F7E998SAA00449</VIN>
+		<InteriorColor Title="Цвет салона">Цветущий абрикос</InteriorColor>
+		<Color Title="Цвет">Ледяной кристально-серый</Color>
+		<Price Title="Цена">7190000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">гибрид</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">439.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1500</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">4.8</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2460</Weight>
+		<CargoVolume Title="Объем багажника">686-1619</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">835</interior-code>
+		<color-code Title="Код цвета кузова">775</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13136" DocNum="012839">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="85926" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_1_85926.png</pic>
+				<pic ID="85927" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_2_85927.png</pic>
+				<pic ID="85928" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_3_85928.png</pic>
+				<pic ID="85929" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_4_85929.png</pic>
+				<pic ID="85930" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_5_85930.png</pic>
+				<pic ID="85931" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_6_85931.png</pic>
+				<pic ID="85932" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_7_85932.png</pic>
+				<pic ID="85933" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_8_85933.png</pic>
+				<pic ID="85934" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_9_85934.png</pic>
+				<pic ID="85935" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_10_85935.png</pic>
+				<pic ID="85936" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_11_85936.png</pic>
+				<pic ID="85937" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_12_85937.png</pic>
+				<pic ID="85938" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012839/99_13_85938.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="88--1406264926">SERES</Mark>
+		<Model Title="Модель" Code="935--1330184253">  M7</Model>
+		<CodeCompl Title="Код комплектации">M7PRE5M</CodeCompl>
+		<VIN Title="VIN">LM8F7E999SAA00105</VIN>
+		<InteriorColor Title="Цвет салона">Янтарный коричневый</InteriorColor>
+		<Color Title="Цвет">Зеленая морозная сосна</Color>
+		<Price Title="Цена">7340000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">гибрид</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">439.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зеленый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1500</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">4.8</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">2460</Weight>
+		<CargoVolume Title="Объем багажника">686-1619</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">814</interior-code>
+		<color-code Title="Код цвета кузова">376</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13157" DocNum="012859">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="87540" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_1_87540.png</pic>
+				<pic ID="87541" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_2_87541.png</pic>
+				<pic ID="87542" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_3_87542.png</pic>
+				<pic ID="87543" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_4_87543.png</pic>
+				<pic ID="87544" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_5_87544.png</pic>
+				<pic ID="87545" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_6_87545.png</pic>
+				<pic ID="87546" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_7_87546.png</pic>
+				<pic ID="87547" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_8_87547.png</pic>
+				<pic ID="87548" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_9_87548.png</pic>
+				<pic ID="87549" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_10_87549.png</pic>
+				<pic ID="87550" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_11_87550.png</pic>
+				<pic ID="87551" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_12_87551.png</pic>
+				<pic ID="87552" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_13_87552.png</pic>
+				<pic ID="87553" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_14_87553.png</pic>
+				<pic ID="87554" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_15_87554.png</pic>
+				<pic ID="87555" type="99" seqno="16">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_16_87555.png</pic>
+				<pic ID="87556" type="99" seqno="17">http://aaa-motors.ru/IMG/MAZDA_RST/012859/99_17_87556.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="83--1406264931">AITO</Mark>
+		<Model Title="Модель" Code="890--1330184256"> M7</Model>
+		<CodeCompl Title="Код комплектации">ULTRM7LUX</CodeCompl>
+		<VIN Title="VIN">LM8F7E19XPA156217</VIN>
+		<InteriorColor Title="Цвет салона">Слоновая кость</InteriorColor>
+		<Color Title="Цвет">Черный космос</Color>
+		<Price Title="Цена">7740000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">449.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5020 ? 1945 ? 1775</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">805</interior-code>
+		<color-code Title="Код цвета кузова">_197</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="13127" DocNum="012830">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="84635" type="99" seqno="1">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_1_84635.png</pic>
+				<pic ID="84636" type="99" seqno="2">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_2_84636.png</pic>
+				<pic ID="84637" type="99" seqno="3">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_3_84637.png</pic>
+				<pic ID="84638" type="99" seqno="4">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_4_84638.png</pic>
+				<pic ID="84639" type="99" seqno="5">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_5_84639.png</pic>
+				<pic ID="84640" type="99" seqno="6">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_6_84640.png</pic>
+				<pic ID="84641" type="99" seqno="7">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_7_84641.png</pic>
+				<pic ID="84642" type="99" seqno="8">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_8_84642.png</pic>
+				<pic ID="84643" type="99" seqno="9">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_9_84643.png</pic>
+				<pic ID="84644" type="99" seqno="10">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_10_84644.png</pic>
+				<pic ID="84645" type="99" seqno="11">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_11_84645.png</pic>
+				<pic ID="84646" type="99" seqno="12">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_12_84646.png</pic>
+				<pic ID="84647" type="99" seqno="13">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_13_84647.png</pic>
+				<pic ID="84648" type="99" seqno="14">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_14_84648.png</pic>
+				<pic ID="84649" type="99" seqno="15">http://aaa-motors.ru/IMG/MAZDA_RST/012830/99_15_84649.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="83--1406264931">AITO</Mark>
+		<Model Title="Модель" Code="890--1330184256"> M7</Model>
+		<CodeCompl Title="Код комплектации">ULTRM7LUX</CodeCompl>
+		<VIN Title="VIN">LM8F7E191PA155912</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Позолоченный черный</Color>
+		<Price Title="Цена">7780000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">449.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">черный</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5020 ? 1945 ? 1775</Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">801</interior-code>
+		<color-code Title="Код цвета кузова">197</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

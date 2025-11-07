@@ -1,0 +1,2 @@
+python -m http.server 3000
+cd backend; $Env:DATABASE_URL_ENV="sqlite:///./local.db"; $Env:OLLAMA_HOST="http://localhost"; .\venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload

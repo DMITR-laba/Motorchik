@@ -1,0 +1,1746 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="JAECOO_ZAPAD">
+
+	<CarOrder Title="Заказ на автомобиль" value="28664" DocNum="028408">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2072-1569607302">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302123</CodeCompl>
+		<VIN Title="VIN">EDXDD21B9SC057640</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">3509900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28594" DocNum="028338">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="102696" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028338/99_1_102696.png</pic>
+				<pic ID="102697" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028338/99_2_102697.png</pic>
+				<pic ID="102698" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028338/99_3_102698.png</pic>
+				<pic ID="102699" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028338/99_4_102699.png</pic>
+				<pic ID="102700" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028338/99_5_102700.png</pic>
+				<pic ID="102701" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028338/99_6_102701.png</pic>
+				<pic ID="102702" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028338/99_7_102702.png</pic>
+				<pic ID="102703" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028338/99_8_102703.png</pic>
+				<pic ID="102704" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028338/99_9_102704.png</pic>
+				<pic ID="102705" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028338/99_10_102705.png</pic>
+				<pic ID="102706" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028338/99_11_102706.png</pic>
+				<pic ID="102707" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028338/99_12_102707.png</pic>
+				<pic ID="102708" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028338/99_13_102708.png</pic>
+				<pic ID="102709" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028338/99_14_102709.png</pic>
+				<pic ID="102710" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028338/99_15_102710.png</pic>
+				<pic ID="102711" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028338/99_16_102711.png</pic>
+				<pic ID="102712" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028338/99_17_102712.png</pic>
+				<pic ID="102713" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028338/99_18_102713.png</pic>
+				<pic ID="102714" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028338/99_19_102714.png</pic>
+				<pic ID="102715" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028338/99_20_102715.png</pic>
+				<pic ID="102716" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028338/99_21_102716.png</pic>
+				<pic ID="102717" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028338/99_22_102717.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2072-1569607302">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302125</CodeCompl>
+		<VIN Title="VIN">EDXDD21B4SC061420</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (ZN)</Color>
+		<Price Title="Цена">3549900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый, Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">195</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27201" DocNum="026945">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="47728" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/026945/99_2_47728.png</pic>
+				<pic ID="47729" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/026945/99_3_47729.png</pic>
+				<pic ID="47730" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/026945/99_4_47730.png</pic>
+				<pic ID="47731" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/026945/99_5_47731.png</pic>
+				<pic ID="47732" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/026945/99_6_47732.png</pic>
+				<pic ID="47733" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/026945/99_7_47733.png</pic>
+				<pic ID="47734" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/026945/99_8_47734.png</pic>
+				<pic ID="47735" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/026945/99_9_47735.png</pic>
+				<pic ID="47736" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/026945/99_10_47736.png</pic>
+				<pic ID="47737" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/026945/99_11_47737.png</pic>
+				<pic ID="47738" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/026945/99_12_47738.png</pic>
+				<pic ID="47739" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/026945/99_13_47739.png</pic>
+				<pic ID="47740" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/026945/99_14_47740.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2096-1569607284">J7</Model>
+		<CodeCompl Title="Код комплектации">T7160NPBWJW0010</CodeCompl>
+		<VIN Title="VIN">LVVDB21B1PC040786</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White(белый)</Color>
+		<Price Title="Цена">3549900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">186.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500?1865?1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BW</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="3">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="35">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="37">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="10">Боковые зеркала с электрической регулировкой, обогревом, повторителями</Option>
+				<Option Code="32">Выбор режима вождения</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="31">Круиз-контроль</Option>
+				<Option Code="4">Окраска металлик</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="5">Передние противотуманные фары</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="36">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="38">Центральный замок с дистанционным управлением</Option>
+				<Option Code="34">Электрический стояночный тормоз с функцией AutoHold</Option>
+				<Option Code="33">Электрический усилитель рулевого управления</Option>
+				<Option Code="39">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+				<Option Code="11">Электропривод складывания зеркал</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="15">ABS,ESC,EBD</Option>
+				<Option Code="26">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="30">Блокировка замков задних дверей от открывания детьми</Option>
+				<Option Code="18">Боковые передние подушки безопасности</Option>
+				<Option Code="16">Датчик превышения заданной скорости/ограничитель скорости</Option>
+				<Option Code="12">Передние и задние датчики парковки</Option>
+				<Option Code="20">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="17">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="22">Предупреждение о заднем перекрестном столкновении (RCTA)</Option>
+				<Option Code="23">Предупреждение при опасности при открытии дверей (DOW)</Option>
+				<Option Code="13">Система кругового обзора 540</Option>
+				<Option Code="14">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="25">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="24">Система помощи при смене полосы (LCA)</Option>
+				<Option Code="21">Система удержания детских кресел Isofix для 2-го ряда</Option>
+				<Option Code="27">Уменьшенное запасное колесо</Option>
+				<Option Code="28">Функция автоматического включения работы дворников при дожде</Option>
+				<Option Code="29">Функция автоматического включения фар при вождении в темное время</Option>
+				<Option Code="19">Шторки безопасности</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="73">1 USB Type-C + 2 USB-разъема сзади</Option>
+				<Option Code="70">2 USB-разъема спереди</Option>
+				<Option Code="67">6 динамиков</Option>
+				<Option Code="44">Аккустическое лобовое стекло</Option>
+				<Option Code="68">Беспроводная зарядка для смартфона</Option>
+				<Option Code="69">Большой сенсорный дисплей 13.2’’</Option>
+				<Option Code="47">Вентиляция сиденья водителя</Option>
+				<Option Code="60">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="57">Водительское сиденье с электрической регулировкой поясничного упора</Option>
+				<Option Code="41">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="63">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="56">Климат-контроль, 2 зоны</Option>
+				<Option Code="54">Кожаная отделка сидений</Option>
+				<Option Code="45">Многослойные передние стекла</Option>
+				<Option Code="61">Многофункциональное кожаное рулевое колесо</Option>
+				<Option Code="50">Обогрев лобового стекла</Option>
+				<Option Code="46">Обогрев передних сидений</Option>
+				<Option Code="49">Обогрев рулевого колеса</Option>
+				<Option Code="48">Обогрев сидений 2-го ряда</Option>
+				<Option Code="51">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="42">Память настроек зеркал заднего вида</Option>
+				<Option Code="55">Память настроек сиденья водителя</Option>
+				<Option Code="58">Пассажирское сиденье с механической регулировкой в 4-х направлениях</Option>
+				<Option Code="64">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="52">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="65">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="74">Розетка на 12V спереди и сзади</Option>
+				<Option Code="62">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="72">Система «Свободные руки» (Hands free) с Bluetooth-связью с мобильным телефоном</Option>
+				<Option Code="43">Система остановки/запуска двигателя Start/Stop</Option>
+				<Option Code="59">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="71">Цветной экран приборной панели приборов 10.25’’</Option>
+				<Option Code="66">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="53">Черный цвет отделки сидений</Option>
+				<Option Code="40">Электрохромное зеркало заднего вида</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27204" DocNum="026948">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="47802" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/026948/99_2_47802.png</pic>
+				<pic ID="47803" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/026948/99_3_47803.png</pic>
+				<pic ID="47804" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/026948/99_4_47804.png</pic>
+				<pic ID="47805" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/026948/99_5_47805.png</pic>
+				<pic ID="47806" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/026948/99_6_47806.png</pic>
+				<pic ID="47807" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/026948/99_7_47807.png</pic>
+				<pic ID="47808" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/026948/99_8_47808.png</pic>
+				<pic ID="47809" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/026948/99_9_47809.png</pic>
+				<pic ID="47810" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/026948/99_10_47810.png</pic>
+				<pic ID="47811" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/026948/99_11_47811.png</pic>
+				<pic ID="47812" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/026948/99_12_47812.png</pic>
+				<pic ID="47813" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/026948/99_13_47813.png</pic>
+				<pic ID="47814" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/026948/99_14_47814.png</pic>
+				<pic ID="47815" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/026948/99_15_47815.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2096-1569607284">J7</Model>
+		<CodeCompl Title="Код комплектации">T7160NPBWJW0010</CodeCompl>
+		<VIN Title="VIN">LVVDB21B9PC043290</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый</Color>
+		<Price Title="Цена">3549900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">186.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500?1865?1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">KU</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="3">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="35">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="37">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="10">Боковые зеркала с электрической регулировкой, обогревом, повторителями</Option>
+				<Option Code="32">Выбор режима вождения</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="31">Круиз-контроль</Option>
+				<Option Code="4">Окраска металлик</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="5">Передние противотуманные фары</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="36">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="38">Центральный замок с дистанционным управлением</Option>
+				<Option Code="34">Электрический стояночный тормоз с функцией AutoHold</Option>
+				<Option Code="33">Электрический усилитель рулевого управления</Option>
+				<Option Code="39">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+				<Option Code="11">Электропривод складывания зеркал</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="15">ABS,ESC,EBD</Option>
+				<Option Code="26">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="30">Блокировка замков задних дверей от открывания детьми</Option>
+				<Option Code="18">Боковые передние подушки безопасности</Option>
+				<Option Code="16">Датчик превышения заданной скорости/ограничитель скорости</Option>
+				<Option Code="12">Передние и задние датчики парковки</Option>
+				<Option Code="20">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="17">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="22">Предупреждение о заднем перекрестном столкновении (RCTA)</Option>
+				<Option Code="23">Предупреждение при опасности при открытии дверей (DOW)</Option>
+				<Option Code="13">Система кругового обзора 540</Option>
+				<Option Code="14">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="25">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="24">Система помощи при смене полосы (LCA)</Option>
+				<Option Code="21">Система удержания детских кресел Isofix для 2-го ряда</Option>
+				<Option Code="27">Уменьшенное запасное колесо</Option>
+				<Option Code="28">Функция автоматического включения работы дворников при дожде</Option>
+				<Option Code="29">Функция автоматического включения фар при вождении в темное время</Option>
+				<Option Code="19">Шторки безопасности</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="73">1 USB Type-C + 2 USB-разъема сзади</Option>
+				<Option Code="70">2 USB-разъема спереди</Option>
+				<Option Code="67">6 динамиков</Option>
+				<Option Code="44">Аккустическое лобовое стекло</Option>
+				<Option Code="68">Беспроводная зарядка для смартфона</Option>
+				<Option Code="69">Большой сенсорный дисплей 13.2’’</Option>
+				<Option Code="47">Вентиляция сиденья водителя</Option>
+				<Option Code="60">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="57">Водительское сиденье с электрической регулировкой поясничного упора</Option>
+				<Option Code="41">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="63">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="56">Климат-контроль, 2 зоны</Option>
+				<Option Code="54">Кожаная отделка сидений</Option>
+				<Option Code="45">Многослойные передние стекла</Option>
+				<Option Code="61">Многофункциональное кожаное рулевое колесо</Option>
+				<Option Code="50">Обогрев лобового стекла</Option>
+				<Option Code="46">Обогрев передних сидений</Option>
+				<Option Code="49">Обогрев рулевого колеса</Option>
+				<Option Code="48">Обогрев сидений 2-го ряда</Option>
+				<Option Code="51">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="42">Память настроек зеркал заднего вида</Option>
+				<Option Code="55">Память настроек сиденья водителя</Option>
+				<Option Code="58">Пассажирское сиденье с механической регулировкой в 4-х направлениях</Option>
+				<Option Code="64">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="52">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="65">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="74">Розетка на 12V спереди и сзади</Option>
+				<Option Code="62">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="72">Система «Свободные руки» (Hands free) с Bluetooth-связью с мобильным телефоном</Option>
+				<Option Code="43">Система остановки/запуска двигателя Start/Stop</Option>
+				<Option Code="59">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="71">Цветной экран приборной панели приборов 10.25’’</Option>
+				<Option Code="66">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="53">Черный цвет отделки сидений</Option>
+				<Option Code="40">Электрохромное зеркало заднего вида</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28231" DocNum="027975">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="83674" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/027975/99_1_83674.png</pic>
+				<pic ID="83675" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027975/99_2_83675.png</pic>
+				<pic ID="83676" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027975/99_3_83676.png</pic>
+				<pic ID="83677" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027975/99_4_83677.png</pic>
+				<pic ID="83678" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027975/99_5_83678.png</pic>
+				<pic ID="83679" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027975/99_6_83679.png</pic>
+				<pic ID="83680" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027975/99_7_83680.png</pic>
+				<pic ID="83681" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027975/99_8_83681.png</pic>
+				<pic ID="83682" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027975/99_9_83682.png</pic>
+				<pic ID="83683" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027975/99_10_83683.png</pic>
+				<pic ID="83684" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027975/99_11_83684.png</pic>
+				<pic ID="83685" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027975/99_12_83685.png</pic>
+				<pic ID="83686" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027975/99_13_83686.png</pic>
+				<pic ID="83687" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027975/99_14_83687.png</pic>
+				<pic ID="83688" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027975/99_15_83688.png</pic>
+				<pic ID="83689" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027975/99_16_83689.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2096-1569607284">J7</Model>
+		<CodeCompl Title="Код комплектации">T7160NPBWJW0020</CodeCompl>
+		<VIN Title="VIN">LVVDB21B0RC070980</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Зеленый</Color>
+		<Price Title="Цена">3549900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">186.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зеленый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500?1865?1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SP</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28173" DocNum="027917">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="74966" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027917/99_2_74966.png</pic>
+				<pic ID="74967" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027917/99_3_74967.png</pic>
+				<pic ID="74968" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027917/99_4_74968.png</pic>
+				<pic ID="74969" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027917/99_5_74969.png</pic>
+				<pic ID="74970" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027917/99_6_74970.png</pic>
+				<pic ID="74971" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027917/99_7_74971.png</pic>
+				<pic ID="74972" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027917/99_8_74972.png</pic>
+				<pic ID="74973" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027917/99_9_74973.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2096-1569607284">J7</Model>
+		<CodeCompl Title="Код комплектации">T7160NQCLKW0014</CodeCompl>
+		<VIN Title="VIN">LVVDD21B5RC029271</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White(белый)</Color>
+		<Price Title="Цена">3709900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">186.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500?1865?1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BW</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27182" DocNum="026926">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="82380" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/026926/99_1_82380.png</pic>
+				<pic ID="82381" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/026926/99_2_82381.png</pic>
+				<pic ID="82382" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/026926/99_3_82382.png</pic>
+				<pic ID="82383" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/026926/99_4_82383.png</pic>
+				<pic ID="82384" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/026926/99_5_82384.png</pic>
+				<pic ID="82385" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/026926/99_6_82385.png</pic>
+				<pic ID="82386" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/026926/99_7_82386.png</pic>
+				<pic ID="82387" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/026926/99_8_82387.png</pic>
+				<pic ID="82388" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/026926/99_9_82388.png</pic>
+				<pic ID="82389" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/026926/99_10_82389.png</pic>
+				<pic ID="82390" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/026926/99_11_82390.png</pic>
+				<pic ID="82391" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/026926/99_12_82391.png</pic>
+				<pic ID="82392" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/026926/99_13_82392.png</pic>
+				<pic ID="82393" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/026926/99_14_82393.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2072-1569607302">J74WD</Model>
+		<CodeCompl Title="Код комплектации">JCOJ7SUPAWD</CodeCompl>
+		<VIN Title="VIN">LVVDD21B7PC049017</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White(белый)</Color>
+		<Price Title="Цена">3749900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">186.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500?1865?1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BW</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="3">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="35">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="37">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="10">Боковые зеркала с электрической регулировкой, обогревом, повторителями</Option>
+				<Option Code="32">Выбор режима вождения</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="31">Круиз-контроль</Option>
+				<Option Code="4">Окраска металлик</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="5">Передние противотуманные фары</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="36">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="38">Центральный замок с дистанционным управлением</Option>
+				<Option Code="34">Электрический стояночный тормоз с функцией AutoHold</Option>
+				<Option Code="33">Электрический усилитель рулевого управления</Option>
+				<Option Code="39">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+				<Option Code="11">Электропривод складывания зеркал</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="15">ABS,ESC,EBD</Option>
+				<Option Code="26">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="30">Блокировка замков задних дверей от открывания детьми</Option>
+				<Option Code="18">Боковые передние подушки безопасности</Option>
+				<Option Code="16">Датчик превышения заданной скорости/ограничитель скорости</Option>
+				<Option Code="12">Передние и задние датчики парковки</Option>
+				<Option Code="20">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="17">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="22">Предупреждение о заднем перекрестном столкновении (RCTA)</Option>
+				<Option Code="23">Предупреждение при опасности при открытии дверей (DOW)</Option>
+				<Option Code="13">Система кругового обзора 540</Option>
+				<Option Code="14">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="25">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="24">Система помощи при смене полосы (LCA)</Option>
+				<Option Code="21">Система удержания детских кресел Isofix для 2-го ряда</Option>
+				<Option Code="27">Уменьшенное запасное колесо</Option>
+				<Option Code="28">Функция автоматического включения работы дворников при дожде</Option>
+				<Option Code="29">Функция автоматического включения фар при вождении в темное время</Option>
+				<Option Code="19">Шторки безопасности</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="73">1 USB Type-C + 2 USB-разъема сзади</Option>
+				<Option Code="70">2 USB-разъема спереди</Option>
+				<Option Code="67">6 динамиков</Option>
+				<Option Code="44">Аккустическое лобовое стекло</Option>
+				<Option Code="68">Беспроводная зарядка для смартфона</Option>
+				<Option Code="69">Большой сенсорный дисплей 13.2’’</Option>
+				<Option Code="47">Вентиляция сиденья водителя</Option>
+				<Option Code="60">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="57">Водительское сиденье с электрической регулировкой поясничного упора</Option>
+				<Option Code="41">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="63">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="56">Климат-контроль, 2 зоны</Option>
+				<Option Code="54">Кожаная отделка сидений</Option>
+				<Option Code="45">Многослойные передние стекла</Option>
+				<Option Code="61">Многофункциональное кожаное рулевое колесо</Option>
+				<Option Code="50">Обогрев лобового стекла</Option>
+				<Option Code="46">Обогрев передних сидений</Option>
+				<Option Code="49">Обогрев рулевого колеса</Option>
+				<Option Code="48">Обогрев сидений 2-го ряда</Option>
+				<Option Code="51">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="42">Память настроек зеркал заднего вида</Option>
+				<Option Code="55">Память настроек сиденья водителя</Option>
+				<Option Code="58">Пассажирское сиденье с механической регулировкой в 4-х направлениях</Option>
+				<Option Code="64">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="52">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="65">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="74">Розетка на 12V спереди и сзади</Option>
+				<Option Code="62">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="72">Система «Свободные руки» (Hands free) с Bluetooth-связью с мобильным телефоном</Option>
+				<Option Code="43">Система остановки/запуска двигателя Start/Stop</Option>
+				<Option Code="59">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="71">Цветной экран приборной панели приборов 10.25’’</Option>
+				<Option Code="66">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="53">Черный цвет отделки сидений</Option>
+				<Option Code="40">Электрохромное зеркало заднего вида</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27181" DocNum="026925">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="39542" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/026925/99_2_39542.png</pic>
+				<pic ID="39543" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/026925/99_3_39543.png</pic>
+				<pic ID="39544" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/026925/99_4_39544.png</pic>
+				<pic ID="39545" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/026925/99_5_39545.png</pic>
+				<pic ID="39546" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/026925/99_6_39546.png</pic>
+				<pic ID="39547" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/026925/99_7_39547.png</pic>
+				<pic ID="39548" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/026925/99_8_39548.png</pic>
+				<pic ID="39549" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/026925/99_9_39549.png</pic>
+				<pic ID="39550" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/026925/99_10_39550.png</pic>
+				<pic ID="39551" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/026925/99_11_39551.png</pic>
+				<pic ID="39552" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/026925/99_12_39552.png</pic>
+				<pic ID="39553" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/026925/99_13_39553.png</pic>
+				<pic ID="39554" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/026925/99_14_39554.png</pic>
+				<pic ID="39555" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/026925/99_15_39555.png</pic>
+				<pic ID="39556" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/026925/99_16_39556.png</pic>
+				<pic ID="39557" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/026925/99_17_39557.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2072-1569607302">J74WD</Model>
+		<CodeCompl Title="Код комплектации">T7160NQZKKW0014</CodeCompl>
+		<VIN Title="VIN">LVVDD21B8PC048782</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black</Color>
+		<Price Title="Цена">3789900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">186.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный, серый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500?1865?1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">ZN</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27554" DocNum="027298">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="80819" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027298/99_2_80819.png</pic>
+				<pic ID="80820" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027298/99_3_80820.png</pic>
+				<pic ID="80821" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027298/99_4_80821.png</pic>
+				<pic ID="80822" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027298/99_5_80822.png</pic>
+				<pic ID="80823" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027298/99_6_80823.png</pic>
+				<pic ID="80824" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027298/99_7_80824.png</pic>
+				<pic ID="80825" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027298/99_8_80825.png</pic>
+				<pic ID="80826" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027298/99_9_80826.png</pic>
+				<pic ID="80827" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027298/99_10_80827.png</pic>
+				<pic ID="80828" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027298/99_11_80828.png</pic>
+				<pic ID="80829" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027298/99_12_80829.png</pic>
+				<pic ID="80830" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027298/99_13_80830.png</pic>
+				<pic ID="80831" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027298/99_14_80831.png</pic>
+				<pic ID="80832" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027298/99_15_80832.png</pic>
+				<pic ID="80833" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027298/99_16_80833.png</pic>
+				<pic ID="80834" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/027298/99_17_80834.png</pic>
+				<pic ID="80835" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/027298/99_18_80835.png</pic>
+				<pic ID="80836" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/027298/99_19_80836.png</pic>
+				<pic ID="80837" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/027298/99_20_80837.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2072-1569607302">J74WD</Model>
+		<CodeCompl Title="Код комплектации">JCOJ7SUPAWD2T</CodeCompl>
+		<VIN Title="VIN">LVVDD21BXRC010361</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Bluish Gray/Black</Color>
+		<Price Title="Цена">3789900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">186.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный, серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500?1865?1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">ZK</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28245" DocNum="027989">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="83650" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/027989/99_1_83650.png</pic>
+				<pic ID="83651" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027989/99_2_83651.png</pic>
+				<pic ID="83652" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027989/99_3_83652.png</pic>
+				<pic ID="83653" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027989/99_4_83653.png</pic>
+				<pic ID="83654" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027989/99_5_83654.png</pic>
+				<pic ID="83655" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027989/99_6_83655.png</pic>
+				<pic ID="83656" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027989/99_7_83656.png</pic>
+				<pic ID="83657" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027989/99_8_83657.png</pic>
+				<pic ID="83658" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027989/99_9_83658.png</pic>
+				<pic ID="83659" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027989/99_10_83659.png</pic>
+				<pic ID="83660" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027989/99_11_83660.png</pic>
+				<pic ID="83661" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027989/99_12_83661.png</pic>
+				<pic ID="83662" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027989/99_13_83662.png</pic>
+				<pic ID="83663" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027989/99_14_83663.png</pic>
+				<pic ID="83664" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027989/99_15_83664.png</pic>
+				<pic ID="83665" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027989/99_16_83665.png</pic>
+				<pic ID="83666" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/027989/99_17_83666.png</pic>
+				<pic ID="83667" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/027989/99_18_83667.png</pic>
+				<pic ID="83668" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/027989/99_19_83668.png</pic>
+				<pic ID="83669" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/027989/99_20_83669.png</pic>
+				<pic ID="83670" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/027989/99_21_83670.png</pic>
+				<pic ID="83671" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/027989/99_22_83671.png</pic>
+				<pic ID="83672" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/027989/99_23_83672.png</pic>
+				<pic ID="83673" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/027989/99_24_83673.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2072-1569607302">J74WD</Model>
+		<CodeCompl Title="Код комплектации">T7160NQCLKW0014</CodeCompl>
+		<VIN Title="VIN">LVVDD21B4RC065100</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White(белый)</Color>
+		<Price Title="Цена">3899900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">186.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500?1865?1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BW</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28586" DocNum="028330">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="103320" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028330/99_1_103320.png</pic>
+				<pic ID="103321" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028330/99_2_103321.png</pic>
+				<pic ID="103322" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028330/99_3_103322.png</pic>
+				<pic ID="103323" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028330/99_4_103323.png</pic>
+				<pic ID="103324" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028330/99_5_103324.png</pic>
+				<pic ID="103325" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028330/99_6_103325.png</pic>
+				<pic ID="103326" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028330/99_7_103326.png</pic>
+				<pic ID="103327" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028330/99_8_103327.png</pic>
+				<pic ID="103328" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028330/99_9_103328.png</pic>
+				<pic ID="103329" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028330/99_10_103329.png</pic>
+				<pic ID="103330" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028330/99_11_103330.png</pic>
+				<pic ID="103331" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028330/99_12_103331.png</pic>
+				<pic ID="103332" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028330/99_13_103332.png</pic>
+				<pic ID="103333" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028330/99_14_103333.png</pic>
+				<pic ID="103334" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028330/99_15_103334.png</pic>
+				<pic ID="103335" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028330/99_16_103335.png</pic>
+				<pic ID="103336" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028330/99_17_103336.png</pic>
+				<pic ID="103337" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028330/99_18_103337.png</pic>
+				<pic ID="103338" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028330/99_19_103338.png</pic>
+				<pic ID="103339" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028330/99_20_103339.png</pic>
+				<pic ID="103340" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028330/99_21_103340.png</pic>
+				<pic ID="103341" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028330/99_22_103341.png</pic>
+				<pic ID="103342" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028330/99_23_103342.png</pic>
+				<pic ID="103343" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028330/99_24_103343.png</pic>
+				<pic ID="103344" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/028330/99_25_103344.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2108-1569607289">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30234</CodeCompl>
+		<VIN Title="VIN">LVTDD24B4RDB69717</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (ZL)</Color>
+		<Price Title="Цена">4659000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый, Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">201</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28641" DocNum="028385">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="103800" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028385/99_1_103800.png</pic>
+				<pic ID="103801" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028385/99_2_103801.png</pic>
+				<pic ID="103802" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028385/99_3_103802.png</pic>
+				<pic ID="103803" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028385/99_4_103803.png</pic>
+				<pic ID="103804" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028385/99_5_103804.png</pic>
+				<pic ID="103805" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028385/99_6_103805.png</pic>
+				<pic ID="103806" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028385/99_7_103806.png</pic>
+				<pic ID="103807" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028385/99_8_103807.png</pic>
+				<pic ID="103808" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028385/99_9_103808.png</pic>
+				<pic ID="103809" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028385/99_10_103809.png</pic>
+				<pic ID="103810" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028385/99_11_103810.png</pic>
+				<pic ID="103811" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028385/99_12_103811.png</pic>
+				<pic ID="103812" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028385/99_13_103812.png</pic>
+				<pic ID="103813" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028385/99_14_103813.png</pic>
+				<pic ID="103814" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028385/99_15_103814.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2108-1569607289">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30234</CodeCompl>
+		<VIN Title="VIN">LVTDD24B8RD645528</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White/Black (ZE)</Color>
+		<Price Title="Цена">4659000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый, Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">180</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28175" DocNum="027919">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="75008" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027919/99_2_75008.png</pic>
+				<pic ID="75009" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027919/99_3_75009.png</pic>
+				<pic ID="75010" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027919/99_4_75010.png</pic>
+				<pic ID="75011" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027919/99_5_75011.png</pic>
+				<pic ID="75012" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027919/99_6_75012.png</pic>
+				<pic ID="75013" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027919/99_7_75013.png</pic>
+				<pic ID="75014" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027919/99_8_75014.png</pic>
+				<pic ID="75015" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027919/99_9_75015.png</pic>
+				<pic ID="75016" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027919/99_10_75016.png</pic>
+				<pic ID="75017" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027919/99_11_75017.png</pic>
+				<pic ID="75018" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027919/99_12_75018.png</pic>
+				<pic ID="75026" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/027919/99_20_75026.png</pic>
+				<pic ID="75019" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027919/99_13_75019.png</pic>
+				<pic ID="75020" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027919/99_14_75020.png</pic>
+				<pic ID="75021" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027919/99_15_75021.png</pic>
+				<pic ID="75022" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027919/99_16_75022.png</pic>
+				<pic ID="75023" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/027919/99_17_75023.png</pic>
+				<pic ID="75024" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/027919/99_18_75024.png</pic>
+				<pic ID="75025" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/027919/99_19_75025.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2108-1569607289">J84WD</Model>
+		<CodeCompl Title="Код комплектации">T6481QXZLKH0028</CodeCompl>
+		<VIN Title="VIN">LVTDD24B8RD532257</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серо-голубой + черная крыша</Color>
+		<Price Title="Цена">4799000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный, серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">385 (1750-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820?1930?1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">ZK</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28234" DocNum="027978">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="78184" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027978/99_2_78184.png</pic>
+				<pic ID="78185" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027978/99_3_78185.png</pic>
+				<pic ID="78186" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027978/99_4_78186.png</pic>
+				<pic ID="78187" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027978/99_5_78187.png</pic>
+				<pic ID="78188" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027978/99_6_78188.png</pic>
+				<pic ID="78189" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027978/99_7_78189.png</pic>
+				<pic ID="78190" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027978/99_8_78190.png</pic>
+				<pic ID="78191" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027978/99_9_78191.png</pic>
+				<pic ID="78192" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027978/99_10_78192.png</pic>
+				<pic ID="78193" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027978/99_11_78193.png</pic>
+				<pic ID="78194" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027978/99_12_78194.png</pic>
+				<pic ID="78195" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027978/99_13_78195.png</pic>
+				<pic ID="78196" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027978/99_14_78196.png</pic>
+				<pic ID="78197" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027978/99_15_78197.png</pic>
+				<pic ID="78198" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027978/99_16_78198.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2108-1569607289">J84WD</Model>
+		<CodeCompl Title="Код комплектации">T6481QXZKKH0019</CodeCompl>
+		<VIN Title="VIN">LVTDD24BXRD628178</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Белый с черной крышей</Color>
+		<Price Title="Цена">4859000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый, черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">385 (1750-4000)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820?1930?1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">ZE</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28581" DocNum="028325">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="103385" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028325/99_1_103385.png</pic>
+				<pic ID="103386" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028325/99_2_103386.png</pic>
+				<pic ID="103387" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028325/99_3_103387.png</pic>
+				<pic ID="103388" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028325/99_4_103388.png</pic>
+				<pic ID="103389" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028325/99_5_103389.png</pic>
+				<pic ID="103390" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028325/99_6_103390.png</pic>
+				<pic ID="103391" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028325/99_7_103391.png</pic>
+				<pic ID="103392" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028325/99_8_103392.png</pic>
+				<pic ID="103393" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028325/99_9_103393.png</pic>
+				<pic ID="103394" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028325/99_10_103394.png</pic>
+				<pic ID="103395" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028325/99_11_103395.png</pic>
+				<pic ID="103396" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028325/99_12_103396.png</pic>
+				<pic ID="103397" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028325/99_13_103397.png</pic>
+				<pic ID="103398" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028325/99_14_103398.png</pic>
+				<pic ID="103399" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028325/99_15_103399.png</pic>
+				<pic ID="103400" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028325/99_16_103400.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2108-1569607289">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30236</CodeCompl>
+		<VIN Title="VIN">LVTDD24B5RD647740</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (ZL)</Color>
+		<Price Title="Цена">5059000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый, Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">201</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28642" DocNum="028386">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="104325" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028386/99_1_104325.png</pic>
+				<pic ID="104326" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028386/99_2_104326.png</pic>
+				<pic ID="104327" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028386/99_3_104327.png</pic>
+				<pic ID="104328" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028386/99_4_104328.png</pic>
+				<pic ID="104329" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028386/99_5_104329.png</pic>
+				<pic ID="104330" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028386/99_6_104330.png</pic>
+				<pic ID="104331" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028386/99_7_104331.png</pic>
+				<pic ID="104332" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028386/99_8_104332.png</pic>
+				<pic ID="104333" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028386/99_9_104333.png</pic>
+				<pic ID="104334" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028386/99_10_104334.png</pic>
+				<pic ID="104335" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028386/99_11_104335.png</pic>
+				<pic ID="104336" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028386/99_12_104336.png</pic>
+				<pic ID="104337" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028386/99_13_104337.png</pic>
+				<pic ID="104338" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028386/99_14_104338.png</pic>
+				<pic ID="104339" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028386/99_15_104339.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2108-1569607289">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30235</CodeCompl>
+		<VIN Title="VIN">LVTDD24B0RD647709</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (ZL)</Color>
+		<Price Title="Цена">5059000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый, Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">201</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28640" DocNum="028384">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="103776" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028384/99_1_103776.png</pic>
+				<pic ID="103777" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028384/99_2_103777.png</pic>
+				<pic ID="103778" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028384/99_3_103778.png</pic>
+				<pic ID="103779" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028384/99_4_103779.png</pic>
+				<pic ID="103780" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028384/99_5_103780.png</pic>
+				<pic ID="103781" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028384/99_6_103781.png</pic>
+				<pic ID="103782" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028384/99_7_103782.png</pic>
+				<pic ID="103783" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028384/99_8_103783.png</pic>
+				<pic ID="103784" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028384/99_9_103784.png</pic>
+				<pic ID="103785" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028384/99_10_103785.png</pic>
+				<pic ID="103786" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028384/99_11_103786.png</pic>
+				<pic ID="103787" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028384/99_12_103787.png</pic>
+				<pic ID="103788" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028384/99_13_103788.png</pic>
+				<pic ID="103789" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028384/99_14_103789.png</pic>
+				<pic ID="103790" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028384/99_15_103790.png</pic>
+				<pic ID="103791" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028384/99_16_103791.png</pic>
+				<pic ID="103792" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028384/99_17_103792.png</pic>
+				<pic ID="103793" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028384/99_18_103793.png</pic>
+				<pic ID="103794" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028384/99_19_103794.png</pic>
+				<pic ID="103795" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028384/99_20_103795.png</pic>
+				<pic ID="103796" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028384/99_21_103796.png</pic>
+				<pic ID="103797" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028384/99_22_103797.png</pic>
+				<pic ID="103798" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028384/99_23_103798.png</pic>
+				<pic ID="103799" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028384/99_24_103799.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2108-1569607289">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30237</CodeCompl>
+		<VIN Title="VIN">LVTDD24B5RD532295</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Bluish Gray/Black (ZK)</Color>
+		<Price Title="Цена">5359000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый, Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">193</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28644" DocNum="028388">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="103752" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028388/99_1_103752.png</pic>
+				<pic ID="103753" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028388/99_2_103753.png</pic>
+				<pic ID="103754" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028388/99_3_103754.png</pic>
+				<pic ID="103755" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028388/99_4_103755.png</pic>
+				<pic ID="103756" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028388/99_5_103756.png</pic>
+				<pic ID="103757" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028388/99_6_103757.png</pic>
+				<pic ID="103758" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028388/99_7_103758.png</pic>
+				<pic ID="103759" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028388/99_8_103759.png</pic>
+				<pic ID="103760" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028388/99_9_103760.png</pic>
+				<pic ID="103761" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028388/99_10_103761.png</pic>
+				<pic ID="103762" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028388/99_11_103762.png</pic>
+				<pic ID="103763" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028388/99_12_103763.png</pic>
+				<pic ID="103764" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028388/99_13_103764.png</pic>
+				<pic ID="103765" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028388/99_14_103765.png</pic>
+				<pic ID="103766" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028388/99_15_103766.png</pic>
+				<pic ID="103767" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028388/99_16_103767.png</pic>
+				<pic ID="103768" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028388/99_17_103768.png</pic>
+				<pic ID="103769" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028388/99_18_103769.png</pic>
+				<pic ID="103770" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028388/99_19_103770.png</pic>
+				<pic ID="103771" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028388/99_20_103771.png</pic>
+				<pic ID="103772" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028388/99_21_103772.png</pic>
+				<pic ID="103773" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028388/99_22_103773.png</pic>
+				<pic ID="103774" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028388/99_23_103774.png</pic>
+				<pic ID="103775" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028388/99_24_103775.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2108-1569607289">J84WD</Model>
+		<CodeCompl Title="Код комплектации">30237</CodeCompl>
+		<VIN Title="VIN">LVTDD24B4RD587238</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver/Black (ZL)</Color>
+		<Price Title="Цена">5359000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">249.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый, Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">200</MaxSpeed>
+		<EcoClass Title="Экологический класс">6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4820*1930*1710</Dimensions>
+		<Weight Title="Масса">2445</Weight>
+		<CargoVolume Title="Объем багажника">717</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">201</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28418" DocNum="028162">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="95976" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028162/99_1_95976.png</pic>
+				<pic ID="95977" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028162/99_2_95977.png</pic>
+				<pic ID="95978" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028162/99_3_95978.png</pic>
+				<pic ID="95979" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028162/99_4_95979.png</pic>
+				<pic ID="95980" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028162/99_5_95980.png</pic>
+				<pic ID="95981" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028162/99_6_95981.png</pic>
+				<pic ID="95982" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028162/99_7_95982.png</pic>
+				<pic ID="95983" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028162/99_8_95983.png</pic>
+				<pic ID="95984" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028162/99_9_95984.png</pic>
+				<pic ID="95985" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028162/99_10_95985.png</pic>
+				<pic ID="95986" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028162/99_11_95986.png</pic>
+				<pic ID="95987" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028162/99_12_95987.png</pic>
+				<pic ID="95988" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028162/99_13_95988.png</pic>
+				<pic ID="95989" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028162/99_14_95989.png</pic>
+				<pic ID="95990" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028162/99_15_95990.png</pic>
+				<pic ID="95991" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028162/99_16_95991.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2096-1569607284">J7</Model>
+		<CodeCompl Title="Код комплектации">302116</CodeCompl>
+		<VIN Title="VIN">LVVDB21B0RC099590</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Light Green (SP)</Color>
+		<Price Title="Цена">2959900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зеленый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">191</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28151" DocNum="027895">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="72959" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027895/99_11_72959.png</pic>
+				<pic ID="72950" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027895/99_2_72950.png</pic>
+				<pic ID="72951" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027895/99_3_72951.png</pic>
+				<pic ID="72952" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027895/99_4_72952.png</pic>
+				<pic ID="72953" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027895/99_5_72953.png</pic>
+				<pic ID="72954" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027895/99_6_72954.png</pic>
+				<pic ID="72955" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027895/99_7_72955.png</pic>
+				<pic ID="72956" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027895/99_8_72956.png</pic>
+				<pic ID="72957" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027895/99_9_72957.png</pic>
+				<pic ID="72958" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027895/99_10_72958.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2096-1569607284">J7</Model>
+		<CodeCompl Title="Код комплектации">T7160NPBWJW0209UR</CodeCompl>
+		<VIN Title="VIN">LVVDB21B5RC066004</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">(Crystal Black)Черный</Color>
+		<Price Title="Цена">3399900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 (2000-3500)</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">CL</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28598" DocNum="028342">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="103156" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028342/99_24_103156.png</pic>
+				<pic ID="103133" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028342/99_1_103133.png</pic>
+				<pic ID="103134" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028342/99_2_103134.png</pic>
+				<pic ID="103135" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028342/99_3_103135.png</pic>
+				<pic ID="103136" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028342/99_4_103136.png</pic>
+				<pic ID="103137" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028342/99_5_103137.png</pic>
+				<pic ID="103138" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028342/99_6_103138.png</pic>
+				<pic ID="103139" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028342/99_7_103139.png</pic>
+				<pic ID="103140" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028342/99_8_103140.png</pic>
+				<pic ID="103141" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028342/99_9_103141.png</pic>
+				<pic ID="103142" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028342/99_10_103142.png</pic>
+				<pic ID="103143" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028342/99_11_103143.png</pic>
+				<pic ID="103144" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028342/99_12_103144.png</pic>
+				<pic ID="103145" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028342/99_13_103145.png</pic>
+				<pic ID="103146" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028342/99_14_103146.png</pic>
+				<pic ID="103147" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028342/99_15_103147.png</pic>
+				<pic ID="103148" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028342/99_16_103148.png</pic>
+				<pic ID="103149" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028342/99_17_103149.png</pic>
+				<pic ID="103150" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028342/99_18_103150.png</pic>
+				<pic ID="103151" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028342/99_19_103151.png</pic>
+				<pic ID="103152" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028342/99_20_103152.png</pic>
+				<pic ID="103153" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028342/99_21_103153.png</pic>
+				<pic ID="103154" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028342/99_22_103154.png</pic>
+				<pic ID="103155" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028342/99_23_103155.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2096-1569607284">J7</Model>
+		<CodeCompl Title="Код комплектации">302126</CodeCompl>
+		<VIN Title="VIN">EDXDB21B3SC050155</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3459900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28517" DocNum="028261">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="99236" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028261/99_1_99236.png</pic>
+				<pic ID="99237" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028261/99_2_99237.png</pic>
+				<pic ID="99238" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028261/99_3_99238.png</pic>
+				<pic ID="99239" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028261/99_4_99239.png</pic>
+				<pic ID="99240" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028261/99_5_99240.png</pic>
+				<pic ID="99241" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028261/99_6_99241.png</pic>
+				<pic ID="99242" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028261/99_7_99242.png</pic>
+				<pic ID="99243" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028261/99_8_99243.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2096-1569607284">J7</Model>
+		<CodeCompl Title="Код комплектации">302124</CodeCompl>
+		<VIN Title="VIN">EDXDB21B2SC029524</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Light Green/Black (ZM)</Color>
+		<Price Title="Цена">3499900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зеленый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">1933</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">194</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28658" DocNum="028402">
+		<StockQty Title="Количество в стоке">4</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2072-1569607302">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302123</CodeCompl>
+		<VIN Title="VIN">EDXDD21B3SC055091</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3509900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28589" DocNum="028333">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="102989" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028333/99_15_102989.png</pic>
+				<pic ID="102990" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028333/99_16_102990.png</pic>
+				<pic ID="102991" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028333/99_17_102991.png</pic>
+				<pic ID="102992" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028333/99_18_102992.png</pic>
+				<pic ID="102993" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028333/99_19_102993.png</pic>
+				<pic ID="102994" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028333/99_20_102994.png</pic>
+				<pic ID="102995" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028333/99_21_102995.png</pic>
+				<pic ID="102996" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028333/99_22_102996.png</pic>
+				<pic ID="102975" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028333/99_1_102975.png</pic>
+				<pic ID="102976" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028333/99_2_102976.png</pic>
+				<pic ID="102977" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028333/99_3_102977.png</pic>
+				<pic ID="102978" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028333/99_4_102978.png</pic>
+				<pic ID="102979" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028333/99_5_102979.png</pic>
+				<pic ID="102980" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028333/99_6_102980.png</pic>
+				<pic ID="102981" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028333/99_7_102981.png</pic>
+				<pic ID="102982" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028333/99_8_102982.png</pic>
+				<pic ID="102983" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028333/99_9_102983.png</pic>
+				<pic ID="102984" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028333/99_10_102984.png</pic>
+				<pic ID="102985" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028333/99_11_102985.png</pic>
+				<pic ID="102986" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028333/99_12_102986.png</pic>
+				<pic ID="102987" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028333/99_13_102987.png</pic>
+				<pic ID="102988" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028333/99_14_102988.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="115-1412616041">Jaecoo</Mark>
+		<Model Title="Модель" Code="2072-1569607302">J74WD</Model>
+		<CodeCompl Title="Код комплектации">302123</CodeCompl>
+		<VIN Title="VIN">EDXDD21B2SC058287</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver (KU)</Color>
+		<Price Title="Цена">3509900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серебристый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4500*1865*1680</Dimensions>
+		<Weight Title="Масса">2024</Weight>
+		<CargoVolume Title="Объем багажника">412/1332</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">190</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

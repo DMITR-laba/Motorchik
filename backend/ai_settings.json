@@ -1,0 +1,7 @@
+{
+  "response_model": "mistral:mistral-large-latest",
+  "embedding_model": "",
+  "api_service": "mistral",
+  "api_key": "i9cUCrVRnlRD7jxu3aM5NTg2wJCQ8TCn",
+  "updated_at": "2025-11-06T03:20:22.566509"
+}

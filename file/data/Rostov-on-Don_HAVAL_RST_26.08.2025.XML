@@ -1,0 +1,2279 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="HAVAL_RST">
+
+	<CarOrder Title="Заказ на автомобиль" value="20732" DocNum="020614">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="77768" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_1_77768.png</pic>
+				<pic ID="77769" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_2_77769.png</pic>
+				<pic ID="77770" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_3_77770.png</pic>
+				<pic ID="77771" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_4_77771.png</pic>
+				<pic ID="77772" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_5_77772.png</pic>
+				<pic ID="77773" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_6_77773.png</pic>
+				<pic ID="77774" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_7_77774.png</pic>
+				<pic ID="77775" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_8_77775.png</pic>
+				<pic ID="77776" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_9_77776.png</pic>
+				<pic ID="77777" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_10_77777.png</pic>
+				<pic ID="77778" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_11_77778.png</pic>
+				<pic ID="77779" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_12_77779.png</pic>
+				<pic ID="77780" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_13_77780.png</pic>
+				<pic ID="77781" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020614/99_14_77781.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525586927396</CodeCompl>
+		<VIN Title="VIN">XZGEE04A0SA507473</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Дымчатый жемчуг</Color>
+		<Price Title="Цена">1999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1420</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8122</interior-code>
+		<color-code Title="Код цвета кузова">Дымчатый ж</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20823" DocNum="020705">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="79953" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_1_79953.png</pic>
+				<pic ID="79954" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_2_79954.png</pic>
+				<pic ID="79955" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_3_79955.png</pic>
+				<pic ID="79956" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_4_79956.png</pic>
+				<pic ID="79957" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_5_79957.png</pic>
+				<pic ID="79958" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_6_79958.png</pic>
+				<pic ID="79959" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_7_79959.png</pic>
+				<pic ID="79960" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_8_79960.png</pic>
+				<pic ID="79961" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_9_79961.png</pic>
+				<pic ID="79962" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_10_79962.png</pic>
+				<pic ID="79963" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_11_79963.png</pic>
+				<pic ID="79964" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_12_79964.png</pic>
+				<pic ID="79965" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_13_79965.png</pic>
+				<pic ID="79966" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_14_79966.png</pic>
+				<pic ID="79967" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_15_79967.png</pic>
+				<pic ID="79968" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_16_79968.png</pic>
+				<pic ID="79969" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_17_79969.png</pic>
+				<pic ID="79970" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020705/99_18_79970.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="861-55190515">M6</Model>
+		<CodeCompl Title="Код комплектации">1522230725417925804</CodeCompl>
+		<VIN Title="VIN">EC2EF4A59SM011226</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Белый</Color>
+		<Price Title="Цена">1999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">8.2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12.9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1935</Weight>
+		<CargoVolume Title="Объем багажника">808/1700</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9915</interior-code>
+		<color-code Title="Код цвета кузова">Белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20839" DocNum="020721">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="80000" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_1_80000.png</pic>
+				<pic ID="80001" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_2_80001.png</pic>
+				<pic ID="80002" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_3_80002.png</pic>
+				<pic ID="80003" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_4_80003.png</pic>
+				<pic ID="80004" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_5_80004.png</pic>
+				<pic ID="80005" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_6_80005.png</pic>
+				<pic ID="80006" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_7_80006.png</pic>
+				<pic ID="80007" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_8_80007.png</pic>
+				<pic ID="80008" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_9_80008.png</pic>
+				<pic ID="80009" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_10_80009.png</pic>
+				<pic ID="80010" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_11_80010.png</pic>
+				<pic ID="80011" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_12_80011.png</pic>
+				<pic ID="80012" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_13_80012.png</pic>
+				<pic ID="80013" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_14_80013.png</pic>
+				<pic ID="80014" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_15_80014.png</pic>
+				<pic ID="80015" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_16_80015.png</pic>
+				<pic ID="80016" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020721/99_17_80016.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="861-55190515">M6</Model>
+		<CodeCompl Title="Код комплектации">1522230725418025805</CodeCompl>
+		<VIN Title="VIN">EC2EF4A57SM005358</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Серебристый</Color>
+		<Price Title="Цена">2119000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">8.3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12.7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1965</Weight>
+		<CargoVolume Title="Объем багажника">808/1700</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9915</interior-code>
+		<color-code Title="Код цвета кузова">Серый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20837" DocNum="020719">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="80515" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_1_80515.png</pic>
+				<pic ID="80516" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_2_80516.png</pic>
+				<pic ID="80517" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_3_80517.png</pic>
+				<pic ID="80518" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_4_80518.png</pic>
+				<pic ID="80519" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_5_80519.png</pic>
+				<pic ID="80520" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_6_80520.png</pic>
+				<pic ID="80521" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_7_80521.png</pic>
+				<pic ID="80522" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_8_80522.png</pic>
+				<pic ID="80523" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_9_80523.png</pic>
+				<pic ID="80524" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_10_80524.png</pic>
+				<pic ID="80525" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_11_80525.png</pic>
+				<pic ID="80526" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_12_80526.png</pic>
+				<pic ID="80527" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_13_80527.png</pic>
+				<pic ID="80528" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_14_80528.png</pic>
+				<pic ID="80529" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020719/99_15_80529.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="861-55190515">M6</Model>
+		<CodeCompl Title="Код комплектации">1522230725418025805</CodeCompl>
+		<VIN Title="VIN">EC2EF4A58SM000881</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Черный</Color>
+		<Price Title="Цена">2119000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">8.3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12.7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1965</Weight>
+		<CargoVolume Title="Объем багажника">808/1700</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9915</interior-code>
+		<color-code Title="Код цвета кузова">Черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20725" DocNum="020607">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="77649" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_1_77649.png</pic>
+				<pic ID="77650" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_2_77650.png</pic>
+				<pic ID="77651" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_3_77651.png</pic>
+				<pic ID="77652" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_4_77652.png</pic>
+				<pic ID="77653" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_5_77653.png</pic>
+				<pic ID="77654" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_6_77654.png</pic>
+				<pic ID="77655" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_7_77655.png</pic>
+				<pic ID="77656" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_8_77656.png</pic>
+				<pic ID="77657" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_9_77657.png</pic>
+				<pic ID="77658" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_10_77658.png</pic>
+				<pic ID="77659" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_11_77659.png</pic>
+				<pic ID="77660" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_12_77660.png</pic>
+				<pic ID="77661" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_13_77661.png</pic>
+				<pic ID="77662" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_14_77662.png</pic>
+				<pic ID="77663" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_15_77663.png</pic>
+				<pic ID="77664" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_16_77664.png</pic>
+				<pic ID="77665" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_17_77665.png</pic>
+				<pic ID="77666" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020607/99_18_77666.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525586927396</CodeCompl>
+		<VIN Title="VIN">XZGEE04A2SA599007</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">1999000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,5</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1420</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8122</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20838" DocNum="020720">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="80494" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_1_80494.png</pic>
+				<pic ID="80495" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_2_80495.png</pic>
+				<pic ID="80496" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_3_80496.png</pic>
+				<pic ID="80497" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_4_80497.png</pic>
+				<pic ID="80498" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_5_80498.png</pic>
+				<pic ID="80499" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_6_80499.png</pic>
+				<pic ID="80500" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_7_80500.png</pic>
+				<pic ID="80501" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_8_80501.png</pic>
+				<pic ID="80502" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_9_80502.png</pic>
+				<pic ID="80503" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_10_80503.png</pic>
+				<pic ID="80504" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_11_80504.png</pic>
+				<pic ID="80505" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_12_80505.png</pic>
+				<pic ID="80506" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_13_80506.png</pic>
+				<pic ID="80507" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_14_80507.png</pic>
+				<pic ID="80508" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_15_80508.png</pic>
+				<pic ID="80509" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_16_80509.png</pic>
+				<pic ID="80510" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_17_80510.png</pic>
+				<pic ID="80511" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_18_80511.png</pic>
+				<pic ID="80512" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_19_80512.png</pic>
+				<pic ID="80513" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_20_80513.png</pic>
+				<pic ID="80514" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020720/99_21_80514.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="861-55190515">M6</Model>
+		<CodeCompl Title="Код комплектации">1522230725418025805</CodeCompl>
+		<VIN Title="VIN">EC2EF4A56SM000958</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Белый</Color>
+		<Price Title="Цена">2119000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">8.3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12.7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1965</Weight>
+		<CargoVolume Title="Объем багажника">808/1700</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9915</interior-code>
+		<color-code Title="Код цвета кузова">Белый</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20750" DocNum="020632">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="79971" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_1_79971.png</pic>
+				<pic ID="79972" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_2_79972.png</pic>
+				<pic ID="79973" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_3_79973.png</pic>
+				<pic ID="79974" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_4_79974.png</pic>
+				<pic ID="79975" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_5_79975.png</pic>
+				<pic ID="79976" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_6_79976.png</pic>
+				<pic ID="79977" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_7_79977.png</pic>
+				<pic ID="79978" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_8_79978.png</pic>
+				<pic ID="79979" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_9_79979.png</pic>
+				<pic ID="79980" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_10_79980.png</pic>
+				<pic ID="79981" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_11_79981.png</pic>
+				<pic ID="79982" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_12_79982.png</pic>
+				<pic ID="79983" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_13_79983.png</pic>
+				<pic ID="79984" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_14_79984.png</pic>
+				<pic ID="79985" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_15_79985.png</pic>
+				<pic ID="79986" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_16_79986.png</pic>
+				<pic ID="79987" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020632/99_17_79987.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="861-55190515">M6</Model>
+		<CodeCompl Title="Код комплектации">1522230725417925804</CodeCompl>
+		<VIN Title="VIN">EC2EF4A5XSM011333</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Черный</Color>
+		<Price Title="Цена">2164000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Универсал</BodyType>
+		<GearBoxType Title="Тип коробки">механика</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">8.2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">12.9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">175</MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1935</Weight>
+		<CargoVolume Title="Объем багажника">808/1700</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9915</interior-code>
+		<color-code Title="Код цвета кузова">Черный</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20795" DocNum="020677">
+		<StockQty Title="Количество в стоке">11</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/020677/20795.png" />
+		<pictures_real>
+				<pic ID="79403" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_1_79403.png</pic>
+				<pic ID="79404" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_2_79404.png</pic>
+				<pic ID="79405" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_3_79405.png</pic>
+				<pic ID="79406" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_4_79406.png</pic>
+				<pic ID="79407" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_5_79407.png</pic>
+				<pic ID="79408" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_6_79408.png</pic>
+				<pic ID="79409" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_7_79409.png</pic>
+				<pic ID="79410" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_8_79410.png</pic>
+				<pic ID="79411" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_9_79411.png</pic>
+				<pic ID="79412" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_10_79412.png</pic>
+				<pic ID="79413" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_11_79413.png</pic>
+				<pic ID="79414" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_12_79414.png</pic>
+				<pic ID="79415" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_13_79415.png</pic>
+				<pic ID="79416" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_14_79416.png</pic>
+				<pic ID="79417" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_15_79417.png</pic>
+				<pic ID="79418" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_16_79418.png</pic>
+				<pic ID="79419" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_17_79419.png</pic>
+				<pic ID="79420" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020677/99_18_79420.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525587027397</CodeCompl>
+		<VIN Title="VIN">XZGEE04A2SA506597</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">2249000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1445</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8122</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="81">Автоматическое включение аварийного света при экстренном торможении</Option>
+				<Option Code="94">Аккумулятор увеличенной емкости</Option>
+				<Option Code="92">Блокировка замков задних дверей от открывания изнутри (детский замок)</Option>
+				<Option Code="87">Боковые подушки и шторки безопасности</Option>
+				<Option Code="89">Иммобилайзер</Option>
+				<Option Code="88">Крепления ISOFIX на задних сиденьях</Option>
+				<Option Code="82">Круиз контроль</Option>
+				<Option Code="91">Разьем USB  в зеркале, для подключения видео-регистратора</Option>
+				<Option Code="93">Система ГЛОНАСС</Option>
+				<Option Code="90">Система поиска автомобиля, дистанционная активация звукового сигнала</Option>
+				<Option Code="80">Система стабилизации курсовой устойчивости TCS и система помощи стабилизации движения прицепа TSA</Option>
+				<Option Code="79">Системы стабилизации движения: Антиблокировочная система тормозов ABS. Электронная система контроля </Option>
+				<Option Code="95">Увеличенный объем бачка омывателя, 4,5л</Option>
+				<Option Code="86">Фронтальные подушки безопасности</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="49">2 передних подстаканника с защитной крышкой на центральном тоннеле</Option>
+				<Option Code="48">Задний подлокотник, 2 подстаканника</Option>
+				<Option Code="45">Макияжное зеркало в солнцезащитных козырьках водителя и пассажира</Option>
+				<Option Code="50">Потолочные ручки интерьера для посадки пассажиров</Option>
+				<Option Code="47">Центральный подлокотник, с вещевым отделением</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="4" value="Салон">
+				<Option Code="41">Кожаный руль с подогревом</Option>
+				<Option Code="34">Механическая регулировка сиденья водителя в 6 направлениях</Option>
+				<Option Code="36">Механическая регулировка сиденья пассажира в 4 направлениях</Option>
+				<Option Code="31">Подогрев передних сидений</Option>
+				<Option Code="38">Тканевая обивка сидений</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="104">4 аудио динамика</Option>
+				<Option Code="98">USB входы x2 спереди и x2  разъема сзади</Option>
+				<Option Code="99">Интерактивная мультимедийная система T-Box с доступом в internet* для обеспечения работы приложения </Option>
+				<Option Code="97">Магнитола с Android Auto/ Apple Carplay, Bluetooth</Option>
+				<Option Code="100">Сенсорный дисплей, 10&quot;</Option>
+				<Option Code="102">Цветной дисплей бортового компьютера, 3,5&apos;&apos;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="26">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида; пластико</Option>
+				<Option Code="24">Окраска кузова металлик</Option>
+				<Option Code="27">Окрашенные в цвет кузова ручки дверей</Option>
+				<Option Code="30">Укороченная антенна &quot;акулий плавник&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="11">17&quot; диски</Option>
+				<Option Code="10">5 дверей</Option>
+				<Option Code="2">Автоматизированная КПП с 2 сцеплениями</Option>
+				<Option Code="60">Автоматический климат-контроль 1-зонный</Option>
+				<Option Code="76">Бесключевой доступ, кнопка запуска двигателя</Option>
+				<Option Code="19">Вертикальные светодиодные дневные ходовые огни, интегрированные в передний бампер</Option>
+				<Option Code="62">Воздуховоды заднего ряда</Option>
+				<Option Code="23">Датчик дождя и света</Option>
+				<Option Code="78">Декоративная крышка двигателя</Option>
+				<Option Code="13">Дисковые передние и задние тормоза</Option>
+				<Option Code="69">Задние датчики парковки</Option>
+				<Option Code="21">Задние противотуманные фонари</Option>
+				<Option Code="8">Задняя полузависимая подвеска, торсионная балка</Option>
+				<Option Code="106">Задняя спинка, складывающаяся 60/40</Option>
+				<Option Code="72">Камера заднего вида со статической разметкой</Option>
+				<Option Code="14">Малоразмерное запасное колесо (докатка)</Option>
+				<Option Code="7">Независимая передняя подвеска McPherson</Option>
+				<Option Code="3">Передний привод</Option>
+				<Option Code="109">Подготовка под установку ТСУ (фаркопа)</Option>
+				<Option Code="51">Подогрев и электрорегулировка зеркал заднего вида</Option>
+				<Option Code="66">Подрулевые лепестки переключения передач</Option>
+				<Option Code="107">Полка багажного отделения</Option>
+				<Option Code="65">Регулировка руля по высоте и вылету</Option>
+				<Option Code="108">Рейлинги на крыше</Option>
+				<Option Code="63">Розетка, 12В для передних пассажиров на центральном тоннеле</Option>
+				<Option Code="18">Светодиодные дневные ходовые огни, интегрированные в блок фар</Option>
+				<Option Code="20">Светодиодные задние фонари</Option>
+				<Option Code="17">Светодиодные фары</Option>
+				<Option Code="68">Система выбора режима движения (standard, eco, sport, snow)</Option>
+				<Option Code="15">Система мониторинга давления в шинах TPMS</Option>
+				<Option Code="6">Система помощи при спуске (для SUV)</Option>
+				<Option Code="5">Система помощи при старте на подъеме</Option>
+				<Option Code="22">Функция задержки света фар после закрытия центрального замка (follow-me-home)</Option>
+				<Option Code="75">Центральный замок с дистанционным управлением</Option>
+				<Option Code="67">Электронный селектор передач (шайба)</Option>
+				<Option Code="59">Электронный стояночный тормоз EPB с функцией Brake Hold</Option>
+				<Option Code="54">Электрообогрев лобового стекла</Option>
+				<Option Code="55">Электроподогрев форсунок омывателя лобового стекла</Option>
+				<Option Code="56">Электростеклоподъемники 4 дверей с автодоводчиком со стороны водителя</Option>
+				<Option Code="64">Электроусилитель рулевого управления</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20670" DocNum="020552">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="77094" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_1_77094.png</pic>
+				<pic ID="77095" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_2_77095.png</pic>
+				<pic ID="77096" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_3_77096.png</pic>
+				<pic ID="77097" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_4_77097.png</pic>
+				<pic ID="77098" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_5_77098.png</pic>
+				<pic ID="77099" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_6_77099.png</pic>
+				<pic ID="77100" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_7_77100.png</pic>
+				<pic ID="77101" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_8_77101.png</pic>
+				<pic ID="77102" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_9_77102.png</pic>
+				<pic ID="77103" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_10_77103.png</pic>
+				<pic ID="77104" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_11_77104.png</pic>
+				<pic ID="77105" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_12_77105.png</pic>
+				<pic ID="77106" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_13_77106.png</pic>
+				<pic ID="77107" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_14_77107.png</pic>
+				<pic ID="77108" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_15_77108.png</pic>
+				<pic ID="77109" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_16_77109.png</pic>
+				<pic ID="77110" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_17_77110.png</pic>
+				<pic ID="77111" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_18_77111.png</pic>
+				<pic ID="77112" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020552/99_19_77112.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525587027398</CodeCompl>
+		<VIN Title="VIN">XZGEE04A3SA598450</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Галактический черный</Color>
+		<Price Title="Цена">2584000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">143.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1497</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1445</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8122</interior-code>
+		<color-code Title="Код цвета кузова">Галактичес</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="47">6 аудио динамиков</Option>
+				<Option Code="22">Автодоводчики стекол 4 дверей с функцией антизажима</Option>
+				<Option Code="26">Автоматический климат-контроль 2-зонный</Option>
+				<Option Code="38">Адаптивный круиз-контроль ACC с функцией движения на малы скоростя LSF, системой предупреждения o ст</Option>
+				<Option Code="41">Беспроводное зарядное устройство</Option>
+				<Option Code="40">Боковые подушки и шторки безопасности</Option>
+				<Option Code="8">Вертикальные светодиодные дневные одовые огни, интегрированные в передний бампер</Option>
+				<Option Code="27">Воздуоводы заднего ряда (только для роботизированной коробки передач)</Option>
+				<Option Code="30">Задние датчики парковки</Option>
+				<Option Code="34">Камера кругового обзора 360, с симуляцией 3D изображения в реальном времени</Option>
+				<Option Code="14">Кожаный руль с подогревом</Option>
+				<Option Code="15">Коричневый салон (сиденья, вставки дверей, торпедо)</Option>
+				<Option Code="50">Легкосплавные колесные диски 18&quot; с шинами размерностью 225 / 55</Option>
+				<Option Code="17">Мягкий пластик торпедо, верней части приборной панели</Option>
+				<Option Code="13">Обивка сидений искусственной кожей</Option>
+				<Option Code="4">Окраска кузова: Белоснежный нефелин</Option>
+				<Option Code="5">Окраска кузова: Небесный топаз/ Голубой сапфир, Благородный агат, Магматический красный/ Красный топ</Option>
+				<Option Code="31">Передние датчики парковки</Option>
+				<Option Code="9">Подогрев задни сидений</Option>
+				<Option Code="28">Подрулевые лепестки переключения передач (только для роботизированной коробки передач)</Option>
+				<Option Code="18">Подсветка макияжны зеркал</Option>
+				<Option Code="36">Проекционный дисплей с регулировкой высоты, угла изображения</Option>
+				<Option Code="48">Рейлинги на крыше</Option>
+				<Option Code="1">ромированная окантовка окон дверей, антикоррозийный ром</Option>
+				<Option Code="7">Светодиодные фары</Option>
+				<Option Code="43">Сенсорный дисплей, реагирующий на мульти-прикосновения, 12,3&quot;</Option>
+				<Option Code="16">Серый салон (сиденья, вставки дверей, торпедо)</Option>
+				<Option Code="35">Система автономной автоматической парковки с ассистентом выезда с парковки RCTM</Option>
+				<Option Code="29">Система выбора режима движения — Standard, Eco, Sport, Snow (только для роботизированной коробки пер</Option>
+				<Option Code="32">Система мониторинга давления в шина TPMS</Option>
+				<Option Code="39">Система мониторинга движения в поперечном направлении/в «слепы» зона DOW с функцией предупреждения с</Option>
+				<Option Code="24">Система помощи при спуске</Option>
+				<Option Code="3">Тонированные стекла (задние)</Option>
+				<Option Code="23">Функция принудительного дистанционного закрытия окон, складывания зеркал с брелока ключа</Option>
+				<Option Code="45">Цифровая панель приборов, цветной экран 7&quot;</Option>
+				<Option Code="11">Электрическая регулировка сиденья водителя в 6 направления</Option>
+				<Option Code="21">Электрообогрев поверности лобового стекла и форсунок омывателя</Option>
+				<Option Code="19">Электропривод складывания зеркал</Option>
+				<Option Code="20">Электроромное центральное зеркало заднего вида салона (с автозатемнением)</Option>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20755" DocNum="020637">
+		<StockQty Title="Количество в стоке">5</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715728720</CodeCompl>
+		<VIN Title="VIN">XZGEF04A6SA393430</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">2699000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380 / 1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">188</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5416*1947*1884</Dimensions>
+		<Weight Title="Масса">1655–1690</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8056</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20728" DocNum="020610">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="78674" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_1_78674.png</pic>
+				<pic ID="78675" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_2_78675.png</pic>
+				<pic ID="78676" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_3_78676.png</pic>
+				<pic ID="78677" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_4_78677.png</pic>
+				<pic ID="78678" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_5_78678.png</pic>
+				<pic ID="78679" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_6_78679.png</pic>
+				<pic ID="78680" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_7_78680.png</pic>
+				<pic ID="78681" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_8_78681.png</pic>
+				<pic ID="78682" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_9_78682.png</pic>
+				<pic ID="78683" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_10_78683.png</pic>
+				<pic ID="78684" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_11_78684.png</pic>
+				<pic ID="78685" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_12_78685.png</pic>
+				<pic ID="78686" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_13_78686.png</pic>
+				<pic ID="78687" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_14_78687.png</pic>
+				<pic ID="78688" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_15_78688.png</pic>
+				<pic ID="78689" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_16_78689.png</pic>
+				<pic ID="78690" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_17_78690.png</pic>
+				<pic ID="78691" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_18_78691.png</pic>
+				<pic ID="78692" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_19_78692.png</pic>
+				<pic ID="78693" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_20_78693.png</pic>
+				<pic ID="78694" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_21_78694.png</pic>
+				<pic ID="78695" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_22_78695.png</pic>
+				<pic ID="78696" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_23_78696.png</pic>
+				<pic ID="78697" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_RST/020610/99_24_78697.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525587127397</CodeCompl>
+		<VIN Title="VIN">XZGFE04A5SA593660</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Галактический черный</Color>
+		<Price Title="Цена">2399000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1625 / 162</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8122</interior-code>
+		<color-code Title="Код цвета кузова">Галактичес</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="81">Автоматическое включение аварийного света при экстренном торможении</Option>
+				<Option Code="94">Аккумулятор увеличенной емкости</Option>
+				<Option Code="92">Блокировка замков задних дверей от открывания изнутри (детский замок)</Option>
+				<Option Code="87">Боковые подушки и шторки безопасности</Option>
+				<Option Code="89">Иммобилайзер</Option>
+				<Option Code="88">Крепления ISOFIX на задних сиденьях</Option>
+				<Option Code="82">Круиз контроль</Option>
+				<Option Code="91">Разьем USB  в зеркале, для подключения видео-регистратора</Option>
+				<Option Code="93">Система ГЛОНАСС</Option>
+				<Option Code="90">Система поиска автомобиля, дистанционная активация звукового сигнала</Option>
+				<Option Code="80">Система стабилизации курсовой устойчивости TCS и система помощи стабилизации движения прицепа TSA</Option>
+				<Option Code="79">Системы стабилизации движения: Антиблокировочная система тормозов ABS. Электронная система контроля </Option>
+				<Option Code="95">Увеличенный объем бачка омывателя, 4,5л</Option>
+				<Option Code="86">Фронтальные подушки безопасности</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="49">2 передних подстаканника с защитной крышкой на центральном тоннеле</Option>
+				<Option Code="48">Задний подлокотник, 2 подстаканника</Option>
+				<Option Code="45">Макияжное зеркало в солнцезащитных козырьках водителя и пассажира</Option>
+				<Option Code="50">Потолочные ручки интерьера для посадки пассажиров</Option>
+				<Option Code="47">Центральный подлокотник, с вещевым отделением</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="4" value="Салон">
+				<Option Code="41">Кожаный руль с подогревом</Option>
+				<Option Code="34">Механическая регулировка сиденья водителя в 6 направлениях</Option>
+				<Option Code="36">Механическая регулировка сиденья пассажира в 4 направлениях</Option>
+				<Option Code="31">Подогрев передних сидений</Option>
+				<Option Code="38">Тканевая обивка сидений</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="104">4 аудио динамика</Option>
+				<Option Code="98">USB входы x2 спереди и x2  разъема сзади</Option>
+				<Option Code="99">Интерактивная мультимедийная система T-Box с доступом в internet* для обеспечения работы приложения </Option>
+				<Option Code="97">Магнитола с Android Auto/ Apple Carplay, Bluetooth</Option>
+				<Option Code="100">Сенсорный дисплей, 10&quot;</Option>
+				<Option Code="102">Цветной дисплей бортового компьютера, 3,5&apos;&apos;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="26">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида; пластико</Option>
+				<Option Code="24">Окраска кузова металлик</Option>
+				<Option Code="27">Окрашенные в цвет кузова ручки дверей</Option>
+				<Option Code="30">Укороченная антенна &quot;акулий плавник&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="11">17&quot; диски</Option>
+				<Option Code="10">5 дверей</Option>
+				<Option Code="2">Автоматизированная КПП с 2 сцеплениями</Option>
+				<Option Code="60">Автоматический климат-контроль 1-зонный</Option>
+				<Option Code="76">Бесключевой доступ, кнопка запуска двигателя</Option>
+				<Option Code="19">Вертикальные светодиодные дневные ходовые огни, интегрированные в передний бампер</Option>
+				<Option Code="62">Воздуховоды заднего ряда</Option>
+				<Option Code="23">Датчик дождя и света</Option>
+				<Option Code="78">Декоративная крышка двигателя</Option>
+				<Option Code="13">Дисковые передние и задние тормоза</Option>
+				<Option Code="69">Задние датчики парковки</Option>
+				<Option Code="21">Задние противотуманные фонари</Option>
+				<Option Code="9">Задняя независимая многорычажная подвеска</Option>
+				<Option Code="106">Задняя спинка, складывающаяся 60/40</Option>
+				<Option Code="72">Камера заднего вида со статической разметкой</Option>
+				<Option Code="14">Малоразмерное запасное колесо (докатка)</Option>
+				<Option Code="7">Независимая передняя подвеска McPherson</Option>
+				<Option Code="109">Подготовка под установку ТСУ (фаркопа)</Option>
+				<Option Code="51">Подогрев и электрорегулировка зеркал заднего вида</Option>
+				<Option Code="66">Подрулевые лепестки переключения передач</Option>
+				<Option Code="107">Полка багажного отделения</Option>
+				<Option Code="4">Полный привод</Option>
+				<Option Code="65">Регулировка руля по высоте и вылету</Option>
+				<Option Code="108">Рейлинги на крыше</Option>
+				<Option Code="63">Розетка, 12В для передних пассажиров на центральном тоннеле</Option>
+				<Option Code="18">Светодиодные дневные ходовые огни, интегрированные в блок фар</Option>
+				<Option Code="20">Светодиодные задние фонари</Option>
+				<Option Code="17">Светодиодные фары</Option>
+				<Option Code="68">Система выбора режима движения (standard, eco, sport, snow)</Option>
+				<Option Code="15">Система мониторинга давления в шинах TPMS</Option>
+				<Option Code="6">Система помощи при спуске (для SUV)</Option>
+				<Option Code="5">Система помощи при старте на подъеме</Option>
+				<Option Code="22">Функция задержки света фар после закрытия центрального замка (follow-me-home)</Option>
+				<Option Code="75">Центральный замок с дистанционным управлением</Option>
+				<Option Code="67">Электронный селектор передач (шайба)</Option>
+				<Option Code="59">Электронный стояночный тормоз EPB с функцией Brake Hold</Option>
+				<Option Code="54">Электрообогрев лобового стекла</Option>
+				<Option Code="55">Электроподогрев форсунок омывателя лобового стекла</Option>
+				<Option Code="56">Электростеклоподъемники 4 дверей с автодоводчиком со стороны водителя</Option>
+				<Option Code="64">Электроусилитель рулевого управления</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20794" DocNum="020676">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715728720</CodeCompl>
+		<VIN Title="VIN">XZGEF04A3SA391439</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Дымчатый жемчуг</Color>
+		<Price Title="Цена">2699000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380 / 1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">188</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5416*1947*1884</Dimensions>
+		<Weight Title="Масса">1655–1690</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8056</interior-code>
+		<color-code Title="Код цвета кузова">Дымчатый ж</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20828" DocNum="020710">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="79855" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_1_79855.png</pic>
+				<pic ID="79856" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_2_79856.png</pic>
+				<pic ID="79857" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_3_79857.png</pic>
+				<pic ID="79858" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_4_79858.png</pic>
+				<pic ID="79859" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_5_79859.png</pic>
+				<pic ID="79860" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_6_79860.png</pic>
+				<pic ID="79861" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_7_79861.png</pic>
+				<pic ID="79862" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_8_79862.png</pic>
+				<pic ID="79863" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_9_79863.png</pic>
+				<pic ID="79864" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_10_79864.png</pic>
+				<pic ID="79865" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_11_79865.png</pic>
+				<pic ID="79866" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_12_79866.png</pic>
+				<pic ID="79867" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_13_79867.png</pic>
+				<pic ID="79868" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_14_79868.png</pic>
+				<pic ID="79869" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_15_79869.png</pic>
+				<pic ID="79870" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_16_79870.png</pic>
+				<pic ID="79871" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_17_79871.png</pic>
+				<pic ID="79872" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_18_79872.png</pic>
+				<pic ID="79873" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_19_79873.png</pic>
+				<pic ID="79874" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_20_79874.png</pic>
+				<pic ID="79875" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_21_79875.png</pic>
+				<pic ID="79876" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_22_79876.png</pic>
+				<pic ID="79877" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_23_79877.png</pic>
+				<pic ID="79878" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_24_79878.png</pic>
+				<pic ID="79879" type="99" seqno="25">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_25_79879.png</pic>
+				<pic ID="79880" type="99" seqno="26">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_26_79880.png</pic>
+				<pic ID="79881" type="99" seqno="27">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_27_79881.png</pic>
+				<pic ID="79882" type="99" seqno="28">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_28_79882.png</pic>
+				<pic ID="79883" type="99" seqno="29">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_29_79883.png</pic>
+				<pic ID="79884" type="99" seqno="30">http://aaa-motors.ru/IMG/AUDI_RST/020710/99_30_79884.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715728720</CodeCompl>
+		<VIN Title="VIN">XZGEF04A9SA391381</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">2824000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380 / 1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">188</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5416*1947*1884</Dimensions>
+		<Weight Title="Масса">1655–1690</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8056</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20733" DocNum="020615">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="78551" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_1_78551.png</pic>
+				<pic ID="78552" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_2_78552.png</pic>
+				<pic ID="78553" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_3_78553.png</pic>
+				<pic ID="78554" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_4_78554.png</pic>
+				<pic ID="78555" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_5_78555.png</pic>
+				<pic ID="78556" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_6_78556.png</pic>
+				<pic ID="78557" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_7_78557.png</pic>
+				<pic ID="78558" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_8_78558.png</pic>
+				<pic ID="78559" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_9_78559.png</pic>
+				<pic ID="78560" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_10_78560.png</pic>
+				<pic ID="78561" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_11_78561.png</pic>
+				<pic ID="78562" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_12_78562.png</pic>
+				<pic ID="78563" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_13_78563.png</pic>
+				<pic ID="78564" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_14_78564.png</pic>
+				<pic ID="78565" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_15_78565.png</pic>
+				<pic ID="78566" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_16_78566.png</pic>
+				<pic ID="78567" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_17_78567.png</pic>
+				<pic ID="78568" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020615/99_18_78568.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715728720</CodeCompl>
+		<VIN Title="VIN">XZGEF04A8SA393476</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Дымчатый жемчуг</Color>
+		<Price Title="Цена">2824000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380 / 1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">188</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5416*1947*1884</Dimensions>
+		<Weight Title="Масса">1655–1690</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8056</interior-code>
+		<color-code Title="Код цвета кузова">Дымчатый ж</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20756" DocNum="020638">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715728720</CodeCompl>
+		<VIN Title="VIN">XZGEF04A6SA393444</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">2839000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380 / 1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">188</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5416*1947*1884</Dimensions>
+		<Weight Title="Масса">1655–1690</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8056</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20787" DocNum="020669">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/020669/20787.png" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715728721</CodeCompl>
+		<VIN Title="VIN">XZGEF04A7SA392500</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Океанический лазурит</Color>
+		<Price Title="Цена">2899000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">188</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1655–1690</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Океаническ</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="19449" DocNum="019332">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/019332/19449.png" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958524643716745</CodeCompl>
+		<VIN Title="VIN">XZGFE04AXRA565265</VIN>
+		<InteriorColor Title="Цвет салона">Черно-серый</InteriorColor>
+		<Color Title="Цвет">Галактический черный, металлик</Color>
+		<Price Title="Цена">2924000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1625 / 162</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">BSR</interior-code>
+		<color-code Title="Код цвета кузова">GBM</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">2399000.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="81">Автоматическое включение аварийного света при экстренном торможении</Option>
+				<Option Code="94">Аккумулятор увеличенной емкости</Option>
+				<Option Code="92">Блокировка замков задних дверей от открывания изнутри (детский замок)</Option>
+				<Option Code="87">Боковые подушки и шторки безопасности</Option>
+				<Option Code="89">Иммобилайзер</Option>
+				<Option Code="88">Крепления ISOFIX на задних сиденьях</Option>
+				<Option Code="82">Круиз контроль</Option>
+				<Option Code="91">Разьем USB  в зеркале, для подключения видео-регистратора</Option>
+				<Option Code="93">Система ГЛОНАСС</Option>
+				<Option Code="90">Система поиска автомобиля, дистанционная активация звукового сигнала</Option>
+				<Option Code="80">Система стабилизации курсовой устойчивости TCS и система помощи стабилизации движения прицепа TSA</Option>
+				<Option Code="79">Системы стабилизации движения: Антиблокировочная система тормозов ABS. Электронная система контроля </Option>
+				<Option Code="95">Увеличенный объем бачка омывателя, 4,5л</Option>
+				<Option Code="86">Фронтальные подушки безопасности</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="49">2 передних подстаканника с защитной крышкой на центральном тоннеле</Option>
+				<Option Code="48">Задний подлокотник, 2 подстаканника</Option>
+				<Option Code="45">Макияжное зеркало в солнцезащитных козырьках водителя и пассажира</Option>
+				<Option Code="46">Подсветка макияжных зеркал</Option>
+				<Option Code="50">Потолочные ручки интерьера для посадки пассажиров</Option>
+				<Option Code="47">Центральный подлокотник, с вещевым отделением</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="4" value="Салон">
+				<Option Code="40">Атмосферная LED подсветка салона с возможностью выбора цветов (до 64 цветов)</Option>
+				<Option Code="32">Вентиляция сиденья водителя</Option>
+				<Option Code="41">Кожаный руль с подогревом</Option>
+				<Option Code="44">Мягкий пластик торпедо, верхней части приборной панели</Option>
+				<Option Code="39">Обивка сидений искусственной кожей с перфорацией</Option>
+				<Option Code="33">Подогрев задних сидений</Option>
+				<Option Code="31">Подогрев передних сидений</Option>
+				<Option Code="35">Электрическая регулировка сиденья водителя в 6 направлениях</Option>
+				<Option Code="37">Электрическая регулировка сиденья пассажира в 4 направлениях</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="105">6 аудио динамиков</Option>
+				<Option Code="98">USB входы x2 спереди и x2  разъема сзади</Option>
+				<Option Code="96">Беспроводное зарядное устройство</Option>
+				<Option Code="99">Интерактивная мультимедийная система T-Box с доступом в internet* для обеспечения работы приложения </Option>
+				<Option Code="97">Магнитола с Android Auto/ Apple Carplay, Bluetooth</Option>
+				<Option Code="101">Сенсорный дисплей, 12,3&quot;</Option>
+				<Option Code="103">Цифровая панель приборов, цветной экран 7&apos;&apos;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="26">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида; пластико</Option>
+				<Option Code="24">Окраска кузова металлик</Option>
+				<Option Code="27">Окрашенные в цвет кузова ручки дверей</Option>
+				<Option Code="29">Тонированные стекла (задние)</Option>
+				<Option Code="30">Укороченная антенна &quot;акулий плавник&quot;</Option>
+				<Option Code="28">Хромированная окантовка окон дверей, антикоррозийный хром</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="12">18&quot; диски</Option>
+				<Option Code="10">5 дверей</Option>
+				<Option Code="57">Автодоводчики стекол 4 дверей с функцией антизажима</Option>
+				<Option Code="2">Автоматизированная КПП с 2 сцеплениями</Option>
+				<Option Code="61">Автоматический климат-контроль 2-зонный</Option>
+				<Option Code="76">Бесключевой доступ, кнопка запуска двигателя</Option>
+				<Option Code="19">Вертикальные светодиодные дневные ходовые огни, интегрированные в передний бампер</Option>
+				<Option Code="62">Воздуховоды заднего ряда</Option>
+				<Option Code="23">Датчик дождя и света</Option>
+				<Option Code="78">Декоративная крышка двигателя</Option>
+				<Option Code="13">Дисковые передние и задние тормоза</Option>
+				<Option Code="69">Задние датчики парковки</Option>
+				<Option Code="21">Задние противотуманные фонари</Option>
+				<Option Code="9">Задняя независимая многорычажная подвеска</Option>
+				<Option Code="106">Задняя спинка, складывающаяся 60/40</Option>
+				<Option Code="73">Камера кругового обзора 360, с симуляцией 3D изображения в реальном времени</Option>
+				<Option Code="14">Малоразмерное запасное колесо (докатка)</Option>
+				<Option Code="7">Независимая передняя подвеска McPherson</Option>
+				<Option Code="109">Подготовка под установку ТСУ (фаркопа)</Option>
+				<Option Code="51">Подогрев и электрорегулировка зеркал заднего вида</Option>
+				<Option Code="66">Подрулевые лепестки переключения передач</Option>
+				<Option Code="107">Полка багажного отделения</Option>
+				<Option Code="4">Полный привод</Option>
+				<Option Code="65">Регулировка руля по высоте и вылету</Option>
+				<Option Code="108">Рейлинги на крыше</Option>
+				<Option Code="63">Розетка, 12В для передних пассажиров на центральном тоннеле</Option>
+				<Option Code="18">Светодиодные дневные ходовые огни, интегрированные в блок фар</Option>
+				<Option Code="20">Светодиодные задние фонари</Option>
+				<Option Code="17">Светодиодные фары</Option>
+				<Option Code="68">Система выбора режима движения (standard, eco, sport, snow)</Option>
+				<Option Code="15">Система мониторинга давления в шинах TPMS</Option>
+				<Option Code="6">Система помощи при спуске (для SUV)</Option>
+				<Option Code="5">Система помощи при старте на подъеме</Option>
+				<Option Code="22">Функция задержки света фар после закрытия центрального замка (follow-me-home)</Option>
+				<Option Code="58">Функция принудительного дистанционного закрытия окон, складывания зеркал с брелока  ключа</Option>
+				<Option Code="75">Центральный замок с дистанционным управлением</Option>
+				<Option Code="52">Электрическое складывание зеркал заднего вида</Option>
+				<Option Code="67">Электронный селектор передач (шайба)</Option>
+				<Option Code="59">Электронный стояночный тормоз EPB с функцией Brake Hold</Option>
+				<Option Code="54">Электрообогрев лобового стекла</Option>
+				<Option Code="55">Электроподогрев форсунок омывателя лобового стекла</Option>
+				<Option Code="56">Электростеклоподъемники 4 дверей с автодоводчиком со стороны водителя</Option>
+				<Option Code="64">Электроусилитель рулевого управления</Option>
+				<Option Code="53">Электрохромное центральное зеркало заднего вида салона (с автозатемнением)</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="19425" DocNum="019308">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/019308/19425.png" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958524643716745</CodeCompl>
+		<VIN Title="VIN">XZGFE04A4RA567013</VIN>
+		<InteriorColor Title="Цвет салона">Черно-красный</InteriorColor>
+		<Color Title="Цвет">Галактический черный, металлик</Color>
+		<Price Title="Цена">2924000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1625 / 162</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">BKR</interior-code>
+		<color-code Title="Код цвета кузова">GBM</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">2399000.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="81">Автоматическое включение аварийного света при экстренном торможении</Option>
+				<Option Code="94">Аккумулятор увеличенной емкости</Option>
+				<Option Code="92">Блокировка замков задних дверей от открывания изнутри (детский замок)</Option>
+				<Option Code="87">Боковые подушки и шторки безопасности</Option>
+				<Option Code="89">Иммобилайзер</Option>
+				<Option Code="88">Крепления ISOFIX на задних сиденьях</Option>
+				<Option Code="82">Круиз контроль</Option>
+				<Option Code="91">Разьем USB  в зеркале, для подключения видео-регистратора</Option>
+				<Option Code="93">Система ГЛОНАСС</Option>
+				<Option Code="90">Система поиска автомобиля, дистанционная активация звукового сигнала</Option>
+				<Option Code="80">Система стабилизации курсовой устойчивости TCS и система помощи стабилизации движения прицепа TSA</Option>
+				<Option Code="79">Системы стабилизации движения: Антиблокировочная система тормозов ABS. Электронная система контроля </Option>
+				<Option Code="95">Увеличенный объем бачка омывателя, 4,5л</Option>
+				<Option Code="86">Фронтальные подушки безопасности</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="49">2 передних подстаканника с защитной крышкой на центральном тоннеле</Option>
+				<Option Code="48">Задний подлокотник, 2 подстаканника</Option>
+				<Option Code="45">Макияжное зеркало в солнцезащитных козырьках водителя и пассажира</Option>
+				<Option Code="46">Подсветка макияжных зеркал</Option>
+				<Option Code="50">Потолочные ручки интерьера для посадки пассажиров</Option>
+				<Option Code="47">Центральный подлокотник, с вещевым отделением</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="4" value="Салон">
+				<Option Code="40">Атмосферная LED подсветка салона с возможностью выбора цветов (до 64 цветов)</Option>
+				<Option Code="32">Вентиляция сиденья водителя</Option>
+				<Option Code="41">Кожаный руль с подогревом</Option>
+				<Option Code="44">Мягкий пластик торпедо, верхней части приборной панели</Option>
+				<Option Code="39">Обивка сидений искусственной кожей с перфорацией</Option>
+				<Option Code="33">Подогрев задних сидений</Option>
+				<Option Code="31">Подогрев передних сидений</Option>
+				<Option Code="35">Электрическая регулировка сиденья водителя в 6 направлениях</Option>
+				<Option Code="37">Электрическая регулировка сиденья пассажира в 4 направлениях</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="105">6 аудио динамиков</Option>
+				<Option Code="98">USB входы x2 спереди и x2  разъема сзади</Option>
+				<Option Code="96">Беспроводное зарядное устройство</Option>
+				<Option Code="99">Интерактивная мультимедийная система T-Box с доступом в internet* для обеспечения работы приложения </Option>
+				<Option Code="97">Магнитола с Android Auto/ Apple Carplay, Bluetooth</Option>
+				<Option Code="101">Сенсорный дисплей, 12,3&quot;</Option>
+				<Option Code="103">Цифровая панель приборов, цветной экран 7&apos;&apos;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="26">Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида; пластико</Option>
+				<Option Code="24">Окраска кузова металлик</Option>
+				<Option Code="27">Окрашенные в цвет кузова ручки дверей</Option>
+				<Option Code="29">Тонированные стекла (задние)</Option>
+				<Option Code="30">Укороченная антенна &quot;акулий плавник&quot;</Option>
+				<Option Code="28">Хромированная окантовка окон дверей, антикоррозийный хром</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="12">18&quot; диски</Option>
+				<Option Code="10">5 дверей</Option>
+				<Option Code="57">Автодоводчики стекол 4 дверей с функцией антизажима</Option>
+				<Option Code="2">Автоматизированная КПП с 2 сцеплениями</Option>
+				<Option Code="61">Автоматический климат-контроль 2-зонный</Option>
+				<Option Code="76">Бесключевой доступ, кнопка запуска двигателя</Option>
+				<Option Code="19">Вертикальные светодиодные дневные ходовые огни, интегрированные в передний бампер</Option>
+				<Option Code="62">Воздуховоды заднего ряда</Option>
+				<Option Code="23">Датчик дождя и света</Option>
+				<Option Code="78">Декоративная крышка двигателя</Option>
+				<Option Code="13">Дисковые передние и задние тормоза</Option>
+				<Option Code="69">Задние датчики парковки</Option>
+				<Option Code="21">Задние противотуманные фонари</Option>
+				<Option Code="9">Задняя независимая многорычажная подвеска</Option>
+				<Option Code="106">Задняя спинка, складывающаяся 60/40</Option>
+				<Option Code="73">Камера кругового обзора 360, с симуляцией 3D изображения в реальном времени</Option>
+				<Option Code="14">Малоразмерное запасное колесо (докатка)</Option>
+				<Option Code="7">Независимая передняя подвеска McPherson</Option>
+				<Option Code="109">Подготовка под установку ТСУ (фаркопа)</Option>
+				<Option Code="51">Подогрев и электрорегулировка зеркал заднего вида</Option>
+				<Option Code="66">Подрулевые лепестки переключения передач</Option>
+				<Option Code="107">Полка багажного отделения</Option>
+				<Option Code="4">Полный привод</Option>
+				<Option Code="65">Регулировка руля по высоте и вылету</Option>
+				<Option Code="108">Рейлинги на крыше</Option>
+				<Option Code="63">Розетка, 12В для передних пассажиров на центральном тоннеле</Option>
+				<Option Code="18">Светодиодные дневные ходовые огни, интегрированные в блок фар</Option>
+				<Option Code="20">Светодиодные задние фонари</Option>
+				<Option Code="17">Светодиодные фары</Option>
+				<Option Code="68">Система выбора режима движения (standard, eco, sport, snow)</Option>
+				<Option Code="15">Система мониторинга давления в шинах TPMS</Option>
+				<Option Code="6">Система помощи при спуске (для SUV)</Option>
+				<Option Code="5">Система помощи при старте на подъеме</Option>
+				<Option Code="22">Функция задержки света фар после закрытия центрального замка (follow-me-home)</Option>
+				<Option Code="58">Функция принудительного дистанционного закрытия окон, складывания зеркал с брелока  ключа</Option>
+				<Option Code="75">Центральный замок с дистанционным управлением</Option>
+				<Option Code="52">Электрическое складывание зеркал заднего вида</Option>
+				<Option Code="67">Электронный селектор передач (шайба)</Option>
+				<Option Code="59">Электронный стояночный тормоз EPB с функцией Brake Hold</Option>
+				<Option Code="54">Электрообогрев лобового стекла</Option>
+				<Option Code="55">Электроподогрев форсунок омывателя лобового стекла</Option>
+				<Option Code="56">Электростеклоподъемники 4 дверей с автодоводчиком со стороны водителя</Option>
+				<Option Code="64">Электроусилитель рулевого управления</Option>
+				<Option Code="53">Электрохромное центральное зеркало заднего вида салона (с автозатемнением)</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20686" DocNum="020568">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/020568/20686.png" />
+		<pictures_real>
+				<pic ID="78632" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_1_78632.png</pic>
+				<pic ID="78633" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_2_78633.png</pic>
+				<pic ID="78634" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_3_78634.png</pic>
+				<pic ID="78635" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_4_78635.png</pic>
+				<pic ID="78636" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_5_78636.png</pic>
+				<pic ID="78637" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_6_78637.png</pic>
+				<pic ID="78638" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_7_78638.png</pic>
+				<pic ID="78639" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_8_78639.png</pic>
+				<pic ID="78640" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_9_78640.png</pic>
+				<pic ID="78641" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_10_78641.png</pic>
+				<pic ID="78642" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_11_78642.png</pic>
+				<pic ID="78643" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_12_78643.png</pic>
+				<pic ID="78644" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_13_78644.png</pic>
+				<pic ID="78645" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_14_78645.png</pic>
+				<pic ID="78646" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_15_78646.png</pic>
+				<pic ID="78647" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_16_78647.png</pic>
+				<pic ID="78648" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_17_78648.png</pic>
+				<pic ID="78649" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_18_78649.png</pic>
+				<pic ID="78650" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_19_78650.png</pic>
+				<pic ID="78651" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_20_78651.png</pic>
+				<pic ID="78652" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020568/99_21_78652.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525587127399</CodeCompl>
+		<VIN Title="VIN">XZGFE04A2SA586004</VIN>
+		<InteriorColor Title="Цвет салона">Черно-красный</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">2980520.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1625 / 162</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10198</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20745" DocNum="020627">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/020627/20745.png" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715728721</CodeCompl>
+		<VIN Title="VIN">XZGEF04AXSA393348</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Океанический лазурит</Color>
+		<Price Title="Цена">3027343.44</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">188</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1655–1690</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Океаническ</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20768" DocNum="020650">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="816-55190485">DARGO</Model>
+		<CodeCompl Title="Код комплектации">1522142725029219853</CodeCompl>
+		<VIN Title="VIN">XZGFF06A8RA926504</VIN>
+		<InteriorColor Title="Цвет салона">Бежевый-коричневый</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">3241410.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">192.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">9,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1700–1815</Weight>
+		<CargoVolume Title="Объем багажника">1342 / 1404</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9393</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20776" DocNum="020658">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="816-55190485">DARGO</Model>
+		<CodeCompl Title="Код комплектации">1522142725029219853</CodeCompl>
+		<VIN Title="VIN">XZGFF06A5RA926489</VIN>
+		<InteriorColor Title="Цвет салона">Бежевый-коричневый</InteriorColor>
+		<Color Title="Цвет">Галактический черный</Color>
+		<Price Title="Цена">3241410.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">192.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2022</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">9,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1700–1815</Weight>
+		<CargoVolume Title="Объем багажника">1342 / 1404</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">9393</interior-code>
+		<color-code Title="Код цвета кузова">Галактичес</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20669" DocNum="020551">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="76985" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_1_76985.png</pic>
+				<pic ID="76986" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_2_76986.png</pic>
+				<pic ID="76987" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_3_76987.png</pic>
+				<pic ID="76988" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_4_76988.png</pic>
+				<pic ID="76989" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_5_76989.png</pic>
+				<pic ID="76990" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_6_76990.png</pic>
+				<pic ID="76991" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_7_76991.png</pic>
+				<pic ID="76992" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_8_76992.png</pic>
+				<pic ID="76993" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_9_76993.png</pic>
+				<pic ID="76994" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_10_76994.png</pic>
+				<pic ID="76995" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_11_76995.png</pic>
+				<pic ID="76996" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_12_76996.png</pic>
+				<pic ID="76997" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_13_76997.png</pic>
+				<pic ID="76998" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_14_76998.png</pic>
+				<pic ID="76999" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_15_76999.png</pic>
+				<pic ID="77000" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_16_77000.png</pic>
+				<pic ID="77001" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_17_77001.png</pic>
+				<pic ID="77002" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_18_77002.png</pic>
+				<pic ID="77003" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_19_77003.png</pic>
+				<pic ID="77004" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_20_77004.png</pic>
+				<pic ID="77005" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020551/99_21_77005.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715828721</CodeCompl>
+		<VIN Title="VIN">XZGFF06A8SA387288</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">3299000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">192.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">194</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1795-1830</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20667" DocNum="020549">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/020549/20667.png" />
+		<pictures_real>
+				<pic ID="77029" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_1_77029.png</pic>
+				<pic ID="77030" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_2_77030.png</pic>
+				<pic ID="77031" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_3_77031.png</pic>
+				<pic ID="77032" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_4_77032.png</pic>
+				<pic ID="77033" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_5_77033.png</pic>
+				<pic ID="77034" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_6_77034.png</pic>
+				<pic ID="77035" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_7_77035.png</pic>
+				<pic ID="77036" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_8_77036.png</pic>
+				<pic ID="77037" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_9_77037.png</pic>
+				<pic ID="77038" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_10_77038.png</pic>
+				<pic ID="77039" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_11_77039.png</pic>
+				<pic ID="77040" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_12_77040.png</pic>
+				<pic ID="77041" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_13_77041.png</pic>
+				<pic ID="77042" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_14_77042.png</pic>
+				<pic ID="77043" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_15_77043.png</pic>
+				<pic ID="77044" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_16_77044.png</pic>
+				<pic ID="77045" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_17_77045.png</pic>
+				<pic ID="77046" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020549/99_18_77046.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715828721</CodeCompl>
+		<VIN Title="VIN">XZGFF06A2SA386072</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Галактический черный</Color>
+		<Price Title="Цена">3424000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">192.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">194</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1795-1830</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Галактичес</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20824" DocNum="020706">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/020706/20824.png" />
+		<pictures_real>
+				<pic ID="80383" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_1_80383.png</pic>
+				<pic ID="80384" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_2_80384.png</pic>
+				<pic ID="80385" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_3_80385.png</pic>
+				<pic ID="80386" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_4_80386.png</pic>
+				<pic ID="80387" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_5_80387.png</pic>
+				<pic ID="80388" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_6_80388.png</pic>
+				<pic ID="80389" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_7_80389.png</pic>
+				<pic ID="80390" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_8_80390.png</pic>
+				<pic ID="80391" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_9_80391.png</pic>
+				<pic ID="80392" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_10_80392.png</pic>
+				<pic ID="80393" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_11_80393.png</pic>
+				<pic ID="80394" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_12_80394.png</pic>
+				<pic ID="80395" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_13_80395.png</pic>
+				<pic ID="80396" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_14_80396.png</pic>
+				<pic ID="80397" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_15_80397.png</pic>
+				<pic ID="80398" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_16_80398.png</pic>
+				<pic ID="80399" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_17_80399.png</pic>
+				<pic ID="80400" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_18_80400.png</pic>
+				<pic ID="80401" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_19_80401.png</pic>
+				<pic ID="80402" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_20_80402.png</pic>
+				<pic ID="80403" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_21_80403.png</pic>
+				<pic ID="80404" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_22_80404.png</pic>
+				<pic ID="80405" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_23_80405.png</pic>
+				<pic ID="80406" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_24_80406.png</pic>
+				<pic ID="80407" type="99" seqno="25">http://aaa-motors.ru/IMG/AUDI_RST/020706/99_25_80407.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715828722</CodeCompl>
+		<VIN Title="VIN">XZGFF06A5SA389743</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Океанический лазурит</Color>
+		<Price Title="Цена">3499000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">192.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">194</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1795-1830</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Океаническ</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20841" DocNum="020723">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="80333" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_1_80333.png</pic>
+				<pic ID="80334" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_2_80334.png</pic>
+				<pic ID="80335" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_3_80335.png</pic>
+				<pic ID="80336" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_4_80336.png</pic>
+				<pic ID="80337" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_5_80337.png</pic>
+				<pic ID="80338" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_6_80338.png</pic>
+				<pic ID="80339" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_7_80339.png</pic>
+				<pic ID="80340" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_8_80340.png</pic>
+				<pic ID="80341" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_9_80341.png</pic>
+				<pic ID="80342" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_10_80342.png</pic>
+				<pic ID="80343" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_11_80343.png</pic>
+				<pic ID="80344" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_12_80344.png</pic>
+				<pic ID="80345" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_13_80345.png</pic>
+				<pic ID="80346" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_14_80346.png</pic>
+				<pic ID="80347" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_15_80347.png</pic>
+				<pic ID="80348" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_16_80348.png</pic>
+				<pic ID="80349" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_17_80349.png</pic>
+				<pic ID="80350" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_18_80350.png</pic>
+				<pic ID="80351" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_19_80351.png</pic>
+				<pic ID="80352" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_20_80352.png</pic>
+				<pic ID="80353" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_21_80353.png</pic>
+				<pic ID="80354" type="99" seqno="22">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_22_80354.png</pic>
+				<pic ID="80355" type="99" seqno="23">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_23_80355.png</pic>
+				<pic ID="80356" type="99" seqno="24">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_24_80356.png</pic>
+				<pic ID="80357" type="99" seqno="25">http://aaa-motors.ru/IMG/AUDI_RST/020723/99_25_80357.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="818-55190507">F7x</Model>
+		<CodeCompl Title="Код комплектации">1521852826303834530</CodeCompl>
+		<VIN Title="VIN">XZGFF06A3SA602169</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Галактический черный</Color>
+		<Price Title="Цена">3549000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">190.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1967</EngineVol>
+		<FuelConsumption Title="Расход топлива">9,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1785</Weight>
+		<CargoVolume Title="Объем багажника">1443</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Галактичес</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20356" DocNum="020238">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="69314" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_1_69314.png</pic>
+				<pic ID="69315" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_2_69315.png</pic>
+				<pic ID="69316" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_3_69316.png</pic>
+				<pic ID="69317" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_4_69317.png</pic>
+				<pic ID="69318" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_5_69318.png</pic>
+				<pic ID="69319" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_6_69319.png</pic>
+				<pic ID="69320" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_7_69320.png</pic>
+				<pic ID="69321" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_8_69321.png</pic>
+				<pic ID="69322" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_9_69322.png</pic>
+				<pic ID="69323" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_10_69323.png</pic>
+				<pic ID="69324" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_11_69324.png</pic>
+				<pic ID="69325" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_12_69325.png</pic>
+				<pic ID="69326" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_13_69326.png</pic>
+				<pic ID="69327" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_14_69327.png</pic>
+				<pic ID="69328" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_15_69328.png</pic>
+				<pic ID="69329" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_16_69329.png</pic>
+				<pic ID="69330" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_17_69330.png</pic>
+				<pic ID="69331" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_18_69331.png</pic>
+				<pic ID="69332" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020238/99_19_69332.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715828722</CodeCompl>
+		<VIN Title="VIN">XZGFF06A7SA386911</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Галактический черный</Color>
+		<Price Title="Цена">3819000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">192.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1998</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,6</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">194</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1795-1830</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">Галактичес</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20815" DocNum="020697">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="817-55190493">F7</Model>
+		<CodeCompl Title="Код комплектации">1521745825715728720</CodeCompl>
+		<VIN Title="VIN">XZGEF04A0SA385694</VIN>
+		<InteriorColor Title="Цвет салона">Чёрный</InteriorColor>
+		<Color Title="Цвет">Галактический черный</Color>
+		<Price Title="Цена">2699000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">380 / 1800-3600</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">188</MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">5416*1947*1884</Dimensions>
+		<Weight Title="Масса">1655–1690</Weight>
+		<CargoVolume Title="Объем багажника">376/1328</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8056</interior-code>
+		<color-code Title="Код цвета кузова">Галактичес</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20830" DocNum="020712">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/020712/20830.png" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525587127399</CodeCompl>
+		<VIN Title="VIN">XZGFE04A6SA506848</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">2749000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1625 / 162</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8122</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20685" DocNum="020567">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="http://aaa-motors.ru/IMG/AUDI_RST/020567/20685.png" />
+		<pictures_real>
+				<pic ID="78590" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_1_78590.png</pic>
+				<pic ID="78591" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_2_78591.png</pic>
+				<pic ID="78592" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_3_78592.png</pic>
+				<pic ID="78593" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_4_78593.png</pic>
+				<pic ID="78594" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_5_78594.png</pic>
+				<pic ID="78595" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_6_78595.png</pic>
+				<pic ID="78596" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_7_78596.png</pic>
+				<pic ID="78597" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_8_78597.png</pic>
+				<pic ID="78598" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_9_78598.png</pic>
+				<pic ID="78599" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_10_78599.png</pic>
+				<pic ID="78600" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_11_78600.png</pic>
+				<pic ID="78601" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_12_78601.png</pic>
+				<pic ID="78602" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_13_78602.png</pic>
+				<pic ID="78603" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_14_78603.png</pic>
+				<pic ID="78604" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_15_78604.png</pic>
+				<pic ID="78605" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_16_78605.png</pic>
+				<pic ID="78606" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_17_78606.png</pic>
+				<pic ID="78607" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_18_78607.png</pic>
+				<pic ID="78608" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_19_78608.png</pic>
+				<pic ID="78609" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_20_78609.png</pic>
+				<pic ID="78610" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020567/99_21_78610.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525587127399</CodeCompl>
+		<VIN Title="VIN">XZGFE04A0SA586003</VIN>
+		<InteriorColor Title="Цвет салона">Черно-красный</InteriorColor>
+		<Color Title="Цвет">Благородный агат</Color>
+		<Price Title="Цена">2749000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1625 / 162</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">10198</interior-code>
+		<color-code Title="Код цвета кузова">Благородны</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="20729" DocNum="020611">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="78698" type="99" seqno="1">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_1_78698.png</pic>
+				<pic ID="78699" type="99" seqno="2">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_2_78699.png</pic>
+				<pic ID="78700" type="99" seqno="3">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_3_78700.png</pic>
+				<pic ID="78701" type="99" seqno="4">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_4_78701.png</pic>
+				<pic ID="78702" type="99" seqno="5">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_5_78702.png</pic>
+				<pic ID="78703" type="99" seqno="6">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_6_78703.png</pic>
+				<pic ID="78704" type="99" seqno="7">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_7_78704.png</pic>
+				<pic ID="78705" type="99" seqno="8">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_8_78705.png</pic>
+				<pic ID="78706" type="99" seqno="9">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_9_78706.png</pic>
+				<pic ID="78707" type="99" seqno="10">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_10_78707.png</pic>
+				<pic ID="78708" type="99" seqno="11">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_11_78708.png</pic>
+				<pic ID="78709" type="99" seqno="12">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_12_78709.png</pic>
+				<pic ID="78710" type="99" seqno="13">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_13_78710.png</pic>
+				<pic ID="78711" type="99" seqno="14">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_14_78711.png</pic>
+				<pic ID="78712" type="99" seqno="15">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_15_78712.png</pic>
+				<pic ID="78713" type="99" seqno="16">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_16_78713.png</pic>
+				<pic ID="78714" type="99" seqno="17">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_17_78714.png</pic>
+				<pic ID="78715" type="99" seqno="18">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_18_78715.png</pic>
+				<pic ID="78716" type="99" seqno="19">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_19_78716.png</pic>
+				<pic ID="78717" type="99" seqno="20">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_20_78717.png</pic>
+				<pic ID="78718" type="99" seqno="21">http://aaa-motors.ru/IMG/AUDI_RST/020611/99_21_78718.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="90--797659065">Haval</Mark>
+		<Model Title="Модель" Code="823-55190503">JOLION</Model>
+		<CodeCompl Title="Код комплектации">1521958525587127399</CodeCompl>
+		<VIN Title="VIN">XZGFE04A5SA597160</VIN>
+		<InteriorColor Title="Цвет салона">Черный</InteriorColor>
+		<Color Title="Цвет">Галактический черный</Color>
+		<Price Title="Цена">2749000.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">8,2</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс">5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса">1625 / 162</Weight>
+		<CargoVolume Title="Объем багажника">1133</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона">8122</interior-code>
+		<color-code Title="Код цвета кузова">Галактичес</color-code>
+		<CarOrderIntStatus Title="Статус авто">1</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+</DealerCenter>
+

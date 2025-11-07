@@ -1,0 +1,2638 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DealerCenter Name="OMODA_ZAPAD">
+
+	<CarOrder Title="Заказ на автомобиль" value="28529" DocNum="028273">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="100350" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028273/99_1_100350.png</pic>
+				<pic ID="100351" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028273/99_2_100351.png</pic>
+				<pic ID="100352" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028273/99_3_100352.png</pic>
+				<pic ID="100353" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028273/99_4_100353.png</pic>
+				<pic ID="100354" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028273/99_5_100354.png</pic>
+				<pic ID="100355" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028273/99_6_100355.png</pic>
+				<pic ID="100356" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028273/99_7_100356.png</pic>
+				<pic ID="100357" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028273/99_8_100357.png</pic>
+				<pic ID="100358" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028273/99_9_100358.png</pic>
+				<pic ID="100359" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028273/99_10_100359.png</pic>
+				<pic ID="100360" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028273/99_11_100360.png</pic>
+				<pic ID="100361" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028273/99_12_100361.png</pic>
+				<pic ID="100362" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028273/99_13_100362.png</pic>
+				<pic ID="100363" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028273/99_14_100363.png</pic>
+				<pic ID="100364" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028273/99_15_100364.png</pic>
+				<pic ID="100365" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028273/99_16_100365.png</pic>
+				<pic ID="100366" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028273/99_17_100366.png</pic>
+				<pic ID="100367" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028273/99_18_100367.png</pic>
+				<pic ID="100368" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028273/99_19_100368.png</pic>
+				<pic ID="100369" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028273/99_20_100369.png</pic>
+				<pic ID="100370" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028273/99_21_100370.png</pic>
+				<pic ID="100371" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028273/99_22_100371.png</pic>
+				<pic ID="100372" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028273/99_23_100372.png</pic>
+				<pic ID="100373" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028273/99_24_100373.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2021-1569607286">S5</Model>
+		<CodeCompl Title="Код комплектации">30137</CodeCompl>
+		<VIN Title="VIN">LVVDC21B2RD639867</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Blue (VQ)</Color>
+		<Price Title="Цена">2129900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">113.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">13,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4644*1814*1493</Dimensions>
+		<Weight Title="Масса">1745</Weight>
+		<CargoVolume Title="Объем багажника">482</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">137</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">120000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28531" DocNum="028275">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="100339" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028275/99_1_100339.png</pic>
+				<pic ID="100340" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028275/99_2_100340.png</pic>
+				<pic ID="100341" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028275/99_3_100341.png</pic>
+				<pic ID="100342" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028275/99_4_100342.png</pic>
+				<pic ID="100343" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028275/99_5_100343.png</pic>
+				<pic ID="100344" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028275/99_6_100344.png</pic>
+				<pic ID="100345" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028275/99_7_100345.png</pic>
+				<pic ID="100346" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028275/99_8_100346.png</pic>
+				<pic ID="100347" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028275/99_9_100347.png</pic>
+				<pic ID="100348" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028275/99_10_100348.png</pic>
+				<pic ID="100349" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028275/99_11_100349.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2021-1569607286">S5</Model>
+		<CodeCompl Title="Код комплектации">30137</CodeCompl>
+		<VIN Title="VIN">LVVDC21B3RDB32060</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Havana Gray (GW)</Color>
+		<Price Title="Цена">2129900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">113.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">13,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4644*1814*1493</Dimensions>
+		<Weight Title="Масса">1745</Weight>
+		<CargoVolume Title="Объем багажника">482</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">161</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">120000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28532" DocNum="028276">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="100315" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028276/99_12_100315.png</pic>
+				<pic ID="100316" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028276/99_13_100316.png</pic>
+				<pic ID="100317" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028276/99_14_100317.png</pic>
+				<pic ID="100318" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028276/99_15_100318.png</pic>
+				<pic ID="100319" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028276/99_16_100319.png</pic>
+				<pic ID="100320" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028276/99_17_100320.png</pic>
+				<pic ID="100321" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028276/99_18_100321.png</pic>
+				<pic ID="100322" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028276/99_19_100322.png</pic>
+				<pic ID="100323" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028276/99_20_100323.png</pic>
+				<pic ID="100324" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028276/99_21_100324.png</pic>
+				<pic ID="100325" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028276/99_22_100325.png</pic>
+				<pic ID="100326" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028276/99_23_100326.png</pic>
+				<pic ID="100327" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028276/99_24_100327.png</pic>
+				<pic ID="100304" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028276/99_1_100304.png</pic>
+				<pic ID="100305" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028276/99_2_100305.png</pic>
+				<pic ID="100306" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028276/99_3_100306.png</pic>
+				<pic ID="100307" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028276/99_4_100307.png</pic>
+				<pic ID="100308" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028276/99_5_100308.png</pic>
+				<pic ID="100309" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028276/99_6_100309.png</pic>
+				<pic ID="100310" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028276/99_7_100310.png</pic>
+				<pic ID="100311" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028276/99_8_100311.png</pic>
+				<pic ID="100312" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028276/99_9_100312.png</pic>
+				<pic ID="100313" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028276/99_10_100313.png</pic>
+				<pic ID="100314" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028276/99_11_100314.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2021-1569607286">S5</Model>
+		<CodeCompl Title="Код комплектации">30137</CodeCompl>
+		<VIN Title="VIN">LVVDC21B2RDB47830</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">2129900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">113.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1499</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,3</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">13,2</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">180</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4644*1814*1493</Dimensions>
+		<Weight Title="Масса">1745</Weight>
+		<CargoVolume Title="Объем багажника">482</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">120000.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27751" DocNum="027495">
+		<StockQty Title="Количество в стоке">3</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="99646" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/027495/99_1_99646.png</pic>
+				<pic ID="99647" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027495/99_2_99647.png</pic>
+				<pic ID="99648" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027495/99_3_99648.png</pic>
+				<pic ID="99649" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027495/99_4_99649.png</pic>
+				<pic ID="99650" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027495/99_5_99650.png</pic>
+				<pic ID="99651" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027495/99_6_99651.png</pic>
+				<pic ID="99652" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027495/99_7_99652.png</pic>
+				<pic ID="99653" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027495/99_8_99653.png</pic>
+				<pic ID="99654" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027495/99_9_99654.png</pic>
+				<pic ID="99655" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027495/99_10_99655.png</pic>
+				<pic ID="99656" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027495/99_11_99656.png</pic>
+				<pic ID="99657" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027495/99_12_99657.png</pic>
+				<pic ID="99658" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027495/99_13_99658.png</pic>
+				<pic ID="99659" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027495/99_14_99659.png</pic>
+				<pic ID="99660" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027495/99_15_99660.png</pic>
+				<pic ID="99661" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027495/99_16_99661.png</pic>
+				<pic ID="99662" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/027495/99_17_99662.png</pic>
+				<pic ID="99663" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/027495/99_18_99663.png</pic>
+				<pic ID="99664" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/027495/99_19_99664.png</pic>
+				<pic ID="99665" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/027495/99_20_99665.png</pic>
+				<pic ID="99666" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/027495/99_21_99666.png</pic>
+				<pic ID="99667" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/027495/99_22_99667.png</pic>
+				<pic ID="99668" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/027495/99_23_99668.png</pic>
+				<pic ID="99669" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/027495/99_24_99669.png</pic>
+				<pic ID="99670" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/027495/99_25_99670.png</pic>
+				<pic ID="99671" type="99" seqno="26">http://aaa-motors.ru/IMG/VW_RST/027495/99_26_99671.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="1983-1569607298">C5</Model>
+		<CodeCompl Title="Код комплектации">T7150BCCLFR0086</CodeCompl>
+		<VIN Title="VIN">LVVDB21B9RD513492</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серебристый</Color>
+		<Price Title="Цена">2229900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">210/1750-4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">KX</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="133">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="32">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="39">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="35">Боковые передние подушки безопасности</Option>
+				<Option Code="33">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="26">Задние датчики парковки</Option>
+				<Option Code="25">Иммобилайзер</Option>
+				<Option Code="27">Камера заднего вида</Option>
+				<Option Code="37">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="34">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="30">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="31">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="38">Система удержания детских кресел Isofix для 2-го ряда</Option>
+				<Option Code="44">Уменьшенное запасное колесо</Option>
+				<Option Code="40">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="42">Функция отсрочки выключения фар (Follow me home)</Option>
+				<Option Code="24">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="77">Водительское сиденье с механической регулировкой в 6-ти направлениях</Option>
+				<Option Code="93">Дефлекторы для 2-го ряда</Option>
+				<Option Code="63">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="97">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="180">Комбинированная отделка сидений ткань/искусственная кожа</Option>
+				<Option Code="94">Многофункциональное рулевое колесо</Option>
+				<Option Code="67">Обогрев лобового стекла</Option>
+				<Option Code="64">Обогрев передних сидений</Option>
+				<Option Code="66">Обогрев рулевого колеса</Option>
+				<Option Code="68">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="80">Пассажирское сиденье с механической регулировкой в 4-х направлениях</Option>
+				<Option Code="100">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="101">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="96">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="147">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="84">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="89">Электрический кондиционер</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="125">1 USB-разъем сзади</Option>
+				<Option Code="124">2 USB-разъема спереди</Option>
+				<Option Code="120">4 динамика</Option>
+				<Option Code="181">CarPlay/Android</Option>
+				<Option Code="109">Большой сенсорный емкостный дисплей 10.25&quot;</Option>
+				<Option Code="119">Радио</Option>
+				<Option Code="148">Розетка на 12V спереди и сзади</Option>
+				<Option Code="118">Система &quot;Свободные руки&quot; (Hands free) с Bluetooth-связью с мобильным телефоном</Option>
+				<Option Code="137">Цветной экран с бортовым компьютером в панели приборов 10.25&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="4">17-дюймовые алюминиевые литые диски</Option>
+				<Option Code="16">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="11">Задний спортивный спойлер</Option>
+				<Option Code="8">Окраска металлик (на выбор)</Option>
+				<Option Code="14">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="132">Светодиодные задние фонари</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="61">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="58">Выбор режима вождения</Option>
+				<Option Code="57">Круиз-контроль</Option>
+				<Option Code="146">Центральный замок с дистанционным управлением</Option>
+				<Option Code="60">Электрический стояночный тормоз с функцией AutoHold</Option>
+				<Option Code="59">Электрический усилитель рулевого управления</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28518" DocNum="028262">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="101008" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028262/99_1_101008.png</pic>
+				<pic ID="101009" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028262/99_2_101009.png</pic>
+				<pic ID="101010" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028262/99_3_101010.png</pic>
+				<pic ID="101011" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028262/99_4_101011.png</pic>
+				<pic ID="101012" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028262/99_5_101012.png</pic>
+				<pic ID="101013" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028262/99_6_101013.png</pic>
+				<pic ID="101014" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028262/99_7_101014.png</pic>
+				<pic ID="101015" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028262/99_8_101015.png</pic>
+				<pic ID="101016" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028262/99_9_101016.png</pic>
+				<pic ID="101017" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028262/99_10_101017.png</pic>
+				<pic ID="101018" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028262/99_11_101018.png</pic>
+				<pic ID="101019" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028262/99_12_101019.png</pic>
+				<pic ID="101020" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028262/99_13_101020.png</pic>
+				<pic ID="101021" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028262/99_14_101021.png</pic>
+				<pic ID="101022" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028262/99_15_101022.png</pic>
+				<pic ID="101023" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028262/99_16_101023.png</pic>
+				<pic ID="101024" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028262/99_17_101024.png</pic>
+				<pic ID="101025" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028262/99_18_101025.png</pic>
+				<pic ID="101026" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028262/99_19_101026.png</pic>
+				<pic ID="101027" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028262/99_20_101027.png</pic>
+				<pic ID="101028" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028262/99_21_101028.png</pic>
+				<pic ID="101029" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028262/99_22_101029.png</pic>
+				<pic ID="101030" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028262/99_23_101030.png</pic>
+				<pic ID="101031" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028262/99_24_101031.png</pic>
+				<pic ID="101032" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/028262/99_25_101032.png</pic>
+				<pic ID="101033" type="99" seqno="26">http://aaa-motors.ru/IMG/VW_RST/028262/99_26_101033.png</pic>
+				<pic ID="101034" type="99" seqno="27">http://aaa-motors.ru/IMG/VW_RST/028262/99_27_101034.png</pic>
+				<pic ID="101035" type="99" seqno="28">http://aaa-motors.ru/IMG/VW_RST/028262/99_28_101035.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="1983-1569607298">C5</Model>
+		<CodeCompl Title="Код комплектации">301166</CodeCompl>
+		<VIN Title="VIN">LVVDB21B3RDE27288</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">2279900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28527" DocNum="028271">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="101925" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028271/99_1_101925.png</pic>
+				<pic ID="101926" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028271/99_2_101926.png</pic>
+				<pic ID="101927" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028271/99_3_101927.png</pic>
+				<pic ID="101928" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028271/99_4_101928.png</pic>
+				<pic ID="101929" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028271/99_5_101929.png</pic>
+				<pic ID="101930" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028271/99_6_101930.png</pic>
+				<pic ID="101931" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028271/99_7_101931.png</pic>
+				<pic ID="101932" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028271/99_8_101932.png</pic>
+				<pic ID="101933" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028271/99_9_101933.png</pic>
+				<pic ID="101934" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028271/99_10_101934.png</pic>
+				<pic ID="101935" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028271/99_11_101935.png</pic>
+				<pic ID="101936" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028271/99_12_101936.png</pic>
+				<pic ID="101937" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028271/99_13_101937.png</pic>
+				<pic ID="101938" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028271/99_14_101938.png</pic>
+				<pic ID="101939" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028271/99_15_101939.png</pic>
+				<pic ID="101940" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028271/99_16_101940.png</pic>
+				<pic ID="101941" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028271/99_17_101941.png</pic>
+				<pic ID="101942" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028271/99_18_101942.png</pic>
+				<pic ID="101943" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028271/99_19_101943.png</pic>
+				<pic ID="101944" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028271/99_20_101944.png</pic>
+				<pic ID="101945" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028271/99_21_101945.png</pic>
+				<pic ID="101946" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028271/99_22_101946.png</pic>
+				<pic ID="101947" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028271/99_23_101947.png</pic>
+				<pic ID="101948" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028271/99_24_101948.png</pic>
+				<pic ID="101949" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/028271/99_25_101949.png</pic>
+				<pic ID="101950" type="99" seqno="26">http://aaa-motors.ru/IMG/VW_RST/028271/99_26_101950.png</pic>
+				<pic ID="101951" type="99" seqno="27">http://aaa-motors.ru/IMG/VW_RST/028271/99_27_101951.png</pic>
+				<pic ID="101952" type="99" seqno="28">http://aaa-motors.ru/IMG/VW_RST/028271/99_28_101952.png</pic>
+				<pic ID="101953" type="99" seqno="29">http://aaa-motors.ru/IMG/VW_RST/028271/99_29_101953.png</pic>
+				<pic ID="101954" type="99" seqno="30">http://aaa-motors.ru/IMG/VW_RST/028271/99_30_101954.png</pic>
+				<pic ID="101955" type="99" seqno="31">http://aaa-motors.ru/IMG/VW_RST/028271/99_31_101955.png</pic>
+				<pic ID="101956" type="99" seqno="32">http://aaa-motors.ru/IMG/VW_RST/028271/99_32_101956.png</pic>
+				<pic ID="101957" type="99" seqno="33">http://aaa-motors.ru/IMG/VW_RST/028271/99_33_101957.png</pic>
+				<pic ID="101958" type="99" seqno="34">http://aaa-motors.ru/IMG/VW_RST/028271/99_34_101958.png</pic>
+				<pic ID="101959" type="99" seqno="35">http://aaa-motors.ru/IMG/VW_RST/028271/99_35_101959.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="1983-1569607298">C5</Model>
+		<CodeCompl Title="Код комплектации">301166</CodeCompl>
+		<VIN Title="VIN">LVVDB21B3RDF39122</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Silver (KX)</Color>
+		<Price Title="Цена">2279900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">179</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28533" DocNum="028277">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="100229" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028277/99_1_100229.png</pic>
+				<pic ID="100230" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028277/99_2_100230.png</pic>
+				<pic ID="100231" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028277/99_3_100231.png</pic>
+				<pic ID="100232" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028277/99_4_100232.png</pic>
+				<pic ID="100233" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028277/99_5_100233.png</pic>
+				<pic ID="100234" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028277/99_6_100234.png</pic>
+				<pic ID="100235" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028277/99_7_100235.png</pic>
+				<pic ID="100236" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028277/99_8_100236.png</pic>
+				<pic ID="100237" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028277/99_9_100237.png</pic>
+				<pic ID="100238" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028277/99_10_100238.png</pic>
+				<pic ID="100239" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028277/99_11_100239.png</pic>
+				<pic ID="100240" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028277/99_12_100240.png</pic>
+				<pic ID="100241" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028277/99_13_100241.png</pic>
+				<pic ID="100242" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028277/99_14_100242.png</pic>
+				<pic ID="100243" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028277/99_15_100243.png</pic>
+				<pic ID="100244" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028277/99_16_100244.png</pic>
+				<pic ID="100245" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028277/99_17_100245.png</pic>
+				<pic ID="100246" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028277/99_18_100246.png</pic>
+				<pic ID="100247" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028277/99_19_100247.png</pic>
+				<pic ID="100248" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028277/99_20_100248.png</pic>
+				<pic ID="100249" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028277/99_21_100249.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2074-1569607293">S5 GT</Model>
+		<CodeCompl Title="Код комплектации">30156</CodeCompl>
+		<VIN Title="VIN">LVVDC21B7RDB57012</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">2479900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,9</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,7</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4644*1814*1493</Dimensions>
+		<Weight Title="Масса">1745</Weight>
+		<CargoVolume Title="Объем багажника">482</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28332" DocNum="028076">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="87175" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028076/99_1_87175.png</pic>
+				<pic ID="87176" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028076/99_2_87176.png</pic>
+				<pic ID="87177" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028076/99_3_87177.png</pic>
+				<pic ID="87178" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028076/99_4_87178.png</pic>
+				<pic ID="87179" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028076/99_5_87179.png</pic>
+				<pic ID="87180" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028076/99_6_87180.png</pic>
+				<pic ID="87181" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028076/99_7_87181.png</pic>
+				<pic ID="87182" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028076/99_8_87182.png</pic>
+				<pic ID="87183" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028076/99_9_87183.png</pic>
+				<pic ID="87184" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028076/99_10_87184.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="1983-1569607298">C5</Model>
+		<CodeCompl Title="Код комплектации">30115</CodeCompl>
+		<VIN Title="VIN">LVVDB21B1RDB10996</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Sky Blue (WA)</Color>
+		<Price Title="Цена">2721900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">172</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27223" DocNum="026967">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="58942" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/026967/99_2_58942.png</pic>
+				<pic ID="58943" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/026967/99_3_58943.png</pic>
+				<pic ID="58944" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/026967/99_4_58944.png</pic>
+				<pic ID="58945" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/026967/99_5_58945.png</pic>
+				<pic ID="58946" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/026967/99_6_58946.png</pic>
+				<pic ID="58947" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/026967/99_7_58947.png</pic>
+				<pic ID="58948" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/026967/99_8_58948.png</pic>
+				<pic ID="58949" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/026967/99_9_58949.png</pic>
+				<pic ID="58950" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/026967/99_10_58950.png</pic>
+				<pic ID="58951" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/026967/99_11_58951.png</pic>
+				<pic ID="58952" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/026967/99_12_58952.png</pic>
+				<pic ID="58953" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/026967/99_13_58953.png</pic>
+				<pic ID="58954" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/026967/99_14_58954.png</pic>
+				<pic ID="58955" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/026967/99_15_58955.png</pic>
+				<pic ID="58956" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/026967/99_16_58956.png</pic>
+				<pic ID="58957" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/026967/99_17_58957.png</pic>
+				<pic ID="58958" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/026967/99_18_58958.png</pic>
+				<pic ID="58959" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/026967/99_19_58959.png</pic>
+				<pic ID="58960" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/026967/99_20_58960.png</pic>
+				<pic ID="58961" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/026967/99_21_58961.png</pic>
+				<pic ID="58962" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/026967/99_22_58962.png</pic>
+				<pic ID="58963" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/026967/99_23_58963.png</pic>
+				<pic ID="58964" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/026967/99_24_58964.png</pic>
+				<pic ID="58965" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/026967/99_25_58965.png</pic>
+				<pic ID="58966" type="99" seqno="26">http://aaa-motors.ru/IMG/VW_RST/026967/99_26_58966.png</pic>
+				<pic ID="58967" type="99" seqno="27">http://aaa-motors.ru/IMG/VW_RST/026967/99_27_58967.png</pic>
+				<pic ID="58968" type="99" seqno="28">http://aaa-motors.ru/IMG/VW_RST/026967/99_28_58968.png</pic>
+				<pic ID="58969" type="99" seqno="29">http://aaa-motors.ru/IMG/VW_RST/026967/99_29_58969.png</pic>
+				<pic ID="58970" type="99" seqno="30">http://aaa-motors.ru/IMG/VW_RST/026967/99_30_58970.png</pic>
+				<pic ID="58971" type="99" seqno="31">http://aaa-motors.ru/IMG/VW_RST/026967/99_31_58971.png</pic>
+				<pic ID="58972" type="99" seqno="32">http://aaa-motors.ru/IMG/VW_RST/026967/99_32_58972.png</pic>
+				<pic ID="58973" type="99" seqno="33">http://aaa-motors.ru/IMG/VW_RST/026967/99_33_58973.png</pic>
+				<pic ID="58974" type="99" seqno="34">http://aaa-motors.ru/IMG/VW_RST/026967/99_34_58974.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="1983-1569607298">C5</Model>
+		<CodeCompl Title="Код комплектации">T7150BCCLFR0026</CodeCompl>
+		<VIN Title="VIN">LVVDB21B8PD598449</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Красный</Color>
+		<Price Title="Цена">2819900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Красный</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">210/1750-4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">NL</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="133">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="32">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="39">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="35">Боковые передние подушки безопасности</Option>
+				<Option Code="33">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="26">Задние датчики парковки</Option>
+				<Option Code="25">Иммобилайзер</Option>
+				<Option Code="27">Камера заднего вида</Option>
+				<Option Code="29">Передние датчики парковки</Option>
+				<Option Code="37">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="34">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="45">Полноразмерное запасное колесо</Option>
+				<Option Code="28">Система кругового обзора</Option>
+				<Option Code="30">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="46">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="31">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="38">Система удержания детских кресел Isofix для 2-го ряда</Option>
+				<Option Code="40">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="42">Функция отсрочки выключения фар (Follow me home)</Option>
+				<Option Code="36">Шторки безопасности</Option>
+				<Option Code="24">Эра Глонасс</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="76">Вентиляция передних сидений</Option>
+				<Option Code="78">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="93">Дефлекторы для 2-го ряда</Option>
+				<Option Code="63">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="97">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="90">Климат-контроль, 2 зоны</Option>
+				<Option Code="71">Кожаная отделка сидений</Option>
+				<Option Code="94">Многофункциональное кожаное рулевое колесо</Option>
+				<Option Code="67">Обогрев лобового стекла</Option>
+				<Option Code="64">Обогрев передних сидений</Option>
+				<Option Code="66">Обогрев рулевого колеса</Option>
+				<Option Code="65">Обогрев сидений 2-го ряда</Option>
+				<Option Code="68">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="80">Пассажирское сиденье с механической регулировкой в 4-х направлениях</Option>
+				<Option Code="100">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="101">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="96">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="147">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="84">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="102">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="72">Черный цвет отделки сидений</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="125">1 USB-разъем сзади</Option>
+				<Option Code="124">2 USB-разъема спереди</Option>
+				<Option Code="120">8 динамика</Option>
+				<Option Code="107">Беспроводная зарядка для смартфона</Option>
+				<Option Code="109">Большой сенсорный емкостный дисплей 10.25&quot;</Option>
+				<Option Code="116">Навигация</Option>
+				<Option Code="119">Радио</Option>
+				<Option Code="148">Розетка на 12V спереди и сзади</Option>
+				<Option Code="118">Система &quot;Свободные руки&quot; (Hands free) с Bluetooth-связью с мобильным телефоном</Option>
+				<Option Code="137">Цветной экран с бортовым компьютером в панели приборов 10.25&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="5">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="130">18-дюймовые алюминиевые литые диски (с красными вставками) *</Option>
+				<Option Code="21">Атмосферная подсветка интерьера</Option>
+				<Option Code="16">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="126">Декоративные элементы отделки экстерьера (красные детали) *</Option>
+				<Option Code="15">Динамические указатели поворота</Option>
+				<Option Code="11">Задний спортивный спойлер</Option>
+				<Option Code="19">Наружная декоративная подсветка</Option>
+				<Option Code="8">Окраска металлик (на выбор)</Option>
+				<Option Code="14">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="131">Передние противотуманные фары</Option>
+				<Option Code="132">Светодиодные задние фонари</Option>
+				<Option Code="13">Светодиодные фары основного света</Option>
+				<Option Code="17">Электропривод складывания зеркал</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="61">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="58">Выбор режима вождения</Option>
+				<Option Code="57">Круиз-контроль</Option>
+				<Option Code="146">Центральный замок с дистанционным управлением</Option>
+				<Option Code="60">Электрический стояночный тормоз с функцией AutoHold</Option>
+				<Option Code="59">Электрический усилитель рулевого управления</Option>
+				<Option Code="62">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27225" DocNum="026969">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="48152" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/026969/99_21_48152.png</pic>
+				<pic ID="48153" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/026969/99_22_48153.png</pic>
+				<pic ID="48154" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/026969/99_23_48154.png</pic>
+				<pic ID="48155" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/026969/99_24_48155.png</pic>
+				<pic ID="48156" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/026969/99_25_48156.png</pic>
+				<pic ID="48157" type="99" seqno="26">http://aaa-motors.ru/IMG/VW_RST/026969/99_26_48157.png</pic>
+				<pic ID="48158" type="99" seqno="27">http://aaa-motors.ru/IMG/VW_RST/026969/99_27_48158.png</pic>
+				<pic ID="48159" type="99" seqno="28">http://aaa-motors.ru/IMG/VW_RST/026969/99_28_48159.png</pic>
+				<pic ID="48133" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/026969/99_2_48133.png</pic>
+				<pic ID="48134" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/026969/99_3_48134.png</pic>
+				<pic ID="48135" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/026969/99_4_48135.png</pic>
+				<pic ID="48136" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/026969/99_5_48136.png</pic>
+				<pic ID="48137" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/026969/99_6_48137.png</pic>
+				<pic ID="48138" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/026969/99_7_48138.png</pic>
+				<pic ID="48139" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/026969/99_8_48139.png</pic>
+				<pic ID="48140" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/026969/99_9_48140.png</pic>
+				<pic ID="48141" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/026969/99_10_48141.png</pic>
+				<pic ID="48142" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/026969/99_11_48142.png</pic>
+				<pic ID="48143" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/026969/99_12_48143.png</pic>
+				<pic ID="48144" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/026969/99_13_48144.png</pic>
+				<pic ID="48145" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/026969/99_14_48145.png</pic>
+				<pic ID="48146" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/026969/99_15_48146.png</pic>
+				<pic ID="48147" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/026969/99_16_48147.png</pic>
+				<pic ID="48148" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/026969/99_17_48148.png</pic>
+				<pic ID="48149" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/026969/99_18_48149.png</pic>
+				<pic ID="48150" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/026969/99_19_48150.png</pic>
+				<pic ID="48151" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/026969/99_20_48151.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="1983-1569607298">C5</Model>
+		<CodeCompl Title="Код комплектации">T7150BCBWFR0027</CodeCompl>
+		<VIN Title="VIN">LVVDB21B1PD644316</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White(белый)</Color>
+		<Price Title="Цена">2819900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">210/1750-4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">BW</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="125">1 USB-разъем сзади</Option>
+				<Option Code="5">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="130">18-дюймовые алюминиевые литые диски (с красными вставками) *</Option>
+				<Option Code="124">2 USB-разъема спереди</Option>
+				<Option Code="120">8 динамика</Option>
+				<Option Code="133">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="32">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="21">Атмосферная подсветка интерьера</Option>
+				<Option Code="61">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="107">Беспроводная зарядка для смартфона</Option>
+				<Option Code="39">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="16">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="35">Боковые передние подушки безопасности</Option>
+				<Option Code="109">Большой сенсорный емкостный дисплей 10.25&quot;</Option>
+				<Option Code="76">Вентиляция передних сидений</Option>
+				<Option Code="78">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="58">Выбор режима вождения</Option>
+				<Option Code="33">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="126">Декоративные элементы отделки экстерьера (красные детали) *</Option>
+				<Option Code="93">Дефлекторы для 2-го ряда</Option>
+				<Option Code="15">Динамические указатели поворота</Option>
+				<Option Code="63">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="26">Задние датчики парковки</Option>
+				<Option Code="11">Задний спортивный спойлер</Option>
+				<Option Code="97">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="25">Иммобилайзер</Option>
+				<Option Code="27">Камера заднего вида</Option>
+				<Option Code="90">Климат-контроль, 2 зоны</Option>
+				<Option Code="71">Кожаная отделка сидений</Option>
+				<Option Code="57">Круиз-контроль</Option>
+				<Option Code="94">Многофункциональное кожаное рулевое колесо</Option>
+				<Option Code="116">Навигация</Option>
+				<Option Code="19">Наружная декоративная подсветка</Option>
+				<Option Code="67">Обогрев лобового стекла</Option>
+				<Option Code="64">Обогрев передних сидений</Option>
+				<Option Code="66">Обогрев рулевого колеса</Option>
+				<Option Code="65">Обогрев сидений 2-го ряда</Option>
+				<Option Code="68">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="8">Окраска металлик (на выбор)</Option>
+				<Option Code="80">Пассажирское сиденье с механической регулировкой в 4-х направлениях</Option>
+				<Option Code="29">Передние датчики парковки</Option>
+				<Option Code="14">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="100">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="131">Передние противотуманные фары</Option>
+				<Option Code="37">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="101">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="34">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="45">Полноразмерное запасное колесо</Option>
+				<Option Code="103">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="119">Радио</Option>
+				<Option Code="148">Розетка на 12V спереди и сзади</Option>
+				<Option Code="96">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="147">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="132">Светодиодные задние фонари</Option>
+				<Option Code="13">Светодиодные фары основного света</Option>
+				<Option Code="118">Система &quot;Свободные руки&quot; (Hands free) с Bluetooth-связью с мобильным телефоном</Option>
+				<Option Code="28">Система кругового обзора</Option>
+				<Option Code="30">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="46">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="31">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="38">Система удержания детских кресел Isofix для 2-го ряда</Option>
+				<Option Code="84">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="40">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="42">Функция отсрочки выключения фар (Follow me home)</Option>
+				<Option Code="137">Цветной экран с бортовым компьютером в панели приборов 10.25&quot;</Option>
+				<Option Code="146">Центральный замок с дистанционным управлением</Option>
+				<Option Code="102">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="72">Черный цвет отделки сидений</Option>
+				<Option Code="36">Шторки безопасности</Option>
+				<Option Code="60">Электрический стояночный тормоз с функцией AutoHold</Option>
+				<Option Code="59">Электрический усилитель рулевого управления</Option>
+				<Option Code="62">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+				<Option Code="17">Электропривод складывания зеркал</Option>
+				<Option Code="24">Эра Глонасс</Option>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28536" DocNum="028280">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="100250" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028280/99_1_100250.png</pic>
+				<pic ID="100251" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028280/99_2_100251.png</pic>
+				<pic ID="100252" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028280/99_3_100252.png</pic>
+				<pic ID="100253" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028280/99_4_100253.png</pic>
+				<pic ID="100254" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028280/99_5_100254.png</pic>
+				<pic ID="100255" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028280/99_6_100255.png</pic>
+				<pic ID="100256" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028280/99_7_100256.png</pic>
+				<pic ID="100257" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028280/99_8_100257.png</pic>
+				<pic ID="100258" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028280/99_9_100258.png</pic>
+				<pic ID="100259" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028280/99_10_100259.png</pic>
+				<pic ID="100260" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028280/99_11_100260.png</pic>
+				<pic ID="100261" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028280/99_12_100261.png</pic>
+				<pic ID="100262" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028280/99_13_100262.png</pic>
+				<pic ID="100263" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028280/99_14_100263.png</pic>
+				<pic ID="100264" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028280/99_15_100264.png</pic>
+				<pic ID="100265" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028280/99_16_100265.png</pic>
+				<pic ID="100266" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028280/99_17_100266.png</pic>
+				<pic ID="100267" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028280/99_18_100267.png</pic>
+				<pic ID="100268" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028280/99_19_100268.png</pic>
+				<pic ID="100269" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028280/99_20_100269.png</pic>
+				<pic ID="100270" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028280/99_21_100270.png</pic>
+				<pic ID="100271" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028280/99_22_100271.png</pic>
+				<pic ID="100272" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028280/99_23_100272.png</pic>
+				<pic ID="100273" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028280/99_24_100273.png</pic>
+				<pic ID="100274" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/028280/99_25_100274.png</pic>
+				<pic ID="100275" type="99" seqno="26">http://aaa-motors.ru/IMG/VW_RST/028280/99_26_100275.png</pic>
+				<pic ID="100276" type="99" seqno="27">http://aaa-motors.ru/IMG/VW_RST/028280/99_27_100276.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="1983-1569607298">C5</Model>
+		<CodeCompl Title="Код комплектации">301167</CodeCompl>
+		<VIN Title="VIN">LVVDB21B6RDE01817</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">2819900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28331" DocNum="028075">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="87261" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028075/99_1_87261.png</pic>
+				<pic ID="87262" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028075/99_2_87262.png</pic>
+				<pic ID="87263" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028075/99_3_87263.png</pic>
+				<pic ID="87264" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028075/99_4_87264.png</pic>
+				<pic ID="87265" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028075/99_5_87265.png</pic>
+				<pic ID="87266" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028075/99_6_87266.png</pic>
+				<pic ID="87267" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028075/99_7_87267.png</pic>
+				<pic ID="87268" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028075/99_8_87268.png</pic>
+				<pic ID="87269" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028075/99_9_87269.png</pic>
+				<pic ID="87270" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028075/99_10_87270.png</pic>
+				<pic ID="87271" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028075/99_11_87271.png</pic>
+				<pic ID="87272" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028075/99_12_87272.png</pic>
+				<pic ID="87273" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028075/99_13_87273.png</pic>
+				<pic ID="87274" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028075/99_14_87274.png</pic>
+				<pic ID="87275" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028075/99_15_87275.png</pic>
+				<pic ID="87276" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028075/99_16_87276.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="1983-1569607298">C5</Model>
+		<CodeCompl Title="Код комплектации">30113</CodeCompl>
+		<VIN Title="VIN">LVVDB21B4RD648850</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Sky Blue (WA)</Color>
+		<Price Title="Цена">2833900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">147.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Синий</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1498</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,9</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">195</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1856</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">172</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27185" DocNum="026929">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="39749" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/026929/99_1_39749.png</pic>
+				<pic ID="39750" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/026929/99_2_39750.png</pic>
+				<pic ID="39751" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/026929/99_3_39751.png</pic>
+				<pic ID="39752" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/026929/99_4_39752.png</pic>
+				<pic ID="39753" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/026929/99_5_39753.png</pic>
+				<pic ID="39754" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/026929/99_6_39754.png</pic>
+				<pic ID="39755" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/026929/99_7_39755.png</pic>
+				<pic ID="39756" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/026929/99_8_39756.png</pic>
+				<pic ID="39757" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/026929/99_9_39757.png</pic>
+				<pic ID="39758" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/026929/99_10_39758.png</pic>
+				<pic ID="39759" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/026929/99_11_39759.png</pic>
+				<pic ID="39760" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/026929/99_12_39760.png</pic>
+				<pic ID="39761" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/026929/99_13_39761.png</pic>
+				<pic ID="39762" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/026929/99_14_39762.png</pic>
+				<pic ID="39763" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/026929/99_15_39763.png</pic>
+				<pic ID="39764" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/026929/99_16_39764.png</pic>
+				<pic ID="39765" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/026929/99_17_39765.png</pic>
+				<pic ID="39766" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/026929/99_18_39766.png</pic>
+				<pic ID="39767" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/026929/99_19_39767.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2074-1569607293">S5 GT</Model>
+		<CodeCompl Title="Код комплектации">M7160DHGWFF0013</CodeCompl>
+		<VIN Title="VIN">LVVDC21BXPD345551</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Зеленый (Dark Green)</Color>
+		<Price Title="Цена">3072180.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2023</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Седан</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зеленый</PTSColour>
+		<ModelYear Title="Модельный год">2023</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">6,9</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275/2000-3800</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">7,5</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4691*1814*1493</Dimensions>
+		<Weight Title="Масса">1729</Weight>
+		<CargoVolume Title="Объем багажника">482</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">DG</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+				<Option Code="46">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="43">Выбор режима вождения</Option>
+				<Option Code="42">Круиз-контроль</Option>
+				<Option Code="47">Центральный замок с дистанционным управлением</Option>
+				<Option Code="45">Электрический стояночный тормоз с функцией AutoHold</Option>
+				<Option Code="44">Электрический усилитель рулевого управления</Option>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="37">Адаптивный круиз-контроль (ACC)</Option>
+				<Option Code="20">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="35">Ассистент удержания в полосе (LKA)</Option>
+				<Option Code="27">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="23">Боковые передние подушки безопасности</Option>
+				<Option Code="31">Встроенный регистратор</Option>
+				<Option Code="16">Задние датчики парковки</Option>
+				<Option Code="14">Иммобилайзер</Option>
+				<Option Code="17">Камера заднего вида</Option>
+				<Option Code="15">Передние датчики парковки</Option>
+				<Option Code="25">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="22">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="41">Предупреждение о заднем перекрестном столкновении (RCTA)</Option>
+				<Option Code="34">Предупреждение о покидании полосы (LDW)</Option>
+				<Option Code="32">Предупреждение при опасности при открытии дверей (DOW)</Option>
+				<Option Code="40">Система автономного экстренного торможения (AEB)</Option>
+				<Option Code="18">Система кругового обзора</Option>
+				<Option Code="19">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="33">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="38">Система помощи при движении в пробках (TJA)</Option>
+				<Option Code="36">Система помощи при смене полосы (LCA)</Option>
+				<Option Code="39">Система предупреждения о фронтальном столкновении (FCW)</Option>
+				<Option Code="21">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="26">Система удержания детских кресел Isofix для 2-го ряда</Option>
+				<Option Code="30">Уменьшенное запасное колесо</Option>
+				<Option Code="28">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="29">Функция отсрочки выключения фар (Follow me home)</Option>
+				<Option Code="24">Шторки безопасности</Option>
+				<Option Code="13">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="48">Атмосферная подсветка интерьера</Option>
+				<Option Code="51">Вентиляция передних сидений</Option>
+				<Option Code="57">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="49">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="64">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="61">Климат-контроль, 1 зоны</Option>
+				<Option Code="56">Кожаная отделка сидений</Option>
+				<Option Code="62">Многофункциональное кожаное рулевое колесо</Option>
+				<Option Code="54">Обогрев лобового стекла</Option>
+				<Option Code="50">Обогрев передних сидений</Option>
+				<Option Code="52">Обогрев рулевого колеса</Option>
+				<Option Code="53">Обогрев сидений 2-го ряда</Option>
+				<Option Code="55">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="59">Пассажирское сиденье с электрической регулировкой в 4-х направлениях</Option>
+				<Option Code="66">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="67">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="60">Подголовники всех сидений с регулировкой по высоте</Option>
+				<Option Code="65">Подсветка в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="71">Подстветка багажного отделения</Option>
+				<Option Code="70">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="63">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="69">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="68">Центральный подлокотник для 2-го ряда сидений</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="81">1 USB-разъем сзади</Option>
+				<Option Code="80">2 USB-разъема спереди</Option>
+				<Option Code="73">6 динамиков</Option>
+				<Option Code="74">Беспроводная зарядка для смартфона</Option>
+				<Option Code="75">Большой сенсорный дисплей 10.25&quot;</Option>
+				<Option Code="79">Голосовое управление</Option>
+				<Option Code="77">Доступ к навигации, видео-файлам, интернет через смартфон на экране автомобиля* (CarPlay/Android)</Option>
+				<Option Code="72">Радио</Option>
+				<Option Code="82">Розетка спереди 12V</Option>
+				<Option Code="78">Система &quot;Свободные руки&quot; (Hands free) с Bluetooth-связью с мобильным телефоном</Option>
+				<Option Code="76">Цветной экран с бортовым компьютером в панели приборов 10.25&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="3">17-дюймовые алюминиевые литые диски</Option>
+				<Option Code="10">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="5">Окраска металлик</Option>
+				<Option Code="4">Оранжевые тормозные суппорты</Option>
+				<Option Code="12">Панорамный люк</Option>
+				<Option Code="8">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="9">Передние противотуманные фары</Option>
+				<Option Code="7">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="11">Электропривод складывания зеркал</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28653" DocNum="028397">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="104393" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028397/99_1_104393.png</pic>
+				<pic ID="104394" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028397/99_2_104394.png</pic>
+				<pic ID="104395" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028397/99_3_104395.png</pic>
+				<pic ID="104396" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028397/99_4_104396.png</pic>
+				<pic ID="104397" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028397/99_5_104397.png</pic>
+				<pic ID="104398" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028397/99_6_104398.png</pic>
+				<pic ID="104399" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028397/99_7_104399.png</pic>
+				<pic ID="104400" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028397/99_8_104400.png</pic>
+				<pic ID="104401" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028397/99_9_104401.png</pic>
+				<pic ID="104402" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028397/99_10_104402.png</pic>
+				<pic ID="104403" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028397/99_11_104403.png</pic>
+				<pic ID="104404" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028397/99_12_104404.png</pic>
+				<pic ID="104405" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028397/99_13_104405.png</pic>
+				<pic ID="104406" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028397/99_14_104406.png</pic>
+				<pic ID="104407" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028397/99_15_104407.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="115788-1586612535">C7</Model>
+		<CodeCompl Title="Код комплектации">30187</CodeCompl>
+		<VIN Title="VIN">LVUGTB229SD831888</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Matte Gray (UK)</Color>
+		<Price Title="Цена">3109900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 / 2000-3500</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4660?1875?1670</Dimensions>
+		<Weight Title="Масса">1653</Weight>
+		<CargoVolume Title="Объем багажника">639</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">215</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="49">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="24">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="32">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="27">Боковые передние подушки безопасности</Option>
+				<Option Code="25">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="18">Задние датчики парковки</Option>
+				<Option Code="17">Иммобилайзер</Option>
+				<Option Code="19">Камера заднего вида</Option>
+				<Option Code="30">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="26">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="22">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="23">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="31">Система удержания детских кресел Is0fix для 2-го ряда</Option>
+				<Option Code="34">Функция автоматического включения работы дворников при дожде (датчик дождя)</Option>
+				<Option Code="33">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="35">Функция отсрочки выключения фар (F0ll0w me h0me)</Option>
+				<Option Code="16">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="73">Водительское сиденье с механической регулировкой в 6-ти направлениях</Option>
+				<Option Code="80">Дефлекторы для 2-го ряда</Option>
+				<Option Code="62">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="83">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="79">Климат-контроль, 2 зоны</Option>
+				<Option Code="81">Многофункциональное рулевое колесо</Option>
+				<Option Code="69">Обогрев лобового стекла</Option>
+				<Option Code="65">Обогрев передних сидений</Option>
+				<Option Code="68">Обогрев рулевого колеса</Option>
+				<Option Code="70">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="72">Отделка сидений искусственной кожей</Option>
+				<Option Code="75">Пассажирское сиденье с механической регулировкой в 4-х направлениях</Option>
+				<Option Code="85">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="86">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="89">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="82">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="88">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="77">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="87">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="71">Черная отделка потолка</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="102">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A сзади</Option>
+				<Option Code="101">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A спереди</Option>
+				<Option Code="91">6 динамика</Option>
+				<Option Code="96">Беспроводное подключение Apple CarPlay/Andr0id Aut0</Option>
+				<Option Code="97">Голосовое управление</Option>
+				<Option Code="98">Навигация</Option>
+				<Option Code="103">Розетка на 12V спереди</Option>
+				<Option Code="99">Сенсорный дисплей 15.6&quot;</Option>
+				<Option Code="100">Система &quot;Свободные руки&quot; (Hands free) с Bluet00th-связью с мобильным телефоном</Option>
+				<Option Code="95">Цветной экран с бортовым компьютером в панели приборов 8.9&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="1">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="11">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="5">Задний спортивный спойлер</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="58">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="52">Выбор режима вождения</Option>
+				<Option Code="51">Круиз-контроль</Option>
+				<Option Code="50">Система остановки/запуска двигателя Start/St0p</Option>
+				<Option Code="57">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="59">Центральный замок с дистанционным управлением</Option>
+				<Option Code="55">Электрический стояночный тормоз с функцией Aut0H0ld</Option>
+				<Option Code="54">Электрический усилитель рулевого управления</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28654" DocNum="028398">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="104408" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028398/99_1_104408.png</pic>
+				<pic ID="104409" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028398/99_2_104409.png</pic>
+				<pic ID="104410" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028398/99_3_104410.png</pic>
+				<pic ID="104411" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028398/99_4_104411.png</pic>
+				<pic ID="104412" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028398/99_5_104412.png</pic>
+				<pic ID="104413" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028398/99_6_104413.png</pic>
+				<pic ID="104414" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028398/99_7_104414.png</pic>
+				<pic ID="104415" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028398/99_8_104415.png</pic>
+				<pic ID="104416" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028398/99_9_104416.png</pic>
+				<pic ID="104417" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028398/99_10_104417.png</pic>
+				<pic ID="104418" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028398/99_11_104418.png</pic>
+				<pic ID="104419" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028398/99_12_104419.png</pic>
+				<pic ID="104420" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028398/99_13_104420.png</pic>
+				<pic ID="104421" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028398/99_14_104421.png</pic>
+				<pic ID="104422" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028398/99_15_104422.png</pic>
+				<pic ID="104423" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028398/99_16_104423.png</pic>
+				<pic ID="104424" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028398/99_17_104424.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="115788-1586612535">C7</Model>
+		<CodeCompl Title="Код комплектации">30187</CodeCompl>
+		<VIN Title="VIN">LVUGTB22XSD831916</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3109900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 / 2000-3500</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4660?1875?1670</Dimensions>
+		<Weight Title="Масса">1653</Weight>
+		<CargoVolume Title="Объем багажника">639</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="49">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="24">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="32">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="27">Боковые передние подушки безопасности</Option>
+				<Option Code="25">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="18">Задние датчики парковки</Option>
+				<Option Code="17">Иммобилайзер</Option>
+				<Option Code="19">Камера заднего вида</Option>
+				<Option Code="30">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="26">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="22">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="23">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="31">Система удержания детских кресел Is0fix для 2-го ряда</Option>
+				<Option Code="34">Функция автоматического включения работы дворников при дожде (датчик дождя)</Option>
+				<Option Code="33">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="35">Функция отсрочки выключения фар (F0ll0w me h0me)</Option>
+				<Option Code="16">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="73">Водительское сиденье с механической регулировкой в 6-ти направлениях</Option>
+				<Option Code="80">Дефлекторы для 2-го ряда</Option>
+				<Option Code="62">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="83">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="79">Климат-контроль, 2 зоны</Option>
+				<Option Code="81">Многофункциональное рулевое колесо</Option>
+				<Option Code="69">Обогрев лобового стекла</Option>
+				<Option Code="65">Обогрев передних сидений</Option>
+				<Option Code="68">Обогрев рулевого колеса</Option>
+				<Option Code="70">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="72">Отделка сидений искусственной кожей</Option>
+				<Option Code="75">Пассажирское сиденье с механической регулировкой в 4-х направлениях</Option>
+				<Option Code="85">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="86">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="89">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="82">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="88">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="77">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="87">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="71">Черная отделка потолка</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="102">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A сзади</Option>
+				<Option Code="101">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A спереди</Option>
+				<Option Code="91">6 динамика</Option>
+				<Option Code="96">Беспроводное подключение Apple CarPlay/Andr0id Aut0</Option>
+				<Option Code="97">Голосовое управление</Option>
+				<Option Code="98">Навигация</Option>
+				<Option Code="103">Розетка на 12V спереди</Option>
+				<Option Code="99">Сенсорный дисплей 15.6&quot;</Option>
+				<Option Code="100">Система &quot;Свободные руки&quot; (Hands free) с Bluet00th-связью с мобильным телефоном</Option>
+				<Option Code="95">Цветной экран с бортовым компьютером в панели приборов 8.9&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="1">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="11">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="5">Задний спортивный спойлер</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="58">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="52">Выбор режима вождения</Option>
+				<Option Code="51">Круиз-контроль</Option>
+				<Option Code="50">Система остановки/запуска двигателя Start/St0p</Option>
+				<Option Code="57">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="59">Центральный замок с дистанционным управлением</Option>
+				<Option Code="55">Электрический стояночный тормоз с функцией Aut0H0ld</Option>
+				<Option Code="54">Электрический усилитель рулевого управления</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27999" DocNum="027743">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="68371" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027743/99_3_68371.png</pic>
+				<pic ID="68372" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027743/99_4_68372.png</pic>
+				<pic ID="68373" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027743/99_2_68373.png</pic>
+				<pic ID="68374" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027743/99_5_68374.png</pic>
+				<pic ID="68375" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027743/99_6_68375.png</pic>
+				<pic ID="68376" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027743/99_7_68376.png</pic>
+				<pic ID="68377" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027743/99_8_68377.png</pic>
+				<pic ID="68378" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027743/99_9_68378.png</pic>
+				<pic ID="68379" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027743/99_10_68379.png</pic>
+				<pic ID="68380" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027743/99_11_68380.png</pic>
+				<pic ID="68381" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027743/99_12_68381.png</pic>
+				<pic ID="68382" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027743/99_13_68382.png</pic>
+				<pic ID="68383" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027743/99_14_68383.png</pic>
+				<pic ID="68384" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027743/99_15_68384.png</pic>
+				<pic ID="68385" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027743/99_16_68385.png</pic>
+				<pic ID="68386" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/027743/99_17_68386.png</pic>
+				<pic ID="68387" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/027743/99_18_68387.png</pic>
+				<pic ID="68388" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/027743/99_19_68388.png</pic>
+				<pic ID="68389" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/027743/99_20_68389.png</pic>
+				<pic ID="68390" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/027743/99_21_68390.png</pic>
+				<pic ID="68391" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/027743/99_22_68391.png</pic>
+				<pic ID="68392" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/027743/99_23_68392.png</pic>
+				<pic ID="68393" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/027743/99_24_68393.png</pic>
+				<pic ID="68394" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/027743/99_25_68394.png</pic>
+				<pic ID="68395" type="99" seqno="26">http://aaa-motors.ru/IMG/VW_RST/027743/99_26_68395.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2026-1569607300">C5AWD</Model>
+		<CodeCompl Title="Код комплектации">T7160FHNLFG0030</CodeCompl>
+		<VIN Title="VIN">LVVDD21B1RD048829</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Зеленый</Color>
+		<Price Title="Цена">3119900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зелёный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SK</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27970" DocNum="027714">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="68357" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027714/99_12_68357.png</pic>
+				<pic ID="68358" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027714/99_13_68358.png</pic>
+				<pic ID="68359" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027714/99_14_68359.png</pic>
+				<pic ID="68360" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027714/99_15_68360.png</pic>
+				<pic ID="68361" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027714/99_16_68361.png</pic>
+				<pic ID="68362" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/027714/99_17_68362.png</pic>
+				<pic ID="68363" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/027714/99_18_68363.png</pic>
+				<pic ID="68364" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/027714/99_19_68364.png</pic>
+				<pic ID="68365" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/027714/99_20_68365.png</pic>
+				<pic ID="68366" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/027714/99_21_68366.png</pic>
+				<pic ID="68367" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/027714/99_22_68367.png</pic>
+				<pic ID="68368" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/027714/99_23_68368.png</pic>
+				<pic ID="68369" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/027714/99_24_68369.png</pic>
+				<pic ID="68370" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/027714/99_25_68370.png</pic>
+				<pic ID="68346" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027714/99_2_68346.png</pic>
+				<pic ID="68347" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027714/99_3_68347.png</pic>
+				<pic ID="68348" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/027714/99_1_68348.png</pic>
+				<pic ID="68349" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027714/99_4_68349.png</pic>
+				<pic ID="68350" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027714/99_5_68350.png</pic>
+				<pic ID="68351" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027714/99_6_68351.png</pic>
+				<pic ID="68352" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027714/99_7_68352.png</pic>
+				<pic ID="68353" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027714/99_8_68353.png</pic>
+				<pic ID="68354" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027714/99_9_68354.png</pic>
+				<pic ID="68355" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027714/99_10_68355.png</pic>
+				<pic ID="68356" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027714/99_11_68356.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2026-1569607300">C5AWD</Model>
+		<CodeCompl Title="Код комплектации">T7160FHX4FG0022</CodeCompl>
+		<VIN Title="VIN">LVVDD21B0RD037093</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Зеленый</Color>
+		<Price Title="Цена">3119900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зелёный</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1590</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">SK</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27996" DocNum="027740">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="68150" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027740/99_2_68150.png</pic>
+				<pic ID="68151" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027740/99_3_68151.png</pic>
+				<pic ID="68152" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027740/99_4_68152.png</pic>
+				<pic ID="68153" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027740/99_5_68153.png</pic>
+				<pic ID="68154" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027740/99_6_68154.png</pic>
+				<pic ID="68155" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027740/99_7_68155.png</pic>
+				<pic ID="68156" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027740/99_8_68156.png</pic>
+				<pic ID="68157" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027740/99_9_68157.png</pic>
+				<pic ID="68158" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027740/99_10_68158.png</pic>
+				<pic ID="68159" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027740/99_11_68159.png</pic>
+				<pic ID="68160" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027740/99_12_68160.png</pic>
+				<pic ID="68161" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027740/99_13_68161.png</pic>
+				<pic ID="68162" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027740/99_14_68162.png</pic>
+				<pic ID="68163" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027740/99_15_68163.png</pic>
+				<pic ID="68164" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027740/99_16_68164.png</pic>
+				<pic ID="68165" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/027740/99_17_68165.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2026-1569607300">C5AWD</Model>
+		<CodeCompl Title="Код комплектации">T7160FHZEFG0012</CodeCompl>
+		<VIN Title="VIN">LVVDD21B0RD033223</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">(Silver/Black)Серебристый с черной крышей</Color>
+		<Price Title="Цена">3149900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный, серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">X4</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27869" DocNum="027613">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="64411" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027613/99_2_64411.png</pic>
+				<pic ID="64412" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027613/99_3_64412.png</pic>
+				<pic ID="64413" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027613/99_4_64413.png</pic>
+				<pic ID="64414" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027613/99_5_64414.png</pic>
+				<pic ID="64415" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027613/99_6_64415.png</pic>
+				<pic ID="64416" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027613/99_7_64416.png</pic>
+				<pic ID="64417" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027613/99_8_64417.png</pic>
+				<pic ID="64418" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027613/99_9_64418.png</pic>
+				<pic ID="64419" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027613/99_10_64419.png</pic>
+				<pic ID="64420" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027613/99_11_64420.png</pic>
+				<pic ID="64421" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027613/99_12_64421.png</pic>
+				<pic ID="64422" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027613/99_13_64422.png</pic>
+				<pic ID="64423" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027613/99_14_64423.png</pic>
+				<pic ID="64424" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027613/99_15_64424.png</pic>
+				<pic ID="64425" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/027613/99_16_64425.png</pic>
+				<pic ID="64426" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/027613/99_17_64426.png</pic>
+				<pic ID="64427" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/027613/99_18_64427.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2026-1569607300">C5AWD</Model>
+		<CodeCompl Title="Код комплектации">T7160FHBWFG0025</CodeCompl>
+		<VIN Title="VIN">LVVDD21B6RD071006</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">(Silver/Black)Серебристый с черной крышей</Color>
+		<Price Title="Цена">3149900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный, серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1590</EngineVol>
+		<FuelConsumption Title="Расход топлива"></FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент"></MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч"></Acceleration>
+		<MaxSpeed Title="Максимальная скорость"></MaxSpeed>
+		<EcoClass Title="Экологический класс"></EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)"></Dimensions>
+		<Weight Title="Масса"></Weight>
+		<CargoVolume Title="Объем багажника"></CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">X4</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28656" DocNum="028400">
+		<StockQty Title="Количество в стоке">2</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="104354" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028400/99_1_104354.png</pic>
+				<pic ID="104355" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028400/99_2_104355.png</pic>
+				<pic ID="104356" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028400/99_3_104356.png</pic>
+				<pic ID="104357" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028400/99_4_104357.png</pic>
+				<pic ID="104358" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028400/99_5_104358.png</pic>
+				<pic ID="104359" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028400/99_6_104359.png</pic>
+				<pic ID="104360" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028400/99_7_104360.png</pic>
+				<pic ID="104361" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028400/99_8_104361.png</pic>
+				<pic ID="104362" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028400/99_9_104362.png</pic>
+				<pic ID="104363" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028400/99_10_104363.png</pic>
+				<pic ID="104364" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028400/99_11_104364.png</pic>
+				<pic ID="104365" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028400/99_12_104365.png</pic>
+				<pic ID="104366" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028400/99_13_104366.png</pic>
+				<pic ID="104367" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028400/99_14_104367.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="115788-1586612535">C7</Model>
+		<CodeCompl Title="Код комплектации">30186</CodeCompl>
+		<VIN Title="VIN">LVUGTB220SD832931</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Mint Green (SY)</Color>
+		<Price Title="Цена">3259900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зеленый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 / 2000-3500</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4660?1875?1670</Dimensions>
+		<Weight Title="Масса">1653</Weight>
+		<CargoVolume Title="Объем багажника">639</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">214</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="49">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="24">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="32">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="27">Боковые передние подушки безопасности</Option>
+				<Option Code="25">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="18">Задние датчики парковки</Option>
+				<Option Code="17">Иммобилайзер</Option>
+				<Option Code="21">Передние датчики парковки</Option>
+				<Option Code="30">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="26">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="20">Система кругового обзора 540°</Option>
+				<Option Code="22">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="23">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="31">Система удержания детских кресел Is0fix для 2-го ряда</Option>
+				<Option Code="34">Функция автоматического включения работы дворников при дожде (датчик дождя)</Option>
+				<Option Code="33">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="35">Функция отсрочки выключения фар (F0ll0w me h0me)</Option>
+				<Option Code="29">Шторки безопасности</Option>
+				<Option Code="16">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="74">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="80">Дефлекторы для 2-го ряда</Option>
+				<Option Code="62">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="83">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="79">Климат-контроль, 2 зоны</Option>
+				<Option Code="64">Многослойные передние боковые стекла</Option>
+				<Option Code="81">Многофункциональное рулевое колесо</Option>
+				<Option Code="69">Обогрев лобового стекла</Option>
+				<Option Code="65">Обогрев передних сидений</Option>
+				<Option Code="68">Обогрев рулевого колеса</Option>
+				<Option Code="67">Обогрев сидений 2-го ряда</Option>
+				<Option Code="70">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="72">Отделка сидений искусственной кожей</Option>
+				<Option Code="76">Пассажирское сиденье с электрической регулировкой в 4-х направлениях</Option>
+				<Option Code="85">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="86">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="84">Подсветка в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="89">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="82">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="88">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="77">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="87">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="71">Черная отделка потолка</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="102">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A сзади</Option>
+				<Option Code="101">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A спереди</Option>
+				<Option Code="92">8 динамиков</Option>
+				<Option Code="94">Атмосферная подсветка интерьера</Option>
+				<Option Code="93">Беспроводная зарядка для смартфона (50W)</Option>
+				<Option Code="96">Беспроводное подключение Apple CarPlay/Andr0id Aut0</Option>
+				<Option Code="97">Голосовое управление</Option>
+				<Option Code="98">Навигация</Option>
+				<Option Code="104">Розетка на 12V сзади</Option>
+				<Option Code="103">Розетка на 12V спереди</Option>
+				<Option Code="99">Сенсорный дисплей 15.6&quot;</Option>
+				<Option Code="100">Система &quot;Свободные руки&quot; (Hands free) с Bluet00th-связью с мобильным телефоном</Option>
+				<Option Code="95">Цветной экран с бортовым компьютером в панели приборов 8.9&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="1">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="11">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="5">Задний спортивный спойлер</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="12">Электропривод складывания зеркал</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="58">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="52">Выбор режима вождения</Option>
+				<Option Code="51">Круиз-контроль</Option>
+				<Option Code="50">Система остановки/запуска двигателя Start/St0p</Option>
+				<Option Code="57">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="59">Центральный замок с дистанционным управлением</Option>
+				<Option Code="55">Электрический стояночный тормоз с функцией Aut0H0ld</Option>
+				<Option Code="54">Электрический усилитель рулевого управления</Option>
+				<Option Code="60">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28655" DocNum="028399">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="104368" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028399/99_1_104368.png</pic>
+				<pic ID="104369" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028399/99_2_104369.png</pic>
+				<pic ID="104370" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028399/99_3_104370.png</pic>
+				<pic ID="104371" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028399/99_4_104371.png</pic>
+				<pic ID="104372" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028399/99_5_104372.png</pic>
+				<pic ID="104373" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028399/99_6_104373.png</pic>
+				<pic ID="104374" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028399/99_7_104374.png</pic>
+				<pic ID="104375" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028399/99_8_104375.png</pic>
+				<pic ID="104376" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028399/99_9_104376.png</pic>
+				<pic ID="104377" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028399/99_10_104377.png</pic>
+				<pic ID="104378" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028399/99_11_104378.png</pic>
+				<pic ID="104379" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028399/99_12_104379.png</pic>
+				<pic ID="104380" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028399/99_13_104380.png</pic>
+				<pic ID="104381" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028399/99_14_104381.png</pic>
+				<pic ID="104382" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028399/99_15_104382.png</pic>
+				<pic ID="104383" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028399/99_16_104383.png</pic>
+				<pic ID="104384" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028399/99_17_104384.png</pic>
+				<pic ID="104385" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028399/99_18_104385.png</pic>
+				<pic ID="104386" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028399/99_19_104386.png</pic>
+				<pic ID="104387" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028399/99_20_104387.png</pic>
+				<pic ID="104388" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028399/99_21_104388.png</pic>
+				<pic ID="104389" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028399/99_22_104389.png</pic>
+				<pic ID="104390" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028399/99_23_104390.png</pic>
+				<pic ID="104391" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028399/99_24_104391.png</pic>
+				<pic ID="104392" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/028399/99_25_104392.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="115788-1586612535">C7</Model>
+		<CodeCompl Title="Код комплектации">30186</CodeCompl>
+		<VIN Title="VIN">LVUGTB227SD832702</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">3259900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">передний</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,1</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 / 2000-3500</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">9,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4660?1875?1670</Dimensions>
+		<Weight Title="Масса">1653</Weight>
+		<CargoVolume Title="Объем багажника">639</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="49">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="24">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="32">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="27">Боковые передние подушки безопасности</Option>
+				<Option Code="25">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="18">Задние датчики парковки</Option>
+				<Option Code="17">Иммобилайзер</Option>
+				<Option Code="21">Передние датчики парковки</Option>
+				<Option Code="30">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="26">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="20">Система кругового обзора 540°</Option>
+				<Option Code="22">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="23">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="31">Система удержания детских кресел Is0fix для 2-го ряда</Option>
+				<Option Code="34">Функция автоматического включения работы дворников при дожде (датчик дождя)</Option>
+				<Option Code="33">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="35">Функция отсрочки выключения фар (F0ll0w me h0me)</Option>
+				<Option Code="29">Шторки безопасности</Option>
+				<Option Code="16">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="74">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="80">Дефлекторы для 2-го ряда</Option>
+				<Option Code="62">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="83">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="79">Климат-контроль, 2 зоны</Option>
+				<Option Code="64">Многослойные передние боковые стекла</Option>
+				<Option Code="81">Многофункциональное рулевое колесо</Option>
+				<Option Code="69">Обогрев лобового стекла</Option>
+				<Option Code="65">Обогрев передних сидений</Option>
+				<Option Code="68">Обогрев рулевого колеса</Option>
+				<Option Code="67">Обогрев сидений 2-го ряда</Option>
+				<Option Code="70">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="72">Отделка сидений искусственной кожей</Option>
+				<Option Code="76">Пассажирское сиденье с электрической регулировкой в 4-х направлениях</Option>
+				<Option Code="85">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="86">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="84">Подсветка в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="89">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="82">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="88">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="77">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="87">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="71">Черная отделка потолка</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="102">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A сзади</Option>
+				<Option Code="101">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A спереди</Option>
+				<Option Code="92">8 динамиков</Option>
+				<Option Code="94">Атмосферная подсветка интерьера</Option>
+				<Option Code="93">Беспроводная зарядка для смартфона (50W)</Option>
+				<Option Code="96">Беспроводное подключение Apple CarPlay/Andr0id Aut0</Option>
+				<Option Code="97">Голосовое управление</Option>
+				<Option Code="98">Навигация</Option>
+				<Option Code="104">Розетка на 12V сзади</Option>
+				<Option Code="103">Розетка на 12V спереди</Option>
+				<Option Code="99">Сенсорный дисплей 15.6&quot;</Option>
+				<Option Code="100">Система &quot;Свободные руки&quot; (Hands free) с Bluet00th-связью с мобильным телефоном</Option>
+				<Option Code="95">Цветной экран с бортовым компьютером в панели приборов 8.9&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="1">18-дюймовые алюминиевые литые диски</Option>
+				<Option Code="11">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="5">Задний спортивный спойлер</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="12">Электропривод складывания зеркал</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="58">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="52">Выбор режима вождения</Option>
+				<Option Code="51">Круиз-контроль</Option>
+				<Option Code="50">Система остановки/запуска двигателя Start/St0p</Option>
+				<Option Code="57">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="59">Центральный замок с дистанционным управлением</Option>
+				<Option Code="55">Электрический стояночный тормоз с функцией Aut0H0ld</Option>
+				<Option Code="54">Электрический усилитель рулевого управления</Option>
+				<Option Code="60">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="27974" DocNum="027718">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="68616" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/027718/99_10_68616.png</pic>
+				<pic ID="68617" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/027718/99_11_68617.png</pic>
+				<pic ID="68618" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/027718/99_12_68618.png</pic>
+				<pic ID="68619" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/027718/99_13_68619.png</pic>
+				<pic ID="68620" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/027718/99_14_68620.png</pic>
+				<pic ID="68621" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/027718/99_15_68621.png</pic>
+				<pic ID="68608" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/027718/99_2_68608.png</pic>
+				<pic ID="68609" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/027718/99_3_68609.png</pic>
+				<pic ID="68610" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/027718/99_4_68610.png</pic>
+				<pic ID="68611" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/027718/99_5_68611.png</pic>
+				<pic ID="68612" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/027718/99_6_68612.png</pic>
+				<pic ID="68613" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/027718/99_7_68613.png</pic>
+				<pic ID="68614" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/027718/99_8_68614.png</pic>
+				<pic ID="68615" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/027718/99_9_68615.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="2026-1569607300">C5AWD</Model>
+		<CodeCompl Title="Код комплектации">T7160FHBWFG0022</CodeCompl>
+		<VIN Title="VIN">LVVDD21B2RD535103</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Серый</Color>
+		<Price Title="Цена">3309900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2024</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Внедорожник</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Серый</PTSColour>
+		<ModelYear Title="Модельный год">2024</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,4</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275/2000-4000</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">8,6</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">198</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 5</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4400*1830*1588</Dimensions>
+		<Weight Title="Масса">1960</Weight>
+		<CargoVolume Title="Объем багажника">378</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">GV</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28662" DocNum="028406">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="115795-1586612539">C74WD</Model>
+		<CodeCompl Title="Код комплектации">30183</CodeCompl>
+		<VIN Title="VIN">LVUGFB228SD833283</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Mint Green (SY)</Color>
+		<Price Title="Цена">3659900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Зеленый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 / 2000-3500</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4660?1875?1670</Dimensions>
+		<Weight Title="Масса">1753</Weight>
+		<CargoVolume Title="Объем багажника">639</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">214</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="49">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="48">Автоматическое переключение ближнего/дальнего света (IHC)</Option>
+				<Option Code="39">Адаптивный круиз-контроль (ACC)</Option>
+				<Option Code="24">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="32">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="27">Боковые передние подушки безопасности</Option>
+				<Option Code="25">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="18">Задние датчики парковки</Option>
+				<Option Code="17">Иммобилайзер</Option>
+				<Option Code="21">Передние датчики парковки</Option>
+				<Option Code="30">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="28">Подушка безопасности между передними сидениями</Option>
+				<Option Code="26">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="36">Полноразмерное запасное колесо</Option>
+				<Option Code="47">Предупреждение о заднем перекрестном столкновении (RCTB)</Option>
+				<Option Code="42">Предупреждение о покидании полосы (LDW)</Option>
+				<Option Code="44">Предупреждение при опасности при открытии дверей (D0W)</Option>
+				<Option Code="46">Система аварийного удержания в полосе (ELK)</Option>
+				<Option Code="41">Система автономного экстренного торможения (AEB)</Option>
+				<Option Code="20">Система кругового обзора 540°</Option>
+				<Option Code="22">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="37">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="38">Система помощи при движении в пробках (TJA/ICA)</Option>
+				<Option Code="45">Система помощи при перестроении (LDP)</Option>
+				<Option Code="43">Система помощи при смене полосы (LCA)</Option>
+				<Option Code="40">Система предупреждения о фронтальном столкновении (FCW)</Option>
+				<Option Code="23">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="31">Система удержания детских кресел Is0fix для 2-го ряда</Option>
+				<Option Code="34">Функция автоматического включения работы дворников при дожде (датчик дождя)</Option>
+				<Option Code="33">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="35">Функция отсрочки выключения фар (F0ll0w me h0me)</Option>
+				<Option Code="29">Шторки безопасности</Option>
+				<Option Code="16">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="63">Акустическое лобовое стекло</Option>
+				<Option Code="66">Вентиляция передних сидений</Option>
+				<Option Code="74">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="80">Дефлекторы для 2-го ряда</Option>
+				<Option Code="62">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="83">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="79">Климат-контроль, 2 зоны</Option>
+				<Option Code="64">Многослойные передние боковые стекла</Option>
+				<Option Code="81">Многофункциональное рулевое колесо</Option>
+				<Option Code="69">Обогрев лобового стекла</Option>
+				<Option Code="65">Обогрев передних сидений</Option>
+				<Option Code="68">Обогрев рулевого колеса</Option>
+				<Option Code="67">Обогрев сидений 2-го ряда</Option>
+				<Option Code="70">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="72">Отделка сидений искусственной кожей</Option>
+				<Option Code="78">Память настроек сидения водителя</Option>
+				<Option Code="76">Пассажирское сиденье с электрической регулировкой в 4-х направлениях</Option>
+				<Option Code="85">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="86">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="84">Подсветка в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="89">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="82">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="88">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="77">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="87">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="71">Черная отделка потолка</Option>
+				<Option Code="61">Электрохромное зеркало заднего вида</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="102">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A сзади</Option>
+				<Option Code="101">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A спереди</Option>
+				<Option Code="92">8 динамиков</Option>
+				<Option Code="94">Атмосферная подсветка интерьера</Option>
+				<Option Code="93">Беспроводная зарядка для смартфона (50W)</Option>
+				<Option Code="96">Беспроводное подключение Apple CarPlay/Andr0id Aut0</Option>
+				<Option Code="97">Голосовое управление</Option>
+				<Option Code="98">Навигация</Option>
+				<Option Code="104">Розетка на 12V сзади</Option>
+				<Option Code="103">Розетка на 12V спереди</Option>
+				<Option Code="99">Сенсорный дисплей 15.6&quot;</Option>
+				<Option Code="90">Сервисы 0M0DA C0nnect</Option>
+				<Option Code="100">Система &quot;Свободные руки&quot; (Hands free) с Bluet00th-связью с мобильным телефоном</Option>
+				<Option Code="95">Цветной экран с бортовым компьютером в панели приборов 8.9&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="2">19-дюймовые алюминиевые литые диски</Option>
+				<Option Code="15">Анимация атмосферной подсветки в ритм музыки</Option>
+				<Option Code="10">Анимированный приветственный свет</Option>
+				<Option Code="11">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="5">Задний спортивный спойлер</Option>
+				<Option Code="13">Память настройки зеркал</Option>
+				<Option Code="14">Панорамный люк</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="12">Электропривод складывания зеркал</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="58">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="52">Выбор режима вождения</Option>
+				<Option Code="51">Круиз-контроль</Option>
+				<Option Code="53">Проекционный дисплей (HUD)</Option>
+				<Option Code="50">Система остановки/запуска двигателя Start/St0p</Option>
+				<Option Code="57">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="59">Центральный замок с дистанционным управлением</Option>
+				<Option Code="55">Электрический стояночный тормоз с функцией Aut0H0ld</Option>
+				<Option Code="54">Электрический усилитель рулевого управления</Option>
+				<Option Code="60">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28663" DocNum="028407">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="115795-1586612539">C74WD</Model>
+		<CodeCompl Title="Код комплектации">30183</CodeCompl>
+		<VIN Title="VIN">LVUGFB226SD833511</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">White (BW)</Color>
+		<Price Title="Цена">3659900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Белый</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 / 2000-3500</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4660?1875?1670</Dimensions>
+		<Weight Title="Масса">1753</Weight>
+		<CargoVolume Title="Объем багажника">639</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">119</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="49">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="48">Автоматическое переключение ближнего/дальнего света (IHC)</Option>
+				<Option Code="39">Адаптивный круиз-контроль (ACC)</Option>
+				<Option Code="24">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="32">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="27">Боковые передние подушки безопасности</Option>
+				<Option Code="25">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="18">Задние датчики парковки</Option>
+				<Option Code="17">Иммобилайзер</Option>
+				<Option Code="21">Передние датчики парковки</Option>
+				<Option Code="30">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="28">Подушка безопасности между передними сидениями</Option>
+				<Option Code="26">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="36">Полноразмерное запасное колесо</Option>
+				<Option Code="47">Предупреждение о заднем перекрестном столкновении (RCTB)</Option>
+				<Option Code="42">Предупреждение о покидании полосы (LDW)</Option>
+				<Option Code="44">Предупреждение при опасности при открытии дверей (D0W)</Option>
+				<Option Code="46">Система аварийного удержания в полосе (ELK)</Option>
+				<Option Code="41">Система автономного экстренного торможения (AEB)</Option>
+				<Option Code="20">Система кругового обзора 540°</Option>
+				<Option Code="22">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="37">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="38">Система помощи при движении в пробках (TJA/ICA)</Option>
+				<Option Code="45">Система помощи при перестроении (LDP)</Option>
+				<Option Code="43">Система помощи при смене полосы (LCA)</Option>
+				<Option Code="40">Система предупреждения о фронтальном столкновении (FCW)</Option>
+				<Option Code="23">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="31">Система удержания детских кресел Is0fix для 2-го ряда</Option>
+				<Option Code="34">Функция автоматического включения работы дворников при дожде (датчик дождя)</Option>
+				<Option Code="33">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="35">Функция отсрочки выключения фар (F0ll0w me h0me)</Option>
+				<Option Code="29">Шторки безопасности</Option>
+				<Option Code="16">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="63">Акустическое лобовое стекло</Option>
+				<Option Code="66">Вентиляция передних сидений</Option>
+				<Option Code="74">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="80">Дефлекторы для 2-го ряда</Option>
+				<Option Code="62">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="83">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="79">Климат-контроль, 2 зоны</Option>
+				<Option Code="64">Многослойные передние боковые стекла</Option>
+				<Option Code="81">Многофункциональное рулевое колесо</Option>
+				<Option Code="69">Обогрев лобового стекла</Option>
+				<Option Code="65">Обогрев передних сидений</Option>
+				<Option Code="68">Обогрев рулевого колеса</Option>
+				<Option Code="67">Обогрев сидений 2-го ряда</Option>
+				<Option Code="70">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="72">Отделка сидений искусственной кожей</Option>
+				<Option Code="78">Память настроек сидения водителя</Option>
+				<Option Code="76">Пассажирское сиденье с электрической регулировкой в 4-х направлениях</Option>
+				<Option Code="85">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="86">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="84">Подсветка в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="89">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="82">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="88">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="77">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="87">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="71">Черная отделка потолка</Option>
+				<Option Code="61">Электрохромное зеркало заднего вида</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="102">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A сзади</Option>
+				<Option Code="101">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A спереди</Option>
+				<Option Code="92">8 динамиков</Option>
+				<Option Code="94">Атмосферная подсветка интерьера</Option>
+				<Option Code="93">Беспроводная зарядка для смартфона (50W)</Option>
+				<Option Code="96">Беспроводное подключение Apple CarPlay/Andr0id Aut0</Option>
+				<Option Code="97">Голосовое управление</Option>
+				<Option Code="98">Навигация</Option>
+				<Option Code="104">Розетка на 12V сзади</Option>
+				<Option Code="103">Розетка на 12V спереди</Option>
+				<Option Code="99">Сенсорный дисплей 15.6&quot;</Option>
+				<Option Code="90">Сервисы 0M0DA C0nnect</Option>
+				<Option Code="100">Система &quot;Свободные руки&quot; (Hands free) с Bluet00th-связью с мобильным телефоном</Option>
+				<Option Code="95">Цветной экран с бортовым компьютером в панели приборов 8.9&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="2">19-дюймовые алюминиевые литые диски</Option>
+				<Option Code="15">Анимация атмосферной подсветки в ритм музыки</Option>
+				<Option Code="10">Анимированный приветственный свет</Option>
+				<Option Code="11">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="5">Задний спортивный спойлер</Option>
+				<Option Code="13">Память настройки зеркал</Option>
+				<Option Code="14">Панорамный люк</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="12">Электропривод складывания зеркал</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="58">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="52">Выбор режима вождения</Option>
+				<Option Code="51">Круиз-контроль</Option>
+				<Option Code="53">Проекционный дисплей (HUD)</Option>
+				<Option Code="50">Система остановки/запуска двигателя Start/St0p</Option>
+				<Option Code="57">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="59">Центральный замок с дистанционным управлением</Option>
+				<Option Code="55">Электрический стояночный тормоз с функцией Aut0H0ld</Option>
+				<Option Code="54">Электрический усилитель рулевого управления</Option>
+				<Option Code="60">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+	<CarOrder Title="Заказ на автомобиль" value="28507" DocNum="028251">
+		<StockQty Title="Количество в стоке">1</StockQty>
+		<picture_path path="" />
+		<pictures_real>
+				<pic ID="100399" type="99" seqno="1">http://aaa-motors.ru/IMG/VW_RST/028251/99_1_100399.png</pic>
+				<pic ID="100400" type="99" seqno="2">http://aaa-motors.ru/IMG/VW_RST/028251/99_2_100400.png</pic>
+				<pic ID="100401" type="99" seqno="3">http://aaa-motors.ru/IMG/VW_RST/028251/99_3_100401.png</pic>
+				<pic ID="100402" type="99" seqno="4">http://aaa-motors.ru/IMG/VW_RST/028251/99_4_100402.png</pic>
+				<pic ID="100403" type="99" seqno="5">http://aaa-motors.ru/IMG/VW_RST/028251/99_5_100403.png</pic>
+				<pic ID="100404" type="99" seqno="6">http://aaa-motors.ru/IMG/VW_RST/028251/99_6_100404.png</pic>
+				<pic ID="100405" type="99" seqno="7">http://aaa-motors.ru/IMG/VW_RST/028251/99_7_100405.png</pic>
+				<pic ID="100406" type="99" seqno="8">http://aaa-motors.ru/IMG/VW_RST/028251/99_8_100406.png</pic>
+				<pic ID="100407" type="99" seqno="9">http://aaa-motors.ru/IMG/VW_RST/028251/99_9_100407.png</pic>
+				<pic ID="100408" type="99" seqno="10">http://aaa-motors.ru/IMG/VW_RST/028251/99_10_100408.png</pic>
+				<pic ID="100409" type="99" seqno="11">http://aaa-motors.ru/IMG/VW_RST/028251/99_11_100409.png</pic>
+				<pic ID="100410" type="99" seqno="12">http://aaa-motors.ru/IMG/VW_RST/028251/99_12_100410.png</pic>
+				<pic ID="100411" type="99" seqno="13">http://aaa-motors.ru/IMG/VW_RST/028251/99_13_100411.png</pic>
+				<pic ID="100412" type="99" seqno="14">http://aaa-motors.ru/IMG/VW_RST/028251/99_14_100412.png</pic>
+				<pic ID="100413" type="99" seqno="15">http://aaa-motors.ru/IMG/VW_RST/028251/99_15_100413.png</pic>
+				<pic ID="100414" type="99" seqno="16">http://aaa-motors.ru/IMG/VW_RST/028251/99_16_100414.png</pic>
+				<pic ID="100415" type="99" seqno="17">http://aaa-motors.ru/IMG/VW_RST/028251/99_17_100415.png</pic>
+				<pic ID="100416" type="99" seqno="18">http://aaa-motors.ru/IMG/VW_RST/028251/99_18_100416.png</pic>
+				<pic ID="100417" type="99" seqno="19">http://aaa-motors.ru/IMG/VW_RST/028251/99_19_100417.png</pic>
+				<pic ID="100418" type="99" seqno="20">http://aaa-motors.ru/IMG/VW_RST/028251/99_20_100418.png</pic>
+				<pic ID="100419" type="99" seqno="21">http://aaa-motors.ru/IMG/VW_RST/028251/99_21_100419.png</pic>
+				<pic ID="100420" type="99" seqno="22">http://aaa-motors.ru/IMG/VW_RST/028251/99_22_100420.png</pic>
+				<pic ID="100421" type="99" seqno="23">http://aaa-motors.ru/IMG/VW_RST/028251/99_23_100421.png</pic>
+				<pic ID="100422" type="99" seqno="24">http://aaa-motors.ru/IMG/VW_RST/028251/99_24_100422.png</pic>
+				<pic ID="100423" type="99" seqno="25">http://aaa-motors.ru/IMG/VW_RST/028251/99_25_100423.png</pic>
+		</pictures_real>
+		<Mark Title="Марка"  Code="101-1412616046">OMODA</Mark>
+		<Model Title="Модель" Code="115795-1586612539">C74WD</Model>
+		<CodeCompl Title="Код комплектации">30183</CodeCompl>
+		<VIN Title="VIN">LVUGFB227SD830942</VIN>
+		<InteriorColor Title="Цвет салона"></InteriorColor>
+		<Color Title="Цвет">Crystal Black (CL)</Color>
+		<Price Title="Цена">3799900.00</Price>
+		<City Title="Город назначения">Ростов-на-Дону</City>
+		<ManufactureYear Title="Год выпуска">2025</ManufactureYear>
+		<FuelType Title="Тип топлива">бензин</FuelType>
+		<Engine Title="Двигатель"></Engine>
+		<Power Title="Мощность">150.00</Power>
+		<BodyType Title="Тип кузова">Кроссовер</BodyType>
+		<GearBoxType Title="Тип коробки">автомат</GearBoxType>
+		<DrivingGearType Title="Привод">полный</DrivingGearType>
+		<DoorQty Title="Количество дверей"></DoorQty>
+		<PTSColour Title="Цвет из ПТС">Черный</PTSColour>
+		<ModelYear Title="Модельный год">2025</ModelYear>
+		<EngineVol Title="Объем двигателя, см3">1598</EngineVol>
+		<FuelConsumption Title="Расход топлива">7,8</FuelConsumption>
+		<MaxTorque Title="Макс. крутящий момент">275 / 2000-3500</MaxTorque>
+		<Acceleration Title="Разгонная динамика до 100 км/ч">10,4</Acceleration>
+		<MaxSpeed Title="Максимальная скорость">190</MaxSpeed>
+		<EcoClass Title="Экологический класс">Euro 6</EcoClass>
+		<Dimensions Title="Габаритные размеры (Д*Ш*В)">4660?1875?1670</Dimensions>
+		<Weight Title="Масса">1753</Weight>
+		<CargoVolume Title="Объем багажника">639</CargoVolume>
+		<ComplLevel Title="Уровень комплектации"></ComplLevel>
+		<interior-code Title="Код цвета салона"></interior-code>
+		<color-code Title="Код цвета кузова">171</color-code>
+		<CarOrderIntStatus Title="Статус авто">0</CarOrderIntStatus>
+		<SalePrice Title="Специальная цена">0.00</SalePrice>
+		<MaxAdditionalDiscount    Title="Доп. скидка">0.00</MaxAdditionalDiscount   >
+		<MaxDiscountTradeIn       Title="Скидка за Трейд-Ин">0.00</MaxDiscountTradeIn>
+		<MaxDiscountCredit        Title="Скидка за Кредит">0.00</MaxDiscountCredit>
+		<MaxDiscountCasko         Title="Скидка за КАСКО">0.00</MaxDiscountCasko>
+		<MaxDiscountExtraGear     Title="Скидка за ДО">0.00</MaxDiscountExtraGear>
+		<MaxDiscountLifeInsurance Title="Скидка за СЖ">0.00</MaxDiscountLifeInsurance>
+
+		<StandardOptions>
+			<OptionsGroup Code="1" value="Безопасность">
+				<Option Code="49">Автоматическое запирание дверей на скорости</Option>
+				<Option Code="48">Автоматическое переключение ближнего/дальнего света (IHC)</Option>
+				<Option Code="39">Адаптивный круиз-контроль (ACC)</Option>
+				<Option Code="24">Антиблокировочная тормозная система (ABS)</Option>
+				<Option Code="32">Блокировка замков задних дверей от открывания детьми (детский замок)</Option>
+				<Option Code="27">Боковые передние подушки безопасности</Option>
+				<Option Code="25">Датчик превышения заданной скорости / ограничитель скорости</Option>
+				<Option Code="18">Задние датчики парковки</Option>
+				<Option Code="17">Иммобилайзер</Option>
+				<Option Code="21">Передние датчики парковки</Option>
+				<Option Code="30">Передние ремни безопасности с регулировкой по высоте</Option>
+				<Option Code="28">Подушка безопасности между передними сидениями</Option>
+				<Option Code="26">Подушки безопасности водителя и переднего пассажира</Option>
+				<Option Code="36">Полноразмерное запасное колесо</Option>
+				<Option Code="47">Предупреждение о заднем перекрестном столкновении (RCTB)</Option>
+				<Option Code="42">Предупреждение о покидании полосы (LDW)</Option>
+				<Option Code="44">Предупреждение при опасности при открытии дверей (D0W)</Option>
+				<Option Code="46">Система аварийного удержания в полосе (ELK)</Option>
+				<Option Code="41">Система автономного экстренного торможения (AEB)</Option>
+				<Option Code="20">Система кругового обзора 540°</Option>
+				<Option Code="22">Система мониторинга давления и температуры в шинах (TPMS)</Option>
+				<Option Code="37">Система мониторинга слепых зон (BSD)</Option>
+				<Option Code="38">Система помощи при движении в пробках (TJA/ICA)</Option>
+				<Option Code="45">Система помощи при перестроении (LDP)</Option>
+				<Option Code="43">Система помощи при смене полосы (LCA)</Option>
+				<Option Code="40">Система предупреждения о фронтальном столкновении (FCW)</Option>
+				<Option Code="23">Система стабилизации курсовой устойчивости (ESC)</Option>
+				<Option Code="31">Система удержания детских кресел Is0fix для 2-го ряда</Option>
+				<Option Code="34">Функция автоматического включения работы дворников при дожде (датчик дождя)</Option>
+				<Option Code="33">Функция автоматического включения фар при вождении в темное время (датчик света)</Option>
+				<Option Code="35">Функция отсрочки выключения фар (F0ll0w me h0me)</Option>
+				<Option Code="29">Шторки безопасности</Option>
+				<Option Code="16">Эра Глонасс/ Устройство вызова экстренной помощи</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="2" value="Комфорт">
+				<Option Code="63">Акустическое лобовое стекло</Option>
+				<Option Code="66">Вентиляция передних сидений</Option>
+				<Option Code="74">Водительское сиденье с электрической регулировкой в 6-ти направлениях</Option>
+				<Option Code="80">Дефлекторы для 2-го ряда</Option>
+				<Option Code="62">Дистанционный запуск двигателя и прогрева салона</Option>
+				<Option Code="83">Зеркало в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="79">Климат-контроль, 2 зоны</Option>
+				<Option Code="64">Многослойные передние боковые стекла</Option>
+				<Option Code="81">Многофункциональное рулевое колесо</Option>
+				<Option Code="69">Обогрев лобового стекла</Option>
+				<Option Code="65">Обогрев передних сидений</Option>
+				<Option Code="68">Обогрев рулевого колеса</Option>
+				<Option Code="67">Обогрев сидений 2-го ряда</Option>
+				<Option Code="70">Обогрев форсунок стеклоомывателя</Option>
+				<Option Code="72">Отделка сидений искусственной кожей</Option>
+				<Option Code="78">Память настроек сидения водителя</Option>
+				<Option Code="76">Пассажирское сиденье с электрической регулировкой в 4-х направлениях</Option>
+				<Option Code="85">Передние и задние электростеклоподъемники с защитой от защемления</Option>
+				<Option Code="86">Передний центральный подлокотник с ёмкостью для хранения</Option>
+				<Option Code="84">Подсветка в солнцезащитном козырьке водителя и пассажира</Option>
+				<Option Code="89">Потолочные светодиодные светильники для 2-го ряда сидений</Option>
+				<Option Code="82">Рулевая колонка с регулировкой в 4-х направлениях</Option>
+				<Option Code="88">Ручки для пассажиров с микролифтом</Option>
+				<Option Code="77">Складная спинка сидений 2-го ряда в соотношении 1/3-2/3</Option>
+				<Option Code="87">Центральный подлокотник для 2-го ряда сидений</Option>
+				<Option Code="71">Черная отделка потолка</Option>
+				<Option Code="61">Электрохромное зеркало заднего вида</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="5" value="Мультимедиа">
+				<Option Code="102">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A сзади</Option>
+				<Option Code="101">1 USB-разъем TYPE-C + 1 USB-разъем TYPE-A спереди</Option>
+				<Option Code="92">8 динамиков</Option>
+				<Option Code="94">Атмосферная подсветка интерьера</Option>
+				<Option Code="93">Беспроводная зарядка для смартфона (50W)</Option>
+				<Option Code="96">Беспроводное подключение Apple CarPlay/Andr0id Aut0</Option>
+				<Option Code="97">Голосовое управление</Option>
+				<Option Code="98">Навигация</Option>
+				<Option Code="104">Розетка на 12V сзади</Option>
+				<Option Code="103">Розетка на 12V спереди</Option>
+				<Option Code="99">Сенсорный дисплей 15.6&quot;</Option>
+				<Option Code="90">Сервисы 0M0DA C0nnect</Option>
+				<Option Code="100">Система &quot;Свободные руки&quot; (Hands free) с Bluet00th-связью с мобильным телефоном</Option>
+				<Option Code="95">Цветной экран с бортовым компьютером в панели приборов 8.9&quot;</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="7" value="Внешний вид">
+				<Option Code="2">19-дюймовые алюминиевые литые диски</Option>
+				<Option Code="15">Анимация атмосферной подсветки в ритм музыки</Option>
+				<Option Code="10">Анимированный приветственный свет</Option>
+				<Option Code="11">Боковые зеркала с электрической регулировкой, обогревом, повторителями поворотов</Option>
+				<Option Code="9">Динамические указатели поворота</Option>
+				<Option Code="5">Задний спортивный спойлер</Option>
+				<Option Code="13">Память настройки зеркал</Option>
+				<Option Code="14">Панорамный люк</Option>
+				<Option Code="7">Передние дневные светодиодные ходовые огни</Option>
+				<Option Code="8">Светодиодные задние фонари</Option>
+				<Option Code="6">Светодиодные фары основного света</Option>
+				<Option Code="12">Электропривод складывания зеркал</Option>
+			</OptionsGroup>
+			<OptionsGroup Code="8" value="Прочее">
+				<Option Code="56">Ассистент спуска с горы (HDC)</Option>
+				<Option Code="58">Бесключевой доступ и запуск двигателя кнопкой (ключ в кармане)</Option>
+				<Option Code="52">Выбор режима вождения</Option>
+				<Option Code="51">Круиз-контроль</Option>
+				<Option Code="53">Проекционный дисплей (HUD)</Option>
+				<Option Code="50">Система остановки/запуска двигателя Start/St0p</Option>
+				<Option Code="57">Система помощи при старте в гору (HAC)</Option>
+				<Option Code="59">Центральный замок с дистанционным управлением</Option>
+				<Option Code="55">Электрический стояночный тормоз с функцией Aut0H0ld</Option>
+				<Option Code="54">Электрический усилитель рулевого управления</Option>
+				<Option Code="60">Электропривод двери багажника (открытие багажника без помощи рук)</Option>
+			</OptionsGroup>
+		</StandardOptions>
+
+	</CarOrder>
+
+</DealerCenter>
+
