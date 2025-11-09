@@ -32,7 +32,8 @@ class Settings(BaseSettings):
     keycloak_client_secret: str = "your-client-secret"
 
     # Ollama (фолбэк/локальная генерация)
-    ollama_host: str = "http://host.docker.internal"
+    # Примечание: ollama_host должен быть БЕЗ http:// (протокол добавляется автоматически)
+    ollama_host: str = "host.docker.internal"
     ollama_port: int = 11434
     ollama_model: str = "llama3:8b"
 

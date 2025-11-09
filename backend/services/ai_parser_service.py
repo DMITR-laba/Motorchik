@@ -52,12 +52,6 @@ class AIParser:
         # Настройки Ollama
         self.use_ollama = use_ollama
         self.ollama_model = ollama_model or getattr(settings, 'ollama_model', 'llama3:8b')
-        self.ollama_urls = [
-            f"{getattr(settings, 'ollama_host', 'http://localhost')}:{getattr(settings, 'ollama_port', 11434)}",
-            "http://localhost:11434",
-            "http://host.docker.internal:11434",
-            "http://127.0.0.1:11434"
-        ]
         self.ollama_working_url = None
         
         # Инициализация NLP компонентов
@@ -177,24 +171,25 @@ class AIParser:
     
     def _check_ollama_availability(self):
         """Проверяет доступность Ollama и находит рабочий URL"""
-        for url in self.ollama_urls:
-            try:
-                if not url.startswith("http"):
-                    url = f"http://{url}"
-                
-                with httpx.Client(timeout=2.0) as client:
-                    response = client.get(f"{url}/api/version")
-                    if response.status_code == 200:
-                        self.ollama_working_url = url
-                        logger.info(f"✅ Ollama доступен: {url}, модель: {self.ollama_model}")
-                        return True
-            except Exception as e:
-                logger.debug(f"Ollama недоступен по адресу {url}: {e}")
-                continue
+        import asyncio
+        from services.ollama_utils import find_working_ollama_url
         
-        logger.warning("⚠️ Ollama недоступен. Функции с LLM будут отключены.")
-        self.use_ollama = False
-        return False
+        # Используем async функцию для поиска рабочего URL
+        try:
+            loop = asyncio.get_event_loop()
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+        
+        working_url = loop.run_until_complete(find_working_ollama_url(timeout=2.0))
+        if working_url:
+            self.ollama_working_url = working_url
+            logger.info(f"✅ Ollama доступен: {working_url}, модель: {self.ollama_model}")
+            return True
+        else:
+            logger.warning("⚠️ Ollama недоступен. Функции с LLM будут отключены.")
+            self.use_ollama = False
+            return False
     
     async def _call_ollama(self, prompt: str, system_prompt: Optional[str] = None) -> Optional[str]:
         """

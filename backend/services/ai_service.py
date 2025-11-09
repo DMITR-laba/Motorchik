@@ -8,31 +8,12 @@ from app.core.config import settings
 class AIService:
     def __init__(self):
         # Используем настройки из config.py
-        ollama_host = getattr(settings, 'ollama_host', 'http://localhost')
-        ollama_port = getattr(settings, 'ollama_port', 11434)
-        self.ollama_base_url = f"{ollama_host}:{ollama_port}"
-        
-        # Альтернативные адреса для проверки
-        self.ollama_urls = [
-            f"{ollama_host}:{ollama_port}",
-            "http://localhost:11434",
-            "http://host.docker.internal:11434"
-        ]
+        pass
     
     async def _find_working_ollama_url(self) -> Optional[str]:
         """Находит рабочий URL для Ollama"""
-        for url in self.ollama_urls:
-            try:
-                async with httpx.AsyncClient() as client:
-                    response = await client.get(
-                        f"{url}/api/version",
-                        timeout=2.0
-                    )
-                    if response.status_code == 200:
-                        return url
-            except:
-                continue
-        return None
+        from services.ollama_utils import find_working_ollama_url
+        return await find_working_ollama_url(timeout=2.0)
         
     async def test_api_connection(self, service: str, key: str) -> Dict[str, Any]:
         """Тестирование подключения к внешнему API"""

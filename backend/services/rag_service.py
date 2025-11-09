@@ -145,12 +145,12 @@ async def _generate_with_ai_settings(prompt: str) -> tuple[str, Dict[str, str]]:
 
 async def _generate_with_ollama_async(model_name: str, prompt: str) -> str:
     """Генерация ответа через Ollama"""
-    # Пробуем разные адреса Ollama
-    ollama_urls = [
-        f"{settings.ollama_host}:{settings.ollama_port}",
-        "http://localhost:11434",
-        "http://host.docker.internal:11434"
-    ]
+    from services.ollama_utils import find_working_ollama_url
+    
+    # Находим рабочий URL для Ollama
+    working_url = await find_working_ollama_url(timeout=2.0)
+    if not working_url:
+        raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
 
     payload = {
         "model": model_name,
@@ -158,17 +158,14 @@ async def _generate_with_ollama_async(model_name: str, prompt: str) -> str:
         "stream": False
     }
 
-    for url in ollama_urls:
-        try:
-            async with httpx.AsyncClient() as client:
-                resp = await client.post(f"{url}/api/generate", json=payload, timeout=120)
-                resp.raise_for_status()
-                data = resp.json()
-                return data.get("response", "")
-        except:
-            continue
-
-    raise Exception("Не удается подключиться к Ollama ни по одному из адресов")
+    try:
+        async with httpx.AsyncClient() as client:
+            resp = await client.post(f"{working_url}/api/generate", json=payload, timeout=120)
+            resp.raise_for_status()
+            data = resp.json()
+            return data.get("response", "")
+    except Exception as e:
+        raise Exception(f"Ошибка при обращении к Ollama по адресу {working_url}: {str(e)}")
 
 async def _generate_with_mistral_async(model_name: str, api_key: str, prompt: str) -> str:
     """Генерация ответа через Mistral API"""
@@ -367,14 +364,19 @@ def _generate_with_ollama_standalone(prompt: str) -> str:
     Standalone функция для генерации через Ollama (для использования в _generate_with_mistral)
     """
     import requests
+    import asyncio
+    from services.ollama_utils import find_working_ollama_url
     
-    # Пробуем разные адреса Ollama
-    ollama_urls = [
-        f"{settings.ollama_host}:{settings.ollama_port}",
-        "http://localhost:11434",
-        "http://host.docker.internal:11434",
-        "http://127.0.0.1:11434"
-    ]
+    # Используем async функцию для поиска рабочего URL
+    try:
+        loop = asyncio.get_event_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+    
+    working_url = loop.run_until_complete(find_working_ollama_url(timeout=2.0))
+    if not working_url:
+        raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
     
     payload = {
         "model": settings.ollama_model,
@@ -382,20 +384,16 @@ def _generate_with_ollama_standalone(prompt: str) -> str:
         "stream": False
     }
     
-    for url in ollama_urls:
-        try:
-            if not url.startswith("http"):
-                url = f"http://{url}"
-            resp = requests.post(f"{url}/api/generate", json=payload, timeout=120)
-            resp.raise_for_status()
-            data = resp.json()
-            response_text = data.get("response", "")
-            if response_text:
-                return response_text
-        except Exception:
-            continue
-    
-    raise Exception("Не удается подключиться к Ollama ни по одному из адресов")
+    try:
+        resp = requests.post(f"{working_url}/api/generate", json=payload, timeout=120)
+        resp.raise_for_status()
+        data = resp.json()
+        response_text = data.get("response", "")
+        if response_text:
+            return response_text
+        raise Exception("Пустой ответ от Ollama")
+    except Exception as e:
+        raise Exception(f"Ошибка при обращении к Ollama по адресу {working_url}: {str(e)}")
 
 
 class RAGService:

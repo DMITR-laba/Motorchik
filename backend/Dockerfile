@@ -23,9 +23,15 @@ RUN pip install --upgrade pip && pip install --no-cache-dir -r /app/requirements
 # Копирование кода приложения
 COPY . /app
 
-# Копирование entrypoint скрипта
-COPY docker-entrypoint.sh /app/docker-entrypoint.sh
-RUN chmod +x /app/docker-entrypoint.sh
+# Установка прав на entrypoint скрипт и исправление окончаний строк (CRLF -> LF)
+RUN if [ ! -f /app/docker-entrypoint.sh ]; then \
+        echo "ERROR: docker-entrypoint.sh not found!" && \
+        ls -la /app/ | grep -E "(docker|entrypoint)" && \
+        exit 1; \
+    fi && \
+    chmod +x /app/docker-entrypoint.sh && \
+    sed -i 's/\r$//' /app/docker-entrypoint.sh && \
+    echo "✅ docker-entrypoint.sh готов к использованию"
 
 EXPOSE 8000
 

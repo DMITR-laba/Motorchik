@@ -233,10 +233,10 @@ class SQLAgentService:
             schema = self.get_database_schema()
             
             # Формируем улучшенный промпт для LLM
-            prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует SQLite.
+            prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует PostgreSQL.
 
 ═══════════════════════════════════════════════════════════════════════════════
-КРИТИЧЕСКИ ВАЖНЫЕ ПРАВИЛА ДЛЯ SQLite:
+КРИТИЧЕСКИ ВАЖНЫЕ ПРАВИЛА ДЛЯ PostgreSQL:
 ═══════════════════════════════════════════════════════════════════════════════
 
 1. БЕЗОПАСНОСТЬ:
@@ -244,11 +244,11 @@ class SQLAgentService:
    - НЕ используй: DROP, DELETE, INSERT, UPDATE, ALTER, CREATE, EXEC, EXECUTE
    - Запрещены любые операции изменения данных
 
-2. SQLite ОГРАНИЧЕНИЯ:
-   - SQLite НЕ поддерживает регулярные выражения (REGEXP, REGEXP_LIKE)
-   - SQLite НЕ поддерживает сложные регулярные выражения в REPLACE()
+2. PostgreSQL ОСОБЕННОСТИ:
+   - PostgreSQL поддерживает регулярные выражения (SIMILAR TO, ~)
    - Для очистки строк используй вложенные REPLACE(): REPLACE(REPLACE(REPLACE(...)))
    - Используй стандартные SQL функции: UPPER(), LOWER(), LIKE, CAST()
+   - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
    - ВСЕГДА используй UPPER() с LIKE для поиска марок (НЕ используй =):
@@ -263,19 +263,36 @@ class SQLAgentService:
    
    - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй LIKE, а не =
 
-4. РАБОТА С ЦЕНАМИ (SQLite):
-   - Цена хранится как STRING и может содержать: пробелы, запятые, символ ₽
-   - Очистка цены для SQLite (используй вложенные REPLACE):
-     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS REAL)
-     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(price, ' ', ''), ',', '.') AS REAL)
-     ❌ НЕПРАВИЛЬНО: REPLACE(price, '[^0-9]', '') (SQLite не поддерживает regex)
+4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
+   - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
+   - ⚠️ PostgreSQL ТРЕБУЕТ явного приведения типа при сравнении строки с числом!
+   - Очистка и приведение цены для PostgreSQL (используй вложенные REPLACE + CAST):
+     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC)
+     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(price, ' ', ''), ',', '.') AS NUMERIC)
+     ✅ ПРАВИЛЬНО: (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC
+   
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: При сравнении цены с числом ВСЕГДА приводи тип:
+     ✅ ПРАВИЛЬНО: WHERE CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 50000
+     ✅ ПРАВИЛЬНО: WHERE (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC < 50000
+     ❌ НЕПРАВИЛЬНО: WHERE price < 50000  -- ОШИБКА! PostgreSQL не может сравнить VARCHAR с INTEGER
+     ❌ НЕПРАВИЛЬНО: WHERE c.price < 50000  -- ОШИБКА! Нужно явное приведение типа
+   
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: При сортировке по цене ВСЕГДА приводи тип:
+     ✅ ПРАВИЛЬНО: ORDER BY CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) ASC
+     ✅ ПРАВИЛЬНО: ORDER BY (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC ASC
+     ❌ НЕПРАВИЛЬНО: ORDER BY price ASC  -- ОШИБКА! Нужно явное приведение типа для числовой сортировки
+     ❌ НЕПРАВИЛЬНО: ORDER BY c.price ASC  -- ОШИБКА! Нужно явное приведение типа
+   
+   - Для удобства можно создать псевдоним в SELECT:
+     ✅ ПРАВИЛЬНО: SELECT ..., CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) AS price_num
+                   WHERE price_num < 50000
+                   ORDER BY price_num ASC
    
    - Всегда проверяй наличие цены:
      ✅ ПРАВИЛЬНО: WHERE price IS NOT NULL AND price != ''
 
 5. ПОИСК ПО ТИПАМ (КПП, топливо, кузов):
-   - ⚠️ КРИТИЧЕСКИ ВАЖНО: В SQLite UPPER() с кириллицей работает НЕКОРРЕКТНО!
-     ❌ НЕ используй: UPPER(fuel_type) LIKE '%БЕНЗИН%' (НЕ РАБОТАЕТ в SQLite!)
+   - В PostgreSQL UPPER() и LOWER() с кириллицей работают корректно
    
    - В базе РАЗНЫЕ варианты написания в таблицах cars и used_cars:
      - Топливо в cars: 'бензин' (маленькими), в used_cars: 'Бензин' (с заглавной)
@@ -1458,6 +1475,89 @@ SQL запрос:"""
         
         return original_sql
     
+    def _fix_price_type_errors(self, sql: str) -> str:
+        """
+        Автоматически исправляет ошибки приведения типов для price в PostgreSQL
+        Добавляет CAST для сравнений price с числами и для ORDER BY
+        """
+        original_sql = sql
+        sql_upper = sql.upper()
+        
+        # Функция для создания выражения приведения типа для price
+        def make_price_cast(price_expr: str) -> str:
+            """Создает выражение CAST для price"""
+            # Убираем лишние пробелы
+            price_expr = price_expr.strip()
+            # Если уже есть CAST, не трогаем
+            if 'CAST(' in price_expr.upper() or '::NUMERIC' in price_expr.upper():
+                return price_expr
+            # Создаем CAST выражение
+            return f"CAST(REPLACE(REPLACE(REPLACE({price_expr}, ' ', ''), '₽', ''), ',', '.') AS NUMERIC)"
+        
+        # Исправление 1: Сравнения price с числами в WHERE
+        # Паттерн: WHERE price < 50000 или WHERE c.price < 50000 или AND price < 50000
+        def replace_price_comparison(match):
+            prefix = match.group(1)  # все до price
+            price_expr = match.group(2)  # price или c.price
+            operator = match.group(3)  # <, >, =, <=, >=
+            number = match.group(4)  # число
+            
+            # Создаем новое выражение с CAST
+            new_expr = f"{make_price_cast(price_expr)} {operator} {number}"
+            return prefix + new_expr
+        
+        # Заменяем все сравнения price с числами (включая AND/OR)
+        sql = re.sub(
+            r'(\b(?:WHERE|AND|OR)\s+.*?)(\b(?:c\.)?price\s*)([<>=]+)\s*(\d+)',
+            replace_price_comparison,
+            sql,
+            flags=re.IGNORECASE
+        )
+        
+        # Исправление 2: ORDER BY price без приведения типа
+        # Паттерн: ORDER BY price ASC или ORDER BY c.price ASC
+        if 'ORDER BY' in sql_upper and 'PRICE' in sql_upper:
+            # Проверяем, есть ли уже CAST в ORDER BY для price
+            order_by_match = re.search(r'ORDER BY\s+(.+?)(?:\s+(?:ASC|DESC))?\s*$', sql, re.IGNORECASE | re.DOTALL)
+            if order_by_match:
+                order_expr = order_by_match.group(1).strip()
+                # Если в ORDER BY есть просто price или c.price без CAST
+                if re.search(r'\b(?:c\.)?price\b', order_expr, re.IGNORECASE) and 'CAST(' not in order_expr.upper() and '::NUMERIC' not in order_expr.upper():
+                    # Заменяем price на CAST выражение
+                    # Используем более точную замену, чтобы не затронуть другие части выражения
+                    def replace_price_in_order(m):
+                        price_match = m.group(0)
+                        # Проверяем, что это действительно price, а не часть другого слова
+                        if price_match.lower() in ['price', 'c.price']:
+                            return make_price_cast(price_match)
+                        return price_match
+                    
+                    order_expr = re.sub(
+                        r'\b(?:c\.)?price\b',
+                        replace_price_in_order,
+                        order_expr,
+                        flags=re.IGNORECASE
+                    )
+                    # Восстанавливаем ORDER BY с сохранением ASC/DESC
+                    asc_desc_match = re.search(r'(ORDER BY\s+)(.+?)(\s+(?:ASC|DESC))?\s*$', sql, re.IGNORECASE | re.DOTALL)
+                    if asc_desc_match:
+                        asc_desc = asc_desc_match.group(3) or ''
+                        sql = re.sub(
+                            r'ORDER BY\s+.+?(?:\s+(?:ASC|DESC))?\s*$',
+                            f'ORDER BY {order_expr}{asc_desc}',
+                            sql,
+                            flags=re.IGNORECASE | re.DOTALL
+                        )
+                    else:
+                        sql = re.sub(
+                            r'ORDER BY\s+.+?(?:\s+(?:ASC|DESC))?\s*$',
+                            f'ORDER BY {order_expr}',
+                            sql,
+                            flags=re.IGNORECASE | re.DOTALL
+                        )
+        
+        return sql if sql != original_sql else original_sql
+    
     def _fix_options_sql_errors(self, sql: str) -> str:
         """
         Автоматически исправляет ошибки в SQL запросах для опций
@@ -1825,6 +1925,29 @@ SQL запрос:"""
                                 pass
             
             # Исправление ORDER BY ошибок
+            # Автоматическое исправление ошибок приведения типов для price
+            if auto_fix and ('operator does not exist' in error_str and 'character varying' in error_str and 'price' in sql_query.lower()):
+                print(f"⚠️ Обнаружена ошибка приведения типа для price. Пытаюсь исправить...")
+                fixed_sql = self._fix_price_type_errors(sql_query)
+                if fixed_sql != sql_query:
+                    try:
+                        print(f"✅ Применяю исправление приведения типа для price...")
+                        result = self.db_session.execute(text(fixed_sql))
+                        rows = result.fetchall()
+                        columns = result.keys() if rows else []
+                        data = [dict(zip(columns, row)) for row in rows]
+                        all_data = data[:500]
+                        return {
+                            "success": True,
+                            "data": all_data,
+                            "columns": list(columns),
+                            "row_count": len(data),
+                            "error": None,
+                            "sql": fixed_sql
+                        }
+                    except Exception as retry_e:
+                        print(f"⚠️ Исправление приведения типа не помогло: {str(retry_e)[:100]}")
+            
             if auto_fix and ('ORDER BY term does not match' in error_str or 'ORDER BY' in error_str):
                 print(f"⚠️ Обнаружена ошибка ORDER BY. Пытаюсь исправить...")
                 fixed_sql = self._fix_union_order_by_errors(sql_query)
@@ -2054,10 +2177,10 @@ SQL запрос:"""
                 try:
                     schema = self.get_database_schema()
                     # Используем полный промпт из generate_sql_from_natural_language
-                    prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует SQLite.
+                    prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует PostgreSQL.
 
 ═══════════════════════════════════════════════════════════════════════════════
-КРИТИЧЕСКИ ВАЖНЫЕ ПРАВИЛА ДЛЯ SQLite:
+КРИТИЧЕСКИ ВАЖНЫЕ ПРАВИЛА ДЛЯ PostgreSQL:
 ═══════════════════════════════════════════════════════════════════════════════
 
 1. БЕЗОПАСНОСТЬ:
@@ -2065,11 +2188,11 @@ SQL запрос:"""
    - НЕ используй: DROP, DELETE, INSERT, UPDATE, ALTER, CREATE, EXEC, EXECUTE
    - Запрещены любые операции изменения данных
 
-2. SQLite ОГРАНИЧЕНИЯ:
-   - SQLite НЕ поддерживает регулярные выражения (REGEXP, REGEXP_LIKE)
-   - SQLite НЕ поддерживает сложные регулярные выражения в REPLACE()
+2. PostgreSQL ОСОБЕННОСТИ:
+   - PostgreSQL поддерживает регулярные выражения (SIMILAR TO, ~)
    - Для очистки строк используй вложенные REPLACE(): REPLACE(REPLACE(REPLACE(...)))
    - Используй стандартные SQL функции: UPPER(), LOWER(), LIKE, CAST()
+   - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
    - ВСЕГДА используй UPPER() с LIKE для поиска марок (НЕ используй =):
@@ -2084,19 +2207,36 @@ SQL запрос:"""
    
    - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй LIKE, а не =
 
-4. РАБОТА С ЦЕНАМИ (SQLite):
-   - Цена хранится как STRING и может содержать: пробелы, запятые, символ ₽
-   - Очистка цены для SQLite (используй вложенные REPLACE):
-     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS REAL)
-     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(price, ' ', ''), ',', '.') AS REAL)
-     ❌ НЕПРАВИЛЬНО: REPLACE(price, '[^0-9]', '') (SQLite не поддерживает regex)
+4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
+   - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
+   - ⚠️ PostgreSQL ТРЕБУЕТ явного приведения типа при сравнении строки с числом!
+   - Очистка и приведение цены для PostgreSQL (используй вложенные REPLACE + CAST):
+     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC)
+     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(price, ' ', ''), ',', '.') AS NUMERIC)
+     ✅ ПРАВИЛЬНО: (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC
+   
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: При сравнении цены с числом ВСЕГДА приводи тип:
+     ✅ ПРАВИЛЬНО: WHERE CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 50000
+     ✅ ПРАВИЛЬНО: WHERE (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC < 50000
+     ❌ НЕПРАВИЛЬНО: WHERE price < 50000  -- ОШИБКА! PostgreSQL не может сравнить VARCHAR с INTEGER
+     ❌ НЕПРАВИЛЬНО: WHERE c.price < 50000  -- ОШИБКА! Нужно явное приведение типа
+   
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: При сортировке по цене ВСЕГДА приводи тип:
+     ✅ ПРАВИЛЬНО: ORDER BY CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) ASC
+     ✅ ПРАВИЛЬНО: ORDER BY (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC ASC
+     ❌ НЕПРАВИЛЬНО: ORDER BY price ASC  -- ОШИБКА! Нужно явное приведение типа для числовой сортировки
+     ❌ НЕПРАВИЛЬНО: ORDER BY c.price ASC  -- ОШИБКА! Нужно явное приведение типа
+   
+   - Для удобства можно создать псевдоним в SELECT:
+     ✅ ПРАВИЛЬНО: SELECT ..., CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) AS price_num
+                   WHERE price_num < 50000
+                   ORDER BY price_num ASC
    
    - Всегда проверяй наличие цены:
      ✅ ПРАВИЛЬНО: WHERE price IS NOT NULL AND price != ''
 
 5. ПОИСК ПО ТИПАМ (КПП, топливо, кузов):
-   - ⚠️ КРИТИЧЕСКИ ВАЖНО: В SQLite UPPER() с кириллицей работает НЕКОРРЕКТНО!
-     ❌ НЕ используй: UPPER(fuel_type) LIKE '%БЕНЗИН%' (НЕ РАБОТАЕТ в SQLite!)
+   - В PostgreSQL UPPER() и LOWER() с кириллицей работают корректно
    
    - В базе РАЗНЫЕ варианты написания в таблицах cars и used_cars:
      - Топливо в cars: 'бензин' (маленькими), в used_cars: 'Бензин' (с заглавной)
@@ -2201,10 +2341,10 @@ SQL запрос:"""
     
     def _build_sql_prompt(self, question: str, schema: str) -> str:
         """Строит промпт для генерации SQL запроса"""
-        prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует SQLite.
+        prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует PostgreSQL.
 
 ═══════════════════════════════════════════════════════════════════════════════
-КРИТИЧЕСКИ ВАЖНЫЕ ПРАВИЛА ДЛЯ SQLite:
+КРИТИЧЕСКИ ВАЖНЫЕ ПРАВИЛА ДЛЯ PostgreSQL:
 ═══════════════════════════════════════════════════════════════════════════════
 
 1. БЕЗОПАСНОСТЬ:
@@ -2212,11 +2352,11 @@ SQL запрос:"""
    - НЕ используй: DROP, DELETE, INSERT, UPDATE, ALTER, CREATE, EXEC, EXECUTE
    - Запрещены любые операции изменения данных
 
-2. SQLite ОГРАНИЧЕНИЯ:
-   - SQLite НЕ поддерживает регулярные выражения (REGEXP, REGEXP_LIKE)
-   - SQLite НЕ поддерживает сложные регулярные выражения в REPLACE()
+2. PostgreSQL ОСОБЕННОСТИ:
+   - PostgreSQL поддерживает регулярные выражения (SIMILAR TO, ~)
    - Для очистки строк используй вложенные REPLACE(): REPLACE(REPLACE(REPLACE(...)))
    - Используй стандартные SQL функции: UPPER(), LOWER(), LIKE, CAST()
+   - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
    - ВСЕГДА используй UPPER() с LIKE для поиска марок (НЕ используй =):
@@ -2231,19 +2371,36 @@ SQL запрос:"""
    
    - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй LIKE, а не =
 
-4. РАБОТА С ЦЕНАМИ (SQLite):
-   - Цена хранится как STRING и может содержать: пробелы, запятые, символ ₽
-   - Очистка цены для SQLite (используй вложенные REPLACE):
-     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS REAL)
-     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(price, ' ', ''), ',', '.') AS REAL)
-     ❌ НЕПРАВИЛЬНО: REPLACE(price, '[^0-9]', '') (SQLite не поддерживает regex)
+4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
+   - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
+   - ⚠️ PostgreSQL ТРЕБУЕТ явного приведения типа при сравнении строки с числом!
+   - Очистка и приведение цены для PostgreSQL (используй вложенные REPLACE + CAST):
+     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC)
+     ✅ ПРАВИЛЬНО: CAST(REPLACE(REPLACE(price, ' ', ''), ',', '.') AS NUMERIC)
+     ✅ ПРАВИЛЬНО: (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC
+   
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: При сравнении цены с числом ВСЕГДА приводи тип:
+     ✅ ПРАВИЛЬНО: WHERE CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 50000
+     ✅ ПРАВИЛЬНО: WHERE (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC < 50000
+     ❌ НЕПРАВИЛЬНО: WHERE price < 50000  -- ОШИБКА! PostgreSQL не может сравнить VARCHAR с INTEGER
+     ❌ НЕПРАВИЛЬНО: WHERE c.price < 50000  -- ОШИБКА! Нужно явное приведение типа
+   
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: При сортировке по цене ВСЕГДА приводи тип:
+     ✅ ПРАВИЛЬНО: ORDER BY CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) ASC
+     ✅ ПРАВИЛЬНО: ORDER BY (REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.'))::NUMERIC ASC
+     ❌ НЕПРАВИЛЬНО: ORDER BY price ASC  -- ОШИБКА! Нужно явное приведение типа для числовой сортировки
+     ❌ НЕПРАВИЛЬНО: ORDER BY c.price ASC  -- ОШИБКА! Нужно явное приведение типа
+   
+   - Для удобства можно создать псевдоним в SELECT:
+     ✅ ПРАВИЛЬНО: SELECT ..., CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) AS price_num
+                   WHERE price_num < 50000
+                   ORDER BY price_num ASC
    
    - Всегда проверяй наличие цены:
      ✅ ПРАВИЛЬНО: WHERE price IS NOT NULL AND price != ''
 
 5. ПОИСК ПО ТИПАМ (КПП, топливо, кузов):
-   - ⚠️ КРИТИЧЕСКИ ВАЖНО: В SQLite UPPER() с кириллицей работает НЕКОРРЕКТНО!
-     ❌ НЕ используй: UPPER(fuel_type) LIKE '%БЕНЗИН%' (НЕ РАБОТАЕТ в SQLite!)
+   - В PostgreSQL UPPER() и LOWER() с кириллицей работают корректно
    
    - В базе РАЗНЫЕ варианты написания в таблицах cars и used_cars:
      - Топливо в cars: 'бензин' (маленькими), в used_cars: 'Бензин' (с заглавной)
@@ -2331,11 +2488,12 @@ SQL запрос:"""
     
     async def _generate_with_ollama(self, model_name: str, prompt: str, system_prompt: str = None) -> str:
         """Генерация через Ollama с поддержкой chat API"""
-        ollama_urls = [
-            "http://localhost:11434",  # Приоритет localhost
-            f"http://{settings.ollama_host}:{settings.ollama_port}",
-            "http://host.docker.internal:11434"
-        ]
+        from services.ollama_utils import find_working_ollama_url
+        
+        # Находим рабочий URL для Ollama
+        working_url = await find_working_ollama_url(timeout=2.0)
+        if not working_url:
+            raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
         
         # Используем chat API для лучшей поддержки system prompt
         if system_prompt is None:
@@ -2354,34 +2512,30 @@ SQL запрос:"""
             }
         }
         
-        for url in ollama_urls:
-            try:
-                async with httpx.AsyncClient() as client:
-                    # Пробуем chat API сначала
-                    try:
-                        resp = await client.post(f"{url}/api/chat", json=payload, timeout=180)
-                        resp.raise_for_status()
-                        data = resp.json()
-                        message = data.get("message", {})
-                        if message:
-                            return message.get("content", "")
-                        return data.get("response", "")
-                    except:
-                        # Fallback на старый generate API
-                        old_payload = {
-                            "model": model_name,
-                            "prompt": f"{system_prompt}\n\n{prompt}",
-                            "stream": False
-                        }
-                        resp = await client.post(f"{url}/api/generate", json=old_payload, timeout=180)
-                        resp.raise_for_status()
-                        data = resp.json()
-                        return data.get("response", "")
-            except Exception as e:
-                print(f"⚠️ Ollama недоступен по адресу {url}: {str(e)[:100]}")
-                continue
-        
-        raise Exception("Не удается подключиться к Ollama")
+        try:
+            async with httpx.AsyncClient() as client:
+                # Пробуем chat API сначала
+                try:
+                    resp = await client.post(f"{working_url}/api/chat", json=payload, timeout=180)
+                    resp.raise_for_status()
+                    data = resp.json()
+                    message = data.get("message", {})
+                    if message:
+                        return message.get("content", "")
+                    return data.get("response", "")
+                except:
+                    # Fallback на старый generate API
+                    old_payload = {
+                        "model": model_name,
+                        "prompt": f"{system_prompt}\n\n{prompt}",
+                        "stream": False
+                    }
+                    resp = await client.post(f"{working_url}/api/generate", json=old_payload, timeout=180)
+                    resp.raise_for_status()
+                    data = resp.json()
+                    return data.get("response", "")
+        except Exception as e:
+            raise Exception(f"Ошибка при обращении к Ollama по адресу {working_url}: {str(e)}")
     
     async def _generate_with_mistral(self, model_name: str, api_key: str, prompt: str) -> str:
         """Генерация через Mistral API с автоматическим переключением на Llama 3:8b при rate limit"""

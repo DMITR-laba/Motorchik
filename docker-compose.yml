@@ -55,7 +55,7 @@ services:
       - POSTGRES_PASSWORD=password
       - ELASTICSEARCH_HOST=motorchik-elasticsearch
       - ELASTICSEARCH_PORT=9200
-      - OLLAMA_HOST=http://host.docker.internal
+      - OLLAMA_HOST=host.docker.internal
       - OLLAMA_PORT=11434
       - OLLAMA_MODEL=llama3:8b
     ports:
@@ -70,7 +70,6 @@ services:
     restart: unless-stopped
     networks:
       - default
-    entrypoint: ["/app/docker-entrypoint.sh"]
 
   motorchik-frontend:
     build:
