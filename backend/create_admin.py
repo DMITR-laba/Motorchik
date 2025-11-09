@@ -71,6 +71,19 @@ def create_admin(email: str = None, password: str = None, full_name: str = None)
                 return
         else:
             print("\n✅ Пользователь уже является администратором")
+            # Принудительно обновляем пароль, если он указан явно
+            if password:
+                print(f"🔄 Обновление пароля...")
+                existing_user.hashed_password = get_password_hash(admin_password)
+                existing_user.is_active = True
+                existing_user.role = 'admin'
+                db.commit()
+                db.refresh(existing_user)
+                print("✅ Пароль обновлен!")
+                print(f"   📧 Email: {existing_user.email}")
+                print(f"   🔑 Пароль: {admin_password}")
+                print(f"   ✅ Активен: {'Да' if existing_user.is_active else 'Нет'}")
+                print(f"   🎭 Роль: {existing_user.role}")
             return
     
     # Создаем нового администратора

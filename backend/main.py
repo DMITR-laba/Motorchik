@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import chat, admin, auth, documents, chunks, ai, cars
 from app.api import search_es
-from app.api import import_api, parser_api, voice_api
+from app.api import import_api, parser_api, voice_api, domain_api
 from app.core.config import settings
 from models import Base, engine
 from models import database  # Импортируем модели для создания таблиц
@@ -74,6 +74,7 @@ app.include_router(cars.router)
 app.include_router(search_es.router)
 app.include_router(parser_api.router, prefix="/api")
 app.include_router(voice_api.router, prefix="/api")
+app.include_router(domain_api.router)
 
 
 @app.get("/")

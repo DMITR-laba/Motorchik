@@ -63,6 +63,8 @@ services:
     #   - "8000:8000"
     volumes:
       - ./sqlite:/app/sqlite:ro
+      - ./nginx/conf.d:/app/nginx/conf.d:rw
+      - ./certbot/conf:/app/certbot/conf:rw
     depends_on:
       motorchik-postgres:
         condition: service_healthy

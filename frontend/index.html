@@ -291,6 +291,9 @@
                     <button id="importTab" onclick="showImportTab()" class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
                         Импорт
                     </button>
+                    <button id="domainTab" onclick="showDomainTab()" class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+                        Настройка домена
+                    </button>
                 </div>
             </div>
 
@@ -1131,6 +1134,67 @@
                 </div>
             </div>
 
+            <!-- Секция настройки домена -->
+            <div id="domainSection" class="mb-6 relative hidden">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Настройка доменного имени</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Доменное имя
+                            </label>
+                            <input type="text" 
+                                   id="domainNameInput" 
+                                   placeholder="app.domain" 
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            <p class="mt-1 text-sm text-gray-500">
+                                Введите доменное имя для вашего приложения (например: app.domain, myapp.com)
+                            </p>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Текущий домен
+                            </label>
+                            <div id="currentDomainDisplay" class="px-4 py-2 bg-gray-50 border border-gray-200 rounded-lg">
+                                <span class="text-gray-500">Загрузка...</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <button onclick="saveDomainSettings()" 
+                                    class="flex items-center gap-2 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                                <i data-feather="save"></i>
+                                <span>Сохранить домен</span>
+                            </button>
+                            <button onclick="testDomainConnection()" 
+                                    class="flex items-center gap-2 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                                <i data-feather="check-circle"></i>
+                                <span>Проверить подключение</span>
+                            </button>
+                            <button onclick="reloadNginx()" 
+                                    class="flex items-center gap-2 px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+                                <i data-feather="refresh-cw"></i>
+                                <span>Перезагрузить Nginx</span>
+                            </button>
+                        </div>
+
+                        <div id="domainStatusMessage" class="hidden mt-4 p-4 rounded-lg"></div>
+
+                        <div class="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                            <h4 class="text-sm font-semibold text-blue-800 mb-2">Информация</h4>
+                            <ul class="text-sm text-blue-700 space-y-1">
+                                <li>• После сохранения домен будет применен к конфигурации Nginx</li>
+                                <li>• Убедитесь, что DNS запись указывает на IP вашего сервера</li>
+                                <li>• Для применения изменений может потребоваться перезагрузка Nginx</li>
+                                <li>• SSL сертификаты будут автоматически обновлены для нового домена</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Модальное окно для импорта -->
             <div id="importModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
                 <div class="bg-white rounded-lg p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
@@ -1555,7 +1619,9 @@
         }
 
         // API base
-        const API_BASE = 'http://localhost:8000';
+        // API_BASE использует относительный путь для работы через Nginx
+        // В production можно использовать абсолютный URL
+        const API_BASE = window.location.origin; // Использует текущий домен (http://localhost или https://localhost)
         
         // Current user info
         let currentUser = null;
@@ -4218,7 +4284,9 @@
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             
             document.getElementById('carsTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('carsTab').classList.remove('text-gray-500');
@@ -4234,6 +4302,8 @@
             document.getElementById('voiceTab').classList.add('text-gray-500');
             document.getElementById('importTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.add('text-gray-500');
+            document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('domainTab').classList.add('text-gray-500');
             
             showCarsTable('new');
         }
@@ -4398,6 +4468,7 @@
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             document.getElementById('articlesTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('articlesTab').classList.remove('text-gray-500');
             document.getElementById('documentsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4420,6 +4491,7 @@
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             document.getElementById('documentsTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('documentsTab').classList.remove('text-gray-500');
             document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4434,6 +4506,8 @@
             document.getElementById('voiceTab').classList.add('text-gray-500');
             document.getElementById('importTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.add('text-gray-500');
+            document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('domainTab').classList.add('text-gray-500');
             loadDocumentsTable();
         }
 
@@ -4445,6 +4519,7 @@
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             document.getElementById('aiTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('aiTab').classList.remove('text-gray-500');
             document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4459,6 +4534,8 @@
             document.getElementById('voiceTab').classList.add('text-gray-500');
             document.getElementById('importTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.add('text-gray-500');
+            document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('domainTab').classList.add('text-gray-500');
             loadAiSettings();
             loadCurrentModel(); // Загружаем текущую модель при открытии вкладки
             loadSQLAgentStatus(); // Загружаем статус SQL-агента
@@ -4472,6 +4549,7 @@
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             document.getElementById('usersTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('usersTab').classList.remove('text-gray-500');
             document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4486,6 +4564,8 @@
             document.getElementById('voiceTab').classList.add('text-gray-500');
             document.getElementById('importTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.add('text-gray-500');
+            document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('domainTab').classList.add('text-gray-500');
             loadUsersTable();
         }
 
@@ -4497,6 +4577,7 @@
             document.getElementById('parserSection').classList.remove('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             document.getElementById('parserTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('parserTab').classList.remove('text-gray-500');
             document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4511,6 +4592,8 @@
             document.getElementById('voiceTab').classList.add('text-gray-500');
             document.getElementById('importTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.add('text-gray-500');
+            document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('domainTab').classList.add('text-gray-500');
             loadParsedCars();
             refreshParserStatus();
             // Инициализируем UI парсера
@@ -4527,6 +4610,7 @@
             document.getElementById('usersSection').classList.add('hidden');
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.remove('hidden');
             document.getElementById('voiceTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('voiceTab').classList.remove('text-gray-500');
@@ -4542,6 +4626,8 @@
             document.getElementById('parserTab').classList.add('text-gray-500');
             document.getElementById('importTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.add('text-gray-500');
+            document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('domainTab').classList.add('text-gray-500');
             loadVoiceSettings();
         }
 
@@ -4553,6 +4639,7 @@
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.add('hidden');
             document.getElementById('importSection').classList.remove('hidden');
             document.getElementById('importTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.remove('text-gray-500');
@@ -4569,6 +4656,194 @@
             document.getElementById('voiceTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('voiceTab').classList.add('text-gray-500');
             loadImportList();
+        }
+
+        function showDomainTab() {
+            document.getElementById('carsSection').classList.add('hidden');
+            document.getElementById('documentsSection').classList.add('hidden');
+            document.getElementById('aiSection').classList.add('hidden');
+            document.getElementById('usersSection').classList.add('hidden');
+            document.getElementById('parserSection').classList.add('hidden');
+            document.getElementById('voiceSection').classList.add('hidden');
+            document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('domainSection').classList.remove('hidden');
+            document.getElementById('domainTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('domainTab').classList.remove('text-gray-500');
+            document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('carsTab').classList.add('text-gray-500');
+            document.getElementById('documentsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('documentsTab').classList.add('text-gray-500');
+            document.getElementById('aiTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('aiTab').classList.add('text-gray-500');
+            document.getElementById('usersTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('usersTab').classList.add('text-gray-500');
+            document.getElementById('parserTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('parserTab').classList.add('text-gray-500');
+            document.getElementById('voiceTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('voiceTab').classList.add('text-gray-500');
+            document.getElementById('importTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('importTab').classList.add('text-gray-500');
+            loadDomainSettings();
+        }
+
+        async function loadDomainSettings() {
+            try {
+                const response = await fetch(API_BASE + '/api/domain/settings', {
+                    headers: authHeader()
+                });
+
+                if (!response.ok) {
+                    throw new Error('Ошибка загрузки настроек домена');
+                }
+
+                const data = await response.json();
+                document.getElementById('domainNameInput').value = data.domain || 'app.domain';
+                document.getElementById('currentDomainDisplay').innerHTML = `
+                    <span class="font-medium text-gray-800">${data.domain || 'Не настроен'}</span>
+                    ${data.nginx_reloaded ? '<span class="ml-2 text-xs text-green-600">(Nginx перезагружен)</span>' : ''}
+                `;
+            } catch (error) {
+                console.error('Ошибка загрузки настроек домена:', error);
+                document.getElementById('currentDomainDisplay').innerHTML = 
+                    '<span class="text-red-600">Ошибка загрузки</span>';
+            }
+        }
+
+        async function saveDomainSettings() {
+            const domainName = document.getElementById('domainNameInput').value.trim();
+            
+            if (!domainName) {
+                showDomainMessage('Введите доменное имя', 'error');
+                return;
+            }
+
+            // Валидация доменного имени
+            const domainRegex = /^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$/;
+            if (!domainRegex.test(domainName) && domainName !== 'localhost') {
+                showDomainMessage('Некорректный формат доменного имени', 'error');
+                return;
+            }
+
+            try {
+                showDomainMessage('Сохранение домена...', 'info');
+                
+                const response = await fetch(API_BASE + '/api/domain/settings', {
+                    method: 'POST',
+                    headers: {
+                        ...authHeader(),
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ domain: domainName })
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.detail || 'Ошибка сохранения домена');
+                }
+
+                const result = await response.json();
+                showDomainMessage(`Домен "${domainName}" успешно сохранен и применен!`, 'success');
+                loadDomainSettings();
+                
+                // Обновляем иконки
+                if (window.feather) {
+                    feather.replace();
+                }
+            } catch (error) {
+                console.error('Ошибка сохранения домена:', error);
+                showDomainMessage('Ошибка сохранения: ' + error.message, 'error');
+            }
+        }
+
+        async function testDomainConnection() {
+            const domainName = document.getElementById('domainNameInput').value.trim() || 
+                             document.getElementById('currentDomainDisplay').textContent.trim();
+            
+            if (!domainName || domainName === 'Не настроен') {
+                showDomainMessage('Введите доменное имя для проверки', 'error');
+                return;
+            }
+
+            try {
+                showDomainMessage('Проверка подключения...', 'info');
+                
+                const response = await fetch(API_BASE + '/api/domain/test', {
+                    method: 'POST',
+                    headers: {
+                        ...authHeader(),
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ domain: domainName })
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.detail || 'Ошибка проверки');
+                }
+
+                const result = await response.json();
+                if (result.accessible) {
+                    // Для тестовых доменов показываем информационное сообщение
+                    if (result.message && result.message.includes('тестовый домен')) {
+                        showDomainMessage(`Домен "${domainName}": ${result.message}`, 'info');
+                    } else {
+                        showDomainMessage(`Домен "${domainName}" доступен! ${result.message || ''}`, 'success');
+                    }
+                } else {
+                    // Для тестовых доменов показываем предупреждение вместо ошибки
+                    const isTestDomain = ['localhost', 'app.domain', 'test.domain'].some(d => domainName.toLowerCase().includes(d.toLowerCase()));
+                    if (isTestDomain) {
+                        showDomainMessage(`Домен "${domainName}": ${result.message || 'Тестовый домен, DNS не требуется для локального использования'}`, 'info');
+                    } else {
+                        showDomainMessage(`Домен "${domainName}" недоступен: ${result.message}`, 'error');
+                    }
+                }
+            } catch (error) {
+                console.error('Ошибка проверки домена:', error);
+                showDomainMessage('Ошибка проверки: ' + error.message, 'error');
+            }
+        }
+
+        async function reloadNginx() {
+            try {
+                showDomainMessage('Перезагрузка Nginx...', 'info');
+                
+                const response = await fetch(API_BASE + '/api/domain/reload-nginx', {
+                    method: 'POST',
+                    headers: authHeader()
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.detail || 'Ошибка перезагрузки Nginx');
+                }
+
+                const result = await response.json();
+                showDomainMessage('Nginx успешно перезагружен!', 'success');
+                loadDomainSettings();
+            } catch (error) {
+                console.error('Ошибка перезагрузки Nginx:', error);
+                showDomainMessage('Ошибка перезагрузки: ' + error.message, 'error');
+            }
+        }
+
+        function showDomainMessage(message, type) {
+            const messageDiv = document.getElementById('domainStatusMessage');
+            messageDiv.classList.remove('hidden');
+            
+            const colors = {
+                'success': 'bg-green-50 border-green-200 text-green-800',
+                'error': 'bg-red-50 border-red-200 text-red-800',
+                'info': 'bg-blue-50 border-blue-200 text-blue-800'
+            };
+            
+            messageDiv.className = `mt-4 p-4 rounded-lg border ${colors[type] || colors.info}`;
+            messageDiv.textContent = message;
+            
+            // Автоматически скрыть через 5 секунд
+            setTimeout(() => {
+                messageDiv.classList.add('hidden');
+            }, 5000);
         }
 
         // Функции для работы с пользователями
