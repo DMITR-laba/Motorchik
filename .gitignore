@@ -77,3 +77,9 @@ debug_*.py
 analyze_*.py
 compare_*.py
 check_*.py
+
+# Certbot certificates (sensitive data)
+certbot/
+*.pem
+*.key
+*.crt
