@@ -218,6 +218,15 @@ class SQLAgentService:
             if re.search(pattern, sql_upper):
                 return False, "Обнаружен опасный паттерн в SQL запросе"
         
+        # Проверка на неправильные JOIN между cars и used_cars
+        # Эти таблицы НЕ связаны и НЕ могут быть объединены через JOIN
+        # Они должны использоваться в UNION ALL
+        if re.search(r'JOIN\s+used_cars.*?ON.*?cars|JOIN\s+cars.*?ON.*?used_cars', sql_upper):
+            return False, "Таблицы cars и used_cars не могут быть объединены через JOIN. Используйте UNION ALL для объединения результатов из обеих таблиц."
+        
+        if re.search(r'cars\s+[a-z]+\s+JOIN\s+used_cars|used_cars\s+[a-z]+\s+JOIN\s+cars', sql_upper):
+            return False, "Таблицы cars и used_cars не связаны. Используйте UNION ALL для объединения результатов."
+        
         return True, ""
     
     async def generate_sql_from_natural_language(
@@ -235,6 +244,26 @@ class SQLAgentService:
             # Формируем улучшенный промпт для LLM
             prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует PostgreSQL.
 
+🚨🚨🚨 КРИТИЧЕСКИ ВАЖНО - ПРОЧИТАЙ ПЕРВЫМ! 🚨🚨🚨
+
+⚠️ ЗАПРЕЩЕНО: НИКОГДА не используй JOIN между таблицами cars и used_cars!
+   - Эти таблицы НЕ СВЯЗАНЫ между собой!
+   - cars = новые автомобили, used_cars = подержанные автомобили
+   - Это РАЗНЫЕ автомобили, они НЕ связаны через внешние ключи!
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM cars c JOIN used_cars u ON c.id = u.car_id
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM used_cars u JOIN cars c ON u.id = c.used_car_id
+   - ✅ ПРАВИЛЬНО: Используй UNION ALL для объединения результатов
+
+⚠️ ДЛЯ ПРОСТОГО ПОИСКА ПО МАРКЕ (например: "тойота", "bmw"):
+   - Используй ПРОСТОЙ SELECT из cars или used_cars БЕЗ JOIN!
+   - ✅ ПРАВИЛЬНО: SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != '' UNION ALL SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type FROM used_cars WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != '';
+   - ❌ НЕПРАВИЛЬНО: SELECT ... FROM cars c JOIN used_cars u ON ... WHERE c.mark LIKE 'Toyota%'
+
+⚠️ НЕ ДОБАВЛЯЙ условия, которые НЕ были запрошены пользователем!
+   - Если пользователь не указал город - НЕ добавляй условие для города!
+   - Если пользователь не указал модель - НЕ добавляй условие для модели!
+   - Если пользователь не указал цену - НЕ добавляй условие для цены!
+
 ═══════════════════════════════════════════════════════════════════════════════
 КРИТИЧЕСКИ ВАЖНЫЕ ПРАВИЛА ДЛЯ PostgreSQL:
 ═══════════════════════════════════════════════════════════════════════════════
@@ -251,17 +280,23 @@ class SQLAgentService:
    - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
-   - ВСЕГДА используй UPPER() с LIKE для поиска марок (НЕ используй =):
-     ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota
-     ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
-     ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'        -- может не найти из-за пробелов
-     ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'           -- не найдет варианты регистра
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: ВСЕГДА используй UPPER() с LIKE для поиска марок!
+   - ⚠️ НЕ используй просто LIKE без UPPER() - это может не найти все варианты!
+   - ⚠️ НЕ используй = для поиска марок - это не найдет варианты с пробелами или разным регистром!
+   
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota, Toyota Camry
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   
+   ❌ НЕПРАВИЛЬНО: WHERE mark LIKE 'Toyota%'  -- может не найти TOYOTA или toyota
+   ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'      -- не найдет варианты регистра
+   ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'  -- может не найти из-за пробелов
    
    - Для городов тоже используй регистронезависимый поиск с LIKE:
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%МОСКВА%'
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%РОСТОВ%'
    
-   - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй LIKE, а не =
+   - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй UPPER() с LIKE, а не =
 
 4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
    - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
@@ -372,6 +407,28 @@ class SQLAgentService:
    ORDER BY height_cm DESC;  -- используй псевдоним!
 
 6. ОБЪЕДИНЕНИЕ ТАБЛИЦ cars И used_cars:
+   🚨🚨🚨 КРИТИЧЕСКИ ВАЖНО: Таблицы cars и used_cars НЕ СВЯЗАНЫ между собой! 🚨🚨🚨
+   
+   🚨 ЗАПРЕЩЕНО: НИКОГДА не используй JOIN между cars и used_cars!
+   - Таблица 'cars' содержит НОВЫЕ автомобили (из салона)
+   - Таблица 'used_cars' содержит ПОДЕРЖАННЫЕ автомобили (с пробегом)
+   - Это РАЗНЫЕ автомобили, они НЕ связаны через внешние ключи!
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM cars c JOIN used_cars uc ON c.id = uc.car_id  -- ОШИБКА! Таблицы не связаны!
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM cars c JOIN used_cars u ON c.id = u.car_id  -- ОШИБКА! Таблицы не связаны!
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM used_cars uc JOIN cars c ON uc.id = c.used_car_id  -- ОШИБКА! Таких полей нет!
+   - ✅ ПРАВИЛЬНО: Используй UNION ALL для объединения результатов из обеих таблиц
+   
+   ✅ ПРИМЕР ПРАВИЛЬНОГО ЗАПРОСА ДЛЯ ПОИСКА ПО МАРКЕ:
+   SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type
+   FROM cars
+   WHERE UPPER(mark) LIKE '%TOYOTA%'
+   AND price IS NOT NULL AND price != ''
+   UNION ALL
+   SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type
+   FROM used_cars
+   WHERE UPPER(mark) LIKE '%TOYOTA%'
+   AND price IS NOT NULL AND price != '';
+   
    ⚠️ КРИТИЧЕСКИ ВАЖНО: Таблицы cars и used_cars имеют РАЗНОЕ количество колонок!
    
    ❌ НИКОГДА не используй SELECT * в UNION между cars и used_cars!
@@ -1018,11 +1075,30 @@ ORDER BY car_type ASC, price_num ASC;
    ⚠️ ВАЖНО: Если используешь ORDER BY с несколькими полями, ВСЕ они должны быть в SELECT обеих частей UNION!
    
    ═══════════════════════════════════════════════════════════════════════════════
-   ЗАПОМНИ ЭТИ 4 ПРАВИЛА ДЛЯ 100% УСПЕХА:
+   ЗАПОМНИ ЭТИ 7 ПРАВИЛ ДЛЯ 100% УСПЕХА:
    1. ДЛЯ ORDER BY + LIMIT В UNION: используй подзапросы
    2. ДЛЯ ORDER BY ПО ВЫЧИСЛЯЕМОМУ ПОЛЮ В UNION: создай псевдоним в SELECT
    3. ДЛЯ UNION: ВСЕГДА проверяй, что количество колонок одинаково в обеих частях
    4. ДЛЯ CASE WHEN: ВСЕГДА используй полные выражения с THEN, ELSE, END
+   5. НЕ ДОБАВЛЯЙ автоматическую сортировку по городам (Москва, Санкт-Петербург) или цене, если пользователь НЕ ПРОСИЛ об этом!
+      - Используй ORDER BY ТОЛЬКО если пользователь явно просит отсортировать (например: "отсортируй по цене", "покажи сначала дешевые", "сначала Москва")
+      - НЕ добавляй ORDER BY CASE WHEN city LIKE '%МОСКВА%' если пользователь не просил сортировать по городам
+      - НЕ добавляй ORDER BY price если пользователь не просил сортировать по цене
+   6. 🚨 ЗАПРЕЩЕНО: НИКОГДА не используй JOIN между cars и used_cars!
+      - Эти таблицы НЕ СВЯЗАНЫ между собой!
+      - ❌ ЗАПРЕЩЕНО: SELECT ... FROM cars c JOIN used_cars u ON c.id = u.car_id
+      - ✅ ПРАВИЛЬНО: Используй UNION ALL для объединения результатов
+   7. НЕ ДОБАВЛЯЙ лишние JOIN, если они не нужны для ответа на вопрос!
+      - Используй JOIN ТОЛЬКО если пользователь явно просит информацию об опциях, группах опций или других связанных данных
+      - НЕ добавляй JOIN с car_options_groups или car_options, если пользователь просто ищет автомобили по марке/модели
+      - Для простого поиска автомобилей используй простой SELECT из cars или used_cars БЕЗ JOIN
+   8. НЕ ДОБАВЛЯЙ условия, которые НЕ были запрошены пользователем!
+      - Если пользователь не указал город - НЕ добавляй условие для города!
+      - Если пользователь не указал модель - НЕ добавляй условие для модели!
+      - Если пользователь не указал цену - НЕ добавляй условие для цены!
+      - ❌ НЕПРАВИЛЬНО: WHERE mark LIKE '%Toyota%' AND city IN ('Москва', 'Санкт-Петербург')  -- город не был запрошен!
+      - ❌ НЕПРАВИЛЬНО: WHERE mark LIKE '%Toyota%' AND model LIKE '%%'  -- пустое условие LIKE '%%' ничего не фильтрует!
+      - ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- только нужные условия
    ═══════════════════════════════════════════════════════════════════════════════
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -1046,32 +1122,53 @@ SQL запрос:"""
             
             for attempt in range(max_retries):
                 try:
-                    if use_ai_settings:
+                    # Сначала проверяем, есть ли специальная модель для SQL агента
+                    sql_agent_model = None
+                    try:
+                        import os
+                        import json
+                        sql_agent_settings_file = "sql_agent_settings.json"
+                        if os.path.exists(sql_agent_settings_file):
+                            with open(sql_agent_settings_file, "r", encoding="utf-8") as f:
+                                sql_agent_settings = json.load(f)
+                                sql_agent_model = sql_agent_settings.get("sql_model", "")
+                    except Exception:
+                        pass
+                    
+                    # Если указана модель для SQL агента, используем её
+                    if sql_agent_model and sql_agent_model.strip():
+                        response_model = sql_agent_model.strip()
+                        print(f"🔧 Используется модель SQL агента: {response_model}")
+                    elif use_ai_settings:
+                        # Иначе используем модель из AI настроек
                         ai_settings = self._load_ai_settings()
                         response_model = ai_settings.get("response_model", "")
-                        
-                        if response_model.startswith("ollama:"):
-                            model_name = response_model.replace("ollama:", "")
-                            sql_response = await self._generate_with_ollama(model_name, prompt)
-                        elif response_model.startswith("mistral:"):
-                            model_name = response_model.replace("mistral:", "")
-                            api_key = ai_settings.get("api_key", settings.mistral_api_key)
-                            sql_response = await self._generate_with_mistral(model_name, api_key, prompt)
-                        elif response_model.startswith("openai:"):
-                            model_name = response_model.replace("openai:", "")
-                            api_key = ai_settings.get("api_key", "")
-                            sql_response = await self._generate_with_openai(model_name, api_key, prompt)
-                        elif response_model.startswith("anthropic:"):
-                            model_name = response_model.replace("anthropic:", "")
-                            api_key = ai_settings.get("api_key", "")
-                            sql_response = await self._generate_with_anthropic(model_name, api_key, prompt)
-                        else:
-                            # Фолбэк на Mistral
-                            api_key = settings.mistral_api_key
-                            sql_response = await self._generate_with_mistral(settings.mistral_model, api_key, prompt)
+                        print(f"🔧 Используется модель из AI настроек: {response_model}")
                     else:
-                        # Используем настройки по умолчанию
-                        api_key = settings.mistral_api_key
+                        response_model = ""
+                    
+                    if response_model.startswith("ollama:"):
+                        model_name = response_model.replace("ollama:", "")
+                        sql_response = await self._generate_with_ollama(model_name, prompt)
+                    elif response_model.startswith("mistral:"):
+                        model_name = response_model.replace("mistral:", "")
+                        api_key = ai_settings.get("api_key", settings.mistral_api_key) if use_ai_settings else settings.mistral_api_key
+                        sql_response = await self._generate_with_mistral(model_name, api_key, prompt)
+                    elif response_model.startswith("openai:"):
+                        model_name = response_model.replace("openai:", "")
+                        api_key = ai_settings.get("api_key", "") if use_ai_settings else ""
+                        sql_response = await self._generate_with_openai(model_name, api_key, prompt)
+                    elif response_model.startswith("anthropic:"):
+                        model_name = response_model.replace("anthropic:", "")
+                        api_key = ai_settings.get("api_key", "") if use_ai_settings else ""
+                        sql_response = await self._generate_with_anthropic(model_name, api_key, prompt)
+                    else:
+                        # Фолбэк на Mistral
+                        if use_ai_settings:
+                            ai_settings = self._load_ai_settings()
+                            api_key = ai_settings.get("api_key", settings.mistral_api_key)
+                        else:
+                            api_key = settings.mistral_api_key
                         sql_response = await self._generate_with_mistral(settings.mistral_model, api_key, prompt)
                     
                     # Если успешно, сбрасываем задержку
@@ -1100,8 +1197,16 @@ SQL запрос:"""
             # Извлекаем SQL из ответа (убираем markdown код блоки если есть)
             sql_query = self._extract_sql_from_response(sql_response)
             
+            print(f"🔍 Извлеченный SQL запрос (первые 200 символов): {sql_query[:200]}")
+            print(f"📏 Длина SQL запроса: {len(sql_query)} символов")
+            
             # Валидируем SQL
             is_valid, error_message = self.validate_sql_query(sql_query)
+            
+            if not is_valid:
+                print(f"❌ SQL не прошел валидацию: {error_message}")
+            else:
+                print(f"✅ SQL прошел валидацию")
             
             if not is_valid:
                 return {
@@ -1126,20 +1231,108 @@ SQL запрос:"""
     
     def _extract_sql_from_response(self, response: str) -> str:
         """Извлекает SQL запрос из ответа LLM"""
+        if not response:
+            print(f"⚠️ Пустой ответ от LLM")
+            return ""
+        
         # Убираем markdown код блоки
         sql = re.sub(r'```sql\s*\n?', '', response, flags=re.IGNORECASE)
         sql = re.sub(r'```\s*\n?', '', sql)
         
         # Ищем SQL запрос (от SELECT до ;)
-        match = re.search(r'SELECT.*?;', sql, re.DOTALL | re.IGNORECASE)
-        if match:
-            sql = match.group(0)
+        # Сначала проверяем, есть ли UNION ALL - если есть, нужно найти полный запрос
+        found_union = False
+        if 'UNION ALL' in sql.upper() or 'UNION' in sql.upper():
+            # Ищем полный UNION запрос: SELECT ... UNION ALL SELECT ... ;
+            union_match = re.search(r'(SELECT.*?UNION\s+ALL\s+SELECT.*?;)', sql, re.DOTALL | re.IGNORECASE)
+            if union_match:
+                sql = union_match.group(1)
+                found_union = True
+            else:
+                # Пробуем найти без точки с запятой в конце
+                union_match = re.search(r'(SELECT.*?UNION\s+ALL\s+SELECT.*?)(?=\n\n|\nSELECT|$)', sql, re.DOTALL | re.IGNORECASE)
+                if union_match:
+                    sql = union_match.group(1).strip()
+                    if not sql.endswith(';'):
+                        sql += ';'
+                    found_union = True
+        
+        # Если не нашли UNION, ищем обычный SELECT
+        if not found_union:
+            if 'SELECT' in sql.upper():
+                match = re.search(r'(SELECT.*?;)', sql, re.DOTALL | re.IGNORECASE)
+                if match:
+                    sql = match.group(1)
+                else:
+                    # Если не нашли с точкой с запятой, ищем просто SELECT до конца строки или до следующего SELECT
+                    match = re.search(r'(SELECT.*?)(?=\n\n|\nSELECT|$)', sql, re.DOTALL | re.IGNORECASE)
+                    if match:
+                        sql = match.group(1).strip()
+                        # Проверяем, что SQL не обрывается на середине (например, "SELECT mark, model, p")
+                        # Если последнее слово слишком короткое (меньше 3 символов) и не заканчивается на ;, возможно запрос неполный
+                        words = sql.split()
+                        if words and len(words[-1]) < 3 and not sql.endswith(';'):
+                            # Возможно, запрос обрезан - ищем до предыдущего ключевого слова
+                            # Ищем последний полный оператор (FROM, WHERE, JOIN, UNION и т.д.)
+                            last_keyword_match = re.search(r'(SELECT.*?(?:FROM|WHERE|JOIN|UNION|ORDER BY|GROUP BY|HAVING|LIMIT))', sql, re.IGNORECASE | re.DOTALL)
+                            if last_keyword_match:
+                                sql = last_keyword_match.group(1).strip()
+                                if not sql.endswith(';'):
+                                    sql += ';'
+                            else:
+                                # Если не нашли ключевое слово, просто добавляем ;
+                                sql += ';'
+                        else:
+                            # Добавляем точку с запятой если её нет
+                            if not sql.endswith(';'):
+                                sql += ';'
+                    else:
+                        # Если ничего не нашли, пытаемся найти хотя бы SELECT
+                        match = re.search(r'(SELECT.*)', sql, re.DOTALL | re.IGNORECASE)
+                        if match:
+                            sql = match.group(1).strip()
+                            # Убираем все после последнего ; если есть
+                            if ';' in sql:
+                                sql = sql[:sql.rindex(';') + 1]
+                            else:
+                                # Проверяем, не обрывается ли запрос на середине
+                                words = sql.split()
+                                if words and len(words[-1]) < 3:
+                                    # Ищем последний полный оператор
+                                    last_keyword_match = re.search(r'(SELECT.*?(?:FROM|WHERE|JOIN|UNION|ORDER BY|GROUP BY|HAVING|LIMIT))', sql, re.IGNORECASE | re.DOTALL)
+                                    if last_keyword_match:
+                                        sql = last_keyword_match.group(1).strip() + ';'
+                                    else:
+                                        sql += ';'
+                                else:
+                                    sql += ';'
         
         # Очищаем от лишних пробелов и переносов
         sql = sql.strip()
         
-        # Убираем лишние пробелы
-        sql = re.sub(r'\s+', ' ', sql)
+        # Убираем пустые условия LIKE '%%' или LIKE '%'
+        # Эти условия ничего не фильтруют и только усложняют запрос
+        sql = re.sub(r'\s+AND\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%+[\'"]', '', sql, flags=re.IGNORECASE)
+        sql = re.sub(r'\s+AND\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%%+[\'"]', '', sql, flags=re.IGNORECASE)
+        sql = re.sub(r'\s+OR\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%+[\'"]', '', sql, flags=re.IGNORECASE)
+        sql = re.sub(r'\s+OR\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%%+[\'"]', '', sql, flags=re.IGNORECASE)
+        # Убираем условия в начале WHERE
+        sql = re.sub(r'WHERE\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%+[\'"]\s+AND', 'WHERE', sql, flags=re.IGNORECASE)
+        sql = re.sub(r'WHERE\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%%+[\'"]\s+AND', 'WHERE', sql, flags=re.IGNORECASE)
+        
+        # Убираем лишние пробелы, но сохраняем структуру
+        # Заменяем множественные пробелы на один, но сохраняем переносы строк внутри запроса
+        sql = re.sub(r'[ \t]+', ' ', sql)  # Множественные пробелы/табы на один пробел
+        sql = re.sub(r'\n\s*\n', '\n', sql)  # Множественные переносы строк на один
+        
+        # Убираем лишние AND/OR в начале или конце условий
+        sql = re.sub(r'\s+AND\s*$', '', sql, flags=re.IGNORECASE)
+        sql = re.sub(r'\s+OR\s*$', '', sql, flags=re.IGNORECASE)
+        sql = re.sub(r'WHERE\s+AND\s+', 'WHERE ', sql, flags=re.IGNORECASE)
+        sql = re.sub(r'WHERE\s+OR\s+', 'WHERE ', sql, flags=re.IGNORECASE)
+        
+        if not sql or len(sql) < 10:
+            print(f"⚠️ Извлеченный SQL слишком короткий или пустой. Исходный ответ: {response[:200]}")
         
         return sql
     
@@ -1495,24 +1688,37 @@ SQL запрос:"""
             return f"CAST(REPLACE(REPLACE(REPLACE({price_expr}, ' ', ''), '₽', ''), ',', '.') AS NUMERIC)"
         
         # Исправление 1: Сравнения price с числами в WHERE
-        # Паттерн: WHERE price < 50000 или WHERE c.price < 50000 или AND price < 50000
+        # Паттерн должен находить: price <= 500000, c.price < 1000000, AND price >= 50000 и т.д.
+        # Улучшенный паттерн, который находит price с любыми префиксами таблиц и операторами
         def replace_price_comparison(match):
-            prefix = match.group(1)  # все до price
-            price_expr = match.group(2)  # price или c.price
-            operator = match.group(3)  # <, >, =, <=, >=
-            number = match.group(4)  # число
+            prefix_group = match.group(1)  # c. или uc. или None
+            operator = match.group(2)  # <, >, =, <=, >=, <>
+            number = match.group(3)  # число
+            
+            # Формируем полное выражение price
+            if prefix_group:
+                price_expr = prefix_group + "price"
+            else:
+                price_expr = "price"
             
             # Создаем новое выражение с CAST
             new_expr = f"{make_price_cast(price_expr)} {operator} {number}"
-            return prefix + new_expr
+            return new_expr
         
-        # Заменяем все сравнения price с числами (включая AND/OR)
-        sql = re.sub(
-            r'(\b(?:WHERE|AND|OR)\s+.*?)(\b(?:c\.)?price\s*)([<>=]+)\s*(\d+)',
-            replace_price_comparison,
-            sql,
-            flags=re.IGNORECASE
-        )
+        # Заменяем все сравнения price с числами
+        # Паттерн: ((?:c|uc)\.)?price\s*([<>=]+)\s*(\d+)
+        # Находит price, c.price, uc.price с любыми операторами сравнения
+        # Используем \b для границ слов, чтобы не затронуть другие части
+        matches_found = re.findall(r'\b((?:c|uc)\.)?price\s*([<>=]+)\s*(\d+)', sql, re.IGNORECASE)
+        if matches_found:
+            print(f"⚠️ Найдено {len(matches_found)} сравнений price с числами без CAST. Исправляю...")
+            sql = re.sub(
+                r'\b((?:c|uc)\.)?price\s*([<>=]+)\s*(\d+)',
+                replace_price_comparison,
+                sql,
+                flags=re.IGNORECASE
+            )
+            print(f"✅ Исправлено приведение типа для price")
         
         # Исправление 2: ORDER BY price без приведения типа
         # Паттерн: ORDER BY price ASC или ORDER BY c.price ASC
@@ -1624,7 +1830,121 @@ SQL запрос:"""
                 flags=re.IGNORECASE
             )
         
-        # Исправление 6: Исправление ORDER BY в UNION с mileage
+        # Исправление 6: Исправление ORDER BY в UNION с city (CASE WHEN с автоматической сортировкой)
+        # Если в ORDER BY используется CASE WHEN city (с префиксами или без), убираем его, так как это автоматическая сортировка
+        if 'UNION ALL' in sql_upper and 'ORDER BY' in sql_upper and 'CASE' in sql_upper and 'city' in sql_upper:
+            union_parts = sql.split('UNION ALL')
+            if len(union_parts) == 2:
+                # Находим ORDER BY часть
+                order_by_match = re.search(r'ORDER BY\s+(.+?)(?:;|$)', sql, re.IGNORECASE | re.DOTALL)
+                if order_by_match:
+                    order_by_part = order_by_match.group(1)
+                    # Проверяем, используется ли CASE WHEN с city (с префиксами таблиц или без)
+                    # Ищем паттерны: CASE WHEN (c|uc)?\.?city или CASE WHEN UPPER(city)
+                    if re.search(r'CASE\s+WHEN.*?city.*?LIKE.*?МОСКВА|CASE\s+WHEN.*?city.*?LIKE.*?САНКТ-ПЕТЕРБУРГ', order_by_part, re.IGNORECASE | re.DOTALL):
+                        print(f"⚠️ Обнаружена автоматическая сортировка по городам в ORDER BY. Удаляю...")
+                        first_part = union_parts[0].strip()
+                        second_part = union_parts[1].strip()
+                        
+                        # Убираем CASE WHEN city из ORDER BY
+                        # Находим весь CASE блок от CASE до END, который содержит city и Москву/Санкт-Петербург
+                        # Используем более точный поиск с учетом переносов строк, пробелов и двойных процентов %%
+                        # Ищем CASE, затем WHEN с city и Москвой/Санкт-Петербургом, затем END
+                        # Учитываем, что в SQL могут быть двойные проценты %% вместо одинарных %
+                        case_pattern = r'CASE\s+WHEN\s+UPPER\(city\)\s+LIKE\s+[^\']*МОСКВ[^\']*THEN\s+\d+\s+WHEN\s+UPPER\(city\)\s+LIKE\s+[^\']*САНКТ-ПЕТЕРБУРГ[^\']*THEN\s+\d+\s+ELSE\s+\d+\s+END'
+                        case_match = re.search(case_pattern, order_by_part, re.IGNORECASE | re.DOTALL)
+                        if not case_match:
+                            # Пробуем более общий паттерн с учетом любых символов между
+                            case_pattern = r'CASE\s+WHEN.*?city.*?LIKE.*?МОСКВ.*?THEN.*?WHEN.*?city.*?LIKE.*?САНКТ-ПЕТЕРБУРГ.*?THEN.*?ELSE.*?END'
+                            case_match = re.search(case_pattern, order_by_part, re.IGNORECASE | re.DOTALL)
+                        if not case_match:
+                            # Самый общий паттерн - любой CASE с city (найдем начало и конец вручную)
+                            # Ищем позицию CASE и следующего END после него
+                            case_pos = order_by_part.upper().find('CASE')
+                            if case_pos >= 0:
+                                # Ищем WHEN после CASE
+                                when_pos = order_by_part.upper().find('WHEN', case_pos)
+                                if when_pos >= 0 and 'city' in order_by_part[when_pos:when_pos+50].lower():
+                                    # Ищем END после WHEN
+                                    end_pos = order_by_part.upper().find('END', when_pos)
+                                    if end_pos >= 0:
+                                        # Создаем match объект вручную
+                                        class FakeMatch:
+                                            def __init__(self, start_pos, end_pos):
+                                                self._start = start_pos
+                                                self._end = end_pos
+                                            def start(self):
+                                                return self._start
+                                            def end(self):
+                                                return self._end
+                                        case_match = FakeMatch(case_pos, end_pos + 3)
+                        if not case_match:
+                            # Последняя попытка - просто найти CASE ... END с city
+                            case_pattern = r'CASE\s+WHEN.*?city.*?END'
+                            case_match = re.search(case_pattern, order_by_part, re.IGNORECASE | re.DOTALL)
+                        
+                        if case_match:
+                            # Убираем найденный CASE блок
+                            case_start = case_match.start()
+                            case_end = case_match.end()
+                            # Проверяем, что после END есть запятая, пробел или ASC/DESC
+                            after_end = order_by_part[case_end:case_end+20].strip()
+                            # Убираем ASC/DESC если есть
+                            after_end_clean = re.sub(r'^\s*(ASC|DESC)\s*,?\s*', '', after_end, flags=re.IGNORECASE)
+                            if after_end_clean.startswith(','):
+                                # Убираем CASE блок, ASC/DESC и запятую после него
+                                order_by_cleaned = order_by_part[:case_start] + after_end_clean[1:]
+                            else:
+                                # Убираем только CASE блок и ASC/DESC
+                                order_by_cleaned = order_by_part[:case_start] + after_end_clean
+                        else:
+                            # Если не нашли, пробуем простое удаление
+                            order_by_cleaned = re.sub(
+                                r'CASE\s+WHEN.*?city.*?END\s*(?:ASC|DESC)?\s*,?\s*',
+                                '',
+                                order_by_part,
+                                flags=re.IGNORECASE | re.DOTALL
+                            )
+                        
+                        # Также убираем автоматическую сортировку по цене, если она не запрошена
+                        # Проверяем, есть ли в запросе пользователя упоминание сортировки по цене
+                        # Если нет - убираем CAST(REPLACE(...price...)) из ORDER BY
+                        # Но только если это не было явно запрошено пользователем
+                        # Пока просто оставляем сортировку по цене, если она есть
+                        
+                        # Очищаем от лишних пробелов и запятых
+                        order_by_cleaned = re.sub(r'^\s*,\s*', '', order_by_cleaned)  # Убираем запятую в начале
+                        order_by_cleaned = re.sub(r',\s*,', ',', order_by_cleaned)  # Убираем двойные запятые
+                        order_by_cleaned = order_by_cleaned.strip()
+                        
+                        # Если осталась только сортировка по цене без других полей, тоже убираем её
+                        # (так как это автоматическая сортировка, которая не была запрошена)
+                        if order_by_cleaned and 'CAST(REPLACE(REPLACE(REPLACE(price' in order_by_cleaned.upper():
+                            # Проверяем, есть ли еще что-то кроме сортировки по цене
+                            price_sort_pattern = r'CAST\s*\(\s*REPLACE\s*\(\s*REPLACE\s*\(\s*REPLACE\s*\(\s*price[^)]*\)\s*AS\s+NUMERIC\s*\)\s*(?:ASC|DESC)?'
+                            price_sort_match = re.search(price_sort_pattern, order_by_cleaned, re.IGNORECASE | re.DOTALL)
+                            if price_sort_match:
+                                # Убираем сортировку по цене
+                                before_price = order_by_cleaned[:price_sort_match.start()].strip()
+                                after_price = order_by_cleaned[price_sort_match.end():].strip()
+                                # Убираем запятую перед или после
+                                before_price = re.sub(r',\s*$', '', before_price)
+                                after_price = re.sub(r'^\s*,', '', after_price)
+                                order_by_cleaned = (before_price + ' ' + after_price).strip()
+                        
+                        if order_by_cleaned and order_by_cleaned != ',' and len(order_by_cleaned) > 3:
+                            # Оставляем ORDER BY с оставшимися полями
+                            sql = first_part + " UNION ALL " + second_part + " ORDER BY " + order_by_cleaned
+                            if not sql.endswith(';'):
+                                sql += ';'
+                        else:
+                            # Убираем ORDER BY полностью
+                            sql = first_part + " UNION ALL " + second_part
+                            if not sql.endswith(';'):
+                                sql += ';'
+                        print(f"✅ Удалил автоматическую сортировку по городам из ORDER BY")
+        
+        # Исправление 7: Исправление ORDER BY в UNION с mileage
         # Если в ORDER BY используется CASE WHEN mileage с c.mileage, нужно заменить на алиас mileage
         if 'UNION ALL' in sql_upper and 'ORDER BY' in sql_upper and 'mileage' in sql_upper:
             # Проверяем, есть ли mileage в SELECT обеих частей UNION
@@ -1790,6 +2110,108 @@ SQL запрос:"""
             fix_attempt += 1
             current_sql = sql_query
             
+            # Проверка и исправление неправильных JOIN между cars и used_cars
+            if auto_fix and ('JOIN' in sql_query.upper() and ('cars' in sql_query.upper() and 'used_cars' in sql_query.upper())):
+                sql_upper = sql_query.upper()
+                # Проверяем, есть ли JOIN между cars и used_cars
+                if re.search(r'JOIN\s+used_cars.*?ON.*?cars|JOIN\s+cars.*?ON.*?used_cars', sql_upper) or \
+                   re.search(r'cars\s+[a-z]+\s+JOIN\s+used_cars|used_cars\s+[a-z]+\s+JOIN\s+cars', sql_upper):
+                    print(f"⚠️ Обнаружен неправильный JOIN между cars и used_cars. Эти таблицы не связаны!")
+                    print(f"⚠️ Невозможно автоматически исправить JOIN на UNION. SQL будет отклонен.")
+                    return {
+                        "success": False,
+                        "error": "Таблицы cars и used_cars не могут быть объединены через JOIN. Эти таблицы содержат разные автомобили (новые и подержанные) и не связаны между собой. Используйте UNION ALL для объединения результатов из обеих таблиц.",
+                        "data": None,
+                        "sql": sql_query
+                    }
+            
+            # Проверка и исправление SELECT * в UNION запросах (до других исправлений)
+            if auto_fix and 'UNION ALL' in sql_query.upper() and 'SELECT *' in sql_query.upper():
+                print(f"⚠️ Обнаружен SELECT * в UNION запросе. Это запрещено! Исправляю...")
+                # Заменяем SELECT * на явные колонки
+                # Для cars и used_cars используем стандартный набор колонок
+                union_parts = sql_query.split('UNION ALL')
+                if len(union_parts) == 2:
+                    first_part = union_parts[0].strip()
+                    second_part = union_parts[1].strip()
+                    
+                    # Стандартные колонки для cars и used_cars
+                    standard_cols = "mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type"
+                    
+                    # Заменяем SELECT * на SELECT с явными колонками
+                    if 'SELECT *' in first_part.upper():
+                        first_part = re.sub(r'SELECT\s+\*\s+FROM', f'SELECT {standard_cols} FROM', first_part, flags=re.IGNORECASE)
+                    if 'SELECT *' in second_part.upper():
+                        # Для used_cars добавляем mileage, если нужно
+                        if 'used_cars' in second_part.lower():
+                            used_cols = f"{standard_cols}, mileage"
+                            second_part = re.sub(r'SELECT\s+\*\s+FROM', f'SELECT {used_cols} FROM', second_part, flags=re.IGNORECASE)
+                        else:
+                            second_part = re.sub(r'SELECT\s+\*\s+FROM', f'SELECT {standard_cols} FROM', second_part, flags=re.IGNORECASE)
+                    
+                    sql_query = f"{first_part} UNION ALL {second_part}"
+                    if not sql_query.endswith(';'):
+                        sql_query += ';'
+                    print(f"✅ Заменил SELECT * на явные колонки в UNION запросе")
+            
+            # Исправление mark = 'Toyota' на UPPER(mark) LIKE '%TOYOTA%'
+            if auto_fix and "mark = 'Toyota'" in sql_query or "mark = 'TOYOTA'" in sql_query.upper() or re.search(r"mark\s*=\s*['\"]Toyota", sql_query, re.IGNORECASE):
+                print(f"⚠️ Обнаружен mark = 'Toyota'. Исправляю на UPPER(mark) LIKE '%TOYOTA%'...")
+                sql_query = re.sub(
+                    r"mark\s*=\s*['\"]Toyota['\"]",
+                    "UPPER(mark) LIKE '%TOYOTA%'",
+                    sql_query,
+                    flags=re.IGNORECASE
+                )
+                # Также исправляем общий паттерн mark = 'значение'
+                sql_query = re.sub(
+                    r"mark\s*=\s*['\"]([^'\"]+)['\"]",
+                    lambda m: f"UPPER(mark) LIKE '%{m.group(1).upper()}%'",
+                    sql_query,
+                    flags=re.IGNORECASE
+                )
+                print(f"✅ Исправлен поиск по марке на UPPER(mark) LIKE")
+            
+            # Очистка пустых условий LIKE '%%' или LIKE '%' (до других исправлений)
+            if auto_fix:
+                original_before_clean = sql_query
+                # Убираем пустые условия LIKE '%%' или LIKE '%'
+                sql_query = re.sub(r'\s+AND\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%+[\'"]', '', sql_query, flags=re.IGNORECASE)
+                sql_query = re.sub(r'\s+AND\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%%+[\'"]', '', sql_query, flags=re.IGNORECASE)
+                sql_query = re.sub(r'\s+OR\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%+[\'"]', '', sql_query, flags=re.IGNORECASE)
+                sql_query = re.sub(r'\s+OR\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%%+[\'"]', '', sql_query, flags=re.IGNORECASE)
+                sql_query = re.sub(r'WHERE\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%+[\'"]\s+AND', 'WHERE', sql_query, flags=re.IGNORECASE)
+                sql_query = re.sub(r'WHERE\s+[a-z_]+\.?\w+\s+LIKE\s+[\'"]%%+[\'"]\s+AND', 'WHERE', sql_query, flags=re.IGNORECASE)
+                # Убираем лишние AND/OR
+                sql_query = re.sub(r'\s+AND\s*$', '', sql_query, flags=re.IGNORECASE)
+                sql_query = re.sub(r'\s+OR\s*$', '', sql_query, flags=re.IGNORECASE)
+                sql_query = re.sub(r'WHERE\s+AND\s+', 'WHERE ', sql_query, flags=re.IGNORECASE)
+                sql_query = re.sub(r'WHERE\s+OR\s+', 'WHERE ', sql_query, flags=re.IGNORECASE)
+                if sql_query != original_before_clean:
+                    print(f"✅ Удалил пустые условия LIKE '%%' из SQL")
+            
+            # Автоматическое исправление приведения типов для price (до других исправлений)
+            if auto_fix and 'price' in sql_query.lower():
+                # Проверяем, есть ли сравнения price с числами
+                # Ищем паттерн: price <число> или c.price <число>
+                if re.search(r'\b((?:c|uc)\.)?price\s*[<>=]+\s*\d+', sql_query, re.IGNORECASE):
+                    # Проверяем, нет ли уже CAST для всех сравнений price
+                    # Если есть хотя бы одно сравнение price без CAST - исправляем
+                    price_matches = list(re.finditer(r'\b((?:c|uc)\.)?price\s*[<>=]+\s*\d+', sql_query, re.IGNORECASE))
+                    has_uncasted = False
+                    for match in price_matches:
+                        # Проверяем, есть ли CAST перед этим сравнением
+                        start_pos = max(0, match.start() - 100)
+                        before = sql_query[start_pos:match.start()]
+                        # Если перед price нет CAST(, значит нужно исправить
+                        if 'CAST(' not in before.upper() or not re.search(r'CAST\s*\([^)]*price', before, re.IGNORECASE):
+                            has_uncasted = True
+                            break
+                    
+                    if has_uncasted:
+                        print(f"⚠️ Обнаружено сравнение price с числом без CAST. Исправляю...")
+                        sql_query = self._fix_price_type_errors(sql_query)
+            
             # Автоматическое исправление опций перед другими исправлениями
             if auto_fix and ('car_options' in sql_query.upper() or any(kw in sql_query.lower() for kw in ['опция', 'abs', 'круиз', 'кожа', 'подогрев', 'парктроник', 'камера', 'bluetooth'])):
                 sql_query = self._fix_options_sql_errors(sql_query)
@@ -1834,12 +2256,15 @@ SQL запрос:"""
             is_valid, error_message = self.validate_sql_query(sql_query)
             
             if not is_valid:
+                print(f"❌ SQL не прошел валидацию перед выполнением: {error_message}")
                 return {
                     "success": False,
                     "error": error_message,
                     "data": None,
                     "sql": sql_query
                 }
+            
+            print(f"🚀 Выполняю SQL запрос (первые 200 символов): {sql_query[:200]}")
             
             # Выполняем запрос
             with self.engine.connect() as connection:
@@ -1850,6 +2275,8 @@ SQL запрос:"""
                 
                 # Получаем данные
                 rows = result.fetchall()
+                
+                print(f"✅ SQL запрос выполнен успешно. Найдено строк: {len(rows)}")
                 
                 # Преобразуем в список словарей
                 data = []
@@ -1868,6 +2295,11 @@ SQL запрос:"""
                 all_data = data[:500]  # Для источников (Search found/Results) - до 500 записей
                 total_count = len(data)
                 
+                if total_count == 0:
+                    print(f"⚠️ SQL запрос вернул 0 результатов")
+                else:
+                    print(f"✅ SQL запрос вернул {total_count} результатов (для AI: {len(limited_data)}, для источников: {len(all_data)})")
+                
                 return {
                     "success": True,
                     "data": all_data,  # Все данные для источников (до 500)
@@ -1879,6 +2311,103 @@ SQL запрос:"""
                 
         except SQLAlchemyError as e:
             error_str = str(e)
+            
+            # Обработка ошибки неправильного JOIN между cars и used_cars
+            if 'column' in error_str.lower() and 'does not exist' in error_str.lower():
+                if ('used_cars' in sql_query.lower() and 'cars' in sql_query.lower() and 'JOIN' in sql_query.upper()):
+                    # Проверяем, есть ли попытка JOIN между cars и used_cars
+                    if re.search(r'JOIN\s+used_cars.*?ON.*?cars|JOIN\s+cars.*?ON.*?used_cars', sql_query, re.IGNORECASE) or \
+                       re.search(r'cars\s+[a-z]+\s+JOIN\s+used_cars|used_cars\s+[a-z]+\s+JOIN\s+cars', sql_query, re.IGNORECASE):
+                        print(f"⚠️ Обнаружена ошибка: попытка JOIN между cars и used_cars. Эти таблицы не связаны!")
+                        return {
+                            "success": False,
+                            "error": "Таблицы cars и used_cars не могут быть объединены через JOIN. Эти таблицы содержат разные автомобили (новые и подержанные) и не связаны между собой. Используйте UNION ALL для объединения результатов из обеих таблиц.",
+                            "data": None,
+                            "sql": sql_query
+                        }
+            
+            # Исправление ORDER BY с CASE WHEN city в UNION (автоматическая сортировка по городам)
+            if auto_fix and 'UNION ALL' in sql_query.upper() and 'ORDER BY' in sql_query.upper():
+                if ('could not identify an equality operator' in error_str.lower() or 
+                    'operator does not exist' in error_str.lower() or
+                    ('column reference' in error_str.lower() and 'ambiguous' in error_str.lower()) or
+                    'ORDER BY term does not match' in error_str or
+                    'Only result column names can be used' in error_str):
+                    # Проверяем, есть ли CASE WHEN с city в ORDER BY (с префиксами или без, с UPPER или без)
+                    order_by_match = re.search(r'ORDER BY\s+(.+?)(?:;|$)', sql_query, re.IGNORECASE | re.DOTALL)
+                    if order_by_match:
+                        order_expr = order_by_match.group(1)
+                        # Ищем CASE WHEN с city и Москвой/Санкт-Петербургом
+                        if re.search(r'CASE\s+WHEN.*?city.*?LIKE.*?МОСКВА|CASE\s+WHEN.*?city.*?LIKE.*?САНКТ-ПЕТЕРБУРГ', order_expr, re.IGNORECASE | re.DOTALL):
+                            print(f"⚠️ Обнаружена ошибка ORDER BY с CASE WHEN city. Убираю автоматическую сортировку по городам...")
+                            union_parts = sql_query.split('UNION ALL')
+                            if len(union_parts) == 2:
+                                first_part = union_parts[0].strip()
+                                second_part = union_parts[1].strip()
+                                
+                                # Убираем CASE WHEN city из ORDER BY (полный паттерн с Москвой и Санкт-Петербургом)
+                                order_by_cleaned = re.sub(
+                                    r'CASE\s+WHEN.*?city.*?LIKE.*?МОСКВА.*?LIKE.*?САНКТ-ПЕТЕРБУРГ.*?END\s*,?\s*',
+                                    '',
+                                    order_expr,
+                                    flags=re.IGNORECASE | re.DOTALL
+                                )
+                                # Также убираем отдельные CASE WHEN для каждого города
+                                order_by_cleaned = re.sub(
+                                    r'CASE\s+WHEN.*?UPPER\(city\).*?LIKE.*?МОСКВА.*?END\s*,?\s*',
+                                    '',
+                                    order_by_cleaned,
+                                    flags=re.IGNORECASE | re.DOTALL
+                                )
+                                order_by_cleaned = re.sub(
+                                    r'CASE\s+WHEN.*?UPPER\(city\).*?LIKE.*?САНКТ-ПЕТЕРБУРГ.*?END\s*,?\s*',
+                                    '',
+                                    order_by_cleaned,
+                                    flags=re.IGNORECASE | re.DOTALL
+                                )
+                                
+                                # Также убираем автоматическую сортировку по цене, если она осталась
+                                if 'CAST(REPLACE(REPLACE(REPLACE(price' in order_by_cleaned.upper():
+                                    price_sort_pattern = r'CAST\s*\(\s*REPLACE\s*\(\s*REPLACE\s*\(\s*REPLACE\s*\(\s*price[^)]*\)\s*AS\s+NUMERIC\s*\)\s*(?:ASC|DESC)?'
+                                    price_sort_match = re.search(price_sort_pattern, order_by_cleaned, re.IGNORECASE | re.DOTALL)
+                                    if price_sort_match:
+                                        before_price = order_by_cleaned[:price_sort_match.start()].strip()
+                                        after_price = order_by_cleaned[price_sort_match.end():].strip()
+                                        before_price = re.sub(r',\s*$', '', before_price)
+                                        after_price = re.sub(r'^\s*,', '', after_price)
+                                        order_by_cleaned = (before_price + ' ' + after_price).strip()
+                                
+                                # Очищаем от лишних пробелов и запятых
+                                order_by_cleaned = re.sub(r'^\s*,\s*', '', order_by_cleaned)
+                                order_by_cleaned = re.sub(r',\s*,', ',', order_by_cleaned)
+                                order_by_cleaned = order_by_cleaned.strip()
+                                
+                                if order_by_cleaned and order_by_cleaned != ',' and len(order_by_cleaned) > 3:
+                                    fixed_sql = first_part + " UNION ALL " + second_part + " ORDER BY " + order_by_cleaned
+                                    if not fixed_sql.endswith(';'):
+                                        fixed_sql += ';'
+                                else:
+                                    fixed_sql = first_part + " UNION ALL " + second_part
+                                    if not fixed_sql.endswith(';'):
+                                        fixed_sql += ';'
+                                
+                                try:
+                                    print(f"✅ Применяю исправление ORDER BY (убираю CASE WHEN city)...")
+                                    result = self.db_session.execute(text(fixed_sql))
+                                    rows = result.fetchall()
+                                    columns = result.keys() if rows else []
+                                    data = [dict(zip(columns, row)) for row in rows]
+                                    all_data = data[:500]
+                                    return {
+                                        "success": True,
+                                        "data": all_data,
+                                        "columns": list(columns),
+                                        "row_count": len(data),
+                                        "error": None,
+                                        "sql": fixed_sql
+                                    }
+                                except Exception as retry_e:
+                                    print(f"⚠️ Исправление ORDER BY не помогло: {str(retry_e)[:100]}")
             
             # Критически важное исправление: UNION ALL с разным количеством колонок
             if auto_fix and ('SELECTs to the left and right of UNION ALL do not have the same number' in error_str or 
@@ -2179,6 +2708,26 @@ SQL запрос:"""
                     # Используем полный промпт из generate_sql_from_natural_language
                     prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует PostgreSQL.
 
+🚨🚨🚨 КРИТИЧЕСКИ ВАЖНО - ПРОЧИТАЙ ПЕРВЫМ! 🚨🚨🚨
+
+⚠️ ЗАПРЕЩЕНО: НИКОГДА не используй JOIN между таблицами cars и used_cars!
+   - Эти таблицы НЕ СВЯЗАНЫ между собой!
+   - cars = новые автомобили, used_cars = подержанные автомобили
+   - Это РАЗНЫЕ автомобили, они НЕ связаны через внешние ключи!
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM cars c JOIN used_cars u ON c.id = u.car_id
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM used_cars u JOIN cars c ON u.id = c.used_car_id
+   - ✅ ПРАВИЛЬНО: Используй UNION ALL для объединения результатов
+
+⚠️ ДЛЯ ПРОСТОГО ПОИСКА ПО МАРКЕ (например: "тойота", "bmw"):
+   - Используй ПРОСТОЙ SELECT из cars или used_cars БЕЗ JOIN!
+   - ✅ ПРАВИЛЬНО: SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != '' UNION ALL SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type FROM used_cars WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != '';
+   - ❌ НЕПРАВИЛЬНО: SELECT ... FROM cars c JOIN used_cars u ON ... WHERE c.mark LIKE 'Toyota%'
+
+⚠️ НЕ ДОБАВЛЯЙ условия, которые НЕ были запрошены пользователем!
+   - Если пользователь не указал город - НЕ добавляй условие для города!
+   - Если пользователь не указал модель - НЕ добавляй условие для модели!
+   - Если пользователь не указал цену - НЕ добавляй условие для цены!
+
 ═══════════════════════════════════════════════════════════════════════════════
 КРИТИЧЕСКИ ВАЖНЫЕ ПРАВИЛА ДЛЯ PostgreSQL:
 ═══════════════════════════════════════════════════════════════════════════════
@@ -2195,17 +2744,23 @@ SQL запрос:"""
    - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
-   - ВСЕГДА используй UPPER() с LIKE для поиска марок (НЕ используй =):
-     ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota
-     ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
-     ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'        -- может не найти из-за пробелов
-     ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'           -- не найдет варианты регистра
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: ВСЕГДА используй UPPER() с LIKE для поиска марок!
+   - ⚠️ НЕ используй просто LIKE без UPPER() - это может не найти все варианты!
+   - ⚠️ НЕ используй = для поиска марок - это не найдет варианты с пробелами или разным регистром!
+   
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota, Toyota Camry
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   
+   ❌ НЕПРАВИЛЬНО: WHERE mark LIKE 'Toyota%'  -- может не найти TOYOTA или toyota
+   ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'      -- не найдет варианты регистра
+   ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'  -- может не найти из-за пробелов
    
    - Для городов тоже используй регистронезависимый поиск с LIKE:
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%МОСКВА%'
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%РОСТОВ%'
    
-   - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй LIKE, а не =
+   - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй UPPER() с LIKE, а не =
 
 4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
    - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
@@ -2254,6 +2809,49 @@ SQL запрос:"""
    - ✅ Для латиницы можно использовать UPPER():
      ✅ ПРАВИЛЬНО: WHERE UPPER(gear_box_type) LIKE '%AUTOMATIC%'  -- для английских значений
      ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'                  -- для марок
+
+6. ОБЪЕДИНЕНИЕ ТАБЛИЦ cars И used_cars:
+   🚨🚨🚨 КРИТИЧЕСКИ ВАЖНО: Таблицы cars и used_cars НЕ СВЯЗАНЫ между собой! 🚨🚨🚨
+   
+   🚨 ЗАПРЕЩЕНО: НИКОГДА не используй JOIN между cars и used_cars!
+   - Таблица 'cars' содержит НОВЫЕ автомобили (из салона)
+   - Таблица 'used_cars' содержит ПОДЕРЖАННЫЕ автомобили (с пробегом)
+   - Это РАЗНЫЕ автомобили, они НЕ связаны через внешние ключи!
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM cars c JOIN used_cars uc ON c.id = uc.car_id  -- ОШИБКА! Таблицы не связаны!
+   - ❌ ЗАПРЕЩЕНО: SELECT ... FROM cars c JOIN used_cars u ON c.id = u.car_id  -- ОШИБКА! Таблицы не связаны!
+   - ✅ ПРАВИЛЬНО: Используй UNION ALL для объединения результатов из обеих таблиц
+   
+   ✅ ПРИМЕР ПРАВИЛЬНОГО ЗАПРОСА ДЛЯ ПОИСКА ПО МАРКЕ:
+   SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type
+   FROM cars
+   WHERE UPPER(mark) LIKE '%TOYOTA%'
+   AND price IS NOT NULL AND price != ''
+   UNION ALL
+   SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type
+   FROM used_cars
+   WHERE UPPER(mark) LIKE '%TOYOTA%'
+   AND price IS NOT NULL AND price != '';
+
+7. ORDER BY И СОРТИРОВКА - КРИТИЧЕСКИ ВАЖНО:
+   - ⚠️ НЕ ДОБАВЛЯЙ автоматическую сортировку по городам (Москва, Санкт-Петербург) или цене, если пользователь НЕ ПРОСИЛ об этом!
+   - Используй ORDER BY ТОЛЬКО если пользователь явно просит отсортировать (например: "отсортируй по цене", "покажи сначала дешевые", "сначала Москва")
+   - НЕ добавляй ORDER BY CASE WHEN city LIKE '%МОСКВА%' если пользователь не просил сортировать по городам
+   - НЕ добавляй ORDER BY price если пользователь не просил сортировать по цене
+   - В UNION запросах НЕЛЬЗЯ использовать префиксы таблиц (c.city, uc.city) в ORDER BY - используй только псевдонимы из SELECT!
+
+8. JOIN И УСЛОВИЯ - КРИТИЧЕСКИ ВАЖНО:
+   - ⚠️ НЕ ДОБАВЛЯЙ лишние JOIN, если они не нужны для ответа на вопрос!
+   - Используй JOIN ТОЛЬКО если пользователь явно просит информацию об опциях, группах опций или других связанных данных
+   - НЕ добавляй JOIN с car_options_groups или car_options, если пользователь просто ищет автомобили по марке/модели
+   - Для простого поиска автомобилей используй простой SELECT из cars или used_cars БЕЗ JOIN
+   - ❌ НЕПРАВИЛЬНО: SELECT ... FROM cars c LEFT JOIN car_options_groups ug ON c.id = ug.car_id WHERE c.mark LIKE '%Toyota%'  -- лишний JOIN!
+   - ✅ ПРАВИЛЬНО: SELECT mark, model, price FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%'  -- простой запрос без JOIN
+   
+   - ⚠️ НЕ ДОБАВЛЯЙ пустые или бессмысленные условия в WHERE!
+   - ❌ НЕПРАВИЛЬНО: WHERE mark LIKE '%Toyota%' AND model LIKE '%%'  -- пустое условие LIKE '%%' ничего не фильтрует!
+   - ❌ НЕПРАВИЛЬНО: WHERE mark LIKE '%Toyota%' AND model LIKE '%'  -- тоже пустое условие!
+   - ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- только нужные условия
+   - Если пользователь не указал модель - НЕ добавляй условие для model!
 
 ═══════════════════════════════════════════════════════════════════════════════
 СХЕМА БАЗЫ ДАННЫХ:
@@ -2359,17 +2957,23 @@ SQL запрос:"""
    - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
-   - ВСЕГДА используй UPPER() с LIKE для поиска марок (НЕ используй =):
-     ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota
-     ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
-     ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'        -- может не найти из-за пробелов
-     ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'           -- не найдет варианты регистра
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: ВСЕГДА используй UPPER() с LIKE для поиска марок!
+   - ⚠️ НЕ используй просто LIKE без UPPER() - это может не найти все варианты!
+   - ⚠️ НЕ используй = для поиска марок - это не найдет варианты с пробелами или разным регистром!
+   
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota, Toyota Camry
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
+   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   
+   ❌ НЕПРАВИЛЬНО: WHERE mark LIKE 'Toyota%'  -- может не найти TOYOTA или toyota
+   ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'      -- не найдет варианты регистра
+   ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'  -- может не найти из-за пробелов
    
    - Для городов тоже используй регистронезависимый поиск с LIKE:
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%МОСКВА%'
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%РОСТОВ%'
    
-   - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй LIKE, а не =
+   - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй UPPER() с LIKE, а не =
 
 4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
    - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
@@ -2495,6 +3099,8 @@ SQL запрос:"""
         if not working_url:
             raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
         
+        print(f"🤖 Генерация SQL через Ollama ({model_name}) по адресу {working_url}")
+        
         # Используем chat API для лучшей поддержки system prompt
         if system_prompt is None:
             system_prompt = "Ты — эксперт по SQL. Генерируй только валидные SQL запросы без объяснений."
@@ -2521,9 +3127,16 @@ SQL запрос:"""
                     data = resp.json()
                     message = data.get("message", {})
                     if message:
-                        return message.get("content", "")
-                    return data.get("response", "")
-                except:
+                        response_text = message.get("content", "")
+                    else:
+                        response_text = data.get("response", "")
+                    
+                    print(f"✅ Ollama ответил. Длина ответа: {len(response_text)} символов")
+                    print(f"📝 Первые 200 символов ответа: {response_text[:200]}")
+                    return response_text
+                except Exception as chat_error:
+                    print(f"⚠️ Ошибка при использовании chat API: {str(chat_error)[:200]}")
+                    print(f"🔄 Пробую fallback на generate API...")
                     # Fallback на старый generate API
                     old_payload = {
                         "model": model_name,
@@ -2533,9 +3146,14 @@ SQL запрос:"""
                     resp = await client.post(f"{working_url}/api/generate", json=old_payload, timeout=180)
                     resp.raise_for_status()
                     data = resp.json()
-                    return data.get("response", "")
+                    response_text = data.get("response", "")
+                    print(f"✅ Ollama ответил через generate API. Длина ответа: {len(response_text)} символов")
+                    print(f"📝 Первые 200 символов ответа: {response_text[:200]}")
+                    return response_text
         except Exception as e:
-            raise Exception(f"Ошибка при обращении к Ollama по адресу {working_url}: {str(e)}")
+            error_msg = f"Ошибка при обращении к Ollama по адресу {working_url}: {str(e)}"
+            print(f"❌ {error_msg}")
+            raise Exception(error_msg)
     
     async def _generate_with_mistral(self, model_name: str, api_key: str, prompt: str) -> str:
         """Генерация через Mistral API с автоматическим переключением на Llama 3:8b при rate limit"""

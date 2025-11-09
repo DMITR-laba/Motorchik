@@ -96,11 +96,62 @@ def _get_current_model_info() -> Dict[str, str]:
             "display_name": response_model
         }
 
-async def _generate_with_ai_settings(prompt: str) -> tuple[str, Dict[str, str]]:
-    """Генерирует ответ используя настройки AI и возвращает информацию о модели"""
+async def _generate_with_ai_settings(prompt: str, deep_thinking_enabled: bool = False) -> tuple[str, Dict[str, str]]:
+    """Генерирует ответ используя настройки AI и возвращает информацию о модели
+    
+    Args:
+        prompt: Промпт для генерации
+        deep_thinking_enabled: Если True, использует модель размышления вместо обычной модели
+    """
     ai_settings = _load_ai_settings()
-    response_model = ai_settings.get("response_model", "")
     model_info = _get_current_model_info()
+    
+    # Если включено размышление, используем модель размышления
+    if deep_thinking_enabled:
+        deep_thinking_model = ai_settings.get("deep_thinking_model", "")
+        if deep_thinking_model:
+            print(f"🧠 Режим размышления включен, используется модель: {deep_thinking_model}")
+            try:
+                if deep_thinking_model.startswith("deepseek:"):
+                    model_name = deep_thinking_model.replace("deepseek:", "")
+                    api_key = ai_settings.get("deepseek_api_key", "")
+                    response = await _generate_with_deepseek_async(model_name, api_key, prompt)
+                    model_info["model"] = f"DeepSeek: {model_name}"
+                    model_info["mode"] = "deep_thinking"
+                    return response, model_info
+                elif deep_thinking_model.startswith("ollama:"):
+                    model_name = deep_thinking_model.replace("ollama:", "")
+                    response = await _generate_with_ollama_async(model_name, prompt)
+                    model_info["model"] = f"Ollama: {model_name}"
+                    model_info["mode"] = "deep_thinking"
+                    return response, model_info
+                elif deep_thinking_model.startswith("mistral:"):
+                    model_name = deep_thinking_model.replace("mistral:", "")
+                    api_key = ai_settings.get("api_key", settings.mistral_api_key)
+                    response = await _generate_with_mistral_async(model_name, api_key, prompt)
+                    model_info["model"] = f"Mistral: {model_name}"
+                    model_info["mode"] = "deep_thinking"
+                    return response, model_info
+                elif deep_thinking_model.startswith("openai:"):
+                    model_name = deep_thinking_model.replace("openai:", "")
+                    api_key = ai_settings.get("api_key", "")
+                    response = await _generate_with_openai_async(model_name, api_key, prompt)
+                    model_info["model"] = f"OpenAI: {model_name}"
+                    model_info["mode"] = "deep_thinking"
+                    return response, model_info
+                elif deep_thinking_model.startswith("anthropic:"):
+                    model_name = deep_thinking_model.replace("anthropic:", "")
+                    api_key = ai_settings.get("api_key", "")
+                    response = await _generate_with_anthropic_async(model_name, api_key, prompt)
+                    model_info["model"] = f"Anthropic: {model_name}"
+                    model_info["mode"] = "deep_thinking"
+                    return response, model_info
+            except Exception as e:
+                print(f"⚠️ Ошибка генерации с моделью размышления: {e}, используем обычную модель")
+                # Продолжаем с обычной моделью при ошибке
+    
+    # Используем обычную модель ответов
+    response_model = ai_settings.get("response_model", "")
     
     # Если модель не настроена, используем Mistral по умолчанию
     if not response_model:
@@ -242,9 +293,36 @@ async def _generate_with_anthropic_async(model_name: str, api_key: str, prompt: 
         resp = await client.post(url, headers=headers, json=payload, timeout=120)
         resp.raise_for_status()
         data = resp.json()
-        content = data.get("content", [])
-        if content:
-            return content[0].get("text", "")
+        if "content" in data and len(data["content"]) > 0:
+            return data["content"][0].get("text", "")
+        return ""
+
+async def _generate_with_deepseek_async(model_name: str, api_key: str, prompt: str) -> str:
+    """Генерация ответа через DeepSeek API"""
+    url = "https://api.deepseek.com/v1/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "model": model_name,
+        "messages": [
+            {"role": "system", "content": "Ты — полезный ассистент, отвечай подробно и обдуманно по-русски."},
+            {"role": "user", "content": prompt}
+        ],
+        "temperature": 0.7,
+        "max_tokens": 8192,
+        "stream": False
+    }
+    
+    async with httpx.AsyncClient() as client:
+        resp = await client.post(url, headers=headers, json=payload, timeout=180)
+        resp.raise_for_status()
+        data = resp.json()
+        choices = data.get("choices", [])
+        if choices:
+            message = choices[0].get("message", {}).get("content", "")
+            return message or ""
         return ""
 
 def _generate_with_mistral(prompt: str) -> str:
@@ -413,7 +491,8 @@ class RAGService:
         print("ℹ️ ChromaDB отключена. Используется PostgreSQL + Elasticsearch")
     
     async def generate_response(self, user_question: str, user_id: str, chat_history: Optional[List[Dict[str, Any]]] = None,
-                               preloaded_cars: Optional[List[Any]] = None, preloaded_used_cars: Optional[List[Any]] = None) -> Dict[str, Any]:
+                               preloaded_cars: Optional[List[Any]] = None, preloaded_used_cars: Optional[List[Any]] = None,
+                               deep_thinking_enabled: bool = False) -> Dict[str, Any]:
         """
         Генерирует ответ на вопрос пользователя используя RAG подход
         
@@ -638,7 +717,10 @@ class RAGService:
         if not relevant_articles and not relevant_documents and not relevant_cars and not relevant_used_cars:
             # Нет релевантов — ответим через AI без контекста кратко
             try:
-                ai_response, model_info = await _generate_with_ai_settings(self._create_prompt(user_question, "", cars_statistics=None))
+                ai_response, model_info = await _generate_with_ai_settings(
+                    self._create_prompt(user_question, "", cars_statistics=None),
+                    deep_thinking_enabled=deep_thinking_enabled
+                )
             except Exception as e:
                 ai_response = f"Извините, сейчас не удалось обработать запрос: {e}"
                 model_info = _get_current_model_info()
@@ -758,7 +840,7 @@ class RAGService:
         
         # 5. Генерация ответа с использованием настроек AI
         try:
-            ai_response, model_info = await _generate_with_ai_settings(prompt)
+            ai_response, model_info = await _generate_with_ai_settings(prompt, deep_thinking_enabled=deep_thinking_enabled)
         except Exception as e:
             ai_response = f"Произошла ошибка при обработке запроса: {str(e)}. Пожалуйста, обратитесь к службе поддержки."
             model_info = _get_current_model_info()

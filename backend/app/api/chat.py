@@ -264,7 +264,8 @@ async def send_message(
             request.user_id, 
             chat_history=history,
             preloaded_cars=preloaded_cars_from_sources,
-            preloaded_used_cars=preloaded_used_cars_from_sources
+            preloaded_used_cars=preloaded_used_cars_from_sources,
+            deep_thinking_enabled=request.deep_thinking_enabled or False
         )
         
         # Объединяем sources_data из запроса с articles и documents из результата RAG

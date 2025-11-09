@@ -33,13 +33,16 @@ def _load_sql_agent_settings() -> Dict[str, Any]:
                     settings["es_fallback_enabled"] = False
                 if "es_model" not in settings:
                     settings["es_model"] = "bert_spacy"
+                if "sql_model" not in settings:
+                    settings["sql_model"] = ""  # По умолчанию используется response_model из AI настроек
                 return settings
     except Exception:
         pass
     return {
         "enabled": False,
         "es_fallback_enabled": False,
-        "es_model": "bert_spacy"
+        "es_model": "bert_spacy",
+        "sql_model": ""  # По умолчанию используется response_model из AI настроек
     }
 
 def _save_sql_agent_settings(settings: Dict[str, Any]):
@@ -160,6 +163,8 @@ async def save_ai_settings(
             "embedding_model": settings.embedding_model,
             "api_service": settings.api_service,
             "api_key": settings.api_key,
+            "deep_thinking_model": settings.deep_thinking_model or "",
+            "deepseek_api_key": settings.deepseek_api_key or "",
             "updated_at": datetime.now().isoformat()
         }
         result = await ai_service.save_settings_dict(settings_dict)
@@ -211,7 +216,8 @@ async def get_sql_agent_status(db: Session = Depends(get_db)):
         return {
             "enabled": settings.get("enabled", False),
             "es_fallback_enabled": settings.get("es_fallback_enabled", False),
-            "es_model": settings.get("es_model", "bert_spacy")
+            "es_model": settings.get("es_model", "bert_spacy"),
+            "sql_model": settings.get("sql_model", "")
         }
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Ошибка получения статуса: {str(e)}")
@@ -229,13 +235,16 @@ async def update_sql_agent_fallback_settings(
             settings["es_fallback_enabled"] = request["es_fallback_enabled"]
         if "es_model" in request:
             settings["es_model"] = request["es_model"]
+        if "sql_model" in request:
+            settings["sql_model"] = request["sql_model"]
         _save_sql_agent_settings(settings)
         return {
             "success": True,
             "message": "Настройки fallback обновлены",
             "settings": {
                 "es_fallback_enabled": settings.get("es_fallback_enabled", False),
-                "es_model": settings.get("es_model", "bert_spacy")
+                "es_model": settings.get("es_model", "bert_spacy"),
+                "sql_model": settings.get("sql_model", "")
             }
         }
     except Exception as e:
@@ -1140,6 +1149,9 @@ async def query_sql_agent(
                         
                         db_service = DatabaseService(db)
                         rag_service = RAGService(db_service)
+                        
+                        # Получаем is_alternatives из result, если он есть
+                        is_alternatives = result.get("is_alternatives", False)
                         
                         # Формируем промпт для случая без данных
                         if is_alternatives:

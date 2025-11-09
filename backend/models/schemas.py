@@ -165,6 +165,7 @@ class ChatMessageRequest(BaseModel):
     chat_id: Optional[int] = None  # ID чата, если None - создается новый чат
     sql_agent_response: Optional[str] = None  # Готовый ответ от SQL-агента для сохранения
     sources_data: Optional[Dict[str, Any]] = None  # Данные источников: {cars: [], articles: [], documents: []}
+    deep_thinking_enabled: Optional[bool] = False  # Включено ли размышление для этого запроса
 
 
 class ChatMessageResponse(BaseModel):
@@ -508,6 +509,8 @@ class AIModelSettings(BaseModel):
     embedding_model: str
     api_service: Optional[str] = None
     api_key: Optional[str] = None
+    deep_thinking_model: Optional[str] = ""  # Модель для режима размышления
+    deepseek_api_key: Optional[str] = ""  # API ключ для DeepSeek (если используется)
 
 class OllamaModel(BaseModel):
     name: str

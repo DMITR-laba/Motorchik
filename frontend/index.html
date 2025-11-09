@@ -234,8 +234,20 @@
                 <!-- Input Area -->
                 <div class="border-t border-gray-200 p-4 bg-white">
                     <div class="relative">
-                        <textarea id="messageInput" rows="2" class="w-full px-4 py-3 pr-24 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 resize-none" placeholder="Type your message..."></textarea>
+                        <textarea id="messageInput" rows="2" class="w-full px-4 py-3 pr-32 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 resize-none" placeholder="Type your message..."></textarea>
                         <div class="absolute right-3 bottom-3 flex gap-2">
+                            <button id="deepThinkingButton" onclick="toggleDeepThinking()" 
+                                    class="ds-atom-button f79352dc ds-toggle-button ds-toggle-button--md p-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition-colors"
+                                    title="Глубокое мышление"
+                                    role="button" aria-disabled="false" tabindex="0">
+                                <div class="ds-icon ds-atom-button__icon flex items-center justify-center" style="font-size: 14px; width: 14px; height: 14px; color: var(--dsw-alias-brand-text, #374151); margin-right: 0px;">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.06431 5.93342C7.68763 5.93342 8.19307 6.43904 8.19322 7.06233C8.19322 7.68573 7.68772 8.19123 7.06431 8.19123C6.44099 8.19113 5.9354 7.68567 5.9354 7.06233C5.93555 6.43911 6.44108 5.93353 7.06431 5.93342Z" fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6815 0.963693C10.1169 0.447019 11.6266 0.374829 12.5633 1.31135C13.5 2.24805 13.4277 3.75776 12.911 5.19319C12.7126 5.74431 12.4386 6.31796 12.0965 6.89729C12.4969 7.54638 12.8141 8.19018 13.036 8.80647C13.5527 10.2419 13.6251 11.7516 12.6883 12.6883C11.7516 13.625 10.242 13.5527 8.8065 13.036C8.19022 12.8141 7.54641 12.4969 6.89732 12.0965C6.31797 12.4386 5.74435 12.7125 5.19322 12.911C3.75777 13.4276 2.2481 13.5 1.31138 12.5633C0.374859 11.6266 0.447049 10.1168 0.963724 8.68147C1.17185 8.10338 1.46321 7.50063 1.82896 6.8924C1.52182 6.35711 1.27235 5.82825 1.08872 5.31819C0.572068 3.88278 0.499714 2.37306 1.43638 1.43635C2.37308 0.499655 3.8828 0.572044 5.31822 1.08869C5.82828 1.27232 6.35715 1.5218 6.89243 1.82893C7.50066 1.46318 8.10341 1.17181 8.6815 0.963693ZM11.3573 8.01154C10.9083 8.62253 10.3901 9.22873 9.80943 9.8094C9.22877 10.3901 8.62255 10.9083 8.01158 11.3572C8.4257 11.5841 8.8287 11.7688 9.21275 11.9071C10.5456 12.3868 11.4246 12.2547 11.8397 11.8397C12.2548 11.4246 12.3869 10.5456 11.9071 9.21272C11.7688 8.82866 11.5841 8.42568 11.3573 8.01154ZM2.56529 8.02912C2.37344 8.39322 2.21495 8.74796 2.09263 9.08772C1.61291 10.4204 1.74512 11.2995 2.16001 11.7147C2.57505 12.1297 3.45415 12.2618 4.78697 11.7821C5.11057 11.6656 5.44786 11.5164 5.7938 11.3367C5.249 10.9223 4.70922 10.4533 4.19029 9.9344C3.57578 9.31987 3.03169 8.67633 2.56529 8.02912ZM6.90708 3.2469C6.24065 3.70479 5.5646 4.26321 4.91392 4.91389C4.26325 5.56456 3.70482 6.24063 3.24693 6.90705C3.72674 7.63325 4.32777 8.37459 5.03892 9.08576C5.64943 9.69627 6.28183 10.2265 6.90806 10.6678C7.59368 10.2025 8.2908 9.63076 8.96079 8.96076C9.6308 8.29075 10.2025 7.59366 10.6678 6.90803C10.2265 6.2818 9.69631 5.6494 9.08579 5.03889C8.37462 4.32773 7.63328 3.72672 6.90708 3.2469ZM11.7147 2.15998C11.2996 1.74509 10.4204 1.61288 9.08775 2.0926C8.74835 2.21479 8.39382 2.37271 8.03013 2.56428C8.67728 3.03065 9.31995 3.5758 9.93443 4.19026C10.4534 4.7092 10.9223 5.24896 11.3368 5.79377C11.5164 5.44785 11.6656 5.11052 11.7821 4.78694C12.2618 3.45416 12.1297 2.57502 11.7147 2.15998ZM4.91197 2.2176C3.57922 1.73788 2.70004 1.86995 2.28501 2.28498C1.87001 2.70003 1.73791 3.5792 2.21763 4.91194C2.31709 5.18822 2.44112 5.47427 2.58677 5.7674C3.01931 5.1887 3.51474 4.6158 4.06529 4.06526C4.61584 3.5147 5.18872 3.01928 5.76743 2.58674C5.47431 2.4411 5.18824 2.31706 4.91197 2.2176Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-xs ml-1 hidden sm:inline">Глубокое мышление</span>
+                            </button>
                             <button id="voiceButton" onclick="toggleVoiceRecording()" 
                                     class="p-2 rounded-full bg-gray-600 text-white hover:bg-gray-700 hidden"
                                     title="Голосовой ввод">
@@ -598,6 +610,38 @@
                         </div>
                     </div>
 
+                    <!-- Настройки модели размышления -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Модель для режима размышления</h3>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Модель, которая будет использоваться когда пользователь включает кнопку "Глубокое мышление" в чате.
+                        </p>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Модель для размышления</label>
+                                <select id="deepThinkingModel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Не выбрана (будет использована обычная модель)</option>
+                                </select>
+                                <p class="text-xs text-gray-500 mt-1">Рекомендуется: DeepSeek R1 для глубокого анализа</p>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">API ключ DeepSeek (если используется DeepSeek)</label>
+                                <div class="flex gap-2">
+                                    <input type="password" id="deepseekApiKey" class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Введите API ключ DeepSeek">
+                                    <button onclick="toggleDeepseekApiKeyVisibility()" class="px-3 py-2 border border-gray-300 rounded-md hover:bg-gray-50">
+                                        <i data-feather="eye" id="deepseekApiKeyToggleIcon"></i>
+                                    </button>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-1">Требуется только если выбран DeepSeek в качестве модели размышления</p>
+                            </div>
+                            <div class="mt-4">
+                                <button onclick="saveDeepThinkingSettings()" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                                    Сохранить настройки размышления
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Статус подключения -->
                     <div class="bg-white border border-gray-200 rounded-lg p-6">
                         <h3 class="text-lg font-semibold text-gray-800 mb-4">Статус подключения</h3>
@@ -636,6 +680,23 @@
                                     <strong>SQL-агент включен!</strong> Теперь вы можете задавать вопросы к базе данных в чате. 
                                     Например: "Сколько пользователей в системе?", "Покажи все автомобили марки Toyota" и т.д.
                                 </p>
+                            </div>
+                            
+                            <!-- Модель для SQL агента -->
+                            <div class="mt-6 pt-6 border-t border-gray-200">
+                                <h4 class="text-md font-semibold text-gray-800 mb-3">Модель для SQL агента</h4>
+                                <p class="text-xs text-gray-500 mb-4">
+                                    Выберите модель для генерации SQL запросов. Если не выбрана, будет использована модель из настроек AI.
+                                </p>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Модель для генерации SQL</label>
+                                        <select id="sqlAgentModelSelect" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" onchange="updateSQLAgentModel()">
+                                            <option value="">Использовать модель из настроек AI</option>
+                                        </select>
+                                        <p class="text-xs text-gray-500 mt-1">Модель для генерации SQL запросов из естественного языка</p>
+                                    </div>
+                                </div>
                             </div>
                             
                             <!-- Fallback на Elasticsearch -->
@@ -1716,6 +1777,43 @@
         }
         
         // Toggle language
+        // Функция переключения режима размышления
+        function toggleDeepThinking() {
+            const button = document.getElementById('deepThinkingButton');
+            const currentState = localStorage.getItem('deepThinkingEnabled') === 'true';
+            const newState = !currentState;
+            
+            localStorage.setItem('deepThinkingEnabled', newState.toString());
+            
+            // Обновляем визуальное состояние кнопки
+            if (newState) {
+                button.classList.add('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
+                button.classList.remove('border-gray-300');
+                button.querySelector('.ds-icon').style.color = '#2563eb';
+            } else {
+                button.classList.remove('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
+                button.classList.add('border-gray-300');
+                button.querySelector('.ds-icon').style.color = '#374151';
+            }
+        }
+        
+        // Инициализация состояния кнопки размышления при загрузке
+        function initDeepThinkingButton() {
+            const button = document.getElementById('deepThinkingButton');
+            if (!button) return;
+            
+            const isEnabled = localStorage.getItem('deepThinkingEnabled') === 'true';
+            if (isEnabled) {
+                button.classList.add('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
+                button.classList.remove('border-gray-300');
+                button.querySelector('.ds-icon').style.color = '#2563eb';
+            } else {
+                button.classList.remove('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
+                button.classList.add('border-gray-300');
+                button.querySelector('.ds-icon').style.color = '#374151';
+            }
+        }
+        
         function toggleLanguage() {
             isEnglish = !isEnglish;
             updateUILanguage();
@@ -2813,6 +2911,9 @@
                                 // Сохраняем ответ через chat/message для сохранения в истории
                                 console.log('📤 Отправляю ответ в /api/chat/message для сохранения в истории');
                                 try {
+                                    // Получаем состояние размышления
+                                    const deepThinkingEnabled = localStorage.getItem('deepThinkingEnabled') === 'true';
+                                    
                                     const chatRes = await fetch(API_BASE + '/api/chat/message', {
                                         method: 'POST',
                                         headers: { 'Content-Type': 'application/json', ...authHeader() },
@@ -2820,6 +2921,7 @@
                                             message: message, 
                                             user_id: getCurrentUserId(),
                                             chat_id: currentChatId,
+                                            deep_thinking_enabled: deepThinkingEnabled,
                                             sql_agent_response: finalResponse,  // Отправляем готовый ответ (работает для SQL-агента и Elasticsearch fallback)
                                             sources_data: sourcesData  // Сохраняем sources для этого сообщения
                                         })
@@ -2898,6 +3000,9 @@
                         
                         // Отправляем запрос на сервер с cars из ES
                         // articles и documents будут добавлены из ответа RAG сервиса на backend
+                        // Получаем состояние размышления
+                        const deepThinkingEnabled = localStorage.getItem('deepThinkingEnabled') === 'true';
+                        
                         const res = await fetch(API_BASE + '/api/chat/message', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json', ...authHeader() },
@@ -2905,6 +3010,7 @@
                                 message, 
                                 user_id: getCurrentUserId(),
                                 chat_id: currentChatId,
+                                deep_thinking_enabled: deepThinkingEnabled,
                                 sources_data: {
                                     cars: esCars,
                                     articles: [],  // Будет заполнено из ответа RAG
@@ -5926,18 +6032,26 @@
         function addExternalApiOptions() {
             const responseSelect = document.getElementById('responseModel');
             const embeddingSelect = document.getElementById('embeddingModel');
+            const deepThinkingSelect = document.getElementById('deepThinkingModel');
             
             // Очищаем существующие опции внешних API
             Array.from(responseSelect.options).forEach(option => {
-                if (option.value.startsWith('mistral:') || option.value.startsWith('openai:') || option.value.startsWith('anthropic:')) {
+                if (option.value.startsWith('mistral:') || option.value.startsWith('openai:') || option.value.startsWith('anthropic:') || option.value.startsWith('deepseek:')) {
                     option.remove();
                 }
             });
             Array.from(embeddingSelect.options).forEach(option => {
-                if (option.value.startsWith('mistral:') || option.value.startsWith('openai:') || option.value.startsWith('anthropic:')) {
+                if (option.value.startsWith('mistral:') || option.value.startsWith('openai:') || option.value.startsWith('anthropic:') || option.value.startsWith('deepseek:')) {
                     option.remove();
                 }
             });
+            if (deepThinkingSelect) {
+                Array.from(deepThinkingSelect.options).forEach(option => {
+                    if (option.value.startsWith('mistral:') || option.value.startsWith('openai:') || option.value.startsWith('anthropic:') || option.value.startsWith('deepseek:')) {
+                        option.remove();
+                    }
+                });
+            }
 
             // Добавляем опции для внешних API
             const externalOptions = [
@@ -5946,7 +6060,9 @@
                 { value: 'openai:gpt-4', text: 'OpenAI: GPT-4' },
                 { value: 'openai:gpt-3.5-turbo', text: 'OpenAI: GPT-3.5 Turbo' },
                 { value: 'anthropic:claude-3-opus', text: 'Anthropic: Claude 3 Opus' },
-                { value: 'anthropic:claude-3-sonnet', text: 'Anthropic: Claude 3 Sonnet' }
+                { value: 'anthropic:claude-3-sonnet', text: 'Anthropic: Claude 3 Sonnet' },
+                { value: 'deepseek:deepseek-chat', text: 'DeepSeek: DeepSeek Chat' },
+                { value: 'deepseek:deepseek-reasoner', text: 'DeepSeek: DeepSeek R1 (Reasoner)' }
             ];
 
             externalOptions.forEach(option => {
@@ -5959,6 +6075,13 @@
                 embeddingOption.value = option.value;
                 embeddingOption.textContent = option.text;
                 embeddingSelect.appendChild(embeddingOption);
+                
+                if (deepThinkingSelect) {
+                    const deepThinkingOption = document.createElement('option');
+                    deepThinkingOption.value = option.value;
+                    deepThinkingOption.textContent = option.text;
+                    deepThinkingSelect.appendChild(deepThinkingOption);
+                }
             });
         }
 
@@ -6068,6 +6191,7 @@
             // Заполняем селекты моделей
             const responseSelect = document.getElementById('responseModel');
             const embeddingSelect = document.getElementById('embeddingModel');
+            const deepThinkingSelect = document.getElementById('deepThinkingModel');
             
             // Очищаем существующие опции Ollama
             Array.from(responseSelect.options).forEach(option => {
@@ -6080,6 +6204,13 @@
                     option.remove();
                 }
             });
+            if (deepThinkingSelect) {
+                Array.from(deepThinkingSelect.options).forEach(option => {
+                    if (option.value.startsWith('ollama:')) {
+                        option.remove();
+                    }
+                });
+            }
 
             models.forEach(model => {
                 // Добавляем в список моделей
@@ -6111,6 +6242,13 @@
                 embeddingOption.value = `ollama:${model.name}`;
                 embeddingOption.textContent = `Ollama: ${model.name}`;
                 embeddingSelect.appendChild(embeddingOption);
+                
+                if (deepThinkingSelect) {
+                    const deepThinkingOption = document.createElement('option');
+                    deepThinkingOption.value = `ollama:${model.name}`;
+                    deepThinkingOption.textContent = `Ollama: ${model.name}`;
+                    deepThinkingSelect.appendChild(deepThinkingOption);
+                }
             });
         }
 
@@ -6172,6 +6310,56 @@
             }
         }
 
+        async function saveDeepThinkingSettings() {
+            const deepThinkingModel = document.getElementById('deepThinkingModel').value;
+            const deepseekApiKey = document.getElementById('deepseekApiKey').value;
+
+            try {
+                const settings = {
+                    response_model: document.getElementById('responseModel').value || '',
+                    embedding_model: document.getElementById('embeddingModel').value || '',
+                    api_service: document.getElementById('apiService').value || '',
+                    api_key: document.getElementById('apiKey').value || '',
+                    deep_thinking_model: deepThinkingModel,
+                    deepseek_api_key: deepseekApiKey
+                };
+
+                const res = await fetch(API_BASE + '/api/ai/settings/save', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...authHeader()
+                    },
+                    body: JSON.stringify(settings)
+                });
+
+                if (res.ok) {
+                    alert('Настройки размышления сохранены успешно!');
+                    await loadCurrentSettings(); // Перезагружаем настройки
+                } else {
+                    const error = await res.json();
+                    alert(`Ошибка сохранения настроек размышления: ${error.detail}`);
+                }
+            } catch (e) {
+                console.error('Ошибка сохранения настроек размышления:', e);
+                alert('Ошибка сохранения настроек размышления');
+            }
+        }
+
+        function toggleDeepseekApiKeyVisibility() {
+            const input = document.getElementById('deepseekApiKey');
+            const icon = document.getElementById('deepseekApiKeyToggleIcon');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.setAttribute('data-feather', 'eye-off');
+            } else {
+                input.type = 'password';
+                icon.setAttribute('data-feather', 'eye');
+            }
+            feather.replace();
+        }
+
         function updateConnectionStatus(type, status) {
             const indicator = document.getElementById(`${type}StatusIndicator`);
             const text = document.getElementById(`${type}StatusText`);
@@ -6201,6 +6389,11 @@
         }
 
         // Новые функции для работы с настройками AI
+        // Инициализация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            initDeepThinkingButton();
+        });
+        
         async function loadCurrentSettings() {
             try {
                 const res = await fetch(API_BASE + '/api/ai/settings', {
@@ -6229,6 +6422,12 @@
                     }
                     if (settings.api_key) {
                         document.getElementById('apiKey').value = settings.api_key;
+                    }
+                    if (settings.deep_thinking_model) {
+                        document.getElementById('deepThinkingModel').value = settings.deep_thinking_model;
+                    }
+                    if (settings.deepseek_api_key) {
+                        document.getElementById('deepseekApiKey').value = settings.deepseek_api_key;
                     }
                 }
             } catch (e) {
@@ -6296,9 +6495,103 @@
                     if (esModelSelect) {
                         esModelSelect.value = data.es_model || 'bert_spacy';
                     }
+                    
+                    // Загружаем модель SQL агента
+                    const sqlAgentModelSelect = document.getElementById('sqlAgentModelSelect');
+                    if (sqlAgentModelSelect) {
+                        // Загружаем список доступных моделей
+                        await loadSQLAgentModelOptions();
+                        // Устанавливаем выбранную модель
+                        sqlAgentModelSelect.value = data.sql_model || '';
+                    }
                 }
             } catch (e) {
                 console.error('Ошибка загрузки статуса SQL-агента:', e);
+            }
+        }
+        
+        async function loadSQLAgentModelOptions() {
+            try {
+                const sqlAgentModelSelect = document.getElementById('sqlAgentModelSelect');
+                if (!sqlAgentModelSelect) return;
+                
+                // Загружаем список моделей из AI настроек
+                const res = await fetch(API_BASE + '/api/ai/settings', {
+                    headers: { ...authHeader() }
+                });
+                
+                if (res.ok) {
+                    const data = await res.json();
+                    const settings = data.settings || {};
+                    
+                    // Очищаем опции (кроме первой - "Использовать модель из настроек AI")
+                    sqlAgentModelSelect.innerHTML = '<option value="">Использовать модель из настроек AI</option>';
+                    
+                    // Добавляем модели из Ollama
+                    const ollamaRes = await fetch(API_BASE + '/api/ai/ollama/models', {
+                        headers: { ...authHeader() }
+                    });
+                    if (ollamaRes.ok) {
+                        const ollamaData = await ollamaRes.json();
+                        if (ollamaData.models && ollamaData.models.length > 0) {
+                            ollamaData.models.forEach(model => {
+                                const option = document.createElement('option');
+                                option.value = `ollama:${model.name}`;
+                                option.textContent = `Ollama: ${model.name}`;
+                                sqlAgentModelSelect.appendChild(option);
+                            });
+                        }
+                    }
+                    
+                    // Добавляем стандартные модели
+                    const standardModels = [
+                        { value: 'mistral:mistral-small', label: 'Mistral: mistral-small' },
+                        { value: 'mistral:mistral-medium', label: 'Mistral: mistral-medium' },
+                        { value: 'mistral:mistral-large', label: 'Mistral: mistral-large' },
+                        { value: 'openai:gpt-4', label: 'OpenAI: GPT-4' },
+                        { value: 'openai:gpt-3.5-turbo', label: 'OpenAI: GPT-3.5 Turbo' },
+                        { value: 'anthropic:claude-3-opus', label: 'Anthropic: Claude 3 Opus' },
+                        { value: 'anthropic:claude-3-sonnet', label: 'Anthropic: Claude 3 Sonnet' },
+                        { value: 'anthropic:claude-3-haiku', label: 'Anthropic: Claude 3 Haiku' }
+                    ];
+                    
+                    standardModels.forEach(model => {
+                        const option = document.createElement('option');
+                        option.value = model.value;
+                        option.textContent = model.label;
+                        sqlAgentModelSelect.appendChild(option);
+                    });
+                }
+            } catch (e) {
+                console.error('Ошибка загрузки опций модели SQL агента:', e);
+            }
+        }
+        
+        async function updateSQLAgentModel() {
+            const select = document.getElementById('sqlAgentModelSelect');
+            const model = select.value;
+            
+            try {
+                const res = await fetch(API_BASE + '/api/ai/sql-agent/settings/fallback', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...authHeader()
+                    },
+                    body: JSON.stringify({
+                        sql_model: model
+                    })
+                });
+                
+                if (res.ok) {
+                    alert('Модель SQL агента обновлена');
+                } else {
+                    const error = await res.json();
+                    alert('Ошибка обновления модели: ' + (error.detail || 'Неизвестная ошибка'));
+                }
+            } catch (e) {
+                console.error('Ошибка обновления модели SQL агента:', e);
+                alert('Ошибка обновления модели SQL агента');
             }
         }
         
