@@ -12,7 +12,7 @@ async def check_ollama_availability(url: str, timeout: float = 2.0) -> bool:
     Проверяет доступность Ollama по указанному URL
     
     Args:
-        url: URL для проверки (например, "http://localhost:11434")
+        url: URL для проверки (например, "http://host.docker.internal:11434" или "http://localhost:11434")
         timeout: Таймаут в секундах
         
     Returns:
@@ -32,6 +32,11 @@ async def check_ollama_availability(url: str, timeout: float = 2.0) -> bool:
 async def find_working_ollama_url(timeout: float = 2.0) -> Optional[str]:
     """
     Находит рабочий URL для Ollama, проверяя несколько адресов
+    Приоритет проверки:
+    1. host.docker.internal:11434 (для Docker контейнеров)
+    2. Настройки из config (ollama_host:ollama_port)
+    3. localhost:11434 (для локальной разработки)
+    4. 127.0.0.1:11434
     
     Args:
         timeout: Таймаут для каждой проверки в секундах
@@ -50,10 +55,11 @@ async def find_working_ollama_url(timeout: float = 2.0) -> Optional[str]:
         ollama_host = ollama_host.replace('https://', '')
     
     # Список адресов для проверки (в порядке приоритета)
+    # Приоритет: сначала host.docker.internal (для Docker), потом localhost
     ollama_urls: List[str] = [
-        "http://localhost:11434",  # Приоритет 1: localhost
+        "http://host.docker.internal:11434",  # Приоритет 1: Docker host (для контейнеров)
         f"http://{ollama_host}:{ollama_port}",  # Приоритет 2: из настроек
-        "http://host.docker.internal:11434",  # Приоритет 3: Docker host
+        "http://localhost:11434",  # Приоритет 3: localhost (для локальной разработки)
         "http://127.0.0.1:11434",  # Приоритет 4: 127.0.0.1
     ]
     

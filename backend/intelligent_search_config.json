@@ -1,0 +1,40 @@
+{
+  "relaxation": {
+    "enabled": true,
+    "max_steps": 5,
+    "priority": [
+      "color",
+      "features",
+      "transmission",
+      "fuel_type",
+      "max_price",
+      "min_year",
+      "category",
+      "brand"
+    ],
+    "rules": {
+      "price": {
+        "increase_percent": 20,
+        "max_increase_percent": 50
+      },
+      "year": {
+        "decrease_years": 2,
+        "max_decrease_years": 5
+      }
+    }
+  },
+  "fuzzy_interpretation": {
+    "enabled": true,
+    "confidence_threshold": 0.7,
+    "require_clarification_below": 0.5
+  },
+  "recommendations": {
+    "enabled": true,
+    "max_recommendations": 5,
+    "min_similarity": 0.6
+  }
+}
+
+
+
+

@@ -31,6 +31,7 @@ services:
       - "9300:9300"
     volumes:
       - motorchik_elasticsearch_data:/usr/share/elasticsearch/data
+      - ./backend/elasticsearch/synonyms.txt:/usr/share/elasticsearch/config/analysis/synonyms.txt:ro
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
       interval: 10s

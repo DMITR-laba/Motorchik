@@ -1,0 +1,41 @@
+{
+  "enabled": true,
+  "auto_search_threshold": 0.7,
+  "max_results": 5,
+  "search_domains": [
+    "легковые",
+    "внедорожники",
+    "премиум",
+    "электромобили",
+    "коммерческие"
+  ],
+  "enable_finance_calculations": true,
+  "enable_trade_in": true,
+  "enable_test_drive": true,
+  "dialogue": {
+    "max_history_length": 50,
+    "enable_memory_compression": true,
+    "enable_emotion_analysis": false,
+    "enable_proactive_suggestions": false,
+    "question_style": "friendly"
+  },
+  "context": {
+    "recent": 6,
+    "topic": 10,
+    "session": 20,
+    "summary": 3
+  },
+  "intelligent_search": {
+    "enabled": true,
+    "auto_relax_filters": true,
+    "show_relaxation_notifications": true
+  },
+  "recommendations": {
+    "enabled": true,
+    "max_recommendations": 5,
+    "show_alternatives": true
+  }
+}
+
+
+

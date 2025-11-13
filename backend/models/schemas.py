@@ -101,6 +101,7 @@ class Category(CategoryBase):
 class SQLAgentQuestionRequest(BaseModel):
     question: str
     generate_only: bool = False  # Если True, только генерирует SQL без выполнения
+    clarification: Optional[Dict[str, Any]] = None  # Уточняющая информация от пользователя
 
 class SQLAgentResponse(BaseModel):
     success: bool
@@ -109,7 +110,11 @@ class SQLAgentResponse(BaseModel):
     columns: Optional[List[str]] = None
     row_count: Optional[int] = None
     answer: Optional[str] = None
+    needs_clarification: Optional[bool] = False  # Требуется ли уточнение
+    clarification_questions: Optional[List[str]] = None  # Вопросы для уточнения
+    query_analysis: Optional[Dict[str, Any]] = None  # Результат анализа запроса
     error: Optional[str] = None
+    fallback_source: Optional[str] = None  # Источник данных: "elasticsearch" или None
 
 class SQLAgentToggleRequest(BaseModel):
     enabled: bool
@@ -160,6 +165,7 @@ class ChatListResponse(BaseModel):
 
 
 class ChatMessageRequest(BaseModel):
+    use_intelligent_search: Optional[bool] = False  # Использовать интеллектуальный поиск
     message: str
     user_id: str
     chat_id: Optional[int] = None  # ID чата, если None - создается новый чат
@@ -445,6 +451,153 @@ class UsedCarListResponse(BaseModel):
     total: int
     page: int
     size: int
+
+
+# Схемы для AI Model Orchestrator
+class ModelSelectionRequest(BaseModel):
+    task_type: str
+    user_override: Optional[str] = None
+    task_complexity: Optional[str] = None  # "light", "medium", "heavy"
+
+
+class ModelSelectionResponse(BaseModel):
+    selected_model: str
+    task_type: str
+    source: str  # "user_override", "user_settings", "config", "fallback"
+
+
+class OrchestratorPerformanceResponse(BaseModel):
+    metrics: Dict[str, Any]
+    total_requests: int
+    models_used: List[str]
+
+
+class BulkModelUpdateRequest(BaseModel):
+    models: Dict[str, str]  # task_type -> model_name
+
+
+class BulkModelUpdateResponse(BaseModel):
+    success: bool
+    updated_tasks: List[str]
+    failed_tasks: List[str]
+
+
+# Схемы для интеллектуального поиска
+class IntelligentSearchRequest(BaseModel):
+    query: Optional[str] = None
+    mark: Optional[str] = None
+    model: Optional[str] = None
+    city: Optional[str] = None
+    fuel_type: Optional[str] = None
+    body_type: Optional[str] = None
+    min_price: Optional[float] = None
+    max_price: Optional[float] = None
+    min_year: Optional[int] = None
+    max_year: Optional[int] = None
+    min_mileage: Optional[int] = None
+    max_mileage: Optional[int] = None
+    color: Optional[str] = None
+    interior_color: Optional[str] = None
+    options: Optional[str] = None
+    car_type: Optional[str] = None
+    min_power: Optional[float] = None
+    max_power: Optional[float] = None
+    min_engine_vol: Optional[float] = None
+    max_engine_vol: Optional[float] = None
+    dialogue_context: Optional[str] = ""
+    limit: int = 20
+    offset: int = 0
+
+
+class IntelligentSearchResponse(BaseModel):
+    success: bool
+    results: List[Dict[str, Any]]
+    total: int
+    relaxation_applied: bool
+    relaxation_steps: int
+    relaxed_params: Optional[Dict[str, Any]] = None
+    original_params: Optional[Dict[str, Any]] = None
+    recommendations: Optional[Dict[str, Any]] = None
+    message: Optional[str] = None
+    error: Optional[str] = None
+
+
+# Схемы для главного ассистента автосалона
+class CarDealerQueryRequest(BaseModel):
+    user_query: str
+    user_id: str
+    session_id: Optional[int] = None
+
+
+class CarDealerQueryResponse(BaseModel):
+    user_query: str
+    query_topic: str
+    is_related: bool
+    relation_type: str
+    relation_confidence: float
+    search_performed: bool
+    search_results: Optional[Dict[str, Any]] = None
+    clarifying_questions: List[Dict[str, Any]] = []
+    proactive_suggestions: List[Dict[str, Any]] = []
+    finance_calculation: Optional[Dict[str, Any]] = None
+    response: str
+    emotion_data: Optional[Dict[str, Any]] = None
+    response_time: float
+    error: Optional[str] = None
+
+
+# Схемы для финансовых расчетов
+class FinanceCalculationRequest(BaseModel):
+    car_price: float
+    down_payment: Optional[float] = None
+    down_payment_percent: Optional[float] = 20.0
+    interest_rate: Optional[float] = None
+    loan_term: Optional[int] = 60  # в месяцах
+    calculation_type: str = "loan"  # "loan", "lease", "compare"
+    residual_value: Optional[float] = None  # для лизинга
+    lease_term: Optional[int] = None  # для лизинга
+
+
+class FinanceCalculationResponse(BaseModel):
+    success: bool
+    calculation_type: str
+    loan_calculation: Optional[Dict[str, Any]] = None
+    lease_calculation: Optional[Dict[str, Any]] = None
+    comparison: Optional[Dict[str, Any]] = None
+    error: Optional[str] = None
+
+
+# Схемы для истории диалога
+class DialogueHistoryRequest(BaseModel):
+    user_id: str
+    session_id: Optional[int] = None
+    limit: Optional[int] = 50
+
+
+class DialogueHistoryResponse(BaseModel):
+    success: bool
+    messages: List[Dict[str, Any]]
+    topics: List[str]
+    user_interests: List[str]
+    total_messages: int
+    error: Optional[str] = None
+
+
+# Схемы для визуализации диалога
+class DialogueVisualizationResponse(BaseModel):
+    success: bool
+    dialogue_map: Dict[str, Any]
+    topic_transitions: List[Dict[str, Any]]
+    key_moments: List[Dict[str, Any]]
+    error: Optional[str] = None
+
+
+# Схемы для метрик качества
+class QualityMetricsResponse(BaseModel):
+    success: bool
+    performance_summary: Dict[str, Any]
+    model_performance: Optional[Dict[str, Any]] = None
+    error: Optional[str] = None
 
 
 class CarPicture(BaseModel):

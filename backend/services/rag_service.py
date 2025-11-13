@@ -96,15 +96,65 @@ def _get_current_model_info() -> Dict[str, str]:
             "display_name": response_model
         }
 
-async def _generate_with_ai_settings(prompt: str, deep_thinking_enabled: bool = False) -> tuple[str, Dict[str, str]]:
+async def _generate_with_ai_settings(prompt: str, deep_thinking_enabled: bool = False, use_orchestrator: bool = True) -> tuple[str, Dict[str, str]]:
     """Генерирует ответ используя настройки AI и возвращает информацию о модели
     
     Args:
         prompt: Промпт для генерации
         deep_thinking_enabled: Если True, использует модель размышления вместо обычной модели
+        use_orchestrator: Если True, использует AIModelOrchestratorService для выбора модели
     """
     ai_settings = _load_ai_settings()
     model_info = _get_current_model_info()
+    
+    # Используем оркестратор для выбора модели, если включено
+    response_model = ai_settings.get("response_model", "")
+    if use_orchestrator and not deep_thinking_enabled:
+        try:
+            from services.ai_model_orchestrator_service import AIModelOrchestratorService, TaskType, Complexity
+            orchestrator = AIModelOrchestratorService()
+            
+            # Если пользователь назначил модель в настройках, используем её (оркестратор учтет это)
+            # Иначе оркестратор выберет оптимальную модель
+            selected_model = await orchestrator.select_model_for_task(
+                task_type=TaskType.ANSWER_GENERATION,
+                task_complexity=Complexity.LIGHT,
+                user_override=response_model if response_model else None
+            )
+            
+            # Обновляем model_info с выбранной моделью
+            if selected_model:
+                if selected_model.startswith("ollama:"):
+                    model_name = selected_model.replace("ollama:", "")
+                    model_info["model_name"] = model_name
+                    model_info["model_type"] = "ollama"
+                    model_info["display_name"] = f"Ollama: {model_name}"
+                    response_model = selected_model
+                elif selected_model.startswith("mistral:"):
+                    model_name = selected_model.replace("mistral:", "")
+                    model_info["model_name"] = model_name
+                    model_info["model_type"] = "mistral"
+                    model_info["display_name"] = f"Mistral: {model_name}"
+                    response_model = selected_model
+                elif selected_model.startswith("openai:"):
+                    model_name = selected_model.replace("openai:", "")
+                    model_info["model_name"] = model_name
+                    model_info["model_type"] = "openai"
+                    model_info["display_name"] = f"OpenAI: {model_name}"
+                    response_model = selected_model
+                elif selected_model.startswith("anthropic:"):
+                    model_name = selected_model.replace("anthropic:", "")
+                    model_info["model_name"] = model_name
+                    model_info["model_type"] = "anthropic"
+                    model_info["display_name"] = f"Anthropic: {model_name}"
+                    response_model = selected_model
+                
+                print(f"🎯 Оркестратор выбрал модель для генерации ответа: {model_info['display_name']}")
+        except Exception as e:
+            print(f"⚠️ Ошибка использования оркестратора: {e}, используем настройки из ai_settings.json")
+            response_model = ai_settings.get("response_model", "")
+    else:
+        response_model = ai_settings.get("response_model", "")
     
     # Если включено размышление, используем модель размышления
     if deep_thinking_enabled:
@@ -203,9 +253,13 @@ async def _generate_with_ollama_async(model_name: str, prompt: str) -> str:
     if not working_url:
         raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
 
+    # Добавляем инструкцию о русском языке в начало промпта
+    system_instruction = "🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке! НЕ используй английский язык в ответах! НЕ переключайся на английский! Все ответы должны быть на русском языке!\n\n"
+    full_prompt = system_instruction + prompt
+
     payload = {
         "model": model_name,
-        "prompt": prompt,
+        "prompt": full_prompt,
         "stream": False
     }
 
@@ -228,7 +282,7 @@ async def _generate_with_mistral_async(model_name: str, api_key: str, prompt: st
     payload = {
         "model": model_name,
         "messages": [
-            {"role": "system", "content": "Ты — полезный ассистент, отвечай кратко и по-русски."},
+            {"role": "system", "content": "Ты — полезный ассистент. 🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке! НЕ используй английский язык в ответах! НЕ переключайся на английский! Все ответы должны быть на русском языке! Отвечай кратко и по делу."},
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.3,
@@ -256,7 +310,7 @@ async def _generate_with_openai_async(model_name: str, api_key: str, prompt: str
     payload = {
         "model": model_name,
         "messages": [
-            {"role": "system", "content": "Ты — полезный ассистент, отвечай кратко и по-русски."},
+            {"role": "system", "content": "Ты — полезный ассистент. 🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке! НЕ используй английский язык в ответах! НЕ переключайся на английский! Все ответы должны быть на русском языке! Отвечай кратко и по делу."},
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.3,
@@ -281,9 +335,11 @@ async def _generate_with_anthropic_async(model_name: str, api_key: str, prompt: 
         "Content-Type": "application/json",
         "anthropic-version": "2023-06-01"
     }
+    system_prompt = "Ты — полезный ассистент. 🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке! НЕ используй английский язык в ответах! НЕ переключайся на английский! Все ответы должны быть на русском языке! Отвечай кратко и по делу."
     payload = {
         "model": model_name,
         "max_tokens": 3072,
+        "system": system_prompt,
         "messages": [
             {"role": "user", "content": prompt}
         ]
@@ -307,7 +363,7 @@ async def _generate_with_deepseek_async(model_name: str, api_key: str, prompt: s
     payload = {
         "model": model_name,
         "messages": [
-            {"role": "system", "content": "Ты — полезный ассистент, отвечай подробно и обдуманно по-русски."},
+            {"role": "system", "content": "Ты — полезный ассистент. 🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке! НЕ используй английский язык в ответах! НЕ переключайся на английский! Все ответы должны быть на русском языке! Отвечай подробно и обдуманно."},
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.7,
@@ -337,7 +393,7 @@ def _generate_with_mistral(prompt: str) -> str:
     payload = {
         "model": settings.mistral_model,
         "messages": [
-            {"role": "system", "content": "Ты — полезный ассистент, отвечай кратко и по-русски."},
+            {"role": "system", "content": "Ты — полезный ассистент. 🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке! НЕ используй английский язык в ответах! НЕ переключайся на английский! Все ответы должны быть на русском языке! Отвечай кратко и по делу."},
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.3,
@@ -456,9 +512,13 @@ def _generate_with_ollama_standalone(prompt: str) -> str:
     if not working_url:
         raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
     
+    # Добавляем инструкцию о русском языке в начало промпта
+    system_instruction = "🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке! НЕ используй английский язык в ответах! НЕ переключайся на английский! Все ответы должны быть на русском языке!\n\n"
+    full_prompt = system_instruction + prompt
+    
     payload = {
         "model": settings.ollama_model,
-        "prompt": prompt,
+        "prompt": full_prompt,
         "stream": False
     }
     
@@ -2546,30 +2606,37 @@ URL: {article.url or 'Не указан'}
     def _generate_with_ollama(self, prompt: str) -> str:
         # Сохранено для обратной совместимости; сейчас генерация идёт через Mistral
         import requests
+        import asyncio
+        from services.ollama_utils import find_working_ollama_url
         
-        # Пробуем разные адреса Ollama
-        ollama_urls = [
-            f"{settings.ollama_host}:{settings.ollama_port}",
-            "http://localhost:11434",
-            "http://host.docker.internal:11434"
-        ]
+        # Используем утилиту для поиска рабочего URL (проверяет host.docker.internal и localhost)
+        try:
+            loop = asyncio.get_event_loop()
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+        
+        working_url = loop.run_until_complete(find_working_ollama_url(timeout=2.0))
+        if not working_url:
+            raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
+        
+        # Добавляем инструкцию о русском языке в начало промпта
+        system_instruction = "🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке! НЕ используй английский язык в ответах! НЕ переключайся на английский! Все ответы должны быть на русском языке!\n\n"
+        full_prompt = system_instruction + prompt
         
         payload = {
             "model": settings.ollama_model,
-            "prompt": prompt,
+            "prompt": full_prompt,
             "stream": False
         }
         
-        for url in ollama_urls:
-            try:
-                resp = requests.post(f"{url}/api/generate", json=payload, timeout=120)
-                resp.raise_for_status()
-                data = resp.json()
-                return data.get("response", "")
-            except:
-                continue
-        
-        raise Exception("Не удается подключиться к Ollama ни по одному из адресов")
+        try:
+            resp = requests.post(f"{working_url}/api/generate", json=payload, timeout=120)
+            resp.raise_for_status()
+            data = resp.json()
+            return data.get("response", "")
+        except Exception as e:
+            raise Exception(f"Ошибка при обращении к Ollama по адресу {working_url}: {str(e)}")
     
     def _apply_strict_filters(self, cars: List[Car], used_cars: List[UsedCar], 
                              query: str) -> Tuple[List[Car], List[UsedCar]]:

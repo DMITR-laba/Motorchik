@@ -258,6 +258,87 @@ async def send_message(
         
         print(f"✅ Предзагружено автомобилей для контекста: новых={len(preloaded_cars_from_sources)}, подержанных={len(preloaded_used_cars_from_sources)}")
         
+        # Если включен интеллектуальный поиск, используем IntelligentSearchService
+        if request.use_intelligent_search:
+            try:
+                from services.intelligent_search_service import IntelligentSearchService
+                from services.dialog_state_service import DialogStateService
+                from app.api.search_es import _extract_filters_from_text
+                
+                print("🔍 Используется интеллектуальный поиск")
+                
+                # Извлекаем фильтры из запроса
+                filters = _extract_filters_from_text(request.message)
+                
+                # Получаем контекст диалога
+                dialogue_context = "\n".join([f"Пользователь: {h.get('q', '')}\nАссистент: {h.get('a', '')}" for h in history])
+                
+                # Выполняем интеллектуальный поиск с поддержкой SQL агента
+                intelligent_search = IntelligentSearchService(db_session=db)
+                # Пробуем сначала SQL агент, если запрос подходит для SQL
+                use_sql_agent = len(filters) > 0 or any(keyword in request.message.lower() for keyword in ['тойота', 'bmw', 'мерседес', 'ауди', 'тойота', 'бмв', 'марка', 'модель', 'год', 'цена'])
+                search_result = await intelligent_search.search_with_intelligence(
+                    initial_params={k: v for k, v in filters.items() if v is not None},
+                    user_query=request.message,
+                    dialogue_context=dialogue_context,
+                    use_sql_agent=use_sql_agent
+                )
+                
+                # Если найдены результаты, загружаем полные объекты автомобилей
+                if search_result.get("success") and search_result.get("results"):
+                    hits = search_result.get("results", [])
+                    print(f"✅ Интеллектуальный поиск нашел {len(hits)} автомобилей")
+                    
+                    for hit in hits:
+                        source = hit.get("_source", {})
+                        car_id = source.get("id")
+                        if car_id:
+                            # Определяем тип по наличию mileage
+                            has_mileage = source.get("mileage") is not None
+                            
+                            if has_mileage:
+                                used_car = db_service.get_used_car(car_id)
+                                if used_car and used_car not in preloaded_used_cars_from_sources:
+                                    preloaded_used_cars_from_sources.append(used_car)
+                            else:
+                                car = db_service.get_car(car_id)
+                                if car and car not in preloaded_cars_from_sources:
+                                    preloaded_cars_from_sources.append(car)
+                    
+                    # Сохраняем критерии поиска в состояние диалога
+                    dialog_state = DialogStateService(request.user_id)
+                    dialog_state.update_criteria(filters)
+                    
+                    # Сохраняем результаты поиска
+                    dialog_state.set_last_shown_cars([
+                        {
+                            "id": hit.get("_source", {}).get("id"),
+                            "mark": hit.get("_source", {}).get("mark"),
+                            "model": hit.get("_source", {}).get("model")
+                        }
+                        for hit in hits[:10]
+                    ])
+                
+                # Добавляем информацию об ослаблении фильтров в sources_data
+                if search_result.get("relaxation_applied"):
+                    if not request.sources_data:
+                        request.sources_data = {}
+                    request.sources_data["intelligent_search"] = {
+                        "relaxation_applied": True,
+                        "relaxation_steps": search_result.get("relaxation_steps", 0),
+                        "relaxed_params": search_result.get("relaxed_params"),
+                        "original_params": search_result.get("original_params")
+                    }
+                
+                # Добавляем рекомендации, если есть
+                if search_result.get("recommendations"):
+                    if not request.sources_data:
+                        request.sources_data = {}
+                    request.sources_data["recommendations"] = search_result.get("recommendations")
+                    
+            except Exception as e:
+                print(f"⚠️ Ошибка интеллектуального поиска: {e}, используем обычный поиск")
+        
         # Передаем предзагруженные автомобили в generate_response
         result = await rag_service.generate_response(
             request.message, 
@@ -267,6 +348,35 @@ async def send_message(
             preloaded_used_cars=preloaded_used_cars_from_sources,
             deep_thinking_enabled=request.deep_thinking_enabled or False
         )
+        
+        # Получаем уточняющие вопросы и проактивные предложения через CarDealerAssistantService
+        clarifying_questions = []
+        proactive_suggestions = []
+        finance_calculation = None
+        
+        try:
+            from services.car_dealer_assistant_service import CarDealerAssistantService
+            # Используем chat_id как session_id для ассистента
+            session_id = None
+            if request.chat_id:
+                session_id = request.chat_id
+            elif chat_id:
+                session_id = chat_id
+            
+            assistant = CarDealerAssistantService(
+                user_id=request.user_id,
+                session_id=session_id
+            )
+            
+            # Получаем дополнительные данные от ассистента
+            assistant_result = await assistant.process_query(request.message)
+            
+            if assistant_result:
+                clarifying_questions = assistant_result.get("clarifying_questions", [])
+                proactive_suggestions = assistant_result.get("proactive_suggestions", [])
+                finance_calculation = assistant_result.get("finance_calculation")
+        except Exception as e:
+            print(f"⚠️ Ошибка получения данных от CarDealerAssistantService: {e}")
         
         # Объединяем sources_data из запроса с articles и documents из результата RAG
         combined_sources_data = request.sources_data or {}
@@ -281,6 +391,14 @@ async def send_message(
         # Сохраняем cars из запроса, если они есть
         if "cars" not in combined_sources_data:
             combined_sources_data["cars"] = []
+        
+        # Добавляем уточняющие вопросы, проактивные предложения и финансовые расчеты
+        if clarifying_questions:
+            combined_sources_data["clarifying_questions"] = clarifying_questions
+        if proactive_suggestions:
+            combined_sources_data["proactive_suggestions"] = proactive_suggestions
+        if finance_calculation:
+            combined_sources_data["finance_calculation"] = finance_calculation
         
         # Загружаем полные объекты автомобилей из sources_data для передачи в ответ
         # Это нужно, чтобы AI получил все поля автомобилей для формирования ответа

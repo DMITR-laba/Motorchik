@@ -1,0 +1,88 @@
+# Синонимы для марок автомобилей
+bmw, бмв, beemer, beamer, бэмвэ
+mercedes, мерседес, мерс, мерседес-бенц, mercedes-benz
+audi, ауди
+volkswagen, фольксваген, фольк, vw, вольксваген
+toyota, тойота, тойот
+hyundai, хёндай, хюндай, хендай
+kia, киа
+nissan, ниссан, ниссан
+mazda, мазда, мазд
+ford, форд
+honda, хонда
+lexus, лексус
+chevrolet, шевроле, шеви, chevy
+opel, опель
+peugeot, пежо
+renault, рено
+citroen, ситроен, ситрон
+seat, сеат
+skoda, скада, шкода
+fiat, фиат
+porsche, порше
+geely, джили, гели
+chery, чаери, черри
+haval, хавал
+lada, ваз, лада
+gaz, газ
+uaz, уаз
+moskvich, москвич
+
+# Синонимы для типов кузова
+седан, sedan
+хэтчбек, хетчбек, hatchback
+кроссовер, crossover, suv
+внедорожник, внедорож, off-road, 4x4
+универсал, универсал, wagon, estate
+купе, coupe
+кабриолет, кабрио, cabriolet, convertible
+лимузин, limousine
+пикап, pickup
+микроавтобус, микроавтобус, minivan, минивэн
+
+# Синонимы для коробки передач
+автомат, автоматическая, акпп, automatic, at
+механика, механическая, мкпп, manual, mt
+робот, роботизированная, ркпп, robotized
+вариатор, cvt, вариаторная
+
+# Синонимы для типа топлива
+бензин, petrol, gasoline, gas
+дизель, diesel
+гибрид, hybrid
+электрический, электрический, electric, ev
+
+# Синонимы для привода
+полный, 4wd, awd, all-wheel drive, полный привод
+передний, fwd, front-wheel drive, передний привод
+задний, rwd, rear-wheel drive, задний привод
+
+# Синонимы для характеристик
+мощность, л.с., лс, лошадиных сил, horsepower, hp
+объем двигателя, объем, литров, л, liters, l
+пробег, километров, км, mileage, km
+год, года, год выпуска, year, manufacture year
+цена, стоимость, рублей, руб, price, cost
+новый, новый автомобиль, new car
+б/у, б у, бу, с пробегом, подержанный, used, second-hand
+
+# Синонимы для городов
+краснодар, краснодарский, krasnodar
+ростов-на-дону, ростов, rostov-on-don, rostov
+москва, московский, moscow
+санкт-петербург, питер, петербург, saint-petersburg, spb
+воронеж, воронежский, voronezh
+
+# Синонимы для описательных характеристик
+люксовый, премиальный, luxury, premium
+семейный, family
+городской, город, city, urban
+спортивный, спорт, sport, sports
+экономичный, экономия, экономия топлива, economical, fuel-efficient
+надежный, надежность, reliable
+комфортный, комфорт, comfortable
+быстрый, скорость, fast, quick
+красивый, красив, beautiful, nice
+милый, миленький, cute, nice
+
+

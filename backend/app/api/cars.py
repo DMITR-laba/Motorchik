@@ -24,10 +24,59 @@ async def get_cars(
     body_type: Optional[str] = None,
     min_year: Optional[int] = None,
     max_year: Optional[int] = None,
+    use_intelligent_search: Optional[bool] = Query(False, description="Использовать интеллектуальный поиск через Elasticsearch"),
     db: Session = Depends(get_db),
     _: object = Depends(get_current_user)
 ):
     """Получает список новых автомобилей с фильтрацией"""
+    # Если включен интеллектуальный поиск, используем Elasticsearch
+    if use_intelligent_search:
+        try:
+            from services.elasticsearch_service import ElasticsearchService
+            from services.intelligent_search_service import IntelligentSearchService
+            
+            es_service = ElasticsearchService()
+            if es_service.is_available():
+                # Формируем параметры для интеллектуального поиска
+                initial_params = {
+                    "mark": mark,
+                    "model": model,
+                    "city": city,
+                    "fuel_type": fuel_type,
+                    "body_type": body_type,
+                    "min_year": min_year,
+                    "max_year": max_year,
+                    "car_type": "car"
+                }
+                initial_params = {k: v for k, v in initial_params.items() if v is not None}
+                
+                intelligent_search = IntelligentSearchService()
+                search_result = await intelligent_search.search_with_intelligence(
+                    initial_params=initial_params,
+                    user_query=search or "",
+                    dialogue_context=""
+                )
+                
+                # Конвертируем результаты Elasticsearch в Car объекты
+                if search_result.get("success") and search_result.get("results"):
+                    hits = search_result.get("results", [])
+                    car_ids = [hit.get("_source", {}).get("id") for hit in hits[:size]]
+                    
+                    if car_ids:
+                        db_service = DatabaseService(db)
+                        cars = [db_service.get_car(cid) for cid in car_ids if db_service.get_car(cid)]
+                        total = search_result.get("total", len(cars))
+                        
+                        return CarListResponse(
+                            cars=cars,
+                            total=total,
+                            page=page,
+                            size=size
+                        )
+        except Exception as e:
+            print(f"⚠️ Ошибка интеллектуального поиска в cars.py: {e}, используем обычный поиск")
+    
+    # Обычный поиск через БД
     db_service = DatabaseService(db)
     skip = (page - 1) * size
     cars, total = db_service.get_cars(

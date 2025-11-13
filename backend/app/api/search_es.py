@@ -8,7 +8,7 @@ except Exception:
 from services.elasticsearch_service import ElasticsearchService
 
 
-router = APIRouter(prefix="/search/es", tags=["search-es"])
+router = APIRouter(prefix="/api/search/es", tags=["search-es"])
 
 es_service = ElasticsearchService()
 
@@ -369,6 +369,41 @@ def _extract_filters_from_text(text: str) -> Dict[str, Any]:
     elif 'купе' in t:
         filters['body_type'] = 'купе'
 
+    # Тип коробки передач
+    if re.search(r'\b(автомат|автоматическ|акпп|automatic)\b', t):
+        filters['gear_box_type'] = 'автомат'
+    elif re.search(r'\b(механик|мкпп|manual)\b', t):
+        filters['gear_box_type'] = 'механика'
+    
+    # Тип топлива
+    if re.search(r'\b(бензин|petrol|gasoline)\b', t):
+        filters['fuel_type'] = 'бензин'
+    elif re.search(r'\b(дизель|diesel)\b', t):
+        filters['fuel_type'] = 'дизель'
+    elif re.search(r'\b(гибрид|hybrid)\b', t):
+        filters['fuel_type'] = 'гибрид'
+    elif re.search(r'\b(электрическ|electric|электро)\b', t):
+        filters['fuel_type'] = 'электрический'
+    
+    # Тип привода
+    if re.search(r'\b(полный|4wd|awd|full)\b', t):
+        filters['driving_gear_type'] = 'полный'
+    elif re.search(r'\b(передний|fwd|front)\b', t):
+        filters['driving_gear_type'] = 'передний'
+    elif re.search(r'\b(задний|rwd|rear)\b', t):
+        filters['driving_gear_type'] = 'задний'
+    
+    # Марка и модель (базовое извлечение)
+    # Более сложное извлечение марки/модели лучше делать через LLM
+    common_marks = ['toyota', 'bmw', 'mercedes', 'audi', 'volkswagen', 'ford', 'hyundai', 
+                    'kia', 'nissan', 'honda', 'mazda', 'skoda', 'renault', 'chery', 
+                    'omoda', 'dongfeng', 'hongqi', 'aito', 'москвич', 'changan', 'jac', 
+                    'belgee', 'jaecoo', 'tank', 'lrv', 'rvr', 'hnd', 'mbs', 'jgr']
+    for mark in common_marks:
+        if mark.lower() in t:
+            filters['mark'] = mark.capitalize()
+            break
+
     # Общие запросы без фильтров: "покажи машины", "какие модели доступны", "что есть"
     general_query_patterns = [
         r"покажи\s+машин|какие\s+модел|что\s+есть|что\s+доступн|подбери\s+мне\s+машин|хочу\s+купить\s+авто"
@@ -382,7 +417,7 @@ def _extract_filters_from_text(text: str) -> Dict[str, Any]:
 
 
 @router.get("/cars")
-def search_cars(
+async def search_cars(
     q: Optional[str] = Query(None, description="Текстовый запрос"),
     query: Optional[str] = Query(None, description="Алиас текстового запроса ('q') для совместимости"),
     mark: Optional[str] = None,
@@ -421,6 +456,7 @@ def search_cars(
     max_engine_vol: Optional[float] = None,
     limit: int = 20,
     offset: int = 0,
+    use_intelligent_search: Optional[bool] = Query(False, description="Использовать интеллектуальный поиск с ослаблением фильтров"),
 ):
     if not es_service.is_available():
         return {"total": 0, "hits": [], "error": "Elasticsearch недоступен"}
@@ -433,6 +469,18 @@ def search_cars(
     search_query = text  # Текст для поиска по умолчанию
     if text:
         extracted = _extract_filters_from_text(text)
+        
+        # Извлекаем сортировку через ИИ (если доступно)
+        try:
+            from app.api.ai import _extract_sorting_with_ai
+            sort_orders = await _extract_sorting_with_ai(
+                user_query=text,
+                extracted_filters=extracted
+            )
+            if sort_orders:
+                extracted["sort_orders"] = sort_orders
+        except Exception as e:
+            print(f"⚠️ Ошибка извлечения сортировки через ИИ: {e}")
         
         # Также используем расширенный парсер критериев для лучшего извлечения
         from services.dialog_command_processor import DialogCommandProcessor
@@ -514,54 +562,192 @@ def search_cars(
         # Убираем текстовый запрос и показываем все доступные автомобили
         search_query = ""
 
-    result = es_service.search_cars(
-        query=search_query,
-        mark=mark,
-        model=model,
-        city=city,
-        fuel_type=fuel_type,
-        body_type=body_type,
-        gear_box_type=gear_box_type,
-        driving_gear_type=driving_gear_type,
-        color=color,
-        interior_color=interior_color,
-        options=options,
-        min_price=min_price,
-        max_price=max_price,
-        min_year=min_year,
-        max_year=max_year,
-        min_mileage=min_mileage,
-        max_mileage=max_mileage,
-        car_type=car_type,
-        vin=vin,
-        engine=engine,
-        cargo_volume=cargo_volume,
-        door_qty=door_qty,
-        doors=doors,
-        fuel_consumption=fuel_consumption,
-        max_torque=max_torque,
-        acceleration=acceleration,
-        max_speed=max_speed,
-        wheel_type=wheel_type,
-        category=category,
-        owners=owners,
-        accident=accident,
-        min_power=min_power,
-        max_power=max_power,
-        min_engine_vol=min_engine_vol,
-        max_engine_vol=max_engine_vol,
-        limit=limit,
-        offset=offset,
-        has_discount=has_discount,
-        large_cargo=large_cargo,
-        small_cargo=small_cargo,
-        has_turbo=has_turbo,
-        min_clearance_cm=min_clearance_cm,
-        sport_style=sport_style,
-        sort_by=sort_by,
-        superlative=superlative,
-        show_all=show_all,
-    )
+    # Если включен интеллектуальный поиск, используем IntelligentSearchService
+    if use_intelligent_search:
+        try:
+            from services.intelligent_search_service import IntelligentSearchService
+            
+            print("🔍 Используется интеллектуальный поиск в search_es")
+            
+            # Формируем начальные параметры поиска
+            initial_params = {
+                "mark": mark,
+                "model": model,
+                "city": city,
+                "fuel_type": fuel_type,
+                "body_type": body_type,
+                "gear_box_type": gear_box_type,
+                "driving_gear_type": driving_gear_type,
+                "color": color,
+                "interior_color": interior_color,
+                "options": options,
+                "min_price": min_price,
+                "max_price": max_price,
+                "min_year": min_year,
+                "max_year": max_year,
+                "min_mileage": min_mileage,
+                "max_mileage": max_mileage,
+                "car_type": car_type,
+                "min_power": min_power,
+                "max_power": max_power,
+                "min_engine_vol": min_engine_vol,
+                "max_engine_vol": max_engine_vol,
+            }
+            # Убираем None значения
+            initial_params = {k: v for k, v in initial_params.items() if v is not None}
+            
+            # Выполняем интеллектуальный поиск с поддержкой SQL агента
+            from models import get_db
+            from sqlalchemy.orm import Session
+            # Получаем сессию БД для SQL агента
+            db_gen = get_db()
+            db = next(db_gen)
+            try:
+                intelligent_search = IntelligentSearchService(db_session=db)
+                # Используем SQL агент если есть структурированные параметры
+                use_sql_agent = len(initial_params) > 0
+                search_result = await intelligent_search.search_with_intelligence(
+                    initial_params=initial_params,
+                    user_query=text or search_query,
+                    dialogue_context="",
+                    use_sql_agent=use_sql_agent
+                )
+            finally:
+                db.close()
+            
+            # Если поиск успешен, возвращаем результаты в формате Elasticsearch
+            if search_result.get("success") and search_result.get("results"):
+                hits = search_result.get("results", [])
+                total = search_result.get("total", len(hits))
+                
+                # Формируем результат в формате Elasticsearch
+                result = {
+                    "total": total,
+                    "hits": hits[:limit],
+                    "intelligent_search": {
+                        "enabled": True,
+                        "relaxation_applied": search_result.get("relaxation_applied", False),
+                        "relaxation_steps": search_result.get("relaxation_steps", 0),
+                        "relaxed_params": search_result.get("relaxed_params"),
+                        "original_params": search_result.get("original_params"),
+                        "recommendations": search_result.get("recommendations")
+                    }
+                }
+            else:
+                # Если результатов нет, возвращаем пустой результат с рекомендациями
+                result = {
+                    "total": 0,
+                    "hits": [],
+                    "intelligent_search": {
+                        "enabled": True,
+                        "relaxation_applied": search_result.get("relaxation_applied", False),
+                        "relaxation_steps": search_result.get("relaxation_steps", 0),
+                        "recommendations": search_result.get("recommendations")
+                    }
+                }
+        except Exception as e:
+            print(f"⚠️ Ошибка интеллектуального поиска: {e}, используем обычный поиск")
+            # Fallback на обычный поиск
+            result = es_service.search_cars(
+                query=search_query,
+                mark=mark,
+                model=model,
+                city=city,
+                fuel_type=fuel_type,
+                body_type=body_type,
+                gear_box_type=gear_box_type,
+                driving_gear_type=driving_gear_type,
+                color=color,
+                interior_color=interior_color,
+                options=options,
+                min_price=min_price,
+                max_price=max_price,
+                min_year=min_year,
+                max_year=max_year,
+                min_mileage=min_mileage,
+                max_mileage=max_mileage,
+                car_type=car_type,
+                vin=vin,
+                engine=engine,
+                cargo_volume=cargo_volume,
+                door_qty=door_qty,
+                doors=doors,
+                fuel_consumption=fuel_consumption,
+                max_torque=max_torque,
+                acceleration=acceleration,
+                max_speed=max_speed,
+                wheel_type=wheel_type,
+                category=category,
+                owners=owners,
+                accident=accident,
+                min_power=min_power,
+                max_power=max_power,
+                min_engine_vol=min_engine_vol,
+                max_engine_vol=max_engine_vol,
+                limit=limit,
+                offset=offset,
+                has_discount=has_discount,
+                large_cargo=large_cargo,
+                small_cargo=small_cargo,
+                has_turbo=has_turbo,
+                min_clearance_cm=min_clearance_cm,
+                sport_style=sport_style,
+                sort_by=sort_by,
+                superlative=superlative,
+                show_all=show_all,
+                sort_orders=extracted.get("sort_orders") if extracted else None
+            )
+    else:
+        # Обычный поиск
+        result = es_service.search_cars(
+            query=search_query,
+            mark=mark,
+            model=model,
+            city=city,
+            fuel_type=fuel_type,
+            body_type=body_type,
+            gear_box_type=gear_box_type,
+            driving_gear_type=driving_gear_type,
+            color=color,
+            interior_color=interior_color,
+            options=options,
+            min_price=min_price,
+            max_price=max_price,
+            min_year=min_year,
+            max_year=max_year,
+            min_mileage=min_mileage,
+            max_mileage=max_mileage,
+            car_type=car_type,
+            vin=vin,
+            engine=engine,
+            cargo_volume=cargo_volume,
+            door_qty=door_qty,
+            doors=doors,
+            fuel_consumption=fuel_consumption,
+            max_torque=max_torque,
+            acceleration=acceleration,
+            max_speed=max_speed,
+            wheel_type=wheel_type,
+            category=category,
+            owners=owners,
+            accident=accident,
+            min_power=min_power,
+            max_power=max_power,
+            min_engine_vol=min_engine_vol,
+            max_engine_vol=max_engine_vol,
+            limit=limit,
+            offset=offset,
+            has_discount=has_discount,
+            large_cargo=large_cargo,
+            small_cargo=small_cargo,
+            has_turbo=has_turbo,
+            min_clearance_cm=min_clearance_cm,
+            sport_style=sport_style,
+            sort_by=sort_by,
+            superlative=superlative,
+            show_all=show_all,
+            sort_orders=extracted.get("sort_orders") if extracted else None
+        )
     # Расставляем пометки альтернативного результата по городу (если город извлечён)
     detected_city = None
     if text and not city:

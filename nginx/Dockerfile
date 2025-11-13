@@ -14,9 +14,14 @@ RUN mkdir -p /var/www/certbot
 COPY generate-self-signed-cert.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/generate-self-signed-cert.sh
 
+# Copy entrypoint script
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
 # Expose ports
 EXPOSE 80 443
 
-# Start nginx
+# Use entrypoint script
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
 

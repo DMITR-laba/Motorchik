@@ -104,7 +104,8 @@ class ElasticsearchService:
                    sport_style: Optional[bool] = None,
                    sort_by: Optional[str] = None,
                    superlative: Optional[str] = None,
-                   show_all: bool = False) -> Dict[str, Any]:
+                   show_all: bool = False,
+                   sort_orders: Optional[List[Dict[str, str]]] = None) -> Dict[str, Any]:
         """Поиск автомобилей в Elasticsearch"""
         
         if not self.is_available():
@@ -148,12 +149,15 @@ class ElasticsearchService:
             
             # Если это не только фильтр, добавляем текстовый поиск
             if not is_only_filter:
+                # Используем улучшенный анализатор для текстового поиска
                 should_queries.append({
                     "multi_match": {
                         "query": query,
                         "fields": [
-                            "mark^2",
-                            "model^2", 
+                            "mark^3",
+                            "mark.autocomplete^2",
+                            "model^3",
+                            "model.autocomplete^2",
                             "description^1.5",
                             "city",
                             "color",
@@ -178,6 +182,21 @@ class ElasticsearchService:
                             # weight убран - это float поле, нельзя использовать fuzzy
                         ],
                         "type": "best_fields",
+                        "fuzziness": "AUTO",
+                        "operator": "or",
+                        "minimum_should_match": "75%"
+                    }
+                })
+                
+                # Добавляем поиск по автодополнению для марок и моделей
+                should_queries.append({
+                    "multi_match": {
+                        "query": query,
+                        "fields": [
+                            "mark.autocomplete^1.5",
+                            "model.autocomplete^1.5"
+                        ],
+                        "type": "phrase_prefix",
                         "fuzziness": "AUTO"
                     }
                 })
@@ -678,26 +697,68 @@ class ElasticsearchService:
                 bool_query["minimum_should_match"] = 1
         
         # Определяем сортировку
-        sort_order = [
-            {"_score": {"order": "desc"}},
-            {"price": {"order": "asc"}}  # По умолчанию по возрастанию цены
-        ]
+        # Если есть текстовый запрос - сортируем ТОЛЬКО по релевантности (_score)
+        # Это гарантирует, что наиболее подходящие результаты будут первыми
+        has_text_query = query and query.strip()
         
-        # Если запрошена сортировка по суперлативам
-        if sort_by == 'price_desc' or superlative == 'most_expensive':
-            sort_order = [
-                {"price": {"order": "desc"}},  # Самые дорогие первые
-                {"_score": {"order": "desc"}}
-            ]
-            if superlative == 'most_expensive':
-                limit = 1  # Только самая дорогая
-        elif sort_by == 'price_asc' or superlative == 'cheapest':
-            sort_order = [
-                {"price": {"order": "asc"}},  # Самые дешевые первые
-                {"_score": {"order": "desc"}}
-            ]
-            if superlative == 'cheapest':
-                limit = 1  # Только самая дешевая
+        # Определяем сортировку
+        sort_order = []
+        
+        # Если есть явные sort_orders (из ИИ), используем их
+        if sort_orders and isinstance(sort_orders, list):
+            for sort_item in sort_orders:
+                field = sort_item.get("field", "")
+                direction = sort_item.get("direction", "desc")
+                
+                # Маппинг полей для Elasticsearch
+                es_field_mapping = {
+                    "price": "price",
+                    "year": "manufacture_year",
+                    "mileage": "mileage",
+                    "power": "power",
+                    "engine_vol": "engine_vol"
+                }
+                
+                es_field = es_field_mapping.get(field, field)
+                es_order = "desc" if direction == "desc" else "asc"
+                
+                sort_order.append({es_field: {"order": es_order}})
+            
+            # Добавляем сортировку по релевантности в конец, если есть текстовый запрос
+            if has_text_query:
+                sort_order.append({"_score": {"order": "desc"}})
+        else:
+            # Старая логика для обратной совместимости
+            if has_text_query:
+                # При текстовом запросе сортируем ТОЛЬКО по релевантности
+                sort_order = [
+                    {"_score": {"order": "desc"}}
+                ]
+            else:
+                # Если нет текстового запроса, используем сортировку по цене по умолчанию
+                sort_order = [
+                    {"price": {"order": "asc"}}  # По умолчанию по возрастанию цены
+                ]
+            
+            # Если запрошена явная сортировка по суперлативам - она имеет приоритет
+            if sort_by == 'price_desc' or superlative == 'most_expensive':
+                sort_order = [
+                    {"price": {"order": "desc"}},  # Самые дорогие первые
+                    {"_score": {"order": "desc"}} if has_text_query else None
+                ]
+                # Убираем None из списка
+                sort_order = [s for s in sort_order if s is not None]
+                if superlative == 'most_expensive':
+                    limit = 1  # Только самая дорогая
+            elif sort_by == 'price_asc' or superlative == 'cheapest':
+                sort_order = [
+                    {"price": {"order": "asc"}},  # Самые дешевые первые
+                    {"_score": {"order": "desc"}} if has_text_query else None
+                ]
+                # Убираем None из списка
+                sort_order = [s for s in sort_order if s is not None]
+                if superlative == 'cheapest':
+                    limit = 1  # Только самая дешевая
         
         search_body = {
             "query": {

@@ -1,0 +1,200 @@
+﻿motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯУе ╨Ь╨╛╨┤╨╡╨╗╤М mixtral:8b ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╨░, ╨╜╨░╤З╨╕╨╜╨░╨╡╨╝ ╨░╨▓╤В╨╛╨╝╨░╤В╨╕╤З╨╡╤Б╨║╤Г╤О ╨╖╨░╨│╤А╤Г╨╖╨║╤Г...
+motorchik-backend-1  | ЁЯЪА ╨Э╨░╤З╨╕╨╜╨░╨╡╨╝ ╨╖╨░╨│╤А╤Г╨╖╨║╤Г ╨╝╨╛╨┤╨╡╨╗╨╕ mixtral:8b...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯУе ╨Ь╨╛╨┤╨╡╨╗╤М mixtral:8b ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╨░, ╨╜╨░╤З╨╕╨╜╨░╨╡╨╝ ╨░╨▓╤В╨╛╨╝╨░╤В╨╕╤З╨╡╤Б╨║╤Г╤О ╨╖╨░╨│╤А╤Г╨╖╨║╤Г...
+motorchik-backend-1  | ЁЯЪА ╨Э╨░╤З╨╕╨╜╨░╨╡╨╝ ╨╖╨░╨│╤А╤Г╨╖╨║╤Г ╨╝╨╛╨┤╨╡╨╗╨╕ mixtral:8b...
+motorchik-backend-1  | INFO:httpx:HTTP Request: POST http://host.docker.internal:11434/api/pull "HTTP/1.1 200 OK"
+motorchik-backend-1  | INFO:httpx:HTTP Request: POST http://host.docker.internal:11434/api/pull "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЪая╕П ╨Ю╤И╨╕╨▒╨║╨░ ╨│╨╡╨╜╨╡╤А╨░╤Ж╨╕╨╕ ╨┐╤А╨╡╨┤╨╗╨╛╨╢╨╡╨╜╨╕╨╣ ╤З╨╡╤А╨╡╨╖ LLM: 'Input to ChatPromptTemplate is missing variables {\'\\n    "suggestions"\'}.  Expected: [\'\\n    "suggestions"\'] Received: []\nNote: if you intended {\n    "suggestions"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\n    "suggestions"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+motorchik-backend-1  | тЪая╕П ╨Ю╤И╨╕╨▒╨║╨░ ╨╕╨╜╤В╨╡╤А╨┐╤А╨╡╤В╨░╤Ж╨╕╨╕ ╨╖╨░╨┐╤А╨╛╤Б╨░: Ollama call failed with status code 404.
+motorchik-backend-1  | тЪая╕П ╨Ш╨Ш ╨▓╤Л╨▒╤А╨░╨╗ ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╤Г╤О ╨╝╨╛╨┤╨╡╨╗╤М Based on the complexity of the task (medium), I recommend the model:
+motorchik-backend-1  | 
+motorchik-backend-1  | ollama:mixtral:8b
+motorchik-backend-1  | 
+motorchik-backend-1  | This model is a good balance between performance and speed, making it suitable for medium-complexity tasks. Additionally, it's one of the most accurate models available, which aligns with the requirement for high-quality responses.
+motorchik-backend-1  | 
+motorchik-backend-1  | If this model is not available, I would recommend the fallback option:
+motorchik-backend-1  | 
+motorchik-backend-1  | ollama:llama3:8b
+motorchik-backend-1  | 
+motorchik-backend-1  | This model is also a good choice for medium-complexity tasks and provides a high level of accuracy., ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╨╝ ╤А╨╡╨║╨╛╨╝╨╡╨╜╨┤╨╛╨▓╨░╨╜╨╜╤Г╤О: ollama:mixtral:8b
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯУе ╨Ь╨╛╨┤╨╡╨╗╤М mixtral:8b ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╨░, ╨╜╨░╤З╨╕╨╜╨░╨╡╨╝ ╨░╨▓╤В╨╛╨╝╨░╤В╨╕╤З╨╡╤Б╨║╤Г╤О ╨╖╨░╨│╤А╤Г╨╖╨║╤Г...
+motorchik-backend-1  | ЁЯЪА ╨Э╨░╤З╨╕╨╜╨░╨╡╨╝ ╨╖╨░╨│╤А╤Г╨╖╨║╤Г ╨╝╨╛╨┤╨╡╨╗╨╕ mixtral:8b...
+motorchik-backend-1  | INFO:httpx:HTTP Request: POST http://host.docker.internal:11434/api/pull "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЪая╕П ╨Ю╤И╨╕╨▒╨║╨░ ╨╕╨╜╤В╨╡╤А╨┐╤А╨╡╤В╨░╤Ж╨╕╨╕ ╨╖╨░╨┐╤А╨╛╤Б╨░: Ollama call failed with status code 404.
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.004s]
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.003s]
+motorchik-backend-1  | тЬЕ ╨Я╨╛╨┤╨║╨╗╤О╤З╨╡╨╜╨╕╨╡ ╨║ Elasticsearch ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛
+motorchik-backend-1  | тД╣я╕П ChromaDB ╨╛╤В╨║╨╗╤О╤З╨╡╨╜╨░. ╨Ш╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П PostgreSQL + Elasticsearch
+motorchik-backend-1  | тЬЕ ╨Я╤А╨╡╨┤╨╖╨░╨│╤А╤Г╨╢╨╡╨╜╨╛ ╨░╨▓╤В╨╛╨╝╨╛╨▒╨╕╨╗╨╡╨╣ ╨┤╨╗╤П ╨║╨╛╨╜╤В╨╡╨║╤Б╤В╨░: ╨╜╨╛╨▓╤Л╤Е=0, ╨┐╨╛╨┤╨╡╤А╨╢╨░╨╜╨╜╤Л╤Е=0
+motorchik-backend-1  | ЁЯФН ╨Ш╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╤В╤Б╤П ╨╕╨╜╤В╨╡╨╗╨╗╨╡╨║╤В╤Г╨░╨╗╤М╨╜╤Л╨╣ ╨┐╨╛╨╕╤Б╨║
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.003s]
+motorchik-backend-1  | тЬЕ ╨Я╨╛╨┤╨║╨╗╤О╤З╨╡╨╜╨╕╨╡ ╨║ Elasticsearch ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛
+motorchik-backend-1  | тЬЕ ╨Я╨╛╨┤╨║╨╗╤О╤З╨╡╨╜╨╕╨╡ ╨║ Elasticsearch ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.003s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.006s]
+motorchik-backend-1  | тЬЕ ╨Ш╨╜╤В╨╡╨╗╨╗╨╡╨║╤В╤Г╨░╨╗╤М╨╜╤Л╨╣ ╨┐╨╛╨╕╤Б╨║ ╨╜╨░╤И╨╡╨╗ 20 ╨░╨▓╤В╨╛╨╝╨╛╨▒╨╕╨╗╨╡╨╣
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.002s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.053s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.002s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.059s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.002s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.043s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.002s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.111s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.058s]
+motorchik-backend-1  | тЬЕ ╨Ф╨╛╨▒╨░╨▓╨╗╨╡╨╜╨╛ 20 ╨┐╨╛╨┤╨╡╤А╨╢╨░╨╜╨╜╤Л╤Е ╨░╨▓╤В╨╛╨╝╨╛╨▒╨╕╨╗╨╡╨╣ ╨╕╨╖ sources_data ╨▓ ╨║╨╛╨╜╤В╨╡╨║╤Б╤В
+motorchik-backend-1  | ЁЯУК ╨Ш╤В╨╛╨│╨╛ ╨░╨▓╤В╨╛╨╝╨╛╨▒╨╕╨╗╨╡╨╣ ╨▓ ╨║╨╛╨╜╤В╨╡╨║╤Б╤В╨╡: ╨╜╨╛╨▓╤Л╤Е=0, ╨┐╨╛╨┤╨╡╤А╨╢╨░╨╜╨╜╤Л╤Е=20
+motorchik-backend-1  | тЪая╕П ╨Ю╤И╨╕╨▒╨║╨░ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╨╜╨╕╤П ╨╛╤А╨║╨╡╤Б╤В╤А╨░╤В╨╛╤А╨░: 'AIModelOrchestratorService' object has no attribute 'select_model_for_task_async', ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╨╝ ╨╜╨░╤Б╤В╤А╨╛╨╣╨║╨╕ ╨╕╨╖ ai_settings.json
+motorchik-backend-1  | тЪая╕П ╨Ш╨Ш ╨▓╤Л╨▒╤А╨░╨╗ ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╤Г╤О ╨╝╨╛╨┤╨╡╨╗╤М Based on the complexity of the task (medium), I recommend the model `ollama:mixtral:8b`. This model is a good balance between performance and speed, and it has shown to be effective for medium-complexity tasks.
+motorchik-backend-1  | 
+motorchik-backend-1  | If this model is not available, my fallback recommendation would be `ollama:llama3:8b`, which is also a high-quality model that can handle medium-complexity tasks., ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╨╝ ╤А╨╡╨║╨╛╨╝╨╡╨╜╨┤╨╛╨▓╨░╨╜╨╜╤Г╤О: ollama:mixtral:8b
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯУе ╨Ь╨╛╨┤╨╡╨╗╤М mixtral:8b ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╨░, ╨╜╨░╤З╨╕╨╜╨░╨╡╨╝ ╨░╨▓╤В╨╛╨╝╨░╤В╨╕╤З╨╡╤Б╨║╤Г╤О ╨╖╨░╨│╤А╤Г╨╖╨║╤Г...
+motorchik-backend-1  | ЁЯЪА ╨Э╨░╤З╨╕╨╜╨░╨╡╨╝ ╨╖╨░╨│╤А╤Г╨╖╨║╤Г ╨╝╨╛╨┤╨╡╨╗╨╕ mixtral:8b...
+motorchik-backend-1  | INFO:httpx:HTTP Request: POST http://host.docker.internal:11434/api/pull "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | INFO:httpx:HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.003s]
+motorchik-backend-1  | тЬЕ ╨Я╨╛╨┤╨║╨╗╤О╤З╨╡╨╜╨╕╨╡ ╨║ Elasticsearch ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛
+motorchik-backend-1  | тЬЕ ╨Я╨╛╨┤╨║╨╗╤О╤З╨╡╨╜╨╕╨╡ ╨║ Elasticsearch ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.002s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.003s]
+motorchik-backend-1  | тЬЕ ╨Я╨╛╨┤╨║╨╗╤О╤З╨╡╨╜╨╕╨╡ ╨║ Elasticsearch ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.002s]
+motorchik-backend-1  | тЬЕ ╨Я╨╛╨┤╨║╨╗╤О╤З╨╡╨╜╨╕╨╡ ╨║ Elasticsearch ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╗╨╡╨╜╨╛
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ ╨Ь╨╛╨┤╨╡╨╗╤М llama3:8b ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨░
+motorchik-backend-1  | тЪая╕П ╨Ю╤И╨╕╨▒╨║╨░ ╨░╨╜╨░╨╗╨╕╨╖╨░ ╤Н╨╝╨╛╤Ж╨╕╨╣: 'Input to ChatPromptTemplate is missing variables {\'\\n    "sentiment"\'}.  Expected: [\'\\n    "sentiment"\'] Received: []\nNote: if you intended {\n    "sentiment"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\n    "sentiment"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+motorchik-backend-1  | тЪая╕П Event loop ╤Г╨╢╨╡ ╨╖╨░╨┐╤Г╤Й╨╡╨╜, ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╨╝ ╨╝╨╛╨┤╨╡╨╗╤М ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.016s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.004s]
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | тЪая╕П ╨Ш╨Ш ╨▓╤Л╨▒╤А╨░╨╗ ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╤Г╤О ╨╝╨╛╨┤╨╡╨╗╤М Based on the task complexity (medium), I recommend the following model:
+motorchik-backend-1  | 
+motorchik-backend-1  | ollama:mixtral:8b
+motorchik-backend-1  | 
+motorchik-backend-1  | This model is a good balance between performance and speed, making it suitable for medium-complexity tasks. It's also one of the most accurate models available, which is important for generating high-quality responses.
+motorchik-backend-1  | 
+motorchik-backend-1  | If this model is not available, my fallback recommendation would be:
+motorchik-backend-1  | 
+motorchik-backend-1  | ollama:llama3:8b
+motorchik-backend-1  | 
+motorchik-backend-1  | This model is also a good choice for medium-complexity tasks and has similar performance characteristics to mixtral:8b., ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╨╝ ╤А╨╡╨║╨╛╨╝╨╡╨╜╨┤╨╛╨▓╨░╨╜╨╜╤Г╤О: ollama:mixtral:8b
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯУе ╨Ь╨╛╨┤╨╡╨╗╤М mixtral:8b ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╨░, ╨╜╨░╤З╨╕╨╜╨░╨╡╨╝ ╨░╨▓╤В╨╛╨╝╨░╤В╨╕╤З╨╡╤Б╨║╤Г╤О ╨╖╨░╨│╤А╤Г╨╖╨║╤Г...
+motorchik-backend-1  | ЁЯЪА ╨Э╨░╤З╨╕╨╜╨░╨╡╨╝ ╨╖╨░╨│╤А╤Г╨╖╨║╤Г ╨╝╨╛╨┤╨╡╨╗╨╕ mixtral:8b...
+motorchik-backend-1  | INFO:httpx:HTTP Request: POST http://host.docker.internal:11434/api/pull "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЪая╕П ╨Ю╤И╨╕╨▒╨║╨░ ╨│╨╡╨╜╨╡╤А╨░╤Ж╨╕╨╕ ╨┐╤А╨╡╨┤╨╗╨╛╨╢╨╡╨╜╨╕╨╣ ╤З╨╡╤А╨╡╨╖ LLM: 'Input to ChatPromptTemplate is missing variables {\'\\n    "suggestions"\'}.  Expected: [\'\\n    "suggestions"\'] Received: []\nNote: if you intended {\n    "suggestions"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\n    "suggestions"}}\'.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT '
+motorchik-backend-1  | тЪая╕П ╨Ш╨Ш ╨▓╤Л╨▒╤А╨░╨╗ ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╤Г╤О ╨╝╨╛╨┤╨╡╨╗╤М Based on the task complexity (medium), I recommend the following model:
+motorchik-backend-1  | 
+motorchik-backend-1  | ollama:mixtral:8b
+motorchik-backend-1  | 
+motorchik-backend-1  | This model is a good balance between performance and speed, making it suitable for medium-complexity tasks. Additionally, it's one of the most accurate models in the list, which is important for tasks that require high-quality responses.
+motorchik-backend-1  | 
+motorchik-backend-1  | If this model is not available, I would recommend the fallback option:
+motorchik-backend-1  | 
+motorchik-backend-1  | ollama:llama3:8b
+motorchik-backend-1  | 
+motorchik-backend-1  | This model is also a good choice for medium-complexity tasks and has similar performance characteristics to ollama:mixtral:8b., ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╨╝ ╤А╨╡╨║╨╛╨╝╨╡╨╜╨┤╨╛╨▓╨░╨╜╨╜╤Г╤О: ollama:mixtral:8b
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯУе ╨Ь╨╛╨┤╨╡╨╗╤М mixtral:8b ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╨░, ╨╜╨░╤З╨╕╨╜╨░╨╡╨╝ ╨░╨▓╤В╨╛╨╝╨░╤В╨╕╤З╨╡╤Б╨║╤Г╤О ╨╖╨░╨│╤А╤Г╨╖╨║╤Г...
+motorchik-backend-1  | ЁЯЪА ╨Э╨░╤З╨╕╨╜╨░╨╡╨╝ ╨╖╨░╨│╤А╤Г╨╖╨║╤Г ╨╝╨╛╨┤╨╡╨╗╨╕ mixtral:8b...
+motorchik-backend-1  | INFO:httpx:HTTP Request: POST http://host.docker.internal:11434/api/pull "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЪая╕П ╨Ю╤И╨╕╨▒╨║╨░ ╨╕╨╜╤В╨╡╤А╨┐╤А╨╡╤В╨░╤Ж╨╕╨╕ ╨╖╨░╨┐╤А╨╛╤Б╨░: Ollama call failed with status code 404.
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:HEAD http://motorchik-elasticsearch:9200/ [status:200 duration:0.001s]
+motorchik-backend-1  | INFO:elastic_transport.transport:POST http://motorchik-elasticsearch:9200/cars/_search [status:200 duration:0.004s]
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЪая╕П ╨Ш╨Ш ╨▓╤Л╨▒╤А╨░╨╗ ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╤Г╤О ╨╝╨╛╨┤╨╡╨╗╤М Based on the complexity of the task (medium), I recommend the model:
+motorchik-backend-1  | 
+motorchik-backend-1  | ollama:mixtral:8b
+motorchik-backend-1  | 
+motorchik-backend-1  | This model is a good balance between performance and speed, making it suitable for medium-complexity tasks like question generation. It's also one of the most accessible models in terms of availability.
+motorchik-backend-1  | 
+motorchik-backend-1  | If this model is not available, my fallback recommendation would be:
+motorchik-backend-1  | 
+motorchik-backend-1  | ollama:llama3:8b, ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╨╝ ╤А╨╡╨║╨╛╨╝╨╡╨╜╨┤╨╛╨▓╨░╨╜╨╜╤Г╤О: ollama:mixtral:8b
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯУе ╨Ь╨╛╨┤╨╡╨╗╤М mixtral:8b ╨╜╨╡╨┤╨╛╤Б╤В╤Г╨┐╨╜╨░, ╨╜╨░╤З╨╕╨╜╨░╨╡╨╝ ╨░╨▓╤В╨╛╨╝╨░╤В╨╕╤З╨╡╤Б╨║╤Г╤О ╨╖╨░╨│╤А╤Г╨╖╨║╤Г...
+motorchik-backend-1  | ЁЯЪА ╨Э╨░╤З╨╕╨╜╨░╨╡╨╝ ╨╖╨░╨│╤А╤Г╨╖╨║╤Г ╨╝╨╛╨┤╨╡╨╗╨╕ mixtral:8b...
+motorchik-backend-1  | INFO:httpx:HTTP Request: POST http://host.docker.internal:11434/api/pull "HTTP/1.1 200 OK"
+motorchik-backend-1  | ЁЯФН ╨Я╤А╨╛╨▓╨╡╤А╨║╨░ ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕ Ollama: http://host.docker.internal:11434...
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/version "HTTP/1.1 200 OK"
+motorchik-backend-1  | тЬЕ Ollama ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╨┐╨╛ ╨░╨┤╤А╨╡╤Б╤Г: http://host.docker.internal:11434
+motorchik-backend-1  | INFO:httpx:HTTP Request: GET http://host.docker.internal:11434/api/tags "HTTP/1.1 200 OK"

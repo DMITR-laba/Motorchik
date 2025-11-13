@@ -121,7 +121,7 @@ class AIService:
             # Находим рабочий URL
             working_url = await self._find_working_ollama_url()
             if not working_url:
-                raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен на localhost:11434 или host.docker.internal:11434")
+                raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
             
             async with httpx.AsyncClient() as client:
                 response = await client.get(
@@ -152,7 +152,7 @@ class AIService:
             # Находим рабочий URL
             working_url = await self._find_working_ollama_url()
             if not working_url:
-                raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен на localhost:11434 или host.docker.internal:11434")
+                raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
             
             async with httpx.AsyncClient() as client:
                 response = await client.post(
@@ -174,7 +174,7 @@ class AIService:
             # Находим рабочий URL
             working_url = await self._find_working_ollama_url()
             if not working_url:
-                return {"status": "disconnected", "message": "Ollama не запущен на localhost:11434 или host.docker.internal:11434"}
+                return {"status": "disconnected", "message": "Ollama не запущен. Проверьте доступность Ollama."}
             
             async with httpx.AsyncClient() as client:
                 response = await client.get(

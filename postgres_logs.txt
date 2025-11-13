@@ -1,0 +1,100 @@
+﻿motorchik-postgres-1  | selecting default max_connections ... 100
+motorchik-postgres-1  | selecting default shared_buffers ... 128MB
+motorchik-postgres-1  | selecting default time zone ... UTC
+motorchik-postgres-1  | creating configuration files ... ok
+motorchik-postgres-1  | running bootstrap script ... ok
+motorchik-postgres-1  | sh: locale: not found
+motorchik-postgres-1  | 2025-11-06 22:35:33.526 UTC [35] WARNING:  no usable system locales were found
+motorchik-postgres-1  | performing post-bootstrap initialization ... ok
+motorchik-postgres-1  | syncing data to disk ... ok
+motorchik-postgres-1  | 
+motorchik-postgres-1  | 
+motorchik-postgres-1  | Success. You can now start the database server using:
+motorchik-postgres-1  | 
+motorchik-postgres-1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+motorchik-postgres-1  | 
+motorchik-postgres-1  | initdb: warning: enabling "trust" authentication for local connections
+motorchik-postgres-1  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+motorchik-postgres-1  | waiting for server to start....2025-11-06 22:35:34.153 UTC [41] LOG:  starting PostgreSQL 15.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+motorchik-postgres-1  | 2025-11-06 22:35:34.154 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+motorchik-postgres-1  | 2025-11-06 22:35:34.159 UTC [44] LOG:  database system was shut down at 2025-11-06 22:35:33 UTC
+motorchik-postgres-1  | 2025-11-06 22:35:34.163 UTC [41] LOG:  database system is ready to accept connections
+motorchik-postgres-1  |  done
+motorchik-postgres-1  | server started
+motorchik-postgres-1  | CREATE DATABASE
+motorchik-postgres-1  | 
+motorchik-postgres-1  | 
+motorchik-postgres-1  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+motorchik-postgres-1  | 
+motorchik-postgres-1  | waiting for server to shut down....2025-11-06 22:35:34.312 UTC [41] LOG:  received fast shutdown request
+motorchik-postgres-1  | 2025-11-06 22:35:34.314 UTC [41] LOG:  aborting any active transactions
+motorchik-postgres-1  | 2025-11-06 22:35:34.316 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+motorchik-postgres-1  | 2025-11-06 22:35:34.316 UTC [42] LOG:  shutting down
+motorchik-postgres-1  | 2025-11-06 22:35:34.318 UTC [42] LOG:  checkpoint starting: shutdown immediate
+motorchik-postgres-1  | 2025-11-06 22:35:34.373 UTC [42] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.014 s, sync=0.035 s, total=0.057 s; sync files=301, longest=0.002 s, average=0.001 s; distance=4239 kB, estimate=4239 kB
+motorchik-postgres-1  | 2025-11-06 22:35:34.380 UTC [41] LOG:  database system is shut down
+motorchik-postgres-1  |  done
+motorchik-postgres-1  | server stopped
+motorchik-postgres-1  | 
+motorchik-postgres-1  | PostgreSQL init process complete; ready for start up.
+motorchik-postgres-1  | 
+motorchik-postgres-1  | 2025-11-06 22:35:34.432 UTC [1] LOG:  starting PostgreSQL 15.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+motorchik-postgres-1  | 2025-11-06 22:35:34.432 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+motorchik-postgres-1  | 2025-11-06 22:35:34.432 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+motorchik-postgres-1  | 2025-11-06 22:35:34.437 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+motorchik-postgres-1  | 2025-11-06 22:35:34.441 UTC [57] LOG:  database system was shut down at 2025-11-06 22:35:34 UTC
+motorchik-postgres-1  | 2025-11-06 22:35:34.446 UTC [1] LOG:  database system is ready to accept connections
+motorchik-postgres-1  | 2025-11-06 22:40:34.505 UTC [55] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-06 22:41:53.118 UTC [55] LOG:  checkpoint complete: wrote 788 buffers (4.8%); 0 WAL file(s) added, 0 removed, 1 recycled; write=78.577 s, sync=0.028 s, total=78.613 s; sync files=275, longest=0.002 s, average=0.001 s; distance=9113 kB, estimate=9113 kB
+motorchik-postgres-1  | 2025-11-06 23:20:34.472 UTC [55] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-06 23:20:35.186 UTC [55] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.702 s, sync=0.004 s, total=0.714 s; sync files=5, longest=0.004 s, average=0.001 s; distance=15 kB, estimate=8203 kB
+motorchik-postgres-1  | 2025-11-06 23:22:10.613 UTC [1] LOG:  received fast shutdown request
+motorchik-postgres-1  | 2025-11-06 23:22:10.615 UTC [1] LOG:  aborting any active transactions
+motorchik-postgres-1  | 2025-11-06 23:22:10.618 UTC [1] LOG:  background worker "logical replication launcher" (PID 60) exited with exit code 1
+motorchik-postgres-1  | 2025-11-06 23:22:10.618 UTC [55] LOG:  shutting down
+motorchik-postgres-1  | 2025-11-06 23:22:10.619 UTC [55] LOG:  checkpoint starting: shutdown immediate
+motorchik-postgres-1  | 2025-11-06 23:22:10.630 UTC [55] LOG:  checkpoint complete: wrote 30 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.004 s, total=0.013 s; sync files=12, longest=0.002 s, average=0.001 s; distance=47 kB, estimate=7387 kB
+motorchik-postgres-1  | 2025-11-06 23:22:10.635 UTC [1] LOG:  database system is shut down
+motorchik-postgres-1  | 
+motorchik-postgres-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+motorchik-postgres-1  | 
+motorchik-postgres-1  | 2025-11-09 19:47:10.010 UTC [1] LOG:  starting PostgreSQL 15.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+motorchik-postgres-1  | 2025-11-09 19:47:10.010 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+motorchik-postgres-1  | 2025-11-09 19:47:10.010 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+motorchik-postgres-1  | 2025-11-09 19:47:10.016 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+motorchik-postgres-1  | 2025-11-09 19:47:10.024 UTC [29] LOG:  database system was shut down at 2025-11-06 23:22:10 UTC
+motorchik-postgres-1  | 2025-11-09 19:47:10.035 UTC [1] LOG:  database system is ready to accept connections
+motorchik-postgres-1  | 2025-11-09 19:52:19.857 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-09 19:52:19.868 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.012 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+motorchik-postgres-1  | 2025-11-09 20:07:50.522 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-09 20:07:50.633 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.003 s, total=0.111 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB
+motorchik-postgres-1  | 2025-11-09 20:18:11.592 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-09 20:18:11.712 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.003 s, total=0.120 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB
+motorchik-postgres-1  | 2025-11-09 20:23:22.334 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-09 20:23:22.447 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.003 s, total=0.113 s; sync files=2, longest=0.002 s, average=0.002 s; distance=1 kB, estimate=1 kB
+motorchik-postgres-1  | 2025-11-09 20:33:44.235 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-09 20:33:44.348 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.003 s, total=0.113 s; sync files=2, longest=0.003 s, average=0.002 s; distance=1 kB, estimate=1 kB
+motorchik-postgres-1  | 2025-11-09 20:38:17.063 UTC [1] LOG:  received fast shutdown request
+motorchik-postgres-1  | 2025-11-09 20:38:17.065 UTC [1] LOG:  aborting any active transactions
+motorchik-postgres-1  | 2025-11-09 20:38:17.068 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+motorchik-postgres-1  | 2025-11-09 20:38:17.068 UTC [27] LOG:  shutting down
+motorchik-postgres-1  | 2025-11-09 20:38:17.069 UTC [27] LOG:  checkpoint starting: shutdown immediate
+motorchik-postgres-1  | 2025-11-09 20:38:17.075 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.007 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=1 kB
+motorchik-postgres-1  | 2025-11-09 20:38:17.080 UTC [1] LOG:  database system is shut down
+motorchik-postgres-1  | 
+motorchik-postgres-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+motorchik-postgres-1  | 
+motorchik-postgres-1  | 2025-11-11 19:59:55.549 UTC [1] LOG:  starting PostgreSQL 15.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+motorchik-postgres-1  | 2025-11-11 19:59:55.549 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+motorchik-postgres-1  | 2025-11-11 19:59:55.549 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+motorchik-postgres-1  | 2025-11-11 19:59:55.555 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+motorchik-postgres-1  | 2025-11-11 19:59:55.560 UTC [29] LOG:  database system was shut down at 2025-11-09 20:38:17 UTC
+motorchik-postgres-1  | 2025-11-11 19:59:55.581 UTC [1] LOG:  database system is ready to accept connections
+motorchik-postgres-1  | 2025-11-11 20:05:09.345 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-11 20:05:09.460 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.004 s, total=0.116 s; sync files=3, longest=0.003 s, average=0.002 s; distance=1 kB, estimate=1 kB
+motorchik-postgres-1  | 2025-11-12 06:06:20.414 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-12 06:06:20.527 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.002 s, total=0.114 s; sync files=2, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=1 kB
+motorchik-postgres-1  | 2025-11-12 06:11:43.238 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-12 06:11:44.985 UTC [27] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.605 s, sync=0.132 s, total=1.747 s; sync files=7, longest=0.098 s, average=0.019 s; distance=23 kB, estimate=23 kB
+motorchik-postgres-1  | 2025-11-12 06:17:06.915 UTC [27] LOG:  checkpoint starting: time
+motorchik-postgres-1  | 2025-11-12 06:17:09.336 UTC [27] LOG:  checkpoint complete: wrote 25 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.406 s, sync=0.007 s, total=2.422 s; sync files=16, longest=0.004 s, average=0.001 s; distance=27 kB, estimate=27 kB

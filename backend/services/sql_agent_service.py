@@ -10,6 +10,15 @@ import json
 import os
 from app.core.config import settings
 from services.ai_service import AIService
+from services.query_analyzer_service import QueryAnalyzerService
+
+# LangChain интеграция (опционально)
+try:
+    from services.langchain_llm_service import LangChainLLMService
+    LANGCHAIN_AVAILABLE = True
+except ImportError:
+    LANGCHAIN_AVAILABLE = False
+    LangChainLLMService = None
 
 # Запрещенные SQL ключевые слова для безопасности
 FORBIDDEN_KEYWORDS = [
@@ -25,12 +34,167 @@ ALLOWED_OPERATIONS = ['SELECT']
 class SQLAgentService:
     """Сервис для генерации SQL-запросов через LLM и их безопасного выполнения"""
     
-    def __init__(self, db_session: Session):
+    def __init__(self, db_session: Session, use_langchain: bool = True):
         self.db_session = db_session
         self.engine = db_session.bind
         self.ai_service = AIService()
         self.retry_delay = 1  # Начальная задержка для retry
+        self.use_langchain = use_langchain and LANGCHAIN_AVAILABLE
+        self.langchain_service = LangChainLLMService() if self.use_langchain else None
+        if self.use_langchain:
+            print("✅ LangChain интеграция включена")
+        else:
+            print("⚠️ LangChain недоступен, используется прямой API")
         
+        # Инициализируем сервис анализа запросов
+        # Получаем модель SQL-агента для использования в анализе
+        sql_model = self._get_sql_agent_model()
+        self.query_analyzer = QueryAnalyzerService(
+            ai_service=self.ai_service,
+            langchain_service=self.langchain_service,
+            model=sql_model
+        )
+        
+    def _format_generated_params_for_sql(self, generated_params: List) -> str:
+        """Форматирует сгенерированные параметры для включения в промпт SQL-агента"""
+        params_text = []
+        sql_conditions_list = []  # Список SQL условий для примера
+        
+        for param in generated_params:
+            conditions = param.sql_conditions
+            if conditions:
+                param_desc = []
+                for field, value in conditions.items():
+                    if isinstance(value, dict):
+                        if "min" in value:
+                            if field == "power":
+                                sql_cond = f"CAST(REPLACE(REPLACE(power, ' ', ''), ',', '.') AS NUMERIC) >= {value['min']}"
+                                param_desc.append(f"- Мощность: от {value['min']} л.с. → SQL: {sql_cond}")
+                                sql_conditions_list.append(sql_cond)
+                            elif field == "price":
+                                sql_cond = f"CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) >= {value['min']}"
+                                param_desc.append(f"- Цена: от {value['min']:,} рублей → SQL: {sql_cond}")
+                                sql_conditions_list.append(sql_cond)
+                            elif field == "manufacture_year":
+                                sql_cond = f"manufacture_year >= {value['min']}"
+                                param_desc.append(f"- Год выпуска: не старше {value['min']} года → SQL: {sql_cond}")
+                                sql_conditions_list.append(sql_cond)
+                            elif field == "mileage":
+                                sql_cond = f"mileage >= {value['min']}"
+                                param_desc.append(f"- Пробег: от {value['min']} км → SQL: {sql_cond} (ТОЛЬКО в used_cars, НЕ в cars!)")
+                                sql_conditions_list.append(sql_cond)
+                        
+                        if "max" in value:
+                            if field == "power":
+                                sql_cond = f"CAST(REPLACE(REPLACE(power, ' ', ''), ',', '.') AS NUMERIC) <= {value['max']}"
+                                param_desc.append(f"- Мощность: до {value['max']} л.с. → SQL: {sql_cond}")
+                                sql_conditions_list.append(sql_cond)
+                            elif field == "price":
+                                sql_cond = f"CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) <= {value['max']}"
+                                param_desc.append(f"- Цена: до {value['max']:,} рублей → SQL: {sql_cond}")
+                                sql_conditions_list.append(sql_cond)
+                            elif field == "manufacture_year":
+                                sql_cond = f"manufacture_year <= {value['max']}"
+                                param_desc.append(f"- Год выпуска: не новее {value['max']} года → SQL: {sql_cond}")
+                                sql_conditions_list.append(sql_cond)
+                            elif field == "mileage":
+                                sql_cond = f"mileage <= {value['max']}"
+                                param_desc.append(f"- Пробег: до {value['max']} км → SQL: {sql_cond} (ТОЛЬКО в used_cars, НЕ в cars!)")
+                                sql_conditions_list.append(sql_cond)
+                            elif field == "engine_vol":
+                                sql_cond = f"engine_vol <= {value['max']}"
+                                param_desc.append(f"- Объем двигателя: до {value['max']} см³ → SQL: {sql_cond}")
+                                sql_conditions_list.append(sql_cond)
+                    
+                    elif isinstance(value, list):
+                        if field == "gear_box_type":
+                            # Формируем SQL условие для КПП
+                            like_conditions = " OR ".join([f"LOWER(gear_box_type) LIKE '%{v.lower()}%'" for v in value])
+                            sql_cond = f"({like_conditions})"
+                            param_desc.append(f"- КПП: {', '.join(value)} → SQL: {sql_cond}")
+                            sql_conditions_list.append(sql_cond)
+                        elif field == "body_type":
+                            # Формируем SQL условие для кузова
+                            like_conditions = " OR ".join([f"LOWER(body_type) LIKE '%{v.lower()}%'" for v in value])
+                            sql_cond = f"({like_conditions})"
+                            param_desc.append(f"- Кузов: {', '.join(value)} → SQL: {sql_cond}")
+                            sql_conditions_list.append(sql_cond)
+                        elif field == "fuel_type":
+                            # Формируем SQL условие для топлива
+                            like_conditions = " OR ".join([f"LOWER(fuel_type) LIKE '%{v.lower()}%'" for v in value])
+                            sql_cond = f"({like_conditions})"
+                            param_desc.append(f"- Топливо: {', '.join(value)} → SQL: {sql_cond}")
+                            sql_conditions_list.append(sql_cond)
+                
+                if param_desc:
+                    params_text.append(f"Для '{param.vague_component}':\n" + "\n".join(param_desc))
+        
+        result = "\n".join(params_text) if params_text else ""
+        
+        # Добавляем пример SQL в конец, если есть условия
+        if sql_conditions_list:
+            conditions_str = " AND ".join(sql_conditions_list)
+            result += f"""
+
+ПРИМЕР ПРАВИЛЬНОГО SQL С ЭТИМИ ПАРАМЕТРАМИ:
+SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type, power
+FROM cars 
+WHERE {conditions_str}
+AND price IS NOT NULL AND price != ''
+UNION ALL
+SELECT mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type, power
+FROM used_cars 
+WHERE {conditions_str}
+AND price IS NOT NULL AND price != '';
+"""
+        
+        return result
+    
+    def _get_sql_agent_model(self) -> str:
+        """Получает модель SQL-агента из настроек"""
+        try:
+            import os
+            import json
+            sql_agent_settings_file = "sql_agent_settings.json"
+            if os.path.exists(sql_agent_settings_file):
+                with open(sql_agent_settings_file, "r", encoding="utf-8") as f:
+                    sql_agent_settings = json.load(f)
+                    sql_model = sql_agent_settings.get("sql_model", "")
+                    if sql_model and sql_model.strip():
+                        return sql_model.strip()
+            
+            # Если модель не указана, используем модель из AI настроек
+            ai_settings = self._load_ai_settings()
+            return ai_settings.get("response_model", "")
+        except Exception:
+            return ""
+    
+    async def _get_sql_model_with_orchestrator(self) -> str:
+        """Получает модель SQL-агента через оркестратор с учетом пользовательских настроек"""
+        try:
+            # Сначала проверяем пользовательские настройки
+            sql_model = self._get_sql_agent_model()
+            
+            # Используем оркестратор для выбора модели
+            from services.ai_model_orchestrator_service import AIModelOrchestratorService, TaskType, Complexity
+            orchestrator = AIModelOrchestratorService()
+            
+            selected_model = await orchestrator.select_model_for_task(
+                task_type=TaskType.SQL_GENERATION,
+                task_complexity=Complexity.MEDIUM,
+                user_override=sql_model if sql_model else None
+            )
+            
+            if selected_model:
+                print(f"🎯 Оркестратор выбрал модель для SQL-генерации: {selected_model}")
+                return selected_model
+            
+            # Fallback на модель из настроек или пустую строку
+            return sql_model
+        except Exception as e:
+            print(f"⚠️ Ошибка использования оркестратора для SQL-модели: {e}, используем настройки")
+            return self._get_sql_agent_model()
+    
     def get_database_schema(self) -> str:
         """Получает детальную схему базы данных для промпта LLM с примерами данных"""
         inspector = inspect(self.engine)
@@ -74,8 +238,8 @@ class SQLAgentService:
                 
                 # Добавляем пояснения для важных полей
                 field_descriptions = {
-                    'mark': 'МАРКА автомобиля (например: Toyota, BMW, Chery, OMODA, DONGFENG, Hongqi, AITO, Москвич, CHANGAN, JAC, Belgee)',
-                    'model': 'МОДЕЛЬ автомобиля',
+                    'mark': 'МАРКА автомобиля - ИСПОЛЬЗУЙ ЭТО ПОЛЕ для поиска марок (например: Toyota, BMW, Chery, OMODA, DONGFENG, Hongqi, AITO, Москвич, CHANGAN, JAC, Belgee). ВАЖНО: НЕ используй поле "code" - его нет в таблице cars!',
+                    'model': 'МОДЕЛЬ автомобиля - ИСПОЛЬЗУЙ ЭТО ПОЛЕ для поиска моделей',
                     'price': 'ЦЕНА (строка в формате "1234567.0", может содержать пробелы, запятые, символ ₽)',
                     'city': 'ГОРОД (например: Москва, Санкт-Петербург, Краснодар, Ростов-на-Дону, Воронеж)',
                     'fuel_type': 'ТИП ТОПЛИВА (например: бензин, дизель, гибрид, электрический, Бензин, Дизель)',
@@ -181,7 +345,7 @@ class SQLAgentService:
     
     def validate_sql_query(self, sql_query: str) -> Tuple[bool, str]:
         """
-        Валидация SQL запроса на безопасность
+        Валидация SQL запроса на безопасность и соответствие реальной схеме БД
         Возвращает (is_valid, error_message)
         """
         if not sql_query:
@@ -221,11 +385,63 @@ class SQLAgentService:
         # Проверка на неправильные JOIN между cars и used_cars
         # Эти таблицы НЕ связаны и НЕ могут быть объединены через JOIN
         # Они должны использоваться в UNION ALL
-        if re.search(r'JOIN\s+used_cars.*?ON.*?cars|JOIN\s+cars.*?ON.*?used_cars', sql_upper):
+        if re.search(r'JOIN\s+USED_CARS.*?ON.*?CARS|JOIN\s+CARS.*?ON.*?USED_CARS', sql_upper):
             return False, "Таблицы cars и used_cars не могут быть объединены через JOIN. Используйте UNION ALL для объединения результатов из обеих таблиц."
         
-        if re.search(r'cars\s+[a-z]+\s+JOIN\s+used_cars|used_cars\s+[a-z]+\s+JOIN\s+cars', sql_upper):
+        if re.search(r'CARS\s+[A-Z]+\s+JOIN\s+USED_CARS|USED_CARS\s+[A-Z]+\s+JOIN\s+CARS', sql_upper):
             return False, "Таблицы cars и used_cars не связаны. Используйте UNION ALL для объединения результатов."
+        
+        # Валидация таблиц и столбцов по реальной схеме БД
+        try:
+            inspector = inspect(self.engine)
+            valid_tables = set(inspector.get_table_names())
+            
+            # Извлекаем все упоминания таблиц в запросе
+            table_pattern = r'\bFROM\s+(\w+)|UNION\s+ALL\s+SELECT.*?\bFROM\s+(\w+)'
+            matches = re.findall(table_pattern, sql_upper)
+            used_tables = set()
+            for match in matches:
+                table = match[0] or match[1]
+                if table:
+                    used_tables.add(table.lower())
+            
+            # Проверяем, что все таблицы существуют
+            for table in used_tables:
+                if table not in valid_tables:
+                    return False, f"Таблица '{table}' не существует в базе данных. Доступные таблицы: {', '.join(sorted(valid_tables))}"
+            
+            # Проверяем столбцы для основных таблиц (cars, used_cars)
+            if 'cars' in used_tables or 'used_cars' in used_tables:
+                # Получаем реальные столбцы из схемы
+                car_columns = set()
+                if 'cars' in valid_tables:
+                    car_columns.update([col['name'].lower() for col in inspector.get_columns('cars')])
+                if 'used_cars' in valid_tables:
+                    car_columns.update([col['name'].lower() for col in inspector.get_columns('used_cars')])
+                
+                # Извлекаем упоминания столбцов (упрощенная проверка)
+                # Ищем паттерны типа WHERE column_name, SELECT column_name
+                column_pattern = r'\b(SELECT|WHERE|ORDER\s+BY|GROUP\s+BY)\s+([A-Z_][A-Z0-9_]*)\b'
+                column_matches = re.findall(column_pattern, sql_upper)
+                
+                # Проверяем критичные столбцы, которые часто используются неправильно
+                critical_columns = ['mark', 'model', 'code', 'mileage']
+                for col_match in column_matches:
+                    col_name = col_match[1].lower() if len(col_match) > 1 else ""
+                    if col_name in critical_columns:
+                        # Проверяем, что столбец существует
+                        if col_name == 'code':
+                            # 'code' существует только в car_options, не в cars/used_cars
+                            if 'cars' in used_tables or 'used_cars' in used_tables:
+                                if 'car_options' not in used_tables:
+                                    return False, f"Столбец 'code' не существует в таблицах cars/used_cars. Используйте 'mark' для поиска марок автомобилей."
+                        elif col_name == 'mileage':
+                            # 'mileage' существует только в used_cars
+                            if 'cars' in used_tables and 'used_cars' not in used_tables:
+                                return False, f"Столбец 'mileage' существует только в таблице used_cars, не в cars."
+        except Exception as e:
+            # Если не удалось проверить схему, пропускаем эту проверку
+            print(f"⚠️ Не удалось проверить схему БД: {e}")
         
         return True, ""
     
@@ -241,9 +457,57 @@ class SQLAgentService:
             # Получаем схему БД
             schema = self.get_database_schema()
             
+            # Очищаем вопрос от параметров, если они есть (но не используем их)
+            if "🚨🚨🚨 КРИТИЧЕСКИ ВАЖНО: В запросе есть расплывчатые компоненты" in question:
+                params_start = question.find("СГЕНЕРИРОВАННЫЕ ПАРАМЕТРЫ (ОБЯЗАТЕЛЬНО ИСПОЛЬЗУЙ В SQL):")
+                if params_start != -1:
+                    # Удаляем секцию с параметрами из вопроса
+                    question = question[:params_start].strip()
+            
+            # Добавляем few-shot примеры для лучшего понимания модели
+            few_shot_examples = """
+═══════════════════════════════════════════════════════════════════════════════
+ПРИМЕРЫ ЗАПРОСОВ И ОТВЕТОВ (ИСПОЛЬЗУЙ КАК ОБРАЗЕЦ):
+═══════════════════════════════════════════════════════════════════════════════
+
+Вопрос: "тойота"
+SQL: SELECT * FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%' UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%TOYOTA%'
+
+Вопрос: "BMW"
+SQL: SELECT * FROM cars WHERE UPPER(mark) LIKE '%BMW%' UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%BMW%'
+
+Вопрос: "бмв 3 серии"
+SQL: SELECT * FROM cars WHERE UPPER(mark) LIKE '%BMW%' AND UPPER(model) LIKE '%3%' AND UPPER(model) LIKE '%СЕРИИ%' UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%BMW%' AND UPPER(model) LIKE '%3%' AND UPPER(model) LIKE '%СЕРИИ%'
+
+Вопрос: "Toyota Camry"
+SQL: SELECT * FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%' AND UPPER(model) LIKE '%CAMRY%' UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%TOYOTA%' AND UPPER(model) LIKE '%CAMRY%'
+
+Вопрос: "BMW дешевле 5000000"
+SQL: SELECT * FROM cars WHERE UPPER(mark) LIKE '%BMW%' AND CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 5000000 UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%BMW%' AND CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 5000000
+
+Вопрос: "автомат не старше 2013 года с пробегом до 200000 и ценой до 5 млн"
+SQL: SELECT * FROM used_cars WHERE (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%') AND manufacture_year >= 2013 AND mileage < 200000 AND CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 5000000
+
+Вопрос: "бензин седан"
+SQL: SELECT * FROM cars WHERE (LOWER(fuel_type) LIKE '%бензин%' OR LOWER(fuel_type) LIKE '%petrol%' OR LOWER(fuel_type) LIKE '%gasoline%') AND (LOWER(body_type) LIKE '%седан%' OR LOWER(body_type) LIKE '%sedan%') UNION ALL SELECT * FROM used_cars WHERE (LOWER(fuel_type) LIKE '%бензин%' OR LOWER(fuel_type) LIKE '%petrol%' OR LOWER(fuel_type) LIKE '%gasoline%') AND (LOWER(body_type) LIKE '%седан%' OR LOWER(body_type) LIKE '%sedan%')
+
+Вопрос: "автомобили с пробегом меньше 10000" или "машины с пробегом до 10000"
+SQL: SELECT * FROM used_cars WHERE mileage < 10000
+
+Вопрос: "подержанные автомобили с пробегом меньше 50000"
+SQL: SELECT * FROM used_cars WHERE mileage < 50000
+
+⚠️ КРИТИЧЕСКИ ВАЖНО: Поле 'mileage' (пробег) существует ТОЛЬКО в таблице 'used_cars'!
+❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000  -- ОШИБКА! В таблице cars НЕТ поля mileage!
+❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000 UNION ALL SELECT * FROM used_cars WHERE mileage < 10000  -- ОШИБКА! В cars нет mileage!
+✅ ПРАВИЛЬНО: SELECT * FROM used_cars WHERE mileage < 10000  -- ПРАВИЛЬНО! mileage есть только в used_cars!
+
+═══════════════════════════════════════════════════════════════════════════════
+"""
+            
             # Формируем улучшенный промпт для LLM
             prompt = f"""Ты — эксперт по SQL для автомобильной базы данных. База данных использует PostgreSQL.
-
+{few_shot_examples}
 🚨🚨🚨 КРИТИЧЕСКИ ВАЖНО - ПРОЧИТАЙ ПЕРВЫМ! 🚨🚨🚨
 
 ⚠️ ЗАПРЕЩЕНО: НИКОГДА не используй JOIN между таблицами cars и used_cars!
@@ -280,14 +544,25 @@ class SQLAgentService:
    - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Различай МАРКУ и МОДЕЛЬ! 'mark' - МАРКА (Toyota, BMW), 'model' - МОДЕЛЬ (Camry, X5)
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Если запрос про марку (Toyota, тойота) → используй 'mark', НЕ 'model'!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Для поиска МАРОК автомобилей используй поле 'mark', НЕ 'code'!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Поле 'code' существует ТОЛЬКО в таблице car_options (код опции), НЕ в таблице cars!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: В таблице cars НЕТ поля 'code' - используй 'mark' для поиска марок!
    - ⚠️ КРИТИЧЕСКИ ВАЖНО: ВСЕГДА используй UPPER() с LIKE для поиска марок!
    - ⚠️ НЕ используй просто LIKE без UPPER() - это может не найти все варианты!
    - ⚠️ НЕ используй = для поиска марок - это не найдет варианты с пробелами или разным регистром!
    
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota, Toyota Camry
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   ✅ ПРАВИЛЬНО (МАРКА): SELECT * FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%'
+   ✅ ПРАВИЛЬНО (МАРКА): SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%BMW%'
+   ✅ ПРАВИЛЬНО (МОДЕЛЬ): SELECT * FROM cars WHERE UPPER(model) LIKE '%CAMRY%'
    
+   ❌ НЕПРАВИЛЬНО: WHERE model = 'Тойота'  -- ОШИБКА! "Тойота" - это МАРКА, используй 'mark'!
+   ❌ НЕПРАВИЛЬНО: WHERE code = 'toyota'  -- ОШИБКА! Поле 'code' не существует в таблице cars!
+   ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE code = 'toyota'  -- ОШИБКА! Используй 'mark', не 'code'!
    ❌ НЕПРАВИЛЬНО: WHERE mark LIKE 'Toyota%'  -- может не найти TOYOTA или toyota
    ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'      -- не найдет варианты регистра
    ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'  -- может не найти из-за пробелов
@@ -297,6 +572,10 @@ class SQLAgentService:
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%РОСТОВ%'
    
    - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй UPPER() с LIKE, а не =
+   - ВАЖНО: Для поиска МАРОК (Toyota, BMW, тойота, бмв) используй поле 'mark'
+   - ВАЖНО: Для поиска МОДЕЛЕЙ (Camry, Corolla, X5) используй поле 'model'
+   - ВАЖНО: НЕ путай 'mark' (марка) и 'model' (модель) - это разные поля!
+   - ВАЖНО: НЕ используй поле 'code' - его нет в таблице cars!
 
 4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
    - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
@@ -1135,41 +1414,96 @@ SQL запрос:"""
                     except Exception:
                         pass
                     
-                    # Если указана модель для SQL агента, используем её
-                    if sql_agent_model and sql_agent_model.strip():
-                        response_model = sql_agent_model.strip()
-                        print(f"🔧 Используется модель SQL агента: {response_model}")
-                    elif use_ai_settings:
-                        # Иначе используем модель из AI настроек
-                        ai_settings = self._load_ai_settings()
-                        response_model = ai_settings.get("response_model", "")
-                        print(f"🔧 Используется модель из AI настроек: {response_model}")
-                    else:
-                        response_model = ""
-                    
-                    if response_model.startswith("ollama:"):
-                        model_name = response_model.replace("ollama:", "")
-                        sql_response = await self._generate_with_ollama(model_name, prompt)
-                    elif response_model.startswith("mistral:"):
-                        model_name = response_model.replace("mistral:", "")
-                        api_key = ai_settings.get("api_key", settings.mistral_api_key) if use_ai_settings else settings.mistral_api_key
-                        sql_response = await self._generate_with_mistral(model_name, api_key, prompt)
-                    elif response_model.startswith("openai:"):
-                        model_name = response_model.replace("openai:", "")
-                        api_key = ai_settings.get("api_key", "") if use_ai_settings else ""
-                        sql_response = await self._generate_with_openai(model_name, api_key, prompt)
-                    elif response_model.startswith("anthropic:"):
-                        model_name = response_model.replace("anthropic:", "")
-                        api_key = ai_settings.get("api_key", "") if use_ai_settings else ""
-                        sql_response = await self._generate_with_anthropic(model_name, api_key, prompt)
-                    else:
-                        # Фолбэк на Mistral
-                        if use_ai_settings:
+                    # Используем оркестратор для выбора модели SQL-генерации
+                    try:
+                        response_model = await self._get_sql_model_with_orchestrator()
+                        if not response_model:
+                            # Fallback на модель из настроек
+                            if sql_agent_model and sql_agent_model.strip():
+                                response_model = sql_agent_model.strip()
+                                print(f"🔧 Используется модель SQL агента из настроек: {response_model}")
+                            elif use_ai_settings:
+                                ai_settings = self._load_ai_settings()
+                                response_model = ai_settings.get("response_model", "")
+                                print(f"🔧 Используется модель из AI настроек: {response_model}")
+                    except Exception as e:
+                        print(f"⚠️ Ошибка использования оркестратора: {e}, используем настройки")
+                        # Fallback на модель из настроек
+                        if sql_agent_model and sql_agent_model.strip():
+                            response_model = sql_agent_model.strip()
+                        elif use_ai_settings:
                             ai_settings = self._load_ai_settings()
-                            api_key = ai_settings.get("api_key", settings.mistral_api_key)
+                            response_model = ai_settings.get("response_model", "")
                         else:
-                            api_key = settings.mistral_api_key
-                        sql_response = await self._generate_with_mistral(settings.mistral_model, api_key, prompt)
+                            response_model = ""
+                    
+                    sql_response = None
+                    
+                    # Загружаем ai_settings заранее, если нужно
+                    if use_ai_settings:
+                        try:
+                            ai_settings = self._load_ai_settings()
+                        except Exception:
+                            ai_settings = {}
+                    else:
+                        ai_settings = {}
+                    
+                    # Используем LangChain если доступен и включен
+                    if self.use_langchain and self.langchain_service:
+                        try:
+                            print(f"🔗 Используется LangChain для генерации SQL через {response_model or 'default'}")
+                            api_key = None
+                            if response_model.startswith("mistral:"):
+                                api_key = ai_settings.get("api_key", settings.mistral_api_key) if use_ai_settings else settings.mistral_api_key
+                            elif response_model.startswith("openai:"):
+                                api_key = ai_settings.get("api_key", "") if use_ai_settings else ""
+                            elif response_model.startswith("anthropic:"):
+                                api_key = ai_settings.get("api_key", "") if use_ai_settings else ""
+                            elif not response_model or response_model == "":
+                                # Fallback на Mistral
+                                if use_ai_settings:
+                                    ai_settings = self._load_ai_settings()
+                                    api_key = ai_settings.get("api_key", settings.mistral_api_key)
+                                else:
+                                    api_key = settings.mistral_api_key
+                                response_model = f"mistral:{settings.mistral_model}"
+                            
+                            sql_response = await self.langchain_service.generate_sql(
+                                question=question,
+                                schema=schema,
+                                model_config=response_model or f"mistral:{settings.mistral_model}",
+                                api_key=api_key
+                            )
+                            print(f"✅ LangChain сгенерировал SQL. Длина ответа: {len(sql_response)} символов")
+                        except Exception as langchain_error:
+                            print(f"⚠️ Ошибка LangChain, переключаюсь на прямой API: {str(langchain_error)[:200]}")
+                            sql_response = None  # Продолжаем на прямой API
+                    
+                    # Используем прямой API (если LangChain не используется или произошла ошибка)
+                    if not sql_response:
+                        if response_model.startswith("ollama:"):
+                            model_name = response_model.replace("ollama:", "")
+                            sql_response = await self._generate_with_ollama(model_name, prompt)
+                        elif response_model.startswith("mistral:"):
+                            model_name = response_model.replace("mistral:", "")
+                            api_key = ai_settings.get("api_key", settings.mistral_api_key) if use_ai_settings else settings.mistral_api_key
+                            sql_response = await self._generate_with_mistral(model_name, api_key, prompt)
+                        elif response_model.startswith("openai:"):
+                            model_name = response_model.replace("openai:", "")
+                            api_key = ai_settings.get("api_key", "") if use_ai_settings else ""
+                            sql_response = await self._generate_with_openai(model_name, api_key, prompt)
+                        elif response_model.startswith("anthropic:"):
+                            model_name = response_model.replace("anthropic:", "")
+                            api_key = ai_settings.get("api_key", "") if use_ai_settings else ""
+                            sql_response = await self._generate_with_anthropic(model_name, api_key, prompt)
+                        else:
+                            # Фолбэк на Mistral
+                            if use_ai_settings:
+                                ai_settings = self._load_ai_settings()
+                                api_key = ai_settings.get("api_key", settings.mistral_api_key)
+                            else:
+                                api_key = settings.mistral_api_key
+                            sql_response = await self._generate_with_mistral(settings.mistral_model, api_key, prompt)
                     
                     # Если успешно, сбрасываем задержку
                     self.retry_delay = 1
@@ -2105,10 +2439,12 @@ SQL запрос:"""
         original_sql = sql_query
         max_fix_attempts = 3
         fix_attempt = 0
+        retry_query = False
         
         while fix_attempt < max_fix_attempts:
             fix_attempt += 1
             current_sql = sql_query
+            retry_query = False
             
             # Проверка и исправление неправильных JOIN между cars и used_cars
             if auto_fix and ('JOIN' in sql_query.upper() and ('cars' in sql_query.upper() and 'used_cars' in sql_query.upper())):
@@ -2138,16 +2474,64 @@ SQL запрос:"""
                     # Стандартные колонки для cars и used_cars
                     standard_cols = "mark, model, price, manufacture_year, city, body_type, fuel_type, gear_box_type"
                     
+                    # Проверяем, есть ли дополнительные колонки после SELECT *
+                    # Например: SELECT *, CAST(...) AS numeric_price
+                    first_extra_cols = ""
+                    second_extra_cols = ""
+                    
+                    # Извлекаем дополнительные колонки после SELECT * и перед FROM
+                    # Учитываем, что может быть SELECT *, колонка или SELECT *, колонка, колонка
+                    first_match = re.search(r'SELECT\s+\*,\s*(.+?)\s+FROM', first_part, re.IGNORECASE | re.DOTALL)
+                    if first_match:
+                        first_extra_cols = first_match.group(1).strip()
+                    
+                    second_match = re.search(r'SELECT\s+\*,\s*(.+?)\s+FROM', second_part, re.IGNORECASE | re.DOTALL)
+                    if second_match:
+                        second_extra_cols = second_match.group(1).strip()
+                    
+                    # Убеждаемся, что обе части имеют одинаковые дополнительные колонки
+                    if first_extra_cols and second_extra_cols:
+                        # Если обе части имеют дополнительные колонки, используем их
+                        pass
+                    elif first_extra_cols and not second_extra_cols:
+                        # Если только первая часть имеет дополнительные колонки, добавляем их во вторую
+                        second_extra_cols = first_extra_cols
+                    elif second_extra_cols and not first_extra_cols:
+                        # Если только вторая часть имеет дополнительные колонки, добавляем их в первую
+                        first_extra_cols = second_extra_cols
+                    
                     # Заменяем SELECT * на SELECT с явными колонками
                     if 'SELECT *' in first_part.upper():
-                        first_part = re.sub(r'SELECT\s+\*\s+FROM', f'SELECT {standard_cols} FROM', first_part, flags=re.IGNORECASE)
+                        if first_extra_cols:
+                            # Если есть дополнительные колонки, заменяем SELECT *, на SELECT с колонками
+                            first_part = re.sub(
+                                r'SELECT\s+\*,\s*(.+?)\s+FROM',
+                                f'SELECT {standard_cols}, {first_extra_cols} FROM',
+                                first_part,
+                                flags=re.IGNORECASE | re.DOTALL
+                            )
+                        else:
+                            # Если нет дополнительных колонок, просто заменяем SELECT *
+                            first_part = re.sub(r'SELECT\s+\*\s+FROM', f'SELECT {standard_cols} FROM', first_part, flags=re.IGNORECASE)
+                    
                     if 'SELECT *' in second_part.upper():
                         # Для used_cars добавляем mileage, если нужно
                         if 'used_cars' in second_part.lower():
                             used_cols = f"{standard_cols}, mileage"
-                            second_part = re.sub(r'SELECT\s+\*\s+FROM', f'SELECT {used_cols} FROM', second_part, flags=re.IGNORECASE)
                         else:
-                            second_part = re.sub(r'SELECT\s+\*\s+FROM', f'SELECT {standard_cols} FROM', second_part, flags=re.IGNORECASE)
+                            used_cols = standard_cols
+                        
+                        if second_extra_cols:
+                            # Если есть дополнительные колонки, заменяем SELECT *, на SELECT с колонками
+                            second_part = re.sub(
+                                r'SELECT\s+\*,\s*(.+?)\s+FROM',
+                                f'SELECT {used_cols}, {second_extra_cols} FROM',
+                                second_part,
+                                flags=re.IGNORECASE | re.DOTALL
+                            )
+                        else:
+                            # Если нет дополнительных колонок, просто заменяем SELECT *
+                            second_part = re.sub(r'SELECT\s+\*\s+FROM', f'SELECT {used_cols} FROM', second_part, flags=re.IGNORECASE)
                     
                     sql_query = f"{first_part} UNION ALL {second_part}"
                     if not sql_query.endswith(';'):
@@ -2248,95 +2632,252 @@ SQL запрос:"""
                                 pass
             
             # Если SQL не изменился после исправлений, выходим из цикла
-            if sql_query == current_sql:
+            if sql_query == current_sql and not retry_query:
                 break
-        
-        try:
-            # Дополнительная валидация перед выполнением
-            is_valid, error_message = self.validate_sql_query(sql_query)
             
-            if not is_valid:
-                print(f"❌ SQL не прошел валидацию перед выполнением: {error_message}")
-                return {
-                    "success": False,
-                    "error": error_message,
-                    "data": None,
-                    "sql": sql_query
-                }
-            
-            print(f"🚀 Выполняю SQL запрос (первые 200 символов): {sql_query[:200]}")
-            
-            # Выполняем запрос
-            with self.engine.connect() as connection:
-                result = connection.execute(text(sql_query))
+            try:
+                # Дополнительная валидация перед выполнением
+                is_valid, error_message = self.validate_sql_query(sql_query)
                 
-                # Получаем колонки
-                columns = list(result.keys())
+                if not is_valid:
+                    print(f"❌ SQL не прошел валидацию перед выполнением: {error_message}")
+                    return {
+                        "success": False,
+                        "error": error_message,
+                        "data": None,
+                        "sql": sql_query
+                    }
                 
-                # Получаем данные
-                rows = result.fetchall()
+                print(f"🚀 Выполняю SQL запрос (первые 200 символов): {sql_query[:200]}")
                 
-                print(f"✅ SQL запрос выполнен успешно. Найдено строк: {len(rows)}")
+                # Выполняем запрос
+                with self.engine.connect() as connection:
+                    result = connection.execute(text(sql_query))
+                    
+                    # Получаем колонки
+                    columns = list(result.keys())
+                    
+                    # Получаем данные
+                    rows = result.fetchall()
+                    
+                    print(f"✅ SQL запрос выполнен успешно. Найдено строк: {len(rows)}")
+                    
+                    # Преобразуем в список словарей
+                    data = []
+                    for row in rows:
+                        row_dict = {}
+                        for i, col in enumerate(columns):
+                            value = row[i]
+                            # Преобразуем специальные типы в строки
+                            if hasattr(value, 'isoformat'):  # datetime
+                                value = value.isoformat()
+                            row_dict[col] = value
+                        data.append(row_dict)
+                    
+                    # Ограничиваем данные до 5 записей для отправки в AI, но для источников отправляем все (до 500)
+                    limited_data = data[:5]  # Для AI-форматирования
+                    all_data = data[:500]  # Для источников (Search found/Results) - до 500 записей
+                    total_count = len(data)
+                    
+                    if total_count == 0:
+                        print(f"⚠️ SQL запрос вернул 0 результатов")
+                    else:
+                        print(f"✅ SQL запрос вернул {total_count} результатов (для AI: {len(limited_data)}, для источников: {len(all_data)})")
+                    
+                    return {
+                        "success": True,
+                        "data": all_data,  # Все данные для источников (до 500)
+                        "columns": columns,
+                        "row_count": total_count,  # Общее количество записей
+                        "limited_row_count": len(limited_data),  # Количество записей для AI (до 5)
+                        "sql": sql_query
+                    }
+                    
+            except SQLAlchemyError as e:
+                error_str = str(e)
                 
-                # Преобразуем в список словарей
-                data = []
-                for row in rows:
-                    row_dict = {}
-                    for i, col in enumerate(columns):
-                        value = row[i]
-                        # Преобразуем специальные типы в строки
-                        if hasattr(value, 'isoformat'):  # datetime
-                            value = value.isoformat()
-                        row_dict[col] = value
-                    data.append(row_dict)
-                
-                # Ограничиваем данные до 5 записей для отправки в AI, но для источников отправляем все (до 500)
-                limited_data = data[:5]  # Для AI-форматирования
-                all_data = data[:500]  # Для источников (Search found/Results) - до 500 записей
-                total_count = len(data)
-                
-                if total_count == 0:
-                    print(f"⚠️ SQL запрос вернул 0 результатов")
-                else:
-                    print(f"✅ SQL запрос вернул {total_count} результатов (для AI: {len(limited_data)}, для источников: {len(all_data)})")
-                
-                return {
-                    "success": True,
-                    "data": all_data,  # Все данные для источников (до 500)
-                    "columns": columns,
-                    "row_count": total_count,  # Общее количество записей
-                    "limited_row_count": len(limited_data),  # Количество записей для AI (до 5)
-                    "sql": sql_query
-                }
-                
-        except SQLAlchemyError as e:
-            error_str = str(e)
-            
-            # Обработка ошибки неправильного JOIN между cars и used_cars
-            if 'column' in error_str.lower() and 'does not exist' in error_str.lower():
-                if ('used_cars' in sql_query.lower() and 'cars' in sql_query.lower() and 'JOIN' in sql_query.upper()):
-                    # Проверяем, есть ли попытка JOIN между cars и used_cars
-                    if re.search(r'JOIN\s+used_cars.*?ON.*?cars|JOIN\s+cars.*?ON.*?used_cars', sql_query, re.IGNORECASE) or \
-                       re.search(r'cars\s+[a-z]+\s+JOIN\s+used_cars|used_cars\s+[a-z]+\s+JOIN\s+cars', sql_query, re.IGNORECASE):
-                        print(f"⚠️ Обнаружена ошибка: попытка JOIN между cars и used_cars. Эти таблицы не связаны!")
+                # Обработка ошибки неправильного JOIN между cars и used_cars
+                if 'column' in error_str.lower() and 'does not exist' in error_str.lower():
+                    if ('used_cars' in sql_query.lower() and 'cars' in sql_query.lower() and 'JOIN' in sql_query.upper()):
+                        # Проверяем, есть ли попытка JOIN между cars и used_cars
+                        if re.search(r'JOIN\s+used_cars.*?ON.*?cars|JOIN\s+cars.*?ON.*?used_cars', sql_query, re.IGNORECASE) or \
+                           re.search(r'cars\s+[a-z]+\s+JOIN\s+used_cars|used_cars\s+[a-z]+\s+JOIN\s+cars', sql_query, re.IGNORECASE):
+                            print(f"⚠️ Обнаружена ошибка: попытка JOIN между cars и used_cars. Эти таблицы не связаны!")
                         return {
                             "success": False,
                             "error": "Таблицы cars и used_cars не могут быть объединены через JOIN. Эти таблицы содержат разные автомобили (новые и подержанные) и не связаны между собой. Используйте UNION ALL для объединения результатов из обеих таблиц.",
                             "data": None,
                             "sql": sql_query
                         }
-            
-            # Исправление ORDER BY с CASE WHEN city в UNION (автоматическая сортировка по городам)
-            if auto_fix and 'UNION ALL' in sql_query.upper() and 'ORDER BY' in sql_query.upper():
-                if ('could not identify an equality operator' in error_str.lower() or 
-                    'operator does not exist' in error_str.lower() or
+                    
+                    # Обработка ошибки "column mileage/power/driving_gear_type/engine_vol does not exist" в UNION ALL
+                    # Это происходит, когда в SELECT из cars используются колонки, которые есть только в used_cars
+                    if auto_fix and 'UNION ALL' in sql_query.upper() and 'FROM cars' in sql_query.upper():
+                        # Извлекаем название колонки из ошибки
+                        column_match = re.search(r'column\s+"?(\w+)"?\s+does not exist', error_str, re.IGNORECASE)
+                        if column_match:
+                            missing_column = column_match.group(1).lower()
+                            # Проверяем, что это колонка из used_cars (mileage, power, driving_gear_type, engine_vol)
+                            used_cars_only_columns = ['mileage', 'power', 'driving_gear_type', 'engine_vol', 'owners']
+                            if missing_column in used_cars_only_columns:
+                                print(f"⚠️ Обнаружена ошибка: колонка '{missing_column}' используется в SELECT из cars, но она существует только в used_cars. Исправляю...")
+                                union_parts = sql_query.split('UNION ALL')
+                                if len(union_parts) == 2:
+                                    first_part = union_parts[0].strip()
+                                    second_part = union_parts[1].strip()
+                                    
+                                    # Проверяем, есть ли эта колонка в SELECT из cars
+                                    # Ищем SELECT ... missing_column ... FROM cars
+                                    if re.search(rf'SELECT\s+.*?\b{missing_column}\b.*?FROM\s+cars', first_part, re.IGNORECASE):
+                                        # Заменяем missing_column на NULL AS missing_column в первой части
+                                        # Нужно быть осторожным, чтобы не заменить в других местах (например, в WHERE)
+                                        # Ищем SELECT ... и заменяем только в списке колонок
+                                        select_match = re.search(r'(SELECT\s+)(.*?)(\s+FROM\s+cars)', first_part, re.IGNORECASE | re.DOTALL)
+                                        if select_match:
+                                            select_cols = select_match.group(2)
+                                            # Заменяем missing_column на NULL AS missing_column в списке колонок
+                                            # Учитываем, что может быть просто missing_column или с алиасом
+                                            fixed_cols = re.sub(
+                                                rf'\b{missing_column}\b(?!\s+AS\s+NULL)',
+                                                f'NULL AS {missing_column}',
+                                                select_cols,
+                                                flags=re.IGNORECASE
+                                            )
+                                            first_part = first_part.replace(select_match.group(0), f"{select_match.group(1)}{fixed_cols}{select_match.group(3)}")
+                                            
+                                            # Также нужно проверить, есть ли эта колонка во второй части
+                                            # Если нет, добавляем её
+                                            if not re.search(rf'\b{missing_column}\b', second_part, re.IGNORECASE):
+                                                # Находим SELECT во второй части и добавляем missing_column
+                                                second_select_match = re.search(r'(SELECT\s+)(.*?)(\s+FROM\s+used_cars)', second_part, re.IGNORECASE | re.DOTALL)
+                                                if second_select_match:
+                                                    second_cols = second_select_match.group(2)
+                                                    if not second_cols.endswith(','):
+                                                        second_cols += ', '
+                                                    second_cols += missing_column
+                                                    second_part = second_part.replace(second_select_match.group(0), f"{second_select_match.group(1)}{second_cols}{second_select_match.group(3)}")
+                                            
+                                            sql_query = f"{first_part} UNION ALL {second_part}"
+                                            print(f"✅ Исправлено: добавлен NULL AS {missing_column} в SELECT из cars")
+                                            # Устанавливаем флаг для повторной попытки
+                                            retry_query = True
+                                            fix_attempt = 0  # Сбрасываем счетчик попыток
+                
+                # Исправление ORDER BY с CASE WHEN city в UNION (автоматическая сортировка по городам)
+                if auto_fix and 'UNION ALL' in sql_query.upper() and 'ORDER BY' in sql_query.upper():
+                    if ('could not identify an equality operator' in error_str.lower() or 
+                        'operator does not exist' in error_str.lower() or
                     ('column reference' in error_str.lower() and 'ambiguous' in error_str.lower()) or
                     'ORDER BY term does not match' in error_str or
-                    'Only result column names can be used' in error_str):
-                    # Проверяем, есть ли CASE WHEN с city в ORDER BY (с префиксами или без, с UPPER или без)
-                    order_by_match = re.search(r'ORDER BY\s+(.+?)(?:;|$)', sql_query, re.IGNORECASE | re.DOTALL)
-                    if order_by_match:
-                        order_expr = order_by_match.group(1)
+                    'Only result column names can be used' in error_str or
+                    'invalid UNION.*ORDER BY' in error_str or
+                    'invalid UNION/INTERSECT/EXCEPT ORDER BY' in error_str):
+                        # Проверяем, есть ли CASE WHEN с city в ORDER BY (с префиксами или без, с UPPER или без)
+                        order_by_match = re.search(r'ORDER BY\s+(.+?)(?:;|$)', sql_query, re.IGNORECASE | re.DOTALL)
+                        if order_by_match:
+                            order_expr = order_by_match.group(1)
+                            
+                            # Сначала проверяем, есть ли CAST/REPLACE в ORDER BY (вычисляемое поле)
+                            if re.search(r'CAST\s*\(|REPLACE\s*\(', order_expr, re.IGNORECASE):
+                                print(f"⚠️ Обнаружена ошибка ORDER BY с вычисляемым полем (CAST/REPLACE). Исправляю...")
+                                union_parts = sql_query.split('UNION ALL')
+                                if len(union_parts) == 2:
+                                    first_part = union_parts[0].strip()
+                                    second_part = union_parts[1].strip()
+                                    
+                                    # Извлекаем выражение из ORDER BY (учитываем вложенные скобки)
+                                    # Ищем CAST(REPLACE(REPLACE(REPLACE(...))) с учетом вложенности
+                                    cast_start = order_expr.upper().find('CAST')
+                                    if cast_start != -1:
+                                        # Находим начало CAST
+                                        paren_count = 0
+                                        cast_end = cast_start
+                                        found_open = False
+                                        i = cast_start
+                                        while i < len(order_expr):
+                                            if order_expr[i] == '(':
+                                                paren_count += 1
+                                                found_open = True
+                                            elif order_expr[i] == ')':
+                                                paren_count -= 1
+                                                if paren_count == 0 and found_open:
+                                                    # Нашли конец CAST(...)
+                                                    # Проверяем, есть ли AS NUMERIC после скобки
+                                                    remaining = order_expr[i+1:].strip()
+                                                    as_match = re.search(r'AS\s+\w+', remaining, re.IGNORECASE)
+                                                    if as_match:
+                                                        cast_end = i + 1 + as_match.end()
+                                                    else:
+                                                        cast_end = i + 1
+                                                    break
+                                            i += 1
+                                    
+                                    if cast_end > cast_start:
+                                        cast_expr = order_expr[cast_start:cast_end].strip()
+                                        # Определяем псевдоним
+                                        if 'price' in cast_expr.lower():
+                                            alias_name = "numeric_price"
+                                        elif 'power' in cast_expr.lower():
+                                            alias_name = "power_num"
+                                        else:
+                                            alias_name = "numeric_field"
+                                        print(f"🔍 Извлечено CAST выражение: {cast_expr[:100]}... (псевдоним: {alias_name})")
+                                    else:
+                                        cast_expr = None
+                                        print(f"⚠️ Не удалось извлечь CAST выражение из ORDER BY")
+                                else:
+                                    cast_expr = None
+                                    print(f"⚠️ CAST не найден в ORDER BY: {order_expr[:100]}")
+                                
+                                if cast_expr:
+                                    
+                                    # Проверяем, есть ли уже этот псевдоним в SELECT
+                                    if f'AS {alias_name}' not in first_part.upper() and f'AS {alias_name}' not in second_part.upper():
+                                        # Добавляем псевдоним в обе части SELECT
+                                        first_select_match = re.search(r'(SELECT\s+(?:DISTINCT\s+)?)(.*?)(\s+FROM)', first_part, re.IGNORECASE | re.DOTALL)
+                                        if first_select_match:
+                                            select_cols = first_select_match.group(2).strip()
+                                            if not select_cols.endswith(',') and select_cols:
+                                                select_cols += ', '
+                                            first_part = first_part.replace(
+                                                first_select_match.group(0),
+                                                f"{first_select_match.group(1)}{select_cols}{cast_expr} AS {alias_name} {first_select_match.group(3)}"
+                                            )
+                                        
+                                        second_select_match = re.search(r'(SELECT\s+(?:DISTINCT\s+)?)(.*?)(\s+FROM)', second_part, re.IGNORECASE | re.DOTALL)
+                                        if second_select_match:
+                                            select_cols = second_select_match.group(2).strip()
+                                            if not select_cols.endswith(',') and select_cols:
+                                                select_cols += ', '
+                                            second_part = second_part.replace(
+                                                second_select_match.group(0),
+                                                f"{second_select_match.group(1)}{select_cols}{cast_expr} AS {alias_name} {second_select_match.group(3)}"
+                                            )
+                                        
+                                        # Заменяем ORDER BY на использование псевдонима
+                                        fixed_order = order_expr.replace(cast_expr, alias_name)
+                                        fixed_sql = f"{first_part} UNION ALL {second_part} ORDER BY {fixed_order}"
+                                        if not fixed_sql.endswith(';'):
+                                            fixed_sql += ';'
+                                        
+                                        try:
+                                            print(f"✅ Применяю исправление ORDER BY (добавляю псевдоним {alias_name})...")
+                                            result = self.db_session.execute(text(fixed_sql))
+                                            rows = result.fetchall()
+                                            columns = result.keys() if rows else []
+                                            data = [dict(zip(columns, row)) for row in rows]
+                                            all_data = data[:500]
+                                            return {
+                                                "success": True,
+                                                "data": all_data,
+                                                "columns": list(columns),
+                                                "row_count": len(data),
+                                                "error": None,
+                                                "sql": fixed_sql
+                                            }
+                                        except Exception as retry_e:
+                                            print(f"⚠️ Исправление ORDER BY не помогло: {str(retry_e)[:100]}")
+                        
                         # Ищем CASE WHEN с city и Москвой/Санкт-Петербургом
                         if re.search(r'CASE\s+WHEN.*?city.*?LIKE.*?МОСКВА|CASE\s+WHEN.*?city.*?LIKE.*?САНКТ-ПЕТЕРБУРГ', order_expr, re.IGNORECASE | re.DOTALL):
                             print(f"⚠️ Обнаружена ошибка ORDER BY с CASE WHEN city. Убираю автоматическую сортировку по городам...")
@@ -2593,27 +3134,38 @@ SQL запрос:"""
                     except:
                         pass
             
+                # Если установлен флаг retry_query, повторяем попытку
+                if retry_query:
+                    continue  # Повторяем цикл while с исправленным SQL
+                
+                return {
+                    "success": False,
+                    "error": f"Ошибка выполнения SQL: {error_str}",
+                    "data": None,
+                    "sql": sql_query
+                }
+            
+            # Если дошли сюда, значит все исправления не помогли
             return {
                 "success": False,
                 "error": f"Ошибка выполнения SQL: {error_str}",
                 "data": None,
                 "sql": sql_query
             }
-        except Exception as e:
-            return {
-                "success": False,
-                "error": f"Неожиданная ошибка: {str(e)}",
-                "data": None
-            }
     
-    async def process_question(self, question: str, try_alternative_on_zero: bool = True) -> Dict[str, Any]:
+    async def process_question(self, question: str, try_alternative_on_zero: bool = True, 
+                             clarification: Dict = None) -> Dict[str, Any]:
         """
         Полный цикл обработки вопроса: генерация SQL и выполнение
         
         Args:
             question: Вопрос пользователя
             try_alternative_on_zero: Если True, при 0 результатах пытается перегенерировать SQL через альтернативный агент
+            clarification: Уточняющая информация от пользователя (не используется)
         """
+        # ОТКЛЮЧЕНО: Анализ запроса и генерация параметров
+        # Просто передаем вопрос напрямую в SQL-агент
+        
         # Проверка: если запрос о клиренсе, сразу возвращаем пустой результат
         question_lower = question.lower()
         if any(kw in question_lower for kw in ['клиренс', 'дорожный просвет']):
@@ -2623,10 +3175,11 @@ SQL запрос:"""
                 "data": [],
                 "columns": [],
                 "row_count": 0,
-                "answer": "К сожалению, информация о клиренсе (дорожном просвете) отсутствует в базе данных. Поле dimensions содержит габариты автомобиля (длина*ширина*высота), а не клиренс. Клиренс - это расстояние от земли до нижней точки автомобиля (обычно 15-25 см), а высота в dimensions - это высота автомобиля до крыши (обычно 140-200 см)."
+                "answer": "К сожалению, информация о клиренсе (дорожном просвете) отсутствует в базе данных. Поле dimensions содержит габариты автомобиля (длина*ширина*высота), а не клиренс. Клиренс - это расстояние от земли до нижней точки автомобиля (обычно 15-25 см), а высота в dimensions - это высота автомобиля до крыши (обычно 140-200 см).",
+                "query_analysis": None
             }
         
-        # Генерируем SQL
+        # Генерируем SQL напрямую из вопроса
         sql_result = await self.generate_sql_from_natural_language(question)
         
         if not sql_result.get("success"):
@@ -2634,7 +3187,8 @@ SQL запрос:"""
                 "success": False,
                 "error": sql_result.get("error", "Не удалось сгенерировать SQL"),
                 "sql": sql_result.get("sql"),
-                "data": None
+                "data": None,
+                "query_analysis": None
             }
         
         sql_query = sql_result["sql"]
@@ -2658,7 +3212,8 @@ SQL запрос:"""
                     "success": False,
                     "error": original_error,
                     "sql": sql_query,
-                    "data": None
+                    "data": None,
+                    "query_analysis": None
                 }
         
         # Если найдено 0 результатов и включена опция попытки альтернативного агента
@@ -2744,14 +3299,25 @@ SQL запрос:"""
    - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Различай МАРКУ и МОДЕЛЬ! 'mark' - МАРКА (Toyota, BMW), 'model' - МОДЕЛЬ (Camry, X5)
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Если запрос про марку (Toyota, тойота) → используй 'mark', НЕ 'model'!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Для поиска МАРОК автомобилей используй поле 'mark', НЕ 'code'!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Поле 'code' существует ТОЛЬКО в таблице car_options (код опции), НЕ в таблице cars!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: В таблице cars НЕТ поля 'code' - используй 'mark' для поиска марок!
    - ⚠️ КРИТИЧЕСКИ ВАЖНО: ВСЕГДА используй UPPER() с LIKE для поиска марок!
    - ⚠️ НЕ используй просто LIKE без UPPER() - это может не найти все варианты!
    - ⚠️ НЕ используй = для поиска марок - это не найдет варианты с пробелами или разным регистром!
    
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota, Toyota Camry
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   ✅ ПРАВИЛЬНО (МАРКА): SELECT * FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%'
+   ✅ ПРАВИЛЬНО (МАРКА): SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%BMW%'
+   ✅ ПРАВИЛЬНО (МОДЕЛЬ): SELECT * FROM cars WHERE UPPER(model) LIKE '%CAMRY%'
    
+   ❌ НЕПРАВИЛЬНО: WHERE model = 'Тойота'  -- ОШИБКА! "Тойота" - это МАРКА, используй 'mark'!
+   ❌ НЕПРАВИЛЬНО: WHERE code = 'toyota'  -- ОШИБКА! Поле 'code' не существует в таблице cars!
+   ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE code = 'toyota'  -- ОШИБКА! Используй 'mark', не 'code'!
    ❌ НЕПРАВИЛЬНО: WHERE mark LIKE 'Toyota%'  -- может не найти TOYOTA или toyota
    ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'      -- не найдет варианты регистра
    ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'  -- может не найти из-за пробелов
@@ -2761,6 +3327,10 @@ SQL запрос:"""
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%РОСТОВ%'
    
    - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй UPPER() с LIKE, а не =
+   - ВАЖНО: Для поиска МАРОК (Toyota, BMW, тойота, бмв) используй поле 'mark'
+   - ВАЖНО: Для поиска МОДЕЛЕЙ (Camry, Corolla, X5) используй поле 'model'
+   - ВАЖНО: НЕ путай 'mark' (марка) и 'model' (модель) - это разные поля!
+   - ВАЖНО: НЕ используй поле 'code' - его нет в таблице cars!
 
 4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
    - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
@@ -2915,6 +3485,7 @@ SQL запрос:"""
             return {
                 "success": False,
                 "error": original_error,
+                "query_analysis": None,
                 "sql": sql_query,
                 "data": None
             }
@@ -2928,7 +3499,8 @@ SQL запрос:"""
             "data": execution_result.get("data"),
             "columns": execution_result.get("columns"),
             "row_count": execution_result.get("row_count"),
-            "answer": answer
+            "answer": answer,
+            "query_analysis": None
         }
         
         if used_alternative_agent:
@@ -2957,14 +3529,25 @@ SQL запрос:"""
    - Для приведения типов используй CAST(... AS NUMERIC) или ::NUMERIC
 
 3. РЕГИСТРОНЕЗАВИСИМЫЙ ПОИСК МАРОК И ГОРОДОВ:
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Различай МАРКУ и МОДЕЛЬ! 'mark' - МАРКА (Toyota, BMW), 'model' - МОДЕЛЬ (Camry, X5)
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Если запрос про марку (Toyota, тойота) → используй 'mark', НЕ 'model'!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Для поиска МАРОК автомобилей используй поле 'mark', НЕ 'code'!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Поле 'code' существует ТОЛЬКО в таблице car_options (код опции), НЕ в таблице cars!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: В таблице cars НЕТ поля 'code' - используй 'mark' для поиска марок!
    - ⚠️ КРИТИЧЕСКИ ВАЖНО: ВСЕГДА используй UPPER() с LIKE для поиска марок!
    - ⚠️ НЕ используй просто LIKE без UPPER() - это может не найти все варианты!
    - ⚠️ НЕ используй = для поиска марок - это не найдет варианты с пробелами или разным регистром!
    
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota, Toyota Camry
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
-   ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%TOYOTA%'  -- найдет Toyota, TOYOTA, toyota
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%BMW%'      -- найдет BMW, bmw, Bmw
+   ✅ ПРАВИЛЬНО (МАРКА): WHERE UPPER(mark) LIKE '%TOYOTA%' AND price IS NOT NULL AND price != ''
+   ✅ ПРАВИЛЬНО (МАРКА): SELECT * FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%'
+   ✅ ПРАВИЛЬНО (МАРКА): SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%BMW%'
+   ✅ ПРАВИЛЬНО (МОДЕЛЬ): SELECT * FROM cars WHERE UPPER(model) LIKE '%CAMRY%'
    
+   ❌ НЕПРАВИЛЬНО: WHERE model = 'Тойота'  -- ОШИБКА! "Тойота" - это МАРКА, используй 'mark'!
+   ❌ НЕПРАВИЛЬНО: WHERE code = 'toyota'  -- ОШИБКА! Поле 'code' не существует в таблице cars!
+   ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE code = 'toyota'  -- ОШИБКА! Используй 'mark', не 'code'!
    ❌ НЕПРАВИЛЬНО: WHERE mark LIKE 'Toyota%'  -- может не найти TOYOTA или toyota
    ❌ НЕПРАВИЛЬНО: WHERE mark = 'Toyota'      -- не найдет варианты регистра
    ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) = 'BMW'  -- может не найти из-за пробелов
@@ -2974,6 +3557,10 @@ SQL запрос:"""
      ✅ ПРАВИЛЬНО: WHERE UPPER(city) LIKE '%РОСТОВ%'
    
    - ВАЖНО: В базе могут быть пробелы или различия в регистре, поэтому ВСЕГДА используй UPPER() с LIKE, а не =
+   - ВАЖНО: Для поиска МАРОК (Toyota, BMW, тойота, бмв) используй поле 'mark'
+   - ВАЖНО: Для поиска МОДЕЛЕЙ (Camry, Corolla, X5) используй поле 'model'
+   - ВАЖНО: НЕ путай 'mark' (марка) и 'model' (модель) - это разные поля!
+   - ВАЖНО: НЕ используй поле 'code' - его нет в таблице cars!
 
 4. РАБОТА С ЦЕНАМИ (PostgreSQL) - КРИТИЧЕСКИ ВАЖНО:
    - ⚠️ Цена хранится как VARCHAR (character varying) и может содержать: пробелы, запятые, символ ₽
@@ -3003,7 +3590,10 @@ SQL запрос:"""
    - Всегда проверяй наличие цены:
      ✅ ПРАВИЛЬНО: WHERE price IS NOT NULL AND price != ''
 
-5. ПОИСК ПО ТИПАМ (КПП, топливо, кузов):
+5. ПОИСК ПО ТИПАМ (КПП, топливо, кузов, город, привод) - КРИТИЧЕСКИ ВАЖНО:
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Для ВСЕХ текстовых полей (КПП, топливо, кузов, город, привод) учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: "автомат", "механика" - это про КПП (gear_box_type), НЕ про марку (mark)!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: НЕ путай "автомат" (КПП) с маркой автомобиля!
    - В PostgreSQL UPPER() и LOWER() с кириллицей работают корректно
    
    - В базе РАЗНЫЕ варианты написания в таблицах cars и used_cars:
@@ -3011,17 +3601,48 @@ SQL запрос:"""
      - Топливо в cars: 'дизель' (маленькими), в used_cars: 'Дизель' (с заглавной)
      - Кузов в cars: 'Седан', в used_cars: 'Седан' (оба с заглавной)
    
-   - ✅ ИСПОЛЬЗУЙ LOWER() для кириллицы:
+   - Для КПП (gear_box_type):
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%')
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(gear_box_type) LIKE '%механик%' OR LOWER(gear_box_type) LIKE '%manual%')
+     ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%AUTOMAT%'  -- ОШИБКА! "автомат" - это КПП, не марка!
+   
+   - Для топлива (fuel_type):
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(fuel_type) LIKE '%бензин%' OR LOWER(fuel_type) LIKE '%petrol%' OR LOWER(fuel_type) LIKE '%gasoline%')
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(fuel_type) LIKE '%дизель%' OR LOWER(fuel_type) LIKE '%diesel%')
      ✅ ПРАВИЛЬНО: WHERE LOWER(fuel_type) LIKE '%бензин%'  -- найдет и 'бензин' и 'Бензин'
+   
+   - Для кузова (body_type):
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(body_type) LIKE '%седан%' OR LOWER(body_type) LIKE '%sedan%')
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(body_type) LIKE '%кроссовер%' OR LOWER(body_type) LIKE '%suv%' OR LOWER(body_type) LIKE '%crossover%')
      ✅ ПРАВИЛЬНО: WHERE LOWER(body_type) LIKE '%седан%'    -- найдет 'Седан'
    
-   - ✅ ИЛИ используй комбинацию точных значений с OR:
-     ✅ ПРАВИЛЬНО: WHERE fuel_type = 'бензин' OR fuel_type = 'Бензин' OR LOWER(fuel_type) LIKE '%бензин%'
-     ✅ ПРАВИЛЬНО: WHERE (fuel_type = 'бензин' OR fuel_type = 'Бензин') AND ...
+   - Для города (city):
+     ✅ ПРАВИЛЬНО: WHERE (UPPER(city) LIKE '%МОСКВА%' OR UPPER(city) LIKE '%MOSCOW%')
+     ✅ ПРАВИЛЬНО: WHERE (UPPER(city) LIKE '%САНКТ-ПЕТЕРБУРГ%' OR UPPER(city) LIKE '%SAINT%PETERSBURG%' OR UPPER(city) LIKE '%SPB%')
    
-   - ✅ Для латиницы можно использовать UPPER():
-     ✅ ПРАВИЛЬНО: WHERE UPPER(gear_box_type) LIKE '%AUTOMATIC%'  -- для английских значений
+   - Для привода (driving_gear_type):
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(driving_gear_type) LIKE '%полный%' OR LOWER(driving_gear_type) LIKE '%all%wheel%' OR LOWER(driving_gear_type) LIKE '%4wd%')
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(driving_gear_type) LIKE '%передний%' OR LOWER(driving_gear_type) LIKE '%front%wheel%' OR LOWER(driving_gear_type) LIKE '%fwd%')
+   
+   - ✅ Для марок используй UPPER():
      ✅ ПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%BMW%'                  -- для марок
+
+5.1. ПОИСК ПО ЦВЕТУ - КРИТИЧЕСКИ ВАЖНО:
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Если запрос про ЦВЕТ (красный, синий, черный, "красненький", red, blue, black) → используй поле 'color'!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Для ЦВЕТА ВСЕГДА учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: НЕ используй поле 'mark' для поиска цветов - это поле для марок!
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: ВСЕГДА используй OR для объединения русского и английского вариантов!
+   
+   ✅ ПРАВИЛЬНО (красный/красненький): WHERE (UPPER(color) LIKE '%КРАСН%' OR UPPER(color) LIKE '%RED%')
+   ✅ ПРАВИЛЬНО (синий): WHERE (UPPER(color) LIKE '%СИНИЙ%' OR UPPER(color) LIKE '%СИН%' OR UPPER(color) LIKE '%BLUE%')
+   ✅ ПРАВИЛЬНО (черный): WHERE (UPPER(color) LIKE '%ЧЕРН%' OR UPPER(color) LIKE '%BLACK%')
+   ✅ ПРАВИЛЬНО (белый): WHERE (UPPER(color) LIKE '%БЕЛ%' OR UPPER(color) LIKE '%WHITE%')
+   ✅ ПРАВИЛЬНО (зеленый): WHERE (UPPER(color) LIKE '%ЗЕЛЕН%' OR UPPER(color) LIKE '%GREEN%')
+   ✅ ПРАВИЛЬНО (серый): WHERE (UPPER(color) LIKE '%СЕР%' OR UPPER(color) LIKE '%GRAY%' OR UPPER(color) LIKE '%GREY%')
+   
+   ❌ НЕПРАВИЛЬНО: WHERE mark LIKE '%RED%'  -- ОШИБКА! RED - это цвет, используй поле 'color', не 'mark'!
+   ❌ НЕПРАВИЛЬНО: WHERE color = 'красный'  -- ОШИБКА! Используй LIKE с OR для обоих языков!
+   ❌ НЕПРАВИЛЬНО: WHERE UPPER(color) LIKE '%RED%'  -- ОШИБКА! Нужно учитывать и русский язык!
 
 ═══════════════════════════════════════════════════════════════════════════════
 СХЕМА БАЗЫ ДАННЫХ:
@@ -3029,9 +3650,372 @@ SQL запрос:"""
 {schema}
 ═══════════════════════════════════════════════════════════════════════════════
 
+═══════════════════════════════════════════════════════════════════════════════
+АЛГОРИТМ ПОСТРОЕНИЯ SQL ЗАПРОСА (ВЫПОЛНЯЙ ПОШАГОВО):
+═══════════════════════════════════════════════════════════════════════════════
+
+ШАГ 1: ОПРЕДЕЛИ ТИП ЗАПРОСА
+  - Если упоминается МАРКА (Toyota, BMW, тойота, бмв, Chery, OMODA) → используй поле 'mark'
+  - Если упоминается МОДЕЛЬ (Camry, Corolla, X5, Tiggo, "3 серии") → используй поле 'model'
+  - ⚠️ ВАЖНО: Если упоминается И МАРКА И МОДЕЛЬ ("BMW X5", "бмв 3 серии", "Toyota Camry") → 
+    используй ОБА поля: UPPER(mark) LIKE '%МАРКА%' AND UPPER(model) LIKE '%МОДЕЛЬ%'
+  - Если упоминается ЦВЕТ (красный, синий, черный, "красненький", red, blue, black) → используй поле 'color'
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Для ЦВЕТА учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+  - Если упоминается ПРОБЕГ (с пробегом, меньше 10000, до 50000 км) → используй поле 'mileage'
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Поле 'mileage' существует ТОЛЬКО в таблице 'used_cars'!
+    ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000  -- ОШИБКА! В cars НЕТ mileage!
+    ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000 UNION ALL SELECT * FROM used_cars WHERE mileage < 10000  -- ОШИБКА!
+    ✅ ПРАВИЛЬНО: SELECT * FROM used_cars WHERE mileage < 10000  -- ТОЛЬКО used_cars!
+    ⚠️ ВАЖНО: Если запрос про пробег - используй ТОЛЬКО таблицу 'used_cars', НЕ используй UNION с cars!
+  - Если упоминается КПП (автомат, механика, автоматическая, механическая, automatic, manual) → используй поле 'gear_box_type'
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: "автомат", "механика" - это про КПП, НЕ про марку!
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Для КПП учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+    ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%AUTOMAT%'  -- ОШИБКА! "автомат" - это КПП, не марка!
+    ✅ ПРАВИЛЬНО: WHERE (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%')
+  - Если упоминается ТОПЛИВО (бензин, дизель, petrol, diesel, gasoline) → используй поле 'fuel_type'
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Для топлива учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+  - Если упоминается КУЗОВ (седан, кроссовер, sedan, suv, crossover) → используй поле 'body_type'
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Для кузова учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+  - Если упоминается ГОРОД (Москва, Санкт-Петербург, Moscow, Saint-Petersburg, SPB) → используй поле 'city'
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Для города учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+  - Если упоминается ПРИВОД (полный, передний, задний, all-wheel, front-wheel, 4wd, fwd) → используй поле 'driving_gear_type'
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Для привода учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+  - Если упоминается ЦЕНА (до 50000, дешевле 100000) → используй поле 'price' с CAST
+
+ШАГ 2: ВЫБЕРИ ТАБЛИЦУ
+  - Если упоминается "новый", "салон", "склад" → используй таблицу 'cars'
+  - Если упоминается "подержанный", "с пробегом", "б/у" → используй таблицу 'used_cars'
+  - Если не указано → используй ОБЕ таблицы через UNION ALL
+
+ШАГ 3: ПОСТРОЙ WHERE УСЛОВИЕ
+  - Для МАРКИ: UPPER(mark) LIKE '%МАРКА%' (НЕ model, НЕ code!)
+  - Для МОДЕЛИ: UPPER(model) LIKE '%МОДЕЛЬ%'
+  - ⚠️ ВАЖНО: Если есть И МАРКА И МОДЕЛЬ → используй ОБА условия через AND:
+    WHERE UPPER(mark) LIKE '%МАРКА%' AND UPPER(model) LIKE '%МОДЕЛЬ%'
+  - Для ЦВЕТА: (UPPER(color) LIKE '%РУССКИЙ_ЦВЕТ%' OR UPPER(color) LIKE '%ENGLISH_COLOR%')
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+    Примеры:
+    - Красный/красненький: (UPPER(color) LIKE '%КРАСН%' OR UPPER(color) LIKE '%RED%')
+    - Синий: (UPPER(color) LIKE '%СИНИЙ%' OR UPPER(color) LIKE '%СИН%' OR UPPER(color) LIKE '%BLUE%')
+    - Черный: (UPPER(color) LIKE '%ЧЕРН%' OR UPPER(color) LIKE '%BLACK%')
+    - Белый: (UPPER(color) LIKE '%БЕЛ%' OR UPPER(color) LIKE '%WHITE%')
+    - Зеленый: (UPPER(color) LIKE '%ЗЕЛЕН%' OR UPPER(color) LIKE '%GREEN%')
+    - Серый: (UPPER(color) LIKE '%СЕР%' OR UPPER(color) LIKE '%GRAY%' OR UPPER(color) LIKE '%GREY%')
+  - Для ГОРОДА: (UPPER(city) LIKE '%РУССКИЙ_ГОРОД%' OR UPPER(city) LIKE '%ENGLISH_CITY%')
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+    Примеры:
+    - Москва: (UPPER(city) LIKE '%МОСКВА%' OR UPPER(city) LIKE '%MOSCOW%')
+    - Санкт-Петербург: (UPPER(city) LIKE '%САНКТ-ПЕТЕРБУРГ%' OR UPPER(city) LIKE '%SAINT%PETERSBURG%' OR UPPER(city) LIKE '%SPB%')
+  - Для ЦЕНЫ: CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < ЧИСЛО
+  - Для КПП: (LOWER(gear_box_type) LIKE '%РУССКИЙ_КПП%' OR LOWER(gear_box_type) LIKE '%ENGLISH_GEARBOX%')
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: "автомат", "механика" - это про КПП, НЕ про марку!
+    Примеры:
+    - Автомат: (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%')
+    - Механика: (LOWER(gear_box_type) LIKE '%механик%' OR LOWER(gear_box_type) LIKE '%manual%')
+    ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%AUTOMAT%'  -- ОШИБКА! "автомат" - это КПП, не марка!
+  - Для ТОПЛИВА: (LOWER(fuel_type) LIKE '%РУССКИЙ_ТОПЛИВО%' OR LOWER(fuel_type) LIKE '%ENGLISH_FUEL%')
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+    Примеры:
+    - Бензин: (LOWER(fuel_type) LIKE '%бензин%' OR LOWER(fuel_type) LIKE '%petrol%' OR LOWER(fuel_type) LIKE '%gasoline%')
+    - Дизель: (LOWER(fuel_type) LIKE '%дизель%' OR LOWER(fuel_type) LIKE '%diesel%')
+  - Для КУЗОВА: (LOWER(body_type) LIKE '%РУССКИЙ_КУЗОВ%' OR LOWER(body_type) LIKE '%ENGLISH_BODY%')
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+    Примеры:
+    - Седан: (LOWER(body_type) LIKE '%седан%' OR LOWER(body_type) LIKE '%sedan%')
+    - Кроссовер: (LOWER(body_type) LIKE '%кроссовер%' OR LOWER(body_type) LIKE '%suv%' OR LOWER(body_type) LIKE '%crossover%')
+  - Для ГОРОДА: (UPPER(city) LIKE '%РУССКИЙ_ГОРОД%' OR UPPER(city) LIKE '%ENGLISH_CITY%')
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+    Примеры:
+    - Москва: (UPPER(city) LIKE '%МОСКВА%' OR UPPER(city) LIKE '%MOSCOW%')
+    - Санкт-Петербург: (UPPER(city) LIKE '%САНКТ-ПЕТЕРБУРГ%' OR UPPER(city) LIKE '%SAINT%PETERSBURG%' OR UPPER(city) LIKE '%SPB%')
+  - Для ПРИВОДА: (LOWER(driving_gear_type) LIKE '%РУССКИЙ_ПРИВОД%' OR LOWER(driving_gear_type) LIKE '%ENGLISH_DRIVE%')
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+    Примеры:
+    - Полный: (LOWER(driving_gear_type) LIKE '%полный%' OR LOWER(driving_gear_type) LIKE '%all%wheel%' OR LOWER(driving_gear_type) LIKE '%4wd%')
+    - Передний: (LOWER(driving_gear_type) LIKE '%передний%' OR LOWER(driving_gear_type) LIKE '%front%wheel%' OR LOWER(driving_gear_type) LIKE '%fwd%')
+  - Для ПРОБЕГА: mileage < ЧИСЛО (ТОЛЬКО в used_cars, НЕ в cars!)
+    ⚠️ КРИТИЧЕСКИ ВАЖНО: Если запрос про пробег - используй ТОЛЬКО таблицу 'used_cars'!
+    ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000  -- ОШИБКА! В cars нет mileage!
+    ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000 UNION ALL SELECT * FROM used_cars WHERE mileage < 10000  -- ОШИБКА!
+    ✅ ПРАВИЛЬНО: SELECT * FROM used_cars WHERE mileage < 10000  -- ТОЛЬКО used_cars!
+
+ШАГ 4: ПРОВЕРЬ ПЕРЕД ГЕНЕРАЦИЕЙ
+  ✓ Используешь 'mark' для марок, а не 'model' или 'code'?
+  ✓ Если запрос про "автомат" или "механика" - используешь поле 'gear_box_type', НЕ 'mark'?
+  ✓ Если запрос про ЦВЕТ - используешь поле 'color' с учетом русского И английского языков?
+  ✓ Если запрос про КПП, ТОПЛИВО, КУЗОВ, ГОРОД, ПРИВОД - учитываешь русский И английский языки?
+  ✓ Если запрос про ПРОБЕГ - используешь ТОЛЬКО таблицу 'used_cars', НЕ cars и НЕ UNION?
+  ✓ Используешь UPPER() с LIKE для марок и городов?
+  ✓ Используешь LOWER() с LIKE для КПП, топлива, кузова, привода?
+  ✓ Используешь CAST для сравнения цены с числом?
+  ✓ Используешь правильную таблицу (cars или used_cars)?
+  ✓ Нет ли использования несуществующих полей (code в cars, mileage в cars)?
+
+═══════════════════════════════════════════════════════════════════════════════
+ГОТОВЫЕ ШАБЛОНЫ SQL ЗАПРОСОВ:
+═══════════════════════════════════════════════════════════════════════════════
+
+ШАБЛОН 1: Поиск по МАРКЕ (самый частый случай!)
+  Запрос: "тойота", "BMW", "тойота дешевле 500000"
+  
+  ✅ ПРАВИЛЬНО:
+  SELECT * FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%'
+  UNION ALL
+  SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%TOYOTA%'
+  
+  ✅ С ЦЕНОЙ:
+  SELECT * FROM cars 
+  WHERE UPPER(mark) LIKE '%TOYOTA%' 
+    AND CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 500000
+  UNION ALL
+  SELECT * FROM used_cars 
+  WHERE UPPER(mark) LIKE '%TOYOTA%' 
+    AND CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 500000
+
+ШАБЛОН 2: Поиск по МОДЕЛИ
+  Запрос: "Camry", "X5", "Corolla"
+  
+  ✅ ПРАВИЛЬНО:
+  SELECT * FROM cars WHERE UPPER(model) LIKE '%CAMRY%'
+  UNION ALL
+  SELECT * FROM used_cars WHERE UPPER(model) LIKE '%CAMRY%'
+
+ШАБЛОН 3: Поиск по МАРКЕ + МОДЕЛИ (ОБЯЗАТЕЛЬНО ИСПОЛЬЗУЙ ОБА ПОЛЯ!)
+  Запрос: "Toyota Camry", "BMW X5", "бмв 3 серии", "тойота камри"
+  
+  ⚠️ КРИТИЧЕСКИ ВАЖНО: Если в запросе есть и марка, и модель - используй ОБА поля!
+  
+  ✅ ПРАВИЛЬНО (латиница):
+  SELECT * FROM cars 
+  WHERE UPPER(mark) LIKE '%TOYOTA%' AND UPPER(model) LIKE '%CAMRY%'
+  UNION ALL
+  SELECT * FROM used_cars 
+  WHERE UPPER(mark) LIKE '%TOYOTA%' AND UPPER(model) LIKE '%CAMRY%'
+  
+  ✅ ПРАВИЛЬНО (кириллица):
+  SELECT * FROM cars 
+  WHERE UPPER(mark) LIKE '%BMW%' AND UPPER(model) LIKE '%3%' AND UPPER(model) LIKE '%СЕРИИ%'
+  UNION ALL
+  SELECT * FROM used_cars 
+  WHERE UPPER(mark) LIKE '%BMW%' AND UPPER(model) LIKE '%3%' AND UPPER(model) LIKE '%СЕРИИ%'
+  
+  ✅ ПРАВИЛЬНО (смешанный регистр):
+  SELECT * FROM cars 
+  WHERE UPPER(mark) LIKE '%BMW%' AND (UPPER(model) LIKE '%3%' OR LOWER(model) LIKE '%3%')
+  UNION ALL
+  SELECT * FROM used_cars 
+  WHERE UPPER(mark) LIKE '%BMW%' AND (UPPER(model) LIKE '%3%' OR LOWER(model) LIKE '%3%')
+  
+  ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE model = 'BMW 3 Series'  -- ОШИБКА! Нужно использовать mark И model!
+  ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mark = 'BMW' AND model = '3 серии'  -- ОШИБКА! Используй LIKE, не =!
+
+ШАБЛОН 4: Поиск по ЦВЕТУ (ОБЯЗАТЕЛЬНО УЧИТЫВАЙ РУССКИЙ И АНГЛИЙСКИЙ!)
+  Запрос: "красный автомобиль", "красненький автомобиль", "red car", "синий автомобиль", "blue car"
+  
+  ⚠️ КРИТИЧЕСКИ ВАЖНО: Для ЦВЕТА всегда учитывай ОБА языка (русский И английский)!
+  
+  ✅ ПРАВИЛЬНО (красный):
+  SELECT * FROM cars WHERE (UPPER(color) LIKE '%КРАСН%' OR UPPER(color) LIKE '%RED%')
+  UNION ALL
+  SELECT * FROM used_cars WHERE (UPPER(color) LIKE '%КРАСН%' OR UPPER(color) LIKE '%RED%')
+  
+  ✅ ПРАВИЛЬНО (синий):
+  SELECT * FROM cars WHERE (UPPER(color) LIKE '%СИНИЙ%' OR UPPER(color) LIKE '%СИН%' OR UPPER(color) LIKE '%BLUE%')
+  UNION ALL
+  SELECT * FROM used_cars WHERE (UPPER(color) LIKE '%СИНИЙ%' OR UPPER(color) LIKE '%СИН%' OR UPPER(color) LIKE '%BLUE%')
+  
+  ✅ ПРАВИЛЬНО (черный):
+  SELECT * FROM cars WHERE (UPPER(color) LIKE '%ЧЕРН%' OR UPPER(color) LIKE '%BLACK%')
+  UNION ALL
+  SELECT * FROM used_cars WHERE (UPPER(color) LIKE '%ЧЕРН%' OR UPPER(color) LIKE '%BLACK%')
+  
+  ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE color = 'красный'  -- ОШИБКА! Используй LIKE с OR для обоих языков!
+  ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE UPPER(color) LIKE '%RED%'  -- ОШИБКА! Нужно учитывать и русский язык!
+
+ШАБЛОН 5: Поиск по ГОРОДУ
+  Запрос: "автомобили в Москве", "BMW в Санкт-Петербурге"
+  
+  ✅ ПРАВИЛЬНО:
+  SELECT * FROM cars 
+  WHERE UPPER(city) LIKE '%МОСКВА%' AND UPPER(mark) LIKE '%BMW%'
+  UNION ALL
+  SELECT * FROM used_cars 
+  WHERE UPPER(city) LIKE '%МОСКВА%' AND UPPER(mark) LIKE '%BMW%'
+
+ШАБЛОН 6: Поиск по КПП (ОБЯЗАТЕЛЬНО УЧИТЫВАЙ РУССКИЙ И АНГЛИЙСКИЙ!)
+  Запрос: "автомат", "механика", "автоматическая коробка", "automatic", "manual"
+  
+  ⚠️ КРИТИЧЕСКИ ВАЖНО: "автомат", "механика" - это про КПП, НЕ про марку!
+  ⚠️ КРИТИЧЕСКИ ВАЖНО: Для КПП всегда учитывай ОБА языка (русский И английский)!
+  
+  ✅ ПРАВИЛЬНО (автомат):
+  SELECT * FROM cars WHERE (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%')
+  UNION ALL
+  SELECT * FROM used_cars WHERE (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%')
+  
+  ✅ ПРАВИЛЬНО (механика):
+  SELECT * FROM cars WHERE (LOWER(gear_box_type) LIKE '%механик%' OR LOWER(gear_box_type) LIKE '%manual%')
+  UNION ALL
+  SELECT * FROM used_cars WHERE (LOWER(gear_box_type) LIKE '%механик%' OR LOWER(gear_box_type) LIKE '%manual%')
+  
+  ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE UPPER(mark) LIKE '%AUTOMAT%'  -- ОШИБКА! "автомат" - это КПП, не марка!
+  ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE gear_box_type LIKE '%автомат%'  -- ОШИБКА! Нужно учитывать и русский, и английский языки!
+
+ШАБЛОН 7: Сортировка по ЦЕНЕ
+  Запрос: "самые дорогие BMW", "дешевые Toyota"
+  
+  ✅ ПРАВИЛЬНО:
+  SELECT * FROM cars 
+  WHERE UPPER(mark) LIKE '%BMW%'
+  ORDER BY CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) DESC
+  UNION ALL
+  SELECT * FROM used_cars 
+  WHERE UPPER(mark) LIKE '%BMW%'
+  ORDER BY CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) DESC
+
+═══════════════════════════════════════════════════════════════════════════════
+КРИТИЧЕСКИЕ ОШИБКИ, КОТОРЫХ НУЖНО ИЗБЕГАТЬ:
+═══════════════════════════════════════════════════════════════════════════════
+
+❌ НИКОГДА НЕ ИСПОЛЬЗУЙ:
+  - WHERE code = 'toyota'  -- ОШИБКА! Поле 'code' не существует в cars!
+  - WHERE model = 'Тойота'  -- ОШИБКА! "Тойота" - это марка, используй 'mark'!
+  - WHERE mark = 'Toyota'  -- ОШИБКА! Используй UPPER(mark) LIKE '%TOYOTA%'!
+  - WHERE UPPER(mark) LIKE '%AUTOMAT%'  -- ОШИБКА! "автомат" - это КПП, используй 'gear_box_type', не 'mark'!
+  - WHERE gear_box_type LIKE '%автомат%'  -- ОШИБКА! Нужно учитывать и русский, и английский языки!
+  - WHERE fuel_type LIKE '%бензин%'  -- ОШИБКА! Нужно учитывать и русский, и английский языки!
+  - WHERE body_type LIKE '%седан%'  -- ОШИБКА! Нужно учитывать и русский, и английский языки!
+  - WHERE city LIKE '%Москва%'  -- ОШИБКА! Нужно учитывать и русский, и английский языки!
+  - WHERE price < 50000  -- ОШИБКА! Нужно CAST для приведения типа!
+  - ORDER BY price DESC  -- ОШИБКА! Нужно CAST для числовой сортировки!
+
+✅ ВСЕГДА ИСПОЛЬЗУЙ:
+  - WHERE UPPER(mark) LIKE '%МАРКА%'  -- для поиска марок
+  - WHERE UPPER(model) LIKE '%МОДЕЛЬ%'  -- для поиска моделей
+  - WHERE (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%')  -- для КПП (русский И английский)
+  - WHERE (LOWER(fuel_type) LIKE '%бензин%' OR LOWER(fuel_type) LIKE '%petrol%' OR LOWER(fuel_type) LIKE '%gasoline%')  -- для топлива (русский И английский)
+  - WHERE (LOWER(body_type) LIKE '%седан%' OR LOWER(body_type) LIKE '%sedan%')  -- для кузова (русский И английский)
+  - WHERE (UPPER(city) LIKE '%МОСКВА%' OR UPPER(city) LIKE '%MOSCOW%')  -- для города (русский И английский)
+  - WHERE (LOWER(driving_gear_type) LIKE '%полный%' OR LOWER(driving_gear_type) LIKE '%all%wheel%' OR LOWER(driving_gear_type) LIKE '%4wd%')  -- для привода (русский И английский)
+  - CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC)  -- для работы с ценой
+  - UNION ALL для объединения cars и used_cars
+
+═══════════════════════════════════════════════════════════════════════════════
+ИНСТРУКЦИЯ ДЛЯ ГЕНЕРАЦИИ SQL:
+═══════════════════════════════════════════════════════════════════════════════
+
+ПЕРЕД ГЕНЕРАЦИЕЙ ВЫПОЛНИ ЭТИ ШАГИ:
+
+1. ПРОАНАЛИЗИРУЙ ВОПРОС:
+   - Если упоминается МАРКА (Toyota, BMW, тойота, бмв) → используй поле 'mark'
+   - Если упоминается МОДЕЛЬ (Camry, X5, "3 серии") → используй поле 'model'
+   - ⚠️ КРИТИЧЕСКИ ВАЖНО: Если упоминается И МАРКА И МОДЕЛЬ ("BMW X5", "бмв 3 серии", "Toyota Camry") → 
+     используй ОБА поля: UPPER(mark) LIKE '%МАРКА%' AND UPPER(model) LIKE '%МОДЕЛЬ%'
+   - Если упоминается ЦВЕТ (красный, синий, черный, "красненький", red, blue, black) → используй поле 'color'
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Для ЦВЕТА учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+     Примеры: "красный"/"красненький" = RED, "синий" = BLUE, "черный" = BLACK
+   - Если упоминается КПП (автомат, механика, автоматическая, механическая, automatic, manual) → используй поле 'gear_box_type'
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: "автомат", "механика" - это про КПП, НЕ про марку!
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Для КПП учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+     ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%AUTOMAT%'  -- ОШИБКА! "автомат" - это КПП, не марка!
+     ✅ ПРАВИЛЬНО: WHERE (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%')
+   - Если упоминается ТОПЛИВО (бензин, дизель, petrol, diesel, gasoline) → используй поле 'fuel_type'
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Для топлива учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+   - Если упоминается КУЗОВ (седан, кроссовер, sedan, suv, crossover) → используй поле 'body_type'
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Для кузова учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+   - Если упоминается ГОРОД (Москва, Санкт-Петербург, Moscow, Saint-Petersburg, SPB) → используй поле 'city'
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Для города учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+   - Если упоминается ПРИВОД (полный, передний, задний, all-wheel, front-wheel, 4wd, fwd) → используй поле 'driving_gear_type'
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Для привода учитывай РУССКИЙ И АНГЛИЙСКИЙ языки!
+   - Если упоминается ПРОБЕГ (с пробегом, меньше 10000, до 50000 км) → используй поле 'mileage'
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Поле 'mileage' существует ТОЛЬКО в таблице 'used_cars'!
+     ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000  -- ОШИБКА! В cars НЕТ mileage!
+     ✅ ПРАВИЛЬНО: SELECT * FROM used_cars WHERE mileage < 10000  -- ТОЛЬКО used_cars!
+     ⚠️ ВАЖНО: Если запрос про пробег - используй ТОЛЬКО таблицу 'used_cars', НЕ используй UNION с cars!
+   - НИКОГДА не используй 'code' для поиска марок - это поле только в car_options!
+   - НИКОГДА не используй только 'model' для поиска марок - используй 'mark'!
+
+2. ВЫБЕРИ ТАБЛИЦУ:
+   - Если про новые авто → 'cars'
+   - Если про подержанные → 'used_cars'
+   - Если не указано → используй UNION ALL для обеих
+
+3. ПОСТРОЙ WHERE:
+   - Для МАРКИ: UPPER(mark) LIKE '%МАРКА%'
+   - Для МОДЕЛИ: UPPER(model) LIKE '%МОДЕЛЬ%'
+   - ⚠️ ВАЖНО: Если есть И МАРКА И МОДЕЛЬ → используй ОБА условия через AND:
+     WHERE UPPER(mark) LIKE '%МАРКА%' AND UPPER(model) LIKE '%МОДЕЛЬ%'
+   - Для ЦВЕТА: (UPPER(color) LIKE '%РУССКИЙ_ЦВЕТ%' OR UPPER(color) LIKE '%ENGLISH_COLOR%')
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+     Примеры:
+     - Красный/красненький: (UPPER(color) LIKE '%КРАСН%' OR UPPER(color) LIKE '%RED%')
+     - Синий: (UPPER(color) LIKE '%СИНИЙ%' OR UPPER(color) LIKE '%СИН%' OR UPPER(color) LIKE '%BLUE%')
+     - Черный: (UPPER(color) LIKE '%ЧЕРН%' OR UPPER(color) LIKE '%BLACK%')
+   - Для КПП: (LOWER(gear_box_type) LIKE '%РУССКИЙ_КПП%' OR LOWER(gear_box_type) LIKE '%ENGLISH_GEARBOX%')
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: "автомат", "механика" - это про КПП, НЕ про марку!
+     Примеры:
+     - Автомат: (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%')
+     - Механика: (LOWER(gear_box_type) LIKE '%механик%' OR LOWER(gear_box_type) LIKE '%manual%')
+     ❌ НЕПРАВИЛЬНО: WHERE UPPER(mark) LIKE '%AUTOMAT%'  -- ОШИБКА! "автомат" - это КПП, не марка!
+   - Для ТОПЛИВА: (LOWER(fuel_type) LIKE '%РУССКИЙ_ТОПЛИВО%' OR LOWER(fuel_type) LIKE '%ENGLISH_FUEL%')
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+     Примеры:
+     - Бензин: (LOWER(fuel_type) LIKE '%бензин%' OR LOWER(fuel_type) LIKE '%petrol%' OR LOWER(fuel_type) LIKE '%gasoline%')
+     - Дизель: (LOWER(fuel_type) LIKE '%дизель%' OR LOWER(fuel_type) LIKE '%diesel%')
+   - Для КУЗОВА: (LOWER(body_type) LIKE '%РУССКИЙ_КУЗОВ%' OR LOWER(body_type) LIKE '%ENGLISH_BODY%')
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+     Примеры:
+     - Седан: (LOWER(body_type) LIKE '%седан%' OR LOWER(body_type) LIKE '%sedan%')
+     - Кроссовер: (LOWER(body_type) LIKE '%кроссовер%' OR LOWER(body_type) LIKE '%suv%' OR LOWER(body_type) LIKE '%crossover%')
+   - Для ГОРОДА: (UPPER(city) LIKE '%РУССКИЙ_ГОРОД%' OR UPPER(city) LIKE '%ENGLISH_CITY%')
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+     Примеры:
+     - Москва: (UPPER(city) LIKE '%МОСКВА%' OR UPPER(city) LIKE '%MOSCOW%')
+     - Санкт-Петербург: (UPPER(city) LIKE '%САНКТ-ПЕТЕРБУРГ%' OR UPPER(city) LIKE '%SAINT%PETERSBURG%' OR UPPER(city) LIKE '%SPB%')
+   - Для ПРИВОДА: (LOWER(driving_gear_type) LIKE '%РУССКИЙ_ПРИВОД%' OR LOWER(driving_gear_type) LIKE '%ENGLISH_DRIVE%')
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Всегда учитывай ОБА языка (русский И английский)!
+     Примеры:
+     - Полный: (LOWER(driving_gear_type) LIKE '%полный%' OR LOWER(driving_gear_type) LIKE '%all%wheel%' OR LOWER(driving_gear_type) LIKE '%4wd%')
+     - Передний: (LOWER(driving_gear_type) LIKE '%передний%' OR LOWER(driving_gear_type) LIKE '%front%wheel%' OR LOWER(driving_gear_type) LIKE '%fwd%')
+   - Для ПРОБЕГА: mileage < ЧИСЛО (ТОЛЬКО в used_cars, НЕ в cars!)
+     ⚠️ КРИТИЧЕСКИ ВАЖНО: Если запрос про пробег - используй ТОЛЬКО таблицу 'used_cars'!
+     ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000  -- ОШИБКА! В cars нет mileage!
+     ❌ НЕПРАВИЛЬНО: SELECT * FROM cars WHERE mileage < 10000 UNION ALL SELECT * FROM used_cars WHERE mileage < 10000  -- ОШИБКА!
+     ✅ ПРАВИЛЬНО: SELECT * FROM used_cars WHERE mileage < 10000  -- ТОЛЬКО used_cars!
+   - Для ЦЕНЫ: CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC)
+
+4. ПРОВЕРЬ:
+   ✓ Используешь 'mark' для марок, а не 'model' или 'code'?
+   ✓ Если в запросе есть И МАРКА И МОДЕЛЬ - используешь ОБА поля через AND?
+   ✓ Если запрос про "автомат" или "механика" - используешь поле 'gear_box_type', НЕ 'mark'?
+   ✓ Если запрос про ЦВЕТ - используешь поле 'color' с учетом русского И английского языков?
+   ✓ Если запрос про КПП, ТОПЛИВО, КУЗОВ, ГОРОД, ПРИВОД - учитываешь русский И английский языки?
+   ✓ Если запрос про ПРОБЕГ - используешь ТОЛЬКО таблицу 'used_cars', НЕ cars и НЕ UNION?
+   ✓ Используешь UPPER() с LIKE для марок и городов?
+   ✓ Используешь LOWER() с LIKE для КПП, топлива, кузова, привода?
+   ✓ Используешь CAST для цены?
+
+5. ИСПОЛЬЗУЙ ШАБЛОНЫ ВЫШЕ как основу для запроса
+
+ПРИМЕРЫ ДЛЯ РАЗНЫХ ЗАПРОСОВ:
+- "тойота" → SELECT * FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%' UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%TOYOTA%'
+- "BMW" → SELECT * FROM cars WHERE UPPER(mark) LIKE '%BMW%' UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%BMW%'
+- "бмв 3 серии" → SELECT * FROM cars WHERE UPPER(mark) LIKE '%BMW%' AND UPPER(model) LIKE '%3%' AND UPPER(model) LIKE '%СЕРИИ%' UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%BMW%' AND UPPER(model) LIKE '%3%' AND UPPER(model) LIKE '%СЕРИИ%'
+- "Toyota Camry" → SELECT * FROM cars WHERE UPPER(mark) LIKE '%TOYOTA%' AND UPPER(model) LIKE '%CAMRY%' UNION ALL SELECT * FROM used_cars WHERE UPPER(mark) LIKE '%TOYOTA%' AND UPPER(model) LIKE '%CAMRY%'
+- "красный автомобиль" или "красненький автомобиль" → SELECT * FROM cars WHERE (UPPER(color) LIKE '%КРАСН%' OR UPPER(color) LIKE '%RED%') UNION ALL SELECT * FROM used_cars WHERE (UPPER(color) LIKE '%КРАСН%' OR UPPER(color) LIKE '%RED%')
+- "синий автомобиль" → SELECT * FROM cars WHERE (UPPER(color) LIKE '%СИНИЙ%' OR UPPER(color) LIKE '%СИН%' OR UPPER(color) LIKE '%BLUE%') UNION ALL SELECT * FROM used_cars WHERE (UPPER(color) LIKE '%СИНИЙ%' OR UPPER(color) LIKE '%СИН%' OR UPPER(color) LIKE '%BLUE%')
+- "автомобили с пробегом меньше 10000" → SELECT * FROM used_cars WHERE mileage < 10000
+- "машины с пробегом до 50000" → SELECT * FROM used_cars WHERE mileage < 50000
+- "автомат не старше 2013 года с пробегом до 200000 и ценой до 5 млн" → SELECT * FROM used_cars WHERE (LOWER(gear_box_type) LIKE '%автомат%' OR LOWER(gear_box_type) LIKE '%automatic%') AND manufacture_year >= 2013 AND mileage < 200000 AND CAST(REPLACE(REPLACE(REPLACE(price, ' ', ''), '₽', ''), ',', '.') AS NUMERIC) < 5000000
+- "бензин седан" → SELECT * FROM cars WHERE (LOWER(fuel_type) LIKE '%бензин%' OR LOWER(fuel_type) LIKE '%petrol%' OR LOWER(fuel_type) LIKE '%gasoline%') AND (LOWER(body_type) LIKE '%седан%' OR LOWER(body_type) LIKE '%sedan%') UNION ALL SELECT * FROM used_cars WHERE (LOWER(fuel_type) LIKE '%бензин%' OR LOWER(fuel_type) LIKE '%petrol%' OR LOWER(fuel_type) LIKE '%gasoline%') AND (LOWER(body_type) LIKE '%седан%' OR LOWER(body_type) LIKE '%sedan%')
+
+═══════════════════════════════════════════════════════════════════════════════
+
 ВОПРОС ПОЛЬЗОВАТЕЛЯ: {question}
 
-Сгенерируй ТОЛЬКО SQL запрос (без объяснений, без markdown, без дополнительного текста):
+ВАЖНО: Используй примеры выше как образец. Сгенерируй ТОЛЬКО SQL запрос (без объяснений, без markdown, без дополнительного текста):
 SQL запрос:"""
         return prompt
     
@@ -3103,7 +4087,16 @@ SQL запрос:"""
         
         # Используем chat API для лучшей поддержки system prompt
         if system_prompt is None:
-            system_prompt = "Ты — эксперт по SQL. Генерируй только валидные SQL запросы без объяснений."
+            system_prompt = """Ты — эксперт по SQL для PostgreSQL. База данных содержит таблицы cars (новые авто) и used_cars (подержанные).
+
+🚨 КРИТИЧЕСКИ ВАЖНО:
+- НИКОГДА не используй JOIN между cars и used_cars - они НЕ связаны!
+- Для марок используй поле 'mark', НЕ 'code' или 'model'!
+- Всегда используй UPPER(mark) LIKE '%МАРКА%' для поиска марок
+- Для объединения используй UNION ALL
+- Цена хранится как VARCHAR - используй CAST для сравнения с числом
+
+Генерируй ТОЛЬКО валидный SQL без объяснений, без markdown."""
         
         payload = {
             "model": model_name,
@@ -3114,7 +4107,7 @@ SQL запрос:"""
             "stream": False,
             "options": {
                 "temperature": 0.1,
-                "num_predict": 8192
+                "num_predict": 16384  # Увеличено для длинных промптов
             }
         }
         

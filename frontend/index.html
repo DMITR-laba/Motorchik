@@ -236,6 +236,15 @@
                     <div class="relative">
                         <textarea id="messageInput" rows="2" class="w-full px-4 py-3 pr-32 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 resize-none" placeholder="Type your message..."></textarea>
                         <div class="absolute right-3 bottom-3 flex gap-2">
+                            <button id="intelligentSearchButton" onclick="toggleIntelligentSearch()" 
+                                    class="ds-atom-button f79352dc ds-toggle-button ds-toggle-button--md p-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition-colors"
+                                    title="Интеллектуальный поиск"
+                                    role="button" aria-disabled="false" tabindex="0">
+                                <div class="ds-icon ds-atom-button__icon flex items-center justify-center" style="font-size: 14px; width: 14px; height: 14px; color: var(--dsw-alias-brand-text, #374151); margin-right: 0px;">
+                                    <i data-feather="search"></i>
+                                </div>
+                                <span class="text-xs ml-1 hidden sm:inline">Умный поиск</span>
+                            </button>
                             <button id="deepThinkingButton" onclick="toggleDeepThinking()" 
                                     class="ds-atom-button f79352dc ds-toggle-button ds-toggle-button--md p-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition-colors"
                                     title="Глубокое мышление"
@@ -305,6 +314,12 @@
                     </button>
                     <button id="domainTab" onclick="showDomainTab()" class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
                         Настройка домена
+                    </button>
+                    <button id="metricsTab" onclick="showMetricsTab()" class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+                        Метрики качества
+                    </button>
+                    <button id="modelsTab" onclick="showModelsTab()" class="px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+                        Управление моделями
                     </button>
                 </div>
             </div>
@@ -576,16 +591,36 @@
                     <!-- Настройки моделей -->
                     <div class="bg-white border border-gray-200 rounded-lg p-6">
                         <h3 class="text-lg font-semibold text-gray-800 mb-4">Настройки моделей</h3>
+                        
+                        <!-- Переключатель провайдера -->
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Предпочитаемый провайдер:</label>
+                            <div class="flex gap-2">
+                                <button onclick="setPreferredProvider('ollama')" id="prefProviderOllama" 
+                                        class="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors">
+                                    <i data-feather="server" class="w-4 h-4 inline mr-2"></i>
+                                    Ollama (локальные)
+                                </button>
+                                <button onclick="setPreferredProvider('api')" id="prefProviderApi" 
+                                        class="px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors">
+                                    <i data-feather="cloud" class="w-4 h-4 inline mr-2"></i>
+                                    API (Mistral/OpenAI/Anthropic)
+                                </button>
+                            </div>
+                            <p class="mt-2 text-xs text-gray-500">Выбранный провайдер будет использоваться по умолчанию для новых задач</p>
+                        </div>
+                        
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Модель для ответов</label>
                                 <select id="responseModel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
                                     <option value="">Выберите модель</option>
                                 </select>
-                                <div class="mt-1">
+                                <div class="mt-1 flex items-center gap-2">
                                     <button onclick="testModel('response')" class="text-xs text-blue-600 hover:text-blue-800">
                                         Тестировать модель
                                     </button>
+                                    <span id="responseModelProvider" class="text-xs text-gray-500"></span>
                                 </div>
                             </div>
                             <div>
@@ -593,10 +628,11 @@
                                 <select id="embeddingModel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
                                     <option value="">Выберите модель</option>
                                 </select>
-                                <div class="mt-1">
+                                <div class="mt-1 flex items-center gap-2">
                                     <button onclick="testModel('embedding')" class="text-xs text-blue-600 hover:text-blue-800">
                                         Тестировать модель
                                     </button>
+                                    <span id="embeddingModelProvider" class="text-xs text-gray-500"></span>
                                 </div>
                             </div>
                         </div>
@@ -1256,6 +1292,67 @@
                 </div>
             </div>
 
+            <!-- Секция метрик качества -->
+            <div id="metricsSection" class="mb-6 relative hidden">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Метрики качества системы</h3>
+                        <div class="flex gap-2">
+                            <button onclick="loadQualityMetrics()" 
+                                    class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                                <i data-feather="refresh-cw"></i>
+                                <span>Обновить</span>
+                            </button>
+                            <button onclick="clearQualityMetrics()" 
+                                    class="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
+                                <i data-feather="trash-2"></i>
+                                <span>Очистить метрики</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="metricsContent" class="space-y-6">
+                        <div class="text-center py-8 text-gray-500">
+                            <i data-feather="bar-chart-2" class="w-12 h-12 mx-auto text-gray-300 mb-2"></i>
+                            <p>Загрузка метрик...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Секция управления моделями -->
+            <div id="modelsSection" class="mb-6 relative hidden">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Управление моделями AI</h3>
+                        <div class="flex gap-2">
+                            <button onclick="loadModelsData()" 
+                                    class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                                <i data-feather="refresh-cw"></i>
+                                <span>Обновить</span>
+                            </button>
+                            <button onclick="switchAllToMistral()" 
+                                    class="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+                                <i data-feather="zap"></i>
+                                <span>Переключить все на Mistral</span>
+                            </button>
+                            <button onclick="reloadOrchestratorConfig()" 
+                                    class="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                                <i data-feather="rotate-cw"></i>
+                                <span>Перезагрузить конфигурацию</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="modelsContent" class="space-y-6">
+                        <div class="text-center py-8 text-gray-500">
+                            <i data-feather="cpu" class="w-12 h-12 mx-auto text-gray-300 mb-2"></i>
+                            <p>Загрузка данных моделей...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Модальное окно для импорта -->
             <div id="importModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
                 <div class="bg-white rounded-lg p-6 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
@@ -1778,6 +1875,27 @@
         
         // Toggle language
         // Функция переключения режима размышления
+        function toggleIntelligentSearch() {
+            const button = document.getElementById('intelligentSearchButton');
+            const currentState = localStorage.getItem('intelligentSearchEnabled') === 'true';
+            const newState = !currentState;
+            
+            localStorage.setItem('intelligentSearchEnabled', newState.toString());
+            
+            // Обновляем визуальное состояние кнопки
+            if (newState) {
+                button.classList.add('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
+                button.classList.remove('border-gray-300');
+                const icon = button.querySelector('.ds-icon');
+                if (icon) icon.style.color = '#2563eb';
+            } else {
+                button.classList.remove('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
+                button.classList.add('border-gray-300');
+                const icon = button.querySelector('.ds-icon');
+                if (icon) icon.style.color = '#374151';
+            }
+        }
+        
         function toggleDeepThinking() {
             const button = document.getElementById('deepThinkingButton');
             const currentState = localStorage.getItem('deepThinkingEnabled') === 'true';
@@ -1794,6 +1912,25 @@
                 button.classList.remove('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
                 button.classList.add('border-gray-300');
                 button.querySelector('.ds-icon').style.color = '#374151';
+            }
+        }
+        
+        // Инициализация состояния кнопки интеллектуального поиска при загрузке
+        function initIntelligentSearchButton() {
+            const button = document.getElementById('intelligentSearchButton');
+            if (!button) return;
+            
+            const isEnabled = localStorage.getItem('intelligentSearchEnabled') === 'true';
+            if (isEnabled) {
+                button.classList.add('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
+                button.classList.remove('border-gray-300');
+                const icon = button.querySelector('.ds-icon');
+                if (icon) icon.style.color = '#2563eb';
+            } else {
+                button.classList.remove('ds-toggle-button--selected', 'bg-blue-100', 'border-blue-500');
+                button.classList.add('border-gray-300');
+                const icon = button.querySelector('.ds-icon');
+                if (icon) icon.style.color = '#374151';
             }
         }
         
@@ -2710,6 +2847,211 @@
             const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
             return String(value || '').replace(/[&<>"']/g, (m) => map[m]);
         }
+        
+        // Форматирование цены
+        function formatPrice(price) {
+            if (!price) return '0';
+            const num = typeof price === 'string' ? parseFloat(price.replace(/[^\d.,]/g, '').replace(',', '.')) : price;
+            if (isNaN(num)) return '0';
+            return new Intl.NumberFormat('ru-RU', { 
+                minimumFractionDigits: 0, 
+                maximumFractionDigits: 0 
+            }).format(num);
+        }
+        
+        // Обработка клика по уточняющему вопросу
+        function askQuestion(question) {
+            const input = document.getElementById('messageInput');
+            if (input && question) {
+                input.value = question;
+                input.focus();
+                // Автоматически отправляем вопрос
+                sendMessage();
+            }
+        }
+        
+        // Обработка проактивного предложения
+        function handleProactiveSuggestion(text, type) {
+            const input = document.getElementById('messageInput');
+            if (input && text) {
+                // Формируем запрос в зависимости от типа предложения
+                let query = text;
+                
+                if (type === 'finance') {
+                    query = `Расскажи о кредитовании и лизинге`;
+                } else if (type === 'test_drive') {
+                    query = `Как записаться на тест-драйв?`;
+                } else if (type === 'trade_in') {
+                    query = `Расскажи о программе trade-in`;
+                } else {
+                    query = text;
+                }
+                
+                input.value = query;
+                input.focus();
+                sendMessage();
+            }
+        }
+        
+        // Показать финансовый калькулятор
+        function showFinanceCalculator() {
+            // Создаем модальное окно с калькулятором
+            const modal = document.createElement('div');
+            modal.id = 'financeCalculatorModal';
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            modal.innerHTML = `
+                <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-semibold">💰 Расчет финансирования</h3>
+                        <button onclick="closeFinanceCalculator()" class="text-gray-500 hover:text-gray-700">
+                            <i data-feather="x" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <form id="financeCalculatorForm" onsubmit="calculateFinance(event)">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Цена автомобиля (₽)</label>
+                                <input type="number" id="financeCarPrice" required 
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                                       placeholder="Например: 2500000">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Первоначальный взнос (%)</label>
+                                <input type="number" id="financeDownPayment" value="20" min="0" max="100" required
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Срок (месяцев)</label>
+                                <input type="number" id="financeLoanTerm" value="60" min="12" max="84" required
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Тип расчета</label>
+                                <select id="financeCalculationType" required
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="loan">Кредит</option>
+                                    <option value="lease">Лизинг</option>
+                                    <option value="compare">Сравнить кредит и лизинг</option>
+                                </select>
+                            </div>
+                            <button type="submit" 
+                                    class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
+                                Рассчитать
+                            </button>
+                        </div>
+                    </form>
+                    <div id="financeResult" class="mt-4 hidden"></div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            feather.replace();
+        }
+        
+        // Закрыть финансовый калькулятор
+        function closeFinanceCalculator() {
+            const modal = document.getElementById('financeCalculatorModal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+        
+        // Расчет финансирования
+        async function calculateFinance(event) {
+            if (event) event.preventDefault();
+            
+            const carPrice = parseFloat(document.getElementById('financeCarPrice').value);
+            const downPaymentPercent = parseFloat(document.getElementById('financeDownPayment').value);
+            const loanTerm = parseInt(document.getElementById('financeLoanTerm').value);
+            const calculationType = document.getElementById('financeCalculationType').value;
+            
+            if (!carPrice || carPrice <= 0) {
+                alert('Введите корректную цену автомобиля');
+                return;
+            }
+            
+            try {
+                const response = await fetch(API_BASE + '/api/ai/finance/calculate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...authHeader()
+                    },
+                    body: JSON.stringify({
+                        car_price: carPrice,
+                        down_payment_percent: downPaymentPercent,
+                        loan_term: loanTerm,
+                        calculation_type: calculationType
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Ошибка расчета финансирования');
+                }
+                
+                const result = await response.json();
+                displayFinanceResults(result);
+                
+            } catch (error) {
+                console.error('Ошибка расчета финансирования:', error);
+                alert('Ошибка расчета: ' + error.message);
+            }
+        }
+        
+        // Отображение результатов финансового расчета
+        function displayFinanceResults(result) {
+            const resultDiv = document.getElementById('financeResult');
+            if (!resultDiv) return;
+            
+            let html = '<div class="mt-4 p-4 bg-gray-50 rounded-lg">';
+            
+            if (result.loan_calculation) {
+                html += `
+                    <div class="mb-4 p-3 bg-white rounded border border-green-200">
+                        <h4 class="font-semibold text-gray-800 mb-2">💰 Кредит</h4>
+                        <div class="space-y-1 text-sm">
+                            ${result.loan_calculation.monthly_payment ? `
+                                <p>Ежемесячный платеж: <span class="font-bold text-green-700">${formatPrice(result.loan_calculation.monthly_payment)} ₽</span></p>
+                            ` : ''}
+                            ${result.loan_calculation.total_payment ? `
+                                <p>Общая сумма выплат: <span class="text-gray-700">${formatPrice(result.loan_calculation.total_payment)} ₽</span></p>
+                            ` : ''}
+                            ${result.loan_calculation.total_interest ? `
+                                <p>Переплата: <span class="text-gray-600">${formatPrice(result.loan_calculation.total_interest)} ₽</span></p>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            if (result.lease_calculation) {
+                html += `
+                    <div class="mb-4 p-3 bg-white rounded border border-blue-200">
+                        <h4 class="font-semibold text-gray-800 mb-2">🚗 Лизинг</h4>
+                        <div class="space-y-1 text-sm">
+                            ${result.lease_calculation.monthly_payment ? `
+                                <p>Ежемесячный платеж: <span class="font-bold text-blue-700">${formatPrice(result.lease_calculation.monthly_payment)} ₽</span></p>
+                            ` : ''}
+                            ${result.lease_calculation.total_payment ? `
+                                <p>Общая сумма выплат: <span class="text-gray-700">${formatPrice(result.lease_calculation.total_payment)} ₽</span></p>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            if (result.comparison) {
+                html += `
+                    <div class="p-3 bg-white rounded border border-gray-200">
+                        <h4 class="font-semibold text-gray-800 mb-2">📊 Сравнение</h4>
+                        <p class="text-sm text-gray-700">${result.comparison.recommendation || ''}</p>
+                    </div>
+                `;
+            }
+            
+            html += '</div>';
+            resultDiv.innerHTML = html;
+            resultDiv.classList.remove('hidden');
+        }
 
         async function sendMessage() {
             const input = document.getElementById('messageInput');
@@ -2768,10 +3110,47 @@
                                 body: JSON.stringify({ question: message, generate_only: false })
                             });
                             const sqlData = await sqlRes.json();
-                            const ti = document.getElementById(typingId);
-                            if (ti) ti.remove();
                             
-                            if (sqlData.success) {
+                            // Проверяем, требуется ли уточнение
+                            if (sqlData.needs_clarification && sqlData.clarification_questions) {
+                                const ti = document.getElementById(typingId);
+                                if (ti) ti.remove();
+                                
+                                console.log('❓ Требуется уточнение запроса');
+                                console.log('📋 Вопросы для уточнения:', sqlData.clarification_questions);
+                                
+                                // Формируем сообщение с вопросами для уточнения
+                                let clarificationMessage = 'Для более точного поиска мне нужны уточнения:\n\n';
+                                sqlData.clarification_questions.forEach((q, idx) => {
+                                    clarificationMessage += `${idx + 1}. ${q}\n`;
+                                });
+                                clarificationMessage += '\nПожалуйста, ответьте на эти вопросы, и я смогу найти подходящие автомобили.';
+                                
+                                // Добавляем сообщение с вопросами
+                                addAIMessage(clarificationMessage, {
+                                    cars: [],
+                                    articles: [],
+                                    documents: []
+                                });
+                                
+                                // Сохраняем контекст для последующего уточнения
+                                // (можно добавить в localStorage или в состояние)
+                                if (sqlData.query_analysis) {
+                                    console.log('📊 Анализ запроса:', sqlData.query_analysis);
+                                }
+                                
+                                sqlProcessed = true;
+                                // Пропускаем дальнейшую обработку - уточнение обработано
+                            } else {
+                                // Проверяем, есть ли данные от fallback на Elasticsearch, даже если success=false
+                                const hasFallbackData = sqlData.fallback_source === 'elasticsearch' && 
+                                                       sqlData.data && 
+                                                       sqlData.data.length > 0;
+                                
+                                // Если есть данные от fallback, считаем это успешным ответом
+                                if (sqlData.success || hasFallbackData) {
+                                const ti = document.getElementById(typingId);
+                                if (ti) ti.remove();
                                 console.log('✅ SQL-агент успешно обработал запрос');
                                 // Проверяем источник данных (только для логирования)
                                 if (sqlData.fallback_source === 'elasticsearch') {
@@ -2977,10 +3356,93 @@
                                 // Прерываем выполнение - не вызываем Elasticsearch и другие сервисы
                                 return;
                             } else {
-                                // Если SQL-агент не смог обработать, логируем и продолжаем
+                                // Если SQL-агент не смог обработать, проверяем наличие fallback данных
+                                const ti = document.getElementById(typingId);
+                                if (ti) ti.remove();
+                                
+                                // Если fallback на Elasticsearch нашел данные, обрабатываем их как успешный ответ
+                                if (sqlData.fallback_source === 'elasticsearch' && sqlData.data && sqlData.data.length > 0) {
+                                    console.log('✅ Fallback на Elasticsearch нашел данные, обрабатываю как успешный ответ');
+                                    
+                                    // Обрабатываем данные от fallback так же, как успешный ответ SQL-агента
+                                    sqlProcessed = true;
+                                    
+                                    // Формируем финальный ответ
+                                    let finalResponse = sqlData.answer || `Найдено ${sqlData.row_count || 0} автомобилей через Elasticsearch.`;
+                                    
+                                    // Преобразуем данные в формат для sources
+                                    let carsForSources = [];
+                                    if (sqlData.row_count !== undefined && sqlData.row_count > 0 && sqlData.data && sqlData.columns) {
+                                        carsForSources = sqlData.data.map((row) => {
+                                            const carType = row.type || (row.mileage ? 'used_car' : 'car');
+                                            return {
+                                                id: row.id || null,
+                                                mark: row.mark || '',
+                                                model: row.model || '',
+                                                manufacture_year: row.manufacture_year || row.model_year || '',
+                                                price: row.price || row.sale_price || '',
+                                                city: row.city || '',
+                                                body_type: row.body_type || '',
+                                                mileage: row.mileage !== null && row.mileage !== undefined ? Number(row.mileage) : null,
+                                                vin: row.vin || '',
+                                                type: carType === 'used_car' ? 'used_car' : 'car',
+                                                fuel_type: row.fuel_type || '',
+                                                gear_box_type: row.gear_box_type || '',
+                                                power: row.power || '',
+                                                color: row.color || ''
+                                            };
+                                        }).filter(c => c.id);
+                                    }
+                                    
+                                    const sourcesData = {
+                                        cars: carsForSources || [],
+                                        articles: [],
+                                        documents: []
+                                    };
+                                    
+                                    // Сохраняем ответ через chat/message
+                                    try {
+                                        const deepThinkingEnabled = localStorage.getItem('deepThinkingEnabled') === 'true';
+                                        const chatRes = await fetch(API_BASE + '/api/chat/message', {
+                                            method: 'POST',
+                                            headers: { 'Content-Type': 'application/json', ...authHeader() },
+                                            body: JSON.stringify({ 
+                                                message: message, 
+                                                user_id: getCurrentUserId(),
+                                                chat_id: currentChatId,
+                                                deep_thinking_enabled: deepThinkingEnabled,
+                                                sql_agent_response: finalResponse,
+                                                sources_data: sourcesData
+                                            })
+                                        });
+                                        
+                                        if (chatRes.ok) {
+                                            const chatData = await chatRes.json();
+                                            if (chatData.chat_id) {
+                                                currentChatId = chatData.chat_id;
+                                                currentChatTitle = chatData.chat_title || null;
+                                                currentChatIsSession = false;
+                                                window.__selectedSessionId = null;
+                                                updateChatTitleDisplay();
+                                            }
+                                            addAIMessage(chatData.response || finalResponse, chatData.message_id, sourcesData);
+                                            await loadChats();
+                                        } else {
+                                            addAIMessage(finalResponse, null, sourcesData);
+                                        }
+                                    } catch (chatError) {
+                                        console.error('Ошибка при отправке через chat/message:', chatError);
+                                        addAIMessage(finalResponse, null, sourcesData);
+                                    }
+                                    
+                                    return;
+                                }
+                                
+                                // Если нет данных от fallback, показываем ошибку и продолжаем обычный чат
                                 console.log('⚠️ SQL-агент не смог обработать запрос:', sqlData.error);
                                 console.log('🔄 Продолжаю обработку через обычный чат...');
-                            }
+                                }
+                            } // Конец else блока (если не требуется уточнение)
                         } catch (sqlError) {
                             console.error('❌ Ошибка SQL-агента:', sqlError);
                             console.log('🔄 Продолжаю обработку через обычный чат...');
@@ -3000,8 +3462,9 @@
                         
                         // Отправляем запрос на сервер с cars из ES
                         // articles и documents будут добавлены из ответа RAG сервиса на backend
-                        // Получаем состояние размышления
+                        // Получаем состояние размышления и интеллектуального поиска
                         const deepThinkingEnabled = localStorage.getItem('deepThinkingEnabled') === 'true';
+                        const intelligentSearchEnabled = localStorage.getItem('intelligentSearchEnabled') === 'true';
                         
                         const res = await fetch(API_BASE + '/api/chat/message', {
                             method: 'POST',
@@ -3011,6 +3474,7 @@
                                 user_id: getCurrentUserId(),
                                 chat_id: currentChatId,
                                 deep_thinking_enabled: deepThinkingEnabled,
+                                use_intelligent_search: intelligentSearchEnabled,
                                 sources_data: {
                                     cars: esCars,
                                     articles: [],  // Будет заполнено из ответа RAG
@@ -3018,9 +3482,39 @@
                                 }
                             })
                         });
-                        const data = await res.json();
+                        
+                        // Удаляем typing indicator только после получения ответа
                         const ti = document.getElementById(typingId);
                         if (ti) ti.remove();
+                        
+                        if (!res.ok) {
+                            console.error('❌ Ошибка при отправке сообщения:', res.status, res.statusText);
+                            try {
+                                const errorText = await res.text();
+                                console.error('Ошибка ответа:', errorText);
+                            } catch (e) {
+                                console.error('Не удалось прочитать текст ошибки:', e);
+                            }
+                            addAIMessage(escapeHtml(isEnglish ? 'Error. Try again.' : 'Ошибка. Повторите попытку.'), null, null);
+                            return;
+                        }
+                        
+                        let data;
+                        try {
+                            data = await res.json();
+                            console.log('📥 Получен ответ от chat/message:', data);
+                        } catch (e) {
+                            console.error('❌ Ошибка при парсинге ответа:', e);
+                            addAIMessage(escapeHtml(isEnglish ? 'Error parsing response. Try again.' : 'Ошибка при обработке ответа. Повторите попытку.'), null, null);
+                            return;
+                        }
+                        
+                        // Проверяем наличие ответа
+                        if (!data || !data.response || data.response.trim() === '') {
+                            console.error('❌ Пустой ответ от сервера:', data);
+                            addAIMessage(escapeHtml(isEnglish ? 'No response received. Try again.' : 'Ответ не получен. Повторите попытку.'), null, null);
+                            return;
+                        }
                         
                         // Обновляем currentChatId если он был создан
                         if (data.chat_id) {
@@ -3031,16 +3525,102 @@
                             updateChatTitleDisplay();
                         }
                         
+                        // Преобразуем автомобили из ответа сервера в формат для sources_data
+                        const carsFromResponse = [];
+                        
+                        // Обрабатываем новые автомобили (related_cars)
+                        if (Array.isArray(data.related_cars) && data.related_cars.length > 0) {
+                            console.log('🚗 Найдено новых автомобилей в ответе:', data.related_cars.length);
+                            carsFromResponse.push(...data.related_cars.map(car => ({
+                                id: car.id || null,
+                                mark: car.mark || '',
+                                model: car.model || '',
+                                manufacture_year: car.manufacture_year || car.model_year || '',
+                                price: car.price || car.sale_price || '',
+                                city: car.city || '',
+                                body_type: car.body_type || '',
+                                mileage: null, // Новые автомобили не имеют пробега
+                                vin: car.vin || '',
+                                type: 'car',
+                                fuel_type: car.fuel_type || '',
+                                gear_box_type: car.gear_box_type || '',
+                                power: car.power || '',
+                                color: car.color || ''
+                            })));
+                        }
+                        
+                        // Обрабатываем подержанные автомобили (related_used_cars)
+                        if (Array.isArray(data.related_used_cars) && data.related_used_cars.length > 0) {
+                            console.log('🚗 Найдено подержанных автомобилей в ответе:', data.related_used_cars.length);
+                            carsFromResponse.push(...data.related_used_cars.map(car => ({
+                                id: car.id || null,
+                                mark: car.mark || '',
+                                model: car.model || '',
+                                manufacture_year: car.manufacture_year || car.model_year || '',
+                                price: car.price || car.sale_price || '',
+                                city: car.city || '',
+                                body_type: car.body_type || '',
+                                mileage: car.mileage !== null && car.mileage !== undefined ? Number(car.mileage) : null,
+                                vin: car.vin || '',
+                                type: 'used_car',
+                                fuel_type: car.fuel_type || '',
+                                gear_box_type: car.gear_box_type || '',
+                                power: car.power || '',
+                                color: car.color || ''
+                            })));
+                        }
+                        
+                        // Объединяем автомобили: сначала из ответа сервера, потом из ES (если есть)
+                        // Убираем дубликаты по ID
+                        const allCarsMap = new Map();
+                        
+                        // Сначала добавляем автомобили из ответа сервера (приоритет)
+                        carsFromResponse.forEach(car => {
+                            if (car.id) {
+                                allCarsMap.set(car.id, car);
+                            }
+                        });
+                        
+                        // Затем добавляем автомобили из ES, если их еще нет
+                        if (Array.isArray(esCars)) {
+                            esCars.forEach(car => {
+                                if (car.id && !allCarsMap.has(car.id)) {
+                                    allCarsMap.set(car.id, car);
+                                }
+                            });
+                        }
+                        
+                        const allCars = Array.from(allCarsMap.values());
+                        
+                        // Проверяем наличие информации об интеллектуальном поиске
+                        let intelligentSearchInfo = null;
+                        if (data.sources_data && data.sources_data.intelligent_search) {
+                            intelligentSearchInfo = data.sources_data.intelligent_search;
+                        }
+                        
+                        // Проверяем наличие рекомендаций
+                        let recommendations = null;
+                        if (data.sources_data && data.sources_data.recommendations) {
+                            recommendations = data.sources_data.recommendations;
+                        }
+                        
                         // Подготавливаем полные sources_data для отображения и сохранения
                         // Включаем articles и documents из ответа сервера
                         const fullSourcesData = {
-                            cars: esCars,
+                            cars: allCars,
                             articles: Array.isArray(data.related_articles) ? data.related_articles : [],
-                            documents: Array.isArray(data.related_documents) ? data.related_documents : []
+                            documents: Array.isArray(data.related_documents) ? data.related_documents : [],
+                            intelligent_search: intelligentSearchInfo,
+                            recommendations: recommendations,
+                            clarifying_questions: data.clarifying_questions || data.sources_data?.clarifying_questions || [],
+                            proactive_suggestions: data.proactive_suggestions || data.sources_data?.proactive_suggestions || [],
+                            finance_calculation: data.finance_calculation || data.sources_data?.finance_calculation || null
                         };
                         
                         console.log('📊 Полные sources_data для сохранения:', {
                             cars: fullSourcesData.cars.length,
+                            carsFromResponse: carsFromResponse.length,
+                            carsFromES: esCars.length,
                             articles: fullSourcesData.articles.length,
                             documents: fullSourcesData.documents.length
                         });
@@ -3050,8 +3630,10 @@
                         
                         // Отладочная информация
                         console.log('Response data:', data);
-                        console.log('Related articles:', data.related_articles);
-                        console.log('Related documents:', data.related_documents);
+                        console.log('Related cars:', data.related_cars?.length || 0);
+                        console.log('Related used_cars:', data.related_used_cars?.length || 0);
+                        console.log('Related articles:', data.related_articles?.length || 0);
+                        console.log('Related documents:', data.related_documents?.length || 0);
                         
                         // Рендер мини-бара источников (статьи + документы)
                         const hasArticles = fullSourcesData.articles.length > 0;
@@ -3061,6 +3643,11 @@
                         console.log('Has articles:', hasArticles, 'Has documents:', hasDocuments, 'Has cars:', hasCars);
                         
                         // Выводим ответ с полными sources_data
+                        console.log('📝 Вызываю addAIMessage с response:', {
+                            responseLength: data.response?.length || 0,
+                            messageId: data.message_id,
+                            hasSources: !!fullSourcesData
+                        });
                         addAIMessage(data.response, data.message_id, fullSourcesData, data.model_info);
                         
                         // НЕ вызываем renderSourcesBar здесь автоматически
@@ -3087,7 +3674,15 @@
             try {
                 console.log('🔍 Выполняю поиск автомобилей через Elasticsearch:', text);
                 const qs = new URLSearchParams({ q: text, limit: '500' }); // Увеличиваем лимит до 500
-                const resp = await fetch(API_BASE + '/search/es/cars?' + qs.toString(), { headers: { ...authHeader() } });
+                // Используем правильный путь через API (проксируется через nginx)
+                const resp = await fetch(API_BASE + '/api/search/es/cars?' + qs.toString(), { headers: { ...authHeader() } });
+                
+                if (!resp.ok) {
+                    console.error('❌ Ошибка при поиске в ES:', resp.status, resp.statusText);
+                    window.__lastSources = [];
+                    return;
+                }
+                
                 const data = await resp.json();
                 console.log('📊 Результаты поиска ES:', data);
                 
@@ -3121,14 +3716,17 @@
                 
                 console.log('🚗 Обработанные автомобили для источников:', cars);
                 
+                // Сохраняем результаты для использования в sources_data
+                window.__lastSources = cars;
+                
                 if (cars.length > 0) {
-                    renderSourcesBar([], [], cars);
-                    console.log(`✅ Отображено ${cars.length} автомобилей в источниках через Elasticsearch`);
+                    console.log(`✅ Сохранено ${cars.length} автомобилей в window.__lastSources`);
                 } else {
                     console.log('⚠️ Автомобили не найдены или не отображены');
                 }
             } catch (e) {
                 console.error('❌ Ошибка поиска ES:', e);
+                window.__lastSources = [];
             }
         }
 
@@ -3730,6 +4328,188 @@
                 `;
             }
             
+            // Проверяем наличие информации об интеллектуальном поиске и рекомендаций
+            let relaxationHtml = '';
+            let recommendationsHtml = '';
+            let clarifyingQuestionsHtml = '';
+            let proactiveSuggestionsHtml = '';
+            let financeCalculatorHtml = '';
+            
+            if (sourcesData) {
+                // Отображение ослабления фильтров
+                if (sourcesData.intelligent_search && sourcesData.intelligent_search.relaxation_applied) {
+                    const relaxed = sourcesData.intelligent_search.relaxed_params || {};
+                    const original = sourcesData.intelligent_search.original_params || {};
+                    const changes = [];
+                    
+                    if (relaxed.min_price !== original.min_price) {
+                        changes.push(`Цена: ${original.min_price || 'не указана'} → ${relaxed.min_price || 'не указана'}`);
+                    }
+                    if (relaxed.max_price !== original.max_price) {
+                        changes.push(`Макс. цена: ${original.max_price || 'не указана'} → ${relaxed.max_price || 'не указана'}`);
+                    }
+                    if (relaxed.min_year !== original.min_year) {
+                        changes.push(`Год: ${original.min_year || 'не указан'} → ${relaxed.min_year || 'не указан'}`);
+                    }
+                    if (relaxed.mark !== original.mark) {
+                        changes.push(`Марка: ${original.mark || 'не указана'} → ${relaxed.mark || 'не указана'}`);
+                    }
+                    
+                    if (changes.length > 0) {
+                        relaxationHtml = `
+                            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3 mt-2 mb-2">
+                                <div class="flex items-start gap-2">
+                                    <span class="text-yellow-600">⚠️</span>
+                                    <div class="flex-1">
+                                        <p class="text-sm font-medium text-yellow-900 mb-1">Фильтры были ослаблены для поиска:</p>
+                                        <ul class="text-xs text-yellow-800 list-disc list-inside">
+                                            ${changes.map(c => `<li>${c}</li>`).join('')}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+                
+                // Отображение рекомендаций
+                if (sourcesData.recommendations && Array.isArray(sourcesData.recommendations) && sourcesData.recommendations.length > 0) {
+                    recommendationsHtml = `
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mt-2 mb-2">
+                            <div class="flex items-start gap-2">
+                                <span class="text-blue-600">💡</span>
+                                <div class="flex-1">
+                                    <p class="text-sm font-medium text-blue-900 mb-2">Рекомендации:</p>
+                                    <ul class="text-xs text-blue-800 list-disc list-inside space-y-1">
+                                        ${sourcesData.recommendations.map(r => `<li>${r}</li>`).join('')}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Отображение уточняющих вопросов
+                if (sourcesData.clarifying_questions && Array.isArray(sourcesData.clarifying_questions) && sourcesData.clarifying_questions.length > 0) {
+                    const questions = sourcesData.clarifying_questions.map(q => {
+                        if (typeof q === 'string') return q;
+                        return q.question || q.text || '';
+                    }).filter(q => q && q.trim());
+                    
+                    if (questions.length > 0) {
+                        clarifyingQuestionsHtml = `
+                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mt-3 mb-2">
+                                <div class="flex items-start gap-2">
+                                    <span class="text-blue-600 text-lg">❓</span>
+                                    <div class="flex-1">
+                                        <p class="text-sm font-medium text-blue-900 mb-2">Для уточнения запроса:</p>
+                                        <ul class="text-sm text-blue-800 space-y-1.5">
+                                            ${questions.slice(0, 3).map(q => {
+                                                const safeQ = escapeHtml(q).replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                                                return `
+                                                <li class="cursor-pointer hover:text-blue-900 hover:font-medium transition-all px-2 py-1.5 rounded hover:bg-blue-100 border border-transparent hover:border-blue-300" 
+                                                    onclick="askQuestion('${safeQ}')"
+                                                    role="button"
+                                                    tabindex="0"
+                                                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();askQuestion('${safeQ}')}">
+                                                    ${escapeHtml(q)}
+                                                </li>
+                                            `;
+                                            }).join('')}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+                
+                // Отображение проактивных предложений
+                if (sourcesData.proactive_suggestions && Array.isArray(sourcesData.proactive_suggestions) && sourcesData.proactive_suggestions.length > 0) {
+                    const suggestions = sourcesData.proactive_suggestions.map(s => {
+                        if (typeof s === 'string') return { text: s, type: 'general' };
+                        return { text: s.text || s.suggestion || '', type: s.type || 'general' };
+                    }).filter(s => s.text && s.text.trim());
+                    
+                    if (suggestions.length > 0) {
+                        const suggestionColors = {
+                            'finance': 'bg-green-500 hover:bg-green-600 text-white',
+                            'test_drive': 'bg-purple-500 hover:bg-purple-600 text-white',
+                            'trade_in': 'bg-orange-500 hover:bg-orange-600 text-white',
+                            'similar': 'bg-indigo-500 hover:bg-indigo-600 text-white',
+                            'related': 'bg-pink-500 hover:bg-pink-600 text-white',
+                            'general': 'bg-blue-500 hover:bg-blue-600 text-white'
+                        };
+                        
+                        proactiveSuggestionsHtml = `
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-3 mt-3 mb-2">
+                                <div class="flex items-start gap-2">
+                                    <span class="text-gray-600 text-lg">💡</span>
+                                    <div class="flex-1">
+                                        <p class="text-sm font-medium text-gray-900 mb-2">Также могу предложить:</p>
+                                        <div class="flex flex-wrap gap-2">
+                                            ${suggestions.slice(0, 4).map((s, idx) => {
+                                                const safeText = escapeHtml(s.text).replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                                                return `
+                                                <button onclick="handleProactiveSuggestion('${safeText}', '${s.type}')" 
+                                                        class="px-3 py-1.5 text-xs rounded-lg transition-all shadow-sm hover:shadow-md ${suggestionColors[s.type] || suggestionColors.general}"
+                                                        title="${escapeHtml(s.text)}">
+                                                    ${escapeHtml(s.text)}
+                                                </button>
+                                            `;
+                                            }).join('')}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+                
+                // Отображение финансового калькулятора
+                if (sourcesData.finance_calculation || sourcesData.finance_data) {
+                    const financeData = sourcesData.finance_calculation || sourcesData.finance_data;
+                    if (financeData && (financeData.loan_calculation || financeData.lease_calculation)) {
+                        financeCalculatorHtml = `
+                            <div class="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-4 mt-3 mb-2">
+                                <div class="flex items-start gap-2">
+                                    <span class="text-green-600 text-lg">💰</span>
+                                    <div class="flex-1">
+                                        <p class="text-sm font-medium text-gray-900 mb-3">Расчет финансирования:</p>
+                                        ${financeData.loan_calculation ? `
+                                            <div class="mb-3 p-3 bg-white rounded-lg border border-green-200 shadow-sm">
+                                                <p class="text-xs font-semibold text-gray-700 mb-2">Кредит:</p>
+                                                ${financeData.loan_calculation.monthly_payment ? `
+                                                    <p class="text-sm text-gray-800 mb-1">Ежемесячный платеж: <span class="font-bold text-green-700">${formatPrice(financeData.loan_calculation.monthly_payment)} ₽</span></p>
+                                                ` : ''}
+                                                ${financeData.loan_calculation.total_payment ? `
+                                                    <p class="text-xs text-gray-600">Общая сумма: ${formatPrice(financeData.loan_calculation.total_payment)} ₽</p>
+                                                ` : ''}
+                                            </div>
+                                        ` : ''}
+                                        ${financeData.lease_calculation ? `
+                                            <div class="mb-3 p-3 bg-white rounded-lg border border-blue-200 shadow-sm">
+                                                <p class="text-xs font-semibold text-gray-700 mb-2">Лизинг:</p>
+                                                ${financeData.lease_calculation.monthly_payment ? `
+                                                    <p class="text-sm text-gray-800 mb-1">Ежемесячный платеж: <span class="font-bold text-blue-700">${formatPrice(financeData.lease_calculation.monthly_payment)} ₽</span></p>
+                                                ` : ''}
+                                                ${financeData.lease_calculation.total_payment ? `
+                                                    <p class="text-xs text-gray-600">Общая сумма: ${formatPrice(financeData.lease_calculation.total_payment)} ₽</p>
+                                                ` : ''}
+                                            </div>
+                                        ` : ''}
+                                        <button onclick="showFinanceCalculator()" 
+                                                class="mt-2 px-4 py-2 text-sm bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors shadow-sm hover:shadow-md">
+                                            💰 Рассчитать финансирование
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+            }
+            
             // Создаем мини-бар источников ПЕРЕД сообщением, если есть sources
             let sourcesBarHtml = '';
             if (sourcesData) {
@@ -3785,7 +4565,12 @@
                 <div id="${msgId}" class="flex justify-start" data-message-id="${msgId}">
                     <div class="max-w-3/4 px-4 py-3 chat-bubble-ai">
                         ${html}
-                        <div class="flex justify-end mt-2 gap-2">
+                        ${relaxationHtml}
+                        ${recommendationsHtml}
+                        ${clarifyingQuestionsHtml}
+                        ${proactiveSuggestionsHtml}
+                        ${financeCalculatorHtml}
+                        <div class="flex justify-end mt-3 gap-2">
                             <button onclick="rateResponse('${msgId}', true)" class="p-1 rounded-full hover:bg-gray-200">
                                 <i data-feather="thumbs-up" class="w-4 h-4"></i>
                             </button>
@@ -3801,6 +4586,27 @@
             feather.replace();
             // highlight code
             try { document.querySelectorAll('pre code').forEach(el => window.hljs && hljs.highlightElement(el)); } catch {}
+            
+            // Добавляем обработчик клика на мини-бар источников, если он есть
+            if (sourcesBarHtml) {
+                const barEl = document.getElementById(`refbar-${msgId}`);
+                if (barEl) {
+                    barEl.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        console.log(`🔍 Клик по refbar для сообщения ${msgId}`);
+                        showSourcesForMessage(msgId);
+                    });
+                    barEl.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            console.log(`🔍 Клавиша на refbar для сообщения ${msgId}`);
+                            showSourcesForMessage(msgId);
+                        }
+                    });
+                }
+            }
         }
         
         // Функция удалена - sources теперь сохраняются напрямую в addAIMessage
@@ -4383,6 +5189,8 @@
 
         // Функции для работы с документами
         function showCarsTab() {
+            document.getElementById('metricsSection').classList.add('hidden');
+            document.getElementById('modelsSection').classList.add('hidden');
             document.getElementById('carsSection').classList.remove('hidden');
             document.getElementById('documentsSection').classList.add('hidden');
             document.getElementById('aiSection').classList.add('hidden');
@@ -4410,6 +5218,10 @@
             document.getElementById('importTab').classList.add('text-gray-500');
             document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('domainTab').classList.add('text-gray-500');
+            document.getElementById('metricsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('metricsTab').classList.add('text-gray-500');
+            document.getElementById('modelsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('modelsTab').classList.add('text-gray-500');
             
             showCarsTable('new');
         }
@@ -4598,6 +5410,8 @@
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
             document.getElementById('domainSection').classList.add('hidden');
+            document.getElementById('metricsSection').classList.add('hidden');
+            document.getElementById('modelsSection').classList.add('hidden');
             document.getElementById('documentsTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('documentsTab').classList.remove('text-gray-500');
             document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4614,6 +5428,10 @@
             document.getElementById('importTab').classList.add('text-gray-500');
             document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('domainTab').classList.add('text-gray-500');
+            document.getElementById('metricsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('metricsTab').classList.add('text-gray-500');
+            document.getElementById('modelsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('modelsTab').classList.add('text-gray-500');
             loadDocumentsTable();
         }
 
@@ -4626,6 +5444,8 @@
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
             document.getElementById('domainSection').classList.add('hidden');
+            document.getElementById('metricsSection').classList.add('hidden');
+            document.getElementById('modelsSection').classList.add('hidden');
             document.getElementById('aiTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('aiTab').classList.remove('text-gray-500');
             document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4642,9 +5462,14 @@
             document.getElementById('importTab').classList.add('text-gray-500');
             document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('domainTab').classList.add('text-gray-500');
+            document.getElementById('metricsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('metricsTab').classList.add('text-gray-500');
+            document.getElementById('modelsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('modelsTab').classList.add('text-gray-500');
             loadAiSettings();
             loadCurrentModel(); // Загружаем текущую модель при открытии вкладки
             loadSQLAgentStatus(); // Загружаем статус SQL-агента
+            loadPreferredProvider(); // Загружаем предпочитаемый провайдер
         }
 
         function showUsersTab() {
@@ -4656,6 +5481,8 @@
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
             document.getElementById('domainSection').classList.add('hidden');
+            document.getElementById('metricsSection').classList.add('hidden');
+            document.getElementById('modelsSection').classList.add('hidden');
             document.getElementById('usersTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('usersTab').classList.remove('text-gray-500');
             document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4672,6 +5499,10 @@
             document.getElementById('importTab').classList.add('text-gray-500');
             document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('domainTab').classList.add('text-gray-500');
+            document.getElementById('metricsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('metricsTab').classList.add('text-gray-500');
+            document.getElementById('modelsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('modelsTab').classList.add('text-gray-500');
             loadUsersTable();
         }
 
@@ -4684,6 +5515,8 @@
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
             document.getElementById('domainSection').classList.add('hidden');
+            document.getElementById('metricsSection').classList.add('hidden');
+            document.getElementById('modelsSection').classList.add('hidden');
             document.getElementById('parserTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('parserTab').classList.remove('text-gray-500');
             document.getElementById('carsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
@@ -4700,6 +5533,10 @@
             document.getElementById('importTab').classList.add('text-gray-500');
             document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('domainTab').classList.add('text-gray-500');
+            document.getElementById('metricsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('metricsTab').classList.add('text-gray-500');
+            document.getElementById('modelsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('modelsTab').classList.add('text-gray-500');
             loadParsedCars();
             refreshParserStatus();
             // Инициализируем UI парсера
@@ -4717,6 +5554,8 @@
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
             document.getElementById('domainSection').classList.add('hidden');
+            document.getElementById('metricsSection').classList.add('hidden');
+            document.getElementById('modelsSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.remove('hidden');
             document.getElementById('voiceTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('voiceTab').classList.remove('text-gray-500');
@@ -4734,6 +5573,10 @@
             document.getElementById('importTab').classList.add('text-gray-500');
             document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('domainTab').classList.add('text-gray-500');
+            document.getElementById('metricsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('metricsTab').classList.add('text-gray-500');
+            document.getElementById('modelsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('modelsTab').classList.add('text-gray-500');
             loadVoiceSettings();
         }
 
@@ -4744,8 +5587,9 @@
             document.getElementById('usersSection').classList.add('hidden');
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
-            document.getElementById('importSection').classList.add('hidden');
             document.getElementById('domainSection').classList.add('hidden');
+            document.getElementById('metricsSection').classList.add('hidden');
+            document.getElementById('modelsSection').classList.add('hidden');
             document.getElementById('importSection').classList.remove('hidden');
             document.getElementById('importTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.remove('text-gray-500');
@@ -4761,9 +5605,53 @@
             document.getElementById('parserTab').classList.add('text-gray-500');
             document.getElementById('voiceTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('voiceTab').classList.add('text-gray-500');
+            document.getElementById('domainTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('domainTab').classList.add('text-gray-500');
+            document.getElementById('metricsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('metricsTab').classList.add('text-gray-500');
+            document.getElementById('modelsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('modelsTab').classList.add('text-gray-500');
             loadImportList();
         }
 
+        function showMetricsTab() {
+            // Скрываем все секции
+            document.querySelectorAll('[id$="Section"]').forEach(section => {
+                section.classList.add('hidden');
+            });
+            // Скрываем все табы
+            document.querySelectorAll('[id$="Tab"]').forEach(tab => {
+                tab.classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+                tab.classList.add('text-gray-500');
+            });
+            // Показываем нужную секцию и таб
+            document.getElementById('metricsSection').classList.remove('hidden');
+            document.getElementById('metricsTab').classList.remove('text-gray-500');
+            document.getElementById('metricsTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
+            // Загружаем данные
+            loadQualityMetrics();
+            feather.replace();
+        }
+        
+        function showModelsTab() {
+            // Скрываем все секции
+            document.querySelectorAll('[id$="Section"]').forEach(section => {
+                section.classList.add('hidden');
+            });
+            // Скрываем все табы
+            document.querySelectorAll('[id$="Tab"]').forEach(tab => {
+                tab.classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+                tab.classList.add('text-gray-500');
+            });
+            // Показываем нужную секцию и таб
+            document.getElementById('modelsSection').classList.remove('hidden');
+            document.getElementById('modelsTab').classList.remove('text-gray-500');
+            document.getElementById('modelsTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
+            // Загружаем данные
+            loadModelsData();
+            feather.replace();
+        }
+        
         function showDomainTab() {
             document.getElementById('carsSection').classList.add('hidden');
             document.getElementById('documentsSection').classList.add('hidden');
@@ -4772,6 +5660,8 @@
             document.getElementById('parserSection').classList.add('hidden');
             document.getElementById('voiceSection').classList.add('hidden');
             document.getElementById('importSection').classList.add('hidden');
+            document.getElementById('metricsSection').classList.add('hidden');
+            document.getElementById('modelsSection').classList.add('hidden');
             document.getElementById('domainSection').classList.remove('hidden');
             document.getElementById('domainTab').classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('domainTab').classList.remove('text-gray-500');
@@ -4789,9 +5679,665 @@
             document.getElementById('voiceTab').classList.add('text-gray-500');
             document.getElementById('importTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
             document.getElementById('importTab').classList.add('text-gray-500');
+            document.getElementById('metricsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('metricsTab').classList.add('text-gray-500');
+            document.getElementById('modelsTab').classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+            document.getElementById('modelsTab').classList.add('text-gray-500');
             loadDomainSettings();
         }
 
+        // Функции для метрик качества
+        async function loadQualityMetrics() {
+            const content = document.getElementById('metricsContent');
+            if (!content) return;
+            
+            content.innerHTML = '<div class="text-center py-8 text-gray-500"><i data-feather="loader" class="w-8 h-8 mx-auto animate-spin"></i><p class="mt-2">Загрузка метрик...</p></div>';
+            feather.replace();
+            
+            try {
+                const response = await fetch(API_BASE + '/api/ai/quality/metrics', {
+                    headers: { ...authHeader() }
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Ошибка загрузки метрик');
+                }
+                
+                const data = await response.json();
+                const summary = data.performance_summary || {};
+                
+                let html = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-blue-600 font-medium">Всего взаимодействий</p>
+                                    <p class="text-2xl font-bold text-blue-900">${summary.total_interactions || 0}</p>
+                                </div>
+                                <i data-feather="message-circle" class="w-8 h-8 text-blue-400"></i>
+                            </div>
+                        </div>
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-green-600 font-medium">Среднее время ответа</p>
+                                    <p class="text-2xl font-bold text-green-900">${(summary.avg_response_time || 0).toFixed(2)}с</p>
+                                </div>
+                                <i data-feather="clock" class="w-8 h-8 text-green-400"></i>
+                            </div>
+                        </div>
+                        <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-purple-600 font-medium">Успешность поиска</p>
+                                    <p class="text-2xl font-bold text-purple-900">${((summary.search_success_rate || 0) * 100).toFixed(1)}%</p>
+                                </div>
+                                <i data-feather="search" class="w-8 h-8 text-purple-400"></i>
+                            </div>
+                        </div>
+                        <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-orange-600 font-medium">Среднее вопросов</p>
+                                    <p class="text-2xl font-bold text-orange-900">${(summary.avg_questions_per_interaction || 0).toFixed(1)}</p>
+                                </div>
+                                <i data-feather="help-circle" class="w-8 h-8 text-orange-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Распределение типов связи
+                const relationTypes = summary.relation_types_distribution || {};
+                if (Object.keys(relationTypes).length > 0) {
+                    html += `
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Распределение типов связи</h4>
+                            <div class="space-y-2">
+                                ${Object.entries(relationTypes).map(([type, count]) => {
+                                    const percentage = summary.total_interactions > 0 
+                                        ? ((count / summary.total_interactions) * 100).toFixed(1) 
+                                        : 0;
+                                    return `
+                                        <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                            <span class="text-sm font-medium text-gray-700">${type}</span>
+                                            <div class="flex items-center gap-2">
+                                                <div class="w-32 bg-gray-200 rounded-full h-2">
+                                                    <div class="bg-blue-600 h-2 rounded-full" style="width: ${percentage}%"></div>
+                                                </div>
+                                                <span class="text-sm text-gray-600 w-16 text-right">${count} (${percentage}%)</span>
+                                            </div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                content.innerHTML = html;
+                feather.replace();
+                
+            } catch (error) {
+                console.error('Ошибка загрузки метрик:', error);
+                content.innerHTML = `
+                    <div class="text-center py-8 text-red-500">
+                        <i data-feather="alert-circle" class="w-12 h-12 mx-auto mb-2"></i>
+                        <p>Ошибка загрузки метрик: ${error.message}</p>
+                    </div>
+                `;
+                feather.replace();
+            }
+        }
+        
+        async function clearQualityMetrics() {
+            if (!confirm('Вы уверены, что хотите очистить все метрики качества? Это действие нельзя отменить.')) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(API_BASE + '/api/ai/quality/metrics', {
+                    method: 'DELETE',
+                    headers: { ...authHeader() }
+                });
+                
+                if (response.ok) {
+                    alert('Метрики успешно очищены');
+                    loadQualityMetrics();
+                } else {
+                    const error = await response.json();
+                    alert('Ошибка очистки метрик: ' + (error.detail || 'Неизвестная ошибка'));
+                }
+            } catch (error) {
+                console.error('Ошибка очистки метрик:', error);
+                alert('Ошибка очистки метрик: ' + error.message);
+            }
+        }
+        
+        // Функции для управления моделями
+        async function loadModelsData() {
+            const content = document.getElementById('modelsContent');
+            if (!content) return;
+            
+            content.innerHTML = '<div class="text-center py-8 text-gray-500"><i data-feather="loader" class="w-8 h-8 mx-auto animate-spin"></i><p class="mt-2">Загрузка данных моделей...</p></div>';
+            feather.replace();
+            
+            try {
+                // Загружаем список моделей
+                const modelsResponse = await fetch(API_BASE + '/api/ai/orchestrator/models', {
+                    headers: { ...authHeader() }
+                });
+                
+                // Загружаем метрики производительности
+                const perfResponse = await fetch(API_BASE + '/api/ai/orchestrator/performance', {
+                    headers: { ...authHeader() }
+                });
+                
+                if (!modelsResponse.ok || !perfResponse.ok) {
+                    throw new Error('Ошибка загрузки данных моделей');
+                }
+                
+                const modelsData = await modelsResponse.json();
+                const perfData = await perfResponse.json();
+                
+                const availableModels = modelsData.available_models || [];
+                const taskMapping = modelsData.task_mapping || {};
+                const metrics = perfData.metrics || {};
+                
+                // Разделяем модели по провайдерам
+                const ollamaModels = availableModels.filter(m => m.startsWith('ollama:'));
+                const apiModels = availableModels.filter(m => !m.startsWith('ollama:'));
+                
+                let html = `
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-lg font-semibold text-gray-800">Доступные модели</h4>
+                            <div class="flex gap-2">
+                                <button onclick="toggleModelProvider('all')" id="providerAll" 
+                                        class="px-3 py-1 text-sm rounded-lg bg-blue-500 text-white">
+                                    Все
+                                </button>
+                                <button onclick="toggleModelProvider('ollama')" id="providerOllama" 
+                                        class="px-3 py-1 text-sm rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                    Ollama
+                                </button>
+                                <button onclick="toggleModelProvider('api')" id="providerApi" 
+                                        class="px-3 py-1 text-sm rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                    API
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Ollama модели -->
+                        <div id="ollamaModelsSection" class="mb-6">
+                            <h5 class="text-md font-semibold text-gray-700 mb-3 flex items-center gap-2">
+                                <i data-feather="server" class="w-4 h-4"></i>
+                                Локальные модели (Ollama)
+                            </h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                ${ollamaModels.map(model => {
+                                    const modelKey = typeof model === 'string' ? model : model.name || model;
+                                    const modelMetrics = metrics[modelKey] || {};
+                                    const totalRequests = modelMetrics.total_requests || 0;
+                                    const avgResponseTime = modelMetrics.avg_response_time || 0;
+                                    
+                                    return `
+                                        <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                            <div class="flex items-center justify-between mb-2">
+                                                <h5 class="font-semibold text-gray-800 text-sm">${modelKey.replace('ollama:', '')}</h5>
+                                                <i data-feather="cpu" class="w-5 h-5 text-gray-400"></i>
+                                            </div>
+                                            <div class="space-y-1 text-xs text-gray-600">
+                                                <p>Запросов: <span class="font-medium">${totalRequests}</span></p>
+                                                ${avgResponseTime > 0 ? `<p>Среднее время: <span class="font-medium">${avgResponseTime.toFixed(2)}с</span></p>` : ''}
+                                            </div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                        
+                        <!-- API модели -->
+                        <div id="apiModelsSection" class="mb-6">
+                            <h5 class="text-md font-semibold text-gray-700 mb-3 flex items-center gap-2">
+                                <i data-feather="cloud" class="w-4 h-4"></i>
+                                API модели (Mistral, OpenAI, Anthropic)
+                            </h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                ${apiModels.map(model => {
+                                    const modelKey = typeof model === 'string' ? model : model.name || model;
+                                    const modelMetrics = metrics[modelKey] || {};
+                                    const totalRequests = modelMetrics.total_requests || 0;
+                                    const avgResponseTime = modelMetrics.avg_response_time || 0;
+                                    
+                                    const provider = modelKey.split(':')[0];
+                                    const providerColors = {
+                                        'mistral': 'bg-purple-100 text-purple-800',
+                                        'openai': 'bg-green-100 text-green-800',
+                                        'anthropic': 'bg-orange-100 text-orange-800',
+                                        'deepseek': 'bg-blue-100 text-blue-800'
+                                    };
+                                    const colorClass = providerColors[provider] || 'bg-gray-100 text-gray-800';
+                                    
+                                    return `
+                                        <div class="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                                            <div class="flex items-center justify-between mb-2">
+                                                <div class="flex-1">
+                                                    <h5 class="font-semibold text-gray-800 text-sm">${modelKey.replace(provider + ':', '')}</h5>
+                                                    <span class="text-xs px-2 py-0.5 rounded ${colorClass}">${provider.toUpperCase()}</span>
+                                                </div>
+                                                <i data-feather="cloud" class="w-5 h-5 text-gray-400"></i>
+                                            </div>
+                                            <div class="space-y-1 text-xs text-gray-600 mt-2">
+                                                <p>Запросов: <span class="font-medium">${totalRequests}</span></p>
+                                                ${avgResponseTime > 0 ? `<p>Среднее время: <span class="font-medium">${avgResponseTime.toFixed(2)}с</span></p>` : ''}
+                                            </div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Пользовательские задачи (взаимодействие с пользователем)
+                const userInteractionTasks = modelsData.user_interaction_tasks || {};
+                if (Object.keys(userInteractionTasks).length > 0) {
+                    html += `
+                        <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <i data-feather="user" class="w-5 h-5 text-blue-600"></i>
+                                <h4 class="text-lg font-semibold text-gray-800">Задачи взаимодействия с пользователем</h4>
+                                <span class="text-xs text-gray-500 bg-blue-50 px-2 py-1 rounded">Приоритет: выбор пользователя</span>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full divide-y divide-gray-200">
+                                    <thead class="bg-blue-50">
+                                        <tr>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase">Задача</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase">Модель</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase">Провайдер</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase">Действия</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white divide-y divide-gray-200">
+                                        ${Object.entries(userInteractionTasks).map(([task, taskInfo]) => {
+                                            const modelName = taskInfo.model || '';
+                                            const taskName = taskInfo.name || task;
+                                            const provider = modelName.split(':')[0];
+                                            const displayName = modelName.replace(provider + ':', '');
+                                            const providerColors = {
+                                                'ollama': 'bg-blue-100 text-blue-800',
+                                                'mistral': 'bg-purple-100 text-purple-800',
+                                                'openai': 'bg-green-100 text-green-800',
+                                                'anthropic': 'bg-orange-100 text-orange-800',
+                                                'deepseek': 'bg-indigo-100 text-indigo-800'
+                                            };
+                                            const colorClass = providerColors[provider] || 'bg-gray-100 text-gray-800';
+                                            
+                                            return `
+                                                <tr class="hover:bg-blue-50">
+                                                    <td class="px-4 py-3 text-sm text-gray-700">${taskName}</td>
+                                                    <td class="px-4 py-3 text-sm font-medium text-gray-900">${displayName}</td>
+                                                    <td class="px-4 py-3 text-sm">
+                                                        <span class="px-2 py-1 rounded text-xs ${colorClass}">${provider.toUpperCase()}</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 text-sm">
+                                                        <button onclick="selectModelForTask('${task}')" 
+                                                                class="text-blue-600 hover:text-blue-800 font-medium">
+                                                            Изменить
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            `;
+                                        }).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Внутренние задачи (обработка данных)
+                const internalTasks = modelsData.internal_tasks || {};
+                if (Object.keys(internalTasks).length > 0) {
+                    html += `
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <div class="flex items-center gap-2 mb-4">
+                                <i data-feather="settings" class="w-5 h-5 text-gray-600"></i>
+                                <h4 class="text-lg font-semibold text-gray-800">Внутренние задачи обработки</h4>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full divide-y divide-gray-200">
+                                    <thead class="bg-gray-50">
+                                        <tr>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Задача</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Модель</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Провайдер</th>
+                                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Действия</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white divide-y divide-gray-200">
+                                        ${Object.entries(internalTasks).map(([task, taskInfo]) => {
+                                            const modelName = taskInfo.model || '';
+                                            const taskName = taskInfo.name || task;
+                                            const provider = modelName.split(':')[0];
+                                            const displayName = modelName.replace(provider + ':', '');
+                                            const providerColors = {
+                                                'ollama': 'bg-blue-100 text-blue-800',
+                                                'mistral': 'bg-purple-100 text-purple-800',
+                                                'openai': 'bg-green-100 text-green-800',
+                                                'anthropic': 'bg-orange-100 text-orange-800',
+                                                'deepseek': 'bg-indigo-100 text-indigo-800'
+                                            };
+                                            const colorClass = providerColors[provider] || 'bg-gray-100 text-gray-800';
+                                            
+                                            return `
+                                                <tr class="hover:bg-gray-50">
+                                                    <td class="px-4 py-3 text-sm text-gray-700">${taskName}</td>
+                                                    <td class="px-4 py-3 text-sm font-medium text-gray-900">${displayName}</td>
+                                                    <td class="px-4 py-3 text-sm">
+                                                        <span class="px-2 py-1 rounded text-xs ${colorClass}">${provider.toUpperCase()}</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 text-sm">
+                                                        <button onclick="selectModelForTask('${task}')" 
+                                                                class="text-blue-600 hover:text-blue-800">
+                                                            Изменить
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            `;
+                                        }).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Общая статистика
+                html += `
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Общая статистика</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                                <p class="text-sm text-blue-600 font-medium">Всего запросов</p>
+                                <p class="text-2xl font-bold text-blue-900">${perfData.total_requests || 0}</p>
+                            </div>
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                <p class="text-sm text-green-600 font-medium">Используемых моделей</p>
+                                <p class="text-2xl font-bold text-green-900">${(perfData.models_used || []).length}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                content.innerHTML = html;
+                feather.replace();
+                
+            } catch (error) {
+                console.error('Ошибка загрузки данных моделей:', error);
+                content.innerHTML = `
+                    <div class="text-center py-8 text-red-500">
+                        <i data-feather="alert-circle" class="w-12 h-12 mx-auto mb-2"></i>
+                        <p>Ошибка загрузки данных моделей: ${error.message}</p>
+                    </div>
+                `;
+                feather.replace();
+            }
+        }
+        
+        async function reloadOrchestratorConfig() {
+            try {
+                const response = await fetch(API_BASE + '/api/ai/orchestrator/reload-config', {
+                    method: 'POST',
+                    headers: { ...authHeader() }
+                });
+                
+                if (response.ok) {
+                    alert('Конфигурация оркестратора успешно перезагружена');
+                    loadModelsData();
+                } else {
+                    const error = await response.json();
+                    alert('Ошибка перезагрузки конфигурации: ' + (error.detail || 'Неизвестная ошибка'));
+                }
+            } catch (error) {
+                console.error('Ошибка перезагрузки конфигурации:', error);
+                alert('Ошибка перезагрузки конфигурации: ' + error.message);
+            }
+        }
+        
+        // Переключение провайдера моделей
+        function toggleModelProvider(provider) {
+            const ollamaSection = document.getElementById('ollamaModelsSection');
+            const apiSection = document.getElementById('apiModelsSection');
+            const allBtn = document.getElementById('providerAll');
+            const ollamaBtn = document.getElementById('providerOllama');
+            const apiBtn = document.getElementById('providerApi');
+            
+            // Сбрасываем стили всех кнопок
+            [allBtn, ollamaBtn, apiBtn].forEach(btn => {
+                if (btn) {
+                    btn.classList.remove('bg-blue-500', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-gray-700');
+                }
+            });
+            
+            // Показываем/скрываем секции
+            if (provider === 'all') {
+                if (ollamaSection) ollamaSection.style.display = 'block';
+                if (apiSection) apiSection.style.display = 'block';
+                if (allBtn) {
+                    allBtn.classList.remove('bg-gray-200', 'text-gray-700');
+                    allBtn.classList.add('bg-blue-500', 'text-white');
+                }
+            } else if (provider === 'ollama') {
+                if (ollamaSection) ollamaSection.style.display = 'block';
+                if (apiSection) apiSection.style.display = 'none';
+                if (ollamaBtn) {
+                    ollamaBtn.classList.remove('bg-gray-200', 'text-gray-700');
+                    ollamaBtn.classList.add('bg-blue-500', 'text-white');
+                }
+            } else if (provider === 'api') {
+                if (ollamaSection) ollamaSection.style.display = 'none';
+                if (apiSection) apiSection.style.display = 'block';
+                if (apiBtn) {
+                    apiBtn.classList.remove('bg-gray-200', 'text-gray-700');
+                    apiBtn.classList.add('bg-blue-500', 'text-white');
+                }
+            }
+        }
+        
+        async function selectModelForTask(taskType) {
+            // Загружаем доступные модели
+            try {
+                const response = await fetch(API_BASE + '/api/ai/orchestrator/models', {
+                    headers: { ...authHeader() }
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Ошибка загрузки моделей');
+                }
+                
+                const data = await response.json();
+                const availableModels = data.available_models || [];
+                
+                // Разделяем модели по провайдерам
+                const ollamaModels = availableModels.filter(m => m.startsWith('ollama:'));
+                const apiModels = availableModels.filter(m => !m.startsWith('ollama:'));
+                
+                // Создаем модальное окно для выбора модели
+                const modal = document.createElement('div');
+                modal.id = 'selectModelModal';
+                modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+                modal.innerHTML = `
+                    <div class="bg-white rounded-lg p-6 max-w-2xl w-full mx-4 max-h-[80vh] overflow-y-auto">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-lg font-semibold">Выбор модели для задачи "${taskType}"</h3>
+                            <button onclick="closeSelectModelModal()" class="text-gray-500 hover:text-gray-700">
+                                <i data-feather="x" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Провайдер:</label>
+                            <select id="modelProviderSelect" onchange="filterModelsByProvider()" 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option value="all">Все провайдеры</option>
+                                <option value="ollama">Ollama (локальные)</option>
+                                <option value="api">API (Mistral, OpenAI, Anthropic)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Модель:</label>
+                            <select id="modelSelect" 
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                ${availableModels.map(m => {
+                                    const modelName = typeof m === 'string' ? m : m.name || m;
+                                    const provider = modelName.split(':')[0];
+                                    const displayName = modelName.replace(provider + ':', '');
+                                    return `<option value="${modelName}" data-provider="${provider}">${provider.toUpperCase()}: ${displayName}</option>`;
+                                }).join('')}
+                            </select>
+                        </div>
+                        
+                        <div class="flex justify-end gap-2">
+                            <button onclick="closeSelectModelModal()" 
+                                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">
+                                Отмена
+                            </button>
+                            <button onclick="confirmModelSelection('${taskType}')" 
+                                    class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+                feather.replace();
+                
+            } catch (error) {
+                console.error('Ошибка выбора модели:', error);
+                alert('Ошибка выбора модели: ' + error.message);
+            }
+        }
+        
+        function filterModelsByProvider() {
+            const providerSelect = document.getElementById('modelProviderSelect');
+            const modelSelect = document.getElementById('modelSelect');
+            const selectedProvider = providerSelect.value;
+            
+            // Показываем/скрываем опции в зависимости от провайдера
+            Array.from(modelSelect.options).forEach(option => {
+                if (selectedProvider === 'all') {
+                    option.style.display = '';
+                } else if (selectedProvider === 'ollama') {
+                    option.style.display = option.dataset.provider === 'ollama' ? '' : 'none';
+                } else if (selectedProvider === 'api') {
+                    option.style.display = option.dataset.provider !== 'ollama' ? '' : 'none';
+                }
+            });
+        }
+        
+        function closeSelectModelModal() {
+            const modal = document.getElementById('selectModelModal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+        
+        async function confirmModelSelection(taskType) {
+            const modelSelect = document.getElementById('modelSelect');
+            const selectedModel = modelSelect.value;
+            
+            if (!selectedModel) {
+                alert('Выберите модель');
+                return;
+            }
+            
+            try {
+                // Отправляем запрос на выбор модели
+                const selectResponse = await fetch(API_BASE + '/api/ai/orchestrator/select', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...authHeader()
+                    },
+                    body: JSON.stringify({
+                        task_type: taskType,
+                        user_override: selectedModel
+                    })
+                });
+                
+                if (selectResponse.ok) {
+                    alert(`Модель "${selectedModel}" успешно выбрана для задачи "${taskType}"`);
+                    closeSelectModelModal();
+                    loadModelsData();
+                } else {
+                    const error = await selectResponse.json();
+                    alert('Ошибка выбора модели: ' + (error.detail || 'Неизвестная ошибка'));
+                }
+            } catch (error) {
+                console.error('Ошибка выбора модели:', error);
+                alert('Ошибка выбора модели: ' + error.message);
+            }
+        }
+        
+        async function switchAllToMistral() {
+            if (!confirm('Вы уверены, что хотите переключить все задачи на модели Mistral? Это действие заменит текущие модели.')) {
+                return;
+            }
+            
+            try {
+                // Маппинг задач на модели Mistral
+                const mistralModels = {
+                    'query_analysis': 'mistral:mistral-small-latest',
+                    'fuzzy_interpretation': 'mistral:mistral-medium-latest',
+                    'filter_relaxation': 'mistral:mistral-medium-latest',
+                    'recommendation': 'mistral:mistral-large-latest',
+                    'sql_generation': 'mistral:codestral-latest',
+                    'response_generation': 'mistral:mistral-small-latest',
+                    'search_intent_analysis': 'mistral:mistral-small-latest',
+                    'query_refinement': 'mistral:mistral-medium-latest',
+                    'result_processing': 'mistral:mistral-medium-latest',
+                    'relation_analysis': 'mistral:mistral-small-latest',
+                    'emotion_analysis': 'mistral:mistral-small-latest',
+                    'question_generation': 'mistral:mistral-medium-latest',
+                    'answer_generation': 'mistral:mistral-small-latest',
+                    'proactive_suggestions': 'mistral:mistral-medium-latest'
+                };
+                
+                const response = await fetch(API_BASE + '/api/ai/orchestrator/bulk-update', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...authHeader()
+                    },
+                    body: JSON.stringify({
+                        models: mistralModels
+                    })
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    if (result.success) {
+                        alert(`✅ Успешно переключено ${result.updated_tasks.length} задач на модели Mistral`);
+                        loadModelsData(); // Обновляем данные
+                    } else {
+                        alert(`⚠️ Частично обновлено: ${result.updated_tasks.length} успешно, ${result.failed_tasks.length} ошибок`);
+                        loadModelsData();
+                    }
+                } else {
+                    const error = await response.json();
+                    alert('Ошибка переключения моделей: ' + (error.detail || 'Неизвестная ошибка'));
+                }
+            } catch (error) {
+                console.error('Ошибка переключения моделей:', error);
+                alert('Ошибка переключения моделей: ' + error.message);
+            }
+        }
+        
         async function loadDomainSettings() {
             try {
                 const response = await fetch(API_BASE + '/api/domain/settings', {
@@ -6083,6 +7629,14 @@
                     deepThinkingSelect.appendChild(deepThinkingOption);
                 }
             });
+            
+            // Добавляем обработчики изменения для отображения провайдера
+            if (responseSelect) {
+                responseSelect.addEventListener('change', updateModelProviderDisplay);
+            }
+            if (embeddingSelect) {
+                embeddingSelect.addEventListener('change', updateModelProviderDisplay);
+            }
         }
 
         function loadSavedModelSettings() {
@@ -6179,6 +7733,61 @@
             }
         }
 
+        // Установка предпочитаемого провайдера
+        function setPreferredProvider(provider) {
+            localStorage.setItem('preferredModelProvider', provider);
+            
+            const ollamaBtn = document.getElementById('prefProviderOllama');
+            const apiBtn = document.getElementById('prefProviderApi');
+            
+            if (provider === 'ollama') {
+                ollamaBtn.classList.remove('bg-gray-200', 'text-gray-700');
+                ollamaBtn.classList.add('bg-blue-500', 'text-white');
+                apiBtn.classList.remove('bg-blue-500', 'text-white');
+                apiBtn.classList.add('bg-gray-200', 'text-gray-700');
+            } else {
+                apiBtn.classList.remove('bg-gray-200', 'text-gray-700');
+                apiBtn.classList.add('bg-blue-500', 'text-white');
+                ollamaBtn.classList.remove('bg-blue-500', 'text-white');
+                ollamaBtn.classList.add('bg-gray-200', 'text-gray-700');
+            }
+            
+            // Обновляем отображение провайдера в селектах
+            updateModelProviderDisplay();
+        }
+        
+        function loadPreferredProvider() {
+            const preferred = localStorage.getItem('preferredModelProvider') || 'ollama';
+            setPreferredProvider(preferred);
+        }
+        
+        function updateModelProviderDisplay() {
+            const responseSelect = document.getElementById('responseModel');
+            const embeddingSelect = document.getElementById('embeddingModel');
+            const responseProvider = document.getElementById('responseModelProvider');
+            const embeddingProvider = document.getElementById('embeddingModelProvider');
+            
+            if (responseSelect && responseProvider) {
+                const selectedValue = responseSelect.value;
+                if (selectedValue) {
+                    const provider = selectedValue.split(':')[0];
+                    responseProvider.textContent = `Провайдер: ${provider.toUpperCase()}`;
+                } else {
+                    responseProvider.textContent = '';
+                }
+            }
+            
+            if (embeddingSelect && embeddingProvider) {
+                const selectedValue = embeddingSelect.value;
+                if (selectedValue) {
+                    const provider = selectedValue.split(':')[0];
+                    embeddingProvider.textContent = `Провайдер: ${provider.toUpperCase()}`;
+                } else {
+                    embeddingProvider.textContent = '';
+                }
+            }
+        }
+        
         function displayOllamaModels(models) {
             const container = document.getElementById('ollamaModelsList');
             container.innerHTML = '';
@@ -6392,6 +8001,7 @@
         // Инициализация при загрузке страницы
         document.addEventListener('DOMContentLoaded', function() {
             initDeepThinkingButton();
+            initIntelligentSearchButton();
         });
         
         async function loadCurrentSettings() {

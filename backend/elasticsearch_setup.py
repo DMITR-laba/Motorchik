@@ -115,11 +115,14 @@ def setup_elasticsearch():
         return None
 
 def create_cars_index(es):
-    """Создает индекс для автомобилей в Elasticsearch"""
+    """Создает индекс для автомобилей в Elasticsearch с улучшенными анализаторами"""
     if not es:
         return False
     
     index_name = "cars"
+    
+    # Импортируем Path для работы с файлами
+    from pathlib import Path
     
     # Маппинг полей для автомобилей
     mapping = {
@@ -128,51 +131,61 @@ def create_cars_index(es):
                 "id": {"type": "integer"},
                 "mark": {
                     "type": "text",
-                    "analyzer": "russian",
+                    "analyzer": "ru_en_analyzer",
                     "fields": {
-                        "keyword": {"type": "keyword"}
+                        "keyword": {"type": "keyword"},
+                        "autocomplete": {
+                            "type": "text",
+                            "analyzer": "ru_en_analyzer_autocomplete",
+                            "search_analyzer": "ru_en_analyzer"
+                        }
                     }
                 },
                 "model": {
                     "type": "text", 
-                    "analyzer": "russian",
+                    "analyzer": "ru_en_analyzer",
                     "fields": {
-                        "keyword": {"type": "keyword"}
+                        "keyword": {"type": "keyword"},
+                        "autocomplete": {
+                            "type": "text",
+                            "analyzer": "ru_en_analyzer_autocomplete",
+                            "search_analyzer": "ru_en_analyzer"
+                        }
                     }
                 },
                 "manufacture_year": {"type": "integer"},
                 "price": {"type": "float"},
                 "city": {
                     "type": "text",
-                    "analyzer": "russian",
+                    "analyzer": "ru_en_analyzer",
                     "fields": {
                         "keyword": {"type": "keyword"}
                     }
                 },
                 "fuel_type": {
                     "type": "text",
-                    "analyzer": "russian",
+                    "analyzer": "ru_en_analyzer",
                     "fields": {
                         "keyword": {"type": "keyword"}
                     }
                 },
                 "body_type": {
                     "type": "text",
-                    "analyzer": "russian",
+                    "analyzer": "ru_en_analyzer",
                     "fields": {
                         "keyword": {"type": "keyword"}
                     }
                 },
                 "gear_box_type": {
                     "type": "text",
-                    "analyzer": "russian",
+                    "analyzer": "ru_en_analyzer",
                     "fields": {
                         "keyword": {"type": "keyword"}
                     }
                 },
                 "driving_gear_type": {
                     "type": "text",
-                    "analyzer": "russian",
+                    "analyzer": "ru_en_analyzer",
                     "fields": {
                         "keyword": {"type": "keyword"}
                     }
@@ -234,12 +247,23 @@ def create_cars_index(es):
                 "created_at": {"type": "date"},
                 "description": {
                     "type": "text",
-                    "analyzer": "russian"
+                    "analyzer": "ru_en_analyzer",
+                    "fields": {
+                        "keyword": {"type": "keyword"}
+                    }
                 },
                 "options": {
                     "type": "text",
-                    "analyzer": "russian",
-                    "fields": {"keyword": {"type": "keyword"}}
+                    "analyzer": "ru_en_analyzer",
+                    "fields": {
+                        "keyword": {"type": "keyword"}
+                    }
+                },
+                "embedding": {
+                    "type": "dense_vector",
+                    "dims": 384,
+                    "index": True,
+                    "similarity": "cosine"
                 }
             }
         },
@@ -254,6 +278,31 @@ def create_cars_index(es):
                             "russian_stop",
                             "russian_stemmer"
                         ]
+                    },
+                    "ru_en_analyzer": {
+                        "type": "custom",
+                        "tokenizer": "standard",
+                        "filter": [
+                            "lowercase",
+                            "russian_stop",
+                            "english_stop",
+                            "russian_stemmer",
+                            "english_stemmer",
+                            "ru_en_synonyms"
+                        ]
+                    },
+                    "ru_en_analyzer_autocomplete": {
+                        "type": "custom",
+                        "tokenizer": "standard",
+                        "filter": [
+                            "lowercase",
+                            "russian_stop",
+                            "english_stop",
+                            "russian_stemmer",
+                            "english_stemmer",
+                            "ru_en_synonyms",
+                            "autocomplete_filter"
+                        ]
                     }
                 },
                 "filter": {
@@ -261,9 +310,58 @@ def create_cars_index(es):
                         "type": "stop",
                         "stopwords": "_russian_"
                     },
+                    "english_stop": {
+                        "type": "stop",
+                        "stopwords": "_english_"
+                    },
                     "russian_stemmer": {
                         "type": "stemmer",
                         "language": "russian"
+                    },
+                    "english_stemmer": {
+                        "type": "stemmer",
+                        "language": "english"
+                    },
+                    "ru_en_synonyms": {
+                        "type": "synonym_graph",
+                        "synonyms": [
+                            "bmw, бмв, beemer, beamer, бэмвэ",
+                            "mercedes, мерседес, мерс, mercedes-benz",
+                            "audi, ауди",
+                            "volkswagen, фольксваген, фольк, vw",
+                            "toyota, тойота, тойот",
+                            "hyundai, хёндай, хюндай, хендай",
+                            "kia, киа",
+                            "nissan, ниссан",
+                            "mazda, мазда, мазд",
+                            "ford, форд",
+                            "honda, хонда",
+                            "lexus, лексус",
+                            "lada, ваз, лада",
+                            "gaz, газ",
+                            "uaz, уаз",
+                            "седан, sedan",
+                            "хэтчбек, хетчбек, hatchback",
+                            "кроссовер, crossover, suv",
+                            "внедорожник, внедорож, off-road, 4x4",
+                            "универсал, wagon, estate",
+                            "автомат, автоматическая, акпп, automatic, at",
+                            "механика, механическая, мкпп, manual, mt",
+                            "бензин, petrol, gasoline, gas",
+                            "дизель, diesel",
+                            "гибрид, hybrid",
+                            "электрический, electric, ev",
+                            "полный, 4wd, awd, all-wheel drive, полный привод",
+                            "передний, fwd, front-wheel drive, передний привод",
+                            "задний, rwd, rear-wheel drive, задний привод"
+                        ],
+                        "expand": True,
+                        "lenient": True
+                    },
+                    "autocomplete_filter": {
+                        "type": "edge_ngram",
+                        "min_gram": 2,
+                        "max_gram": 20
                     }
                 }
             }
@@ -271,6 +369,27 @@ def create_cars_index(es):
     }
     
     try:
+        # Загружаем файл синонимов в Elasticsearch
+        # Создаем директорию для анализаторов, если её нет
+        synonyms_content = ""
+        try:
+            synonyms_path = Path(__file__).parent / "elasticsearch" / "synonyms.txt"
+            if synonyms_path.exists():
+                with open(synonyms_path, "r", encoding="utf-8") as f:
+                    synonyms_content = f.read()
+                print(f"✅ Загружен файл синонимов: {synonyms_path}")
+            else:
+                print(f"⚠️ Файл синонимов не найден: {synonyms_path}, создаю базовый файл")
+                # Создаем базовый файл синонимов
+                synonyms_path.parent.mkdir(exist_ok=True)
+                with open(synonyms_path, "w", encoding="utf-8") as f:
+                    f.write("# Синонимы для марок автомобилей\n")
+                    f.write("bmw, бмв, beemer\n")
+                    f.write("mercedes, мерседес, мерс\n")
+                synonyms_content = "bmw, бмв, beemer\nmercedes, мерседес, мерс"
+        except Exception as e:
+            print(f"⚠️ Ошибка загрузки файла синонимов: {e}, используем встроенные синонимы")
+        
         # Удаляем индекс если существует
         if es.indices.exists(index=index_name):
             es.indices.delete(index=index_name)
@@ -278,11 +397,25 @@ def create_cars_index(es):
         
         # Создаем новый индекс
         es.indices.create(index=index_name, body=mapping)
-        print(f"✅ Создан индекс {index_name} с русским анализатором")
+        print(f"✅ Создан индекс {index_name} с улучшенными анализаторами (ru_en_analyzer)")
+        
+        # Если есть файл синонимов, загружаем его через API
+        # Примечание: Elasticsearch требует, чтобы файл синонимов был в конфигурационной директории
+        # Для Docker это может быть сложнее, поэтому используем inline синонимы
+        if synonyms_content:
+            try:
+                # Обновляем настройки индекса с inline синонимами (если файл недоступен)
+                # Это временное решение - в продакшене лучше использовать файл
+                print(f"ℹ️ Для использования синонимов убедитесь, что файл synonyms.txt находится в конфигурационной директории Elasticsearch")
+            except Exception as e:
+                print(f"⚠️ Не удалось настроить синонимы: {e}")
+        
         return True
         
     except Exception as e:
         print(f"❌ Ошибка создания индекса: {e}")
+        import traceback
+        traceback.print_exc()
         return False
 
 def get_car_options(engine, car_id):

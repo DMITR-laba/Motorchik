@@ -1,0 +1,103 @@
+{
+  "task_model_mapping": {
+    "query_analysis": {
+      "primary": "ollama:llama3:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "light"
+    },
+    "fuzzy_interpretation": {
+      "primary": "ollama:mixtral:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "medium"
+    },
+    "filter_relaxation": {
+      "primary": "ollama:mixtral:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "medium"
+    },
+    "recommendation": {
+      "primary": "ollama:llama3:70b",
+      "fallback": "ollama:mixtral:8b",
+      "complexity": "heavy"
+    },
+    "sql_generation": {
+      "primary": "ollama:codellama:34b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "medium"
+    },
+    "response_generation": {
+      "primary": "ollama:llama3:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "light"
+    },
+    "search_intent_analysis": {
+      "primary": "ollama:llama3:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "light"
+    },
+    "query_refinement": {
+      "primary": "ollama:mixtral:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "medium"
+    },
+    "result_processing": {
+      "primary": "ollama:mixtral:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "medium"
+    },
+    "relation_analysis": {
+      "primary": "ollama:llama3:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "light"
+    },
+    "emotion_analysis": {
+      "primary": "ollama:llama3:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "light"
+    },
+    "question_generation": {
+      "primary": "ollama:mixtral:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "medium"
+    },
+    "answer_generation": {
+      "primary": "ollama:llama3:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "light"
+    },
+    "proactive_suggestions": {
+      "primary": "ollama:mixtral:8b",
+      "fallback": "ollama:llama3:8b",
+      "complexity": "medium"
+    }
+  },
+  "user_overrides": {
+    "enabled": true,
+    "respect_user_settings": true,
+    "note": "Пользователь может переопределить модель для конкретной задачи через настройки"
+  },
+  "performance_tracking": {
+    "enabled": true,
+    "cache_size": 100,
+    "track_success_rate": true,
+    "track_response_time": true
+  },
+  "model_availability_check": {
+    "enabled": true,
+    "check_interval_seconds": 300,
+    "auto_fallback": true
+  },
+  "ai_model_selection": {
+    "enabled": true,
+    "use_ai_for_selection": true,
+    "min_models_for_ai": 3,
+    "note": "Использует ИИ для выбора оптимальной модели на основе задачи и доступных моделей"
+  },
+  "auto_model_loading": {
+    "enabled": true,
+    "auto_load_missing_models": true,
+    "load_timeout_seconds": 300,
+    "note": "Автоматически загружает модели Ollama при их отсутствии"
+  }
+}
+

@@ -9,6 +9,7 @@ class _MemoryStorage:
     """In-memory хранилище для fallback когда Redis недоступен"""
     def __init__(self):
         self._data: Dict[str, str] = {}
+        self._lists: Dict[str, List[str]] = {}
     
     def get(self, key: str) -> Optional[str]:
         return self._data.get(key)
@@ -18,10 +19,51 @@ class _MemoryStorage:
         return True
     
     def delete(self, key: str):
+        deleted = 0
         if key in self._data:
             del self._data[key]
-            return 1
-        return 0
+            deleted += 1
+        if key in self._lists:
+            del self._lists[key]
+            deleted += 1
+        return deleted
+    
+    def rpush(self, key: str, value: str):
+        """Добавляет элемент в конец списка"""
+        if key not in self._lists:
+            self._lists[key] = []
+        self._lists[key].append(value)
+        return len(self._lists[key])
+    
+    def lrange(self, key: str, start: int, end: int) -> List[str]:
+        """Получает элементы списка"""
+        if key not in self._lists:
+            return []
+        lst = self._lists[key]
+        # Redis lrange: end=-1 означает конец списка
+        if end == -1:
+            end = len(lst) - 1
+        return lst[start:end+1] if end >= start else []
+    
+    def llen(self, key: str) -> int:
+        """Возвращает длину списка"""
+        return len(self._lists.get(key, []))
+    
+    def ltrim(self, key: str, start: int, end: int):
+        """Обрезает список"""
+        if key not in self._lists:
+            return True
+        lst = self._lists[key]
+        if end == -1:
+            end = len(lst) - 1
+        self._lists[key] = lst[start:end+1] if end >= start else []
+        return True
+    
+    def keys(self, pattern: str) -> List[str]:
+        """Возвращает ключи, соответствующие паттерну"""
+        import fnmatch
+        all_keys = list(self._data.keys()) + list(self._lists.keys())
+        return [k for k in all_keys if fnmatch.fnmatch(k, pattern)]
 
 
 def _init_redis_client():
