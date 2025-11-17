@@ -1,7 +1,16 @@
-from sqlalchemy import Column, Integer, String, Text, DateTime, ForeignKey, Table, Boolean, LargeBinary
+from sqlalchemy import Column, Integer, String, Text, DateTime, ForeignKey, Table, Boolean, LargeBinary, Float
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 from models import Base
+
+# Импорт для работы с pgvector
+try:
+    from pgvector.sqlalchemy import Vector
+    PGVECTOR_AVAILABLE = True
+except ImportError:
+    PGVECTOR_AVAILABLE = False
+    # Заглушка для случаев, когда pgvector не установлен
+    Vector = None
 
 # Пользователи
 class User(Base):
@@ -87,7 +96,7 @@ class ChatMessage(Base):
     __tablename__ = "chat_messages"
     
     id = Column(Integer, primary_key=True, index=True)
-    chat_id = Column(Integer, ForeignKey("chats.id", ondelete="CASCADE"), nullable=True, index=True)  # nullable=True для обратной совместимости
+    chat_id = Column(Integer, ForeignKey("chats.id", ondelete="CASCADE"), nullable=False, index=True)  # Исправлено: NOT NULL
     user_id = Column(String(100), nullable=False, index=True)
     message = Column(Text, nullable=False)
     response = Column(Text, nullable=True)
@@ -592,3 +601,33 @@ class ParsedCarPicture(Base):
     
     # Связи
     parsed_car = relationship("ParsedCar", back_populates="pictures")
+
+
+# ============================================================================
+# МОДЕЛЬ ДЛЯ ДОЛГОВРЕМЕННОЙ ПАМЯТИ ПОЛЬЗОВАТЕЛЯ
+# ============================================================================
+
+class UserMemory(Base):
+    """Модель для долговременной памяти пользователя (предпочтения, интересы, критерии)"""
+    __tablename__ = "user_memories"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(String(100), nullable=False, index=True)
+    memory_type = Column(String(50), nullable=False, index=True)  # 'preference', 'rejection', 'interest', 'criteria'
+    memory_text = Column(Text, nullable=False)  # Человекочитаемое описание
+    
+    # Векторное представление для семантического поиска
+    if PGVECTOR_AVAILABLE and Vector:
+        embedding = Column(Vector(1024), nullable=True)
+    else:
+        embedding = Column(Text, nullable=True)  # Fallback если pgvector не доступен
+    
+    # Структурированные данные в JSON
+    memory_metadata = Column(Text, nullable=True)  # JSON строка с метаданными (переименовано из metadata, т.к. зарезервировано)
+    
+    # Уверенность в извлеченной информации
+    confidence = Column(Float, default=1.0)
+    
+    # Временные метки
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), onupdate=func.now())

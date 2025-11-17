@@ -15,7 +15,7 @@ from services.ai_service import AIService
 from services.sql_agent_service import SQLAgentService
 from services.elasticsearch_service import ElasticsearchService
 from services.ai_model_orchestrator_service import AIModelOrchestratorService, TaskType, Complexity
-from app.api.search_es import _extract_filters_from_text
+from app.api.search_es import _extract_filters_from_text, _extract_filters_with_ai
 from app.api.auth import require_admin
 from models.schemas import (
     ModelSelectionRequest, ModelSelectionResponse, OrchestratorPerformanceResponse,
@@ -30,6 +30,7 @@ from services.fuzzy_query_interpreter import FuzzyQueryInterpreter
 from services.intelligent_search_service import IntelligentSearchService
 from services.car_dealer_assistant_service import CarDealerAssistantService
 from services.dialog_state_service import DialogStateService
+from services.vector_search_service import VectorSearchService
 
 router = APIRouter()
 
@@ -41,6 +42,8 @@ async def _interpret_descriptive_criteria_with_ai(
     Использует ИИ для интерпретации описательных характеристик автомобиля
     (люксовый, премиальный, семейный, городской, быстрый, красивый и т.д.)
     и преобразует их в конкретные критерии или уточняющие вопросы.
+    
+    ВАЖНО: Вызывается ТОЛЬКО если в запросе есть описательные характеристики!
     
     Возвращает:
     {
@@ -80,15 +83,31 @@ async def _interpret_descriptive_criteria_with_ai(
             if criteria_list:
                 saved_criteria_text = "\nСохраненные критерии:\n" + "\n".join(criteria_list)
         
+        # Экранируем фигурные скобки в промпте, чтобы LangChain не интерпретировал их как переменные
         prompt = f"""Ты — эксперт по интерпретации описательных характеристик автомобилей.
 
 {saved_criteria_text}
 
 ТЕКУЩИЙ ЗАПРОС ПОЛЬЗОВАТЕЛЯ: "{user_query}"
 
-ТВОЯ ЗАДАЧА: Определи, содержит ли запрос описательные характеристики автомобиля (люксовый, премиальный, семейный, городской, быстрый, красивый, милый, шустрый, экономичный, надежный, комфортный, спортивный и т.д.) и интерпретируй их в конкретные критерии.
+ТВОЯ ЗАДАЧА: Определи, содержит ли запрос описательные характеристики автомобиля (люксовый, премиальный, семейный, городской, быстрый, красивый, милый, шустрый, экономичный, надежный, комфортный, спортивный, стильный, современный, удобный, практичный, элегантный, роскошный, престижный, качественный, прочный, безопасный, просторный, компактный, мощный, динамичный, маневренный, универсальный, функциональный и т.д.) и интерпретируй их в конкретные критерии.
 
-ПРИМЕРЫ ИНТЕРПРЕТАЦИИ:
+🚨 КРИТИЧЕСКИ ВАЖНО:
+- НЕ добавляй критерии, которых НЕТ в запросе!
+- Если в запросе указаны только явные критерии (марка, модель, цена, кузов, пробег, год, коробка передач) БЕЗ описательных характеристик - верни has_descriptive: false!
+- Интерпретируй ТОЛЬКО описательные характеристики (люксовый, премиальный, семейный и т.д.)!
+- НЕ интерпретируй явные критерии (марка, модель, цена, кузов, пробег, год, коробка передач) - они уже извлечены!
+- Описательные характеристики - это субъективные оценки (люксовый, красивый, комфортный), а НЕ технические параметры (автомат, седан, BMW)!
+
+ПРИМЕРЫ ПРАВИЛЬНОГО ОПРЕДЕЛЕНИЯ:
+- Запрос: "Найди бмв с пробегом до 5 млн седан" → has_descriptive: false (нет описательных характеристик, только явные критерии: марка, цена, кузов)
+- Запрос: "бмв седан автомат" → has_descriptive: false (нет описательных характеристик, только явные критерии: марка, кузов, коробка)
+- Запрос: "люксовый автомобиль" → has_descriptive: true, interpreted_criteria: {{"max_price": 5000000, "mark": "BMW" или "Mercedes"}}
+- Запрос: "семейный автомобиль" → has_descriptive: true, interpreted_criteria: {{"body_type": "кроссовер" или "минивэн"}}
+- Запрос: "комфортный седан" → has_descriptive: true (есть описательная характеристика "комфортный"), interpreted_criteria: {{"gear_box_type": "automatic"}}
+- Запрос: "красивый бмв" → has_descriptive: true (есть описательная характеристика "красивый"), interpreted_criteria: {{"mark": "BMW" или "Mercedes"}}
+
+ПРИМЕРЫ ИНТЕРПРЕТАЦИИ ОПИСАТЕЛЬНЫХ ХАРАКТЕРИСТИК:
 - "люксовый" → может означать: высокий бюджет (от 3-5 млн), премиальные марки (BMW, Mercedes, Audi, Lexus), высокую мощность, автоматическую коробку, полный привод
 - "премиальный" → похоже на "люксовый": высокий бюджет, премиальные марки, высокое качество
 - "семейный" → может означать: большой кузов (кроссовер, минивэн, универсал), 7 мест, безопасность, экономичность, автоматическая коробка
@@ -105,6 +124,7 @@ async def _interpret_descriptive_criteria_with_ai(
 - Если характеристика может означать несколько критериев, предложи уточняющий вопрос
 - Если характеристика четко определяет критерии, преобразуй их в конкретные значения
 - Учитывай уже сохраненные критерии - не предлагай противоречащие значения
+- НЕ добавляй критерии, которых НЕТ в запросе и которые НЕ следуют из описательных характеристик!
 
 Ответь ТОЛЬКО в формате JSON (используй двойные фигурные скобки для экранирования):
 {{{{"has_descriptive": true/false, "interpreted_criteria": {{{{"max_price": число или null, "min_price": число или null, "mark": "марка" или null, "body_type": "тип кузова" или null, "gear_box_type": "тип коробки" или null, "power": число или null, "min_power": число или null, "fuel_type": "тип топлива" или null, "driving_gear_type": "тип привода" или null, "min_year": число или null}}}}, "clarification_needed": true/false, "clarification_question": "вопрос для уточнения" или null, "reasoning": "краткое обоснование"}}}}"""
@@ -116,13 +136,15 @@ async def _interpret_descriptive_criteria_with_ai(
             from langchain.prompts import ChatPromptTemplate
             from langchain.output_parsers import JsonOutputParser
         
+        # Используем обычный промпт без переменных, так как все данные уже в строке
+        # LangChain не должен интерпретировать фигурные скобки как переменные
         prompt_template = ChatPromptTemplate.from_messages([
             ("system", "Ты эксперт по интерпретации описательных характеристик. Отвечай ТОЛЬКО валидным JSON."),
-            ("human", prompt)
+            ("human", "{prompt_text}")
         ])
         
         chain = prompt_template | llm | JsonOutputParser()
-        result = await chain.ainvoke({})
+        result = await chain.ainvoke({"prompt_text": prompt})
         
         # Обрабатываем результат
         if isinstance(result, str):
@@ -805,6 +827,8 @@ def _load_sql_agent_settings() -> Dict[str, Any]:
                 # Добавляем значения по умолчанию для новых полей
                 if "es_fallback_enabled" not in settings:
                     settings["es_fallback_enabled"] = False
+                if "vector_search_enabled" not in settings:
+                    settings["vector_search_enabled"] = True  # Векторный поиск включен по умолчанию
                 if "es_model" not in settings:
                     settings["es_model"] = "bert_spacy"
                 if "sql_model" not in settings:
@@ -1275,8 +1299,8 @@ async def query_sql_agent(
         search_commands = ["покажи", "найди", "ищи", "подбери", "ищу", "хочу посмотреть", "хочу увидеть", "давай посмотрим", "начни", "начни поиск", "хочу"]
         has_search_command = any(cmd in query_lower for cmd in search_commands)
         
-        # Извлекаем критерии из текущего запроса
-        current_filters = _extract_filters_from_text(request.question)
+        # Извлекаем критерии из текущего запроса (AI с fallback на паттерны)
+        current_filters = await _extract_filters_with_ai(request.question)
         current_criteria_count = sum([
             1 if current_filters.get("max_price") or current_filters.get("min_price") else 0,
             1 if current_filters.get("body_type") else 0,
@@ -1304,9 +1328,19 @@ async def query_sql_agent(
             should_continue_dialogue = False  # НЕ продолжаем диалог, начинаем поиск
             # Сохраняем критерии из запроса
             if current_filters:
-                dialog_state.update_criteria(current_filters)
+                # ВАЖНО: Объединяем с уже сохраненными критериями, чтобы не потерять марку
+                existing_criteria = dialog_state.get_criteria()
+                # Если марка была сохранена ранее, но не в новых фильтрах - сохраняем её
+                if existing_criteria.get("mark") and not current_filters.get("mark"):
+                    current_filters["mark"] = existing_criteria["mark"]
+                    print(f"✅ Сохраняю марку из существующих критериев: {existing_criteria['mark']}")
+                # Объединяем критерии
+                combined_for_save = {**existing_criteria, **current_filters}
+                dialog_state.update_criteria(combined_for_save)
                 saved_criteria = dialog_state.get_criteria()
                 print(f"📋 Сохранены критерии из запроса: {saved_criteria}")
+                if saved_criteria.get("mark"):
+                    print(f"✅ Марка сохранена: {saved_criteria['mark']}")
         else:
             # Проверяем намерение пользователя через ИИ
             # ВСЕГДА проверяем, если режим диалога активен (предыдущий ответ был с уточняющими вопросами)
@@ -1380,14 +1414,14 @@ async def query_sql_agent(
                 print(f"📊 Режим диалога: {in_dialogue_mode}, намерение: {intent_result['intent']}, уверенность: {intent_result['confidence']:.2f}")
                 print(f"✅ Принято решение: продолжить диалог (не начинать поиск)")
                 
-                # Извлекаем новые критерии из запроса
-                new_filters = _extract_filters_from_text(request.question)
+                # Извлекаем новые критерии из запроса (AI с fallback на паттерны)
+                new_filters = await _extract_filters_with_ai(request.question)
                 
                 # Если пользователь просто сказал "да" или "нет" без критериев, не извлекаем фильтры
                 query_lower_clean = request.question.lower().strip()
                 simple_responses = ["да", "нет", "конечно", "не хочу", "не нужно", "готов", "готовы"]
                 if query_lower_clean not in simple_responses and not any(resp in query_lower_clean for resp in simple_responses):
-                    # Проверяем, есть ли описательные характеристики
+                    # Проверяем, есть ли описательные характеристики (AI сам определит наличие)
                     descriptive_result = await _interpret_descriptive_criteria_with_ai(
                         user_query=request.question,
                         saved_criteria=saved_criteria
@@ -1401,30 +1435,129 @@ async def query_sql_agent(
                             print(f"❓ Требуется уточнение: {descriptive_result['clarification_question']}")
                             # Добавляем интерпретированные критерии, если они есть
                             if descriptive_result.get("interpreted_criteria"):
-                                new_filters.update(descriptive_result["interpreted_criteria"])
+                                interpreted = descriptive_result["interpreted_criteria"].copy()
+                                # Нормализуем значения для совместимости с поиском
+                                if interpreted.get("gear_box_type") == "automatic":
+                                    interpreted["gear_box_type"] = "автомат"
+                                elif interpreted.get("gear_box_type") == "manual":
+                                    interpreted["gear_box_type"] = "механика"
+                                new_filters.update(interpreted)
                         else:
                             # Добавляем интерпретированные критерии
                             if descriptive_result.get("interpreted_criteria"):
                                 print(f"✅ Интерпретированные критерии: {descriptive_result['interpreted_criteria']}")
-                                new_filters.update(descriptive_result["interpreted_criteria"])
+                                interpreted = descriptive_result["interpreted_criteria"].copy()
+                                # Нормализуем значения для совместимости с поиском
+                                if interpreted.get("gear_box_type") == "automatic":
+                                    interpreted["gear_box_type"] = "автомат"
+                                elif interpreted.get("gear_box_type") == "manual":
+                                    interpreted["gear_box_type"] = "механика"
+                                new_filters.update(interpreted)
                     
                     # Обновляем сохраненные критерии только если есть новые фильтры
                     if new_filters:
-                        dialog_state.update_criteria(new_filters)
+                        # ВАЖНО: Объединяем с уже сохраненными критериями, чтобы не потерять марку
+                        current_criteria = dialog_state.get_criteria()
+                        # Если марка была сохранена ранее, но не в новых фильтрах - сохраняем её
+                        if current_criteria.get("mark") and not new_filters.get("mark"):
+                            new_filters["mark"] = current_criteria["mark"]
+                            print(f"✅ Сохраняю марку из существующих критериев: {current_criteria['mark']}")
+                        # Объединяем критерии
+                        combined_for_update = {**current_criteria, **new_filters}
+                        dialog_state.update_criteria(combined_for_update)
                         updated_criteria = dialog_state.get_criteria()
                         print(f"✅ Критерии обновлены: {updated_criteria}")
+                        if updated_criteria.get("mark"):
+                            print(f"✅ Марка сохранена в обновленных критериях: {updated_criteria['mark']}")
+                
+                # Генерируем ответ для продолжения диалога
+                try:
+                    from services.ai_model_orchestrator_service import AIModelOrchestratorService, TaskType, Complexity
+                    orchestrator = AIModelOrchestratorService()
+                    model_name = await orchestrator.select_model_for_task(TaskType.QUERY_ANALYSIS, Complexity.MEDIUM)
+                    
+                    llm_service = LangChainLLMService()
+                    llm = llm_service.get_llm(model_name)
+                    
+                    # Формируем промпт для генерации ответа
+                    updated_criteria = dialog_state.get_criteria()
+                    criteria_summary = ""
+                    if updated_criteria:
+                        criteria_parts = []
+                        if updated_criteria.get("mark"):
+                            criteria_parts.append(f"Марка: {updated_criteria['mark']}")
+                        if updated_criteria.get("max_price"):
+                            criteria_parts.append(f"Бюджет: до {updated_criteria['max_price']} руб.")
+                        if updated_criteria.get("body_type"):
+                            criteria_parts.append(f"Кузов: {updated_criteria['body_type']}")
+                        if updated_criteria.get("gear_box_type"):
+                            criteria_parts.append(f"Коробка: {updated_criteria['gear_box_type']}")
+                        if criteria_parts:
+                            criteria_summary = "\nСохраненные критерии:\n" + "\n".join(criteria_parts)
+                    
+                    prompt = f"""Ты — вежливый ассистент по подбору автомобилей.
+
+{criteria_summary}
+
+Пользователь уточняет критерии поиска: "{request.question}"
+
+Сформируй краткий вежливый ответ (1-2 предложения), подтверждающий, что критерии сохранены, и спроси, есть ли еще что-то, что нужно уточнить, или можно начать поиск."""
+                    
+                    from langchain_core.prompts import ChatPromptTemplate
+                    prompt_template = ChatPromptTemplate.from_messages([
+                        ("system", "Ты вежливый ассистент по подбору автомобилей. Отвечай кратко и по делу."),
+                        ("human", "{prompt_text}")
+                    ])
+                    
+                    chain = prompt_template | llm
+                    response = await chain.ainvoke({"prompt_text": prompt})
+                    ai_response_text = response.content if hasattr(response, 'content') else str(response)
+                    
+                    print(f"✅ Сгенерирован ответ для продолжения диалога")
+                    
+                    return SQLAgentResponse(
+                        success=True,
+                        answer=ai_response_text,
+                        data=[],
+                        row_count=0,
+                        columns=[],
+                        needs_clarification=True
+                    )
+                except Exception as e:
+                    print(f"⚠️ Ошибка генерации ответа для продолжения диалога: {e}")
+                    # Fallback ответ
+                    return SQLAgentResponse(
+                        success=True,
+                        answer="Понял, сохранил критерии. Есть еще что-то, что нужно уточнить, или можем начать поиск?",
+                        data=[],
+                        row_count=0,
+                        columns=[],
+                        needs_clarification=True
+                    )
             else:
                 print(f"✅ Принято решение: начать поиск (не продолжаю диалог)")
+                
+                # Инициализируем descriptive_result по умолчанию
+                descriptive_result = {"has_descriptive": False}
+                
+                # ВАЖНО: Извлекаем критерии из запроса ПЕРЕД началом поиска
+                # Это нужно для случаев, когда пользователь говорит "покажи машины бюджет 5 млн"
+                # или "найди авто седан, автомат" - критерии должны быть сохранены
+                # Используем AI с fallback на паттерны
+                extracted_filters = await _extract_filters_with_ai(request.question)
                 
                 # Извлекаем новые критерии из запроса (если это не просто "да" или "нет")
                 query_lower_clean = request.question.lower().strip()
                 simple_responses = ["да", "нет", "конечно", "не хочу", "не нужно", "готов", "готовы"]
                 new_filters = {}
                 
+                # Всегда пытаемся извлечь критерии из запроса, даже если это простой ответ
+                # Это нужно для случаев, когда пользователь говорит "да, бюджет 5 млн" или "готов, седан"
+                
                 if query_lower_clean not in simple_responses and not any(resp in query_lower_clean for resp in simple_responses):
-                    new_filters = _extract_filters_from_text(request.question)
+                    new_filters = extracted_filters
                     
-                    # Проверяем, есть ли описательные характеристики (люксовый, премиальный, семейный и т.д.)
+                    # Проверяем, есть ли описательные характеристики (AI сам определит наличие)
                     descriptive_result = await _interpret_descriptive_criteria_with_ai(
                         user_query=request.question,
                         saved_criteria=saved_criteria
@@ -1438,312 +1571,121 @@ async def query_sql_agent(
                             print(f"❓ Требуется уточнение: {descriptive_result['clarification_question']}")
                             # Добавляем интерпретированные критерии, если они есть
                             if descriptive_result.get("interpreted_criteria"):
-                                new_filters.update(descriptive_result["interpreted_criteria"])
+                                interpreted = descriptive_result["interpreted_criteria"].copy()
+                                # Нормализуем значения для совместимости с поиском
+                                if interpreted.get("gear_box_type") == "automatic":
+                                    interpreted["gear_box_type"] = "автомат"
+                                elif interpreted.get("gear_box_type") == "manual":
+                                    interpreted["gear_box_type"] = "механика"
+                                new_filters.update(interpreted)
                         else:
                             # Добавляем интерпретированные критерии
                             if descriptive_result.get("interpreted_criteria"):
                                 print(f"✅ Интерпретированные критерии: {descriptive_result['interpreted_criteria']}")
-                                new_filters.update(descriptive_result["interpreted_criteria"])
+                                interpreted = descriptive_result["interpreted_criteria"].copy()
+                                # Нормализуем значения для совместимости с поиском
+                                if interpreted.get("gear_box_type") == "automatic":
+                                    interpreted["gear_box_type"] = "автомат"
+                                elif interpreted.get("gear_box_type") == "manual":
+                                    interpreted["gear_box_type"] = "механика"
+                                new_filters.update(interpreted)
+                else:
+                    # Даже для простых ответов проверяем, есть ли критерии в запросе
+                    # Например: "да, бюджет 5 млн" или "готов, седан"
+                    if extracted_filters:
+                        new_filters = extracted_filters
+                        print(f"📋 Извлечены критерии из простого ответа: {new_filters}")
+                    
+                    # Для простых ответов тоже проверяем описательные характеристики, если есть текст
+                    if request.question and len(request.question.strip()) > 2:
+                        descriptive_result = await _interpret_descriptive_criteria_with_ai(
+                            user_query=request.question,
+                            saved_criteria=saved_criteria
+                        )
+                        
+                        if descriptive_result.get("has_descriptive") and descriptive_result.get("interpreted_criteria"):
+                            interpreted = descriptive_result["interpreted_criteria"].copy()
+                            # Нормализуем значения для совместимости с поиском
+                            if interpreted.get("gear_box_type") == "automatic":
+                                interpreted["gear_box_type"] = "автомат"
+                            elif interpreted.get("gear_box_type") == "manual":
+                                interpreted["gear_box_type"] = "механика"
+                            new_filters.update(interpreted)
+                            print(f"✅ Добавлены интерпретированные критерии из простого ответа: {interpreted}")
                     
                     # Обновляем сохраненные критерии только если есть новые фильтры
+                    # ВАЖНО: Объединяем с уже сохраненными критериями, а не перезаписываем
                     if new_filters:
-                        dialog_state.update_criteria(new_filters)
+                        current_criteria = dialog_state.get_criteria()
+                        # Если марка была сохранена ранее, но не в новых фильтрах - сохраняем её
+                        if current_criteria.get("mark") and not new_filters.get("mark"):
+                            new_filters["mark"] = current_criteria["mark"]
+                            print(f"✅ Сохраняю марку из существующих критериев: {current_criteria['mark']}")
+                        # Объединяем критерии
+                        combined_criteria = {**current_criteria, **new_filters}
+                        dialog_state.update_criteria(combined_criteria)
                         updated_criteria = dialog_state.get_criteria()
-                        print(f"✅ Критерии обновлены: {updated_criteria}")
+                        print(f"✅ Критерии обновлены из простого ответа: {updated_criteria}")
+                        if updated_criteria.get("mark"):
+                            print(f"✅ Марка сохранена в обновленных критериях: {updated_criteria['mark']}")
                 
-                # Формируем ответ через AI, продолжая диалог
-                try:
-                    from services.database_service import DatabaseService
-                    from services.rag_service import _generate_with_ai_settings
-                    
-                    db_service = DatabaseService(db)
+                # ВАЖНО: Сохраняем критерии перед началом поиска, если они были извлечены из запроса
+                # Это нужно для случаев, когда пользователь говорит "покажи машины бюджет 5 млн"
+                # или "найди авто седан, автомат" - критерии должны быть сохранены перед поиском
+                # Но только если они еще не были сохранены выше
+                if extracted_filters and not new_filters:
+                    # Критерии были извлечены, но не были сохранены (например, в запросе с командой поиска)
+                    # Объединяем извлеченные критерии с уже сохраненными
+                    current_criteria = dialog_state.get_criteria()
+                    # Если марка была сохранена ранее, но не в извлеченных фильтрах - сохраняем её
+                    if current_criteria.get("mark") and not extracted_filters.get("mark"):
+                        extracted_filters["mark"] = current_criteria["mark"]
+                        print(f"✅ Сохраняю марку из существующих критериев перед поиском: {current_criteria['mark']}")
+                    combined_before_search = {**current_criteria, **extracted_filters}
+                    dialog_state.update_criteria(combined_before_search)
                     updated_criteria = dialog_state.get_criteria()
-                    
-                    # Формируем список сохраненных критериев для ответа
-                    criteria_summary = []
-                    if updated_criteria.get("max_price"):
-                        criteria_summary.append(f"бюджет до {updated_criteria['max_price']:,} руб.")
-                    if updated_criteria.get("min_price"):
-                        criteria_summary.append(f"бюджет от {updated_criteria['min_price']:,} руб.")
-                    if updated_criteria.get("body_type"):
-                        criteria_summary.append(f"кузов: {updated_criteria['body_type']}")
-                    if updated_criteria.get("gear_box_type"):
-                        criteria_summary.append(f"коробка: {updated_criteria['gear_box_type']}")
-                    if updated_criteria.get("min_year"):
-                        criteria_summary.append(f"год от {updated_criteria['min_year']}")
-                    if updated_criteria.get("max_year"):
-                        criteria_summary.append(f"год до {updated_criteria['max_year']}")
-                    if updated_criteria.get("city"):
-                        criteria_summary.append(f"город: {updated_criteria['city']}")
+                    print(f"✅ Критерии сохранены перед началом поиска: {updated_criteria}")
                     if updated_criteria.get("mark"):
-                        criteria_summary.append(f"марка: {updated_criteria['mark']}")
-                    if updated_criteria.get("model"):
-                        criteria_summary.append(f"модель: {updated_criteria['model']}")
-                    if updated_criteria.get("fuel_type"):
-                        criteria_summary.append(f"топливо: {updated_criteria['fuel_type']}")
-                    if updated_criteria.get("driving_gear_type"):
-                        criteria_summary.append(f"привод: {updated_criteria['driving_gear_type']}")
-                    if updated_criteria.get("engine_vol"):
-                        criteria_summary.append(f"объем двигателя: {updated_criteria['engine_vol']} л")
-                    if updated_criteria.get("power"):
-                        criteria_summary.append(f"мощность: {updated_criteria['power']} л.с.")
-                    if updated_criteria.get("color"):
-                        criteria_summary.append(f"цвет: {updated_criteria['color']}")
-                    if updated_criteria.get("mileage") or updated_criteria.get("min_mileage") or updated_criteria.get("max_mileage"):
-                        mileage_info = []
-                        if updated_criteria.get("mileage"):
-                            mileage_info.append(f"{updated_criteria['mileage']} км")
-                        if updated_criteria.get("min_mileage"):
-                            mileage_info.append(f"от {updated_criteria['min_mileage']} км")
-                        if updated_criteria.get("max_mileage"):
-                            mileage_info.append(f"до {updated_criteria['max_mileage']} км")
-                        if mileage_info:
-                            criteria_summary.append(f"пробег: {' '.join(mileage_info)}")
-                    if updated_criteria.get("owners"):
-                        criteria_summary.append(f"владельцев: {updated_criteria['owners']}")
-                    if updated_criteria.get("vin"):
-                        criteria_summary.append(f"VIN: {updated_criteria['vin']}")
-                    if updated_criteria.get("dealer_center"):
-                        criteria_summary.append(f"дилер: {updated_criteria['dealer_center']}")
+                        print(f"✅ Марка сохранена перед поиском: {updated_criteria['mark']}")
+                
+                # ВАЖНО: Также проверяем, есть ли интерпретированные критерии, которые не были сохранены
+                # Это нужно для случаев, когда интерпретированные критерии (например, год) не попали в new_filters
+                if descriptive_result.get("interpreted_criteria"):
+                    current_criteria = dialog_state.get_criteria()
+                    interpreted = descriptive_result["interpreted_criteria"].copy()
+                    # Нормализуем значения для совместимости с поиском
+                    if interpreted.get("gear_box_type") == "automatic":
+                        interpreted["gear_box_type"] = "автомат"
+                    elif interpreted.get("gear_box_type") == "manual":
+                        interpreted["gear_box_type"] = "механика"
                     
-                    criteria_text = ", ".join(criteria_summary) if criteria_summary else "пока нет уточненных критериев"
+                    # ВАЖНО: Сохраняем марку из текущих критериев, если она есть
+                    if current_criteria.get("mark") and not interpreted.get("mark"):
+                        interpreted["mark"] = current_criteria["mark"]
+                        print(f"✅ Сохраняю марку из существующих критериев при добавлении интерпретированных: {current_criteria['mark']}")
                     
-                    # Определяем, какие критерии еще не уточнены
-                    # НЕ спрашиваем про уже собранные критерии
-                    # Основные обязательные критерии (система может спросить про них)
-                    missing_criteria = []
-                    if not updated_criteria.get("max_price") and not updated_criteria.get("min_price"):
-                        missing_criteria.append("бюджет")
-                    if not updated_criteria.get("body_type"):
-                        missing_criteria.append("тип кузова")
-                    if not updated_criteria.get("gear_box_type"):
-                        missing_criteria.append("коробка передач")
-                    if not updated_criteria.get("min_year") and not updated_criteria.get("max_year"):
-                        missing_criteria.append("год выпуска")
-                    if not updated_criteria.get("city"):
-                        missing_criteria.append("город")
-                    if not updated_criteria.get("mark"):
-                        missing_criteria.append("марка")
-                    if not updated_criteria.get("model"):
-                        missing_criteria.append("модель")
-                    
-                    # Дополнительные необязательные критерии (система может спросить про них, но не обязательно)
-                    # Эти критерии не добавляются в missing_criteria, но учитываются при подсчете
-                    # и могут быть извлечены из запроса пользователя
-                    
-                    # Проверяем, что новый запрос не содержит уже собранный критерий
-                    # Если пользователь повторяет критерий, не спрашиваем про него снова
-                    query_lower = request.question.lower()
-                    
-                    # Проверяем все возможные повторения критериев
-                    if updated_criteria.get("gear_box_type") and any(word in query_lower for word in ["автомат", "механика", "механик", "акпп", "мкпп", "коробка"]):
-                        if "коробка передач" in missing_criteria:
-                            missing_criteria.remove("коробка передач")
-                    
-                    if updated_criteria.get("body_type") and any(word in query_lower for word in ["седан", "хэтчбек", "кроссовер", "универсал", "кузов"]):
-                        if "тип кузова" in missing_criteria:
-                            missing_criteria.remove("тип кузова")
-                    
-                    if (updated_criteria.get("max_price") or updated_criteria.get("min_price")) and any(word in query_lower for word in ["бюджет", "цена", "стоимость", "млн", "миллион"]):
-                        if "бюджет" in missing_criteria:
-                            missing_criteria.remove("бюджет")
-                    
-                    # Подсчитываем количество собранных критериев
-                    # Учитываем все возможные критерии из таблиц cars и used_cars
-                    collected_criteria_count = sum([
-                        1 if updated_criteria.get("max_price") or updated_criteria.get("min_price") else 0,
-                        1 if updated_criteria.get("body_type") else 0,
-                        1 if updated_criteria.get("gear_box_type") else 0,
-                        1 if updated_criteria.get("min_year") or updated_criteria.get("max_year") else 0,
-                        1 if updated_criteria.get("city") else 0,
-                        1 if updated_criteria.get("mark") else 0,
-                        1 if updated_criteria.get("model") else 0,
-                        1 if updated_criteria.get("fuel_type") else 0,
-                        1 if updated_criteria.get("driving_gear_type") else 0,  # тип привода
-                        1 if updated_criteria.get("engine_vol") else 0,  # объем двигателя
-                        1 if updated_criteria.get("power") else 0,  # мощность
-                        1 if updated_criteria.get("color") else 0,  # цвет
-                        1 if updated_criteria.get("mileage") or updated_criteria.get("min_mileage") or updated_criteria.get("max_mileage") else 0,  # пробег
-                        1 if updated_criteria.get("stock_qty") else 0,  # количество на складе
-                        1 if updated_criteria.get("owners") else 0,  # количество владельцев
-                        1 if updated_criteria.get("vin") else 0,  # VIN номер
-                        1 if updated_criteria.get("dealer_center") else 0,  # дилерский центр
-                    ])
-                    
-                    missing_text = ", ".join(missing_criteria) if missing_criteria else "нет"
-                    
-                    # Если собрано 3 и более критериев, предлагаем начать поиск
-                    should_suggest_search = collected_criteria_count >= 3
-                    
-                    # Формируем контекст диалога для лучшего понимания
-                    dialogue_summary = ""
-                    if dialogue_context:
-                        # Берем последние 2-3 обмена из контекста
-                        dialogue_lines = dialogue_context.split("\n")[-6:] if dialogue_context else []
-                        dialogue_summary = "\n".join(dialogue_lines)
-                    
-                    # Формируем информацию о собранных критериях для предложения поиска
-                    # Используем уже сформированный criteria_summary
-                    criteria_suggestion_text = criteria_text
-                    
-                    # Проверяем описательные характеристики для добавления в промпт
-                    descriptive_info = ""
-                    if descriptive_result.get("has_descriptive"):
-                        if descriptive_result.get("clarification_needed") and descriptive_result.get("clarification_question"):
-                            descriptive_info = f"""
-ВАЖНО: Пользователь использовал описательные характеристики (например: люксовый, премиальный, семейный, городской, быстрый, красивый и т.д.).
-Требуется уточнение: {descriptive_result['clarification_question']}
-Интерпретация: {descriptive_result.get('reasoning', '')}
-
-Если пользователь использовал описательные характеристики, которые требуют уточнения, задай уточняющий вопрос естественным образом.
-"""
-                        else:
-                            descriptive_info = f"""
-ВАЖНО: Пользователь использовал описательные характеристики (например: люксовый, премиальный, семейный, городской, быстрый, красивый и т.д.).
-Интерпретация: {descriptive_result.get('reasoning', '')}
-Интерпретированные критерии уже добавлены к собранным критериям.
-"""
-                    
-                    prompt = f"""Ты — автоэксперт и персональный помощник по подбору автомобиля.
-
-🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА отвечай ТОЛЬКО на РУССКОМ языке!
-
-КОНТЕКСТ ДИАЛОГА:
-{dialogue_summary if dialogue_summary else "Начало диалога"}
-
-ТЕКУЩАЯ СИТУАЦИЯ:
-Пользователь уточняет критерии поиска. Ты уже собрал следующие критерии:
-{criteria_text}
-
-Текущий запрос пользователя: "{request.question}"
-
-Еще не уточнены: {missing_text}
-
-Собрано критериев: {collected_criteria_count} из возможных
-
-Собранные критерии: {criteria_suggestion_text}
-
-{descriptive_info}
-
-ТВОЯ ЗАДАЧА (выполни ВСЕ пункты):
-1. Если пользователь указал новый критерий - подтверди, что ты понял и сохранил его (назови конкретно, что сохранил)
-2. Если пользователь просто ответил "да" или "нет" - проанализируй контекст и ответь соответственно:
-   - Если был вопрос о начале поиска и пользователь ответил "да" - НЕ генерируй ответ здесь, система начнет поиск автоматически
-   - Если был вопрос о начале поиска и пользователь ответил "нет" - вежливо спроси, что еще нужно уточнить
-   - Если был вопрос о критериях и пользователь ответил "да" - подтверди и спроси про недостающие критерии
-   - Если был вопрос о критериях и пользователь ответил "нет" - спроси про другие критерии
-3. Поблагодари пользователя за уточнение (если был указан новый критерий)
-4. Если собрано 3 и более критериев - предложи начать поиск, спросив "Хотите начать поиск?" или "Могу начать поиск, если готовы"
-5. Если собрано меньше 3 критериев - вежливо спроси о недостающих критериях (задай 1-2 конкретных вопроса из списка недостающих)
-
-КРИТИЧЕСКИ ВАЖНО:
-- НЕ выдавай рекомендации или примеры автомобилей в режиме диалога! Ты только собираешь критерии.
-- НЕ говори "Пока неясно, какие автомобили вас интересуют" если уже собраны критерии - это некорректно!
-- Если критерии уже собраны, просто подтверди их и предложи начать поиск.
-- НЕ перечисляй примеры найденных автомобилей до начала поиска!
-
-ВАЖНО:
-- НЕ начинай поиск автоматически! Жди явной команды от пользователя (покажи, найди, ищи, подбери) или подтверждения на вопрос "Хотите начать поиск?"
-- Если пользователь просто назвал критерий (например, "бюджет 5 миллионов") - это уточнение, НЕ команда поиска
-- Будь дружелюбным, профессиональным и заинтересованным в помощи пользователю
-- Задавай вопросы естественно, как в обычном диалоге
-- НЕ перечисляй все недостающие критерии сразу - задавай по 1-2 вопроса за раз
-- НЕ спрашивай про критерии, которые УЖЕ собраны! Если в списке собранных критериев уже есть "коробка: автомат", НЕ спрашивай про коробку снова!
-- Если пользователь повторяет критерий (например, уже указал "автомат", а потом снова говорит "автомат"), просто подтверди, что критерий уже сохранен, и спроси про ДРУГИЕ недостающие критерии
-- Если собрано 3+ критериев, ОБЯЗАТЕЛЬНО предложи начать поиск вместо продолжения сбора критериев
-
-ДОПОЛНИТЕЛЬНЫЕ КРИТЕРИИ, которые пользователь может указать (необязательные, но система их учитывает):
-- Тип привода (передний, полный, задний)
-- Объем двигателя (в литрах, например: 1.5, 2.0)
-- Мощность (в л.с., например: 150, 200)
-- Цвет кузова
-- Пробег (для б/у автомобилей, в км)
-- Количество владельцев (для б/у автомобилей)
-- VIN номер
-- Дилерский центр
-- Количество на складе (для новых автомобилей)
-
-ОПИСАТЕЛЬНЫЕ ХАРАКТЕРИСТИКИ:
-Пользователь может использовать описательные слова (люксовый, премиальный, семейный, городской, быстрый, красивый, милый, шустрый, экономичный, надежный, комфортный, спортивный и т.д.).
-Система автоматически интерпретирует их в конкретные критерии:
-- "люксовый/премиальный" → высокий бюджет, премиальные марки, высокая мощность
-- "семейный" → большой кузов, безопасность, экономичность
-- "городской" → компактный размер, экономичный двигатель
-- "быстрый/спортивный" → высокая мощность, спортивный стиль
-- "экономичный" → гибрид/электрический, малый объем двигателя
-- "надежный" → определенные марки, новый автомобиль
-- "комфортный" → автоматическая коробка, большой кузов
-- "красивый/милый" → может потребовать уточнения (какой стиль, какие марки)
-
-Если описательная характеристика неоднозначна, задай уточняющий вопрос естественным образом.
-
-Если пользователь указывает эти критерии или описательные характеристики, система их сохраняет и учитывает при поиске.
-
-ПРИМЕРЫ ХОРОШИХ ОТВЕТОВ (когда собрано меньше 3 критериев):
-- "Отлично! Сохранил ваш бюджет до 5 миллионов рублей. Спасибо за уточнение! Какой тип кузова вас интересует: седан, хэтчбек, кроссовер или универсал?"
-- "Понял, бюджет до 5 млн рублей сохранен. Спасибо! Еще один вопрос: какая коробка передач предпочтительнее - автомат или механика?"
-- "Понял, коробка автомат уже сохранена ранее. Спасибо за подтверждение! Какой год выпуска вас интересует?"
-- Если пользователь просто сказал "автомат" и это новый критерий: "Отлично! Сохранил коробку передач: автомат. Спасибо! Какой тип кузова вас интересует?"
-
-ПРИМЕРЫ ХОРОШИХ ОТВЕТОВ (когда собрано 3 и более критериев):
-- "Отлично! Сохранил ваш критерий. Спасибо! У нас уже есть достаточно критериев для поиска: бюджет до 5 млн рублей, седан, автомат. Хотите начать поиск автомобилей?"
-- "Понял, сохранил ваш критерий. Благодарю! Я собрал следующие критерии: бюджет до 5 млн, кузов седан, коробка автомат. Могу начать поиск - готовы?"
-- "Записал ваш критерий. Спасибо! У нас уже есть: бюджет до 5 млн рублей, седан, автомат. Хотите, чтобы я начал поиск подходящих автомобилей?"
-- Если пользователь подтвердил поиск ("да"): НЕ генерируй ответ здесь - система должна начать поиск автоматически
-- Если пользователь отказался от поиска ("нет"): "Понял, не будем начинать поиск пока. Может быть, уточните еще какие-то критерии? Например, год выпуска или город?"
-
-ПРИМЕРЫ ПЛОХИХ ОТВЕТОВ (НЕ ДЕЛАЙ ТАК):
-- "Пока неясно, какие автомобили вас интересуют" - НЕПРАВИЛЬНО, если критерии уже собраны!
-- "Пример найденных седанов..." - НЕПРАВИЛЬНО, не выдавай примеры до начала поиска!
-- Перечисление всех возможных критериев после того, как они уже собраны - НЕПРАВИЛЬНО!
-
-ВНИМАНИЕ: 
-- Если пользователь повторяет уже собранный критерий (например, "автомат" когда уже есть "коробка: автомат"), просто подтверди что критерий уже сохранен и спроси про ДРУГИЕ недостающие критерии. НЕ спрашивай про уже собранные критерии!
-- Если собрано 3+ критериев, ОБЯЗАТЕЛЬНО предложи начать поиск вместо продолжения сбора критериев!
-
-Сформируй краткий дружелюбный ответ (2-4 предложения), следуя примерам выше:"""
-
-                    ai_response_text, model_info = await _generate_with_ai_settings(prompt)
-                    
-                    # Сохраняем сообщение в БД
-                    chat_message = db_service.save_chat_message(
-                        user_id=user_id,
-                        message=request.question,
-                        response=ai_response_text,
-                        related_article_ids=[]
+                    # Проверяем, есть ли в интерпретированных критериях что-то, чего нет в сохраненных
+                    has_new_interpreted = any(
+                        k not in current_criteria or current_criteria[k] != interpreted[k]
+                        for k in interpreted.keys()
                     )
                     
-                    response = SQLAgentResponse(
-                        success=True,
-                        answer=ai_response_text,
-                        data=[],
-                        row_count=0,
-                        columns=[],
-                        message_id=chat_message.id if chat_message else None,
-                        needs_clarification=True,
-                        clarification_questions=None,
-                        query_analysis=None
-                    )
-                    print(f"✅ Возвращаю ответ для продолжения диалога (не начинаю поиск)")
-                    return response  # ВАЖНО: возвращаем ответ и НЕ продолжаем выполнение
-                    
-                except Exception as e:
-                    print(f"⚠️ Ошибка при формировании ответа для уточнения критериев: {e}")
-                    import traceback
-                    traceback.print_exc()
-                    # В режиме диалога ВСЕГДА возвращаем ответ, даже при ошибке
-                    if in_dialogue_mode:
-                        print(f"💬 Режим диалога активен - возвращаю простой ответ даже при ошибке")
-                        return SQLAgentResponse(
-                            success=True,
-                            answer=f"Понял, сохранил критерий: {request.question}. Есть еще критерии для уточнения?",
-                            data=[],
-                            row_count=0,
-                            columns=[],
-                            needs_clarification=True
-                        )
-                    # Если не в режиме диалога, продолжаем обычную обработку
-                    print(f"⚠️ Не в режиме диалога - продолжаю обычную обработку")
+                    if has_new_interpreted:
+                        # Объединяем интерпретированные критерии с уже сохраненными
+                        combined_with_interpreted = {**current_criteria, **interpreted}
+                        dialog_state.update_criteria(combined_with_interpreted)
+                        updated_criteria = dialog_state.get_criteria()
+                        print(f"✅ Добавлены интерпретированные критерии к сохраненным: {updated_criteria}")
+                        if updated_criteria.get("mark"):
+                            print(f"✅ Марка сохранена в интерпретированных критериях: {updated_criteria['mark']}")
+                
+                # Обновляем saved_criteria для использования в поиске
+                saved_criteria = dialog_state.get_criteria()
+                print(f"📋 Финальные сохраненные критерии для поиска: {saved_criteria}")
+                
+                # ВАЖНО: НЕ формируем ответ через AI здесь, так как принято решение начать поиск
+                # Продолжаем выполнение дальше, где начинается поиск через SQL-агента
+                print(f"🚀 Пропускаю формирование ответа - начинаю поиск с сохраненными критериями")
         
         # Если мы дошли сюда, значит либо не проверяли намерение, либо решили начать поиск
         # Логируем решение
@@ -1782,8 +1724,28 @@ async def query_sql_agent(
             if saved_criteria:
                 print(f"📋 Использую сохраненные критерии: {saved_criteria}")
                 # Объединяем сохраненные критерии с новыми из запроса (если есть)
-                new_filters = _extract_filters_from_text(request.question)
+                # Используем AI с fallback на паттерны
+                new_filters = await _extract_filters_with_ai(request.question)
+                print(f"📋 Извлеченные критерии из запроса: {new_filters}")
+                
+                # ВАЖНО: Проверяем, что марка не потерялась при объединении
+                # Если марка была в сохраненных критериях, но не в новых - сохраняем её
+                if saved_criteria.get("mark") and not new_filters.get("mark"):
+                    # Марка была сохранена, но не извлечена из нового запроса - сохраняем старую
+                    print(f"✅ Сохраняю марку из сохраненных критериев: {saved_criteria['mark']}")
+                    new_filters["mark"] = saved_criteria["mark"]
+                # Если марка есть в новых фильтрах - используем её (она имеет приоритет)
+                elif new_filters.get("mark"):
+                    print(f"✅ Использую марку из нового запроса: {new_filters['mark']}")
+                
                 combined_filters = {**saved_criteria, **new_filters}  # Новые критерии имеют приоритет
+                print(f"📋 Объединенные критерии (до удаления служебных полей): {combined_filters}")
+                
+                # Проверяем, что марка присутствует в объединенных критериях
+                if combined_filters.get("mark"):
+                    print(f"✅ Марка в объединенных критериях: {combined_filters['mark']}")
+                else:
+                    print(f"⚠️ ВНИМАНИЕ: Марка отсутствует в объединенных критериях!")
                 
                 # Извлекаем сортировку через ИИ
                 sort_orders = await _extract_sorting_with_ai(
@@ -1845,6 +1807,9 @@ async def query_sql_agent(
                         criteria_parts.append(f"пробег от {combined_filters['min_mileage']} км")
                     elif combined_filters.get("max_mileage"):
                         criteria_parts.append(f"пробег до {combined_filters['max_mileage']} км")
+                if combined_filters.get("car_type"):
+                    car_type_text = "новый" if combined_filters['car_type'] == 'car' else "б/у"
+                    criteria_parts.append(f"тип: {car_type_text}")
                 
                 if criteria_parts:
                     # Добавляем информацию о сортировке, если она есть
@@ -1890,39 +1855,221 @@ async def query_sql_agent(
             else:
                 extended_query = request.question
             
-            # Если запрос связан с предыдущим диалогом и есть контекст, добавляем его к запросу
-            # Также добавляем контекст, если есть последний ответ системы и запрос связан с автомобилями
-            if relevance_result.get('is_related', False):
-                context_to_add = ""
-                if dialogue_context:
-                    context_to_add = dialogue_context
-                elif last_response_for_relevance:
-                    # Если нет контекста диалога, но есть последний ответ системы, используем его
-                    context_to_add = f"ПРЕДЫДУЩИЙ ОТВЕТ СИСТЕМЫ:\n{last_response_for_relevance[:1500]}"
-                
-                if context_to_add:
-                    extended_query = f"{extended_query}\n\nКОНТЕКСТ ПРЕДЫДУЩЕГО ДИАЛОГА:\n{context_to_add}"
-                    print(f"✅ Добавлен контекст предыдущего диалога к запросу SQL-агента (связанность: {relevance_result.get('is_related', False)})")
+            # 🚨 КРИТИЧЕСКИ ВАЖНО: НЕ добавляем контекст с найденными данными в SQL Agent!
+            # SQL Agent должен генерировать SQL с условиями WHERE, а не с хардкодными данными
+            # Контекст диалога может содержать результаты предыдущего поиска, что приведет к генерации SQL с хардкодными значениями
             
             # Отключаем перегенерацию SQL при 0 результатах, чтобы сразу использовать Elasticsearch
+            # Передаем ТОЛЬКО чистый запрос пользователя или запрос из критериев, БЕЗ контекста с данными
+            print(f"🔍 Передаю в SQL Agent чистый запрос (БЕЗ контекста с данными): {extended_query[:200]}...")
             result = await sql_agent.process_question(extended_query, try_alternative_on_zero=False)
             
-            # Проверяем, нужно ли использовать Elasticsearch:
+            # Проверяем, что result не None
+            if result is None:
+                print(f"⚠️ SQL-агент вернул None, используем fallback на Elasticsearch")
+                result = {"success": False, "data": [], "row_count": 0}
+            
+            # Проверяем, нужно ли использовать fallback:
             # 1. SQL-агент завершился ошибкой
             # 2. SQL-агент вернул 0 результатов
             sql_failed = not result.get("success")
             sql_zero_results = result.get("success") and (result.get("row_count", 0) == 0 or not result.get("data") or len(result.get("data", [])) == 0)
             
-            # Если SQL-агент не справился или вернул 0 результатов, пробуем fallback на интеллектуальный поиск
-            if (sql_failed or sql_zero_results) and settings.get("es_fallback_enabled", False):
-                print(f"⚠️ SQL-агент не справился, используем интеллектуальный поиск (IntelligentSearchService)...")
+            # Если SQL-агент не справился или вернул 0 результатов, пробуем векторный поиск (PGEmbedding)
+            vector_search_success = False
+            if (sql_failed or sql_zero_results) and settings.get("vector_search_enabled", True):
+                print(f"🔍 ШАГ 2: SQL-агент не справился, пробуем векторный поиск (PGEmbedding)...")
+                try:
+                    from services.database_service import DatabaseService
+                    vector_search_service = VectorSearchService(db_session=db)
+                    
+                    # Выполняем векторный поиск
+                    vector_results = await vector_search_service.similarity_search(
+                        query=request.question,
+                        k=20,  # Ищем до 20 похожих автомобилей
+                        collection_name="cars_collection"
+                    )
+                    
+                    if vector_results and len(vector_results) > 0:
+                        print(f"✅ Векторный поиск нашел {len(vector_results)} результатов")
+                        
+                        # Преобразуем результаты векторного поиска в формат, совместимый с остальной системой
+                        db_service = DatabaseService(db)
+                        vector_cars = []
+                        
+                        # Ограничиваем до 5 лучших результатов для загрузки полных данных
+                        top_results = vector_results[:5]
+                        
+                        for doc, score in top_results:
+                            # Извлекаем ID автомобиля из метаданных документа
+                            metadata = doc.metadata if hasattr(doc, 'metadata') else {}
+                            # 🚨 КРИТИЧЕСКИ ВАЖНО: Используем car_id и type из метаданных
+                            car_id = metadata.get('car_id') or metadata.get('id')
+                            car_type = metadata.get('type') or metadata.get('car_type', 'car')
+                            
+                            # Логируем для отладки
+                            if not car_id:
+                                print(f"⚠️ ВНИМАНИЕ: Документ из векторного поиска не содержит car_id! Метаданные: {metadata}")
+                                continue
+                            
+                            try:
+                                # Загружаем полный объект автомобиля из БД
+                                if car_type == 'used_car':
+                                    full_car = db_service.get_used_car(car_id)
+                                else:
+                                    full_car = db_service.get_car(car_id)
+                                
+                                if full_car:
+                                    # Обновляем объект из БД, чтобы получить все поля
+                                    try:
+                                        db.refresh(full_car)
+                                    except:
+                                        pass
+                                    
+                                    # Преобразуем в словарь со всеми полями
+                                    car_dict = {}
+                                    try:
+                                        mapper = sql_inspect(full_car)
+                                        if hasattr(mapper, 'columns'):
+                                            for column in mapper.columns:
+                                                attr_name = column.name
+                                                try:
+                                                    value = getattr(full_car, attr_name)
+                                                    # Пропускаем только None значения, но сохраняем 0, False, пустые строки
+                                                    if value is not None:
+                                                        car_dict[attr_name] = value
+                                                except Exception as attr_error:
+                                                    # Игнорируем ошибки доступа к атрибутам
+                                                    pass
+                                    except Exception as inspect_error:
+                                        print(f"⚠️ Ошибка при inspect для автомобиля {car_id}: {inspect_error}")
+                                        # Fallback: используем __table__ напрямую
+                                        if hasattr(full_car, '__table__'):
+                                            for column in full_car.__table__.columns:
+                                                attr_name = column.name
+                                                try:
+                                                    value = getattr(full_car, attr_name)
+                                                    if value is not None:
+                                                        car_dict[attr_name] = value
+                                                except:
+                                                    pass
+                                    
+                                    # Проверяем, что словарь не пустой
+                                    if len(car_dict) < 5:
+                                        print(f"⚠️ Автомобиль {car_id} имеет мало полей ({len(car_dict)}), проверяю загрузку...")
+                                        # Пробуем загрузить основные поля вручную
+                                        for attr in ['id', 'mark', 'model', 'price', 'manufacture_year', 'body_type', 'fuel_type', 'gear_box_type', 'driving_gear_type', 'city', 'mileage']:
+                                            try:
+                                                if hasattr(full_car, attr):
+                                                    value = getattr(full_car, attr)
+                                                    # Сохраняем даже если None, чтобы поле было в словаре
+                                                    car_dict[attr] = value
+                                            except Exception as attr_load_error:
+                                                print(f"  ⚠️ Ошибка загрузки поля {attr}: {attr_load_error}")
+                                    
+                                    # Добавляем тип и score из векторного поиска
+                                    car_dict['type'] = car_type
+                                    car_dict['vector_score'] = score
+                                    
+                                    # Логируем для отладки
+                                    print(f"✅ Автомобиль {car_id} загружен: {len(car_dict)} полей")
+                                    print(f"   Марка={car_dict.get('mark')}, Модель={car_dict.get('model')}, Цена={car_dict.get('price')}, Год={car_dict.get('manufacture_year')}")
+                                    print(f"   Кузов={car_dict.get('body_type')}, Коробка={car_dict.get('gear_box_type')}, Привод={car_dict.get('driving_gear_type')}, Топливо={car_dict.get('fuel_type')}")
+                                    if car_type == 'used_car':
+                                        print(f"   Пробег={car_dict.get('mileage')}, Город={car_dict.get('city')}")
+                                    
+                                    # Загружаем опции для новых автомобилей (только для Car, не для UsedCar)
+                                    if car_type == 'car' and hasattr(full_car, 'options'):
+                                        try:
+                                            # Загружаем опции через relationship
+                                            options_list = []
+                                            options_groups_list = []
+                                            
+                                            # Получаем опции
+                                            if full_car.options:
+                                                for option in full_car.options:
+                                                    if option.description:
+                                                        options_list.append(option.description)
+                                            
+                                            # Получаем группы опций с их опциями
+                                            if hasattr(full_car, 'options_groups') and full_car.options_groups:
+                                                for group in full_car.options_groups:
+                                                    group_info = {
+                                                        'name': group.name or '',
+                                                        'code': group.code or '',
+                                                        'options': []
+                                                    }
+                                                    # Получаем опции из группы
+                                                    if hasattr(group, 'options') and group.options:
+                                                        for opt in group.options:
+                                                            if opt.description:
+                                                                group_info['options'].append(opt.description)
+                                                    if group_info['name'] or group_info['options']:
+                                                        options_groups_list.append(group_info)
+                                            
+                                            # Добавляем опции в словарь
+                                            if options_list:
+                                                car_dict['options'] = ', '.join(options_list)
+                                                car_dict['options_list'] = options_list
+                                            
+                                            if options_groups_list:
+                                                car_dict['options_groups'] = options_groups_list
+                                                
+                                        except Exception as opt_error:
+                                            print(f"⚠️ Ошибка при загрузке опций для автомобиля {car_id}: {opt_error}")
+                                    
+                                    vector_cars.append(car_dict)
+                                else:
+                                    print(f"⚠️ Не удалось загрузить автомобиль {car_id} из БД (full_car = None)")
+                            except Exception as load_error:
+                                print(f"⚠️ Ошибка загрузки автомобиля {car_id} из векторного поиска: {load_error}")
+                                import traceback
+                                traceback.print_exc()
+                        
+                        if vector_cars:
+                            print(f"✅ Векторный поиск: загружено {len(vector_cars)} автомобилей из БД (максимум 5)")
+                            # Проверяем, что данные полные
+                            for i, car in enumerate(vector_cars, 1):
+                                print(f"   Автомобиль {i}: {len(car)} полей, ID={car.get('id')}, Марка={car.get('mark')}, Модель={car.get('model')}, Цена={car.get('price')}, Год={car.get('manufacture_year')}")
+                            
+                            # Преобразуем в формат Elasticsearch для совместимости
+                            es_result = {
+                                "hits": [{"_source": car} for car in vector_cars],
+                                "total": len(vector_cars)
+                            }
+                            vector_search_success = True
+                            
+                            # Формируем результат в формате SQL-агента
+                            result = {
+                                "success": True,
+                                "sql": "",
+                                "data": vector_cars,
+                                "columns": list(vector_cars[0].keys()) if vector_cars else [],
+                                "row_count": len(vector_cars),
+                                "answer": f"Найдено {len(vector_cars)} автомобилей (векторный поиск)",
+                                "is_alternatives": False,
+                                "fallback_source": "vector_search"
+                            }
+                        else:
+                            print(f"⚠️ Векторный поиск: не удалось загрузить ни одного автомобиля из БД")
+                    else:
+                        print(f"⚠️ Векторный поиск не нашел результатов")
+                        
+                except Exception as vector_error:
+                    print(f"⚠️ Ошибка векторного поиска: {vector_error}")
+                    # Продолжаем на Elasticsearch
+            
+            # Если векторный поиск не справился, пробуем fallback на интеллектуальный поиск/Elasticsearch
+            if not vector_search_success and (sql_failed or sql_zero_results) and settings.get("es_fallback_enabled", False):
+                print(f"⚠️ Векторный поиск не справился, используем интеллектуальный поиск (IntelligentSearchService)...")
                 try:
                     # Используем IntelligentSearchService для интеллектуального поиска с ослаблением фильтров
                     intelligent_search_service = IntelligentSearchService()
                     
                     # Извлекаем параметры из естественного языка
                     # Объединяем сохраненные критерии с новыми из запроса
-                    new_filters = _extract_filters_from_text(request.question)
+                    # Используем AI с fallback на паттерны
+                    new_filters = await _extract_filters_with_ai(request.question)
                     filters = {**saved_criteria, **new_filters}  # Новые критерии имеют приоритет
                     print(f"🔍 Использую объединенные фильтры для поиска: {filters}")
                     
@@ -1965,8 +2112,11 @@ async def query_sql_agent(
                         else:
                             es_result = {"hits": [], "total": 0}
                     
+                    # Обрабатываем результаты Elasticsearch/IntelligentSearch только если векторный поиск не был успешен
+                    if not vector_search_success:
                     # Проверяем, является ли запрос общим (нет конкретных критериев)
-                    filters = _extract_filters_from_text(request.question)
+                        # Используем AI с fallback на паттерны
+                        filters = await _extract_filters_with_ai(request.question)
                     has_specific_criteria = any([
                         filters.get("mark"), filters.get("model"), filters.get("min_price"), 
                         filters.get("max_price"), filters.get("min_year"), filters.get("max_year"),
@@ -2261,8 +2411,10 @@ async def query_sql_agent(
                             print(f"⚠️ Elasticsearch не нашел результатов")
                             # Если Elasticsearch не нашел результатов, все равно помечаем как альтернативы
                             # и используем AI для формирования ответа
-                            result["is_alternatives"] = True
-                            result["fallback_source"] = "elasticsearch"
+                            if "is_alternatives" not in result:
+                               result["is_alternatives"] = True
+                            if "fallback_source" not in result:
+                               result["fallback_source"] = "elasticsearch"
                     else:
                         print(f"⚠️ Elasticsearch недоступен")
                 except Exception as es_error:
@@ -2279,15 +2431,22 @@ async def query_sql_agent(
                 result_data = result.get("data")
                 row_count = result.get("row_count", 0)
                 
+                # 🚨 КРИТИЧЕСКИ ВАЖНО: Если SQL-агент успешно вернул результаты, НЕ делаем повторный поиск!
+                # Данные уже получены из БД, не нужно обращаться к Elasticsearch повторно
+                if result_data and len(result_data) > 0 and row_count > 0:
+                    print(f"✅ SQL-агент вернул {row_count} результатов. Используем эти данные, НЕ делаем повторный поиск.")
+                    # Продолжаем обработку результатов SQL-агента, пропуская fallback
+                
                 # Если SQL-агент вернул 0 результатов И еще не использовали Elasticsearch fallback,
                 # пробуем найти альтернативы с ослабленными фильтрами
                 # (fallback уже обработал случай ошибки SQL-агента)
-                if (result_data is None or len(result_data) == 0) and row_count == 0 and not result.get("is_alternatives"):
+                elif (result_data is None or len(result_data) == 0) and row_count == 0 and not result.get("is_alternatives"):
                     print(f"🔍 SQL-агент не нашел результатов, ищем альтернативы...")
                     
                     try:
                         # Извлекаем фильтры из исходного запроса
-                        filters = _extract_filters_from_text(request.question)
+                        # Используем AI с fallback на паттерны
+                        filters = await _extract_filters_with_ai(request.question)
                         
                         # Извлекаем сортировку через ИИ
                         sort_orders = await _extract_sorting_with_ai(
@@ -2508,6 +2667,7 @@ async def query_sql_agent(
                         # Формируем контекст из данных (SQL-агент или Elasticsearch fallback)
                         # Для AI используем только первые 5, но для источников будут все данные
                         all_data = result_data if result_data is not None else []
+                        # Ограничиваем до 5 для AI-форматирования, но загружаем полные данные для всех
                         data_records = all_data[:5] if all_data else []  # Ограничиваем до 5 для AI-форматирования
                         data_columns = result.get("columns", [])
                         query_info = result.get("sql", "")
@@ -2518,6 +2678,14 @@ async def query_sql_agent(
                         # чтобы передать ИИ ВСЕ поля, а не только выбранные в SQL-запросе
                         full_car_records = []
                         for record in data_records:
+                            # Проверяем, не загружены ли уже полные данные (из векторного поиска)
+                            # Если в записи уже есть много полей (больше 10), значит данные уже полные
+                            if len(record) > 10 and record.get("id") and record.get("mark"):
+                                # Данные уже полные, используем их как есть
+                                print(f"✅ Запись {record.get('id')} уже содержит полные данные ({len(record)} полей), пропускаем загрузку")
+                                full_car_records.append(record)
+                                continue
+                            
                             car_id = record.get("id")
                             if car_id:
                                 # Определяем тип автомобиля
@@ -2654,17 +2822,44 @@ async def query_sql_agent(
                         
                         # Логируем данные для отладки
                         print(f"📊 Данные для AI: {len(data_records)} записей из {total_count}")
+                        print(f"🚨 КРИТИЧЕСКИ ВАЖНО: total_count = {total_count}, len(data_records) = {len(data_records)}")
+                        if total_count > 0 and len(data_records) == 0:
+                            print(f"⚠️ ВНИМАНИЕ: total_count > 0, но data_records пустой! Это может быть проблемой!")
                         if data_records:
                             first_record = data_records[0]
                             print(f"📋 Первая запись (ключи): {list(first_record.keys())}")
+                            print(f"📋 Количество полей в первой записи: {len(first_record)}")
+                            
+                            # Проверяем наличие ключевых полей
+                            key_fields = ['id', 'mark', 'model', 'price', 'manufacture_year', 'body_type', 'gear_box_type', 'fuel_type', 'driving_gear_type', 'city']
+                            missing_fields = [field for field in key_fields if field not in first_record or first_record.get(field) is None]
+                            if missing_fields:
+                                print(f"⚠️ ВНИМАНИЕ: В первой записи отсутствуют поля: {missing_fields}")
+                            else:
+                                print(f"✅ Все ключевые поля присутствуют в первой записи")
+                            
+                            if 'mark' in first_record:
+                                print(f"📋 Марка в первой записи: {first_record.get('mark')}")
                             if 'body_type' in first_record:
                                 print(f"📋 Тип кузова в первой записи: {first_record.get('body_type')}")
                             if 'gear_box_type' in first_record:
                                 print(f"📋 Коробка в первой записи: {first_record.get('gear_box_type')}")
+                            if 'price' in first_record:
+                                print(f"📋 Цена в первой записи: {first_record.get('price')}")
+                            if 'manufacture_year' in first_record:
+                                print(f"📋 Год в первой записи: {first_record.get('manufacture_year')}")
+                            
                             # Проверяем, сколько записей соответствуют критериям
                             sedan_count = sum(1 for r in data_records if r.get('body_type') and ('седан' in str(r.get('body_type')).lower() or 'sedan' in str(r.get('body_type')).lower()))
                             auto_count = sum(1 for r in data_records if r.get('gear_box_type') and ('автомат' in str(r.get('gear_box_type')).lower() or 'automatic' in str(r.get('gear_box_type')).lower()))
-                            print(f"📊 В первых {len(data_records)} записях: седанов={sedan_count}, автоматов={auto_count}")
+                            bmw_count = sum(1 for r in data_records if r.get('mark') and ('bmw' in str(r.get('mark')).upper() or 'бмв' in str(r.get('mark')).lower()))
+                            print(f"📊 В первых {len(data_records)} записях: седанов={sedan_count}, автоматов={auto_count}, BMW={bmw_count}")
+                            
+                            # Логируем все записи для отладки
+                            for i, record in enumerate(data_records, 1):
+                                print(f"📋 Запись {i}: ID={record.get('id')}, Марка={record.get('mark')}, Модель={record.get('model')}, Цена={record.get('price')}, Год={record.get('manufacture_year')}, Кузов={record.get('body_type')}, Коробка={record.get('gear_box_type')}, Пробег={record.get('mileage')}")
+                        else:
+                            print(f"⚠️ ВНИМАНИЕ: data_records пустой, хотя total_count = {total_count}!")
                         
                         # Определяем источник данных для промпта
                         is_alternatives = result.get("is_alternatives", False)
@@ -2833,18 +3028,46 @@ async def query_sql_agent(
 
 У тебя есть данные из базы данных (результаты {data_source_desc}) ниже. Если в данных есть автомобили, используй их для ответа согласно инструкциям выше.{alternatives_warning}
 
-Если записей больше, чем показано ({len(data_records)} из {total_count}), упомяни об этом и предложи уточнить критерии поиска.
+🚨 КРИТИЧЕСКИ ВАЖНО - ОБРАБОТКА РЕЗУЛЬТАТОВ:
+- 🚨 ВАЖНО: В таблице ниже найдено {total_count} автомобилей!
+- 🚨 ВАЖНО: Если в таблице есть данные (строки с автомобилями) - ОБЯЗАТЕЛЬНО используй их для ответа!
+- 🚨 ВАЖНО: Если в таблице есть автомобили - НЕ говори, что ничего не найдено!
+- 🚨 ВАЖНО: Если в таблице есть автомобили - НЕ извиняйся за отсутствие результатов!
+- Если найдено записей: {total_count} > 0 - ОБЯЗАТЕЛЬНО используй ТОЛЬКО эти данные для ответа!
+- Если найдено записей: {total_count} = 0 - ОБЯЗАТЕЛЬНО извинись и предложи альтернативы!
+- НИКОГДА не придумывай автомобили, которых нет в таблице!
+- НИКОГДА не говори, что нашел автомобили, если в таблице их нет!
+- НИКОГДА не говори "не удалось найти" или "к сожалению, не удалось найти", если в таблице ЕСТЬ данные!
 
-Форматируй ответ структурированными пунктами. Числа (цены/пробег/год) пиши в человекочитаемом виде (например: "2 200 000 рублей" вместо "2200000.0"). 
+⚠️ ЕСЛИ РЕЗУЛЬТАТОВ НЕТ (total_count = 0):
+1. ОБЯЗАТЕЛЬНО извинись: "К сожалению, по вашим критериям не найдено подходящих автомобилей."
+2. Объясни, почему не нашлось (слишком строгие критерии, редкая комбинация параметров и т.д.)
+3. Предложи альтернативы:
+   - Расширить критерии поиска (увеличить бюджет, убрать ограничения по пробегу/году)
+   - Изменить параметры (другой кузов, другая коробка передач)
+   - Посмотреть похожие варианты (другие марки, другие модели)
+4. Задай уточняющие вопросы для более точного подбора
 
-⚠️ ЗАПРЕЩЕНО: Придумывать данные, которых нет в таблице! Если информация отсутствует — скажи "не указано" или "данные отсутствуют".
-
-⚠️ КРИТИЧЕСКИ ВАЖНО: ВНИМАТЕЛЬНО ПРОВЕРЬ ДАННЫЕ В ТАБЛИЦЕ!
+⚠️ ЕСЛИ РЕЗУЛЬТАТЫ ЕСТЬ (total_count > 0):
+- 🚨 КРИТИЧЕСКИ ВАЖНО: В таблице ниже ЕСТЬ {total_count} автомобилей!
+- 🚨 КРИТИЧЕСКИ ВАЖНО: Если в таблице есть строки с данными - ОБЯЗАТЕЛЬНО используй их!
+- 🚨 КРИТИЧЕСКИ ВАЖНО: НЕ говори "не удалось найти" или "к сожалению, не удалось найти", если в таблице ЕСТЬ данные!
+- 🚨 КРИТИЧЕСКИ ВАЖНО: НЕ извиняйся за отсутствие результатов, если в таблице ЕСТЬ данные!
+- Используй ТОЛЬКО данные из таблицы!
+- Проверь соответствие данных критериям из запроса!
+- Если в запросе указана марка (например, BMW) - проверь колонку mark в таблице!
 - Если в запросе указан тип кузова (седан, кроссовер и т.д.) - проверь колонку body_type в таблице!
 - Если в запросе указана коробка передач (автомат, механика) - проверь колонку gear_box_type в таблице!
 - Если в запросе указан бюджет - проверь колонку price в таблице!
 - НЕ говори, что данных нет, если они ЕСТЬ в таблице!
 - ВСЕГДА используй ТОЧНЫЕ значения из таблицы, не выдумывай!
+- ОБЯЗАТЕЛЬНО перечисли найденные автомобили из таблицы с их характеристиками!
+
+Если записей больше, чем показано ({len(data_records)} из {total_count}), упомяни об этом и предложи уточнить критерии поиска.
+
+Форматируй ответ структурированными пунктами. Числа (цены/пробег/год) пиши в человекочитаемом виде (например: "2 200 000 рублей" вместо "2200000.0"). 
+
+⚠️ ЗАПРЕЩЕНО: Придумывать данные, которых нет в таблице! Если информация отсутствует — скажи "не указано" или "данные отсутствуют".
 
 Данные из базы данных ({data_source_text} выполнен успешно):
 Найдено записей: {total_count}

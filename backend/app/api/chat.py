@@ -102,20 +102,33 @@ async def send_message(
     try:
         db_service = DatabaseService(db)
         
-        # Определяем или создаем чат
+        # Определяем или создаем чат для правильного пользователя
         chat_id = request.chat_id
-        if not chat_id:
-            # Создаем новый чат
+        if chat_id:
+            # Проверяем, что chat_id принадлежит правильному пользователю
+            chat = db_service.get_chat(chat_id, request.user_id)
+            if not chat:
+                # Если chat_id не принадлежит пользователю, создаем новый чат
+                print(f"⚠️ Предупреждение: chat_id {chat_id} не принадлежит пользователю {request.user_id}, создаем новый чат")
+                chat = db_service.create_chat(user_id=request.user_id, title=None)
+                chat_id = chat.id
+        else:
+            # Создаем новый чат для пользователя
             chat = db_service.create_chat(user_id=request.user_id, title=None)
             chat_id = chat.id
         
-        # Обновляем updated_at чата
+        # Обновляем updated_at чата (убеждаемся, что чат принадлежит пользователю)
         from models.database import Chat
         from datetime import datetime
         chat = db_service.get_chat(chat_id, request.user_id)
         if chat:
             chat.updated_at = datetime.utcnow()
             db.commit()
+        else:
+            # Если чат не найден, создаем новый
+            print(f"⚠️ Предупреждение: чат {chat_id} не найден для пользователя {request.user_id}, создаем новый")
+            chat = db_service.create_chat(user_id=request.user_id, title=None)
+            chat_id = chat.id
         
         # Если пришел готовый ответ от SQL-агента, сохраняем его напрямую
         if request.sql_agent_response:
@@ -190,16 +203,74 @@ async def send_message(
                 chat_id=chat_id
             )
         
+        # Инициализируем единый агент (CarDealerAgent)
         try:
-            rag_service = RAGService(db_service)
+            from services.car_dealer_agent import CarDealerAgent
+            from services.unified_memory_service import UnifiedMemoryService
+            from services.unified_search_service import UnifiedSearchService
+            from services.elasticsearch_service import ElasticsearchService
+            from services.vector_search_service import VectorSearchService
+            from services.sql_agent_service import SQLAgentService
+            
+            # Создаем сервисы для агента
+            memory_service = UnifiedMemoryService(db_session=db)
+            es_service = ElasticsearchService()
+            vector_service = VectorSearchService(db_session=db)
+            search_service = UnifiedSearchService(
+                elasticsearch_service=es_service,
+                vector_search_service=vector_service,
+                database_service=db_service
+            )
+            sql_agent = SQLAgentService(db_session=db)
+            
+            # Создаем ParameterExtractionService
+            try:
+                from services.parameter_extraction_service import ParameterExtractionService
+                parameter_extractor = ParameterExtractionService()
+            except Exception as e:
+                print(f"⚠️ ParameterExtractionService недоступен: {e}")
+                parameter_extractor = None
+            
+            # Создаем ProactiveSuggestionsService
+            try:
+                from services.proactive_suggestions_service import ProactiveSuggestionsService
+                proactive_service = ProactiveSuggestionsService(
+                    db_session=db,
+                    memory_service=memory_service
+                )
+            except Exception as e:
+                print(f"⚠️ ProactiveSuggestionsService недоступен: {e}")
+                proactive_service = None
+            
+            # Создаем единый агент
+            agent = CarDealerAgent(
+                db_session=db,
+                memory_service=memory_service,
+                search_service=search_service,
+                sql_agent=sql_agent,
+                parameter_extractor=parameter_extractor,
+                proactive_service=proactive_service
+            )
+            
+            print("✅ Используется CarDealerAgent (единый агент)")
+            use_unified_agent = True
+            
         except Exception as e:
-            # Если RAGService не может инициализироваться (например, из-за ChromaDB), 
-            # возвращаем ошибку с понятным сообщением
-            return {
-                "response": "Извините, сервис временно недоступен. Попробуйте повторить запрос позже.",
-                "error": str(e),
-                "sources": []
-            }
+            print(f"⚠️ Ошибка инициализации CarDealerAgent: {e}, используем fallback")
+            use_unified_agent = False
+            agent = None
+            
+            # Fallback на старую логику
+            try:
+                rag_service = RAGService(db_service)
+                use_langgraph = False
+                langgraph_service = None
+            except Exception as e2:
+                return {
+                    "response": "Извините, сервис временно недоступен. Попробуйте повторить запрос позже.",
+                    "error": str(e2),
+                    "sources": []
+                }
         
         # Получаем историю диалога (до 5 последних сообщений)
         history = _get_chat_history(request.user_id, limit=5)
@@ -263,12 +334,12 @@ async def send_message(
             try:
                 from services.intelligent_search_service import IntelligentSearchService
                 from services.dialog_state_service import DialogStateService
-                from app.api.search_es import _extract_filters_from_text
+                from app.api.search_es import _extract_filters_with_ai
                 
                 print("🔍 Используется интеллектуальный поиск")
                 
-                # Извлекаем фильтры из запроса
-                filters = _extract_filters_from_text(request.message)
+                # Извлекаем фильтры из запроса (AI с fallback на паттерны)
+                filters = await _extract_filters_with_ai(request.message)
                 
                 # Получаем контекст диалога
                 dialogue_context = "\n".join([f"Пользователь: {h.get('q', '')}\nАссистент: {h.get('a', '')}" for h in history])
@@ -289,21 +360,44 @@ async def send_message(
                     hits = search_result.get("results", [])
                     print(f"✅ Интеллектуальный поиск нашел {len(hits)} автомобилей")
                     
-                    for hit in hits:
+                    # Ограничиваем до 5 лучших результатов для загрузки полных данных
+                    top_hits = hits[:5]
+                    
+                    for hit in top_hits:
                         source = hit.get("_source", {})
                         car_id = source.get("id")
                         if car_id:
-                            # Определяем тип по наличию mileage
+                            # Определяем тип по наличию mileage или по полю type
+                            car_type = source.get("type")
                             has_mileage = source.get("mileage") is not None
                             
-                            if has_mileage:
+                            if car_type == 'used_car' or has_mileage:
                                 used_car = db_service.get_used_car(car_id)
-                                if used_car and used_car not in preloaded_used_cars_from_sources:
-                                    preloaded_used_cars_from_sources.append(used_car)
+                                if used_car:
+                                    # Обновляем объект из БД, чтобы получить все поля
+                                    try:
+                                        db.refresh(used_car)
+                                    except:
+                                        pass
+                                    if used_car not in preloaded_used_cars_from_sources:
+                                        preloaded_used_cars_from_sources.append(used_car)
                             else:
                                 car = db_service.get_car(car_id)
-                                if car and car not in preloaded_cars_from_sources:
-                                    preloaded_cars_from_sources.append(car)
+                                if car:
+                                    # Обновляем объект из БД, чтобы получить все поля и опции
+                                    try:
+                                        db.refresh(car)
+                                        # Загружаем опции, если они еще не загружены
+                                        if hasattr(car, 'options') and car.options is None:
+                                            # Принудительно загружаем опции
+                                            _ = car.options
+                                        if hasattr(car, 'options_groups') and car.options_groups is None:
+                                            # Принудительно загружаем группы опций
+                                            _ = car.options_groups
+                                    except:
+                                        pass
+                                    if car not in preloaded_cars_from_sources:
+                                        preloaded_cars_from_sources.append(car)
                     
                     # Сохраняем критерии поиска в состояние диалога
                     dialog_state = DialogStateService(request.user_id)
@@ -339,15 +433,71 @@ async def send_message(
             except Exception as e:
                 print(f"⚠️ Ошибка интеллектуального поиска: {e}, используем обычный поиск")
         
-        # Передаем предзагруженные автомобили в generate_response
-        result = await rag_service.generate_response(
-            request.message, 
-            request.user_id, 
-            chat_history=history,
-            preloaded_cars=preloaded_cars_from_sources,
-            preloaded_used_cars=preloaded_used_cars_from_sources,
-            deep_thinking_enabled=request.deep_thinking_enabled or False
-        )
+        # Обрабатываем запрос через единый агент или fallback
+        if use_unified_agent and agent:
+            # Используем единый агент
+            sid = _current_session_id(request.user_id)
+            agent_result = await agent.process_message(
+                user_input=request.message,
+                user_id=request.user_id,
+                session_id=sid,
+                chat_id=chat_id
+            )
+            
+            # Проверяем, что ответ не пустой
+            response_text = agent_result.get("response", "")
+            if not response_text or not response_text.strip():
+                response_text = "Извините, не удалось сформировать ответ. Попробуйте переформулировать запрос."
+            
+            # Убеждаемся, что chat_id из результата агента соответствует запросу пользователя
+            agent_chat_id = agent_result.get("chat_id")
+            if agent_chat_id and agent_chat_id != chat_id:
+                # Проверяем, что chat_id принадлежит правильному пользователю
+                chat_check = db_service.get_chat(agent_chat_id, request.user_id)
+                if chat_check:
+                    chat_id = agent_chat_id
+                else:
+                    # Если chat_id не принадлежит пользователю, используем текущий
+                    print(f"⚠️ Предупреждение: chat_id {agent_chat_id} не принадлежит пользователю {request.user_id}, используем {chat_id}")
+            
+            # Преобразуем результат в формат, ожидаемый API
+            result = {
+                "response": response_text,
+                "related_articles": agent_result.get("related_articles", []),
+                "related_documents": agent_result.get("related_documents", []),
+                "related_cars": agent_result.get("related_cars", []),
+                "related_used_cars": agent_result.get("related_used_cars", []),
+                "sources_data": agent_result.get("sources_data", {}),
+                "model_info": {}
+            }
+        else:
+            # Fallback на старую логику (RAGService)
+            try:
+                from services.langgraph_rag_service import LangGraphRAGService
+                langgraph_service = LangGraphRAGService(rag_service)
+                use_langgraph = langgraph_service.graph is not None
+            except:
+                use_langgraph = False
+                langgraph_service = None
+            
+            if use_langgraph and langgraph_service:
+                result = await langgraph_service.generate_with_graph(
+                    request.message, 
+                    request.user_id, 
+                    chat_history=history,
+                    preloaded_cars=preloaded_cars_from_sources,
+                    preloaded_used_cars=preloaded_used_cars_from_sources,
+                    deep_thinking_enabled=request.deep_thinking_enabled or False
+                )
+            else:
+                result = await rag_service.generate_response(
+                    request.message, 
+                    request.user_id, 
+                    chat_history=history,
+                    preloaded_cars=preloaded_cars_from_sources,
+                    preloaded_used_cars=preloaded_used_cars_from_sources,
+                    deep_thinking_enabled=request.deep_thinking_enabled or False
+                )
         
         # Получаем уточняющие вопросы и проактивные предложения через CarDealerAssistantService
         clarifying_questions = []
@@ -424,35 +574,73 @@ async def send_message(
                 all_related_used_cars.append(used_car)
                 existing_used_car_ids.add(used_car.id)
         
+        # Убеждаемся, что response не пустой
+        response_text = result.get("response", "")
+        if not response_text or not response_text.strip():
+            response_text = "Извините, не удалось сформировать ответ. Попробуйте переформулировать запрос."
+            result["response"] = response_text
+        
+        # Убеждаемся, что chat_id существует и принадлежит правильному пользователю
+        if not chat_id:
+            # Создаем новый чат для пользователя
+            chat = db_service.create_chat(user_id=request.user_id, title=None)
+            chat_id = chat.id
+        else:
+            # Проверяем, что chat_id принадлежит правильному пользователю
+            chat_check = db_service.get_chat(chat_id, request.user_id)
+            if not chat_check:
+                # Если chat_id не принадлежит пользователю, создаем новый
+                print(f"⚠️ Предупреждение: chat_id {chat_id} не принадлежит пользователю {request.user_id}, создаем новый чат")
+                chat = db_service.create_chat(user_id=request.user_id, title=None)
+                chat_id = chat.id
+        
         # Сохраняем сообщение в БД с объединенными sources_data
+        # Убеждаемся, что все данные относятся к правильному пользователю
         chat_message = db_service.save_chat_message(
-            user_id=request.user_id,
+            user_id=request.user_id,  # Всегда используем user_id из запроса
             message=request.message,
-            response=result["response"],
+            response=response_text,
             related_article_ids=result.get("related_article_ids", []),
-            chat_id=chat_id,
+            chat_id=chat_id,  # Используем проверенный chat_id
             sources_data=combined_sources_data if combined_sources_data else None
         )
         
-        # Сохраняем историю в Redis (по сессиям)
+        # Сохраняем историю в Redis (по сессиям) для правильного пользователя
         sid = _current_session_id(request.user_id)
         history_key = _session_key(request.user_id, sid)
         redis_client.rpush(history_key, json.dumps({
             "q": request.message,
-            "a": result["response"],
+            "a": response_text,
             "ts": __import__("time").time()
         }))
         
-        return ChatMessageResponse(
-            response=result["response"],
+        # Убеждаемся, что все поля присутствуют в ответе
+        # Проверяем, что response не пустой
+        if not response_text or not response_text.strip():
+            response_text = "Извините, не удалось сформировать ответ. Попробуйте переформулировать запрос."
+        
+        # Убеждаемся, что chat_id присутствует
+        if chat_id is None:
+            # Создаем новый чат, если его нет
+            chat = db_service.create_chat(user_id=request.user_id, title=None)
+            chat_id = chat.id
+        
+        # Формируем ответ
+        response_obj = ChatMessageResponse(
+            response=response_text,  # Всегда не пустой
             related_articles=result.get("related_articles", []),
             related_documents=result.get("related_documents", []),
             related_cars=all_related_cars,  # Используем объединенный список со всеми полями
             related_used_cars=all_related_used_cars,  # Используем объединенный список со всеми полями
             model_info=result.get("model_info", {}),
             message_id=chat_message.id,
-            chat_id=chat_id
+            chat_id=chat_id  # Всегда присутствует и принадлежит правильному пользователю
         )
+        
+        # Отладочный вывод для проверки
+        print(f"✅ Формируем ответ: response={bool(response_obj.response)}, chat_id={response_obj.chat_id}, message_id={response_obj.message_id}")
+        
+        return response_obj
     
     except Exception as e:
         # Мягкий фолбэк: не роняем 500, возвращаем вежливый ответ и сохраняем сообщение
@@ -488,8 +676,46 @@ async def send_message(
                 message_id=chat_message.id,
                 chat_id=chat_id
             )
-        except Exception:
-            raise HTTPException(status_code=200, detail="Извините, сервис временно недоступен. Попробуйте повторить запрос позже.")
+        except Exception as fallback_error:
+            # В критическом случае возвращаем минимальный ответ
+            print(f"❌ Критическая ошибка в fallback: {fallback_error}")
+            import traceback
+            traceback.print_exc()
+            
+            # Пытаемся создать минимальный чат и сообщение
+            try:
+                fallback_db_service = DatabaseService(db)
+                fallback_chat = fallback_db_service.create_chat(user_id=request.user_id, title=None)
+                fallback_chat_id = fallback_chat.id
+                fallback_message = fallback_db_service.save_chat_message(
+                    user_id=request.user_id,
+                    message=request.message,
+                    response="Извините, сервис временно недоступен. Попробуйте повторить запрос позже.",
+                    related_article_ids=[],
+                    chat_id=fallback_chat_id,
+                    sources_data=None
+                )
+                
+                return ChatMessageResponse(
+                    response="Извините, сервис временно недоступен. Попробуйте повторить запрос позже.",
+                    related_articles=[],
+                    related_documents=[],
+                    related_cars=[],
+                    related_used_cars=[],
+                    model_info={},
+                    message_id=fallback_message.id,
+                    chat_id=fallback_chat_id
+                )
+            except Exception:
+                # Если даже это не работает, возвращаем через HTTPException, но с правильной структурой
+                raise HTTPException(
+                    status_code=500,
+                    detail={
+                        "response": "Извините, сервис временно недоступен. Попробуйте повторить запрос позже.",
+                        "chat_id": None,
+                        "error": str(fallback_error)
+                    }
+                )
 
 
 @router.post("/feedback")

@@ -671,6 +671,67 @@ class OllamaModel(BaseModel):
     modified_at: Optional[str] = None
 
 
+# Схемы для управления моделями
+class TaskModelConfig(BaseModel):
+    """Конфигурация модели для задачи"""
+    primary: str
+    fallback: str
+    complexity: str  # light, medium, heavy
+
+
+class TaskModelUpdate(BaseModel):
+    """Обновление модели для задачи"""
+    task_type: str
+    primary: Optional[str] = None
+    fallback: Optional[str] = None
+    complexity: Optional[str] = None
+
+
+class ModelConfigResponse(BaseModel):
+    """Ответ с конфигурацией моделей"""
+    task_model_mapping: Dict[str, TaskModelConfig]
+    available_models: List[str]
+    current_ai_settings: AIModelSettings
+
+
+class ModelTestRequest(BaseModel):
+    """Запрос на тестирование модели"""
+    model_name: str
+    task_type: Optional[str] = None
+    test_prompt: Optional[str] = None
+
+
+class ModelTestResponse(BaseModel):
+    """Ответ на тест модели"""
+    success: bool
+    response: Optional[str] = None
+    response_time: Optional[float] = None
+    error: Optional[str] = None
+    model_info: Optional[Dict[str, Any]] = None
+
+
+class ModelPerformanceMetrics(BaseModel):
+    """Метрики производительности модели"""
+    model_name: str
+    task_type: Optional[str] = None
+    success_rate: Optional[float] = None
+    avg_response_time: Optional[float] = None
+    total_requests: Optional[int] = None
+    last_used: Optional[str] = None
+
+
+class BulkModelUpdateRequest(BaseModel):
+    """Массовое обновление моделей"""
+    updates: List[TaskModelUpdate]
+
+
+class BulkModelUpdateResponse(BaseModel):
+    """Ответ на массовое обновление"""
+    success: bool
+    updated_tasks: List[str]
+    errors: List[str] = []
+
+
 class ParsedCarBase(BaseModel):
     source_url: str
     mark: Optional[str] = None

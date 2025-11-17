@@ -2,7 +2,7 @@ name: motorchik
 
 services:
   motorchik-postgres:
-    image: postgres:15-alpine
+    image: ankane/pgvector:latest  # Используем образ с поддержкой pgvector
     environment:
       POSTGRES_DB: vectordb
       POSTGRES_USER: postgres
@@ -41,6 +41,26 @@ services:
     networks:
       - default
 
+  # ОТКЛЮЧЕНО: Qdrant больше не используется для Mem0
+  # Долговременная память теперь использует PostgreSQL + pgvector через UnifiedMemoryService
+  # Оставлен как опциональный сервис на случай будущего использования
+  motorchik-qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"  # HTTP API
+      - "6334:6334"  # gRPC API
+    volumes:
+      - motorchik_qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:6333/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - default
+
   motorchik-backend:
     build:
       context: ./backend
@@ -59,6 +79,9 @@ services:
       - OLLAMA_HOST=host.docker.internal
       - OLLAMA_PORT=11434
       - OLLAMA_MODEL=llama3:8b
+      # ОТКЛЮЧЕНО: Qdrant больше не используется для Mem0
+      # - QDRANT_URL=http://motorchik-qdrant:6333
+      # - MEM0_USE_QDRANT=true
     # Ports exposed only through nginx
     # ports:
     #   - "8000:8000"
@@ -71,6 +94,15 @@ services:
         condition: service_healthy
       motorchik-elasticsearch:
         condition: service_healthy
+      # ОТКЛЮЧЕНО: Qdrant больше не требуется для backend
+      # motorchik-qdrant:
+      #   condition: service_started
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 30  # Увеличиваем количество попыток для учета времени индексации
+      start_period: 300s  # Даем 5 минут на запуск и индексацию (индексация может занять время)
     restart: unless-stopped
     networks:
       - default
@@ -100,12 +132,13 @@ services:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot
     depends_on:
-      - motorchik-backend
-      - motorchik-frontend
+      motorchik-backend:
+        condition: service_healthy
+      motorchik-frontend:
+        condition: service_started
     restart: unless-stopped
     networks:
       - default
-    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
   certbot:
     image: certbot/certbot
@@ -119,6 +152,7 @@ services:
 volumes:
   motorchik_postgres_data:
   motorchik_elasticsearch_data:
+  motorchik_qdrant_data:
 
 networks:
   default:

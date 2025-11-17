@@ -8,6 +8,20 @@ from services.document_service import DocumentService
 from services.elasticsearch_service import ElasticsearchService
 from models.database import Article, Car, UsedCar
 import json
+
+# Импорты для переранжирования
+try:
+    from langchain_community.document_compressors import FlashrankRerank
+    from langchain_core.documents import Document
+    FLASHRANK_AVAILABLE = True
+except ImportError:
+    try:
+        from langchain.document_compressors import FlashrankRerank
+        from langchain.schema import Document
+        FLASHRANK_AVAILABLE = True
+    except ImportError:
+        FLASHRANK_AVAILABLE = False
+        print("⚠️ FlashrankRerank не доступен. Переранжирование отключено.")
 # ChromaDB отключена - используем только PostgreSQL и Elasticsearch
 # import chromadb
 # from chromadb.config import Settings as ChromaSettings
@@ -107,47 +121,79 @@ async def _generate_with_ai_settings(prompt: str, deep_thinking_enabled: bool = 
     ai_settings = _load_ai_settings()
     model_info = _get_current_model_info()
     
-    # Используем оркестратор для выбора модели, если включено
+    # ПРИОРИТЕТ: Сначала проверяем настройки из ai_settings.json
+    # Только если настройки не указаны, используем оркестратор
     response_model = ai_settings.get("response_model", "")
-    if use_orchestrator and not deep_thinking_enabled:
+    
+    # Если модель указана в настройках, используем её (высший приоритет)
+    if response_model and response_model.strip():
+        print(f"✅ Используется модель из настроек: {response_model}")
+        # Обновляем model_info
+        if response_model.startswith("ollama:"):
+            model_name = response_model.replace("ollama:", "")
+            model_info["model_name"] = model_name
+            model_info["model_type"] = "ollama"
+            model_info["display_name"] = f"Ollama: {model_name}"
+        elif response_model.startswith("mistral:"):
+            model_name = response_model.replace("mistral:", "")
+            model_info["model_name"] = model_name
+            model_info["model_type"] = "mistral"
+            model_info["display_name"] = f"Mistral: {model_name}"
+        elif response_model.startswith("openai:"):
+            model_name = response_model.replace("openai:", "")
+            model_info["model_name"] = model_name
+            model_info["model_type"] = "openai"
+            model_info["display_name"] = f"OpenAI: {model_name}"
+        elif response_model.startswith("anthropic:"):
+            model_name = response_model.replace("anthropic:", "")
+            model_info["model_name"] = model_name
+            model_info["model_type"] = "anthropic"
+            model_info["display_name"] = f"Anthropic: {model_name}"
+    # Если модель не указана в настройках, используем оркестратор
+    elif use_orchestrator and not deep_thinking_enabled:
         try:
             from services.ai_model_orchestrator_service import AIModelOrchestratorService, TaskType, Complexity
             orchestrator = AIModelOrchestratorService()
             
-            # Если пользователь назначил модель в настройках, используем её (оркестратор учтет это)
-            # Иначе оркестратор выберет оптимальную модель
-            selected_model = await orchestrator.select_model_for_task(
-                task_type=TaskType.ANSWER_GENERATION,
-                task_complexity=Complexity.LIGHT,
-                user_override=response_model if response_model else None
-            )
+            # Оркестратор выбирает модель из конфигурации задач
+            # Для ответов используем TaskType.RESPONSE_GENERATION
+            try:
+                selected_model = await orchestrator.select_model_for_task(
+                    task_type=TaskType.RESPONSE_GENERATION,
+                    task_complexity=Complexity.LIGHT,
+                    user_override=None
+                )
+            except (ValueError, AttributeError):
+                # Fallback на ANSWER_GENERATION, если RESPONSE_GENERATION не существует
+                selected_model = await orchestrator.select_model_for_task(
+                    task_type=TaskType.ANSWER_GENERATION,
+                    task_complexity=Complexity.LIGHT,
+                    user_override=None
+                )
             
             # Обновляем model_info с выбранной моделью
             if selected_model:
+                response_model = selected_model
                 if selected_model.startswith("ollama:"):
                     model_name = selected_model.replace("ollama:", "")
                     model_info["model_name"] = model_name
                     model_info["model_type"] = "ollama"
                     model_info["display_name"] = f"Ollama: {model_name}"
-                    response_model = selected_model
                 elif selected_model.startswith("mistral:"):
                     model_name = selected_model.replace("mistral:", "")
                     model_info["model_name"] = model_name
                     model_info["model_type"] = "mistral"
                     model_info["display_name"] = f"Mistral: {model_name}"
-                    response_model = selected_model
                 elif selected_model.startswith("openai:"):
                     model_name = selected_model.replace("openai:", "")
                     model_info["model_name"] = model_name
                     model_info["model_type"] = "openai"
                     model_info["display_name"] = f"OpenAI: {model_name}"
-                    response_model = selected_model
                 elif selected_model.startswith("anthropic:"):
                     model_name = selected_model.replace("anthropic:", "")
                     model_info["model_name"] = model_name
                     model_info["model_type"] = "anthropic"
                     model_info["display_name"] = f"Anthropic: {model_name}"
-                    response_model = selected_model
                 
                 print(f"🎯 Оркестратор выбрал модель для генерации ответа: {model_info['display_name']}")
         except Exception as e:
@@ -201,15 +247,28 @@ async def _generate_with_ai_settings(prompt: str, deep_thinking_enabled: bool = 
                 # Продолжаем с обычной моделью при ошибке
     
     # Используем обычную модель ответов
+    # Если оркестратор не использовался, берем из настроек
     response_model = ai_settings.get("response_model", "")
     
-    # Если модель не настроена, используем Mistral по умолчанию
+    # Если модель не настроена, пробуем Ollama, затем Mistral
     if not response_model:
+        print("⚠️ Модель не указана в настройках, пробуем Ollama...")
         try:
-            response = _generate_with_mistral(prompt)
+            # Пробуем Ollama сначала
+            response = await _generate_with_ollama_async("llama3:8b", prompt)
+            model_info["model_type"] = "ollama"
+            model_info["display_name"] = "Ollama: llama3:8b (default)"
             return response, model_info
-        except Exception as e:
-            return f"Ошибка генерации ответа: {str(e)}", model_info
+        except Exception as ollama_err:
+            print(f"⚠️ Ollama недоступен, пробуем Mistral...")
+            # Если Ollama не работает, пробуем Mistral
+            try:
+                response = _generate_with_mistral(prompt)
+                model_info["model_type"] = "mistral"
+                model_info["display_name"] = "Mistral (default fallback)"
+                return response, model_info
+            except Exception as mistral_err:
+                return f"Ошибка генерации ответа: Ollama - {str(ollama_err)[:100]}, Mistral - {str(mistral_err)[:100]}", model_info
     
     # Генерируем ответ в зависимости от типа модели
     try:
@@ -220,8 +279,20 @@ async def _generate_with_ai_settings(prompt: str, deep_thinking_enabled: bool = 
         elif response_model.startswith("mistral:"):
             model_name = response_model.replace("mistral:", "")
             api_key = ai_settings.get("api_key", settings.mistral_api_key)
-            response = await _generate_with_mistral_async(model_name, api_key, prompt)
-            return response, model_info
+            try:
+                response = await _generate_with_mistral_async(model_name, api_key, prompt)
+                return response, model_info
+            except Exception as mistral_err:
+                # При ошибке Mistral пробуем Ollama
+                print(f"⚠️ Ошибка Mistral: {mistral_err}, пробуем Ollama...")
+                try:
+                    response = await _generate_with_ollama_async("llama3:8b", prompt)
+                    model_info["model_type"] = "ollama"
+                    model_info["display_name"] = f"Ollama: llama3:8b (fallback после Mistral)"
+                    return response, model_info
+                except Exception as ollama_err:
+                    # Если и Ollama не работает, возвращаем ошибку
+                    return f"Ошибка генерации: Mistral - {str(mistral_err)[:100]}, Ollama - {str(ollama_err)[:100]}", model_info
         elif response_model.startswith("openai:"):
             model_name = response_model.replace("openai:", "")
             api_key = ai_settings.get("api_key", "")
@@ -233,16 +304,43 @@ async def _generate_with_ai_settings(prompt: str, deep_thinking_enabled: bool = 
             response = await _generate_with_anthropic_async(model_name, api_key, prompt)
             return response, model_info
         else:
-            # Фолбэк на Mistral
-            response = _generate_with_mistral(prompt)
-            return response, model_info
+            # Фолбэк: пробуем Ollama, затем Mistral
+            print("⚠️ Модель не указана, пробуем Ollama как fallback...")
+            try:
+                # Пробуем Ollama сначала
+                response = await _generate_with_ollama_async("llama3:8b", prompt)
+                model_info["model_type"] = "ollama"
+                model_info["display_name"] = "Ollama: llama3:8b (fallback)"
+                return response, model_info
+            except Exception as ollama_err:
+                print(f"⚠️ Ollama недоступен, пробуем Mistral...")
+                # Если Ollama не работает, пробуем Mistral
+                try:
+                    response = _generate_with_mistral(prompt)
+                    model_info["model_type"] = "mistral"
+                    model_info["display_name"] = "Mistral (fallback)"
+                    return response, model_info
+                except Exception as mistral_err:
+                    return f"Ошибка генерации ответа: Ollama - {str(ollama_err)[:100]}, Mistral - {str(mistral_err)[:100]}", model_info
     except Exception as e:
-        # Фолбэк на Mistral при ошибке
+        # Фолбэк при ошибке: пробуем Ollama, затем Mistral
+        print(f"⚠️ Ошибка генерации: {e}, пробуем fallback...")
         try:
-            response = _generate_with_mistral(prompt)
+            # Пробуем Ollama сначала
+            response = await _generate_with_ollama_async("llama3:8b", prompt)
+            model_info["model_type"] = "ollama"
+            model_info["display_name"] = "Ollama: llama3:8b (fallback)"
             return response, model_info
-        except Exception as fallback_e:
-            return f"Ошибка генерации ответа: {str(e)}", model_info
+        except Exception as ollama_err:
+            print(f"⚠️ Ollama недоступен, пробуем Mistral...")
+            # Если Ollama не работает, пробуем Mistral
+            try:
+                response = _generate_with_mistral(prompt)
+                model_info["model_type"] = "mistral"
+                model_info["display_name"] = "Mistral (fallback)"
+                return response, model_info
+            except Exception as fallback_e:
+                return f"Ошибка генерации ответа: {str(e)[:200]}", model_info
 
 async def _generate_with_ollama_async(model_name: str, prompt: str) -> str:
     """Генерация ответа через Ollama"""
@@ -502,13 +600,36 @@ def _generate_with_ollama_standalone(prompt: str) -> str:
     from services.ollama_utils import find_working_ollama_url
     
     # Используем async функцию для поиска рабочего URL
+    # Безопасная обработка event loop
     try:
-        loop = asyncio.get_event_loop()
+        # Пробуем получить текущий loop
+        loop = asyncio.get_running_loop()
+        # Если loop уже запущен, используем nest_asyncio
+        try:
+            import nest_asyncio
+            nest_asyncio.apply()
+            working_url = asyncio.run(find_working_ollama_url(timeout=2.0))
+        except (ImportError, RuntimeError):
+            # Если nest_asyncio недоступен или не помог, пробуем другой способ
+            # Создаем новый loop в отдельном потоке
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future = executor.submit(asyncio.run, find_working_ollama_url(timeout=2.0))
+                working_url = future.result(timeout=3.0)
     except RuntimeError:
-        loop = asyncio.new_event_loop()
-        asyncio.set_event_loop(loop)
+        # Нет запущенного loop, можем использовать asyncio.run
+        try:
+            working_url = asyncio.run(find_working_ollama_url(timeout=2.0))
+        except RuntimeError:
+            # Все еще ошибка, пробуем старый способ
+            try:
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+                working_url = loop.run_until_complete(find_working_ollama_url(timeout=2.0))
+                loop.close()
+            except Exception:
+                working_url = None
     
-    working_url = loop.run_until_complete(find_working_ollama_url(timeout=2.0))
     if not working_url:
         raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
     
@@ -549,6 +670,136 @@ class RAGService:
         self.cars_collection = None
         self.used_cars_collection = None
         print("ℹ️ ChromaDB отключена. Используется PostgreSQL + Elasticsearch")
+        
+        # Инициализация переранжирования (FlashrankRerank)
+        self.reranker = None
+        if FLASHRANK_AVAILABLE:
+            try:
+                # Используем легкую модель для быстрого переранжирования
+                self.reranker = FlashrankRerank(model="ms-marco-TinyBERT-L-2-v2", top_n=5)
+                print("✅ FlashrankRerank инициализирован для переранжирования результатов")
+            except Exception as e:
+                print(f"⚠️ Не удалось инициализировать FlashrankRerank: {e}")
+                self.reranker = None
+    
+    def _rerank_documents(self, query: str, articles: List[Article], top_n: int = 5) -> List[Article]:
+        """
+        Переранжирует статьи по релевантности к запросу используя FlashrankRerank
+        
+        Args:
+            query: Поисковый запрос
+            articles: Список статей для переранжирования
+            top_n: Количество топ результатов для возврата
+            
+        Returns:
+            Переранжированный список статей
+        """
+        if not self.reranker or not articles:
+            return articles[:top_n]
+        
+        try:
+            # Преобразуем статьи в Document объекты для LangChain
+            documents = []
+            article_map = {}
+            
+            for article in articles:
+                # Формируем текстовое содержимое статьи
+                content = f"{article.title or ''}\n{article.content or ''}"
+                if article.meta:
+                    try:
+                        meta_dict = json.loads(article.meta) if isinstance(article.meta, str) else article.meta
+                        if isinstance(meta_dict, dict):
+                            content += f"\n{meta_dict.get('description', '')}"
+                    except:
+                        pass
+                
+                doc = Document(
+                    page_content=content[:5000],  # Ограничиваем длину для производительности
+                    metadata={"article_id": article.id, "title": article.title or ""}
+                )
+                documents.append(doc)
+                article_map[id(doc)] = article
+            
+            # Применяем переранжирование
+            reranked_docs = self.reranker.compress_documents(documents, query)
+            
+            # Преобразуем обратно в статьи
+            reranked_articles = []
+            for doc in reranked_docs:
+                article_id = doc.metadata.get("article_id")
+                # Находим оригинальную статью
+                for article in articles:
+                    if article.id == article_id:
+                        reranked_articles.append(article)
+                        break
+            
+            # Если некоторые статьи не попали в переранжированный список, добавляем их в конец
+            for article in articles:
+                if article not in reranked_articles:
+                    reranked_articles.append(article)
+            
+            return reranked_articles[:top_n]
+            
+        except Exception as e:
+            print(f"⚠️ Ошибка переранжирования статей: {e}")
+            # В случае ошибки возвращаем исходный список
+            return articles[:top_n]
+    
+    def _rerank_document_objects(self, query: str, documents: List[Any], top_n: int = 3) -> List[Any]:
+        """
+        Переранжирует документы по релевантности к запросу используя FlashrankRerank
+        
+        Args:
+            query: Поисковый запрос
+            documents: Список документов для переранжирования
+            top_n: Количество топ результатов для возврата
+            
+        Returns:
+            Переранжированный список документов
+        """
+        if not self.reranker or not documents:
+            return documents[:top_n]
+        
+        try:
+            # Преобразуем документы в Document объекты для LangChain
+            langchain_docs = []
+            doc_map = {}
+            
+            for doc in documents:
+                # Формируем текстовое содержимое документа
+                content = f"{getattr(doc, 'title', '') or ''}\n{getattr(doc, 'content', '') or ''}"
+                
+                langchain_doc = Document(
+                    page_content=content[:5000],  # Ограничиваем длину
+                    metadata={"doc_id": getattr(doc, 'id', None), "title": getattr(doc, 'title', '') or ""}
+                )
+                langchain_docs.append(langchain_doc)
+                doc_map[id(langchain_doc)] = doc
+            
+            # Применяем переранжирование
+            reranked_langchain_docs = self.reranker.compress_documents(langchain_docs, query)
+            
+            # Преобразуем обратно в документы
+            reranked_docs = []
+            for langchain_doc in reranked_langchain_docs:
+                doc_id = langchain_doc.metadata.get("doc_id")
+                # Находим оригинальный документ
+                for doc in documents:
+                    if getattr(doc, 'id', None) == doc_id:
+                        reranked_docs.append(doc)
+                        break
+            
+            # Если некоторые документы не попали в переранжированный список, добавляем их в конец
+            for doc in documents:
+                if doc not in reranked_docs:
+                    reranked_docs.append(doc)
+            
+            return reranked_docs[:top_n]
+            
+        except Exception as e:
+            print(f"⚠️ Ошибка переранжирования документов: {e}")
+            # В случае ошибки возвращаем исходный список
+            return documents[:top_n]
     
     async def generate_response(self, user_question: str, user_id: str, chat_history: Optional[List[Dict[str, Any]]] = None,
                                preloaded_cars: Optional[List[Any]] = None, preloaded_used_cars: Optional[List[Any]] = None,
@@ -720,8 +971,23 @@ class RAGService:
             if len(collected) >= 10 and len(collected_docs) >= 5 and len(collected_cars) + len(collected_used_cars) >= 20:
                 break
 
-        relevant_articles = list(collected.values())[:5]
-        relevant_documents = list(collected_docs.values())[:3]
+        # Применяем переранжирование к статьям и документам для улучшения релевантности
+        all_articles = list(collected.values())
+        all_documents = list(collected_docs.values())
+        
+        if all_articles and self.reranker:
+            print(f"🔄 Переранжирование {len(all_articles)} статей...")
+            relevant_articles = self._rerank_documents(user_question, all_articles, top_n=5)
+            print(f"✅ Переранжирование завершено, выбрано {len(relevant_articles)} наиболее релевантных статей")
+        else:
+            relevant_articles = all_articles[:5]
+        
+        if all_documents and self.reranker:
+            print(f"🔄 Переранжирование {len(all_documents)} документов...")
+            relevant_documents = self._rerank_document_objects(user_question, all_documents, top_n=3)
+            print(f"✅ Переранжирование завершено, выбрано {len(relevant_documents)} наиболее релевантных документов")
+        else:
+            relevant_documents = all_documents[:3]
         
         # Применим исключения по брендам
         if exclude_brands:
@@ -776,9 +1042,18 @@ class RAGService:
         
         if not relevant_articles and not relevant_documents and not relevant_cars and not relevant_used_cars:
             # Нет релевантов — ответим через AI без контекста кратко
+            # Получаем релевантные воспоминания из долговременной памяти
+            long_term_memories = ""
+            try:
+                from services.dialogue_history_service import DialogueHistoryService
+                dialogue_history_service = DialogueHistoryService(user_id)
+                long_term_memories = dialogue_history_service.get_relevant_memories(user_question, limit=10)
+            except Exception:
+                pass
+            
             try:
                 ai_response, model_info = await _generate_with_ai_settings(
-                    self._create_prompt(user_question, "", cars_statistics=None),
+                    self._create_prompt(user_question, "", cars_statistics=None, long_term_memories=long_term_memories),
                     deep_thinking_enabled=deep_thinking_enabled
                 )
             except Exception as e:
@@ -806,15 +1081,28 @@ class RAGService:
         context_used_cars = []
         
         # Сначала добавляем предзагруженные автомобили из sources_data (если есть)
-        if preloaded_cars:
+        # КРИТИЧЕСКИ ВАЖНО: Эти автомобили имеют приоритет и должны быть использованы
+        if preloaded_cars and len(preloaded_cars) > 0:
             context_cars.extend(preloaded_cars)
             print(f"✅ Добавлено {len(preloaded_cars)} новых автомобилей из sources_data в контекст")
-        if preloaded_used_cars:
+            for i, car in enumerate(preloaded_cars, 1):
+                print(f"   Автомобиль {i}: ID={car.id}, Марка={car.mark}, Модель={car.model}, Цена={car.price}, Год={car.manufacture_year}")
+        else:
+            print(f"⚠️ preloaded_cars пустой или None: {preloaded_cars}")
+        
+        if preloaded_used_cars and len(preloaded_used_cars) > 0:
             context_used_cars.extend(preloaded_used_cars)
             print(f"✅ Добавлено {len(preloaded_used_cars)} подержанных автомобилей из sources_data в контекст")
+            for i, car in enumerate(preloaded_used_cars, 1):
+                print(f"   Автомобиль {i}: ID={car.id}, Марка={car.mark}, Модель={car.model}, Цена={car.price}, Год={car.manufacture_year}, Пробег={car.mileage}")
+        else:
+            print(f"⚠️ preloaded_used_cars пустой или None: {preloaded_used_cars}")
         
         # Если предзагруженных автомобилей нет или их мало, пытаемся получить из Elasticsearch
-        if len(context_cars) + len(context_used_cars) < 10:  # Увеличиваем лимит до 10 для лучшего контекста
+        # ВАЖНО: Если есть предзагруженные автомобили, используем только их (не дополняем из ES)
+        has_preloaded = (preloaded_cars and len(preloaded_cars) > 0) or (preloaded_used_cars and len(preloaded_used_cars) > 0)
+        
+        if not has_preloaded and len(context_cars) + len(context_used_cars) < 10:  # Увеличиваем лимит до 10 для лучшего контекста
             try:
                 if getattr(self, 'es_service', None) and self.es_service.is_available():
                     # Получаем из Elasticsearch для более точного контекста
@@ -872,7 +1160,8 @@ class RAGService:
                 print(f"⚠️ Ошибка получения автомобилей из ES: {e}")
         
         # Если все еще недостаточно, дополняем из результатов БД поиска
-        if len(context_cars) + len(context_used_cars) < 10:
+        # ВАЖНО: Если есть предзагруженные автомобили, используем только их (не дополняем из БД)
+        if not has_preloaded and len(context_cars) + len(context_used_cars) < 10:
             existing_car_ids = {car.id for car in context_cars}
             existing_used_car_ids = {car.id for car in context_used_cars}
             
@@ -888,24 +1177,67 @@ class RAGService:
         
         # 3. Формирование контекста (используем все найденные автомобили, до 10 каждого типа)
         # ВАЖНО: Если есть предзагруженные автомобили из sources_data, используем ВСЕ их (не ограничиваем)
-        final_context_cars = context_cars[:10] if not preloaded_cars else context_cars
-        final_context_used_cars = context_used_cars[:10] if not preloaded_used_cars else context_used_cars
+        # Если предзагруженные автомобили есть, используем все, иначе ограничиваем до 10
+        has_preloaded_cars = preloaded_cars and len(preloaded_cars) > 0
+        has_preloaded_used_cars = preloaded_used_cars and len(preloaded_used_cars) > 0
+        
+        if has_preloaded_cars:
+            # Используем все предзагруженные автомобили (не ограничиваем)
+            final_context_cars = context_cars
+            print(f"✅ Используем все {len(final_context_cars)} предзагруженных новых автомобилей")
+        else:
+            # Ограничиваем до 10, если нет предзагруженных
+            final_context_cars = context_cars[:10]
+            print(f"✅ Используем {len(final_context_cars)} новых автомобилей (ограничено до 10)")
+        
+        if has_preloaded_used_cars:
+            # Используем все предзагруженные автомобили (не ограничиваем)
+            final_context_used_cars = context_used_cars
+            print(f"✅ Используем все {len(final_context_used_cars)} предзагруженных подержанных автомобилей")
+        else:
+            # Ограничиваем до 10, если нет предзагруженных
+            final_context_used_cars = context_used_cars[:10]
+            print(f"✅ Используем {len(final_context_used_cars)} подержанных автомобилей (ограничено до 10)")
         
         print(f"📊 Итого автомобилей в контексте: новых={len(final_context_cars)}, подержанных={len(final_context_used_cars)}")
         
+        # Проверяем, что контекст не пустой
+        if len(final_context_cars) == 0 and len(final_context_used_cars) == 0:
+            print("⚠️ ВНИМАНИЕ: Контекст пустой! Автомобили не найдены для передачи в AI.")
+        else:
+            print(f"✅ Контекст содержит {len(final_context_cars) + len(final_context_used_cars)} автомобилей для передачи в AI")
+        
         context = self._build_context(relevant_articles, relevant_documents, final_context_cars, final_context_used_cars)
         
-        # 4. Создание промта для LLM (с учетом истории диалога и статистики)
-        prompt = self._create_prompt(user_question, context, chat_history=chat_history or [], cars_statistics=cars_statistics)
+        # 4. Получаем релевантные воспоминания из долговременной памяти
+        # ОТКЛЮЧЕНО: Mem0 больше не используется, используется UnifiedMemoryService через DialogueHistoryService
+        long_term_memories = ""
+        try:
+            from services.dialogue_history_service import DialogueHistoryService
+            dialogue_history_service = DialogueHistoryService(user_id)
+            long_term_memories = dialogue_history_service.get_relevant_memories(user_question, limit=10)
+            if long_term_memories:
+                print(f"✅ Получено {len(long_term_memories.split(chr(10)))} релевантных воспоминаний из долговременной памяти")
+        except Exception as e:
+            print(f"⚠️ Ошибка получения воспоминаний из долговременной памяти: {e}")
         
-        # 5. Генерация ответа с использованием настроек AI
+        # 5. Создание промта для LLM (с учетом истории диалога, долговременной памяти и статистики)
+        prompt = self._create_prompt(
+            user_question, 
+            context, 
+            chat_history=chat_history or [], 
+            cars_statistics=cars_statistics,
+            long_term_memories=long_term_memories
+        )
+        
+        # 6. Генерация ответа с использованием настроек AI
         try:
             ai_response, model_info = await _generate_with_ai_settings(prompt, deep_thinking_enabled=deep_thinking_enabled)
         except Exception as e:
             ai_response = f"Произошла ошибка при обработке запроса: {str(e)}. Пожалуйста, обратитесь к службе поддержки."
             model_info = _get_current_model_info()
         
-        # 6. Сохранение сообщения в БД
+        # 7. Сохранение сообщения в БД
         related_article_ids = [article.id for article in relevant_articles]
         related_document_ids = [doc.id for doc in relevant_documents]
         # Автомобили сохраняем отдельно, но можем добавить в related_article_ids для совместимости
@@ -1610,21 +1942,21 @@ URL: {article.url or 'Не указан'}
                 # Формируем полную информацию об автомобиле со всеми полями
                 car_fields = []
                 car_fields.append(f"ID: {car.id}")
-                if car.mark: car_fields.append(f"Марка: {car.mark}")
-                if car.model: car_fields.append(f"Модель: {car.model}")
+                car_fields.append(f"Марка: {car.mark if car.mark else 'не указано'}")
+                car_fields.append(f"Модель: {car.model if car.model else 'не указано'}")
                 if car.vin: car_fields.append(f"VIN: {car.vin}")
                 if car.title: car_fields.append(f"Название: {car.title}")
                 if car.doc_num: car_fields.append(f"Номер документа: {car.doc_num}")
-                if car.price: car_fields.append(f"Цена: {car.price} руб.")
+                car_fields.append(f"Цена: {car.price if car.price else 'не указано'} руб.")
                 if car.sale_price: car_fields.append(f"Цена продажи: {car.sale_price} руб.")
                 if car.stock_qty: car_fields.append(f"Количество на складе: {car.stock_qty}")
-                if car.manufacture_year: car_fields.append(f"Год выпуска: {car.manufacture_year}")
+                car_fields.append(f"Год выпуска: {car.manufacture_year if car.manufacture_year else 'не указано'}")
                 if car.model_year: car_fields.append(f"Год модели: {car.model_year}")
-                if car.fuel_type: car_fields.append(f"Тип топлива: {car.fuel_type}")
+                car_fields.append(f"Тип топлива: {car.fuel_type if car.fuel_type else 'не указано'}")
                 if car.power: car_fields.append(f"Мощность: {car.power} л.с.")
-                if car.body_type: car_fields.append(f"Тип кузова: {car.body_type}")
-                if car.gear_box_type: car_fields.append(f"Коробка передач: {car.gear_box_type}")
-                if car.driving_gear_type: car_fields.append(f"Привод: {car.driving_gear_type}")
+                car_fields.append(f"Тип кузова: {car.body_type if car.body_type else 'не указано'}")
+                car_fields.append(f"Коробка передач: {car.gear_box_type if car.gear_box_type else 'не указано'}")
+                car_fields.append(f"Привод: {car.driving_gear_type if car.driving_gear_type else 'не указано'}")
                 if car.engine_vol: car_fields.append(f"Объем двигателя: {car.engine_vol} л")
                 if car.engine: car_fields.append(f"Двигатель: {car.engine}")
                 if car.fuel_consumption: car_fields.append(f"Расход топлива: {car.fuel_consumption}")
@@ -1644,7 +1976,7 @@ URL: {article.url or 'Не указан'}
                 if car.compl_level: car_fields.append(f"Уровень комплектации: {car.compl_level}")
                 if car.code_compl: car_fields.append(f"Код комплектации: {car.code_compl}")
                 if car.car_order_int_status: car_fields.append(f"Статус заказа: {car.car_order_int_status}")
-                if car.city: car_fields.append(f"Город: {car.city}")
+                car_fields.append(f"Город: {car.city if car.city else 'не указано'}")
                 if car.dealer_center: car_fields.append(f"Дилерский центр: {car.dealer_center}")
                 if car.max_additional_discount: car_fields.append(f"Максимальная дополнительная скидка: {car.max_additional_discount}")
                 if car.max_discount_trade_in: car_fields.append(f"Максимальная скидка Trade-in: {car.max_discount_trade_in}")
@@ -1652,6 +1984,30 @@ URL: {article.url or 'Не указан'}
                 if car.max_discount_casko: car_fields.append(f"Максимальная скидка КАСКО: {car.max_discount_casko}")
                 if car.max_discount_extra_gear: car_fields.append(f"Максимальная скидка на доп. оборудование: {car.max_discount_extra_gear}")
                 if car.max_discount_life_insurance: car_fields.append(f"Максимальная скидка на страхование жизни: {car.max_discount_life_insurance}")
+                
+                # Добавляем опции для новых автомобилей
+                try:
+                    if hasattr(car, 'options') and car.options:
+                        options_list = []
+                        for option in car.options:
+                            if option.description:
+                                options_list.append(option.description)
+                        if options_list:
+                            car_fields.append(f"Опции: {', '.join(options_list)}")
+                    
+                    # Добавляем группы опций
+                    if hasattr(car, 'options_groups') and car.options_groups:
+                        for group in car.options_groups:
+                            group_options = []
+                            if hasattr(group, 'options') and group.options:
+                                for opt in group.options:
+                                    if opt.description:
+                                        group_options.append(opt.description)
+                            if group_options:
+                                group_name = group.name or group.code or "Опции"
+                                car_fields.append(f"{group_name}: {', '.join(group_options)}")
+                except Exception as opt_error:
+                    print(f"⚠️ Ошибка при загрузке опций для автомобиля {car.id}: {opt_error}")
                 
                 car_text = f"""
 Автомобиль {i} (новый):
@@ -1665,22 +2021,22 @@ URL: {article.url or 'Не указан'}
                 # Формируем полную информацию об автомобиле со всеми полями
                 car_fields = []
                 car_fields.append(f"ID: {car.id}")
-                if car.mark: car_fields.append(f"Марка: {car.mark}")
-                if car.model: car_fields.append(f"Модель: {car.model}")
+                car_fields.append(f"Марка: {car.mark if car.mark else 'не указано'}")
+                car_fields.append(f"Модель: {car.model if car.model else 'не указано'}")
                 if car.vin: car_fields.append(f"VIN: {car.vin}")
                 if car.title: car_fields.append(f"Название: {car.title}")
                 if car.doc_num: car_fields.append(f"Номер документа: {car.doc_num}")
-                if car.price: car_fields.append(f"Цена: {car.price} руб.")
-                if car.manufacture_year: car_fields.append(f"Год выпуска: {car.manufacture_year}")
-                if car.mileage: car_fields.append(f"Пробег: {car.mileage} км")
+                car_fields.append(f"Цена: {car.price if car.price else 'не указано'} руб.")
+                car_fields.append(f"Год выпуска: {car.manufacture_year if car.manufacture_year else 'не указано'}")
+                car_fields.append(f"Пробег: {car.mileage if car.mileage else 'не указано'} км")
                 if car.owners: car_fields.append(f"Количество владельцев: {car.owners}")
                 if car.accident: car_fields.append(f"Аварии: {car.accident}")
                 if car.certification_number: car_fields.append(f"Номер сертификата: {car.certification_number}")
-                if car.fuel_type: car_fields.append(f"Тип топлива: {car.fuel_type}")
+                car_fields.append(f"Тип топлива: {car.fuel_type if car.fuel_type else 'не указано'}")
                 if car.power: car_fields.append(f"Мощность: {car.power} л.с.")
-                if car.body_type: car_fields.append(f"Тип кузова: {car.body_type}")
-                if car.gear_box_type: car_fields.append(f"Коробка передач: {car.gear_box_type}")
-                if car.driving_gear_type: car_fields.append(f"Привод: {car.driving_gear_type}")
+                car_fields.append(f"Тип кузова: {car.body_type if car.body_type else 'не указано'}")
+                car_fields.append(f"Коробка передач: {car.gear_box_type if car.gear_box_type else 'не указано'}")
+                car_fields.append(f"Привод: {car.driving_gear_type if car.driving_gear_type else 'не указано'}")
                 if car.engine_vol: car_fields.append(f"Объем двигателя: {car.engine_vol} л")
                 if car.color: car_fields.append(f"Цвет: {car.color}")
                 if car.doors: car_fields.append(f"Количество дверей: {car.doors}")
@@ -1688,7 +2044,7 @@ URL: {article.url or 'Не указан'}
                 if car.category: car_fields.append(f"Категория: {car.category}")
                 if car.car_type: car_fields.append(f"Тип автомобиля: {car.car_type}")
                 if car.region: car_fields.append(f"Регион: {car.region}")
-                if car.city: car_fields.append(f"Город: {car.city}")
+                car_fields.append(f"Город: {car.city if car.city else 'не указано'}")
                 if car.street: car_fields.append(f"Улица: {car.street}")
                 if car.dealer_center: car_fields.append(f"Дилерский центр: {car.dealer_center}")
                 if car.company_name: car_fields.append(f"Название компании: {car.company_name}")
@@ -1709,7 +2065,18 @@ URL: {article.url or 'Не указан'}
 """
                 context_parts.append(car_text)
         
-        return "\n".join(context_parts)
+        context_text = "\n".join(context_parts)
+        
+        # Проверяем, что контекст не пустой
+        if not context_text or len(context_text.strip()) == 0:
+            print("⚠️ ВНИМАНИЕ: Контекст пустой после _build_context!")
+        else:
+            # Логируем первые 500 символов контекста для отладки
+            context_preview = context_text[:500] + "..." if len(context_text) > 500 else context_text
+            print(f"📋 Контекст для AI (первые 500 символов): {context_preview}")
+            print(f"📋 Полный размер контекста: {len(context_text)} символов")
+        
+        return context_text
     
     def _search_document_chunks(self, document_id: int, query: str) -> List[Any]:
         """Ищет релевантные чанки в документе"""
@@ -1737,7 +2104,7 @@ URL: {article.url or 'Не указан'}
             return []
     
     def _create_prompt(self, question: str, context: str, chat_history: Optional[List[Dict[str, Any]]] = None, 
-                      cars_statistics: Optional[Dict[str, Any]] = None) -> str:
+                      cars_statistics: Optional[Dict[str, Any]] = None, long_term_memories: str = "") -> str:
         """Создает промт для LLM (автоэксперт и помощник по подбору авто)."""
         
         # Формируем историю диалога для контекста
@@ -1752,6 +2119,18 @@ URL: {article.url or 'Не указан'}
                     a = a[:500] + "..."
                 history_context += f"{i}. Пользователь: {q}\n"
                 history_context += f"   Ассистент: {a}\n\n"
+        
+        # Добавляем долговременную память (релевантные воспоминания)
+        # ОТКЛЮЧЕНО: Mem0 больше не используется, используется UnifiedMemoryService
+        memories_section = ""
+        if long_term_memories:
+            memories_section = f"""
+            
+РЕЛЕВАНТНЫЕ ВОСПОМИНАНИЯ ИЗ ПРЕДЫДУЩИХ ДИАЛОГОВ (для персонализации ответа):
+{long_term_memories}
+
+Используй эти воспоминания для более персонализированного ответа, учитывая предпочтения и историю взаимодействий пользователя.
+"""
         
         # Добавляем статистику в промпт, если она есть
         statistics_section = ""
@@ -1777,20 +2156,29 @@ URL: {article.url or 'Не указан'}
 
 {statistics_section}
 
-У тебя есть контекст (статьи/документы/карточки авто) ниже. Если в контексте есть автомобили, обязательно:
-1) Дай экспертную рекомендацию (ТОП‑3 варианта) с причинами выбора;
-2) Укажи ключевые характеристики (год, цена, пробег, город, кузов, коробка, привод, топливо), отметь соответствие запросу;
-3) Добавь 2–3 альтернативы с короткими пояснениями;
-4) Отметь риски/особенности (например, большой пробег, спорная ликвидность, дорогой налог, редкие запчасти);
-5) Дай практические советы по покупке (что проверить на осмотре, какие документы/диагностика);
-6) Предложи следующие шаги (сузить бюджет/год/пробег, выбрать город/кузов/коробку и т.п.);
-7) Задай 2–4 уточняющих вопроса (приоритеты: бюджет, новый/с пробегом, кузов, привод, двигатель, год, пробег, город).
+🚨 КРИТИЧЕСКИ ВАЖНО: ВСЕГДА проверяй контекст ниже на наличие автомобилей!
 
-Если автомобилей в контексте нет, но есть статистика выше — используй её для информирования пользователя о доступном ассортименте и помоги уточнить критерии поиска.
+У тебя есть контекст (статьи/документы/карточки авто) ниже. 
+
+⚠️ ВАЖНО: Если в контексте есть автомобили (даже если некоторые поля показывают "не указано"), ОБЯЗАТЕЛЬНО:
+1) Перечисли ВСЕ найденные автомобили из контекста с их характеристиками;
+2) Дай экспертную рекомендацию (ТОП‑3 варианта) с причинами выбора;
+3) Укажи ключевые характеристики (год, цена, пробег, город, кузов, коробка, привод, топливо) для КАЖДОГО автомобиля из контекста;
+4) Если какое-то поле показывает "не указано" — укажи это, но НЕ говори что автомобилей нет;
+5) Добавь 2–3 альтернативы с короткими пояснениями (если есть в контексте);
+6) Отметь риски/особенности (например, большой пробег, спорная ликвидность, дорогой налог, редкие запчасти);
+7) Дай практические советы по покупке (что проверить на осмотре, какие документы/диагностика);
+8) Предложи следующие шаги (сузить бюджет/год/пробег, выбрать город/кузов/коробку и т.п.);
+9) Задай 2–4 уточняющих вопроса (приоритеты: бюджет, новый/с пробегом, кузов, привод, двигатель, год, пробег, город).
+
+⚠️ ЗАПРЕЩЕНО: Говорить "не найдено" или "ничего не найдено", если в контексте есть автомобили (даже с "не указано" в некоторых полях)!
+
+Если автомобилей в контексте действительно нет (контекст пустой или содержит только статьи/документы), но есть статистика выше — используй её для информирования пользователя о доступном ассортименте и помоги уточнить критерии поиска.
 
 Форматируй ответ структурированными пунктами. Числа (цены/пробег/год) пиши в человекочитаемом виде. Не выдумывай факты отсутствующие в контексте и статистике.
 
 {history_context}
+{memories_section}
 
 Контекст (найденная информация):
 {context}
@@ -2610,13 +2998,35 @@ URL: {article.url or 'Не указан'}
         from services.ollama_utils import find_working_ollama_url
         
         # Используем утилиту для поиска рабочего URL (проверяет host.docker.internal и localhost)
+        # Безопасная обработка event loop
         try:
-            loop = asyncio.get_event_loop()
+            # Пробуем получить текущий loop
+            loop = asyncio.get_running_loop()
+            # Если loop уже запущен, используем nest_asyncio
+            try:
+                import nest_asyncio
+                nest_asyncio.apply()
+                working_url = asyncio.run(find_working_ollama_url(timeout=2.0))
+            except (ImportError, RuntimeError):
+                # Если nest_asyncio недоступен или не помог, пробуем другой способ
+                import concurrent.futures
+                with concurrent.futures.ThreadPoolExecutor() as executor:
+                    future = executor.submit(asyncio.run, find_working_ollama_url(timeout=2.0))
+                    working_url = future.result(timeout=3.0)
         except RuntimeError:
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
+            # Нет запущенного loop, можем использовать asyncio.run
+            try:
+                working_url = asyncio.run(find_working_ollama_url(timeout=2.0))
+            except RuntimeError:
+                # Все еще ошибка, пробуем старый способ
+                try:
+                    loop = asyncio.new_event_loop()
+                    asyncio.set_event_loop(loop)
+                    working_url = loop.run_until_complete(find_working_ollama_url(timeout=2.0))
+                    loop.close()
+                except Exception:
+                    working_url = None
         
-        working_url = loop.run_until_complete(find_working_ollama_url(timeout=2.0))
         if not working_url:
             raise Exception("Не удается подключиться к Ollama. Проверьте, что Ollama запущен.")
         

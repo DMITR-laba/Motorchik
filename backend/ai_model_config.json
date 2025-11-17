@@ -94,10 +94,10 @@
     "note": "Использует ИИ для выбора оптимальной модели на основе задачи и доступных моделей"
   },
   "auto_model_loading": {
-    "enabled": true,
-    "auto_load_missing_models": true,
+    "enabled": false,
+    "auto_load_missing_models": false,
     "load_timeout_seconds": 300,
-    "note": "Автоматически загружает модели Ollama при их отсутствии"
+    "note": "Автоматическая загрузка отключена. Модели загружаются только по требованию пользователя через API"
   }
 }
 

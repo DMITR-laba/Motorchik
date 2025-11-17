@@ -250,7 +250,11 @@ class AIModelOrchestratorService:
         user_override: Optional[str] = None
     ) -> str:
         """
-        Выбирает оптимальную модель для задачи с использованием ИИ
+        Выбирает оптимальную модель для задачи с учетом приоритета:
+        1. user_override (если передан)
+        2. Настройки из ai_settings.json (высший приоритет для пользовательских настроек)
+        3. Пользовательские настройки из файлов конфигурации
+        4. Оркестратор (конфигурация задач)
         
         Args:
             task_type: Тип задачи
@@ -263,26 +267,54 @@ class AIModelOrchestratorService:
         task_key = task_type.value
         
         # 1. Проверяем пользовательское переопределение (высший приоритет)
-        if user_override:
+        if user_override and user_override.strip():
             # Проверяем и загружаем модель если нужно
             await self._ensure_model_available(user_override)
             return user_override
         
-        # 2. Проверяем пользовательские настройки из файлов
+        # 2. ПРИОРИТЕТ: Проверяем настройки из ai_settings.json (высший приоритет для настроек)
+        try:
+            import os
+            import json
+            ai_settings_paths = [
+                "backend/ai_settings.json",
+                "ai_settings.json",
+                os.path.join(os.path.dirname(os.path.dirname(__file__)), "ai_settings.json")
+            ]
+            
+            for settings_path in ai_settings_paths:
+                if os.path.exists(settings_path):
+                    with open(settings_path, "r", encoding="utf-8") as f:
+                        ai_settings = json.load(f)
+                        response_model = ai_settings.get("response_model", "")
+                        
+                        # Для response_generation используем response_model из настроек
+                        if task_key == "response_generation" and response_model and response_model.strip():
+                            print(f"✅ Используется модель из ai_settings.json для {task_key}: {response_model}")
+                            await self._ensure_model_available(response_model)
+                            return response_model
+                        
+                        # Для других задач можно добавить специальные настройки
+                        # Пока используем response_model как общую настройку
+                        break
+        except Exception as e:
+            print(f"⚠️ Ошибка загрузки ai_settings.json: {e}")
+        
+        # 3. Проверяем пользовательские настройки из файлов конфигурации
         user_overrides = self._load_user_settings()
         if self.config.get("user_overrides", {}).get("enabled", True):
             if task_key in user_overrides:
                 user_model = user_overrides[task_key]
-                if user_model:
+                if user_model and user_model.strip():
                     print(f"✅ Используется пользовательская модель для {task_key}: {user_model}")
                     # Проверяем и загружаем модель если нужно
                     await self._ensure_model_available(user_model)
                     return user_model
         
-        # 3. Используем ИИ для выбора оптимальной модели
+        # 4. Используем оркестратор (конфигурация задач) - только если настройки не указаны
         selected_model = await self._ai_select_model(task_type, task_complexity)
         
-        # 4. Проверяем и загружаем модель если нужно
+        # 5. Проверяем и загружаем модель если нужно
         await self._ensure_model_available(selected_model)
         
         return selected_model
@@ -384,10 +416,19 @@ FALLBACK МОДЕЛЬ: {fallback_model}
     async def _ensure_model_available(self, model_config: str):
         """
         Проверяет доступность модели и загружает её при необходимости
+        ВАЖНО: Автоматическая загрузка отключена по умолчанию.
+        Модели загружаются только по требованию пользователя через API.
         """
         # Проверяем, включена ли автоматическая загрузка
+        # По умолчанию отключена (False), чтобы не загружать модели без разрешения пользователя
         auto_load_config = self.config.get("auto_model_loading", {})
-        if not auto_load_config.get("enabled", True) or not auto_load_config.get("auto_load_missing_models", True):
+        if not auto_load_config.get("enabled", False) or not auto_load_config.get("auto_load_missing_models", False):
+            # Автоматическая загрузка отключена - просто проверяем доступность
+            if model_config.startswith("ollama:"):
+                model_name = model_config.replace("ollama:", "")
+                available_models = await self.get_available_models()
+                if model_config not in available_models:
+                    print(f"⚠️ Модель {model_name} недоступна. Используйте API /api/models/load для ручной загрузки.")
             return
         
         if not model_config.startswith("ollama:"):
